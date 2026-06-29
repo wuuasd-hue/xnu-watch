@@ -1,0 +1,42 @@
+name: XNU/Apple Security Watch
+
+on:
+  schedule:
+    # Her 6 saatte bir tetiklenir (UTC). Gunde 4 kez tarama yapar.
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}  # Manuel tetikleme icin (Actions sekmesinden "Run workflow")
+
+permissions:
+  contents: write  # state dosyasini commit edebilmek icin
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scan + cross-check pipeline
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: python pipeline.py
+
+      - name: Commit updated state (seen commits, findings log)
+        run: |
+          git config user.name "xnu-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/ findings/ || true
+          git diff --staged --quiet || git commit -m "chore: update scan state and findings [skip ci]"
+          git push || true
