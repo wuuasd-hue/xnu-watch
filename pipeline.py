@@ -16,7 +16,7 @@ from pathlib import Path
 
 from config import STARVATION_HOURS
 from github_scanner import scan_all_targets
-from orchestrator import analyze_candidate, run_starvation_round, pick_next_reexamination_angle
+from orchestrator import analyze_candidate, run_starvation_round, pick_next_reexamination_angle, RUN_FOCUS
 
 FINDINGS_LOG = Path("findings/findings_log.json")
 ARCHIVE = Path("findings/archive.json")
@@ -96,6 +96,7 @@ def _hours_since_last_reportable(meta: dict) -> float:
 def main():
     meta = _load_json(META, {"last_reportable_at": None, "last_run_at": None})
 
+    print(f"[INFO] This run's rotating extra focus: {RUN_FOCUS}")
     print("[INFO] Scanning targets for new commits...")
     candidates = scan_all_targets()
     print(f"[INFO] {len(candidates)} fresh candidate(s) found.")
