@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-07-01T10:59:58.049117+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "message": "xnu-12377.1.9\n\nImported from xnu-12377.1.9.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T11:00:36.245148+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "e3723e1f17661b24996789d8afc084c0c3303b26",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/e3723e1f17661b24996789d8afc084c0c3303b26",
+    "message": "xnu-11417.101.15\n\nImported from xnu-11417.101.15.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T11:01:14.101567+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "message": "xnu-11215.1.10\n\nImported from xnu-11215.1.10.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T11:01:51.433208+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "94d3b452840153a99b38a3a9659680b2a006908e",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/94d3b452840153a99b38a3a9659680b2a006908e",
+    "message": "xnu-10063.101.15\n\nImported from xnu-10063.101.15.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T11:02:28.820995+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "message": "xnu-12377.1.9\n\nImported from xnu-12377.1.9.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T11:03:07.269214+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "e3723e1f17661b24996789d8afc084c0c3303b26",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/e3723e1f17661b24996789d8afc084c0c3303b26",
+    "message": "xnu-11417.101.15\n\nImported from xnu-11417.101.15.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  }
+]
