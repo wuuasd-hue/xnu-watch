@@ -159,9 +159,10 @@
     "url": "https://github.com/apple-oss-distributions/Security/commit/0600e7bab30fbac3adcafcb6c57d3981dc682304",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "apple-oss-distributions/Security",
@@ -173,9 +174,10 @@
     "url": "https://github.com/apple-oss-distributions/Security/commit/ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -213,6 +215,48 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp ---\n@@ -20569,7 +20569,10 @@ IGNORE_CLANG_WARNINGS_END\n         LBasicBlock is16Bit = m_out.newBlock();\n         LBasicBlock bitsContinuation = m_out.newBlock();\n         LBasicBlock bigCharacter = m_out.newBlock();\n-        LBasicBlock slowCase = m_out.newBlock();\n+        LBasicBlock multiCharCase = m_out.newBlock();\n+        LBasicBlock notLengthTwoCase = m_out.newBlock();\n+        LBasicBlock substringRopeAllocCase = m_out.newBlock();\n+        LBasicBlock substringRopeSlowAlloc = m_out.newBlock();\n         LBasicBlock ropeSlowCase = m_out.newBlock();\n         LBasicBlock continuation = m_out.newBlock();\n \n@@ -20593,14 +20596,14 @@ IGNORE_CLANG_WARNINGS_END\n         LValue span = m_out.sub(to, from);\n         m_out.branch(m_out.lessThanOrEqual(span, m_out.int32Zero), unsure(emptyCase), unsure(notEmptyCase));\n \n-        Vector<ValueFromBlock, 5> results;\n+        Vector<ValueFromBlock, 8> results;\n \n         m_out.appendTo(emptyCase, notEmptyCase);\n         results.append(m_out.anchor(weakPointer(jsEmptyString(vm()))));\n         m_out.jump(continuation);\n \n         m_out.appendTo(notEmptyCase, oneCharCase);\n-        m_out.branch(m_out.equal(span, m_out.int32One), unsure(oneCharCase), unsure(slowCase));\n+        m_out.branch(m_out.equal(span, m_out.int32One), unsure(oneCharCase), unsure(multiCharCase));\n \n         m_out.appendTo(oneCharCase, is8Bit);\n         LValue storage = m_out.loadPtr(stringImpl, m_heaps.StringImpl_data);\n@@ -20627,14 +20630,32 @@ IGNORE_CLANG_WARNINGS_END\n             m_vmValue, char16BitValue)));\n         m_out.jump(continuation);\n \n-        m_out.appendTo(bitsContinuation, slowCase);\n+        m_out.appendTo(bitsContinuation, multiCharCase);\n         LValue character = m_out.phi(Int32, char8Bit, char16Bit);\n         LValue smallStrings = m_out.constIntPtr(vm().smallStrings.singleCharacterStrings());\n         results.append(m_out.anchor(m_out.loadPtr(m_out.baseIndex(\n             m_heaps.singleCharacterStrings, smallStrings, m_out.zeroExtPtr(character)))));\n         m_out.jump(continuation);\n \n-        m_out.appendTo(slowCase, ropeSlowCase);\n+        m_out.appendTo(multiCharCase, notLengthTwoCase);\n+        results.append(m_out.anchor(string));\n+        m_out.branch(m_out.equal(span, length), unsure(continuation), unsure(notLengthTwoCase));\n+\n+        m_out.appendTo(notLengthTwoCase, substringRopeAllocCase);\n+        m_out.branch(m_out.equal(span, m_out.constInt32(2)), rarely(substringRopeSlowAlloc), usually(substringRopeAllocCase));\n+\n+        m_out.appendTo(substringRopeAllocCase, substringRopeSlowAlloc);\n+        Allocator allocator = allocatorForConcurrently<JSRopeString>(vm(), sizeof(JSRopeString), AllocatorForMode::AllocatorIfExists);\n+        LValue rope = allocateCell(m_out.constIntPtr(allocator.localAllocator()), vm().stringStructure.get(), substringRopeSlowAlloc);\n+        LValue baseIs8BitFlag = m_out.bitAnd(m_out.load32(stringImpl, m_heaps.StringImpl_hashAndFlags), m_out.constInt32(StringImpl::flagIs8Bit()));\n+        m_out.storePtr(m_out.bitOr(m_out.constIntPtr(JSString::isRopeInPointer | JSRopeString::isSubstringInPointer), m_out.zeroExtPtr(baseIs8BitFlag)), rope, m_heaps.JSRopeString_fiber0);\n+        m_out.storePtr(m_out.bitOr(m_out.zeroExtPtr(span), m_out.shl(string, m_out.constInt32(32))), rope, m_heaps.JSRopeString_fiber1);\n+        m_out.storePtr(m_out.bitOr(m_out.lShr(string, m_out.constInt32(32)), m_out.shl(m_out.zeroExtPtr(from), m_out.constInt32(16))), rope, m_heaps.JSRopeString_fiber2);\n+        mutatorFence();\n+        results.append(m_out.anchor(rope));\n+        m_out.jump(continuation);\n+\n+        m_out.appendTo(substringRopeSlowAlloc, ropeSlowCase);\n         results.append(m_out.anchor(vmCall(pointerType(), operationStringSubstr, weakPointer(globalObject), string, from, span)));\n         m_out.jump(continuation);\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/eeb2440ba085136496a90de543f848d09090d108",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "5ecce0f050d283d922a3a68100c1a583edb432be",
+    "message": "[JSC] Manually pipeline memory fetching for GC marking\nhttps://bugs.webkit.org/show_bug.cgi?id=318297\nrdar://181088818\n\nReviewed by Keith Miller and Dan Hecht.\n\nIn GC marking, the highest cost comes from marking a large graph, and it\nis bound by a cache miss for each GC-managed cell.\n\nThis patch add",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/heap/SlotVisitor.cpp ---\n@@ -503,11 +503,27 @@ NEVER_INLINE void SlotVisitor::drain(MonotonicTime timeout)\n                     return IterationStatus::Continue;\n \n                 stack.refill();\n-                \n+\n                 m_isFirstVisit = (&stack == &m_collectorStack);\n \n-                for (unsigned countdown = Options::minimumNumberOfScansBetweenRebalance(); stack.canRemoveLast() && countdown--;)\n-                    visitChildren(stack.removeLast());\n+                // The highest cost of GC marking is a cache miss when reading a cell, coming from the GC marker stack,\n+                // because each cell would be likely placed in a random place. We perform software prefetching onto\n+                // one next cell while accessing the current cell to make memory fetching in flight while handling\n+                // the current cell.\n+                unsigned countdown = Options::minimumNumberOfScansBetweenRebalance();\n+                auto popAndPrefetch = [&] ALWAYS_INLINE_LAMBDA -> const JSCell* {\n+                    if (!countdown || !stack.canRemoveLast())\n+                        return nullptr;\n+                    --countdown;\n+                    const JSCell* cell = stack.removeLast();\n+                    __builtin_prefetch(cell);\n+                    return cell;\n+                };\n+                for (const JSCell* next = popAndPrefetch(); next;) {\n+                    const JSCell* cell = next;\n+                    next = popAndPrefetch();\n+                    visitChildren(cell);\n+                }\n                 return IterationStatus::Done;\n             });\n         propagateExternalMemoryVisitedIfNecessary();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/5ecce0f050d283d922a3a68100c1a583edb432be",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "449c42b27f306b9b4906702b33d9f731dd558055",
+    "message": "ExpressionInfo::Encoder computes the offset to Extension Islands incorrectly.\nhttps://bugs.webkit.org/show_bug.cgi?id=312525\nrdar://174626446\n\nReviewed by Yijia Huang.\n\nWhen an Extension ExpressionInfo is emitted, it needs to encode a displacement offset from\nits location to the location of its exte",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/expression-info-multi-wide-encoding.js ---\n@@ -0,0 +1,17 @@\n+//@ skip if $memoryLimited\n+//@ runDefault\n+\n+const PAD = \" \".repeat(5000000);\n+const src =\n+  'function* gen(){var b;0+' + PAD + '(b,yield,1);null.x;} this.gen=gen;';\n+(0, eval)(src);\n+\n+const it = gen();\n+it.next();\n+\n+var stackStr;\n+try {\n+    it.next();\n+} catch (e) {\n+    stackStr = e.stack + 1;\n+}\n\n--- Source/JavaScriptCore/bytecode/ExpressionInfo.cpp ---\n@@ -58,7 +58,7 @@ namespace JSC {\n       Extension: [   11111b | 1b |    offset:26                                ]\n       AbsInstPC: [   11111b | 0b |     value:26                                ]\n       MultiWide: [   11110b | 1b |     111b | numFields:5 | fields[6]:18       ] [ value:32 ] ...\n-        DuoWide: [   11110b | 1b | field2:3 | value2:10 | field1:3 | value1:10 ]\n+        DuoWide: [   11110b | 1b | field1:3 | value1:10 | field2:3 | value2:10 ]\n      SingleWide: [   11110b | 0b |  field:3 | value:23                         ]\n    ExtensionEnd: [   11110b | 0b |     111b |     0:23                         ]\n           Basic: [ instPC:5 |   divot:7 | start:6 |  end:6 | line:3 | column:5 ]\n@@ -140,7 +140,7 @@ namespace JSC {\n        over to the extension island. For all encodings, this is just a single word. The only\n        exception is the MultiWide encoding, which are followed by N value words. Because the\n        decoder expects these words to be contiguous, we move all the value words over too. The\n-       slots of the original value words will not be replaced by no-ops (SingleWide with 0).\n+       slots of the original value words will now be replaced by no-ops (SingleWide with 0).\n \n     AbsInstPC and Chapters\n     ======================\n@@ -450,6 +450,7 @@ void ExpressionInfo::Encoder::adjustInstPC(unsigned infoIndex, unsigned instPCDe\n         // being contiguous.\n         unsigned numberOfFields = (firstValue >> multiSizeShift) & multiSizeMask;\n \n+        unsigned locationOfExtensionIsland = m_expressionInfoEncodedInfo.size();\n         m_expressionInfoEncodedInfo.append({ firstValue }); // MultiWide header.\n         for (unsigned i = 1; i < numberOfFields; ++i) {\n             auto fieldValue = m_expressionInfoEncodedInfo[infoIndex + i];\n@@ -459,7 +460,10 @@ void ExpressionInfo::Encoder::adjustInstPC(unsigned infoIndex, unsigned instPCDe\n         // Save the last field in firstValue, and let the extension emitter below append it.\n         firstValue = m_expressionInfoEncodedInfo[infoIndex + numberOfFields].value;\n         m_expressionInfoEncodedInfo[infoIndex + numberOfFields] = encodeSingle(FieldID::InstPC, 0); // Replace with a no-op.\n-        goto emitExtension;\n+\n+        unsigned extensionOffset = locationOfExtensionIsland - infoIndex;\n+        m_expressionInfoEncodedInfo[infoIndex] = encodeExtension(extensionOffset);\n+        goto emitExtensionIsland;\n     }\n \n     // Handle Basic.\n@@ -476,9 +480,11 @@ void ExpressionInfo::Encoder::adjustInstPC(unsigned infoIndex, unsigned instPCDe\n     isBasic = true;\n \n emitExtension:\n-    unsigned extensionOffset = m_expressionInfoEncodedInfo.size() - infoIndex;\n-    m_expressionInfoEncodedInfo[infoIndex] = encodeExtension(extensionOffset);\n-\n+    {\n+        unsigned extensionOffset = m_expressionInfoEncodedInfo.size() - infoIndex;\n+        m_expressionInfoEncodedInfo[infoIndex] = encodeExtension(extensionOffset);\n+    }\n+emitExtensionIsland:\n     // Because the Basic word is used as a terminator for the current Entry,\n     // if the firstValue is a Basic word, it needs to come last. Otherwise, we should\n     // just emit firstValue first. AbsInstPC and MultiWide relies on this for correctness.\n@@ -490,7 +496,7 @@ void ExpressionInfo::Encoder::adjustInstPC(unsigned infoIndex, unsigned instPCDe\n     else {\n         // The wides array is really only to enable us to use encodeMultiHeader. Hence,\n         // we don't really need to store instPCDelta as the value here. It can be any value\n-        // since it's not ued. However, to avoid confusion, we'll just populate it consistently.\n+        // since it's not used. However, to avoid confusion, we'll just populate it consistently.\n         Wide wides[1] = { { instPCDelta, FieldID::InstPC } };\n         m_expressionInfoEncodedInfo.append(encodeMultiHeader(1, wides));\n         m_expressionInfoEncodedInfo.append({ instPCDelta });\n@@ -1032,7 +1038,7 @@ void ExpressionInfo::dumpEncodedInfo(ExpressionInfo::EncodedInfo* start, Ex\n",
+    "url": "https://github.com/WebKit/WebKit/commit/449c42b27f306b9b4906702b33d9f731dd558055",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "d3920704e8bd7885a07987f2495a8e63de918240",
+    "message": "DocumentLoader::scheduleCannotShowURLError is unused\nhttps://bugs.webkit.org/show_bug.cgi?id=318308\nrdar://181101048\n\nReviewed by Per Arne Vollan.\n\nThis function is unused and can be removed.\n\nNo new tests needed.\n\n* Source/WebCore/loader/DocumentLoader.cpp:\n(WebCore::DocumentLoader::scheduleCannotS",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/DocumentLoader.cpp ---\n@@ -1914,12 +1914,6 @@ void DocumentLoader::scheduleSubstituteResourceLoad(ResourceLoader& loader, Subs\n     deliverSubstituteResourcesAfterDelay();\n }\n \n-void DocumentLoader::scheduleCannotShowURLError(ResourceLoader& loader)\n-{\n-    m_pendingSubstituteResources.set(loader, nullptr);\n-    deliverSubstituteResourcesAfterDelay();\n-}\n-\n void DocumentLoader::addResponse(const ResourceResponse& response)\n {\n     if (!m_stopRecordingResponses)\n\n--- Source/WebCore/loader/DocumentLoader.h ---\n@@ -279,7 +279,6 @@ class DocumentLoader\n #endif\n \n     void scheduleSubstituteResourceLoad(ResourceLoader&, SubstituteResource&);\n-    void scheduleCannotShowURLError(ResourceLoader&);\n \n     // FrameDestructionObserver.\n     WEBCORE_EXPORT void frameDestroyed() final;\n",
+    "url": "https://github.com/WebKit/WebKit/commit/d3920704e8bd7885a07987f2495a8e63de918240",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"

@@ -498,5 +498,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T21:57:28.934235+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ecce0f050d283d922a3a68100c1a583edb432be",
+    "url": "https://github.com/WebKit/WebKit/commit/5ecce0f050d283d922a3a68100c1a583edb432be",
+    "message": "[JSC] Manually pipeline memory fetching for GC marking\nhttps://bugs.webkit.org/show_bug.cgi?id=318297\nrdar://181088818\n\nReviewed by Keith Miller and Dan Hecht.\n\nIn GC marking, the highest cost comes from marking a large graph, and it\nis bound by a cache miss for each GC-managed cell.\n\nThis patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T21:59:36.883544+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "449c42b27f306b9b4906702b33d9f731dd558055",
+    "url": "https://github.com/WebKit/WebKit/commit/449c42b27f306b9b4906702b33d9f731dd558055",
+    "message": "ExpressionInfo::Encoder computes the offset to Extension Islands incorrectly.\nhttps://bugs.webkit.org/show_bug.cgi?id=312525\nrdar://174626446\n\nReviewed by Yijia Huang.\n\nWhen an Extension ExpressionInfo is emitted, it needs to encode a displacement offset from\nits location to the location of its exte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T22:01:44.409042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3920704e8bd7885a07987f2495a8e63de918240",
+    "url": "https://github.com/WebKit/WebKit/commit/d3920704e8bd7885a07987f2495a8e63de918240",
+    "message": "DocumentLoader::scheduleCannotShowURLError is unused\nhttps://bugs.webkit.org/show_bug.cgi?id=318308\nrdar://181101048\n\nReviewed by Per Arne Vollan.\n\nThis function is unused and can be removed.\n\nNo new tests needed.\n\n* Source/WebCore/loader/DocumentLoader.cpp:\n(WebCore::DocumentLoader::scheduleCannotS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T22:03:51.843283+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "message": "Security-61123.100.169\n\nImported from Security-61123.100.169.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T22:06:00.739624+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "message": "Security-61040.1.3\n\nImported from Security-61040.1.3.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
