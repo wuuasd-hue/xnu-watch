@@ -24,12 +24,12 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 # Each model uses its own API key (env var below) so free-tier rate limits
 # are spread across 6 separate OpenRouter keys instead of shared on one.
 ROSTER = [
-    {"id": "llama-3.3-70b",     "model": "meta-llama/llama-3.3-70b-instruct",      "key_env": "OPENROUTER_API_KEY_1"},
-    {"id": "llama-4-scout",     "model": "meta-llama/llama-4-scout",               "key_env": "OPENROUTER_API_KEY_2"},
-    {"id": "deepseek-r1",       "model": "deepseek/deepseek-r1-distill-llama-70b", "key_env": "OPENROUTER_API_KEY_3"},
-    {"id": "qwen3-32b",         "model": "qwen/qwen3-32b",                         "key_env": "OPENROUTER_API_KEY_4"},
-    {"id": "qwen2.5-coder-32b", "model": "qwen/qwen-2.5-coder-32b-instruct",       "key_env": "OPENROUTER_API_KEY_5"},
-    {"id": "deepseek-v3",       "model": "deepseek/deepseek-chat",                 "key_env": "OPENROUTER_API_KEY_6"},
+    {"id": "llama-3.3-70b",     "model": "meta-llama/llama-3.3-70b-instruct:free",      "key_env": "OPENROUTER_API_KEY_1"},
+    {"id": "llama-4-scout",     "model": "meta-llama/llama-4-scout:free",               "key_env": "OPENROUTER_API_KEY_2"},
+    {"id": "deepseek-r1",       "model": "deepseek/deepseek-r1-distill-llama-70b:free", "key_env": "OPENROUTER_API_KEY_3"},
+    {"id": "qwen3-235b",        "model": "qwen/qwen3-235b-a22b:free",                   "key_env": "OPENROUTER_API_KEY_4"},
+    {"id": "qwen3-coder",       "model": "qwen/qwen3-coder:free",                       "key_env": "OPENROUTER_API_KEY_5"},
+    {"id": "deepseek-v3",       "model": "deepseek/deepseek-chat-v3-0324:free",         "key_env": "OPENROUTER_API_KEY_6"},
 ]
 
 
