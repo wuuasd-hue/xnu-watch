@@ -2,8 +2,8 @@ name: XNU/Apple Security Watch
 
 on:
   schedule:
-    # Her 6 saatte bir tetiklenir (UTC). Gunde 4 kez tarama yapar.
-    - cron: '0 */6 * * *'
+    # Her 30 dakikada bir tetiklenir (UTC).
+    - cron: '*/30 * * * *'
   workflow_dispatch: {}  # Manuel tetikleme icin (Actions sekmesinden "Run workflow")
 
 permissions:
