@@ -189,9 +189,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/cfd4b22815c5508b81c04d41368eb062071ce593",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -203,9 +204,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/0f2107b6d20520db631fb3321211c53d17c3235f",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -257,6 +259,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/WebCore/loader/DocumentLoader.cpp ---\n@@ -1914,12 +1914,6 @@ void DocumentLoader::scheduleSubstituteResourceLoad(ResourceLoader& loader, Subs\n     deliverSubstituteResourcesAfterDelay();\n }\n \n-void DocumentLoader::scheduleCannotShowURLError(ResourceLoader& loader)\n-{\n-    m_pendingSubstituteResources.set(loader, nullptr);\n-    deliverSubstituteResourcesAfterDelay();\n-}\n-\n void DocumentLoader::addResponse(const ResourceResponse& response)\n {\n     if (!m_stopRecordingResponses)\n\n--- Source/WebCore/loader/DocumentLoader.h ---\n@@ -279,7 +279,6 @@ class DocumentLoader\n #endif\n \n     void scheduleSubstituteResourceLoad(ResourceLoader&, SubstituteResource&);\n-    void scheduleCannotShowURLError(ResourceLoader&);\n \n     // FrameDestructionObserver.\n     WEBCORE_EXPORT void frameDestroyed() final;\n",
     "url": "https://github.com/WebKit/WebKit/commit/d3920704e8bd7885a07987f2495a8e63de918240",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "message": "[JSC] Fix B3 CSE extras adjustment\nhttps://bugs.webkit.org/show_bug.cgi?id=318373\nrdar://180277164\n\nReviewed by Dan Hecht.\n\nB3 CSE can handle store with narrower width. In this case, we emit\nnarrowing operations to reuse the value. For example,\n\n    @a: Load32(...)\n    @b: Store8(@a, LocationA)\n    ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/b3-cse-fix.js ---\n@@ -0,0 +1,6 @@\n+//@ runDefault(\"--jitPolicyScale=0\", \"--validateGraphAtEachPhase=1\", \"--useConcurrentJIT=0\", \"--validateDFGClobberize=1\")\n+\n+for (let i = 0; i < 100; i++) {\n+    for (let j = 0; j < 100; j++) {\n+    }\n+}\n\n--- Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp ---\n@@ -78,18 +78,6 @@ using MemoryMatches = Vector<MemoryValue*, 1>;\n using WasmStructMatches = Vector<WasmStructFieldValue*, 1>;\n using WasmArrayMatches = Vector<WasmArrayElementValue*, 1>;\n \n-// Only these node kinds can ever become a key in CSE::m_sets (they are the\n-// dominating matches: MemoryValue / WasmStructFieldValue / WasmArrayElementValue).\n-// Used to skip the per-value m_sets hash lookup in finalize() and to assert at\n-// the add site.\n-inline bool canHaveSets(Value* value)\n-{\n-    Opcode opcode = value->opcode();\n-    return isMemoryAccess(opcode)\n-        || opcode == WasmStructGet || opcode == WasmStructSet\n-        || opcode == WasmArrayGet || opcode == WasmArraySet;\n-}\n-\n class MemoryValueMap {\n public:\n     MemoryValueMap() { }\n@@ -444,7 +432,7 @@ class CSE {\n             if (m_blocksWithSets.contains(block)) {\n                 for (unsigned valueIndex = 0; valueIndex < block->size(); ++valueIndex) {\n                     Value* value = block->at(valueIndex);\n-                    if (!canHaveSets(value))\n+                    if (!m_matched.contains(value))\n                         continue;\n                     auto iter = m_sets.find(value);\n                     if (iter == m_sets.end())\n@@ -977,9 +965,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (MemoryValue* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n             auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             Value* value = replace(match, extras);\n             if (!value) {\n                 if (match->isStore())\n@@ -1251,9 +1239,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (auto* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n-            Vector<Value*>& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             auto* value = replace(match, extras);\n             ASSERT(value);\n             m_ssa->newDef(var, match->owner, value);\n@@ -1475,9 +1463,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (auto* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n-            Vector<Value*>& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             auto* value = replace(match, extras);\n             ASSERT(value);\n             m_ssa->newDef(var, match->owner, value);\n@@ -1591,6 +1579,7 @@ class CSE {\n     // Match -> extra fixup values (e.g. BitAnd masks for packed Wasm types),\n     // flushed at match site during finalize().\n     UncheckedKeyHashMap<Value*, Vector<Value*>> m_sets;\n+    IndexSet<Value*> m_matched;\n     // Blocks that own at least one m_sets key, so finalize() can skip whole blocks.\n     IndexSet<BasicBlock*> m_blocksWithSets;\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
