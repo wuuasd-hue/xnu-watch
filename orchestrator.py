@@ -6,6 +6,7 @@ Also implements starvation mode: when no fresh signal has surfaced in a while,
 re-examine an archived LATENT/DISCARD candidate under a rotated lens.
 """
 
+import random
 import time
 
 from config import CONSENSUS_THRESHOLD
@@ -18,13 +19,24 @@ from prompts import (
     LAYER3_TASK,
     STARVATION_PREAMBLE,
     RE_EXAMINATION_ANGLES,
+    FRESH_SCAN_FOCUS_PREAMBLE,
 )
+
+# Picked ONCE per pipeline run (module import), so every candidate examined
+# in this run shares the same rotating extra focus, but the NEXT run (next
+# cron trigger) will very likely roll a different one. This is what makes
+# repeated scans of the same target look from a different angle each time,
+# rather than every run applying an identical lens.
+RUN_FOCUS = random.choice(RE_EXAMINATION_ANGLES)
 
 
 def _lens_for(candidate: dict) -> str:
-    """Pick the target lens based on which repo/source the candidate came from."""
+    """Pick the target lens based on which repo/source the candidate came from,
+    plus this run's rotating extra focus on top of it."""
     key = candidate.get("lens_key", "xnu")
-    return TARGET_LENSES.get(key, TARGET_LENSES["xnu"])
+    base_lens = TARGET_LENSES.get(key, TARGET_LENSES["xnu"])
+    extra_focus = FRESH_SCAN_FOCUS_PREAMBLE.format(focus=RUN_FOCUS)
+    return base_lens + "\n\n" + extra_focus
 
 
 def run_layer1(candidate: dict) -> dict:
