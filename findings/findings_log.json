@@ -118,5 +118,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:45:18.479826+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "message": "dyld-1378\n\nImported from dyld-1378.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:47:26.449956+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "message": "dyld-1376.6\n\nImported from dyld-1376.6.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:49:33.957613+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "9b3c6bde0c6d1cb4a13ce7646aed6f74597bcc84",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/9b3c6bde0c6d1cb4a13ce7646aed6f74597bcc84",
+    "message": "dyld-1340\n\nImported from dyld-1340.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:51:41.989491+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "3d26957467bbec4f999a0c27ebe09b6fc186f5cd",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/3d26957467bbec4f999a0c27ebe09b6fc186f5cd",
+    "message": "dyld-1335\n\nImported from dyld-1335.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:53:53.403027+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "message": "xnu-11215.1.10\n\nImported from xnu-11215.1.10.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T13:56:01.372167+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "94d3b452840153a99b38a3a9659680b2a006908e",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/94d3b452840153a99b38a3a9659680b2a006908e",
+    "message": "xnu-10063.101.15\n\nImported from xnu-10063.101.15.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
