@@ -184,4 +184,121 @@ full reasoning chains are on the shared board below. Read ALL of them. They may
 have seen something you missed, or claimed something that is wrong.
 
 Your job now is to do exactly ONE of these, whichever is most truthful:
-  (A) STRENGTHEN: combine a detail another analyst found with your
+  (A) STRENGTHEN: combine a detail another analyst found with your own to make
+      a more precise, better-grounded hypothesis.
+  (B) CHALLENGE: argue that a hypothesis on the board is a false positive, and
+      say specifically why (e.g. "the bound IS checked at line X", "that path
+      is not attacker-reachable because Y").
+  (C) SYNTHESIZE: merge two partial hypotheses into a stronger third one that
+      neither analyst stated alone.
+  (D) HOLD: if your Layer-1 view still stands and nothing changes it, say so
+      and explain why the others did not move you.
+
+Do NOT just agree to agree. Consensus that is not earned is worthless. The goal
+is to converge on what is actually TRUE about this code.
+
+REPO: {repo}
+DIFF (for reference):
+{diff}
+
+# SHARED BLACKBOARD — all Layer-1 reasoning chains:
+{blackboard}
+
+Output ONLY this JSON:
+{{
+  "action": "STRENGTHEN|CHALLENGE|SYNTHESIZE|HOLD",
+  "responding_to": "which analyst(s) you are building on or challenging",
+  "suspicious": true/false,
+  "category": "...",
+  "confidence": 0-100,
+  "updated_reasoning": "your revised reasoning chain after reading the board, 3-6 sentences",
+  "classification": "REPORTABLE|LATENT|DISCARD"
+}}"""
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# LAYER 3 — CONVERGE & SYNTHESIZE (final distillation)
+# ──────────────────────────────────────────────────────────────────────────
+
+LAYER3_TASK = """{core}
+
+{lens}
+
+# CURRENT TASK — LAYER 3: CONVERGE & FINAL SYNTHESIS
+This is the final round. Below is the COMPLETE record: every analyst's Layer-1
+first pass AND their Layer-2 challenges/updates. Your task is to distill this
+into the single most defensible conclusion about this diff.
+
+Weigh the arguments by their GROUNDING, not by how many analysts agreed. One
+analyst with a precise, line-level reasoning chain outweighs three with vague
+hunches. If the Layer-2 challenges successfully demolished a hypothesis, respect
+that. If a synthesized hypothesis emerged that is stronger than any individual
+one, elevate it.
+
+REPO: {repo}
+DIFF (for reference):
+{diff}
+
+# COMPLETE DELIBERATION RECORD:
+{full_record}
+
+Output ONLY this JSON:
+{{
+  "final_verdict": "REPORTABLE|LATENT|DISCARD",
+  "category": "...",
+  "confidence": 0-100,
+  "best_hypothesis": "the single strongest hypothesis, stated precisely and grounded in the diff",
+  "why_this_won": "why this conclusion survived the deliberation (what grounding beat what)",
+  "next_step_for_human": "what a human analyst should manually verify to confirm or kill this lead — NO exploit code, just the verification step"
+}}"""
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# ROTATING EXTRA FOCUS — applied on EVERY scan (not just starvation mode) so
+# repeated runs over the same target don't always look from the same angle.
+# ──────────────────────────────────────────────────────────────────────────
+
+FRESH_SCAN_FOCUS_PREAMBLE = """# THIS RUN'S EXTRA FOCUS
+On top of the target-specific lens above, pay particular additional attention
+this time to: {focus}.
+
+This is a rotating emphasis, not a restriction — still apply the full
+methodology and consider anything else you notice. But if the diff has
+anything resembling this pattern, weight it heavily; different runs
+deliberately rotate through different angles so the same code gets examined
+from a fresh perspective each time rather than the same lens repeatedly."""
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# IDLE / STARVATION MODE — when no fresh signal for N hours
+# ──────────────────────────────────────────────────────────────────────────
+
+STARVATION_PREAMBLE = """# MODE: STARVATION / DEEP RE-EXAMINATION
+No new reportable lead has surfaced in the recent scan window. You are NOT
+looking at a fresh commit. Instead you are RE-EXAMINING a piece of code that was
+previously classified LATENT or DISCARD — on the theory that the first pass may
+have looked from the wrong angle.
+
+This time, deliberately adopt a DIFFERENT lens than was used before. The prior
+analysis focused on: {prior_focus}. Now look at the SAME code asking a different
+question: {new_focus}.
+
+Real researchers do this — they return to "boring" code with a new hypothesis.
+A bug missed under a memory-safety lens may be obvious under an
+authorization-logic lens, and vice versa. Be genuinely fresh; do not just repeat
+the prior verdict.
+
+The standard methodology, three-question gate, classification rules, and the
+absolute no-exploit boundary all still apply."""
+
+
+# Rotating focus angles — used both for the per-run fresh-scan emphasis above
+# AND for starvation-mode re-examination.
+RE_EXAMINATION_ANGLES = [
+    "memory safety (OOB, UAF, overflow, type confusion)",
+    "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+    "concurrency (race conditions, double-fetch, TOCTOU)",
+    "integer arithmetic (truncation, sign-extension, narrowing casts)",
+    "information disclosure (uninitialized memory, pointer leaks to lower trust)",
+    "input parsing of untrusted structured data (malformed file/message)",
+]
