@@ -238,5 +238,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:15:17.194728+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "db15acbe6a7f257a859ad9a3bb86097bfe0679d9",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/db15acbe6a7f257a859ad9a3bb86097bfe0679d9",
+    "message": "Security-61901.0.87.0.1\n\nImported from Security-61901.0.87.0.1.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:17:27.338137+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "3dab46a11f45f2ffdbd70e2127cc5a8ce4a1f222",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/3dab46a11f45f2ffdbd70e2127cc5a8ce4a1f222",
+    "message": "Security-61439.1.1\n\nImported from Security-61439.1.1.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:19:37.899002+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "message": "Security-61123.100.169\n\nImported from Security-61123.100.169.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:21:48.095922+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "message": "Security-61040.1.3\n\nImported from Security-61040.1.3.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:23:59.542835+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "message": "dyld-1378\n\nImported from dyld-1378.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-01T16:26:09.440344+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "message": "dyld-1376.6\n\nImported from dyld-1376.6.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
