@@ -20,9 +20,18 @@ import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-# The 6-model roster — all open-weight models, routed through OpenRouter.
+# The 6-model roster — all open-weight models, routed through OpenRouter's
+# FREE tier. The ":free" suffix is mandatory: without it OpenRouter routes
+# the same model ID to its paid backend and bills your credits (this is
+# exactly what caused the earlier 402 Payment Required errors).
 # Each model uses its own API key (env var below) so free-tier rate limits
-# are spread across 6 separate OpenRouter keys instead of shared on one.
+# (20 req/min, ~50-1000 req/day) are spread across 6 separate OpenRouter
+# keys instead of shared on one.
+#
+# NOTE: OpenRouter's free-model catalog changes over time (models get added/
+# retired). If one of these starts returning 404, check openrouter.ai/models
+# (filter: price = free) for a current replacement — call_model() already
+# skips failed models gracefully rather than crashing the whole run.
 ROSTER = [
     {"id": "llama-3.3-70b",     "model": "meta-llama/llama-3.3-70b-instruct:free",      "key_env": "OPENROUTER_API_KEY_1"},
     {"id": "llama-4-scout",     "model": "meta-llama/llama-4-scout:free",               "key_env": "OPENROUTER_API_KEY_2"},
@@ -78,26 +87,28 @@ def call_model(model_entry: dict, prompt: str) -> str | None:
     return _post(api_key, model_entry["model"], prompt)
 
 
-def parse_json_response(content: str | None) -> dict | None:
-    """Extract a JSON object from a model's raw text response, tolerating
-    markdown fences and stray prose around the JSON."""
-    if not content:
+def parse_json_response(raw: str | None) -> dict | None:
+    """Extract a JSON object from a model's raw text response. Models
+    sometimes wrap JSON in markdown fences or add stray prose — this strips
+    that and finds the outermost {...} block."""
+    if not raw:
         return None
-    content = content.strip()
-    if content.startswith("```"):
-        parts = content.split("```")
-        if len(parts) >= 2:
-            content = parts[1]
-            if content.startswith("json"):
-                content = content[4:]
-    content = content.strip()
+    text = raw.strip()
+    # Strip markdown code fences if present
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.lower().startswith("json"):
+            text = text[4:]
+        text = text.strip()
+    # Find the first { and matching last }
+    start = text.find("{")
+    end = text.rfind("}")
+    if start == -1 or end == -1 or end < start:
+        print(f"[ERROR] no JSON object found in response: {text[:200]}")
+        return None
+    candidate = text[start:end + 1]
     try:
-        return json.loads(content)
-    except json.JSONDecodeError:
-        try:
-            start = content.index("{")
-            end = content.rindex("}") + 1
-            return json.loads(content[start:end])
-        except (ValueError, json.JSONDecodeError):
-            print(f"[WARN] could not parse JSON from response: {content[:200]}")
-            return None
+        return json.loads(candidate)
+    except json.JSONDecodeError as e:
+        print(f"[ERROR] JSON parse failed: {e} — raw: {candidate[:200]}")
+        return None
