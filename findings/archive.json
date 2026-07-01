@@ -99,9 +99,10 @@
     "url": "https://github.com/apple-oss-distributions/dyld/commit/9b3c6bde0c6d1cb4a13ce7646aed6f74597bcc84",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "apple-oss-distributions/dyld",
@@ -113,9 +114,10 @@
     "url": "https://github.com/apple-oss-distributions/dyld/commit/3d26957467bbec4f999a0c27ebe09b6fc186f5cd",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "apple-oss-distributions/Security",
