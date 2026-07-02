@@ -1247,5 +1247,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T20:14:59.409009+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fabdb6ba5e169cb8bfb647f7565f1abdb6918991",
+    "url": "https://github.com/WebKit/WebKit/commit/fabdb6ba5e169cb8bfb647f7565f1abdb6918991",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nOur `AvailabilityProhibitedInternal.h` injected header does not work\nwhen building with modules. Modules are by design self-contained,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T20:17:09.063747+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a1a55949c63662f939521a257dd897030d473a0a",
+    "url": "https://github.com/WebKit/WebKit/commit/a1a55949c63662f939521a257dd897030d473a0a",
+    "message": "Check httpNavigationWithHTTPSOnlyError without constructing a new one\nhttps://bugs.webkit.org/show_bug.cgi?id=318360\nrdar://181151216\n\nReviewed by Brady Eidson.\n\nWe shouldn't need to construct a new httpNavigationWithHTTPSOnlyError just to\ncheck if the error we have is the of the same type. We inste",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T20:19:18.330082+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "824d2b29e233c469c079a02ca4c8e24108db69c7",
+    "url": "https://github.com/WebKit/WebKit/commit/824d2b29e233c469c079a02ca4c8e24108db69c7",
+    "message": "[JSC] Use modern unit/ skeleton in Intl.NumberFormat\nhttps://bugs.webkit.org/show_bug.cgi?id=318412\nrdar://181199699\n\nReviewed by Sosuke Suzuki.\n\nunit/ skeleton is encouraged in the modern ICU (ICU 67~), let's use them\ninstead of measure-unit / per-measure-unit. Also removing type field\nfrom Measure",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
