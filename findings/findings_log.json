@@ -947,5 +947,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T12:54:07.043005+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "url": "https://github.com/swiftlang/swift/commit/3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "message": "Merge pull request #90310 from mikeash/failed-type-lookup-logging-default-on\n\n[Runtime] Default to logging type lookup failures.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T12:56:15.241300+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d845346ddb6c21f345369b0095da6e519b3c6e8b",
+    "url": "https://github.com/WebKit/WebKit/commit/d845346ddb6c21f345369b0095da6e519b3c6e8b",
+    "message": "Web Inspector: [SI] implement resolveNode / requestNode / setInspectedNode on FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=316137\nrdar://178562399\n\nReviewed by Qianlang Chen.\n\nPort the JS bridge commands onto FrameDOMAgent. resolveNode wraps a\nframe node in a RemoteObject via the frame's We",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
