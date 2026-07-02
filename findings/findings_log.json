@@ -727,5 +727,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T04:38:00.248489+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "url": "https://github.com/WebKit/WebKit/commit/630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "message": "[YARR] EOL string list optimization produces incorrect matches with multiline flag\nhttps://bugs.webkit.org/show_bug.cgi?id=318333\n\nReviewed by Yusuke Suzuki.\n\nWhen the multiline flag is set, the EOL string list optimization produces\nincorrect matches:\n\n    /^(?:a|a\\nx)$/m.exec(\"a\\nx\")   // actual(JI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T04:40:08.244589+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "url": "https://github.com/WebKit/WebKit/commit/f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "message": "Compromised Web Content can use a navigation-response Download policy on a data: URL to write attacker-controlled bytes to disk\nhttps://bugs.webkit.org/show_bug.cgi?id=315004\nrdar://177019828\n\nReviewed by Basuke Suzuki.\n\nA compromised Web Content process can cause the UI process to write attacker-ch",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T04:42:16.356683+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "url": "https://github.com/swiftlang/swift/commit/3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "message": "Merge pull request #90310 from mikeash/failed-type-lookup-logging-default-on\n\n[Runtime] Default to logging type lookup failures.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T04:44:24.738969+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "449c42b27f306b9b4906702b33d9f731dd558055",
+    "url": "https://github.com/WebKit/WebKit/commit/449c42b27f306b9b4906702b33d9f731dd558055",
+    "message": "ExpressionInfo::Encoder computes the offset to Extension Islands incorrectly.\nhttps://bugs.webkit.org/show_bug.cgi?id=312525\nrdar://174626446\n\nReviewed by Yijia Huang.\n\nWhen an Extension ExpressionInfo is emitted, it needs to encode a displacement offset from\nits location to the location of its exte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T04:46:32.833599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3920704e8bd7885a07987f2495a8e63de918240",
+    "url": "https://github.com/WebKit/WebKit/commit/d3920704e8bd7885a07987f2495a8e63de918240",
+    "message": "DocumentLoader::scheduleCannotShowURLError is unused\nhttps://bugs.webkit.org/show_bug.cgi?id=318308\nrdar://181101048\n\nReviewed by Per Arne Vollan.\n\nThis function is unused and can be removed.\n\nNo new tests needed.\n\n* Source/WebCore/loader/DocumentLoader.cpp:\n(WebCore::DocumentLoader::scheduleCannotS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
