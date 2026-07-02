@@ -827,5 +827,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T08:00:30.536937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d845346ddb6c21f345369b0095da6e519b3c6e8b",
+    "url": "https://github.com/WebKit/WebKit/commit/d845346ddb6c21f345369b0095da6e519b3c6e8b",
+    "message": "Web Inspector: [SI] implement resolveNode / requestNode / setInspectedNode on FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=316137\nrdar://178562399\n\nReviewed by Qianlang Chen.\n\nPort the JS bridge commands onto FrameDOMAgent. resolveNode wraps a\nframe node in a RemoteObject via the frame's We",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T08:02:38.072971+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2ccda5823d4f9aee4736a0d7fe326040704deb6",
+    "url": "https://github.com/WebKit/WebKit/commit/c2ccda5823d4f9aee4736a0d7fe326040704deb6",
+    "message": "[JSC] Some DFG intrinsics should bail out when the callee comes from another realm\nhttps://bugs.webkit.org/show_bug.cgi?id=318195\n\nReviewed by Yusuke Suzuki.\n\nSome DFG intrinsic inline paths allocate objects (iterator result objects,\niterators, result arrays) with structures from the parsing realm's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T08:04:45.791085+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "url": "https://github.com/WebKit/WebKit/commit/2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "message": "[JSC] Fix B3 CSE extras adjustment\nhttps://bugs.webkit.org/show_bug.cgi?id=318373\nrdar://180277164\n\nReviewed by Dan Hecht.\n\nB3 CSE can handle store with narrower width. In this case, we emit\nnarrowing operations to reuse the value. For example,\n\n    @a: Load32(...)\n    @b: Store8(@a, LocationA)\n    ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T08:06:53.675201+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c96c07c35cc49de658a762231a6f984545f714ce",
+    "url": "https://github.com/WebKit/WebKit/commit/c96c07c35cc49de658a762231a6f984545f714ce",
+    "message": "[JSC] Use direct 3-character append for `\"%XY\"` escapes in `encode()`\nhttps://bugs.webkit.org/show_bug.cgi?id=318334\n\nReviewed by Yusuke Suzuki.\n\nencode() (shared by encodeURIComponent / encodeURI / escape) emits each\nescaped octet with two StringBuilder appends, where the second one goes\nthrough th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
