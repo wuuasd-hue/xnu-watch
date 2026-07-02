@@ -1367,5 +1367,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T22:55:30.557482+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d7703c704bd39100e4dde42679199ccce14816a",
+    "url": "https://github.com/WebKit/WebKit/commit/6d7703c704bd39100e4dde42679199ccce14816a",
+    "message": "Unreviewed, reverting 316413@main (fabdb6ba5e16)\nhttps://bugs.webkit.org/show_bug.cgi?id=318477\nrdar://181271274\n\nREGRESSION(316413@main) Broken Safer-CPP-Checks-EWS\n\nReverted change:\n\n    [Build] Reenable JSC and WebCore module verifier on public SDK builds\n    https://bugs.webkit.org/show_bug.cgi?",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T22:57:40.410230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a422d312c3cce60bdee0963a7cb205bb9a72e1f",
+    "url": "https://github.com/WebKit/WebKit/commit/7a422d312c3cce60bdee0963a7cb205bb9a72e1f",
+    "message": "[NavigationScheduler] history.back/forward/go(n) coalescing across processes via UIProcess session history traversal queue\nhttps://bugs.webkit.org/show_bug.cgi?id=317229\nrdar://179857636\n\nReviewed by Charlie Wolfe.\n\nFollow-up to https://bugs.webkit.org/show_bug.cgi?id=317077.\n\nPer HTML's \"traverse t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T22:59:49.594503+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d7703c704bd39100e4dde42679199ccce14816a",
+    "url": "https://github.com/WebKit/WebKit/commit/6d7703c704bd39100e4dde42679199ccce14816a",
+    "message": "Unreviewed, reverting 316413@main (fabdb6ba5e16)\nhttps://bugs.webkit.org/show_bug.cgi?id=318477\nrdar://181271274\n\nREGRESSION(316413@main) Broken Safer-CPP-Checks-EWS\n\nReverted change:\n\n    [Build] Reenable JSC and WebCore module verifier on public SDK builds\n    https://bugs.webkit.org/show_bug.cgi?",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T23:02:01.064428+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a422d312c3cce60bdee0963a7cb205bb9a72e1f",
+    "url": "https://github.com/WebKit/WebKit/commit/7a422d312c3cce60bdee0963a7cb205bb9a72e1f",
+    "message": "[NavigationScheduler] history.back/forward/go(n) coalescing across processes via UIProcess session history traversal queue\nhttps://bugs.webkit.org/show_bug.cgi?id=317229\nrdar://179857636\n\nReviewed by Charlie Wolfe.\n\nFollow-up to https://bugs.webkit.org/show_bug.cgi?id=317077.\n\nPer HTML's \"traverse t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
