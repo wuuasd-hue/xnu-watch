@@ -1307,5 +1307,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T21:41:10.552206+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d89c8f0325bb0bf8639e8759ff24f67e646eb70f",
+    "url": "https://github.com/WebKit/WebKit/commit/d89c8f0325bb0bf8639e8759ff24f67e646eb70f",
+    "message": "Fix C++26 build\nhttps://bugs.webkit.org/show_bug.cgi?id=318456\nrdar://181254230\n\nReviewed by Abrar Rahman Protyasha.\n\nThis PR adapts to a few changes in C++26, making WebKit compile without warnings or errors.\nThe changes needed are as follows:\n\n1. std::is_trivial and std::is_trivial_v have been dep",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T21:43:21.818778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fabdb6ba5e169cb8bfb647f7565f1abdb6918991",
+    "url": "https://github.com/WebKit/WebKit/commit/fabdb6ba5e169cb8bfb647f7565f1abdb6918991",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nOur `AvailabilityProhibitedInternal.h` injected header does not work\nwhen building with modules. Modules are by design self-contained,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T21:45:33.054818+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d89c8f0325bb0bf8639e8759ff24f67e646eb70f",
+    "url": "https://github.com/WebKit/WebKit/commit/d89c8f0325bb0bf8639e8759ff24f67e646eb70f",
+    "message": "Fix C++26 build\nhttps://bugs.webkit.org/show_bug.cgi?id=318456\nrdar://181254230\n\nReviewed by Abrar Rahman Protyasha.\n\nThis PR adapts to a few changes in C++26, making WebKit compile without warnings or errors.\nThe changes needed are as follows:\n\n1. std::is_trivial and std::is_trivial_v have been dep",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
