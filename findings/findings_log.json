@@ -1447,5 +1447,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T23:54:48.959193+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "url": "https://github.com/WebKit/WebKit/commit/fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "message": "[Digital Credentials] Add WebDriver BiDi digitalCredentials module for automated testing\nrdar://168941907\nhttps://bugs.webkit.org/show_bug.cgi?id=306292\n\nReviewed by BJ Burg.\n\nAdd a WebDriver BiDi digitalCredentials module that allows automated testing\nof the Digital Credentials API by simulating wa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T23:56:56.629746+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "url": "https://github.com/WebKit/WebKit/commit/fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "message": "[Digital Credentials] Add WebDriver BiDi digitalCredentials module for automated testing\nrdar://168941907\nhttps://bugs.webkit.org/show_bug.cgi?id=306292\n\nReviewed by BJ Burg.\n\nAdd a WebDriver BiDi digitalCredentials module that allows automated testing\nof the Digital Credentials API by simulating wa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-02T23:59:04.319993+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/f6217f891ac0bb64f3d375211650a4c1ff8ca1ea",
+    "message": "xnu-12377.1.9\n\nImported from xnu-12377.1.9.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
