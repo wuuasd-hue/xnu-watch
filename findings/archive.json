@@ -219,9 +219,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/eeb2440ba085136496a90de543f848d09090d108",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -233,9 +234,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/5ecce0f050d283d922a3a68100c1a583edb432be",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -273,6 +275,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- JSTests/stress/b3-cse-fix.js ---\n@@ -0,0 +1,6 @@\n+//@ runDefault(\"--jitPolicyScale=0\", \"--validateGraphAtEachPhase=1\", \"--useConcurrentJIT=0\", \"--validateDFGClobberize=1\")\n+\n+for (let i = 0; i < 100; i++) {\n+    for (let j = 0; j < 100; j++) {\n+    }\n+}\n\n--- Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp ---\n@@ -78,18 +78,6 @@ using MemoryMatches = Vector<MemoryValue*, 1>;\n using WasmStructMatches = Vector<WasmStructFieldValue*, 1>;\n using WasmArrayMatches = Vector<WasmArrayElementValue*, 1>;\n \n-// Only these node kinds can ever become a key in CSE::m_sets (they are the\n-// dominating matches: MemoryValue / WasmStructFieldValue / WasmArrayElementValue).\n-// Used to skip the per-value m_sets hash lookup in finalize() and to assert at\n-// the add site.\n-inline bool canHaveSets(Value* value)\n-{\n-    Opcode opcode = value->opcode();\n-    return isMemoryAccess(opcode)\n-        || opcode == WasmStructGet || opcode == WasmStructSet\n-        || opcode == WasmArrayGet || opcode == WasmArraySet;\n-}\n-\n class MemoryValueMap {\n public:\n     MemoryValueMap() { }\n@@ -444,7 +432,7 @@ class CSE {\n             if (m_blocksWithSets.contains(block)) {\n                 for (unsigned valueIndex = 0; valueIndex < block->size(); ++valueIndex) {\n                     Value* value = block->at(valueIndex);\n-                    if (!canHaveSets(value))\n+                    if (!m_matched.contains(value))\n                         continue;\n                     auto iter = m_sets.find(value);\n                     if (iter == m_sets.end())\n@@ -977,9 +965,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (MemoryValue* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n             auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             Value* value = replace(match, extras);\n             if (!value) {\n                 if (match->isStore())\n@@ -1251,9 +1239,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (auto* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n-            Vector<Value*>& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             auto* value = replace(match, extras);\n             ASSERT(value);\n             m_ssa->newDef(var, match->owner, value);\n@@ -1475,9 +1463,9 @@ class CSE {\n         m_value->replaceWithIdentity(placeholder);\n \n         for (auto* match : matches) {\n-            ASSERT(canHaveSets(match));\n             m_blocksWithSets.add(match->owner);\n-            Vector<Value*>& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            auto& extras = m_sets.add(match, Vector<Value*>()).iterator->value;\n+            m_matched.add(match);\n             auto* value = replace(match, extras);\n             ASSERT(value);\n             m_ssa->newDef(var, match->owner, value);\n@@ -1591,6 +1579,7 @@ class CSE {\n     // Match -> extra fixup values (e.g. BitAnd masks for packed Wasm types),\n     // flushed at match site during finalize().\n     UncheckedKeyHashMap<Value*, Vector<Value*>> m_sets;\n+    IndexSet<Value*> m_matched;\n     // Blocks that own at least one m_sets key, so finalize() can skip whole blocks.\n     IndexSet<BasicBlock*> m_blocksWithSets;\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "c96c07c35cc49de658a762231a6f984545f714ce",
+    "message": "[JSC] Use direct 3-character append for `\"%XY\"` escapes in `encode()`\nhttps://bugs.webkit.org/show_bug.cgi?id=318334\n\nReviewed by Yusuke Suzuki.\n\nencode() (shared by encodeURIComponent / encodeURI / escape) emits each\nescaped octet with two StringBuilder appends, where the second one goes\nthrough th",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/microbenchmarks/encode-uri-component-query-string.js ---\n@@ -0,0 +1,18 @@\n+// Tests encodeURIComponent on query-string payloads full of spaces, quotes,\n+// ampersands and percent signs, mimicking building fetch URLs from JSON values.\n+\n+const values = [];\n+for (let j = 0; j < 16; j++)\n+    values.push('user query ' + j + ': {\"name\":\"Alice & Bob\",\"tags\":[\"a b\",\"c=d\"],\"note\":\"100% legit, really?\",\"page\":' + j + '}');\n+\n+let expected = 0;\n+for (let j = 0; j < 16; j++)\n+    expected += encodeURIComponent(values[j]).length;\n+\n+const iterations = 200000;\n+let sum = 0;\n+for (let i = 0; i < iterations; i++)\n+    sum += encodeURIComponent(values[i & 15]).length;\n+\n+if (sum !== expected * (iterations / 16))\n+    throw new Error(\"bad result: \" + sum);\n\n--- JSTests/microbenchmarks/encode-uri-component-unicode.js ---\n@@ -0,0 +1,18 @@\n+// Tests encodeURIComponent on non-ASCII text where every character expands to\n+// multiple %XY escape sequences.\n+\n+const values = [];\n+for (let j = 0; j < 16; j++)\n+    values.push('検索クエリ' + j + ': 東京都渋谷区の天気予報と交通情報を教えてください \\u{1F600}\\u{1F680}');\n+\n+let expected = 0;\n+for (let j = 0; j < 16; j++)\n+    expected += encodeURIComponent(values[j]).length;\n+\n+const iterations = 100000;\n+let sum = 0;\n+for (let i = 0; i < iterations; i++)\n+    sum += encodeURIComponent(values[i & 15]).length;\n+\n+if (sum !== expected * (iterations / 16))\n+    throw new Error(\"bad result: \" + sum);\n\n--- Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp ---\n@@ -126,8 +126,9 @@ static JSValue encode(JSGlobalObject* globalObject, const WTF::BitSet<256>& doNo\n             // 4-d-vi-1. Let jOctet be the value at index j within Octets.\n             // 4-d-vi-2. Let S be a String containing three code units \"%XY\" where XY are two uppercase hexadecimal digits encoding the value of jOctet.\n             // 4-d-vi-3. Let R be a new String value computed by concatenating the previous value of R and S.\n-            builder.append('%');\n-            builder.append(hex(utf8OctetsBuffer[index], 2));\n+            auto octet = utf8OctetsBuffer[index];\n+            std::array<Latin1Character, 3> escaped { '%', static_cast<Latin1Character>(upperNibbleToASCIIHexDigit(octet)), static_cast<Latin1Character>(lowerNibbleToASCIIHexDigit(octet)) };\n+            builder.append(std::span<const Latin1Character> { escaped });\n         }\n     }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/c96c07c35cc49de658a762231a6f984545f714ce",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
