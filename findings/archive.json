@@ -42,9 +42,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "apple-oss-distributions/xnu",
@@ -641,8 +642,9 @@
     "url": "https://github.com/WebKit/WebKit/commit/d90bb919af460a6d1e21164d745363b32e5e5d1e",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   }
 ]

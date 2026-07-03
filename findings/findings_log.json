@@ -1747,5 +1747,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T11:24:23.071748+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "url": "https://github.com/WebKit/WebKit/commit/d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "message": "[JSC] LICM should skip tuple consumers\nhttps://bugs.webkit.org/show_bug.cgi?id=318513\nrdar://181175678\n\nReviewed by Sosuke Suzuki.\n\nDFG LICM is running AbstractInterpreter and safeToExecute with\nDFGAtTailAbstractState, but\n\n1. DFG LICM's safeToExecute is not correctly handling tuple children,\n   whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T11:26:31.963282+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/8d741a5de7ff4191bf97d57b9f54c2f6d4a15585",
+    "message": "xnu-11215.1.10\n\nImported from xnu-11215.1.10.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
