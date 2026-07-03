@@ -1507,5 +1507,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T01:27:10.865537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "url": "https://github.com/WebKit/WebKit/commit/15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "message": "[JSC] DeferredWorkTimer should vend Weak references to Tickets\nhttps://bugs.webkit.org/show_bug.cgi?id=314671\nrdar://176445072\n\nReviewed by Yijia Huang.\n\nDeferredWorkTimer::addPendingWork returned a raw Ticket (alias for TicketData*),\nand callers routinely captured that raw pointer into SharedTask l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T01:29:18.140522+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "url": "https://github.com/WebKit/WebKit/commit/fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "message": "Navigating away from a render-blocked document before it is revealed incorrectly reveals it and starts a cross-document view transition.\nhttps://bugs.webkit.org/show_bug.cgi?id=318401\nrdar://181191512\n\nReviewed by Tim Nguyen.\n\nWhen a render-blocked document is navigated away from before its first\nre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T01:31:25.717853+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "url": "https://github.com/WebKit/WebKit/commit/15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "message": "[JSC] DeferredWorkTimer should vend Weak references to Tickets\nhttps://bugs.webkit.org/show_bug.cgi?id=314671\nrdar://176445072\n\nReviewed by Yijia Huang.\n\nDeferredWorkTimer::addPendingWork returned a raw Ticket (alias for TicketData*),\nand callers routinely captured that raw pointer into SharedTask l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T01:33:32.778305+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "url": "https://github.com/WebKit/WebKit/commit/fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "message": "Navigating away from a render-blocked document before it is revealed incorrectly reveals it and starts a cross-document view transition.\nhttps://bugs.webkit.org/show_bug.cgi?id=318401\nrdar://181191512\n\nReviewed by Tim Nguyen.\n\nWhen a render-blocked document is navigated away from before its first\nre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
