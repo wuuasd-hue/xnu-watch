@@ -1827,5 +1827,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T15:33:25.109678+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "url": "https://github.com/WebKit/WebKit/commit/a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "message": "[WebCore] Unconditionally pin AudioBuffer data in AudioBufferSourceNode::setBufferForBindings\nhttps://bugs.webkit.org/show_bug.cgi?id=313857\nrdar://174651279\n\nReviewed by Chris Dumez.\n\nWhen a page tries to write an ArrayBuffer of audio data to an audio node\n(writing to node.buffer), the page can fre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T15:35:34.069881+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "url": "https://github.com/WebKit/WebKit/commit/a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "message": "[WebCore] Unconditionally pin AudioBuffer data in AudioBufferSourceNode::setBufferForBindings\nhttps://bugs.webkit.org/show_bug.cgi?id=313857\nrdar://174651279\n\nReviewed by Chris Dumez.\n\nWhen a page tries to write an ArrayBuffer of audio data to an audio node\n(writing to node.buffer), the page can fre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T15:37:44.082324+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "message": "dyld-1376.6\n\nImported from dyld-1376.6.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
