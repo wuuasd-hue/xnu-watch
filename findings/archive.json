@@ -58,9 +58,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "apple-oss-distributions/dyld",
@@ -73,9 +74,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "apple-oss-distributions/dyld",

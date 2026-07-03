@@ -1787,5 +1787,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T13:19:50.670074+00:00",
+    "repo": "apple-oss-distributions/xnu",
+    "sha": "94d3b452840153a99b38a3a9659680b2a006908e",
+    "url": "https://github.com/apple-oss-distributions/xnu/commit/94d3b452840153a99b38a3a9659680b2a006908e",
+    "message": "xnu-10063.101.15\n\nImported from xnu-10063.101.15.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T13:21:57.729107+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "message": "dyld-1378\n\nImported from dyld-1378.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
