@@ -2127,5 +2127,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T22:51:52.375960+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "url": "https://github.com/WebKit/WebKit/commit/a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "message": "[JSC][Temporal] Polish Temporal.PlainDateTime: spec alignment, constructor and round() fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=318454\nrdar://181253131\n\nReviewed by Yusuke Suzuki.\n\nFix two spec-conformance bugs, remove dead code, and align spec-step\ncomments across Temporal.PlainDateTime.\n\nThe ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T22:53:59.747412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "url": "https://github.com/WebKit/WebKit/commit/a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "message": "[JSC][Temporal] Polish Temporal.PlainDateTime: spec alignment, constructor and round() fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=318454\nrdar://181253131\n\nReviewed by Yusuke Suzuki.\n\nFix two spec-conformance bugs, remove dead code, and align spec-step\ncomments across Temporal.PlainDateTime.\n\nThe ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T22:56:06.998144+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "message": "Security-61123.100.169\n\nImported from Security-61123.100.169.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
