@@ -1987,5 +1987,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T20:08:39.395683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "url": "https://github.com/WebKit/WebKit/commit/7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nReland of 316413@main with a fix for the SaferCPP EWS build, which still\nuses Xcode 26.2.\n\nOur `AvailabilityProhibitedInternal.h` inje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T20:11:12.791376+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "url": "https://github.com/WebKit/WebKit/commit/7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nReland of 316413@main with a fix for the SaferCPP EWS build, which still\nuses Xcode 26.2.\n\nOur `AvailabilityProhibitedInternal.h` inje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-03T20:13:20.636698+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "3dab46a11f45f2ffdbd70e2127cc5a8ce4a1f222",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/3dab46a11f45f2ffdbd70e2127cc5a8ce4a1f222",
+    "message": "Security-61439.1.1\n\nImported from Security-61439.1.1.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
