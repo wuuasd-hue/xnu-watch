@@ -2707,5 +2707,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T18:49:53.987547+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "080d15ac450c9264e900ac141810ce8e71f39cca",
+    "url": "https://github.com/WebKit/WebKit/commit/080d15ac450c9264e900ac141810ce8e71f39cca",
+    "message": "Web Inspector: 'arguments' should be accessible from the console\nhttps://bugs.webkit.org/show_bug.cgi?id=121208\n<rdar://problem/14972198>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp:\n(JSC::BytecodeGenerator::BytecodeGenerator):\nForce `arguments` to be creat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T18:52:01.287243+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "080d15ac450c9264e900ac141810ce8e71f39cca",
+    "url": "https://github.com/WebKit/WebKit/commit/080d15ac450c9264e900ac141810ce8e71f39cca",
+    "message": "Web Inspector: 'arguments' should be accessible from the console\nhttps://bugs.webkit.org/show_bug.cgi?id=121208\n<rdar://problem/14972198>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp:\n(JSC::BytecodeGenerator::BytecodeGenerator):\nForce `arguments` to be creat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T18:54:08.392257+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9022c6e5ac10b05b0eb4b98eb64843422848598",
+    "url": "https://github.com/WebKit/WebKit/commit/c9022c6e5ac10b05b0eb4b98eb64843422848598",
+    "message": "Drive-by cleanups in IRO and ArrayMode\nhttps://bugs.webkit.org/show_bug.cgi?id=316679\n\nReviewed by Yusuke Suzuki.\n\nAdd some missing NODELETES to help with some other patches I have\nin progress; Also, fix an issue where hashes involving ArrayMode\ncan sometimes be wrong because of padding bits.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
