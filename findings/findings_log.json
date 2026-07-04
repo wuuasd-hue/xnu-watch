@@ -2467,5 +2467,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T12:40:47.753783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "url": "https://github.com/WebKit/WebKit/commit/f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "message": "Compromised Web Content can use a navigation-response Download policy on a data: URL to write attacker-controlled bytes to disk\nhttps://bugs.webkit.org/show_bug.cgi?id=315004\nrdar://177019828\n\nReviewed by Basuke Suzuki.\n\nA compromised Web Content process can cause the UI process to write attacker-ch",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T12:42:55.401798+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "url": "https://github.com/swiftlang/swift/commit/3aa6a9285c33b008b01514db7a3ea8edac85f107",
+    "message": "Merge pull request #90310 from mikeash/failed-type-lookup-logging-default-on\n\n[Runtime] Default to logging type lookup failures.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
