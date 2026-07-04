@@ -266,9 +266,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "WebKit/WebKit",
@@ -758,6 +759,21 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/assembler/CPU.cpp ---\n@@ -105,6 +105,34 @@ int32_t hwPhysicalCPUMax()\n \n #endif // #if (CPU(X86) || CPU(X86_64)) && OS(DARWIN)\n \n+#if CPU(ARM64) && OS(DARWIN)\n+static int32_t hwPerfLevelPhysicalCPUMax(const char* name)\n+{\n+    int32_t val = 0;\n+    size_t valSize = sizeof(val);\n+    int rc = sysctlbyname(name, &val, &valSize, nullptr, 0);\n+    if (rc < 0)\n+        return 0;\n+    return val;\n+}\n+\n+// The highest performance cores.\n+int32_t hwNumberOfP0Cores()\n+{\n+    return hwPerfLevelPhysicalCPUMax(\"hw.perflevel0.physicalcpu_max\");\n+}\n+\n+int32_t hwNumberOfP1Cores()\n+{\n+    return hwPerfLevelPhysicalCPUMax(\"hw.perflevel1.physicalcpu_max\");\n+}\n+\n+int32_t hwNumberOfP2Cores()\n+{\n+    return hwPerfLevelPhysicalCPUMax(\"hw.perflevel2.physicalcpu_max\");\n+}\n+#endif // #if CPU(ARM64) && OS(DARWIN)\n+\n #if CPU(ARM64) && !(CPU(ARM64E) || OS(MACOS))\n bool isARM64_LSE()\n {\n\n--- Source/JavaScriptCore/assembler/CPU.h ---\n@@ -206,6 +206,12 @@ ALWAYS_INLINE int64_t hwL3CacheSize() { return 0; }\n ALWAYS_INLINE int32_t hwPhysicalCPUMax() { return kernTCSMAwareNumberOfProcessorCores(); }\n #endif\n \n+#if CPU(ARM64) && OS(DARWIN)\n+int32_t hwNumberOfP0Cores();\n+int32_t hwNumberOfP1Cores();\n+int32_t hwNumberOfP2Cores();\n+#endif\n+\n constexpr size_t prologueStackPointerDelta()\n {\n #if ENABLE(C_LOOP)\n\n--- Source/JavaScriptCore/runtime/Options.cpp ---\n@@ -582,7 +582,31 @@ static void overrideDefaults()\n     }\n \n #if OS(DARWIN) && CPU(ARM64)\n-    Options::numberOfGCMarkers() = std::min<unsigned>(4, kernTCSMAwareNumberOfProcessorCores());\n+    {\n+        // Example topologies.\n+        //                P0       P1       GC\n+        // M1       :      4        4        6\n+        // M1 Pro   :      6        2        6\n+        // M1 Max   :      8        2        7\n+        // M1 Ultra :     16        4        7\n+        // M4       :    3-4      4-6      6-7\n+        // M4 Pro   :   8-10        4        7\n+        // M4 Max   :  10-12        4        7\n+        // M5       :    3-4        6        7\n+        // M5 Pro   :    5-6    10-12        7\n+        // M5 Max   :      6       12        7\n+        // A18      :      2        4        4\n+        unsigned p0 = hwNumberOfP0Cores();\n+        unsigned p1 = hwNumberOfP1Cores();\n+        unsigned gcMarkers = 0;\n+        if (p0 < 3)\n+            gcMarkers = std::min<unsigned>(4, kernTCSMAwareNumberOfProcessorCores());\n+        else if ((p0 + p1) < 9)\n+            gcMarkers = std::min<unsigned>(6, kernTCSMAwareNumberOfProcessorCores());\n+        else\n+            gcMarkers = std::min<unsigned>(7, kernTCSMAwareNumberOfProcessorCores());\n+        Options::numberOfGCMarkers() = gcMarkers;\n+    }\n \n     Options::minNumberOfWorklistThreads() = 1;\n     Options::maxNumberOfWorklistThreads() = std::min<unsigned>(4, kernTCSMAwareNumberOfProcessorCores());\n",
     "url": "https://github.com/WebKit/WebKit/commit/f0df03efe38c9dacfdb67ec002251ee110d7939f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "message": "[CMake] Fix the CMake build after 316448@main\nhttps://bugs.webkit.org/show_bug.cgi?id=318590\nrdar://181368662\n\nReviewed by Pascoe.\n\n316448@main moved DeferredWorkTimer::create() into an inline definition in\nthe class body of DeferredWorkTimer.h (the JSC-internal DeferredWorkTimerInlines.h\nwas delete",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/DeferredWorkTimer.h ---\n@@ -113,7 +113,7 @@ class DeferredWorkTimer final : public JSRunLoopTimer {\n \n     static Ref<DeferredWorkTimer> create(VM& vm) { return adoptRef(*new DeferredWorkTimer(vm)); }\n private:\n-    DeferredWorkTimer(VM&);\n+    JS_EXPORT_PRIVATE DeferredWorkTimer(VM&);\n \n     Lock m_taskLock;\n     bool m_runTasks { true };\n",
+    "url": "https://github.com/WebKit/WebKit/commit/dd186f5a3502de386ee96ceba7dfd3202d5c3466",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",

@@ -2327,5 +2327,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T07:44:53.044398+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "url": "https://github.com/WebKit/WebKit/commit/dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "message": "[CMake] Fix the CMake build after 316448@main\nhttps://bugs.webkit.org/show_bug.cgi?id=318590\nrdar://181368662\n\nReviewed by Pascoe.\n\n316448@main moved DeferredWorkTimer::create() into an inline definition in\nthe class body of DeferredWorkTimer.h (the JSC-internal DeferredWorkTimerInlines.h\nwas delete",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T07:47:01.357202+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "url": "https://github.com/WebKit/WebKit/commit/dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "message": "[CMake] Fix the CMake build after 316448@main\nhttps://bugs.webkit.org/show_bug.cgi?id=318590\nrdar://181368662\n\nReviewed by Pascoe.\n\n316448@main moved DeferredWorkTimer::create() into an inline definition in\nthe class body of DeferredWorkTimer.h (the JSC-internal DeferredWorkTimerInlines.h\nwas delete",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T07:49:08.524046+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "449c42b27f306b9b4906702b33d9f731dd558055",
+    "url": "https://github.com/WebKit/WebKit/commit/449c42b27f306b9b4906702b33d9f731dd558055",
+    "message": "ExpressionInfo::Encoder computes the offset to Extension Islands incorrectly.\nhttps://bugs.webkit.org/show_bug.cgi?id=312525\nrdar://174626446\n\nReviewed by Yijia Huang.\n\nWhen an Extension ExpressionInfo is emitted, it needs to encode a displacement offset from\nits location to the location of its exte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
