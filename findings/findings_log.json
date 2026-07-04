@@ -2427,5 +2427,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T11:20:01.008631+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c96c07c35cc49de658a762231a6f984545f714ce",
+    "url": "https://github.com/WebKit/WebKit/commit/c96c07c35cc49de658a762231a6f984545f714ce",
+    "message": "[JSC] Use direct 3-character append for `\"%XY\"` escapes in `encode()`\nhttps://bugs.webkit.org/show_bug.cgi?id=318334\n\nReviewed by Yusuke Suzuki.\n\nencode() (shared by encodeURIComponent / encodeURI / escape) emits each\nescaped octet with two StringBuilder appends, where the second one goes\nthrough th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T11:22:09.630624+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "url": "https://github.com/WebKit/WebKit/commit/630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "message": "[YARR] EOL string list optimization produces incorrect matches with multiline flag\nhttps://bugs.webkit.org/show_bug.cgi?id=318333\n\nReviewed by Yusuke Suzuki.\n\nWhen the multiline flag is set, the EOL string list optimization produces\nincorrect matches:\n\n    /^(?:a|a\\nx)$/m.exec(\"a\\nx\")   // actual(JI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
