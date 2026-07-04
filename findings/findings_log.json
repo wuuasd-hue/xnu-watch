@@ -2887,5 +2887,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T23:29:10.305233+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "url": "https://github.com/WebKit/WebKit/commit/fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "message": "[Digital Credentials] Add WebDriver BiDi digitalCredentials module for automated testing\nrdar://168941907\nhttps://bugs.webkit.org/show_bug.cgi?id=306292\n\nReviewed by BJ Burg.\n\nAdd a WebDriver BiDi digitalCredentials module that allows automated testing\nof the Digital Credentials API by simulating wa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T23:31:18.033097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "url": "https://github.com/WebKit/WebKit/commit/15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "message": "[JSC] DeferredWorkTimer should vend Weak references to Tickets\nhttps://bugs.webkit.org/show_bug.cgi?id=314671\nrdar://176445072\n\nReviewed by Yijia Huang.\n\nDeferredWorkTimer::addPendingWork returned a raw Ticket (alias for TicketData*),\nand callers routinely captured that raw pointer into SharedTask l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
