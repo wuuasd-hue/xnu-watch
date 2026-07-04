@@ -2387,5 +2387,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T09:58:41.931870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3920704e8bd7885a07987f2495a8e63de918240",
+    "url": "https://github.com/WebKit/WebKit/commit/d3920704e8bd7885a07987f2495a8e63de918240",
+    "message": "DocumentLoader::scheduleCannotShowURLError is unused\nhttps://bugs.webkit.org/show_bug.cgi?id=318308\nrdar://181101048\n\nReviewed by Per Arne Vollan.\n\nThis function is unused and can be removed.\n\nNo new tests needed.\n\n* Source/WebCore/loader/DocumentLoader.cpp:\n(WebCore::DocumentLoader::scheduleCannotS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T10:00:52.449766+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "url": "https://github.com/WebKit/WebKit/commit/2bd4edbe145cfb08dec3585fe4235c01869e1d7d",
+    "message": "[JSC] Fix B3 CSE extras adjustment\nhttps://bugs.webkit.org/show_bug.cgi?id=318373\nrdar://180277164\n\nReviewed by Dan Hecht.\n\nB3 CSE can handle store with narrower width. In this case, we emit\nnarrowing operations to reuse the value. For example,\n\n    @a: Load32(...)\n    @b: Store8(@a, LocationA)\n    ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
