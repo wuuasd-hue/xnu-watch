@@ -2667,5 +2667,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T17:54:29.073713+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e33f7f21b67a916374d694d63fb5d6f00c59a65c",
+    "url": "https://github.com/WebKit/WebKit/commit/e33f7f21b67a916374d694d63fb5d6f00c59a65c",
+    "message": "Web Inspector: [SI] populate Accessibility sidebar for cross-origin iframe nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=316138\nrdar://178562336\n\nReviewed by Qianlang Chen.\n\nPort getAccessibilityPropertiesForNode onto FrameDOMAgent.\nWalks the frame's local AXObjectCache for role, label, busy, checke",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T17:56:36.369176+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "038f53fa65bf2d41bdc7b1b6639a7fef5180db68",
+    "url": "https://github.com/WebKit/WebKit/commit/038f53fa65bf2d41bdc7b1b6639a7fef5180db68",
+    "message": "Simplify script tracking privacy network request blocking\nhttps://bugs.webkit.org/show_bug.cgi?id=318165\nrdar://180971837\n\nReviewed by Matthew Finkel.\n\nCollapse network-request blocking down to a single check: block any non-main-frame subresource whose\ndestination is a targeted domain. This removes ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
