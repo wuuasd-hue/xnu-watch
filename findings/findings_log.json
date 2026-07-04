@@ -2507,5 +2507,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T14:23:11.303962+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "url": "https://github.com/WebKit/WebKit/commit/8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "message": "[JSC] Improve exception unwinding performance\nhttps://bugs.webkit.org/show_bug.cgi?id=318292\n\nReviewed by Yusuke Suzuki.\n\nI noticed that JSC is significantly slower than V8 at unwinding when an\nexception is thrown from a deep call stack. Profiling shows that most of\nthe time is spent in per-frame ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T14:25:22.228749+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "url": "https://github.com/WebKit/WebKit/commit/95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "message": "[Wasm] Don't move a failed streaming Wasm plan back to Compiled\nhttps://bugs.webkit.org/show_bug.cgi?id=318411\n\nReviewed by Yusuke Suzuki.\n\nWhen a function body fails validation during streaming compilation,\nPlan::fail moves the plan to Completed on the worklist thread. The last\nStreamingPlan's comp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T14:27:30.530106+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "url": "https://github.com/WebKit/WebKit/commit/8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "message": "[JSC] Improve exception unwinding performance\nhttps://bugs.webkit.org/show_bug.cgi?id=318292\n\nReviewed by Yusuke Suzuki.\n\nI noticed that JSC is significantly slower than V8 at unwinding when an\nexception is thrown from a deep call stack. Profiling shows that most of\nthe time is spent in per-frame ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T14:29:37.492387+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "url": "https://github.com/WebKit/WebKit/commit/95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "message": "[Wasm] Don't move a failed streaming Wasm plan back to Compiled\nhttps://bugs.webkit.org/show_bug.cgi?id=318411\n\nReviewed by Yusuke Suzuki.\n\nWhen a function body fails validation during streaming compilation,\nPlan::fail moves the plan to Completed on the worklist thread. The last\nStreamingPlan's comp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
