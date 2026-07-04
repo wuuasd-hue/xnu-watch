@@ -2767,5 +2767,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T20:03:39.993272+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a1a55949c63662f939521a257dd897030d473a0a",
+    "url": "https://github.com/WebKit/WebKit/commit/a1a55949c63662f939521a257dd897030d473a0a",
+    "message": "Check httpNavigationWithHTTPSOnlyError without constructing a new one\nhttps://bugs.webkit.org/show_bug.cgi?id=318360\nrdar://181151216\n\nReviewed by Brady Eidson.\n\nWe shouldn't need to construct a new httpNavigationWithHTTPSOnlyError just to\ncheck if the error we have is the of the same type. We inste",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T20:05:47.556949+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "824d2b29e233c469c079a02ca4c8e24108db69c7",
+    "url": "https://github.com/WebKit/WebKit/commit/824d2b29e233c469c079a02ca4c8e24108db69c7",
+    "message": "[JSC] Use modern unit/ skeleton in Intl.NumberFormat\nhttps://bugs.webkit.org/show_bug.cgi?id=318412\nrdar://181199699\n\nReviewed by Sosuke Suzuki.\n\nunit/ skeleton is encouraged in the modern ICU (ICU 67~), let's use them\ninstead of measure-unit / per-measure-unit. Also removing type field\nfrom Measure",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
