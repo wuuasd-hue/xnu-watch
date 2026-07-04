@@ -2627,5 +2627,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T16:48:38.130636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1152f3717e9b65ac9c329f3966e3733d62ce27d4",
+    "url": "https://github.com/WebKit/WebKit/commit/1152f3717e9b65ac9c329f3966e3733d62ce27d4",
+    "message": "Implement Table64 JS API\nhttps://bugs.webkit.org/show_bug.cgi?id=316725\nrdar://179172629\n\nReviewed by Yusuke Suzuki.\n\nImplement the Table64 JS API.\n\nTest: JSTests/wasm/js-api/table64-js-api.js\n\n* JSTests/wasm/js-api/table.js:\n(assert.truthy):\n* JSTests/wasm/js-api/table64-js-api.js: Added.\n(assert.e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T16:50:45.906921+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9e6d8b3c7e64475df6f44246055d2c86de86ba1",
+    "url": "https://github.com/WebKit/WebKit/commit/f9e6d8b3c7e64475df6f44246055d2c86de86ba1",
+    "message": "[JSC] getByIdMegamorphic needs a throw scope\nhttps://bugs.webkit.org/show_bug.cgi?id=314002\nrdar://176129042\n\nReviewed by Darin Adler, Yijia Huang, and Yusuke Suzuki.\n\ngetByIdMegamorphic can trigger user-defined getters, which can throw, and so\nneeds a throw scope.\n\nTest: JSTests/stress/megamorphic-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
