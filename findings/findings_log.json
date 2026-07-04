@@ -2227,5 +2227,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T01:26:55.032230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f2107b6d20520db631fb3321211c53d17c3235f",
+    "url": "https://github.com/WebKit/WebKit/commit/0f2107b6d20520db631fb3321211c53d17c3235f",
+    "message": "[JSC] Remove Air::lowerMacros\nhttps://bugs.webkit.org/show_bug.cgi?id=318177\nrdar://180988076\n\nReviewed by Yijia Huang and Justin Michaud.\n\nOriginally this phase existed because we were emitting Air inst directly\nfrom Wasm BBQ, and we do not want to emit low-level sequence of\nAir instructions for SI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-04T01:29:02.538935+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eeb2440ba085136496a90de543f848d09090d108",
+    "url": "https://github.com/WebKit/WebKit/commit/eeb2440ba085136496a90de543f848d09090d108",
+    "message": "[JSC] Inline StringSlice rope construction in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=318320\nrdar://181105431\n\nReviewed by Sosuke Suzuki.\n\nThis patch inlines StringSlice's rope construction path in FTL, as\nthis is really hot in many of workloads. We are preparing the similar\nthing to StringSubst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
