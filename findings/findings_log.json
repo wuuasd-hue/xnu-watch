@@ -2927,5 +2927,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T01:14:47.346256+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "url": "https://github.com/WebKit/WebKit/commit/3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "message": "Web Inspector: JavaScript breakpoint on a line with just a semicolon doesn't get triggered\nhttps://bugs.webkit.org/show_bug.cgi?id=272916\n<rdar://problem/126707973>\n\nReviewed by Keith Miller.\n\nDon't add a pause location for empty statements as there's nothing to execute.\n\n* Source/JavaScriptCore/par",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T01:16:56.163931+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "url": "https://github.com/WebKit/WebKit/commit/3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "message": "Web Inspector: JavaScript breakpoint on a line with just a semicolon doesn't get triggered\nhttps://bugs.webkit.org/show_bug.cgi?id=272916\n<rdar://problem/126707973>\n\nReviewed by Keith Miller.\n\nDon't add a pause location for empty statements as there's nothing to execute.\n\n* Source/JavaScriptCore/par",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T01:19:05.076416+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "url": "https://github.com/WebKit/WebKit/commit/fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "message": "Navigating away from a render-blocked document before it is revealed incorrectly reveals it and starts a cross-document view transition.\nhttps://bugs.webkit.org/show_bug.cgi?id=318401\nrdar://181191512\n\nReviewed by Tim Nguyen.\n\nWhen a render-blocked document is navigated away from before its first\nre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
