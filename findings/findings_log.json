@@ -3267,5 +3267,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T15:43:32.662918+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "url": "https://github.com/WebKit/WebKit/commit/7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nReland of 316413@main with a fix for the SaferCPP EWS build, which still\nuses Xcode 26.2.\n\nOur `AvailabilityProhibitedInternal.h` inje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T15:45:40.319063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9008f390e5fac6686348939a08b8d265f265fce",
+    "url": "https://github.com/WebKit/WebKit/commit/b9008f390e5fac6686348939a08b8d265f265fce",
+    "message": "[JSC] Make CodeBlock::updateAllNonLazyValueProfilePredictionsAndCountLiveness tight\nhttps://bugs.webkit.org/show_bug.cgi?id=314984\nrdar://177291111\n\nReviewed by Yijia Huang and Dan Hecht.\n\nThis code is extremely hot when we have large function (e.g. Air).\nThis patch avoids three independent profile.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
