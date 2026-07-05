@@ -3307,5 +3307,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T16:52:31.759324+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba9b3ab164f77b23b1dbfa862f7b498b2b3f4a0f",
+    "url": "https://github.com/WebKit/WebKit/commit/ba9b3ab164f77b23b1dbfa862f7b498b2b3f4a0f",
+    "message": "[JSC] IntlLegacyConstructedSymbol should be per-realm\nhttps://bugs.webkit.org/show_bug.cgi?id=318421\nrdar://181203630\n\nReviewed by Yijia Huang.\n\nIntlLegacyConstructedSymbol symbol should be per-realm[1].\n\n> The Intl object has an internal slot, [[FallbackSymbol]],\n> which is a new %Symbol% in the cu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T16:54:39.246193+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "url": "https://github.com/WebKit/WebKit/commit/a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "message": "[JSC][Temporal] Polish Temporal.PlainDateTime: spec alignment, constructor and round() fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=318454\nrdar://181253131\n\nReviewed by Yusuke Suzuki.\n\nFix two spec-conformance bugs, remove dead code, and align spec-step\ncomments across Temporal.PlainDateTime.\n\nThe ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
