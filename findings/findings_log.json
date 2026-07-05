@@ -3067,5 +3067,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T08:24:27.055948+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f27e23da3f50ea65b0eac233f4a84069cf17459",
+    "url": "https://github.com/WebKit/WebKit/commit/8f27e23da3f50ea65b0eac233f4a84069cf17459",
+    "message": "[JSC] `TypedArray.from()` spuriously throws when `mapFn` detaches or shrinks\nhttps://bugs.webkit.org/show_bug.cgi?id=318596\n\nReviewed by Yusuke Suzuki.\n\nThe guards added in 316137@main stop writing when mapFn detaches or shrinks\nthe source/result typed array, but they consult @typedArrayLength befor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T08:26:37.875221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f27e23da3f50ea65b0eac233f4a84069cf17459",
+    "url": "https://github.com/WebKit/WebKit/commit/8f27e23da3f50ea65b0eac233f4a84069cf17459",
+    "message": "[JSC] `TypedArray.from()` spuriously throws when `mapFn` detaches or shrinks\nhttps://bugs.webkit.org/show_bug.cgi?id=318596\n\nReviewed by Yusuke Suzuki.\n\nThe guards added in 316137@main stop writing when mapFn detaches or shrinks\nthe source/result typed array, but they consult @typedArrayLength befor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T08:28:47.671176+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "url": "https://github.com/WebKit/WebKit/commit/f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "message": "Assert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nhttps://bugs.webkit.org/show_bug.cgi?id=318088\n\nReviewed by Darin Adler.\n\nAssert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nto help find thread safety bugs. Use ASSERT_WITH_SECURITY_IMPLICATION\nto h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
