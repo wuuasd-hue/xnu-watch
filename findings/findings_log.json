@@ -2987,5 +2987,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T05:15:58.467015+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c9b3a28260f813e33d0a601c4d00a957347905e",
+    "url": "https://github.com/WebKit/WebKit/commit/7c9b3a28260f813e33d0a601c4d00a957347905e",
+    "message": "Web Inspector: Allow redefinition of let and const in REPL\nhttps://bugs.webkit.org/show_bug.cgi?id=285757\n<rdar://problem/143140659>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/runtime/VM.h:\n(JSC::VM::setAllowRedeclaringSymbols): Added.\n(JSC::VM::allowRedeclaringSymbols const): Added.\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T05:18:05.780162+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd544a668a1b7f1b72dc9fe3b15a87693874687a",
+    "url": "https://github.com/WebKit/WebKit/commit/fd544a668a1b7f1b72dc9fe3b15a87693874687a",
+    "message": "[JSC] Propagate block's frequency in B3LowerMacros\nhttps://bugs.webkit.org/show_bug.cgi?id=314612\nrdar://176852750\n\nReviewed by Justin Michaud.\n\nPropagate block's frequency correctly to the newly created\nblocks in B3LowerMacros (and B3MathExtras's graph generation).\n\n* Source/JavaScriptCore/b3/B3Low",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T05:20:13.550076+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c9b3a28260f813e33d0a601c4d00a957347905e",
+    "url": "https://github.com/WebKit/WebKit/commit/7c9b3a28260f813e33d0a601c4d00a957347905e",
+    "message": "Web Inspector: Allow redefinition of let and const in REPL\nhttps://bugs.webkit.org/show_bug.cgi?id=285757\n<rdar://problem/143140659>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/runtime/VM.h:\n(JSC::VM::setAllowRedeclaringSymbols): Added.\n(JSC::VM::allowRedeclaringSymbols const): Added.\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T05:22:20.867169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd544a668a1b7f1b72dc9fe3b15a87693874687a",
+    "url": "https://github.com/WebKit/WebKit/commit/fd544a668a1b7f1b72dc9fe3b15a87693874687a",
+    "message": "[JSC] Propagate block's frequency in B3LowerMacros\nhttps://bugs.webkit.org/show_bug.cgi?id=314612\nrdar://176852750\n\nReviewed by Justin Michaud.\n\nPropagate block's frequency correctly to the newly created\nblocks in B3LowerMacros (and B3MathExtras's graph generation).\n\n* Source/JavaScriptCore/b3/B3Low",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
