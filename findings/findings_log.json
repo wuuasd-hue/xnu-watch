@@ -3187,5 +3187,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T12:09:03.087654+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "02b44f2ad986575436f69f51863b556cbd460180",
+    "url": "https://github.com/WebKit/WebKit/commit/02b44f2ad986575436f69f51863b556cbd460180",
+    "message": "[JSC] Skip Latin-1 single-character atomization in `s.split('')`\nhttps://bugs.webkit.org/show_bug.cgi?id=318510\n\nReviewed by Yusuke Suzuki.\n\nThe empty-separator fast path of s.split(\"\") atomizes every resulting\ncharacter through toIdentifier / DeferGC / atomStringToJSStringMap\n.ensureValue, even tho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-05T12:11:10.248174+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "url": "https://github.com/WebKit/WebKit/commit/d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "message": "[JSC] LICM should skip tuple consumers\nhttps://bugs.webkit.org/show_bug.cgi?id=318513\nrdar://181175678\n\nReviewed by Sosuke Suzuki.\n\nDFG LICM is running AbstractInterpreter and safeToExecute with\nDFGAtTailAbstractState, but\n\n1. DFG LICM's safeToExecute is not correctly handling tuple children,\n   whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
