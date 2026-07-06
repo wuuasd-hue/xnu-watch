@@ -3967,5 +3967,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T21:09:42.982778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b3dbc197b140fa6c1b7383e6770bb3f1cb9be7b",
+    "url": "https://github.com/WebKit/WebKit/commit/7b3dbc197b140fa6c1b7383e6770bb3f1cb9be7b",
+    "message": "[JSC] Skip LowerEntrySwitch and SimplifyCFG if possible\nhttps://bugs.webkit.org/show_bug.cgi?id=318640\nrdar://181445350\n\nReviewed by Yijia Huang.\n\n1. Have usesEntrySwitch flag to avoid scanning the graph in Air::lowerEntrySwitch.\n   EntrySwitch is not frequently used, thus we can remember when it is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T21:11:52.280916+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a48d2303546c4bb4cce553fc3d8158d1d8e6a4d0",
+    "url": "https://github.com/WebKit/WebKit/commit/a48d2303546c4bb4cce553fc3d8158d1d8e6a4d0",
+    "message": "Make sure that MicrotaskQueue::drainImpl cannot have its micro task dispatcher being GCed while running\nhttps://bugs.webkit.org/show_bug.cgi?id=318667\nrdar://179017690\n\nReviewed by Yusuke Suzuki.\n\nWhen the dispatcher runs, GC can happen, which could destroy the JS microtask dispatcher and its intern",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
