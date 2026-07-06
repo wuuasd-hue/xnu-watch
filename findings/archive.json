@@ -987,9 +987,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/b8fd555bffe2b1ed0a6d9dd3c8c948b76d3d378a",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -1001,8 +1002,9 @@
     "url": "https://github.com/WebKit/WebKit/commit/7b3dbc197b140fa6c1b7383e6770bb3f1cb9be7b",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   }
 ]
