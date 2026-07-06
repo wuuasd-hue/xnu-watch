@@ -1022,5 +1022,35 @@
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "b88fdb90af4d3363fb018f3e9140bfdc57ce5afb",
+    "message": "Suppress duplicate CSP reports for speculative preloads\nhttps://bugs.webkit.org/show_bug.cgi?id=318371\nrdar://181161362\n\nReviewed by Ryan Reno.\n\nSpeculative preloads and the subsequent parser-driven load both run CSP checks, causing blocked\nresources to emit duplicate violation reports and events.\n\n",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- LayoutTests/imported/w3c/web-platform-tests/content-security-policy/reporting-api/reporting-api-report-to-only-sends-reports-to-first-endpoint.https.sub-expected.txt ---\n@@ -2,5 +2,5 @@\n \n PASS Test that image does not load\n PASS Event is fired\n-FAIL Violation report status OK. assert_equals: CSP report sent, but not expecting one. expected 0 but got 2\n+FAIL Violation report status OK. assert_equals: CSP report sent, but not expecting one. expected 0 but got 1\n \n\n--- LayoutTests/imported/w3c/web-platform-tests/content-security-policy/reporting/report-multiple-violations-01-expected.txt ---\n@@ -1,5 +1,5 @@\n \n \n PASS Violation report status OK.\n-FAIL Test number of sent reports. assert_equals: Report count was not what was expected. expected 2 but got 4\n+PASS Test number of sent reports.\n \n\n--- Source/WebCore/loader/cache/CachedResourceLoader.cpp ---\n@@ -510,8 +510,10 @@ bool CachedResourceLoader::allowedByContentSecurityPolicy(CachedResource::Type t\n         return true;\n \n     contentSecurityPolicy->setIsReportingToConsoleEnabled(shouldReportViolationAsConsoleMessage);\n+    contentSecurityPolicy->setIsReportingEnabled(shouldReportViolationAsConsoleMessage);\n     auto scope = makeScopeExit([&] {\n         contentSecurityPolicy->setIsReportingToConsoleEnabled(true);\n+        contentSecurityPolicy->setIsReportingEnabled(true);\n     });\n \n     // Only object-src governs object/embed elements, regardless of resource type (CSP3 §6.1.9).\n\n--- Source/WebCore/page/csp/ContentSecurityPolicy.h ---\n@@ -260,6 +260,7 @@ class ContentSecurityPolicy final : public CanMakeThreadSafeCheckedPtr<ContentSe\n     const HashAlgorithmSetCollection& hashesToReport() LIFETIME_BOUND;\n \n     void setIsReportingToConsoleEnabled(bool value) { m_isReportingToConsoleEnabled = value; }\n+    void setIsReportingEnabled(bool value) { m_isReportingEnabled = value; }\n \n     // Captures the current JavaScript source location from the call stack.\n     // Used to preserve source location across async boundaries for CSP violation reporting.\n",
+    "url": "https://github.com/WebKit/WebKit/commit/b88fdb90af4d3363fb018f3e9140bfdc57ce5afb",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "674917cb5f4d588c52ba90f416b2388af80b237b",
+    "message": "[JSC] Compact Air::Arg size\nhttps://bugs.webkit.org/show_bug.cgi?id=318671\nrdar://181480616\n\nReviewed by Tadeu Zagallo.\n\nSince valid FPImm128 is always u64x2[0] == u64x2[1], only uint64_t is\nenough to hold to represent. This patch drops m_additional and shrinking\nthe size from 32 to 24.\n\n* Source/Ja",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/air/AirArg.cpp ---\n@@ -116,14 +116,9 @@ unsigned Arg::jsHash() const\n     case BigImm:\n     case BitImm64:\n     case FPImm64:\n-        result += static_cast<unsigned>(m_offset);\n-        result += static_cast<unsigned>(m_offset >> 32);\n-        break;\n     case FPImm128:\n         result += static_cast<unsigned>(m_offset);\n         result += static_cast<unsigned>(m_offset >> 32);\n-        result += static_cast<unsigned>(m_additional);\n-        result += static_cast<unsigned>(m_additional >> 32);\n         break;\n     case SimpleAddr:\n         result += m_base.internalValue();\n\n--- Source/JavaScriptCore/b3/air/AirArg.h ---\n@@ -594,7 +594,7 @@ class Arg {\n         Arg result;\n         result.m_kind = FPImm128;\n         result.m_offset = value.u64x2[0];\n-        result.m_additional = value.u64x2[0];\n+        ASSERT(bitEquals(value, result.asV128()));\n         return result;\n     }\n \n@@ -1510,6 +1510,7 @@ class Arg {\n         if (!isARM64() && !isX86_64())\n             return false;\n \n+        // This condition is important as we only hold FPImm128 which value.u64x2[0] == value.u64x2[1].\n         WTF_ALLOW_UNSAFE_BUFFER_USAGE_BEGIN\n         if (value.u64x2[0] == value.u64x2[1])\n             return isValidFPImm64Form(value.u64x2[0]);\n@@ -1729,7 +1730,7 @@ class Arg {\n         if constexpr (is32Bit())\n             UNREACHABLE_FOR_PLATFORM();\n         ASSERT(isFPImm128());\n-        return v128_t(m_offset, m_additional);\n+        return v128_t(m_offset, m_offset);\n     }\n \n     decltype(auto) asTrustedBigImm() const\n@@ -1900,7 +1901,6 @@ class Arg {\n \n private:\n     int64_t m_offset { 0 };\n-    int64_t m_additional { 0 };\n     Kind m_kind { Invalid };\n     MacroAssembler::Extend m_extend { MacroAssembler::Extend::None };\n     JSC::SIMDInfo m_simdInfo;\n",
+    "url": "https://github.com/WebKit/WebKit/commit/674917cb5f4d588c52ba90f416b2388af80b237b",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
