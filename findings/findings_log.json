@@ -3627,5 +3627,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:14:49.195912+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "url": "https://github.com/WebKit/WebKit/commit/1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "message": "[JSC] Remove DFG TryGetById node\nhttps://bugs.webkit.org/show_bug.cgi?id=318603\n\nReviewed by Yusuke Suzuki.\n\nNow that op_try_get_by_id and the @tryGetById builtin intrinsic are gone,\nthe DFG TryGetById node is only created by the ByteCodeParser for a handful\nof intrinsics, where it performs a runtim",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:16:57.414028+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "752e7e8b0d05a5b13ce3d573bb75e7e8c86ad019",
+    "url": "https://github.com/WebKit/WebKit/commit/752e7e8b0d05a5b13ce3d573bb75e7e8c86ad019",
+    "message": "[JSC] Convert `HasOwnProperty` on the current for-in property name to `EnumeratorHasOwnProperty`\nhttps://bugs.webkit.org/show_bug.cgi?id=318528\n\nReviewed by Yusuke Suzuki.\n\nObject.prototype.hasOwnProperty.call(o, p) is a common guard inside `for (p in o)`\n(eslint's no-prototype-builtins rewrites o.h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:19:05.775506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8fd555bffe2b1ed0a6d9dd3c8c948b76d3d378a",
+    "url": "https://github.com/WebKit/WebKit/commit/b8fd555bffe2b1ed0a6d9dd3c8c948b76d3d378a",
+    "message": "[JSC] Add dumpBytecodeProfile\nhttps://bugs.webkit.org/show_bug.cgi?id=318649\nrdar://181454253\n\nReviewed by Yusuke Suzuki.\n\nExposes Profiler::Database::save() as dumpBytecodeProfile(path). Lets JS\ncallers write the profiler state mid-run instead of only at atexit, which\ncan be used to dump iteration-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:21:14.300019+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b3dbc197b140fa6c1b7383e6770bb3f1cb9be7b",
+    "url": "https://github.com/WebKit/WebKit/commit/7b3dbc197b140fa6c1b7383e6770bb3f1cb9be7b",
+    "message": "[JSC] Skip LowerEntrySwitch and SimplifyCFG if possible\nhttps://bugs.webkit.org/show_bug.cgi?id=318640\nrdar://181445350\n\nReviewed by Yijia Huang.\n\n1. Have usesEntrySwitch flag to avoid scanning the graph in Air::lowerEntrySwitch.\n   EntrySwitch is not frequently used, thus we can remember when it is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:23:22.204974+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "url": "https://github.com/WebKit/WebKit/commit/1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "message": "[JSC] Remove DFG TryGetById node\nhttps://bugs.webkit.org/show_bug.cgi?id=318603\n\nReviewed by Yusuke Suzuki.\n\nNow that op_try_get_by_id and the @tryGetById builtin intrinsic are gone,\nthe DFG TryGetById node is only created by the ByteCodeParser for a handful\nof intrinsics, where it performs a runtim",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-06T06:25:30.503918+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "752e7e8b0d05a5b13ce3d573bb75e7e8c86ad019",
+    "url": "https://github.com/WebKit/WebKit/commit/752e7e8b0d05a5b13ce3d573bb75e7e8c86ad019",
+    "message": "[JSC] Convert `HasOwnProperty` on the current for-in property name to `EnumeratorHasOwnProperty`\nhttps://bugs.webkit.org/show_bug.cgi?id=318528\n\nReviewed by Yusuke Suzuki.\n\nObject.prototype.hasOwnProperty.call(o, p) is a common guard inside `for (p in o)`\n(eslint's no-prototype-builtins rewrites o.h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
