@@ -4547,5 +4547,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T20:22:37.533069+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "url": "https://github.com/WebKit/WebKit/commit/c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "message": "[JSC] Add B3::eliminateWasmGCAllocations phase\nhttps://bugs.webkit.org/show_bug.cgi?id=318768\n\nReviewed by Justin Michaud.\n\nThis patch adds B3::eliminateWasmGCAllocations phase. This is super\nduper simple scalar replacement for WasmGC struct types. We record\nusesWasmGCStructAllocations and run this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T20:24:45.630795+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "url": "https://github.com/WebKit/WebKit/commit/c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "message": "[JSC] Add B3::eliminateWasmGCAllocations phase\nhttps://bugs.webkit.org/show_bug.cgi?id=318768\n\nReviewed by Justin Michaud.\n\nThis patch adds B3::eliminateWasmGCAllocations phase. This is super\nduper simple scalar replacement for WasmGC struct types. We record\nusesWasmGCStructAllocations and run this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T20:26:53.162932+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "message": "[re-land] Support time zone change notifications on linux\nhttps://bugs.webkit.org/show_bug.cgi?id=314414\n\nReviewed by Yusuke Suzuki.\n\nWe add a timezone change observer for linux that watches both dbus\nand /etc/localtime.\n\nWe add some testing helpers and some generated tests too. This uncovered\nan ex",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
