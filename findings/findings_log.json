@@ -4127,5 +4127,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T01:44:05.898304+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "url": "https://github.com/WebKit/WebKit/commit/ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "message": "[JSC] Add LoadVarargs operation's fast path for TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=318670\nrdar://181477718\n\nReviewed by Keith Miller.\n\nThis patch adds LoadVarargs operation's fast path for TypedArrays.\n\n                                         ToT                     Patched\n\n    lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T01:46:13.328202+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "url": "https://github.com/WebKit/WebKit/commit/d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "message": "Rename PDFDocument to PDFJSDocument\nhttps://bugs.webkit.org/show_bug.cgi?id=318709\nrdar://181523119\n\nReviewed by Taher Ali.\n\nBe more explicit since there are multiple PDF rendering paths.\n\n* Source/WebCore/Headers.cmake:\n* Source/WebCore/PlatformCocoa.cmake:\n* Source/WebCore/Sources.txt:\n* Source/We",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T01:48:21.039462+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "url": "https://github.com/WebKit/WebKit/commit/ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "message": "[JSC] Add LoadVarargs operation's fast path for TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=318670\nrdar://181477718\n\nReviewed by Keith Miller.\n\nThis patch adds LoadVarargs operation's fast path for TypedArrays.\n\n                                         ToT                     Patched\n\n    lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T01:50:28.476030+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "url": "https://github.com/WebKit/WebKit/commit/d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "message": "Rename PDFDocument to PDFJSDocument\nhttps://bugs.webkit.org/show_bug.cgi?id=318709\nrdar://181523119\n\nReviewed by Taher Ali.\n\nBe more explicit since there are multiple PDF rendering paths.\n\n* Source/WebCore/Headers.cmake:\n* Source/WebCore/PlatformCocoa.cmake:\n* Source/WebCore/Sources.txt:\n* Source/We",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
