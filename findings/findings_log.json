@@ -4707,5 +4707,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T23:44:40.020223+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "url": "https://github.com/WebKit/WebKit/commit/5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "message": "Unreviewed, reverting 316426@main (7a422d312c3c)\nhttps://bugs.webkit.org/show_bug.cgi?id=318806\nrdar://181532086\n\nNEW TEST(316426@main): [iOS macOS] TestWebKitAPI.SiteIsolation.CrossProcessHistoryTraversalCoalesce is flaky failure\n\nReverted change:\n\n    [NavigationScheduler] history.back/forward/go(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T23:46:48.408749+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "message": "dyld-1376.6\n\nImported from dyld-1376.6.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
