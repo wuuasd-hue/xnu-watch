@@ -4667,5 +4667,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T22:50:03.638358+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "238d63ac9ef54a2b8dbe7634a64664fd8df946c7",
+    "url": "https://github.com/WebKit/WebKit/commit/238d63ac9ef54a2b8dbe7634a64664fd8df946c7",
+    "message": "[JSC] Push ArrayBuffer m_locked into the pinCount\nhttps://bugs.webkit.org/show_bug.cgi?id=318706\nrdar://181518238\n\nReviewed by Yusuke Suzuki.\n\nHaving a separate lock bit is somewhat confusing and makes the\nisDetachable check more complex. Prevent underflowing the lock bit in\nthe pin by restoring it ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T22:52:11.918654+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "url": "https://github.com/WebKit/WebKit/commit/c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "message": "[JSC] Add B3::eliminateWasmGCAllocations phase\nhttps://bugs.webkit.org/show_bug.cgi?id=318768\n\nReviewed by Justin Michaud.\n\nThis patch adds B3::eliminateWasmGCAllocations phase. This is super\nduper simple scalar replacement for WasmGC struct types. We record\nusesWasmGCStructAllocations and run this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
