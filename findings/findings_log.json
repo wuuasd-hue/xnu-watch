@@ -4607,5 +4607,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T21:50:36.007630+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "url": "https://github.com/WebKit/WebKit/commit/5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "message": "Unreviewed, reverting 316426@main (7a422d312c3c)\nhttps://bugs.webkit.org/show_bug.cgi?id=318806\nrdar://181532086\n\nNEW TEST(316426@main): [iOS macOS] TestWebKitAPI.SiteIsolation.CrossProcessHistoryTraversalCoalesce is flaky failure\n\nReverted change:\n\n    [NavigationScheduler] history.back/forward/go(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T21:52:44.220625+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "url": "https://github.com/WebKit/WebKit/commit/5437ea3a77bc0ac409280e565c6c213bea644bd1",
+    "message": "Unreviewed, reverting 316426@main (7a422d312c3c)\nhttps://bugs.webkit.org/show_bug.cgi?id=318806\nrdar://181532086\n\nNEW TEST(316426@main): [iOS macOS] TestWebKitAPI.SiteIsolation.CrossProcessHistoryTraversalCoalesce is flaky failure\n\nReverted change:\n\n    [NavigationScheduler] history.back/forward/go(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T21:54:52.071052+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "228685d7d2a31dc419f5ca00554e163bac349ea5",
+    "url": "https://github.com/WebKit/WebKit/commit/228685d7d2a31dc419f5ca00554e163bac349ea5",
+    "message": "No names in Error's stacktrace for instantiateStreaming modules\nhttps://bugs.webkit.org/show_bug.cgi?id=318710\nrdar://181523735\n\nReviewed by Marcus Plutowski.\n\nThe \"name\" custom section typically follows the code section, so during\nstreaming an IPIntCallee resolved its name before that section was p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
