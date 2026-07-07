@@ -4367,5 +4367,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T14:00:23.039944+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a2bb3b59f1cc1ad49b3893af4869d267a48c0b9f",
+    "url": "https://github.com/WebKit/WebKit/commit/a2bb3b59f1cc1ad49b3893af4869d267a48c0b9f",
+    "message": "[JSC] Fold WasmGC object comparisons\nhttps://bugs.webkit.org/show_bug.cgi?id=318753\nrdar://181552309\n\nReviewed by Keith Miller.\n\nWhen Equal(@a, @b) are both WasmGC object allocations and @a != @b,\nthey must be different WasmGC cells, thus Equal(@a, @b) should be fold\ninto false. Same rule can be app",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T14:02:33.258393+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "485bcf1b176ab39831836fcfb40af6232ea21fc5",
+    "url": "https://github.com/WebKit/WebKit/commit/485bcf1b176ab39831836fcfb40af6232ea21fc5",
+    "message": "[JSC] Add fast path for `Array#concat` with multiple arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=318655\n\nReviewed by Yusuke Suzuki.\n\nArray.prototype.concat had fast paths only for 0 and 1 argument; more\narguments fell through to the generic loop, which grows the result\nincrementally. This matt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
