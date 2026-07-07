@@ -4407,5 +4407,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T16:27:41.452457+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "message": "[re-land] Support time zone change notifications on linux\nhttps://bugs.webkit.org/show_bug.cgi?id=314414\n\nReviewed by Yusuke Suzuki.\n\nWe add a timezone change observer for linux that watches both dbus\nand /etc/localtime.\n\nWe add some testing helpers and some generated tests too. This uncovered\nan ex",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T16:29:49.147042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "message": "[re-land] Support time zone change notifications on linux\nhttps://bugs.webkit.org/show_bug.cgi?id=314414\n\nReviewed by Yusuke Suzuki.\n\nWe add a timezone change observer for linux that watches both dbus\nand /etc/localtime.\n\nWe add some testing helpers and some generated tests too. This uncovered\nan ex",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-07T16:31:57.036801+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "message": "dyld-1378\n\nImported from dyld-1378.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
