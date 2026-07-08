@@ -5067,5 +5067,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T13:22:40.505110+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d70d346c664d6619e364953fbccc4122cc493ed",
+    "url": "https://github.com/WebKit/WebKit/commit/6d70d346c664d6619e364953fbccc4122cc493ed",
+    "message": "[JSC] Add LoadMegamorphicGetter IC\nhttps://bugs.webkit.org/show_bug.cgi?id=318745\nrdar://181544093\n\nReviewed by Keith Miller.\n\nCurrently our Megamorphic IC is supporting plain properties, and getter\nis always going to the slow path. But we may have some places which is\nrepeatedly calling a getter wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T13:24:49.111738+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b122d24cf65e8378b9f61177cd3cceeb9e4f066b",
+    "url": "https://github.com/swiftlang/swift/commit/b122d24cf65e8378b9f61177cd3cceeb9e4f066b",
+    "message": "Merge pull request #90003 from mikeash/concurrency-exclusivity-swift-impl\n\n[Runtime] Port the concurrency exclusivity code to Swift.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
