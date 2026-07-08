@@ -5027,5 +5027,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T11:41:45.982762+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bef2808f4db21ed58331af48a14ce9bda14e17d7",
+    "url": "https://github.com/WebKit/WebKit/commit/bef2808f4db21ed58331af48a14ce9bda14e17d7",
+    "message": "[JSC] Parse the replacement template only once in `String#replace` with a global RegExp and `'$'` substitutions\nhttps://bugs.webkit.org/show_bug.cgi?id=318418\n\nReviewed by Yusuke Suzuki.\n\nWhen the replacement string of a global RegExp replace contains '$',\nreplaceAllWithStringUsingRegExpSearch re-pa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T11:43:59.954664+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d801f1e36011760cbbdf313c054c630f24c5e359",
+    "url": "https://github.com/WebKit/WebKit/commit/d801f1e36011760cbbdf313c054c630f24c5e359",
+    "message": "[JSC] Make sizeof(Air::Arg) 16\nhttps://bugs.webkit.org/show_bug.cgi?id=318822\nrdar://181638333\n\nReviewed by Yijia Huang.\n\nThis patch shrinks sizeof(Air::Arg) from 24 to 16. This is important to\nshrink the sizeof(Air::Inst) as it includes 3 Air::Arg instances. We can\npack them since all the fields ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
