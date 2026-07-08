@@ -5387,5 +5387,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T22:53:35.915012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "url": "https://github.com/WebKit/WebKit/commit/5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "message": "Web Inspector: Site Isolation: Page domain searchInResource / searchInResources across processes\nhttps://bugs.webkit.org/show_bug.cgi?id=309222\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the inspected page's process no longer hosts\nevery frame's CachedResourceLoader, and the per-WebProcess\nBackendR",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T22:55:43.638036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e6cdb5a88d5bc752543d25f203ed3f83e8ddb70",
+    "url": "https://github.com/WebKit/WebKit/commit/1e6cdb5a88d5bc752543d25f203ed3f83e8ddb70",
+    "message": "Remove stubs for missing ICU functions on PlayStation\nhttps://bugs.webkit.org/show_bug.cgi?id=318880\n\nReviewed by Yusuke Suzuki.\n\nRemove the stub file and reference for building it.\nFunctions should now be available in dev SDKs for PlayStation.\n\n* Source/JavaScriptCore/PlatformPlayStation.cmake:\n* S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T22:57:51.293501+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "url": "https://github.com/WebKit/WebKit/commit/5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "message": "Web Inspector: Site Isolation: Page domain searchInResource / searchInResources across processes\nhttps://bugs.webkit.org/show_bug.cgi?id=309222\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the inspected page's process no longer hosts\nevery frame's CachedResourceLoader, and the per-WebProcess\nBackendR",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T22:59:58.751084+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e6cdb5a88d5bc752543d25f203ed3f83e8ddb70",
+    "url": "https://github.com/WebKit/WebKit/commit/1e6cdb5a88d5bc752543d25f203ed3f83e8ddb70",
+    "message": "Remove stubs for missing ICU functions on PlayStation\nhttps://bugs.webkit.org/show_bug.cgi?id=318880\n\nReviewed by Yusuke Suzuki.\n\nRemove the stub file and reference for building it.\nFunctions should now be available in dev SDKs for PlayStation.\n\n* Source/JavaScriptCore/PlatformPlayStation.cmake:\n* S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
