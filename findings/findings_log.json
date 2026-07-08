@@ -5147,5 +5147,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T17:16:49.198139+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "url": "https://github.com/WebKit/WebKit/commit/75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "message": "[Navigation API] Subframe back/forward traversal abandons local sibling frames after a RemoteFrame under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318483\nrdar://181274065\n\nReviewed by Rupin Mittal.\n\nUnder Site Isolation a cross-origin subframe is a RemoteFrame that lives in another WebP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T17:18:58.783040+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "url": "https://github.com/WebKit/WebKit/commit/fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "message": "[JSC][WASM][Debugger] Replace polling-based STW participation with VMBlockingScope\nhttps://bugs.webkit.org/show_bug.cgi?id=316687\nrdar://179141754\n\nReviewed by Mark Lam.\n\nWorker threads blocked in Atomics.wait/memory.atomic.wait or WebCore synchronous\noperations (SubtleCrypto, IndexedDB, WebSocket, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T17:21:07.593105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "url": "https://github.com/WebKit/WebKit/commit/75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "message": "[Navigation API] Subframe back/forward traversal abandons local sibling frames after a RemoteFrame under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318483\nrdar://181274065\n\nReviewed by Rupin Mittal.\n\nUnder Site Isolation a cross-origin subframe is a RemoteFrame that lives in another WebP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T17:23:16.349831+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "url": "https://github.com/WebKit/WebKit/commit/fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "message": "[JSC][WASM][Debugger] Replace polling-based STW participation with VMBlockingScope\nhttps://bugs.webkit.org/show_bug.cgi?id=316687\nrdar://179141754\n\nReviewed by Mark Lam.\n\nWorker threads blocked in Atomics.wait/memory.atomic.wait or WebCore synchronous\noperations (SubtleCrypto, IndexedDB, WebSocket, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
