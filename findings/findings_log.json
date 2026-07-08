@@ -5287,5 +5287,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T20:16:57.673387+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "url": "https://github.com/WebKit/WebKit/commit/fb30bac88bb45e0804e337122dc8bbf8f2fa0d00",
+    "message": "[JSC][WASM][Debugger] Replace polling-based STW participation with VMBlockingScope\nhttps://bugs.webkit.org/show_bug.cgi?id=316687\nrdar://179141754\n\nReviewed by Mark Lam.\n\nWorker threads blocked in Atomics.wait/memory.atomic.wait or WebCore synchronous\noperations (SubtleCrypto, IndexedDB, WebSocket, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T20:19:06.165207+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23eb4f85f3588a9d2b17f57e8ebe6dccc162df30",
+    "url": "https://github.com/WebKit/WebKit/commit/23eb4f85f3588a9d2b17f57e8ebe6dccc162df30",
+    "message": "[JSC] Enable Temporal object by default\nhttps://bugs.webkit.org/show_bug.cgi?id=318885\nrdar://181723535\n\nReviewed by Yusuke Suzuki.\n\nEnable the Temporal feature by default.\n\nCanonical link: https://commits.webkit.org/316742@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
