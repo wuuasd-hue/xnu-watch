@@ -6007,5 +6007,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T20:32:14.778583+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "url": "https://github.com/WebKit/WebKit/commit/5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "message": "[Site Isolation] Web Inspector: Network domain sourceMappingURL is not forwarded for memory-cached cross-origin iframe stylesheets\nhttps://bugs.webkit.org/show_bug.cgi?id=318740\n\nReviewed by BJ Burg.\n\nFollow-up to the cold-load sourceMappingURL work, https://github.com/WebKit/WebKit/pull/68571.\nUnde",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T20:34:25.189339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "url": "https://github.com/WebKit/WebKit/commit/d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "message": "[JSC][Temporal] Fix PlainYearMonth bugs and simplify helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=318876\nrdar://181713374\n\nReviewed by Yusuke Suzuki.\n\nFixes five PYM correctness bugs and consolidates the helper layers to\nmatch the spec AOs.\n\nBugs fixed:\n1. PYM.toPlainDate({day: 0|negative|NaN|Inf",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
