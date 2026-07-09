@@ -5807,5 +5807,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T14:22:47.251349+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "url": "https://github.com/WebKit/WebKit/commit/d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "message": "[JSC] Add `TokNumberInt32` token type to `LiteralParser` to remove number conversion overhead\nhttps://bugs.webkit.org/show_bug.cgi?id=318937\n\nReviewed by Yusuke Suzuki.\n\nLiteralParser's lexer already computes short integer JSON numbers as\nint32, but LiteralParserToken can only hold a double, so the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T14:24:54.675385+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c865d98b4943fe7aaad2396172c1fafac2c12899",
+    "url": "https://github.com/swiftlang/swift/commit/c865d98b4943fe7aaad2396172c1fafac2c12899",
+    "message": "Merge pull request #90397 from DougGregor/embedded-keypaths\n\n[Embedded] Support key paths in Embedded Swift",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T14:27:02.143280+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "url": "https://github.com/WebKit/WebKit/commit/d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "message": "[JSC] Add `TokNumberInt32` token type to `LiteralParser` to remove number conversion overhead\nhttps://bugs.webkit.org/show_bug.cgi?id=318937\n\nReviewed by Yusuke Suzuki.\n\nLiteralParser's lexer already computes short integer JSON numbers as\nint32, but LiteralParserToken can only hold a double, so the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T14:29:09.597926+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c865d98b4943fe7aaad2396172c1fafac2c12899",
+    "url": "https://github.com/swiftlang/swift/commit/c865d98b4943fe7aaad2396172c1fafac2c12899",
+    "message": "Merge pull request #90397 from DougGregor/embedded-keypaths\n\n[Embedded] Support key paths in Embedded Swift",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
