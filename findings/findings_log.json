@@ -5727,5 +5727,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T09:10:23.844262+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "url": "https://github.com/WebKit/WebKit/commit/1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "message": "Web Inspector: remove unused protocol code\nhttps://bugs.webkit.org/show_bug.cgi?id=318182\n\nReviewed by Tim Nguyen.\n\nAll of the following are not used anywhere in Web Inspector:\n- `CSS.CSSStyleAttribute`\n- `CSS.CSSStyleSheetHeader.title`\n- `CSS.CSSStyleSheetHeader.disabled`\n- `CSS.CSSStyleSheetBody`\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T09:12:32.743937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4e93b58dfd8e91ebdb3159fd872d98382cf8c563",
+    "url": "https://github.com/WebKit/WebKit/commit/4e93b58dfd8e91ebdb3159fd872d98382cf8c563",
+    "message": "[JSC] `Array#join` should write rope elements directly into the result buffer\nhttps://bugs.webkit.org/show_bug.cgi?id=318840\n\nReviewed by Keith Miller.\n\nArray#join's fast path resolves each rope element via view(), allocating a\nthrowaway flat StringImpl per element and copying the characters twice.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
