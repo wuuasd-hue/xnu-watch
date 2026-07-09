@@ -5627,5 +5627,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T05:53:31.110650+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "url": "https://github.com/WebKit/WebKit/commit/1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "message": "Web Inspector: remove unused protocol code\nhttps://bugs.webkit.org/show_bug.cgi?id=318182\n\nReviewed by Tim Nguyen.\n\nAll of the following are not used anywhere in Web Inspector:\n- `CSS.CSSStyleAttribute`\n- `CSS.CSSStyleSheetHeader.title`\n- `CSS.CSSStyleSheetHeader.disabled`\n- `CSS.CSSStyleSheetBody`\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T05:55:38.546084+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4e93b58dfd8e91ebdb3159fd872d98382cf8c563",
+    "url": "https://github.com/WebKit/WebKit/commit/4e93b58dfd8e91ebdb3159fd872d98382cf8c563",
+    "message": "[JSC] `Array#join` should write rope elements directly into the result buffer\nhttps://bugs.webkit.org/show_bug.cgi?id=318840\n\nReviewed by Keith Miller.\n\nArray#join's fast path resolves each rope element via view(), allocating a\nthrowaway flat StringImpl per element and copying the characters twice.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T05:57:47.220997+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "url": "https://github.com/WebKit/WebKit/commit/7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "message": "[JSC] Yarr should collect BM info for fixed-count terms\nhttps://bugs.webkit.org/show_bug.cgi?id=318665\n\nReviewed by Yusuke Suzuki.\n\ncollectBoyerMooreInfoFromTerm bails out on any term with\nquantityMaxCount != 1, so patterns spelled with counted quantifiers\nlike /\\b\\d{3}-\\d{2}-\\d{4}\\b/ never get the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T05:59:54.684227+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "url": "https://github.com/WebKit/WebKit/commit/5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "message": "[Site Isolation] Web Inspector: Network domain sourceMappingURL is not forwarded for memory-cached cross-origin iframe stylesheets\nhttps://bugs.webkit.org/show_bug.cgi?id=318740\n\nReviewed by BJ Burg.\n\nFollow-up to the cold-load sourceMappingURL work, https://github.com/WebKit/WebKit/pull/68571.\nUnde",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T06:02:02.053102+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "url": "https://github.com/WebKit/WebKit/commit/d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "message": "[JSC][Temporal] Fix PlainYearMonth bugs and simplify helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=318876\nrdar://181713374\n\nReviewed by Yusuke Suzuki.\n\nFixes five PYM correctness bugs and consolidates the helper layers to\nmatch the spec AOs.\n\nBugs fixed:\n1. PYM.toPlainDate({day: 0|negative|NaN|Inf",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
