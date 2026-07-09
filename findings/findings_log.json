@@ -5467,5 +5467,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-08T23:58:27.966131+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "488a6d56b5d806458f792c97ff38a5a3ebdca5e7",
+    "url": "https://github.com/swiftlang/swift/commit/488a6d56b5d806458f792c97ff38a5a3ebdca5e7",
+    "message": "Merge pull request ELF Metadata extraction (#87285)\n\nOverhaul the ELF runtime metadata extraction. The code now follows a symbol to a table of static start/stop pointers to each of the sections instead of parsing the ELF file trying to extract the section headers. Section headers are not available i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T00:00:36.702545+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "url": "https://github.com/WebKit/WebKit/commit/5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "message": "Web Inspector: Site Isolation: Page domain searchInResource / searchInResources across processes\nhttps://bugs.webkit.org/show_bug.cgi?id=309222\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the inspected page's process no longer hosts\nevery frame's CachedResourceLoader, and the per-WebProcess\nBackendR",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
