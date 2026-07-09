@@ -5887,5 +5887,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T17:00:30.776609+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65ee250042a1b2c540c5aa68095410b1024ab47a",
+    "url": "https://github.com/WebKit/WebKit/commit/65ee250042a1b2c540c5aa68095410b1024ab47a",
+    "message": "[Site Isolation] Web Inspector: Network domain emulations/headers not forwarded to web process\nhttps://bugs.webkit.org/show_bug.cgi?id=318493\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the per-WebProcess WebCore inspector agents\n(InspectorNetworkAgent / PageNetworkAgent) early-return from enable(),",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T17:02:39.534337+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2de233cfdb90e022d982dddbcc669d488c80f879",
+    "url": "https://github.com/WebKit/WebKit/commit/2de233cfdb90e022d982dddbcc669d488c80f879",
+    "message": "Unreviewed, reverting 316794@main (1a159c20bace)\nhttps://bugs.webkit.org/show_bug.cgi?id=318958\nrdar://181804700\n\nREGRESSION(316794@main): Disruptive changes found, in project bmalloc\n\nReverted change:\n\n    Web Inspector: remove unused protocol code\n    https://bugs.webkit.org/show_bug.cgi?id=318182",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T17:04:48.538610+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65ee250042a1b2c540c5aa68095410b1024ab47a",
+    "url": "https://github.com/WebKit/WebKit/commit/65ee250042a1b2c540c5aa68095410b1024ab47a",
+    "message": "[Site Isolation] Web Inspector: Network domain emulations/headers not forwarded to web process\nhttps://bugs.webkit.org/show_bug.cgi?id=318493\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the per-WebProcess WebCore inspector agents\n(InspectorNetworkAgent / PageNetworkAgent) early-return from enable(),",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-09T17:07:05.717669+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2de233cfdb90e022d982dddbcc669d488c80f879",
+    "url": "https://github.com/WebKit/WebKit/commit/2de233cfdb90e022d982dddbcc669d488c80f879",
+    "message": "Unreviewed, reverting 316794@main (1a159c20bace)\nhttps://bugs.webkit.org/show_bug.cgi?id=318958\nrdar://181804700\n\nREGRESSION(316794@main): Disruptive changes found, in project bmalloc\n\nReverted change:\n\n    Web Inspector: remove unused protocol code\n    https://bugs.webkit.org/show_bug.cgi?id=318182",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
