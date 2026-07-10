@@ -6727,5 +6727,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T22:51:55.115110+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "url": "https://github.com/WebKit/WebKit/commit/707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "message": "PromiseResolveThenableJob should reject the promise when SpeciesConstructor throws\nhttps://bugs.webkit.org/show_bug.cgi?id=318399\n\nReviewed by Yusuke Suzuki.\n\nnew Promise(r => r(p)) never settles when p is a Promise whose own\nconstructor[@@species] getter throws: promiseResolveThenableJobFastSlow\nan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T22:54:03.103088+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "url": "https://github.com/WebKit/WebKit/commit/707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "message": "PromiseResolveThenableJob should reject the promise when SpeciesConstructor throws\nhttps://bugs.webkit.org/show_bug.cgi?id=318399\n\nReviewed by Yusuke Suzuki.\n\nnew Promise(r => r(p)) never settles when p is a Promise whose own\nconstructor[@@species] getter throws: promiseResolveThenableJobFastSlow\nan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T22:56:10.276412+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "url": "https://github.com/swiftlang/swift/commit/fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "message": "Merge pull request #90521 from compnerd/funnel\n\nruntime: account for InstanceAddressPoint in alloc and dealloc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
