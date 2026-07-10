@@ -6167,5 +6167,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T01:06:49.643035+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "url": "https://github.com/WebKit/WebKit/commit/7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "message": "[JSC] Yarr should collect BM info for fixed-count terms\nhttps://bugs.webkit.org/show_bug.cgi?id=318665\n\nReviewed by Yusuke Suzuki.\n\ncollectBoyerMooreInfoFromTerm bails out on any term with\nquantityMaxCount != 1, so patterns spelled with counted quantifiers\nlike /\\b\\d{3}-\\d{2}-\\d{4}\\b/ never get the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T01:08:58.718819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "url": "https://github.com/WebKit/WebKit/commit/d981384b263dcf7b8d6f247fc803fa9d34c7c449",
+    "message": "[JSC] Add `TokNumberInt32` token type to `LiteralParser` to remove number conversion overhead\nhttps://bugs.webkit.org/show_bug.cgi?id=318937\n\nReviewed by Yusuke Suzuki.\n\nLiteralParser's lexer already computes short integer JSON numbers as\nint32, but LiteralParserToken can only hold a double, so the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
