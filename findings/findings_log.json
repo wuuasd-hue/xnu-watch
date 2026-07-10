@@ -6307,5 +6307,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T11:40:48.711684+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdd3b71e35c2327ec2eeb82a52c1e86e7fbd0e3a",
+    "url": "https://github.com/WebKit/WebKit/commit/bdd3b71e35c2327ec2eeb82a52c1e86e7fbd0e3a",
+    "message": "[JSC][Temporal] Fix PlainMonthDay bugs and simplify helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=318977\nrdar://181832650\n\nReviewed by Yusuke Suzuki.\n\nFixes six PMD correctness bugs uncovered by a full audit against V8\nand temporal_rs.\n\nBugs fixed:\n.toPlainDate({era, eraYear}) threw TypeError on e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T11:42:56.662206+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eaf77a3bea205399e1e83395b5b20cc2fac8f347",
+    "url": "https://github.com/WebKit/WebKit/commit/eaf77a3bea205399e1e83395b5b20cc2fac8f347",
+    "message": "Add a test page for unit tests\nhttps://bugs.webkit.org/show_bug.cgi?id=318499\nrdar://181282877\n\nReviewed by Sammy Gill.\n\nTestPageHarness creates a headless WebCore::Page (with a LocalFrame,\nLocalFrameView, and Document) for unit testing WebCore code that\ndepends on layout, e.g. anything that needs a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
