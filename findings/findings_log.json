@@ -6387,5 +6387,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:12:38.577326+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "url": "https://github.com/WebKit/WebKit/commit/75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "message": "[JSC][Temporal] Fix Temporal.<Type>.prototype.constructor before first access\nhttps://bugs.webkit.org/show_bug.cgi?id=318990\nrdar://181842591\n\nReviewed by Yusuke Suzuki.\n\nBefore Temporal.<Type> was accessed as a property for the first time,\nTemporal.Now.plainDateISO().constructor.name returned \"Obje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:14:47.380971+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "url": "https://github.com/WebKit/WebKit/commit/4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "message": "Unreviewed, reverting 316776@main (6cfa6948d6bd)\nhttps://bugs.webkit.org/show_bug.cgi?id=319099\nrdar://181768070\n\nREGRESSION(316776@main): Builds are failing with unrecognized selector \"didEvaluateModule:\" and 2 other errors\n\nReverted change:\n\n    Add WK_ENABLE_SLOW_BUILD_VERIFICATION for slow build",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:16:55.579149+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "url": "https://github.com/swiftlang/swift/commit/2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "message": "Merge pull request #90533 from etcwilde/ewilde/duplicate-metadata-sections\n\nELF Metadata: Consistent retain flags",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:19:03.273871+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "url": "https://github.com/swiftlang/swift/commit/fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "message": "Merge pull request #90521 from compnerd/funnel\n\nruntime: account for InstanceAddressPoint in alloc and dealloc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:21:12.298463+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "url": "https://github.com/WebKit/WebKit/commit/75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "message": "[JSC][Temporal] Fix Temporal.<Type>.prototype.constructor before first access\nhttps://bugs.webkit.org/show_bug.cgi?id=318990\nrdar://181842591\n\nReviewed by Yusuke Suzuki.\n\nBefore Temporal.<Type> was accessed as a property for the first time,\nTemporal.Now.plainDateISO().constructor.name returned \"Obje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T16:23:22.744778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "url": "https://github.com/WebKit/WebKit/commit/4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "message": "Unreviewed, reverting 316776@main (6cfa6948d6bd)\nhttps://bugs.webkit.org/show_bug.cgi?id=319099\nrdar://181768070\n\nREGRESSION(316776@main): Builds are failing with unrecognized selector \"didEvaluateModule:\" and 2 other errors\n\nReverted change:\n\n    Add WK_ENABLE_SLOW_BUILD_VERIFICATION for slow build",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
