@@ -6567,5 +6567,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T19:58:04.738169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "953a65db52e02007d9efe661ae18b7812f4bb594",
+    "url": "https://github.com/WebKit/WebKit/commit/953a65db52e02007d9efe661ae18b7812f4bb594",
+    "message": "Update safer C++ expectations for iOS\nhttps://bugs.webkit.org/show_bug.cgi?id=319103\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations: Added.\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T20:00:15.549218+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "url": "https://github.com/WebKit/WebKit/commit/75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "message": "[JSC][Temporal] Fix Temporal.<Type>.prototype.constructor before first access\nhttps://bugs.webkit.org/show_bug.cgi?id=318990\nrdar://181842591\n\nReviewed by Yusuke Suzuki.\n\nBefore Temporal.<Type> was accessed as a property for the first time,\nTemporal.Now.plainDateISO().constructor.name returned \"Obje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
