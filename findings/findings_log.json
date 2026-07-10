@@ -6247,5 +6247,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T08:48:25.037710+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "url": "https://github.com/WebKit/WebKit/commit/d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "message": "[JSC] Use a polymorphic cache for microtask calls\nhttps://bugs.webkit.org/show_bug.cgi?id=318847\n\nReviewed by Yusuke Suzuki.\n\nThe microtask drain loop has a call cache with a single entry. It\nremembers the last callee (executable, CodeBlock, and entry address), and\na hit skips getCallData / prepareF",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T08:50:33.288787+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "url": "https://github.com/WebKit/WebKit/commit/d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "message": "[JSC] Use a polymorphic cache for microtask calls\nhttps://bugs.webkit.org/show_bug.cgi?id=318847\n\nReviewed by Yusuke Suzuki.\n\nThe microtask drain loop has a call cache with a single entry. It\nremembers the last callee (executable, CodeBlock, and entry address), and\na hit skips getCallData / prepareF",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-10T08:52:41.178360+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2de233cfdb90e022d982dddbcc669d488c80f879",
+    "url": "https://github.com/WebKit/WebKit/commit/2de233cfdb90e022d982dddbcc669d488c80f879",
+    "message": "Unreviewed, reverting 316794@main (1a159c20bace)\nhttps://bugs.webkit.org/show_bug.cgi?id=318958\nrdar://181804700\n\nREGRESSION(316794@main): Disruptive changes found, in project bmalloc\n\nReverted change:\n\n    Web Inspector: remove unused protocol code\n    https://bugs.webkit.org/show_bug.cgi?id=318182",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
