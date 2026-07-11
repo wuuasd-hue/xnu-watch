@@ -7307,5 +7307,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T18:14:59.384785+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9e6d8b3c7e64475df6f44246055d2c86de86ba1",
+    "url": "https://github.com/WebKit/WebKit/commit/f9e6d8b3c7e64475df6f44246055d2c86de86ba1",
+    "message": "[JSC] getByIdMegamorphic needs a throw scope\nhttps://bugs.webkit.org/show_bug.cgi?id=314002\nrdar://176129042\n\nReviewed by Darin Adler, Yijia Huang, and Yusuke Suzuki.\n\ngetByIdMegamorphic can trigger user-defined getters, which can throw, and so\nneeds a throw scope.\n\nTest: JSTests/stress/megamorphic-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T18:17:11.072320+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e33f7f21b67a916374d694d63fb5d6f00c59a65c",
+    "url": "https://github.com/WebKit/WebKit/commit/e33f7f21b67a916374d694d63fb5d6f00c59a65c",
+    "message": "Web Inspector: [SI] populate Accessibility sidebar for cross-origin iframe nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=316138\nrdar://178562336\n\nReviewed by Qianlang Chen.\n\nPort getAccessibilityPropertiesForNode onto FrameDOMAgent.\nWalks the frame's local AXObjectCache for role, label, busy, checke",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
