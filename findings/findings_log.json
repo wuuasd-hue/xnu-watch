@@ -7067,5 +7067,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T11:42:36.426241+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eeb2440ba085136496a90de543f848d09090d108",
+    "url": "https://github.com/WebKit/WebKit/commit/eeb2440ba085136496a90de543f848d09090d108",
+    "message": "[JSC] Inline StringSlice rope construction in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=318320\nrdar://181105431\n\nReviewed by Sosuke Suzuki.\n\nThis patch inlines StringSlice's rope construction path in FTL, as\nthis is really hot in many of workloads. We are preparing the similar\nthing to StringSubst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T11:44:44.915891+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ecce0f050d283d922a3a68100c1a583edb432be",
+    "url": "https://github.com/WebKit/WebKit/commit/5ecce0f050d283d922a3a68100c1a583edb432be",
+    "message": "[JSC] Manually pipeline memory fetching for GC marking\nhttps://bugs.webkit.org/show_bug.cgi?id=318297\nrdar://181088818\n\nReviewed by Keith Miller and Dan Hecht.\n\nIn GC marking, the highest cost comes from marking a large graph, and it\nis bound by a cache miss for each GC-managed cell.\n\nThis patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
