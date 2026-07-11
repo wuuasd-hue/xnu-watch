@@ -7027,5 +7027,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T10:39:52.783580+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfd4b22815c5508b81c04d41368eb062071ce593",
+    "url": "https://github.com/WebKit/WebKit/commit/cfd4b22815c5508b81c04d41368eb062071ce593",
+    "message": "REGRESSION(316292@main): Fix WPE build\nhttps://bugs.webkit.org/show_bug.cgi?id=318361\n\nUnreviewed build fix.\n\n* Source/JavaScriptCore/bytecode/PropertyInlineCacheClearingWatchpoint.h:\n* Source/JavaScriptCore/tools/JSDollarVM.cpp:\n\nCanonical link: https://commits.webkit.org/316309@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T10:42:01.567892+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f2107b6d20520db631fb3321211c53d17c3235f",
+    "url": "https://github.com/WebKit/WebKit/commit/0f2107b6d20520db631fb3321211c53d17c3235f",
+    "message": "[JSC] Remove Air::lowerMacros\nhttps://bugs.webkit.org/show_bug.cgi?id=318177\nrdar://180988076\n\nReviewed by Yijia Huang and Justin Michaud.\n\nOriginally this phase existed because we were emitting Air inst directly\nfrom Wasm BBQ, and we do not want to emit low-level sequence of\nAir instructions for SI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
