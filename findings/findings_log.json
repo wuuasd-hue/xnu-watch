@@ -7267,5 +7267,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T17:28:43.222215+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2ccda5823d4f9aee4736a0d7fe326040704deb6",
+    "url": "https://github.com/WebKit/WebKit/commit/c2ccda5823d4f9aee4736a0d7fe326040704deb6",
+    "message": "[JSC] Some DFG intrinsics should bail out when the callee comes from another realm\nhttps://bugs.webkit.org/show_bug.cgi?id=318195\n\nReviewed by Yusuke Suzuki.\n\nSome DFG intrinsic inline paths allocate objects (iterator result objects,\niterators, result arrays) with structures from the parsing realm's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T17:30:50.669483+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1152f3717e9b65ac9c329f3966e3733d62ce27d4",
+    "url": "https://github.com/WebKit/WebKit/commit/1152f3717e9b65ac9c329f3966e3733d62ce27d4",
+    "message": "Implement Table64 JS API\nhttps://bugs.webkit.org/show_bug.cgi?id=316725\nrdar://179172629\n\nReviewed by Yusuke Suzuki.\n\nImplement the Table64 JS API.\n\nTest: JSTests/wasm/js-api/table64-js-api.js\n\n* JSTests/wasm/js-api/table.js:\n(assert.truthy):\n* JSTests/wasm/js-api/table64-js-api.js: Added.\n(assert.e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
