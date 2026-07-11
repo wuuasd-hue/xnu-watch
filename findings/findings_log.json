@@ -6847,5 +6847,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T01:16:55.430331+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "url": "https://github.com/swiftlang/swift/commit/e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "message": "Merge pull request #90558 from mikeash/protocol-conformance-less-stack\n\n[Runtime] Reduce the amount of stack space used in recursive protocol conformance checking.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T01:19:03.164810+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "url": "https://github.com/swiftlang/swift/commit/e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "message": "Merge pull request #90558 from mikeash/protocol-conformance-less-stack\n\n[Runtime] Reduce the amount of stack space used in recursive protocol conformance checking.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T01:21:10.924913+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1029c99e92ffa6735a57c79f0d436702f27e0e38",
+    "url": "https://github.com/WebKit/WebKit/commit/1029c99e92ffa6735a57c79f0d436702f27e0e38",
+    "message": "Update safer C++ expectations for macOS\nhttps://bugs.webkit.org/show_bug.cgi?id=319124\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
