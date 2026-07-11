@@ -6987,5 +6987,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T09:04:32.059705+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/0600e7bab30fbac3adcafcb6c57d3981dc682304",
+    "message": "Security-61123.100.169\n\nImported from Security-61123.100.169.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T09:06:40.415633+00:00",
+    "repo": "apple-oss-distributions/Security",
+    "sha": "ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "url": "https://github.com/apple-oss-distributions/Security/commit/ef677c3d667a44e1737c1b0245e9ed04d11c51c1",
+    "message": "Security-61040.1.3\n\nImported from Security-61040.1.3.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
