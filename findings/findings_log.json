@@ -7187,5 +7187,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T15:29:12.325385+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "url": "https://github.com/WebKit/WebKit/commit/630d6be8962a1cc6f8158ade1ea590bd5397129e",
+    "message": "[YARR] EOL string list optimization produces incorrect matches with multiline flag\nhttps://bugs.webkit.org/show_bug.cgi?id=318333\n\nReviewed by Yusuke Suzuki.\n\nWhen the multiline flag is set, the EOL string list optimization produces\nincorrect matches:\n\n    /^(?:a|a\\nx)$/m.exec(\"a\\nx\")   // actual(JI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T15:31:20.066014+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "url": "https://github.com/WebKit/WebKit/commit/f23ffb5a845006c8efbdf8a18a15f69a617fec00",
+    "message": "Compromised Web Content can use a navigation-response Download policy on a data: URL to write attacker-controlled bytes to disk\nhttps://bugs.webkit.org/show_bug.cgi?id=315004\nrdar://177019828\n\nReviewed by Basuke Suzuki.\n\nA compromised Web Content process can cause the UI process to write attacker-ch",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
