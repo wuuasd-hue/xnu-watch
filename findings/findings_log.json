@@ -7347,5 +7347,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T19:39:24.494293+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "url": "https://github.com/WebKit/WebKit/commit/f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "message": "[JSC][Temporal] Deduplicate GetISODateTimeFor and align with temporal_rs\nrdar://181926853\nhttps://bugs.webkit.org/show_bug.cgi?id=319109\n\nReviewed by Yusuke Suzuki.\n\nAdd TemporalCore::getISODateTimeFor as the single spec-AO impl; five inline\nsites now delegate to it. Introduce ISO8601::PlainDateTime",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T19:41:33.406166+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "url": "https://github.com/WebKit/WebKit/commit/f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "message": "[JSC][Temporal] Deduplicate GetISODateTimeFor and align with temporal_rs\nrdar://181926853\nhttps://bugs.webkit.org/show_bug.cgi?id=319109\n\nReviewed by Yusuke Suzuki.\n\nAdd TemporalCore::getISODateTimeFor as the single spec-AO impl; five inline\nsites now delegate to it. Introduce ISO8601::PlainDateTime",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T19:43:41.499995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "038f53fa65bf2d41bdc7b1b6639a7fef5180db68",
+    "url": "https://github.com/WebKit/WebKit/commit/038f53fa65bf2d41bdc7b1b6639a7fef5180db68",
+    "message": "Simplify script tracking privacy network request blocking\nhttps://bugs.webkit.org/show_bug.cgi?id=318165\nrdar://180971837\n\nReviewed by Matthew Finkel.\n\nCollapse network-request blocking down to a single check: block any non-main-frame subresource whose\ndestination is a targeted domain. This removes ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
