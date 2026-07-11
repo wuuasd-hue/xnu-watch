@@ -6947,5 +6947,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T07:04:46.801702+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8b9071b24ead48bdb7c31d33afdb5ee6534e6823",
+    "url": "https://github.com/WebKit/WebKit/commit/8b9071b24ead48bdb7c31d33afdb5ee6534e6823",
+    "message": "[JSC] JSON.stringify's fast path skips a non-enumerable own toJSON and a replaced array prototype\nhttps://bugs.webkit.org/show_bug.cgi?id=318507\n\nReviewed by Yusuke Suzuki.\n\nFastStringifier decides for itself whether a value can have a toJSON, and\nmisses three cases. All three silently produce wrong",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-11T07:06:55.346158+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "url": "https://github.com/swiftlang/swift/commit/e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "message": "Merge pull request #90558 from mikeash/protocol-conformance-less-stack\n\n[Runtime] Reduce the amount of stack space used in recursive protocol conformance checking.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
