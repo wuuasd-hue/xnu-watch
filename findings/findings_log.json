@@ -7667,5 +7667,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T07:25:03.523012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "url": "https://github.com/WebKit/WebKit/commit/fe161c5b7ed5c56432b7683c7bccb7d3c3015c13",
+    "message": "Navigating away from a render-blocked document before it is revealed incorrectly reveals it and starts a cross-document view transition.\nhttps://bugs.webkit.org/show_bug.cgi?id=318401\nrdar://181191512\n\nReviewed by Tim Nguyen.\n\nWhen a render-blocked document is navigated away from before its first\nre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T07:26:57.100952+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "url": "https://github.com/WebKit/WebKit/commit/f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "message": "Assert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nhttps://bugs.webkit.org/show_bug.cgi?id=318088\n\nReviewed by Darin Adler.\n\nAssert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nto help find thread safety bugs. Use ASSERT_WITH_SECURITY_IMPLICATION\nto h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
