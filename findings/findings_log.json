@@ -8007,5 +8007,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T17:33:01.867728+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "url": "https://github.com/WebKit/WebKit/commit/95b9bdf57cef88c958a1182e8a6a687e7ae8ccfa",
+    "message": "[Wasm] Don't move a failed streaming Wasm plan back to Compiled\nhttps://bugs.webkit.org/show_bug.cgi?id=318411\n\nReviewed by Yusuke Suzuki.\n\nWhen a function body fails validation during streaming compilation,\nPlan::fail moves the plan to Completed on the worklist thread. The last\nStreamingPlan's comp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T17:35:11.069421+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "080d15ac450c9264e900ac141810ce8e71f39cca",
+    "url": "https://github.com/WebKit/WebKit/commit/080d15ac450c9264e900ac141810ce8e71f39cca",
+    "message": "Web Inspector: 'arguments' should be accessible from the console\nhttps://bugs.webkit.org/show_bug.cgi?id=121208\n<rdar://problem/14972198>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp:\n(JSC::BytecodeGenerator::BytecodeGenerator):\nForce `arguments` to be creat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
