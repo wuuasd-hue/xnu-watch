@@ -7907,5 +7907,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T15:32:13.870415+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "url": "https://github.com/WebKit/WebKit/commit/e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "message": "RegExpStringIterator next can't use SpecObjectOther type check filtering\nhttps://bugs.webkit.org/show_bug.cgi?id=318142\nrdar://180958970\n\nReviewed by Yusuke Suzuki.\n\nSpecObjectOther type filtering is too wide for the assumptions of the\noperationRegExpStringIteratorNext operation. Since DFG/FTL_TYPE_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T15:34:22.364962+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "url": "https://github.com/WebKit/WebKit/commit/e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "message": "RegExpStringIterator next can't use SpecObjectOther type check filtering\nhttps://bugs.webkit.org/show_bug.cgi?id=318142\nrdar://180958970\n\nReviewed by Yusuke Suzuki.\n\nSpecObjectOther type filtering is too wide for the assumptions of the\noperationRegExpStringIteratorNext operation. Since DFG/FTL_TYPE_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T15:36:30.684196+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "url": "https://github.com/WebKit/WebKit/commit/dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "message": "[CMake] Fix the CMake build after 316448@main\nhttps://bugs.webkit.org/show_bug.cgi?id=318590\nrdar://181368662\n\nReviewed by Pascoe.\n\n316448@main moved DeferredWorkTimer::create() into an inline definition in\nthe class body of DeferredWorkTimer.h (the JSC-internal DeferredWorkTimerInlines.h\nwas delete",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
