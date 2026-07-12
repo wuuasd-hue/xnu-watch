@@ -7627,5 +7627,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T04:46:29.498895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "url": "https://github.com/WebKit/WebKit/commit/dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "message": "[JSC][Temporal] Fix declaration style: JS_EXPORT_PRIVATE order + missing TZone IMPLs\nhttps://bugs.webkit.org/show_bug.cgi?id=319172\nrdar://182008627\n\nReviewed by Yusuke Suzuki.\n\nMove JS_EXPORT_PRIVATE before the return type in 83 sites across 11\ntemporal headers. Aligns with the JSC-wide convention ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T04:48:36.513670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "url": "https://github.com/WebKit/WebKit/commit/15c117a5444a7bf7956f62facb7c0cb8008dc15c",
+    "message": "[JSC] DeferredWorkTimer should vend Weak references to Tickets\nhttps://bugs.webkit.org/show_bug.cgi?id=314671\nrdar://176445072\n\nReviewed by Yijia Huang.\n\nDeferredWorkTimer::addPendingWork returned a raw Ticket (alias for TicketData*),\nand callers routinely captured that raw pointer into SharedTask l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
