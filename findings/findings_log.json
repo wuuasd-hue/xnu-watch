@@ -8247,5 +8247,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T23:41:20.487862+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3bd19f0a328ecb8093802867eedec0b17490ce10",
+    "url": "https://github.com/WebKit/WebKit/commit/3bd19f0a328ecb8093802867eedec0b17490ce10",
+    "message": "Move object structured cloning code into JSC\nhttps://bugs.webkit.org/show_bug.cgi?id=319192\nrdar://182042710\n\nReviewed by Yusuke Suzuki.\n\nThis patch moves the final remaining structured cloning code into JSC.\nThe object cloning code is what contains the state machine and is most\nof the logic around ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T23:43:27.513176+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3bd19f0a328ecb8093802867eedec0b17490ce10",
+    "url": "https://github.com/WebKit/WebKit/commit/3bd19f0a328ecb8093802867eedec0b17490ce10",
+    "message": "Move object structured cloning code into JSC\nhttps://bugs.webkit.org/show_bug.cgi?id=319192\nrdar://182042710\n\nReviewed by Yusuke Suzuki.\n\nThis patch moves the final remaining structured cloning code into JSC.\nThe object cloning code is what contains the state machine and is most\nof the logic around ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T23:45:35.657758+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b88fdb90af4d3363fb018f3e9140bfdc57ce5afb",
+    "url": "https://github.com/WebKit/WebKit/commit/b88fdb90af4d3363fb018f3e9140bfdc57ce5afb",
+    "message": "Suppress duplicate CSP reports for speculative preloads\nhttps://bugs.webkit.org/show_bug.cgi?id=318371\nrdar://181161362\n\nReviewed by Ryan Reno.\n\nSpeculative preloads and the subsequent parser-driven load both run CSP checks, causing blocked\nresources to emit duplicate violation reports and events.\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
