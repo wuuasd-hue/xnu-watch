@@ -7867,5 +7867,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T14:22:02.124042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "url": "https://github.com/WebKit/WebKit/commit/a0433cfeb9ab17a6b63150f4eec507b660541b7b",
+    "message": "[JSC][Temporal] Polish Temporal.PlainDateTime: spec alignment, constructor and round() fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=318454\nrdar://181253131\n\nReviewed by Yusuke Suzuki.\n\nFix two spec-conformance bugs, remove dead code, and align spec-step\ncomments across Temporal.PlainDateTime.\n\nThe ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T14:24:09.570338+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f0df03efe38c9dacfdb67ec002251ee110d7939f",
+    "url": "https://github.com/WebKit/WebKit/commit/f0df03efe38c9dacfdb67ec002251ee110d7939f",
+    "message": "[JSC] Tweak number of GC threads for Apple platforms\nhttps://bugs.webkit.org/show_bug.cgi?id=318534\nrdar://181304464\n\nReviewed by Tadeu Zagallo.\n\nWith our recent GC throughput optimizations etc.[1], GC scalability gets\nimproved and now we are seeing the best GC thread numbers are changed\nfrom the pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
