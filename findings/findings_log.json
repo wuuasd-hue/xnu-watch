@@ -7707,5 +7707,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T09:24:44.497612+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f538702bc4e7b6abe58e723004d216beac074c3",
+    "url": "https://github.com/WebKit/WebKit/commit/7f538702bc4e7b6abe58e723004d216beac074c3",
+    "message": "[JSC] Prove resolved values non-thenable for `NewResolvedPromise` in DFG constant folding\nhttps://bugs.webkit.org/show_bug.cgi?id=318515\n\nReviewed by Yusuke Suzuki.\n\nReturning a value from an async function that has no await compiles to a\nNewResolvedPromise node in the DFG and FTL.\n\nNewResolvedPromi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T09:26:37.719786+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "02b44f2ad986575436f69f51863b556cbd460180",
+    "url": "https://github.com/WebKit/WebKit/commit/02b44f2ad986575436f69f51863b556cbd460180",
+    "message": "[JSC] Skip Latin-1 single-character atomization in `s.split('')`\nhttps://bugs.webkit.org/show_bug.cgi?id=318510\n\nReviewed by Yusuke Suzuki.\n\nThe empty-separator fast path of s.split(\"\") atomizes every resulting\ncharacter through toIdentifier / DeferGC / atomStringToJSStringMap\n.ensureValue, even tho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
