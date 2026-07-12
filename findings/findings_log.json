@@ -7787,5 +7787,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T11:50:40.371737+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1679b539c6174f7b2628eda2b25fb21cba830be",
+    "url": "https://github.com/WebKit/WebKit/commit/e1679b539c6174f7b2628eda2b25fb21cba830be",
+    "message": "Web Inspector: [SI] add per-frame FrameDOMStorageAgent (enable/disable)\nhttps://bugs.webkit.org/show_bug.cgi?id=316799\nrdar://179249922\n\nReviewed by BJ Burg.\n\nIntroduce FrameDOMStorageAgent, the per-frame DOMStorage agent for Site\nIsolation. Each LocalFrame's FrameInspectorController creates one, an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T11:52:48.919266+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "url": "https://github.com/WebKit/WebKit/commit/7768ef95fbb7da97cc764fa81978681994ce8c74",
+    "message": "[Build] Reenable JSC and WebCore module verifier on public SDK builds\nhttps://bugs.webkit.org/show_bug.cgi?id=317876\nrdar://177493372\n\nReviewed by Richard Robinson.\n\nReland of 316413@main with a fix for the SaferCPP EWS build, which still\nuses Xcode 26.2.\n\nOur `AvailabilityProhibitedInternal.h` inje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
