@@ -7747,5 +7747,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T10:50:44.702478+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "url": "https://github.com/WebKit/WebKit/commit/d90bb919af460a6d1e21164d745363b32e5e5d1e",
+    "message": "[JSC] LICM should skip tuple consumers\nhttps://bugs.webkit.org/show_bug.cgi?id=318513\nrdar://181175678\n\nReviewed by Sosuke Suzuki.\n\nDFG LICM is running AbstractInterpreter and safeToExecute with\nDFGAtTailAbstractState, but\n\n1. DFG LICM's safeToExecute is not correctly handling tuple children,\n   whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T10:52:51.628017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "url": "https://github.com/WebKit/WebKit/commit/a7e4fdb9545042aef190cd469efb633e442fb43c",
+    "message": "[WebCore] Unconditionally pin AudioBuffer data in AudioBufferSourceNode::setBufferForBindings\nhttps://bugs.webkit.org/show_bug.cgi?id=313857\nrdar://174651279\n\nReviewed by Chris Dumez.\n\nWhen a page tries to write an ArrayBuffer of audio data to an audio node\n(writing to node.buffer), the page can fre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
