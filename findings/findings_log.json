@@ -7567,5 +7567,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T01:18:38.920732+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "url": "https://github.com/WebKit/WebKit/commit/dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "message": "[JSC][Temporal] Fix declaration style: JS_EXPORT_PRIVATE order + missing TZone IMPLs\nhttps://bugs.webkit.org/show_bug.cgi?id=319172\nrdar://182008627\n\nReviewed by Yusuke Suzuki.\n\nMove JS_EXPORT_PRIVATE before the return type in 83 sites across 11\ntemporal headers. Aligns with the JSC-wide convention ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T01:20:52.175870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "url": "https://github.com/WebKit/WebKit/commit/dd433a43f84852e2050e9d9616e8a18376cd6eac",
+    "message": "[JSC][Temporal] Fix declaration style: JS_EXPORT_PRIVATE order + missing TZone IMPLs\nhttps://bugs.webkit.org/show_bug.cgi?id=319172\nrdar://182008627\n\nReviewed by Yusuke Suzuki.\n\nMove JS_EXPORT_PRIVATE before the return type in 83 sites across 11\ntemporal headers. Aligns with the JSC-wide convention ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T01:23:01.367292+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "url": "https://github.com/WebKit/WebKit/commit/fc22dff35d852f9e43f4d3f40924fd368b7a29e3",
+    "message": "[Digital Credentials] Add WebDriver BiDi digitalCredentials module for automated testing\nrdar://168941907\nhttps://bugs.webkit.org/show_bug.cgi?id=306292\n\nReviewed by BJ Burg.\n\nAdd a WebDriver BiDi digitalCredentials module that allows automated testing\nof the Digital Credentials API by simulating wa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
