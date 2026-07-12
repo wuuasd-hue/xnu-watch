@@ -8127,5 +8127,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T20:40:37.773126+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d5d36b5f94e2b3c92f3ac1787b6359141fa84f7",
+    "url": "https://github.com/WebKit/WebKit/commit/0d5d36b5f94e2b3c92f3ac1787b6359141fa84f7",
+    "message": "[JSC] Add RegExpExecSticky DFG node\nhttps://bugs.webkit.org/show_bug.cgi?id=318538\nrdar://181311597\n\nReviewed by Sosuke Suzuki.\n\nThis patch adds DFG RegExpExecSticky tailored path which handles sticky,\nbut not global RegExp, avoiding RegExp reload etc. by using watchpoint.\n\n* Source/JavaScriptCore/d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-12T20:42:40.984845+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "url": "https://github.com/WebKit/WebKit/commit/1cdf1c9f02aa1592b606dd986e6bd9e5b1e03efc",
+    "message": "[JSC] Remove DFG TryGetById node\nhttps://bugs.webkit.org/show_bug.cgi?id=318603\n\nReviewed by Yusuke Suzuki.\n\nNow that op_try_get_by_id and the @tryGetById builtin intrinsic are gone,\nthe DFG TryGetById node is only created by the ByteCodeParser for a handful\nof intrinsics, where it performs a runtim",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
