@@ -8827,5 +8827,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T22:43:32.622754+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2fb282a825385d9f53f09b6adc07b18f19203276",
+    "url": "https://github.com/WebKit/WebKit/commit/2fb282a825385d9f53f09b6adc07b18f19203276",
+    "message": "[JSC][Temporal] Fix non-ISO Calendar bugs in CalendarICUBridge\nhttps://bugs.webkit.org/show_bug.cgi?id=319278\nrdar://182118211\n\nReviewed by Yusuke Suzuki.\n\nFour bugs found by cross-checking against temporal_rs and icu4x:\n\n1. Coptic / Ethiopic `am` era was mapped to ICU era 0 (before-AM); the\ncorrect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T22:45:44.205577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2fb282a825385d9f53f09b6adc07b18f19203276",
+    "url": "https://github.com/WebKit/WebKit/commit/2fb282a825385d9f53f09b6adc07b18f19203276",
+    "message": "[JSC][Temporal] Fix non-ISO Calendar bugs in CalendarICUBridge\nhttps://bugs.webkit.org/show_bug.cgi?id=319278\nrdar://182118211\n\nReviewed by Yusuke Suzuki.\n\nFour bugs found by cross-checking against temporal_rs and icu4x:\n\n1. Coptic / Ethiopic `am` era was mapped to ICU era 0 (before-AM); the\ncorrect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T22:47:54.772555+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/65d36770c7a64316ceb12e0e9d57930fe9f8a5a7",
+    "message": "[re-land] Support time zone change notifications on linux\nhttps://bugs.webkit.org/show_bug.cgi?id=314414\n\nReviewed by Yusuke Suzuki.\n\nWe add a timezone change observer for linux that watches both dbus\nand /etc/localtime.\n\nWe add some testing helpers and some generated tests too. This uncovered\nan ex",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
