@@ -8747,5 +8747,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T20:47:41.807025+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0df60f4248ef6652c95599d295cc4b0367f85911",
+    "url": "https://github.com/WebKit/WebKit/commit/0df60f4248ef6652c95599d295cc4b0367f85911",
+    "message": "Navigation Timing: cross-origin redirect opt-in should be based on destination origin.\nhttps://bugs.webkit.org/show_bug.cgi?id=316647\n\nReviewed by Alex Christensen.\n\nThis PR aligns the WebKit implementation with https://github.com/whatwg/fetch/pull/1931 and https://github.com/whatwg/html/pull/12513,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T20:49:49.452952+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "url": "https://github.com/WebKit/WebKit/commit/d2f342eeb886f2a78aaf8be9e7970b5160638f9c",
+    "message": "Rename PDFDocument to PDFJSDocument\nhttps://bugs.webkit.org/show_bug.cgi?id=318709\nrdar://181523119\n\nReviewed by Taher Ali.\n\nBe more explicit since there are multiple PDF rendering paths.\n\n* Source/WebCore/Headers.cmake:\n* Source/WebCore/PlatformCocoa.cmake:\n* Source/WebCore/Sources.txt:\n* Source/We",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
