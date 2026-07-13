@@ -8527,5 +8527,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T13:23:17.905130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d5a2e3a036f05666f9f21cb2026896b9f0d8a05",
+    "url": "https://github.com/WebKit/WebKit/commit/5d5a2e3a036f05666f9f21cb2026896b9f0d8a05",
+    "message": "[JSC] Make Air::simplifyCFG single path by chasing foldable blocks repeatedly\nhttps://bugs.webkit.org/show_bug.cgi?id=318653\nrdar://181461212\n\nReviewed by Yijia Huang.\n\nWe make Air::simplifyCFG better by reorganizing it into a single path\nform instead of fix-point iteration to avoid repeated graph i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T13:25:26.002021+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1482a7ad4add5a700e3b6ca6403a2a5823ac8794",
+    "url": "https://github.com/WebKit/WebKit/commit/1482a7ad4add5a700e3b6ca6403a2a5823ac8794",
+    "message": "[JSC][Temporal] Polish Temporal.ZonedDateTime: spec alignment and step annotations\nhttps://bugs.webkit.org/show_bug.cgi?id=318714\nrdar://181526020\n\nReviewed by Yusuke Suzuki.\n\nAdd per-step spec annotations across every prototype op and fix a\nspec-order divergence in withPlainTime (ToTemporalTime was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
