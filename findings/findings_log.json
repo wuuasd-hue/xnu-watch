@@ -8367,5 +8367,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T04:53:25.105826+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "url": "https://github.com/WebKit/WebKit/commit/8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "message": "[JSC] AsyncFromSyncIterator does not close correctly when the sync iterator yields a rejected value promise\nhttps://bugs.webkit.org/show_bug.cgi?id=319185\n\nReviewed by Yusuke Suzuki.\n\nPer IteratorClose[1] invoked with a throw completion, any exception thrown\nwhile getting or calling the return metho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T04:55:32.185526+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "url": "https://github.com/WebKit/WebKit/commit/94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "message": "Off-by-one out-of-bounds read in KanjiCode::judge()\nhttps://bugs.webkit.org/show_bug.cgi?id=318680\n\nReviewed by Chris Dumez.\n\nKanjiCode::judge() scans response bytes to guess a Japanese encoding\nduring charset autodetection. Two branches guard the string[i + 1]\nlookahead with (string.size() - i >= 1",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T04:57:40.334853+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "url": "https://github.com/WebKit/WebKit/commit/8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "message": "[JSC] AsyncFromSyncIterator does not close correctly when the sync iterator yields a rejected value promise\nhttps://bugs.webkit.org/show_bug.cgi?id=319185\n\nReviewed by Yusuke Suzuki.\n\nPer IteratorClose[1] invoked with a throw completion, any exception thrown\nwhile getting or calling the return metho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T04:59:47.655511+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "url": "https://github.com/WebKit/WebKit/commit/94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "message": "Off-by-one out-of-bounds read in KanjiCode::judge()\nhttps://bugs.webkit.org/show_bug.cgi?id=318680\n\nReviewed by Chris Dumez.\n\nKanjiCode::judge() scans response bytes to guess a Japanese encoding\nduring charset autodetection. Two branches guard the string[i + 1]\nlookahead with (string.size() - i >= 1",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
