@@ -8447,5 +8447,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T08:01:36.725516+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5031c9001ee2e3d43e727a6d95df8d0734bc1311",
+    "url": "https://github.com/WebKit/WebKit/commit/5031c9001ee2e3d43e727a6d95df8d0734bc1311",
+    "message": "[JSC] Implement String.raw in C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319012\nrdar://181857218\n\nReviewed by Keith Miller.\n\nThis patch implements String.raw in C++, which removes builtin JS\nversion of String.raw. Since array is frozen, builtin JS iteration does\nnot offer much in fact. We can write",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T08:03:45.845118+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "url": "https://github.com/WebKit/WebKit/commit/8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "message": "[JSC] AsyncFromSyncIterator does not close correctly when the sync iterator yields a rejected value promise\nhttps://bugs.webkit.org/show_bug.cgi?id=319185\n\nReviewed by Yusuke Suzuki.\n\nPer IteratorClose[1] invoked with a throw completion, any exception thrown\nwhile getting or calling the return metho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
