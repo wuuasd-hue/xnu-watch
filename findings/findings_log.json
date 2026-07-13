@@ -8567,5 +8567,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T16:03:42.617959+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "8338e4789e3b766296f819cea9c665a98b74d0af",
+    "url": "https://github.com/swiftlang/swift/commit/8338e4789e3b766296f819cea9c665a98b74d0af",
+    "message": "Merge pull request \"ELF Metadata: Retain the metadata table\" (#90592)\n\nRetain the metadata bounds table and mark section bounds as weak symbols so that if they are stripped in the event that the section is empty and you're working with `lld` the bounds will be `NULL` instead of causing a failed link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T16:05:50.503354+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "8338e4789e3b766296f819cea9c665a98b74d0af",
+    "url": "https://github.com/swiftlang/swift/commit/8338e4789e3b766296f819cea9c665a98b74d0af",
+    "message": "Merge pull request \"ELF Metadata: Retain the metadata table\" (#90592)\n\nRetain the metadata bounds table and mark section bounds as weak symbols so that if they are stripped in the event that the section is empty and you're working with `lld` the bounds will be `NULL` instead of causing a failed link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T16:08:01.030660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "url": "https://github.com/WebKit/WebKit/commit/ed1cdcc9fbc2934625d33e7fe246fcebcea684d7",
+    "message": "[JSC] Add LoadVarargs operation's fast path for TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=318670\nrdar://181477718\n\nReviewed by Keith Miller.\n\nThis patch adds LoadVarargs operation's fast path for TypedArrays.\n\n                                         ToT                     Patched\n\n    lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
