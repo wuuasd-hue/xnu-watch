@@ -8887,5 +8887,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T23:41:27.000434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2fb282a825385d9f53f09b6adc07b18f19203276",
+    "url": "https://github.com/WebKit/WebKit/commit/2fb282a825385d9f53f09b6adc07b18f19203276",
+    "message": "[JSC][Temporal] Fix non-ISO Calendar bugs in CalendarICUBridge\nhttps://bugs.webkit.org/show_bug.cgi?id=319278\nrdar://182118211\n\nReviewed by Yusuke Suzuki.\n\nFour bugs found by cross-checking against temporal_rs and icu4x:\n\n1. Coptic / Ethiopic `am` era was mapped to ICU era 0 (before-AM); the\ncorrect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-13T23:43:36.543234+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "228685d7d2a31dc419f5ca00554e163bac349ea5",
+    "url": "https://github.com/WebKit/WebKit/commit/228685d7d2a31dc419f5ca00554e163bac349ea5",
+    "message": "No names in Error's stacktrace for instantiateStreaming modules\nhttps://bugs.webkit.org/show_bug.cgi?id=318710\nrdar://181523735\n\nReviewed by Marcus Plutowski.\n\nThe \"name\" custom section typically follows the code section, so during\nstreaming an IPIntCallee resolved its name before that section was p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
