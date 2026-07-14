@@ -9277,5 +9277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T11:55:26.073145+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ff7d1247aaa78cc8b729f3b65f5f6b7321ad919",
+    "url": "https://github.com/WebKit/WebKit/commit/7ff7d1247aaa78cc8b729f3b65f5f6b7321ad919",
+    "message": "[JSC] `Integrity::isSanePointer()` should check alignment for typed pointers\nhttps://bugs.webkit.org/show_bug.cgi?id=319215\n\nReviewed by Yusuke Suzuki.\n\nA sane pointer to a T must be aligned like a T. Add a typed overload that\nchecks this on top of the existing canonical-address check. The void*\nove",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T11:57:33.694481+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "904ba517118749e7b0e97ded812b7b64d8b7d534",
+    "url": "https://github.com/WebKit/WebKit/commit/904ba517118749e7b0e97ded812b7b64d8b7d534",
+    "message": "[JSC] `Strong<T>` should be pointer-sized\nhttps://bugs.webkit.org/show_bug.cgi?id=319210\n\nReviewed by Yusuke Suzuki.\n\n284791@main added `virtual ~Handle() = default;` while introducing\nStrongRefTracker, doubling sizeof(Strong<T>) from 8 to 16 bytes everywhere.\nStrong<T> is final and the only subclas",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
