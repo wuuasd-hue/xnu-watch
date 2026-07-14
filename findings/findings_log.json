@@ -9657,5 +9657,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T21:29:12.997783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74cc52330394d1cad391692a951228eb6db5e8d4",
+    "url": "https://github.com/WebKit/WebKit/commit/74cc52330394d1cad391692a951228eb6db5e8d4",
+    "message": "[JSC] Use JSSlimPromiseReaction for JSAsyncGenerator queue\nhttps://bugs.webkit.org/show_bug.cgi?id=319393\nrdar://182224083\n\nReviewed by Keith Miller.\n\nWe can stop using JSFullPromiseReaction and use JSSlimPromiseReaction if\nwe apply the following changes in JSAsyncGenerator.\n\n1. We can just use circ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T21:31:20.380702+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74cc52330394d1cad391692a951228eb6db5e8d4",
+    "url": "https://github.com/WebKit/WebKit/commit/74cc52330394d1cad391692a951228eb6db5e8d4",
+    "message": "[JSC] Use JSSlimPromiseReaction for JSAsyncGenerator queue\nhttps://bugs.webkit.org/show_bug.cgi?id=319393\nrdar://182224083\n\nReviewed by Keith Miller.\n\nWe can stop using JSFullPromiseReaction and use JSSlimPromiseReaction if\nwe apply the following changes in JSAsyncGenerator.\n\n1. We can just use circ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T21:33:27.973805+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "url": "https://github.com/WebKit/WebKit/commit/d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "message": "[JSC] Move TypedArray.of from builtin JS to C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319332\nrdar://182148177\n\nReviewed by Sosuke Suzuki.\n\nThis patch moves TypedArray.of from builtin JS to C++.\nThis is trivially convertible as it is not involving callbacks etc.\nWe have a fast path for normal Typed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
