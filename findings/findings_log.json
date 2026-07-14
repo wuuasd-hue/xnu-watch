@@ -9217,5 +9217,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T10:31:35.799167+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "url": "https://github.com/WebKit/WebKit/commit/de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "message": "[CMake] Add mac-performance preset with PGO/LTO support\nhttps://bugs.webkit.org/show_bug.cgi?id=319174\nrdar://182009951\n\nReviewed by Elliott Williams.\n\nAdd a new preset: mac-performance that enables PGO/LTO. The goal of this\nmode is to reflect any future shipping CMake build as much as possible.\nI d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T10:33:44.154648+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "url": "https://github.com/WebKit/WebKit/commit/de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "message": "[CMake] Add mac-performance preset with PGO/LTO support\nhttps://bugs.webkit.org/show_bug.cgi?id=319174\nrdar://182009951\n\nReviewed by Elliott Williams.\n\nAdd a new preset: mac-performance that enables PGO/LTO. The goal of this\nmode is to reflect any future shipping CMake build as much as possible.\nI d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T10:35:51.686767+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7be57c077eda4ed04a6f77b547f01ffe214891d8",
+    "url": "https://github.com/WebKit/WebKit/commit/7be57c077eda4ed04a6f77b547f01ffe214891d8",
+    "message": "[JSC] Support cross-realm Array fast path in `forEachInIterable`\nhttps://bugs.webkit.org/show_bug.cgi?id=317731\n\nReviewed by Keith Miller.\n\nThe 2-argument getIterationMode (used only by forEachInIterable) gated FastArray\non the caller realm's isOriginalArrayStructure, so cross-realm arrays always\nfe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
