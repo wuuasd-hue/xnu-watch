@@ -9317,5 +9317,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T12:59:40.616325+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "url": "https://github.com/WebKit/WebKit/commit/c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "message": "[JSC] LLInt should record `IterationMode::Generic` in `op_iterator_next` and `op_async_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=319363\n\nReviewed by Keith Miller.\n\nUnlike the baseline JIT, the LLInt's generic branches of op_iterator_next and\nop_async_iterator_next do not record Iteratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T13:01:47.762339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1994bc0cc3e2c0f4389ba0a29df813e1b34374d7",
+    "url": "https://github.com/WebKit/WebKit/commit/1994bc0cc3e2c0f4389ba0a29df813e1b34374d7",
+    "message": "[JSC] Do not emit unreachable implicit return for arrow function expression bodies\nhttps://bugs.webkit.org/show_bug.cgi?id=319367\n\nReviewed by Tadeu Zagallo.\n\nFunctionNode::emitBytecode only recognized an explicit trailing return when\nthe function body was a single BlockNode ending with a ReturnNode",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T13:03:55.126697+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "url": "https://github.com/WebKit/WebKit/commit/c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "message": "[JSC] LLInt should record `IterationMode::Generic` in `op_iterator_next` and `op_async_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=319363\n\nReviewed by Keith Miller.\n\nUnlike the baseline JIT, the LLInt's generic branches of op_iterator_next and\nop_async_iterator_next do not record Iteratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T13:06:02.864384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1994bc0cc3e2c0f4389ba0a29df813e1b34374d7",
+    "url": "https://github.com/WebKit/WebKit/commit/1994bc0cc3e2c0f4389ba0a29df813e1b34374d7",
+    "message": "[JSC] Do not emit unreachable implicit return for arrow function expression bodies\nhttps://bugs.webkit.org/show_bug.cgi?id=319367\n\nReviewed by Tadeu Zagallo.\n\nFunctionNode::emitBytecode only recognized an explicit trailing return when\nthe function body was a single BlockNode ending with a ReturnNode",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
