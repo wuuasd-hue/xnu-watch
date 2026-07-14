@@ -9397,5 +9397,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T14:46:08.304218+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bd239bf12a80e3451870af6cd495d8c3715f4f9",
+    "url": "https://github.com/WebKit/WebKit/commit/2bd239bf12a80e3451870af6cd495d8c3715f4f9",
+    "message": "Use C++17 `inline constexpr` variables instead of `extern const` in JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=319329\nrdar://182145798\n\nReviewed by Keith Miller.\n\nThis lets the compiler see the constant values for better optimization.\n\n* Source/JavaScriptCore/b3/B3Common.cpp:\n* Source/Ja",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T14:48:21.419756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bd239bf12a80e3451870af6cd495d8c3715f4f9",
+    "url": "https://github.com/WebKit/WebKit/commit/2bd239bf12a80e3451870af6cd495d8c3715f4f9",
+    "message": "Use C++17 `inline constexpr` variables instead of `extern const` in JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=319329\nrdar://182145798\n\nReviewed by Keith Miller.\n\nThis lets the compiler see the constant values for better optimization.\n\n* Source/JavaScriptCore/b3/B3Common.cpp:\n* Source/Ja",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T14:50:31.491077+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f65bd95a4b6fb49bed341f7fda4645f1830240b",
+    "url": "https://github.com/WebKit/WebKit/commit/5f65bd95a4b6fb49bed341f7fda4645f1830240b",
+    "message": "[JSC] Cooperative driving of async generators\nhttps://bugs.webkit.org/show_bug.cgi?id=319133\nrdar://181951971\n\nReviewed by Yijia Huang.\n\nThis is our next step in the long journey towards native microtasks and\nefficient async implementation. This patch introduces cooperative\ndriving mechanism of asyn",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
