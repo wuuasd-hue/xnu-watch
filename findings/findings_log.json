@@ -9497,5 +9497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T17:39:51.284170+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "url": "https://github.com/WebKit/WebKit/commit/d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "message": "[JSC] Move TypedArray.of from builtin JS to C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319332\nrdar://182148177\n\nReviewed by Sosuke Suzuki.\n\nThis patch moves TypedArray.of from builtin JS to C++.\nThis is trivially convertible as it is not involving callbacks etc.\nWe have a fast path for normal Typed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T17:42:23.882645+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "url": "https://github.com/WebKit/WebKit/commit/d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "message": "[JSC] Move TypedArray.of from builtin JS to C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319332\nrdar://182148177\n\nReviewed by Sosuke Suzuki.\n\nThis patch moves TypedArray.of from builtin JS to C++.\nThis is trivially convertible as it is not involving callbacks etc.\nWe have a fast path for normal Typed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T17:44:31.873191+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "url": "https://github.com/WebKit/WebKit/commit/de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "message": "[CMake] Add mac-performance preset with PGO/LTO support\nhttps://bugs.webkit.org/show_bug.cgi?id=319174\nrdar://182009951\n\nReviewed by Elliott Williams.\n\nAdd a new preset: mac-performance that enables PGO/LTO. The goal of this\nmode is to reflect any future shipping CMake build as much as possible.\nI d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
