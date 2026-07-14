@@ -9777,5 +9777,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T23:25:41.153498+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74cc52330394d1cad391692a951228eb6db5e8d4",
+    "url": "https://github.com/WebKit/WebKit/commit/74cc52330394d1cad391692a951228eb6db5e8d4",
+    "message": "[JSC] Use JSSlimPromiseReaction for JSAsyncGenerator queue\nhttps://bugs.webkit.org/show_bug.cgi?id=319393\nrdar://182224083\n\nReviewed by Keith Miller.\n\nWe can stop using JSFullPromiseReaction and use JSSlimPromiseReaction if\nwe apply the following changes in JSAsyncGenerator.\n\n1. We can just use circ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T23:27:48.315112+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f854abcc8468cc480403e228da57b42ccbbee009",
+    "url": "https://github.com/WebKit/WebKit/commit/f854abcc8468cc480403e228da57b42ccbbee009",
+    "message": "[WASM] BBQ JIT omits mask before shr operation\nhttps://bugs.webkit.org/show_bug.cgi?id=270257\n\nReviewed by Yusuke Suzuki.\n\nWhen both operands of a shift are constants, BBQ folded with a raw C++\nshift. Shift counts outside [0, 31] / [0, 63] are C++ undefined behavior,\nso BBQ could disagree with OMG/I",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
