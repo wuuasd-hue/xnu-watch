@@ -9717,5 +9717,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T22:30:03.176980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f854abcc8468cc480403e228da57b42ccbbee009",
+    "url": "https://github.com/WebKit/WebKit/commit/f854abcc8468cc480403e228da57b42ccbbee009",
+    "message": "[WASM] BBQ JIT omits mask before shr operation\nhttps://bugs.webkit.org/show_bug.cgi?id=270257\n\nReviewed by Yusuke Suzuki.\n\nWhen both operands of a shift are constants, BBQ folded with a raw C++\nshift. Shift counts outside [0, 31] / [0, 63] are C++ undefined behavior,\nso BBQ could disagree with OMG/I",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T22:32:12.484576+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f854abcc8468cc480403e228da57b42ccbbee009",
+    "url": "https://github.com/WebKit/WebKit/commit/f854abcc8468cc480403e228da57b42ccbbee009",
+    "message": "[WASM] BBQ JIT omits mask before shr operation\nhttps://bugs.webkit.org/show_bug.cgi?id=270257\n\nReviewed by Yusuke Suzuki.\n\nWhen both operands of a shift are constants, BBQ folded with a raw C++\nshift. Shift counts outside [0, 31] / [0, 63] are C++ undefined behavior,\nso BBQ could disagree with OMG/I",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T22:34:21.836494+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "url": "https://github.com/WebKit/WebKit/commit/33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "message": "Unify IMAGE_ANALYSIS_ENHANCEMENTS and IMAGE_ANALYSIS flags\nhttps://bugs.webkit.org/show_bug.cgi?id=319359\nrdar://182168302\n\nReviewed by Abrar Rahman Protyasha.\n\nThey have the same value now.\n\nTests: Tools/TestWebKitAPI/Tests/WebKit/WKWebView/FullscreenVideoTextRecognition.mm\n       Tools/TestWebKitA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
