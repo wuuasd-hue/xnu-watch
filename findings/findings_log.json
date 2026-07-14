@@ -9557,5 +9557,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T18:57:54.399265+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "url": "https://github.com/WebKit/WebKit/commit/33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "message": "Unify IMAGE_ANALYSIS_ENHANCEMENTS and IMAGE_ANALYSIS flags\nhttps://bugs.webkit.org/show_bug.cgi?id=319359\nrdar://182168302\n\nReviewed by Abrar Rahman Protyasha.\n\nThey have the same value now.\n\nTests: Tools/TestWebKitAPI/Tests/WebKit/WKWebView/FullscreenVideoTextRecognition.mm\n       Tools/TestWebKitA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T19:00:03.654384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "url": "https://github.com/WebKit/WebKit/commit/33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "message": "Unify IMAGE_ANALYSIS_ENHANCEMENTS and IMAGE_ANALYSIS flags\nhttps://bugs.webkit.org/show_bug.cgi?id=319359\nrdar://182168302\n\nReviewed by Abrar Rahman Protyasha.\n\nThey have the same value now.\n\nTests: Tools/TestWebKitAPI/Tests/WebKit/WKWebView/FullscreenVideoTextRecognition.mm\n       Tools/TestWebKitA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T19:02:11.761403+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "url": "https://github.com/WebKit/WebKit/commit/c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "message": "[JSC] LLInt should record `IterationMode::Generic` in `op_iterator_next` and `op_async_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=319363\n\nReviewed by Keith Miller.\n\nUnlike the baseline JIT, the LLInt's generic branches of op_iterator_next and\nop_async_iterator_next do not record Iteratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
