@@ -8927,5 +8927,55 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T01:09:37.746475+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "238d63ac9ef54a2b8dbe7634a64664fd8df946c7",
+    "url": "https://github.com/WebKit/WebKit/commit/238d63ac9ef54a2b8dbe7634a64664fd8df946c7",
+    "message": "[JSC] Push ArrayBuffer m_locked into the pinCount\nhttps://bugs.webkit.org/show_bug.cgi?id=318706\nrdar://181518238\n\nReviewed by Yusuke Suzuki.\n\nHaving a separate lock bit is somewhat confusing and makes the\nisDetachable check more complex. Prevent underflowing the lock bit in\nthe pin by restoring it ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {
+      "llama-3.3-70b": {
+        "suspicious": true,
+        "category": "race_condition",
+        "confidence": 80,
+        "entry_point": "none",
+        "sink": "m_pinCount",
+        "reasoning_chain": "The code introduces a new function `pinAndLock` which sets the `m_pinCount` flag. The `unpin` function decrements `m_pinCount` and then checks if the old value had the `s_lockedFlag` set. This check is done using a bitwise OR operation, which may not be thread-safe. An attacker could potentially exploit a race condition between the `unpin` and `pinAndLock` functions, allowing them to manipulate the `m_pinCount` value. The `m_pinCount` variable is used to track the pin count of the ArrayBuffer, and manipulating it could lead to unexpected behavior. The `pinAndLock` function is called in the `makeShared` and `makeWasmMemory` functions, which could be entry points for an attacker.",
+        "classification": "LATENT"
+      }
+    },
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-14T01:11:48.526470+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "url": "https://github.com/WebKit/WebKit/commit/c7bfc7c0ca52b4fea117da64c8f15d5fcab32167",
+    "message": "[JSC] Add B3::eliminateWasmGCAllocations phase\nhttps://bugs.webkit.org/show_bug.cgi?id=318768\n\nReviewed by Justin Michaud.\n\nThis patch adds B3::eliminateWasmGCAllocations phase. This is super\nduper simple scalar replacement for WasmGC struct types. We record\nusesWasmGCStructAllocations and run this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
