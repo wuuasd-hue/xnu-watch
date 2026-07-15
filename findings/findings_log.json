@@ -9917,5 +9917,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T06:06:00.053834+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ea58a42a90953702692b60e2347b63075394968",
+    "url": "https://github.com/WebKit/WebKit/commit/6ea58a42a90953702692b60e2347b63075394968",
+    "message": "[JSC][Temporal][Intl.Era] Add useIntlEraMonthcode option and narrow AvailableCalendars\nhttps://bugs.webkit.org/show_bug.cgi?id=319397\nrdar://182225399\n\nReviewed by Sosuke Suzuki.\n\nAdds a new runtime option --useIntlEraMonthcode (default: off) implementing\npart of Intl.Era-monthcode (Stage 4, advance",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T06:08:07.347963+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ea58a42a90953702692b60e2347b63075394968",
+    "url": "https://github.com/WebKit/WebKit/commit/6ea58a42a90953702692b60e2347b63075394968",
+    "message": "[JSC][Temporal][Intl.Era] Add useIntlEraMonthcode option and narrow AvailableCalendars\nhttps://bugs.webkit.org/show_bug.cgi?id=319397\nrdar://182225399\n\nReviewed by Sosuke Suzuki.\n\nAdds a new runtime option --useIntlEraMonthcode (default: off) implementing\npart of Intl.Era-monthcode (Stage 4, advance",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T06:10:16.653905+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "url": "https://github.com/WebKit/WebKit/commit/cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "message": "[JSC] Use `IntlCache` for Temporal pattern generation in `Intl.DateTimeFormat`\nhttps://bugs.webkit.org/show_bug.cgi?id=317624\n\nReviewed by Yusuke Suzuki.\n\ncomputeAdjustDateTimeStyleFormat and computeGetDateTimeFormat call\nudatpg_open directly every time a Temporal-specific UDateFormat is\ncreated. ud",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
