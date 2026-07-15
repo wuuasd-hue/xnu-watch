@@ -10057,5 +10057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T12:10:17.813042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a01ee718ca4d5bfd5aa0b6b8f04ed3225a992351",
+    "url": "https://github.com/WebKit/WebKit/commit/a01ee718ca4d5bfd5aa0b6b8f04ed3225a992351",
+    "message": "[JSC] Host time zone changes are never observed on ports without time zone change notifications\nhttps://bugs.webkit.org/show_bug.cgi?id=318841\n\nReviewed by Yusuke Suzuki.\n\n316629@main made date cache invalidation depend on WTF::lastTimeZoneID(),\nwhich is only advanced by a time zone change notifier.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T12:12:27.443677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "url": "https://github.com/WebKit/WebKit/commit/75ca791670dfc265fb40c9e87666224a8b4bc785",
+    "message": "[Navigation API] Subframe back/forward traversal abandons local sibling frames after a RemoteFrame under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318483\nrdar://181274065\n\nReviewed by Rupin Mittal.\n\nUnder Site Isolation a cross-origin subframe is a RemoteFrame that lives in another WebP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
