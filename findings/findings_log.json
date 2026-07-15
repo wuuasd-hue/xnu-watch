@@ -9857,5 +9857,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T03:43:49.690423+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "url": "https://github.com/WebKit/WebKit/commit/cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "message": "[JSC] Use `IntlCache` for Temporal pattern generation in `Intl.DateTimeFormat`\nhttps://bugs.webkit.org/show_bug.cgi?id=317624\n\nReviewed by Yusuke Suzuki.\n\ncomputeAdjustDateTimeStyleFormat and computeGetDateTimeFormat call\nudatpg_open directly every time a Temporal-specific UDateFormat is\ncreated. ud",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T03:45:57.582219+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "url": "https://github.com/WebKit/WebKit/commit/cde1f2154e51f70ec57fdbda493f10af88a7e291",
+    "message": "[JSC] Use `IntlCache` for Temporal pattern generation in `Intl.DateTimeFormat`\nhttps://bugs.webkit.org/show_bug.cgi?id=317624\n\nReviewed by Yusuke Suzuki.\n\ncomputeAdjustDateTimeStyleFormat and computeGetDateTimeFormat call\nudatpg_open directly every time a Temporal-specific UDateFormat is\ncreated. ud",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T03:48:06.685003+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d801f1e36011760cbbdf313c054c630f24c5e359",
+    "url": "https://github.com/WebKit/WebKit/commit/d801f1e36011760cbbdf313c054c630f24c5e359",
+    "message": "[JSC] Make sizeof(Air::Arg) 16\nhttps://bugs.webkit.org/show_bug.cgi?id=318822\nrdar://181638333\n\nReviewed by Yijia Huang.\n\nThis patch shrinks sizeof(Air::Arg) from 24 to 16. This is important to\nshrink the sizeof(Air::Inst) as it includes 3 Air::Arg instances. We can\npack them since all the fields ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
