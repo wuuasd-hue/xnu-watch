@@ -10437,5 +10437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T20:00:42.093758+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2c5d8ed64015bcbbe0cffedc08efff02c214d730",
+    "url": "https://github.com/WebKit/WebKit/commit/2c5d8ed64015bcbbe0cffedc08efff02c214d730",
+    "message": "Unreviewed, increase llint_cloop_did_return_from_js_ number\nhttps://bugs.webkit.org/show_bug.cgi?id=319516\nrdar://182324896\n\n* Source/JavaScriptCore/bytecode/BytecodeList.rb:\n\nCanonical link: https://commits.webkit.org/317254@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T20:02:52.752779+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fddaa00b61499746a1ae20695da6841ed2c7911",
+    "url": "https://github.com/WebKit/WebKit/commit/6fddaa00b61499746a1ae20695da6841ed2c7911",
+    "message": "[JSC] Do prefetching in SlotVisitor::performIncrementOfDraining too\nhttps://bugs.webkit.org/show_bug.cgi?id=319483\nrdar://182289152\n\nReviewed by Keith Miller.\n\nWe apply the same change in 316327@main to SlotVisitor::performIncrementOfDraining.\nLet's perform prefetching onto the next cell. We factor ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
