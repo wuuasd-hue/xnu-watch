@@ -10017,5 +10017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T10:33:11.354748+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b122d24cf65e8378b9f61177cd3cceeb9e4f066b",
+    "url": "https://github.com/swiftlang/swift/commit/b122d24cf65e8378b9f61177cd3cceeb9e4f066b",
+    "message": "Merge pull request #90003 from mikeash/concurrency-exclusivity-swift-impl\n\n[Runtime] Port the concurrency exclusivity code to Swift.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T10:35:19.018672+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a9868495cb975b48825c3332a25ca1b857e7e23",
+    "url": "https://github.com/WebKit/WebKit/commit/6a9868495cb975b48825c3332a25ca1b857e7e23",
+    "message": "[JSC] Speculate on `String#concat` arguments based on profiling\nhttps://bugs.webkit.org/show_bug.cgi?id=318660\n\nReviewed by Yusuke Suzuki.\n\n@babel/preset-env compiles `${x}px` into \"\".concat(x, \"px\"), but the DFG\nintrinsic emits Check(StringUse) on every argument, so the first number\nargument takes ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
