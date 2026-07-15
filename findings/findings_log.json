@@ -10217,5 +10217,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T17:07:53.038838+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ebe71899e1702e2a6831137466308293324a2b33",
+    "url": "https://github.com/WebKit/WebKit/commit/ebe71899e1702e2a6831137466308293324a2b33",
+    "message": "Modify JIT tier-up thresholds for Macs with lower P-core counts\nhttps://bugs.webkit.org/show_bug.cgi?id=318980\nrdar://181837153\n\nReviewed by Yusuke Suzuki.\n\nOn machines with lower P-core counts we may be thermally constrained\nor see contention for P-cores with the main WebContent process under\ncerta",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T17:10:01.620222+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfda643c04c033a07680a3afe4574cadb8f64451",
+    "url": "https://github.com/WebKit/WebKit/commit/cfda643c04c033a07680a3afe4574cadb8f64451",
+    "message": "[JSC][Temporal] Fix non-ISO calendar dayOfYear\nhttps://bugs.webkit.org/show_bug.cgi?id=319305\n\nReviewed by Yijia Huang.\n\nTemporal dayOfYear currently returns the ISO ordinal day for every calendar.\nRead UCAL_DAY_OF_YEAR through CalendarICUBridge for non-ISO calendars and use\nthe existing proleptic G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T17:12:11.218984+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "url": "https://github.com/WebKit/WebKit/commit/e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "message": "[Re-land] [NavigationScheduler] history.back/forward/go(n) coalescing across processes via UIProcess session history traversal queue\nhttps://bugs.webkit.org/show_bug.cgi?id=317229\nrdar://179857636\n\nReviewed by Charlie Wolfe.\n\nRe-land of 316426@main, reverted as 316667@main\n(https://bugs.webkit.org/s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T17:14:30.933660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ebe71899e1702e2a6831137466308293324a2b33",
+    "url": "https://github.com/WebKit/WebKit/commit/ebe71899e1702e2a6831137466308293324a2b33",
+    "message": "Modify JIT tier-up thresholds for Macs with lower P-core counts\nhttps://bugs.webkit.org/show_bug.cgi?id=318980\nrdar://181837153\n\nReviewed by Yusuke Suzuki.\n\nOn machines with lower P-core counts we may be thermally constrained\nor see contention for P-cores with the main WebContent process under\ncerta",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T17:16:39.718424+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfda643c04c033a07680a3afe4574cadb8f64451",
+    "url": "https://github.com/WebKit/WebKit/commit/cfda643c04c033a07680a3afe4574cadb8f64451",
+    "message": "[JSC][Temporal] Fix non-ISO calendar dayOfYear\nhttps://bugs.webkit.org/show_bug.cgi?id=319305\n\nReviewed by Yijia Huang.\n\nTemporal dayOfYear currently returns the ISO ordinal day for every calendar.\nRead UCAL_DAY_OF_YEAR through CalendarICUBridge for non-ISO calendars and use\nthe existing proleptic G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
