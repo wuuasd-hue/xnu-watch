@@ -10597,5 +10597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T22:46:26.487053+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfda643c04c033a07680a3afe4574cadb8f64451",
+    "url": "https://github.com/WebKit/WebKit/commit/cfda643c04c033a07680a3afe4574cadb8f64451",
+    "message": "[JSC][Temporal] Fix non-ISO calendar dayOfYear\nhttps://bugs.webkit.org/show_bug.cgi?id=319305\n\nReviewed by Yijia Huang.\n\nTemporal dayOfYear currently returns the ISO ordinal day for every calendar.\nRead UCAL_DAY_OF_YEAR through CalendarICUBridge for non-ISO calendars and use\nthe existing proleptic G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T22:48:36.073141+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "url": "https://github.com/WebKit/WebKit/commit/e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "message": "[Re-land] [NavigationScheduler] history.back/forward/go(n) coalescing across processes via UIProcess session history traversal queue\nhttps://bugs.webkit.org/show_bug.cgi?id=317229\nrdar://179857636\n\nReviewed by Charlie Wolfe.\n\nRe-land of 316426@main, reverted as 316667@main\n(https://bugs.webkit.org/s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
