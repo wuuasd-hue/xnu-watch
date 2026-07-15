@@ -9977,5 +9977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T08:41:29.571851+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ea58a42a90953702692b60e2347b63075394968",
+    "url": "https://github.com/WebKit/WebKit/commit/6ea58a42a90953702692b60e2347b63075394968",
+    "message": "[JSC][Temporal][Intl.Era] Add useIntlEraMonthcode option and narrow AvailableCalendars\nhttps://bugs.webkit.org/show_bug.cgi?id=319397\nrdar://182225399\n\nReviewed by Sosuke Suzuki.\n\nAdds a new runtime option --useIntlEraMonthcode (default: off) implementing\npart of Intl.Era-monthcode (Stage 4, advance",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-15T08:43:37.260594+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d70d346c664d6619e364953fbccc4122cc493ed",
+    "url": "https://github.com/WebKit/WebKit/commit/6d70d346c664d6619e364953fbccc4122cc493ed",
+    "message": "[JSC] Add LoadMegamorphicGetter IC\nhttps://bugs.webkit.org/show_bug.cgi?id=318745\nrdar://181544093\n\nReviewed by Keith Miller.\n\nCurrently our Megamorphic IC is supporting plain properties, and getter\nis always going to the slow path. But we may have some places which is\nrepeatedly calling a getter wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
