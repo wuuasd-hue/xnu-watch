@@ -10677,5 +10677,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T01:15:47.601155+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b157dbbd4053751d8fcf196f2056a7e66e71697",
+    "url": "https://github.com/WebKit/WebKit/commit/2b157dbbd4053751d8fcf196f2056a7e66e71697",
+    "message": "[Site Isolation] Content in cross-origin subframes is missing when copying and pasting\nhttps://bugs.webkit.org/show_bug.cgi?id=319423\nrdar://176590191\n\nReviewed by Abrar Rahman Protyasha.\n\nWhen copying content that includes cross-origin subframes, content in those subframes is missing\nupon pasting i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T01:17:56.380567+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3130bd507b02a77372bf2365ddf0164e546c6605",
+    "url": "https://github.com/WebKit/WebKit/commit/3130bd507b02a77372bf2365ddf0164e546c6605",
+    "message": "[JSC] Use the generic path in `jsSpliceSubstringsWithSeparator(s)` for short two-range results\nhttps://bugs.webkit.org/show_bug.cgi?id=319023\n\nReviewed by Yusuke Suzuki.\n\nFor a global RegExp replace with a single match (rangeCount == 2, separatorCount == 1),\nwe create two substring StringImpls and c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T01:20:05.798542+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b157dbbd4053751d8fcf196f2056a7e66e71697",
+    "url": "https://github.com/WebKit/WebKit/commit/2b157dbbd4053751d8fcf196f2056a7e66e71697",
+    "message": "[Site Isolation] Content in cross-origin subframes is missing when copying and pasting\nhttps://bugs.webkit.org/show_bug.cgi?id=319423\nrdar://176590191\n\nReviewed by Abrar Rahman Protyasha.\n\nWhen copying content that includes cross-origin subframes, content in those subframes is missing\nupon pasting i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T01:22:14.814027+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3130bd507b02a77372bf2365ddf0164e546c6605",
+    "url": "https://github.com/WebKit/WebKit/commit/3130bd507b02a77372bf2365ddf0164e546c6605",
+    "message": "[JSC] Use the generic path in `jsSpliceSubstringsWithSeparator(s)` for short two-range results\nhttps://bugs.webkit.org/show_bug.cgi?id=319023\n\nReviewed by Yusuke Suzuki.\n\nFor a global RegExp replace with a single match (rangeCount == 2, separatorCount == 1),\nwe create two substring StringImpls and c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
