@@ -11197,5 +11197,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T18:52:56.918774+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7935a51ec31047310970afdf9c0a73765686058d",
+    "url": "https://github.com/WebKit/WebKit/commit/7935a51ec31047310970afdf9c0a73765686058d",
+    "message": "[Page Loading] Network process crashes when downloading a cross-origin target=_blank link\nhttps://bugs.webkit.org/show_bug.cgi?id=319427\nrdar://182181803\n\nReviewed by Chris Dumez.\n\nOption-clicking a cross-origin link with target=\"_blank\" (for example the \"Full logs\"\nlink on an ews-build.webkit.org r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T18:55:05.651819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7935a51ec31047310970afdf9c0a73765686058d",
+    "url": "https://github.com/WebKit/WebKit/commit/7935a51ec31047310970afdf9c0a73765686058d",
+    "message": "[Page Loading] Network process crashes when downloading a cross-origin target=_blank link\nhttps://bugs.webkit.org/show_bug.cgi?id=319427\nrdar://182181803\n\nReviewed by Chris Dumez.\n\nOption-clicking a cross-origin link with target=\"_blank\" (for example the \"Full logs\"\nlink on an ews-build.webkit.org r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T18:57:14.254741+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a3ab620c332b169ab7a2487a0e3100fd12d68ca",
+    "url": "https://github.com/WebKit/WebKit/commit/4a3ab620c332b169ab7a2487a0e3100fd12d68ca",
+    "message": "[YARR] Use loop for massive save and restore of subpattern captures\nhttps://bugs.webkit.org/show_bug.cgi?id=319528\nrdar://182353166\n\nReviewed by Yijia Huang.\n\nWe observed that significant bloating of JIT code when YarrJIT is having\nhuge amount of nested paren contexts. The reason is that we need to ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
