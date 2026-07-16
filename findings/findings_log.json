@@ -11257,5 +11257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T19:54:47.216075+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "605bd7edf69445e082f71fc5b288b68b28c36045",
+    "url": "https://github.com/WebKit/WebKit/commit/605bd7edf69445e082f71fc5b288b68b28c36045",
+    "message": "[JSC] for-await fast consumer must re-check the Promise species watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319530\nrdar://182353926\n\nReviewed by Yijia Huang.\n\nFastAsyncGenerator fast path should skip promise creation only when\npromise watchpoint is not fired since PromiseResolve accesses prom",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T19:56:55.212357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1171d7da90fa90cbec9c2881007361fa6516660",
+    "url": "https://github.com/WebKit/WebKit/commit/e1171d7da90fa90cbec9c2881007361fa6516660",
+    "message": "[WASM] Allow linking immutable exnref global imports\nhttps://bugs.webkit.org/show_bug.cgi?id=293340\n\nReviewed by Keith Miller.\n\nImporting an immutable (ref null exn) global called Global::get(), which\nrejects exnref for the JS API. Wasm-to-wasm linking only needs the stored\nreference, not a JS-visib",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
