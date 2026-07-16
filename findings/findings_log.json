@@ -10797,5 +10797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T06:43:56.863597+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f065ab4abdb982cbf80de24d8a7fde95d8306de",
+    "url": "https://github.com/WebKit/WebKit/commit/7f065ab4abdb982cbf80de24d8a7fde95d8306de",
+    "message": "WebAssembly streaming instantiation uses the result promise as the import object when imports are omitted\nhttps://bugs.webkit.org/show_bug.cgi?id=316985\n\nReviewed by Yusuke Suzuki.\n\nStreamingCompiler records [globalObject, importObject?] as deferred-work\ndependencies; DeferredWorkTimer then appends ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T06:46:05.238625+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "793fd5461d93f00dd4b0738b10235a4213303b2a",
+    "url": "https://github.com/WebKit/WebKit/commit/793fd5461d93f00dd4b0738b10235a4213303b2a",
+    "message": "[JSC] async-generator fast consume should insert ExitOK\nhttps://bugs.webkit.org/show_bug.cgi?id=319513\nrdar://182321958\n\nReviewed by Yijia Huang.\n\nOccasional test failure is happening in stress/async-iterator-fast-consumer-vs-generic-equivalence.js.dfg-eager.\nThis is because of missing ExitOK (so fi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
