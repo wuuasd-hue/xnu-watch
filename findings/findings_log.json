@@ -11337,5 +11337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T21:59:52.247966+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "url": "https://github.com/WebKit/WebKit/commit/bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "message": "[JSC][Temporal] Consolidate InterpretTemporalDateTimeFields into one implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=319531\nrdar://182355686\n\nReviewed by Sosuke Suzuki.\n\nExtract the spec's InterpretTemporalDateTimeFields abstract operation\ninto JSC::interpretTemporalDateTimeFields and route a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T22:02:02.103825+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "url": "https://github.com/WebKit/WebKit/commit/bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "message": "[JSC][Temporal] Consolidate InterpretTemporalDateTimeFields into one implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=319531\nrdar://182355686\n\nReviewed by Sosuke Suzuki.\n\nExtract the spec's InterpretTemporalDateTimeFields abstract operation\ninto JSC::interpretTemporalDateTimeFields and route a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T22:04:11.407080+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "488a6d56b5d806458f792c97ff38a5a3ebdca5e7",
+    "url": "https://github.com/swiftlang/swift/commit/488a6d56b5d806458f792c97ff38a5a3ebdca5e7",
+    "message": "Merge pull request ELF Metadata extraction (#87285)\n\nOverhaul the ELF runtime metadata extraction. The code now follows a symbol to a table of static start/stop pointers to each of the sections instead of parsing the ELF file trying to extract the section headers. Section headers are not available i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
