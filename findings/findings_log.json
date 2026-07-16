@@ -10997,5 +10997,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T14:54:50.754143+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "url": "https://github.com/WebKit/WebKit/commit/bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "message": "[JSC] BBQ: strength-reduce signed div/rem by negative power-of-two constants\nhttps://bugs.webkit.org/show_bug.cgi?id=269744\n\nReviewed by Keith Miller.\n\nWhen BBQ sees a constant divisor that is a power of two, it turns\ndiv/rem into shifts and masks. That path only ran for positive\ndivisors, so values",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T14:57:06.324043+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "url": "https://github.com/WebKit/WebKit/commit/bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "message": "[JSC] BBQ: strength-reduce signed div/rem by negative power-of-two constants\nhttps://bugs.webkit.org/show_bug.cgi?id=269744\n\nReviewed by Keith Miller.\n\nWhen BBQ sees a constant divisor that is a power of two, it turns\ndiv/rem into shifts and masks. That path only ran for positive\ndivisors, so values",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T14:59:19.862891+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "url": "https://github.com/WebKit/WebKit/commit/3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "message": "JSC feature flags should be driven by UnifiedWebPreferences.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319384\nrdar://182210113\n\nReviewed by Ben Nham.\n\nJSC's feature-flag options (e.g. useTemporal, useJSPI, and the wasm feature\nflags) were declared standalone in OptionsList.h, separate from the web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
