@@ -10937,5 +10937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T12:58:51.291827+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "url": "https://github.com/WebKit/WebKit/commit/3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "message": "JSC feature flags should be driven by UnifiedWebPreferences.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319384\nrdar://182210113\n\nReviewed by Ben Nham.\n\nJSC's feature-flag options (e.g. useTemporal, useJSPI, and the wasm feature\nflags) were declared standalone in OptionsList.h, separate from the web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T13:01:00.455461+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "url": "https://github.com/WebKit/WebKit/commit/3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "message": "JSC feature flags should be driven by UnifiedWebPreferences.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319384\nrdar://182210113\n\nReviewed by Ben Nham.\n\nJSC's feature-flag options (e.g. useTemporal, useJSPI, and the wasm feature\nflags) were declared standalone in OptionsList.h, separate from the web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T13:03:09.396312+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7af6d5a321879450ab6d21f113e233e957caf14f",
+    "url": "https://github.com/WebKit/WebKit/commit/7af6d5a321879450ab6d21f113e233e957caf14f",
+    "message": "Web Inspector: Emit per-element `Layout Invalidated` events\nhttps://bugs.webkit.org/show_bug.cgi?id=317852\n\nReviewed by Devin Rousso.\n\nCurrently, the `Layout Invalidated` event is emitted only when layout is\nscheduled, with the layout root element set as the associated node. This\nevent does not refl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
