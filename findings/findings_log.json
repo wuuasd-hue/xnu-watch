@@ -11397,5 +11397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T22:46:05.911409+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "url": "https://github.com/WebKit/WebKit/commit/bc5f4aa81ce3e901e9a8314049a86b230bd5159c",
+    "message": "[JSC][Temporal] Consolidate InterpretTemporalDateTimeFields into one implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=319531\nrdar://182355686\n\nReviewed by Sosuke Suzuki.\n\nExtract the spec's InterpretTemporalDateTimeFields abstract operation\ninto JSC::interpretTemporalDateTimeFields and route a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T22:48:13.873165+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "url": "https://github.com/WebKit/WebKit/commit/5b181eb9e164c0f6a82ee743963d97b8638da560",
+    "message": "Web Inspector: Site Isolation: Page domain searchInResource / searchInResources across processes\nhttps://bugs.webkit.org/show_bug.cgi?id=309222\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the inspected page's process no longer hosts\nevery frame's CachedResourceLoader, and the per-WebProcess\nBackendR",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
