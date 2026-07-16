@@ -11297,5 +11297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T20:42:19.344280+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7935a51ec31047310970afdf9c0a73765686058d",
+    "url": "https://github.com/WebKit/WebKit/commit/7935a51ec31047310970afdf9c0a73765686058d",
+    "message": "[Page Loading] Network process crashes when downloading a cross-origin target=_blank link\nhttps://bugs.webkit.org/show_bug.cgi?id=319427\nrdar://182181803\n\nReviewed by Chris Dumez.\n\nOption-clicking a cross-origin link with target=\"_blank\" (for example the \"Full logs\"\nlink on an ews-build.webkit.org r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-16T20:44:26.746599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23eb4f85f3588a9d2b17f57e8ebe6dccc162df30",
+    "url": "https://github.com/WebKit/WebKit/commit/23eb4f85f3588a9d2b17f57e8ebe6dccc162df30",
+    "message": "[JSC] Enable Temporal object by default\nhttps://bugs.webkit.org/show_bug.cgi?id=318885\nrdar://181723535\n\nReviewed by Yusuke Suzuki.\n\nEnable the Temporal feature by default.\n\nCanonical link: https://commits.webkit.org/316742@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
