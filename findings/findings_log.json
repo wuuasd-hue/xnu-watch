@@ -12137,5 +12137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T19:56:36.583544+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "221e657b4111aac908f10f176e4889f3766724a2",
+    "url": "https://github.com/WebKit/WebKit/commit/221e657b4111aac908f10f176e4889f3766724a2",
+    "message": "[Site Isolation] Preserve Private Click Measurement across cross-process top-frame navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=317781\nrdar://180548257\n\nReviewed by Alex Christensen.\n\nWhen an <a target=\"_top\"> link with attribution attributes is clicked\ninside a cross-origin iframe, the main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T19:58:44.905149+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "221e657b4111aac908f10f176e4889f3766724a2",
+    "url": "https://github.com/WebKit/WebKit/commit/221e657b4111aac908f10f176e4889f3766724a2",
+    "message": "[Site Isolation] Preserve Private Click Measurement across cross-process top-frame navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=317781\nrdar://180548257\n\nReviewed by Alex Christensen.\n\nWhen an <a target=\"_top\"> link with attribution attributes is clicked\ninside a cross-origin iframe, the main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T20:00:53.300303+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "url": "https://github.com/WebKit/WebKit/commit/bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "message": "[JSC] Introduce MicrotaskCallCache for async generator driver path\nhttps://bugs.webkit.org/show_bug.cgi?id=319650\nrdar://182472828\n\nReviewed by Sosuke Suzuki.\n\nLet's have per-VM MicrotaskCallCache for async generator driver path.\nSince MicrotaskCallCache is no longer on the stack, we need to finaliz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
