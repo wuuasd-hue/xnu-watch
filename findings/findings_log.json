@@ -11677,5 +11677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T09:26:41.829360+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "url": "https://github.com/WebKit/WebKit/commit/12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "message": "[JSC][DFG][x86_64] String.prototype.substr INT_MIN length clamp miscompile creates invalid JSString length   and Release abort/OOB-read evidence\nhttps://bugs.webkit.org/show_bug.cgi?id=317480\nrdar://180105216\n\nReviewed by Sosuke Suzuki.\n\nx86_64 move(TrustedImm32, register) uses xor for 0 creation, w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T09:28:50.126876+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "url": "https://github.com/WebKit/WebKit/commit/ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "message": "[JSC] op_async_iterator_next DFG should also subscribe promise-watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319624\nrdar://182448235\n\nReviewed by Yijia Huang.\n\nWe were subscribing promise-watchpoint on op_async_iterator_open but not\nin op_async_iterator_next, that's not correct since we may cha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
