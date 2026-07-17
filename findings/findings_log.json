@@ -12257,5 +12257,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T21:40:07.795430+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "message": "Replace start and stop markers in ExecutionHandlerIdleStopTest.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=319690\nrdar://182535047\n\nReviewed by Yijia Huang.\n\nWhen I search for git conflict markers \"<<<<<<<\" and \">>>>>>>\" these always show up.\nAdd some = characters to make the search for merge confli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T21:42:15.681778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "message": "Replace start and stop markers in ExecutionHandlerIdleStopTest.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=319690\nrdar://182535047\n\nReviewed by Yijia Huang.\n\nWhen I search for git conflict markers \"<<<<<<<\" and \">>>>>>>\" these always show up.\nAdd some = characters to make the search for merge confli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T21:44:25.132374+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "url": "https://github.com/WebKit/WebKit/commit/e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "message": "[JSC] Handle `DataView` BigInt64 accessors in DFG / FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=319594\n\nReviewed by Yusuke Suzuki.\n\nDataView.prototype.getBigInt64 / getBigUint64 / setBigInt64 / setBigUint64\nwere the only DataView accessors without JIT intrinsics, so every call was\na C++ host call.\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
