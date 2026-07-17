@@ -11717,5 +11717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T11:02:31.940725+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e405a58ab0957aac50705bd428703852f49dd8a1",
+    "url": "https://github.com/WebKit/WebKit/commit/e405a58ab0957aac50705bd428703852f49dd8a1",
+    "message": "[CMake] Put headers inside of framework bundles\nhttps://bugs.webkit.org/show_bug.cgi?id=317899\n\nReviewed by Pascoe and Richard Robinson.\n\nBuilding for Apple platforms already produces executables in framework\nbundles, and some ancillary files like modules. Move all the headers\ninto the framework bun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T11:04:41.423159+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "url": "https://github.com/WebKit/WebKit/commit/5ff5b2cf4386431d725cf5ad25a10442e21f3022",
+    "message": "[Site Isolation] Web Inspector: Network domain sourceMappingURL is not forwarded for memory-cached cross-origin iframe stylesheets\nhttps://bugs.webkit.org/show_bug.cgi?id=318740\n\nReviewed by BJ Burg.\n\nFollow-up to the cold-load sourceMappingURL work, https://github.com/WebKit/WebKit/pull/68571.\nUnde",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
