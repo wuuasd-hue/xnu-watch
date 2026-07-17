@@ -11757,5 +11757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T12:41:05.168337+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "url": "https://github.com/WebKit/WebKit/commit/d3c7fd25598aededd644fbb22691f8789e3a5daa",
+    "message": "[JSC][Temporal] Fix PlainYearMonth bugs and simplify helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=318876\nrdar://181713374\n\nReviewed by Yusuke Suzuki.\n\nFixes five PYM correctness bugs and consolidates the helper layers to\nmatch the spec AOs.\n\nBugs fixed:\n1. PYM.toPlainDate({day: 0|negative|NaN|Inf",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T12:43:12.979956+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "url": "https://github.com/WebKit/WebKit/commit/1a159c20baced4015d48fb57d28bf0b82db7e1a4",
+    "message": "Web Inspector: remove unused protocol code\nhttps://bugs.webkit.org/show_bug.cgi?id=318182\n\nReviewed by Tim Nguyen.\n\nAll of the following are not used anywhere in Web Inspector:\n- `CSS.CSSStyleAttribute`\n- `CSS.CSSStyleSheetHeader.title`\n- `CSS.CSSStyleSheetHeader.disabled`\n- `CSS.CSSStyleSheetBody`\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
