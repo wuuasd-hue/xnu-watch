@@ -11997,5 +11997,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T17:56:10.284866+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "url": "https://github.com/WebKit/WebKit/commit/3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "message": "[JSC] Swap base and offset registers in branchTest{8,16}\nhttps://bugs.webkit.org/show_bug.cgi?id=319635\nrdar://182030086\n\nReviewed by Keith Miller.\n\nIn MacroAssemblerARM64, ldrb's signature is (RegisterID dest, RegisterID rn,\nRegisterID rm), where rn is the offset register and rm is the memory base\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T17:58:18.241566+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "url": "https://github.com/WebKit/WebKit/commit/e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "message": "[JSC] Handle `DataView` BigInt64 accessors in DFG / FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=319594\n\nReviewed by Yusuke Suzuki.\n\nDataView.prototype.getBigInt64 / getBigUint64 / setBigInt64 / setBigUint64\nwere the only DataView accessors without JIT intrinsics, so every call was\na C++ host call.\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T18:00:26.070413+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "url": "https://github.com/WebKit/WebKit/commit/3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "message": "[JSC] Swap base and offset registers in branchTest{8,16}\nhttps://bugs.webkit.org/show_bug.cgi?id=319635\nrdar://182030086\n\nReviewed by Keith Miller.\n\nIn MacroAssemblerARM64, ldrb's signature is (RegisterID dest, RegisterID rn,\nRegisterID rm), where rn is the offset register and rm is the memory base\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T18:02:33.842178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "url": "https://github.com/WebKit/WebKit/commit/e164bce2e8884f242389930d9c0551d4b1f4ebb4",
+    "message": "[JSC] Handle `DataView` BigInt64 accessors in DFG / FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=319594\n\nReviewed by Yusuke Suzuki.\n\nDataView.prototype.getBigInt64 / getBigUint64 / setBigInt64 / setBigUint64\nwere the only DataView accessors without JIT intrinsics, so every call was\na C++ host call.\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
