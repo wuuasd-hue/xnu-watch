@@ -11477,5 +11477,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:19:41.658344+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76340acb4d382e75459d2814e31cb803eff4f4de",
+    "url": "https://github.com/WebKit/WebKit/commit/76340acb4d382e75459d2814e31cb803eff4f4de",
+    "message": "[JSC] Gate WebAssembly type() methods behind useWasmJSTypes\nhttps://bugs.webkit.org/show_bug.cgi?id=317707\n\nReviewed by Keith Miller.\n\nMemory.prototype.type and the matching methods on Table, Global, and Tag\ncome from the js-types proposal, not the core WebAssembly JS API. They\nwere always installed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:21:49.656028+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "url": "https://github.com/WebKit/WebKit/commit/615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "message": "[JSC][Temporal] Extract GetTemporalCalendarIdentifierWithISODefault as a shared helper\nhttps://bugs.webkit.org/show_bug.cgi?id=319602\nrdar://182431498\n\nReviewed by Yusuke Suzuki.\n\nAdds JSC::getTemporalCalendarIdentifierWithISODefault matching the spec AO at [1],\nincluding step 1 (Temporal internal-s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:24:00.525704+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "url": "https://github.com/WebKit/WebKit/commit/12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "message": "[JSC][DFG][x86_64] String.prototype.substr INT_MIN length clamp miscompile creates invalid JSString length   and Release abort/OOB-read evidence\nhttps://bugs.webkit.org/show_bug.cgi?id=317480\nrdar://180105216\n\nReviewed by Sosuke Suzuki.\n\nx86_64 move(TrustedImm32, register) uses xor for 0 creation, w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:26:09.619912+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "url": "https://github.com/WebKit/WebKit/commit/ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "message": "[JSC] op_async_iterator_next DFG should also subscribe promise-watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319624\nrdar://182448235\n\nReviewed by Yijia Huang.\n\nWe were subscribing promise-watchpoint on op_async_iterator_open but not\nin op_async_iterator_next, that's not correct since we may cha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:28:17.331183+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76340acb4d382e75459d2814e31cb803eff4f4de",
+    "url": "https://github.com/WebKit/WebKit/commit/76340acb4d382e75459d2814e31cb803eff4f4de",
+    "message": "[JSC] Gate WebAssembly type() methods behind useWasmJSTypes\nhttps://bugs.webkit.org/show_bug.cgi?id=317707\n\nReviewed by Keith Miller.\n\nMemory.prototype.type and the matching methods on Table, Global, and Tag\ncome from the js-types proposal, not the core WebAssembly JS API. They\nwere always installed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T01:30:24.648232+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "url": "https://github.com/WebKit/WebKit/commit/615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "message": "[JSC][Temporal] Extract GetTemporalCalendarIdentifierWithISODefault as a shared helper\nhttps://bugs.webkit.org/show_bug.cgi?id=319602\nrdar://182431498\n\nReviewed by Yusuke Suzuki.\n\nAdds JSC::getTemporalCalendarIdentifierWithISODefault matching the spec AO at [1],\nincluding step 1 (Temporal internal-s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
