@@ -11937,5 +11937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T16:57:18.520106+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "url": "https://github.com/WebKit/WebKit/commit/bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "message": "[JSC] Introduce MicrotaskCallCache for async generator driver path\nhttps://bugs.webkit.org/show_bug.cgi?id=319650\nrdar://182472828\n\nReviewed by Sosuke Suzuki.\n\nLet's have per-VM MicrotaskCallCache for async generator driver path.\nSince MicrotaskCallCache is no longer on the stack, we need to finaliz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T16:59:26.600676+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "url": "https://github.com/WebKit/WebKit/commit/bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "message": "[JSC] Introduce MicrotaskCallCache for async generator driver path\nhttps://bugs.webkit.org/show_bug.cgi?id=319650\nrdar://182472828\n\nReviewed by Sosuke Suzuki.\n\nLet's have per-VM MicrotaskCallCache for async generator driver path.\nSince MicrotaskCallCache is no longer on the stack, we need to finaliz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T17:01:35.201392+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "url": "https://github.com/WebKit/WebKit/commit/a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "message": "[JSC] `AsyncFromSyncIterator` should not close the sync iterator for a rejected value when done is true\nhttps://bugs.webkit.org/show_bug.cgi?id=319585\n\nReviewed by Yusuke Suzuki.\n\n317012@main made asyncFromSyncIteratorContinueOrDone close the sync iterator\nwhen the awaited \"value\" of an iterator res",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
