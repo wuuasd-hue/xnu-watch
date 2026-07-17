@@ -11797,5 +11797,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T14:24:22.244004+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a23c46e872e19fffbb7e470ac01a79389493942",
+    "url": "https://github.com/WebKit/WebKit/commit/8a23c46e872e19fffbb7e470ac01a79389493942",
+    "message": "Unreviewed, update safer cpp expectations after 317368@main\nhttps://bugs.webkit.org/show_bug.cgi?id=319657\n\nUpdate safer cpp expectations after 317368@main, which fixed a lot of them.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T14:26:30.524009+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "url": "https://github.com/WebKit/WebKit/commit/a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "message": "[JSC] `AsyncFromSyncIterator` should not close the sync iterator for a rejected value when done is true\nhttps://bugs.webkit.org/show_bug.cgi?id=319585\n\nReviewed by Yusuke Suzuki.\n\n317012@main made asyncFromSyncIteratorContinueOrDone close the sync iterator\nwhen the awaited \"value\" of an iterator res",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T14:28:37.980569+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a23c46e872e19fffbb7e470ac01a79389493942",
+    "url": "https://github.com/WebKit/WebKit/commit/8a23c46e872e19fffbb7e470ac01a79389493942",
+    "message": "Unreviewed, update safer cpp expectations after 317368@main\nhttps://bugs.webkit.org/show_bug.cgi?id=319657\n\nUpdate safer cpp expectations after 317368@main, which fixed a lot of them.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T14:30:47.662791+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "url": "https://github.com/WebKit/WebKit/commit/a6ca226ff9c3f9f4eb4d621a915aaa075ac2d221",
+    "message": "[JSC] `AsyncFromSyncIterator` should not close the sync iterator for a rejected value when done is true\nhttps://bugs.webkit.org/show_bug.cgi?id=319585\n\nReviewed by Yusuke Suzuki.\n\n317012@main made asyncFromSyncIteratorContinueOrDone close the sync iterator\nwhen the awaited \"value\" of an iterator res",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
