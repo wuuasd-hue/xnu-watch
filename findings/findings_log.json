@@ -11637,5 +11637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T07:08:44.236509+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76340acb4d382e75459d2814e31cb803eff4f4de",
+    "url": "https://github.com/WebKit/WebKit/commit/76340acb4d382e75459d2814e31cb803eff4f4de",
+    "message": "[JSC] Gate WebAssembly type() methods behind useWasmJSTypes\nhttps://bugs.webkit.org/show_bug.cgi?id=317707\n\nReviewed by Keith Miller.\n\nMemory.prototype.type and the matching methods on Table, Global, and Tag\ncome from the js-types proposal, not the core WebAssembly JS API. They\nwere always installed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T07:10:52.380083+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "url": "https://github.com/WebKit/WebKit/commit/615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "message": "[JSC][Temporal] Extract GetTemporalCalendarIdentifierWithISODefault as a shared helper\nhttps://bugs.webkit.org/show_bug.cgi?id=319602\nrdar://182431498\n\nReviewed by Yusuke Suzuki.\n\nAdds JSC::getTemporalCalendarIdentifierWithISODefault matching the spec AO at [1],\nincluding step 1 (Temporal internal-s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
