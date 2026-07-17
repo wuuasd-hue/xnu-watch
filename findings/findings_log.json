@@ -11877,5 +11877,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T15:53:00.862847+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d886174dfa9e1a4608f81260947531009eb1c31e",
+    "url": "https://github.com/WebKit/WebKit/commit/d886174dfa9e1a4608f81260947531009eb1c31e",
+    "message": "[YARR] JIT backtracking of greedy variable-width character classes in unicode mode is `O(count)` per step\nhttps://bugs.webkit.org/show_bug.cgi?id=319370\n\nReviewed by Yusuke Suzuki.\n\nWhen backtracking a greedy character class that can match both BMP and\nnon-BMP characters under the unicode flag, back",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T15:55:08.874184+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d886174dfa9e1a4608f81260947531009eb1c31e",
+    "url": "https://github.com/WebKit/WebKit/commit/d886174dfa9e1a4608f81260947531009eb1c31e",
+    "message": "[YARR] JIT backtracking of greedy variable-width character classes in unicode mode is `O(count)` per step\nhttps://bugs.webkit.org/show_bug.cgi?id=319370\n\nReviewed by Yusuke Suzuki.\n\nWhen backtracking a greedy character class that can match both BMP and\nnon-BMP characters under the unicode flag, back",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T15:57:17.364020+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a23c46e872e19fffbb7e470ac01a79389493942",
+    "url": "https://github.com/WebKit/WebKit/commit/8a23c46e872e19fffbb7e470ac01a79389493942",
+    "message": "Unreviewed, update safer cpp expectations after 317368@main\nhttps://bugs.webkit.org/show_bug.cgi?id=319657\n\nUpdate safer cpp expectations after 317368@main, which fixed a lot of them.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
