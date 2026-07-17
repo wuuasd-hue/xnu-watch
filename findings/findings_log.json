@@ -12317,5 +12317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T22:37:50.774739+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "28426f73148a87823f5a1ffa0b2ef1bd9f658d2b",
+    "url": "https://github.com/WebKit/WebKit/commit/28426f73148a87823f5a1ffa0b2ef1bd9f658d2b",
+    "message": "[YARR] surrogateTagMask should be 0xfc00/0xfc00 instead of 0xdc00/0xdc00\nhttps://bugs.webkit.org/show_bug.cgi?id=319651\nrdar://182474262\n\nReviewed by Yijia Huang.\n\nWe are checking the surrogates like this.\n\n    jit.load32(Address(...), resultReg);\n    jit.and32AndSetFlags(surrogateTagMask, resultReg",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T22:40:03.635354+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "221e657b4111aac908f10f176e4889f3766724a2",
+    "url": "https://github.com/WebKit/WebKit/commit/221e657b4111aac908f10f176e4889f3766724a2",
+    "message": "[Site Isolation] Preserve Private Click Measurement across cross-process top-frame navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=317781\nrdar://180548257\n\nReviewed by Alex Christensen.\n\nWhen an <a target=\"_top\"> link with attribution attributes is clicked\ninside a cross-origin iframe, the main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
