@@ -12357,5 +12357,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T23:40:59.584443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "url": "https://github.com/WebKit/WebKit/commit/6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "message": "[Xcode] Sandboxing override for \"Work around rdar://109484516\" not taking effect\nhttps://bugs.webkit.org/show_bug.cgi?id=319710\nrdar://182549120\n\nReviewed by Richard Robinson.\n\nThis script phase needs to be opted-out because it prunes old task\noutputs (and would cause a dependency cycle if it listed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T23:43:11.050433+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "url": "https://github.com/WebKit/WebKit/commit/6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "message": "[Xcode] Sandboxing override for \"Work around rdar://109484516\" not taking effect\nhttps://bugs.webkit.org/show_bug.cgi?id=319710\nrdar://182549120\n\nReviewed by Richard Robinson.\n\nThis script phase needs to be opted-out because it prunes old task\noutputs (and would cause a dependency cycle if it listed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T23:45:22.706141+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "url": "https://github.com/WebKit/WebKit/commit/b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "message": "[JSC][Temporal] Fix PMD reference-year drop for Chinese leap months\nhttps://bugs.webkit.org/show_bug.cgi?id=319656\nrdar://182481524\n\nReviewed by Yusuke Suzuki.\n\nPlainMonthDay.from({calendar:\"chinese\", year:1651, monthCode:\"M01L\",\nday:29}) returned 1651-02-19[u-ca=chinese] instead of the canonical\n19",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
