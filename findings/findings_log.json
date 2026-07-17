@@ -12197,5 +12197,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T20:41:52.840936+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "url": "https://github.com/WebKit/WebKit/commit/b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "message": "[JSC][Temporal] Fix PMD reference-year drop for Chinese leap months\nhttps://bugs.webkit.org/show_bug.cgi?id=319656\nrdar://182481524\n\nReviewed by Yusuke Suzuki.\n\nPlainMonthDay.from({calendar:\"chinese\", year:1651, monthCode:\"M01L\",\nday:29}) returned 1651-02-19[u-ca=chinese] instead of the canonical\n19",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T20:44:02.674225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "url": "https://github.com/WebKit/WebKit/commit/b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "message": "[JSC][Temporal] Fix PMD reference-year drop for Chinese leap months\nhttps://bugs.webkit.org/show_bug.cgi?id=319656\nrdar://182481524\n\nReviewed by Yusuke Suzuki.\n\nPlainMonthDay.from({calendar:\"chinese\", year:1651, monthCode:\"M01L\",\nday:29}) returned 1651-02-19[u-ca=chinese] instead of the canonical\n19",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-17T20:46:12.821995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "url": "https://github.com/WebKit/WebKit/commit/3fd024ddb79ba481ebe6a2e5d5c9a977f8c69e8e",
+    "message": "[JSC] Swap base and offset registers in branchTest{8,16}\nhttps://bugs.webkit.org/show_bug.cgi?id=319635\nrdar://182030086\n\nReviewed by Keith Miller.\n\nIn MacroAssemblerARM64, ldrb's signature is (RegisterID dest, RegisterID rn,\nRegisterID rm), where rn is the offset register and rm is the memory base\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
