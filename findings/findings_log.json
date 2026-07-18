@@ -12717,5 +12717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T12:43:27.089063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "url": "https://github.com/WebKit/WebKit/commit/4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "message": "Unreviewed, reverting 316776@main (6cfa6948d6bd)\nhttps://bugs.webkit.org/show_bug.cgi?id=319099\nrdar://181768070\n\nREGRESSION(316776@main): Builds are failing with unrecognized selector \"didEvaluateModule:\" and 2 other errors\n\nReverted change:\n\n    Add WK_ENABLE_SLOW_BUILD_VERIFICATION for slow build",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T12:45:36.310858+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "url": "https://github.com/swiftlang/swift/commit/2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "message": "Merge pull request #90533 from etcwilde/ewilde/duplicate-metadata-sections\n\nELF Metadata: Consistent retain flags",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
