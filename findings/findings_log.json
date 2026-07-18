@@ -12757,5 +12757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T14:14:22.555565+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "url": "https://github.com/WebKit/WebKit/commit/bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "message": "[JSC] Run WPT Wasm tests in run-jsc-stress-tests' wasm.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319669\nrdar://182513824\n\nReviewed by Yusuke Suzuki.\n\nRun the imported Web Platform Tests WebAssembly suite\n(LayoutTests/imported/w3c/web-platform-tests/wasm/{core/js,jsapi}) directly in the jsc\ncomman",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T14:16:31.836671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "url": "https://github.com/WebKit/WebKit/commit/bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "message": "[JSC] Run WPT Wasm tests in run-jsc-stress-tests' wasm.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319669\nrdar://182513824\n\nReviewed by Yusuke Suzuki.\n\nRun the imported Web Platform Tests WebAssembly suite\n(LayoutTests/imported/w3c/web-platform-tests/wasm/{core/js,jsapi}) directly in the jsc\ncomman",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T14:18:40.946565+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "url": "https://github.com/swiftlang/swift/commit/fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "message": "Merge pull request #90521 from compnerd/funnel\n\nruntime: account for InstanceAddressPoint in alloc and dealloc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
