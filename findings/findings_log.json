@@ -12417,5 +12417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T01:11:44.332831+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "message": "Replace start and stop markers in ExecutionHandlerIdleStopTest.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=319690\nrdar://182535047\n\nReviewed by Yijia Huang.\n\nWhen I search for git conflict markers \"<<<<<<<\" and \">>>>>>>\" these always show up.\nAdd some = characters to make the search for merge confli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T01:13:54.354198+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "url": "https://github.com/WebKit/WebKit/commit/6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "message": "[Xcode] Sandboxing override for \"Work around rdar://109484516\" not taking effect\nhttps://bugs.webkit.org/show_bug.cgi?id=319710\nrdar://182549120\n\nReviewed by Richard Robinson.\n\nThis script phase needs to be opted-out because it prunes old task\noutputs (and would cause a dependency cycle if it listed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
