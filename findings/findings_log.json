@@ -12817,5 +12817,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T15:28:03.812451+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "url": "https://github.com/WebKit/WebKit/commit/1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "message": "[JSC] DFG should use the `ArrayIndexOf` / `ArrayIncludes` intrinsic for RegExp matches arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=319351\n\nReviewed by Yusuke Suzuki.\n\nRegExp matches arrays have non-original structures (they carry the index,\ninput, and groups property transitions), so the ArrayInd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T15:30:13.254286+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "url": "https://github.com/WebKit/WebKit/commit/a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "message": "[JSC] `Array#indexOf` / `includes` should not take the slow path for rope elements with mismatched length\nhttps://bugs.webkit.org/show_bug.cgi?id=319237\n\nReviewed by Yusuke Suzuki.\n\nA rope stores its length inline, so the fast path can compare lengths and skip\nrope elements without resolving them, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T15:32:21.780910+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "url": "https://github.com/WebKit/WebKit/commit/1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "message": "[JSC] DFG should use the `ArrayIndexOf` / `ArrayIncludes` intrinsic for RegExp matches arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=319351\n\nReviewed by Yusuke Suzuki.\n\nRegExp matches arrays have non-original structures (they carry the index,\ninput, and groups property transitions), so the ArrayInd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T15:34:30.262022+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "url": "https://github.com/WebKit/WebKit/commit/a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "message": "[JSC] `Array#indexOf` / `includes` should not take the slow path for rope elements with mismatched length\nhttps://bugs.webkit.org/show_bug.cgi?id=319237\n\nReviewed by Yusuke Suzuki.\n\nA rope stores its length inline, so the fast path can compare lengths and skip\nrope elements without resolving them, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
