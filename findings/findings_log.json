@@ -13117,5 +13117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T21:39:21.041424+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "url": "https://github.com/swiftlang/swift/commit/e5a10384b0eca5fcfad00868a5453ca0095e0488",
+    "message": "Merge pull request #90558 from mikeash/protocol-conformance-less-stack\n\n[Runtime] Reduce the amount of stack space used in recursive protocol conformance checking.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T21:41:29.442244+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "url": "https://github.com/WebKit/WebKit/commit/f9f65c7ff4f625567d7010206419ed4503ed379d",
+    "message": "[JSC][Temporal] Deduplicate GetISODateTimeFor and align with temporal_rs\nrdar://181926853\nhttps://bugs.webkit.org/show_bug.cgi?id=319109\n\nReviewed by Yusuke Suzuki.\n\nAdd TemporalCore::getISODateTimeFor as the single spec-AO impl; five inline\nsites now delegate to it. Introduce ISO8601::PlainDateTime",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
