@@ -12937,5 +12937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T17:28:55.910683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "url": "https://github.com/WebKit/WebKit/commit/a84e1b4694055dfe89ceb1106d8850405421aa7f",
+    "message": "[JSC] `Array#indexOf` / `includes` should not take the slow path for rope elements with mismatched length\nhttps://bugs.webkit.org/show_bug.cgi?id=319237\n\nReviewed by Yusuke Suzuki.\n\nA rope stores its length inline, so the fast path can compare lengths and skip\nrope elements without resolving them, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T17:31:04.893409+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "953a65db52e02007d9efe661ae18b7812f4bb594",
+    "url": "https://github.com/WebKit/WebKit/commit/953a65db52e02007d9efe661ae18b7812f4bb594",
+    "message": "Update safer C++ expectations for iOS\nhttps://bugs.webkit.org/show_bug.cgi?id=319103\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations: Added.\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
