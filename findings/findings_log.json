@@ -12977,5 +12977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T18:15:55.667389+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1029c99e92ffa6735a57c79f0d436702f27e0e38",
+    "url": "https://github.com/WebKit/WebKit/commit/1029c99e92ffa6735a57c79f0d436702f27e0e38",
+    "message": "Update safer C++ expectations for macOS\nhttps://bugs.webkit.org/show_bug.cgi?id=319124\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T18:18:03.827838+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e65f82aa0acf16b9bdedeb52ce864f8e14fc203",
+    "url": "https://github.com/WebKit/WebKit/commit/0e65f82aa0acf16b9bdedeb52ce864f8e14fc203",
+    "message": "Add WK_ENABLE_SLOW_BUILD_VERIFICATION for slow build verification in CI and Production builds (2/2)\nhttps://bugs.webkit.org/show_bug.cgi?id=313288\nrdar://175559104\n\nReviewed by Richard Robinson.\n\nReland of 316776@main with two build fixes:\n- audit-spi can only run when InstallAPI is enabled. Update ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
