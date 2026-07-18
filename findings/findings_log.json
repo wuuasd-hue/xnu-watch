@@ -12677,5 +12677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T11:43:04.540731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "url": "https://github.com/WebKit/WebKit/commit/d11c8c7ba675067079fe261af351c44e5fd3278b",
+    "message": "[JSC] Use a polymorphic cache for microtask calls\nhttps://bugs.webkit.org/show_bug.cgi?id=318847\n\nReviewed by Yusuke Suzuki.\n\nThe microtask drain loop has a call cache with a single entry. It\nremembers the last callee (executable, CodeBlock, and entry address), and\na hit skips getCallData / prepareF",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T11:45:13.387639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "url": "https://github.com/WebKit/WebKit/commit/75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "message": "[JSC][Temporal] Fix Temporal.<Type>.prototype.constructor before first access\nhttps://bugs.webkit.org/show_bug.cgi?id=318990\nrdar://181842591\n\nReviewed by Yusuke Suzuki.\n\nBefore Temporal.<Type> was accessed as a property for the first time,\nTemporal.Now.plainDateISO().constructor.name returned \"Obje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
