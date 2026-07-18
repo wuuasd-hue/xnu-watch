@@ -13017,5 +13017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T19:39:40.737146+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40772733505bef5ce93894e6cda61196687b9593",
+    "url": "https://github.com/WebKit/WebKit/commit/40772733505bef5ce93894e6cda61196687b9593",
+    "message": "Deduplicate buildArrayForVector/mapToArray in Inspector canvas recording code\nhttps://bugs.webkit.org/show_bug.cgi?id=319740\nrdar://182580121\n\nReviewed by Devin Rousso.\n\nInspectorCanvas.cpp's buildArrayForVector<T> was structurally identical\nto the no-functor mapToArray overload in InspectorCanvasAr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T19:41:48.882264+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40772733505bef5ce93894e6cda61196687b9593",
+    "url": "https://github.com/WebKit/WebKit/commit/40772733505bef5ce93894e6cda61196687b9593",
+    "message": "Deduplicate buildArrayForVector/mapToArray in Inspector canvas recording code\nhttps://bugs.webkit.org/show_bug.cgi?id=319740\nrdar://182580121\n\nReviewed by Devin Rousso.\n\nInspectorCanvas.cpp's buildArrayForVector<T> was structurally identical\nto the no-functor mapToArray overload in InspectorCanvasAr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T19:43:56.877897+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "url": "https://github.com/WebKit/WebKit/commit/707b16ac07ea24da0fdc343968c092eaf3b91dfc",
+    "message": "PromiseResolveThenableJob should reject the promise when SpeciesConstructor throws\nhttps://bugs.webkit.org/show_bug.cgi?id=318399\n\nReviewed by Yusuke Suzuki.\n\nnew Promise(r => r(p)) never settles when p is a Promise whose own\nconstructor[@@species] getter throws: promiseResolveThenableJobFastSlow\nan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
