@@ -12897,5 +12897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T16:26:25.138521+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "url": "https://github.com/WebKit/WebKit/commit/bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "message": "[JSC] Run WPT Wasm tests in run-jsc-stress-tests' wasm.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319669\nrdar://182513824\n\nReviewed by Yusuke Suzuki.\n\nRun the imported Web Platform Tests WebAssembly suite\n(LayoutTests/imported/w3c/web-platform-tests/wasm/{core/js,jsapi}) directly in the jsc\ncomman",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-18T16:28:33.027500+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "url": "https://github.com/WebKit/WebKit/commit/1d97334bd2adc29eeb83cd1e268bdb22af458ad3",
+    "message": "[JSC] DFG should use the `ArrayIndexOf` / `ArrayIncludes` intrinsic for RegExp matches arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=319351\n\nReviewed by Yusuke Suzuki.\n\nRegExp matches arrays have non-original structures (they carry the index,\ninput, and groups property transitions), so the ArrayInd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
