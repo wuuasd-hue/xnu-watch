@@ -13317,5 +13317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T07:20:58.556067+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0df60f4248ef6652c95599d295cc4b0367f85911",
+    "url": "https://github.com/WebKit/WebKit/commit/0df60f4248ef6652c95599d295cc4b0367f85911",
+    "message": "Navigation Timing: cross-origin redirect opt-in should be based on destination origin.\nhttps://bugs.webkit.org/show_bug.cgi?id=316647\n\nReviewed by Alex Christensen.\n\nThis PR aligns the WebKit implementation with https://github.com/whatwg/fetch/pull/1931 and https://github.com/whatwg/html/pull/12513,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T07:23:06.755381+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2fb282a825385d9f53f09b6adc07b18f19203276",
+    "url": "https://github.com/WebKit/WebKit/commit/2fb282a825385d9f53f09b6adc07b18f19203276",
+    "message": "[JSC][Temporal] Fix non-ISO Calendar bugs in CalendarICUBridge\nhttps://bugs.webkit.org/show_bug.cgi?id=319278\nrdar://182118211\n\nReviewed by Yusuke Suzuki.\n\nFour bugs found by cross-checking against temporal_rs and icu4x:\n\n1. Coptic / Ethiopic `am` era was mapped to ICU era 0 (before-AM); the\ncorrect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
