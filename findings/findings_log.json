@@ -13277,5 +13277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T04:42:24.976544+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "8338e4789e3b766296f819cea9c665a98b74d0af",
+    "url": "https://github.com/swiftlang/swift/commit/8338e4789e3b766296f819cea9c665a98b74d0af",
+    "message": "Merge pull request \"ELF Metadata: Retain the metadata table\" (#90592)\n\nRetain the metadata bounds table and mark section bounds as weak symbols so that if they are stripped in the event that the section is empty and you're working with `lld` the bounds will be `NULL` instead of causing a failed link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T04:44:33.737766+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e67bf829346a5749941af115204310fe331e256",
+    "url": "https://github.com/WebKit/WebKit/commit/5e67bf829346a5749941af115204310fe331e256",
+    "message": "Web Inspector: support overriding more page settings via Page.overrideSetting\nhttps://bugs.webkit.org/show_bug.cgi?id=318270\n\nReviewed by Devin Rousso.\n\nWeb Inspector can only override a fixed set of page Settings via\nPage.overrideSetting. Extend that set with seven additional boolean settings:\nFixe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
