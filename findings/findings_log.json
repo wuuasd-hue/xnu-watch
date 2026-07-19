@@ -13757,5 +13757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T20:35:31.946201+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "url": "https://github.com/WebKit/WebKit/commit/e566e1134bd0182a0a7cb0ca4f782bb95dc66719",
+    "message": "[Re-land] [NavigationScheduler] history.back/forward/go(n) coalescing across processes via UIProcess session history traversal queue\nhttps://bugs.webkit.org/show_bug.cgi?id=317229\nrdar://179857636\n\nReviewed by Charlie Wolfe.\n\nRe-land of 316426@main, reverted as 316667@main\n(https://bugs.webkit.org/s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T20:36:08.579904+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e13280f56c44e96d8f923cc4828a31cb84ade68e",
+    "url": "https://github.com/WebKit/WebKit/commit/e13280f56c44e96d8f923cc4828a31cb84ade68e",
+    "message": "[YARR] Rearrange YarrJIT registers to have regT3\nhttps://bugs.webkit.org/show_bug.cgi?id=319477\nrdar://182284961\n\nReviewed by Keith Miller.\n\nThis patch rearrange YarrJIT registers so that we can have regT3.\n\n1. `initialStart` register is only used for dot-star-enclosure loop.\n   Let's not preserve o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
