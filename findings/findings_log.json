@@ -13677,5 +13677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T18:27:03.037913+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "170ee738c6f19a9f81f398e2fa0752b9ac234cd4",
+    "url": "https://github.com/WebKit/WebKit/commit/170ee738c6f19a9f81f398e2fa0752b9ac234cd4",
+    "message": "[JSC] `Temporal.Duration` rounding divides by zero when a time zone transition skips an entire day\nhttps://bugs.webkit.org/show_bug.cgi?id=319465\n\nReviewed by Yusuke Suzuki.\n\nWhen rounding a duration relative to a ZonedDateTime whose nudge window ends on a\ncalendar day entirely skipped by a time zon",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T18:27:39.647889+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "338e02c8838aed9c72f9244a53c928a1e6a969e5",
+    "url": "https://github.com/WebKit/WebKit/commit/338e02c8838aed9c72f9244a53c928a1e6a969e5",
+    "message": "[JSC] DFG strength reduction folds a compiler-thread RegExp execution failure into a definite no-match\nhttps://bugs.webkit.org/show_bug.cgi?id=319452\n\nReviewed by Yusuke Suzuki.\n\n313689@main made RegExp bytecode compilation mutator-only: when Yarr JIT code returns\nJITCodeFailure on a compiler thread",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
