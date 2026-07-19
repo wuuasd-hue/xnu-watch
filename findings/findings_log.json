@@ -13557,5 +13557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T15:29:01.277205+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "url": "https://github.com/WebKit/WebKit/commit/d4e7e6dacaa86556d56b6ae87a39479d9c126e0e",
+    "message": "[JSC] Move TypedArray.of from builtin JS to C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319332\nrdar://182148177\n\nReviewed by Sosuke Suzuki.\n\nThis patch moves TypedArray.of from builtin JS to C++.\nThis is trivially convertible as it is not involving callbacks etc.\nWe have a fast path for normal Typed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T15:29:38.658827+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "url": "https://github.com/WebKit/WebKit/commit/33a88e318eedd4ad6069b1833594c777b3e4ccb0",
+    "message": "Unify IMAGE_ANALYSIS_ENHANCEMENTS and IMAGE_ANALYSIS flags\nhttps://bugs.webkit.org/show_bug.cgi?id=319359\nrdar://182168302\n\nReviewed by Abrar Rahman Protyasha.\n\nThey have the same value now.\n\nTests: Tools/TestWebKitAPI/Tests/WebKit/WKWebView/FullscreenVideoTextRecognition.mm\n       Tools/TestWebKitA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
