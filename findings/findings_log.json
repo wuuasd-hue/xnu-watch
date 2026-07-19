@@ -13837,5 +13837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T22:38:06.557251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "69ab6c6330aa30cd7c4be60840d926a5e763aaca",
+    "url": "https://github.com/WebKit/WebKit/commit/69ab6c6330aa30cd7c4be60840d926a5e763aaca",
+    "message": "[JSC] CLoop is broken with loadh / storeh\nhttps://bugs.webkit.org/show_bug.cgi?id=319514\nrdar://182322728\n\nReviewed by Keith Miller.\n\nCLoop was not appropriately adding loadh / storeh handlings. This patch\nadds them.\n\n* Source/JavaScriptCore/llint/LowLevelInterpreter.cpp:\n(JSC::CLoopRegister::i16 co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T22:38:46.378199+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f065ab4abdb982cbf80de24d8a7fde95d8306de",
+    "url": "https://github.com/WebKit/WebKit/commit/7f065ab4abdb982cbf80de24d8a7fde95d8306de",
+    "message": "WebAssembly streaming instantiation uses the result promise as the import object when imports are omitted\nhttps://bugs.webkit.org/show_bug.cgi?id=316985\n\nReviewed by Yusuke Suzuki.\n\nStreamingCompiler records [globalObject, importObject?] as deferred-work\ndependencies; DeferredWorkTimer then appends ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
