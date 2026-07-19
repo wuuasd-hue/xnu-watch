@@ -13477,5 +13477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T12:44:40.254199+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "url": "https://github.com/WebKit/WebKit/commit/de6c371b533d07f008e81f12ecca4d638435ffa4",
+    "message": "[CMake] Add mac-performance preset with PGO/LTO support\nhttps://bugs.webkit.org/show_bug.cgi?id=319174\nrdar://182009951\n\nReviewed by Elliott Williams.\n\nAdd a new preset: mac-performance that enables PGO/LTO. The goal of this\nmode is to reflect any future shipping CMake build as much as possible.\nI d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T12:46:49.309575+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "url": "https://github.com/WebKit/WebKit/commit/c0e48d007a10a46cdffaf60b81fd90cf8c287357",
+    "message": "[JSC] LLInt should record `IterationMode::Generic` in `op_iterator_next` and `op_async_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=319363\n\nReviewed by Keith Miller.\n\nUnlike the baseline JIT, the LLInt's generic branches of op_iterator_next and\nop_async_iterator_next do not record Iteratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
