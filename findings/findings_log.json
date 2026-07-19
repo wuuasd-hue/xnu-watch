@@ -13397,5 +13397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T10:51:00.461534+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "904ba517118749e7b0e97ded812b7b64d8b7d534",
+    "url": "https://github.com/WebKit/WebKit/commit/904ba517118749e7b0e97ded812b7b64d8b7d534",
+    "message": "[JSC] `Strong<T>` should be pointer-sized\nhttps://bugs.webkit.org/show_bug.cgi?id=319210\n\nReviewed by Yusuke Suzuki.\n\n284791@main added `virtual ~Handle() = default;` while introducing\nStrongRefTracker, doubling sizeof(Strong<T>) from 8 to 16 bytes everywhere.\nStrong<T> is final and the only subclas",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-19T10:53:09.104231+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f65bd95a4b6fb49bed341f7fda4645f1830240b",
+    "url": "https://github.com/WebKit/WebKit/commit/5f65bd95a4b6fb49bed341f7fda4645f1830240b",
+    "message": "[JSC] Cooperative driving of async generators\nhttps://bugs.webkit.org/show_bug.cgi?id=319133\nrdar://181951971\n\nReviewed by Yijia Huang.\n\nThis is our next step in the long journey towards native microtasks and\nefficient async implementation. This patch introduces cooperative\ndriving mechanism of asyn",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
