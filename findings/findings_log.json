@@ -14297,5 +14297,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T18:47:19.422771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "url": "https://github.com/WebKit/WebKit/commit/6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "message": "[JSC][Temporal] Fix Ethioaa arithmetic year\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319785\n\nReviewed by Yijia Huang.\n\nUCAL_YEAR is the calendar-native field for Ethioaa's single AA era and matches Temporal's arithmetic year. Older ICU versions expose an Amete Mihret-relative UCAL_EXTENDED_YEAR, whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T18:47:57.951120+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "url": "https://github.com/WebKit/WebKit/commit/3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "message": "[JSC] Make AsyncFromSyncIterator handled in async_iterator_open / async_iterator_next\nrdar://182251956\nhttps://bugs.webkit.org/show_bug.cgi?id=319435\n\nReviewed by Yijia Huang.\n\nThis patch adds cooperative driving mechanism to AsyncFromSyncIterator.\nThis also moves all of functions of AsyncFromSyncIt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T18:48:36.010107+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "url": "https://github.com/WebKit/WebKit/commit/6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "message": "[JSC][Temporal] Fix Ethioaa arithmetic year\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319785\n\nReviewed by Yijia Huang.\n\nUCAL_YEAR is the calendar-native field for Ethioaa's single AA era and matches Temporal's arithmetic year. Older ICU versions expose an Amete Mihret-relative UCAL_EXTENDED_YEAR, whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T18:49:14.110475+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "url": "https://github.com/WebKit/WebKit/commit/3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "message": "[JSC] Make AsyncFromSyncIterator handled in async_iterator_open / async_iterator_next\nrdar://182251956\nhttps://bugs.webkit.org/show_bug.cgi?id=319435\n\nReviewed by Yijia Huang.\n\nThis patch adds cooperative driving mechanism to AsyncFromSyncIterator.\nThis also moves all of functions of AsyncFromSyncIt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
