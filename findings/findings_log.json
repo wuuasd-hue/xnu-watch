@@ -13917,5 +13917,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T01:18:34.136848+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3130bd507b02a77372bf2365ddf0164e546c6605",
+    "url": "https://github.com/WebKit/WebKit/commit/3130bd507b02a77372bf2365ddf0164e546c6605",
+    "message": "[JSC] Use the generic path in `jsSpliceSubstringsWithSeparator(s)` for short two-range results\nhttps://bugs.webkit.org/show_bug.cgi?id=319023\n\nReviewed by Yusuke Suzuki.\n\nFor a global RegExp replace with a single match (rangeCount == 2, separatorCount == 1),\nwe create two substring StringImpls and c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T01:19:11.231736+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7af6d5a321879450ab6d21f113e233e957caf14f",
+    "url": "https://github.com/WebKit/WebKit/commit/7af6d5a321879450ab6d21f113e233e957caf14f",
+    "message": "Web Inspector: Emit per-element `Layout Invalidated` events\nhttps://bugs.webkit.org/show_bug.cgi?id=317852\n\nReviewed by Devin Rousso.\n\nCurrently, the `Layout Invalidated` event is emitted only when layout is\nscheduled, with the layout root element set as the associated node. This\nevent does not refl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
