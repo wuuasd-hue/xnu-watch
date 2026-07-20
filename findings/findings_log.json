@@ -13957,5 +13957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T04:57:43.337803+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "message": "[JSC] Use ApproximateTime for deadline in Opportunistic Task Scheduler and Incremental Sweeper\nhttps://bugs.webkit.org/show_bug.cgi?id=319662\nrdar://182496956\n\nReviewed by Yijia Huang.\n\nNow UnbarrieredMonotonicTime is used in ApproximateTime if possible, so\nusing ApproximateTime for deadline represe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T04:58:20.174808+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "message": "[JSC] Use ApproximateTime for deadline in Opportunistic Task Scheduler and Incremental Sweeper\nhttps://bugs.webkit.org/show_bug.cgi?id=319662\nrdar://182496956\n\nReviewed by Yijia Huang.\n\nNow UnbarrieredMonotonicTime is used in ApproximateTime if possible, so\nusing ApproximateTime for deadline represe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T04:58:57.230061+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "url": "https://github.com/WebKit/WebKit/commit/3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "message": "JSC feature flags should be driven by UnifiedWebPreferences.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319384\nrdar://182210113\n\nReviewed by Ben Nham.\n\nJSC's feature-flag options (e.g. useTemporal, useJSPI, and the wasm feature\nflags) were declared standalone in OptionsList.h, separate from the web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
