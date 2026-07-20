@@ -14177,5 +14177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T15:08:28.843724+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f92bfdda93f83bbccb356464e001f89944a543e",
+    "url": "https://github.com/WebKit/WebKit/commit/8f92bfdda93f83bbccb356464e001f89944a543e",
+    "message": "[SaferCPP] Address warnings in Source/WebKit\nhttps://bugs.webkit.org/show_bug.cgi?id=319555\n\nReviewed by Ryosuke Niwa.\n\n* Source/WTF/wtf/OverflowHandler.h:\n(WTF::AssertNoOverflow::crash):\n(WTF::RecordOverflow::crash):\n* Source/WebKit/Shared/Cocoa/CoreIPCNSURLRequest.mm:\n(WebKit::isTypedAllowlistKey)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T15:09:05.712703+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "605bd7edf69445e082f71fc5b288b68b28c36045",
+    "url": "https://github.com/WebKit/WebKit/commit/605bd7edf69445e082f71fc5b288b68b28c36045",
+    "message": "[JSC] for-await fast consumer must re-check the Promise species watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319530\nrdar://182353926\n\nReviewed by Yijia Huang.\n\nFastAsyncGenerator fast path should skip promise creation only when\npromise watchpoint is not fired since PromiseResolve accesses prom",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
