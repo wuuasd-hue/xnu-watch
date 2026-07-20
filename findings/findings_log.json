@@ -14617,5 +14617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T23:44:04.620166+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "575b7fa2016905586dc82337b53bd04065f094c5",
+    "url": "https://github.com/WebKit/WebKit/commit/575b7fa2016905586dc82337b53bd04065f094c5",
+    "message": "[JSC] Wasm-backed resizable ArrayBuffers should throw for all invalid sizes\nhttps://bugs.webkit.org/show_bug.cgi?id=319705\nrdar://181293951\n\nReviewed by Mark Lam and Yusuke Suzuki.\n\nResizable ArrayBuffers that are backed by Wasm memories cannot grow beyond\n65536 pages.  Currently, we RELEASE_ASSERT ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T23:44:41.639071+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "d35d78dab6dfa8cddcf95c38862811c41bbaf1a2",
+    "url": "https://github.com/swiftlang/swift/commit/d35d78dab6dfa8cddcf95c38862811c41bbaf1a2",
+    "message": "Merge pull request #90742 from compnerd/clobberin-time\n\nRuntime: fix freed-object clobber overflow for interior object pointers",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
