@@ -14017,5 +14017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T07:53:28.193857+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "url": "https://github.com/WebKit/WebKit/commit/56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "message": "[JSC] Converting Double -> Bool should be branchless\nhttps://bugs.webkit.org/show_bug.cgi?id=319790\nrdar://182662714\n\nReviewed by Keith Miller.\n\nConverting Double -> Boolean can be done with branchless JIT code\n(compareDouble). This patch applies it. FTL is already doing so, so we\ndo not need to hav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T07:54:04.928411+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "url": "https://github.com/WebKit/WebKit/commit/56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "message": "[JSC] Converting Double -> Bool should be branchless\nhttps://bugs.webkit.org/show_bug.cgi?id=319790\nrdar://182662714\n\nReviewed by Keith Miller.\n\nConverting Double -> Boolean can be done with branchless JIT code\n(compareDouble). This patch applies it. FTL is already doing so, so we\ndo not need to hav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T07:54:41.673729+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "message": "[JSC] Use ApproximateTime for deadline in Opportunistic Task Scheduler and Incremental Sweeper\nhttps://bugs.webkit.org/show_bug.cgi?id=319662\nrdar://182496956\n\nReviewed by Yijia Huang.\n\nNow UnbarrieredMonotonicTime is used in ApproximateTime if possible, so\nusing ApproximateTime for deadline represe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
