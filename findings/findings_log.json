@@ -14077,5 +14077,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T10:36:53.978996+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "url": "https://github.com/WebKit/WebKit/commit/56453fdfe0b0ca6258c23e6453b34f70b885d13f",
+    "message": "[JSC] Converting Double -> Bool should be branchless\nhttps://bugs.webkit.org/show_bug.cgi?id=319790\nrdar://182662714\n\nReviewed by Keith Miller.\n\nConverting Double -> Boolean can be done with branchless JIT code\n(compareDouble). This patch applies it. FTL is already doing so, so we\ndo not need to hav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T10:37:32.365803+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "url": "https://github.com/WebKit/WebKit/commit/bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "message": "[JSC] BBQ: strength-reduce signed div/rem by negative power-of-two constants\nhttps://bugs.webkit.org/show_bug.cgi?id=269744\n\nReviewed by Keith Miller.\n\nWhen BBQ sees a constant divisor that is a power of two, it turns\ndiv/rem into shifts and masks. That path only ran for positive\ndivisors, so values",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
