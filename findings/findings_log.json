@@ -14117,5 +14117,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T12:59:04.801233+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f92bfdda93f83bbccb356464e001f89944a543e",
+    "url": "https://github.com/WebKit/WebKit/commit/8f92bfdda93f83bbccb356464e001f89944a543e",
+    "message": "[SaferCPP] Address warnings in Source/WebKit\nhttps://bugs.webkit.org/show_bug.cgi?id=319555\n\nReviewed by Ryosuke Niwa.\n\n* Source/WTF/wtf/OverflowHandler.h:\n(WTF::AssertNoOverflow::crash):\n(WTF::RecordOverflow::crash):\n* Source/WebKit/Shared/Cocoa/CoreIPCNSURLRequest.mm:\n(WebKit::isTypedAllowlistKey)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T12:59:47.612686+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f92bfdda93f83bbccb356464e001f89944a543e",
+    "url": "https://github.com/WebKit/WebKit/commit/8f92bfdda93f83bbccb356464e001f89944a543e",
+    "message": "[SaferCPP] Address warnings in Source/WebKit\nhttps://bugs.webkit.org/show_bug.cgi?id=319555\n\nReviewed by Ryosuke Niwa.\n\n* Source/WTF/wtf/OverflowHandler.h:\n(WTF::AssertNoOverflow::crash):\n(WTF::RecordOverflow::crash):\n* Source/WebKit/Shared/Cocoa/CoreIPCNSURLRequest.mm:\n(WebKit::isTypedAllowlistKey)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T13:00:25.005591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a3ab620c332b169ab7a2487a0e3100fd12d68ca",
+    "url": "https://github.com/WebKit/WebKit/commit/4a3ab620c332b169ab7a2487a0e3100fd12d68ca",
+    "message": "[YARR] Use loop for massive save and restore of subpattern captures\nhttps://bugs.webkit.org/show_bug.cgi?id=319528\nrdar://182353166\n\nReviewed by Yijia Huang.\n\nWe observed that significant bloating of JIT code when YarrJIT is having\nhuge amount of nested paren contexts. The reason is that we need to ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
