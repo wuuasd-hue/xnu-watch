@@ -14377,5 +14377,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T20:15:11.810636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c46df7f6e142a38fc92073960ce90389913387f4",
+    "url": "https://github.com/WebKit/WebKit/commit/c46df7f6e142a38fc92073960ce90389913387f4",
+    "message": "[JSC][Temporal] Fix Ethiopic AA era mapping\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319787\n\nReviewed by Yijia Huang.\n\nICU represents the historical Ethiopic AA era as era 0 and the modern AM era as era 1. Map those values explicitly in both directions so Temporal accepts AA property bags and report",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T20:15:49.418054+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "url": "https://github.com/WebKit/WebKit/commit/512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "message": "[JSC] Fold String.prototype.at negative-index adjustment to a branchless csel\nhttps://bugs.webkit.org/show_bug.cgi?id=319789\nrdar://182662211\n\nReviewed by Yijia Huang.\n\nstringCharLoad<RelativeNegativeIndex::Yes> is having very small jumps to\ncovert the negative-index to the positive one. But this ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T20:16:26.595472+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c46df7f6e142a38fc92073960ce90389913387f4",
+    "url": "https://github.com/WebKit/WebKit/commit/c46df7f6e142a38fc92073960ce90389913387f4",
+    "message": "[JSC][Temporal] Fix Ethiopic AA era mapping\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319787\n\nReviewed by Yijia Huang.\n\nICU represents the historical Ethiopic AA era as era 0 and the modern AM era as era 1. Map those values explicitly in both directions so Temporal accepts AA property bags and report",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-20T20:17:04.492138+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "url": "https://github.com/WebKit/WebKit/commit/512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "message": "[JSC] Fold String.prototype.at negative-index adjustment to a branchless csel\nhttps://bugs.webkit.org/show_bug.cgi?id=319789\nrdar://182662211\n\nReviewed by Yijia Huang.\n\nstringCharLoad<RelativeNegativeIndex::Yes> is having very small jumps to\ncovert the negative-index to the positive one. But this ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
