@@ -15217,5 +15217,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T19:58:05.642923+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "url": "https://github.com/WebKit/WebKit/commit/b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "message": "[Site Isolation] remove storage access on commit\nhttps://bugs.webkit.org/show_bug.cgi?id=317934\nrdar://180735236\n\nReviewed by Alex Christensen.\n\nWhen a navigation of an iframe is initiated by a different, cross-site\nframe, that iframe should lose its frame-specific storage access. This is\ndescribed ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T19:58:46.334969+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a71bbb85003c03c9da7c85fa194069bc8992095",
+    "url": "https://github.com/WebKit/WebKit/commit/7a71bbb85003c03c9da7c85fa194069bc8992095",
+    "message": "[JSC][Wasm] Zero-extend memory32 data segment offsets\nhttps://bugs.webkit.org/show_bug.cgi?id=314444\n\nReviewed by Yusuke Suzuki.\n\ni32.const data offsets are stored in a uint64_t with C++ sign-extension, so\n0x80000000 (e.g. Emscripten GLOBAL_BASE=2GB) became 0xffffffff80000000 and\nfailed active data ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T19:59:24.291381+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "url": "https://github.com/WebKit/WebKit/commit/b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "message": "[Site Isolation] remove storage access on commit\nhttps://bugs.webkit.org/show_bug.cgi?id=317934\nrdar://180735236\n\nReviewed by Alex Christensen.\n\nWhen a navigation of an iframe is initiated by a different, cross-site\nframe, that iframe should lose its frame-specific storage access. This is\ndescribed ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
