@@ -14977,5 +14977,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T15:20:05.154778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "url": "https://github.com/WebKit/WebKit/commit/0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "message": "[JSC] Iterator#includes should propagate a thrown error in |IteratorClose| abstract operation on matching the target value\nhttps://bugs.webkit.org/show_bug.cgi?id=319569\n\nReviewed by Keith Miller.\n\nThis is a bug by the wrong implementation in bug 309883.\n\nAccording to [the spec](https://tc39.es/prop",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T15:20:42.670452+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "url": "https://github.com/WebKit/WebKit/commit/0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "message": "[JSC] Iterator#includes should propagate a thrown error in |IteratorClose| abstract operation on matching the target value\nhttps://bugs.webkit.org/show_bug.cgi?id=319569\n\nReviewed by Keith Miller.\n\nThis is a bug by the wrong implementation in bug 309883.\n\nAccording to [the spec](https://tc39.es/prop",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T15:21:22.787827+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "url": "https://github.com/WebKit/WebKit/commit/10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "message": "[JSC] DFG Object.defineProperty descriptor cell confusion (JIT code invalid cell dereference)\nhttps://bugs.webkit.org/show_bug.cgi?id=318139\nrdar://180958800\n\nReviewed by Yijia Huang.\n\nWhen constant-folding ObjectDefineProperty, we should emit checks\nattached in the edges to ensure that these filter",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
