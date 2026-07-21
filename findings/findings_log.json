@@ -14897,5 +14897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T11:42:07.890435+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f2a8878118543bfc97b64abd558e5c8e75e33f4",
+    "url": "https://github.com/WebKit/WebKit/commit/5f2a8878118543bfc97b64abd558e5c8e75e33f4",
+    "message": "[JSC] `JSON.parse` should create 8-bit strings for Latin1 values in a 16-bit input\nhttps://bugs.webkit.org/show_bug.cgi?id=319782\n\nReviewed by Yusuke Suzuki.\n\nWhen the input to JSON.parse is a 16-bit string (e.g. it contains a single emoji anywhere),\nLiteralParser<char16_t> creates every value strin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T11:42:45.357159+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41ee8b26825110c19e6aab1580e2d8ad89a2abb8",
+    "url": "https://github.com/WebKit/WebKit/commit/41ee8b26825110c19e6aab1580e2d8ad89a2abb8",
+    "message": "[JSC] Match non-canonical SBFX form in B3LowerToAir\nhttps://bugs.webkit.org/show_bug.cgi?id=271412\n\nReviewed by Yijia Huang.\n\nB3LowerToAir already selected sbfx for SShr(Shl((Z|S)Shr(src, lsb), amount), amount).\nAlso match SShr(Shl(src, leftAmt), rightAmt) with rightAmt > leftAmt so that form\nselect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
