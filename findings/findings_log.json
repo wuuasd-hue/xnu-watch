@@ -15277,5 +15277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T20:59:41.026453+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "url": "https://github.com/WebKit/WebKit/commit/ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "message": "[JSC] Generate Data IC code as fall-through\nhttps://bugs.webkit.org/show_bug.cgi?id=318125\nrdar://180950753\n\nReviewed by Keith Miller.\n\nInline cache code is usually generated so the guard falls through into the fast case and\nthe fast case falls through into the continuation code. This keeps the comm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T21:00:19.640578+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "url": "https://github.com/WebKit/WebKit/commit/ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "message": "[JSC] Generate Data IC code as fall-through\nhttps://bugs.webkit.org/show_bug.cgi?id=318125\nrdar://180950753\n\nReviewed by Keith Miller.\n\nInline cache code is usually generated so the guard falls through into the fast case and\nthe fast case falls through into the continuation code. This keeps the comm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T21:00:57.551028+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ad86bc0929908508cec4c5857055e151908707d",
+    "url": "https://github.com/WebKit/WebKit/commit/6ad86bc0929908508cec4c5857055e151908707d",
+    "message": "Web Inspector: `Console.setLoggingChannelLevel` shouldn't exist for `Worker`\nhttps://bugs.webkit.org/show_bug.cgi?id=319708\n\nReviewed by Alexey Proskuryakov.\n\n`Console.getLoggingChannels` and `Console.setLoggingChannelLevel` are only implemented by `PageConsoleAgent` and `FrameConsoleAgent`.\n\nAs suc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
