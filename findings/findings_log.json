@@ -14817,5 +14817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T07:25:13.763430+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f02e51145dfe86eed061d0156833e68a809d0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/6f02e51145dfe86eed061d0156833e68a809d0ab",
+    "message": "[JSC] Use moveConditionally32 in prepareForTailCallSlow\nhttps://bugs.webkit.org/show_bug.cgi?id=319845\nrdar://182742426\n\nReviewed by Yijia Huang.\n\nLet's just use moveConditionally32 instead of micro-basic-blocks.\n\n* Source/JavaScriptCore/jit/CCallHelpers.h:\n\nCanonical link: https://commits.webkit.or",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T07:25:50.411062+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f221020aa88928636be08e34139c47a803f08af",
+    "url": "https://github.com/WebKit/WebKit/commit/9f221020aa88928636be08e34139c47a803f08af",
+    "message": "Implement Table64 in the parser and IPInt tier\nhttps://bugs.webkit.org/show_bug.cgi?id=316710\nrdar://179159629\n\nReviewed by Keith Miller.\n\nIn this patch, I allow parsing of the Table64 functions for tables with i64\naddress types and ensure that the functions work in the IPInt tier.\n\nInPlaceInterpret",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
