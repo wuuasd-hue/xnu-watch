@@ -14937,5 +14937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T13:08:10.910336+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6654fe520c0b94de12aff50be1839be853f9e15e",
+    "url": "https://github.com/WebKit/WebKit/commit/6654fe520c0b94de12aff50be1839be853f9e15e",
+    "message": "[JSC] Use `vectorLengthHint` in `ArrayAllocationProfile` for `NewArrayWithSize` node\nhttps://bugs.webkit.org/show_bug.cgi?id=317466\n\nReviewed by Yusuke Suzuki.\n\nArray.prototype.filter creates its result via op_new_array_with_species\nwith length 0, which the DFG converts to NewArrayWithSize(0). The\nr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T13:08:48.359990+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a6f9b723771ef40d176aaae2cd3f3e3f99e9750c",
+    "url": "https://github.com/WebKit/WebKit/commit/a6f9b723771ef40d176aaae2cd3f3e3f99e9750c",
+    "message": "[JSC] Wire ARM64 min / max specialized thunks into `thunkGeneratorForIntrinsic`\nhttps://bugs.webkit.org/show_bug.cgi?id=319795\n\nReviewed by Yusuke Suzuki.\n\n281118@main added maxThunkGenerator / minThunkGenerator for ARM64, which have fast paths for\nInt32-Int32 / Int32-Double / Double-Int32 / Double-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
