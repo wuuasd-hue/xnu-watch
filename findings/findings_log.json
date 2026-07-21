@@ -15337,5 +15337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T22:02:14.795018+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "message": "[JSC] Add JIT support for BigInt64 / BigUInt64 allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=319872\nrdar://182776366\n\nReviewed by Yijia Huang.\n\nThis patch adds JIT support to BigInt64 / BigUInt64 allocations.\nWe allocate JSBigInt and appropriately configure the content and flags.\n\n    data-view",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T22:02:52.554818+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "message": "[JSC] Add JIT support for BigInt64 / BigUInt64 allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=319872\nrdar://182776366\n\nReviewed by Yijia Huang.\n\nThis patch adds JIT support to BigInt64 / BigUInt64 allocations.\nWe allocate JSBigInt and appropriately configure the content and flags.\n\n    data-view",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T22:03:30.302309+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f02e51145dfe86eed061d0156833e68a809d0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/6f02e51145dfe86eed061d0156833e68a809d0ab",
+    "message": "[JSC] Use moveConditionally32 in prepareForTailCallSlow\nhttps://bugs.webkit.org/show_bug.cgi?id=319845\nrdar://182742426\n\nReviewed by Yijia Huang.\n\nLet's just use moveConditionally32 instead of micro-basic-blocks.\n\n* Source/JavaScriptCore/jit/CCallHelpers.h:\n\nCanonical link: https://commits.webkit.or",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
