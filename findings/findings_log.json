@@ -15397,5 +15397,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:25:36.790675+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "url": "https://github.com/WebKit/WebKit/commit/1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "message": "Export VM::hasLanguageChange() so WebCore can link against it\nhttps://bugs.webkit.org/show_bug.cgi?id=319925\nrdar://182851292\n\nReviewed by Keith Miller.\n\nr8d261de036d4 (\"Cache Intl.DateTimeFormat\") changed the inline\nVM::hasAnyEntryScopeServiceRequest() to call the out-of-line\nVM::hasLanguageChange(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:26:13.677953+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "url": "https://github.com/WebKit/WebKit/commit/a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "message": "[JSC] `Symbol.keyFor` should reuse the symbol's cached description string\nhttps://bugs.webkit.org/show_bug.cgi?id=319843\n\nReviewed by Yusuke Suzuki.\n\nSerializers call Symbol.keyFor on the same registered symbols while walking an\nobject graph, and each call allocates a fresh JSString even though Symb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:26:50.631176+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a88a607d357e17b158c318100fac93ce2407c2b1",
+    "url": "https://github.com/WebKit/WebKit/commit/a88a607d357e17b158c318100fac93ce2407c2b1",
+    "message": "[JSC] Inline `ArrayBuffer.isView` in DFG/FTL by extending `IsCellWithType` to a JSType range\nhttps://bugs.webkit.org/show_bug.cgi?id=319796\n\nReviewed by Yusuke Suzuki.\n\nArrayBuffer.isView had no intrinsic, so DFG/FTL emitted a host function call\nfor it.\n\nThis patch adds ArrayBufferIsViewIntrinsic an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:27:27.392785+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8339909e6ce15eb0070e5ec79871bff7e7c76148",
+    "url": "https://github.com/WebKit/WebKit/commit/8339909e6ce15eb0070e5ec79871bff7e7c76148",
+    "message": "[JSC] Avoid zero-filling and `gcSafeMemcpy` in `tryCreateObjectViaCloning`\nhttps://bugs.webkit.org/show_bug.cgi?id=319850\n\nReviewed by Yusuke Suzuki.\n\ntryCreateObjectViaCloning, which implements the fast path of object spread `{ ...source }`,\nwas creating a JSFinalObject via createWithButterfly, whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:28:05.695060+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "url": "https://github.com/WebKit/WebKit/commit/1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "message": "Export VM::hasLanguageChange() so WebCore can link against it\nhttps://bugs.webkit.org/show_bug.cgi?id=319925\nrdar://182851292\n\nReviewed by Keith Miller.\n\nr8d261de036d4 (\"Cache Intl.DateTimeFormat\") changed the inline\nVM::hasAnyEntryScopeServiceRequest() to call the out-of-line\nVM::hasLanguageChange(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-21T23:28:42.511078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "url": "https://github.com/WebKit/WebKit/commit/a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "message": "[JSC] `Symbol.keyFor` should reuse the symbol's cached description string\nhttps://bugs.webkit.org/show_bug.cgi?id=319843\n\nReviewed by Yusuke Suzuki.\n\nSerializers call Symbol.keyFor on the same registered symbols while walking an\nobject graph, and each call allocates a fresh JSString even though Symb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
