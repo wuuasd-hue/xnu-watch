@@ -15897,5 +15897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T14:51:29.934117+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d261de036d46e2f57473eb3c8c65f43bbf77324",
+    "url": "https://github.com/WebKit/WebKit/commit/8d261de036d46e2f57473eb3c8c65f43bbf77324",
+    "message": "Cache Intl.DateTimeFormat\nhttps://bugs.webkit.org/show_bug.cgi?id=314337\n\nReviewed by Keith Miller.\n\nWe cache new Intl.DateTimeFormat like other engines. A LRU cache keeps\nthe underlying const impl object cached, and JS wrappers share a reference\nto it now.\n\nWe also register a new language change ob",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T14:52:07.432939+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dd0abc261828479fac8134d26d7138b962df5a3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dd0abc261828479fac8134d26d7138b962df5a3",
+    "message": "[JSC][Temporal] Fix fixed-solar non-ISO calendar arithmetic\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319804\n\nReviewed by Yijia Huang.\n\nICU calendar arithmetic can clamp at the supported instant boundaries, leaving partially clamped native fields for fixed-solar non-ISO calendars. Construct and verif",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
