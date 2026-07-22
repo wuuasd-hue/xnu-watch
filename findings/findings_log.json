@@ -16117,5 +16117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T20:04:10.956441+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "url": "https://github.com/WebKit/WebKit/commit/ca74e529b927042f3bbdbc9aef0050bd8061e6f9",
+    "message": "[JSC] Generate Data IC code as fall-through\nhttps://bugs.webkit.org/show_bug.cgi?id=318125\nrdar://180950753\n\nReviewed by Keith Miller.\n\nInline cache code is usually generated so the guard falls through into the fast case and\nthe fast case falls through into the continuation code. This keeps the comm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T20:04:47.624280+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "message": "[JSC] Add JIT support for BigInt64 / BigUInt64 allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=319872\nrdar://182776366\n\nReviewed by Yijia Huang.\n\nThis patch adds JIT support to BigInt64 / BigUInt64 allocations.\nWe allocate JSBigInt and appropriately configure the content and flags.\n\n    data-view",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
