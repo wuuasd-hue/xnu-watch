@@ -15717,5 +15717,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T09:05:38.279254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b8e37abf2836c3dda3db728c5e2e82de59c7a49",
+    "url": "https://github.com/WebKit/WebKit/commit/4b8e37abf2836c3dda3db728c5e2e82de59c7a49",
+    "message": "[JSC] Use pass-by-value for `resultIndex` argument of `JS::fastFlatIntoBuffer()`\nhttps://bugs.webkit.org/show_bug.cgi?id=319673\n\nReviewed by Sosuke Suzuki.\n\nThis change is related to only the fast path of `Array#flat()`.\n`resultIndex` is 8-bytes (`uint64_t`). It's enough small size.\n\nInterestingly, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T09:06:15.639636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "url": "https://github.com/WebKit/WebKit/commit/c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "message": "[Web Inspector] [Site Isolation] Deliver DOM custom-element and pseudo-element events to Frame Targets\nhttps://bugs.webkit.org/show_bug.cgi?id=NNNNNN\nrdar://179176056\n\nReviewed by Qianlang Chen.\n\nWeb Inspector's Elements tree for an out-of-process iframe went\nstale on these lifecycle changes:\n\n- DOM",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T09:06:53.302193+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "message": "Web Inspector: [SI] route shadowRootPushed/Popped to per-frame FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=X\nrdar://179248483\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation a cross-origin iframe's DOM lives in a separate\nWebProcess with its own FrameDOMAgent. The DOM.shadowRootPushed an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T09:07:31.050772+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b8e37abf2836c3dda3db728c5e2e82de59c7a49",
+    "url": "https://github.com/WebKit/WebKit/commit/4b8e37abf2836c3dda3db728c5e2e82de59c7a49",
+    "message": "[JSC] Use pass-by-value for `resultIndex` argument of `JS::fastFlatIntoBuffer()`\nhttps://bugs.webkit.org/show_bug.cgi?id=319673\n\nReviewed by Sosuke Suzuki.\n\nThis change is related to only the fast path of `Array#flat()`.\n`resultIndex` is 8-bytes (`uint64_t`). It's enough small size.\n\nInterestingly, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T09:08:08.397803+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "url": "https://github.com/WebKit/WebKit/commit/c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "message": "[Web Inspector] [Site Isolation] Deliver DOM custom-element and pseudo-element events to Frame Targets\nhttps://bugs.webkit.org/show_bug.cgi?id=NNNNNN\nrdar://179176056\n\nReviewed by Qianlang Chen.\n\nWeb Inspector's Elements tree for an out-of-process iframe went\nstale on these lifecycle changes:\n\n- DOM",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
