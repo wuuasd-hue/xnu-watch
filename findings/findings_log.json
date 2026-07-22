@@ -15857,5 +15857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T12:53:06.410482+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "url": "https://github.com/WebKit/WebKit/commit/0a0c75c029a02ac511abaf491e38178e66c931e5",
+    "message": "[JSC] Iterator#includes should propagate a thrown error in |IteratorClose| abstract operation on matching the target value\nhttps://bugs.webkit.org/show_bug.cgi?id=319569\n\nReviewed by Keith Miller.\n\nThis is a bug by the wrong implementation in bug 309883.\n\nAccording to [the spec](https://tc39.es/prop",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T12:53:43.181771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "771e7c42bc494b463800e4a87a032b99af72800d",
+    "url": "https://github.com/WebKit/WebKit/commit/771e7c42bc494b463800e4a87a032b99af72800d",
+    "message": "[JSC] Use cooperative driving in TLA modules\nhttps://bugs.webkit.org/show_bug.cgi?id=319867\nrdar://182767755\n\nReviewed by Yijia Huang.\n\nThis patch extends support of cooperative driving to cover TLA modules.\nThe core change is accepting JSModuleRecord as a driver. And the change\nis really minimum. T",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
