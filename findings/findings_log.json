@@ -15817,5 +15817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T11:23:23.203421+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "message": "Web Inspector: [SI] route shadowRootPushed/Popped to per-frame FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=X\nrdar://179248483\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation a cross-origin iframe's DOM lives in a separate\nWebProcess with its own FrameDOMAgent. The DOM.shadowRootPushed an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T11:24:01.037995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f221020aa88928636be08e34139c47a803f08af",
+    "url": "https://github.com/WebKit/WebKit/commit/9f221020aa88928636be08e34139c47a803f08af",
+    "message": "Implement Table64 in the parser and IPInt tier\nhttps://bugs.webkit.org/show_bug.cgi?id=316710\nrdar://179159629\n\nReviewed by Keith Miller.\n\nIn this patch, I allow parsing of the Table64 functions for tables with i64\naddress types and ensure that the functions work in the IPInt tier.\n\nInPlaceInterpret",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
