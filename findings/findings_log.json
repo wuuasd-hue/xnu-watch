@@ -15937,5 +15937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T16:11:21.272109+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd66f17f455cb8886b11755882ee5853226bca4",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd66f17f455cb8886b11755882ee5853226bca4",
+    "message": "Enable wasm multimemory feature flag\nhttps://bugs.webkit.org/show_bug.cgi?id=319389\nrdar://182219080\n\nReviewed by Dan Hecht.\n\nSwitch on --useWasmMultiMemory by default\n\n* JSTests/wasm/function-tests/memory-section-and-import.js:\n* JSTests/wasm/js-api/test_memory.js:\n* JSTests/wasm/js-api/validate.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T16:11:59.195538+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a71bbb85003c03c9da7c85fa194069bc8992095",
+    "url": "https://github.com/WebKit/WebKit/commit/7a71bbb85003c03c9da7c85fa194069bc8992095",
+    "message": "[JSC][Wasm] Zero-extend memory32 data segment offsets\nhttps://bugs.webkit.org/show_bug.cgi?id=314444\n\nReviewed by Yusuke Suzuki.\n\ni32.const data offsets are stored in a uint64_t with C++ sign-extension, so\n0x80000000 (e.g. Emscripten GLOBAL_BASE=2GB) became 0xffffffff80000000 and\nfailed active data ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
