@@ -16217,5 +16217,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T22:47:56.161896+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "url": "https://github.com/WebKit/WebKit/commit/55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "message": "Unreviewed, reverting 315966@main (0071dfd4f18a)\nhttps://bugs.webkit.org/show_bug.cgi?id=320022\n\ntrips RELEASE_ASSERT\n\nReverted change:\n\n    [JSC] Use `InstanceOf` DFG node for `Object#isPrototypeOf`\n    https://bugs.webkit.org/show_bug.cgi?id=317821\n    315966@main (0071dfd4f18a)\n\nCanonical link: h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T22:48:33.283210+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "url": "https://github.com/WebKit/WebKit/commit/55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "message": "Unreviewed, reverting 315966@main (0071dfd4f18a)\nhttps://bugs.webkit.org/show_bug.cgi?id=320022\n\ntrips RELEASE_ASSERT\n\nReverted change:\n\n    [JSC] Use `InstanceOf` DFG node for `Object#isPrototypeOf`\n    https://bugs.webkit.org/show_bug.cgi?id=317821\n    315966@main (0071dfd4f18a)\n\nCanonical link: h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T22:49:10.272903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "url": "https://github.com/WebKit/WebKit/commit/a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "message": "[JSC] `Symbol.keyFor` should reuse the symbol's cached description string\nhttps://bugs.webkit.org/show_bug.cgi?id=319843\n\nReviewed by Yusuke Suzuki.\n\nSerializers call Symbol.keyFor on the same registered symbols while walking an\nobject graph, and each call allocates a fresh JSString even though Symb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
