@@ -16037,5 +16037,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T18:52:48.039456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8082ccd8788955200b95084e2bad3e933fdff05",
+    "url": "https://github.com/WebKit/WebKit/commit/d8082ccd8788955200b95084e2bad3e933fdff05",
+    "message": "[JSC] Add VectorZipX(a, all-zeros) strength reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=319991\nrdar://182920842\n\nReviewed by Yijia Huang.\n\nThis patch adds strength reduction rules for\n\n    VectorZipHigher(a, all-zeros)\n    VectorZipLower(a, all-zeros)\n\nTaking low / high part of each narrow lan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T18:53:25.376301+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "message": "Clean up JS Temporal getNamedTimeZoneEpochNanoseconds\nhttps://bugs.webkit.org/show_bug.cgi?id=319296\nrdar://182132863\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\ngetNamedTimeZoneEpochNanoseconds makes a number of ICU calls which could\nbe reduced by invoking ICU function ucal_getTimeZoneOffsetFromLo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T18:54:02.713899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8082ccd8788955200b95084e2bad3e933fdff05",
+    "url": "https://github.com/WebKit/WebKit/commit/d8082ccd8788955200b95084e2bad3e933fdff05",
+    "message": "[JSC] Add VectorZipX(a, all-zeros) strength reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=319991\nrdar://182920842\n\nReviewed by Yijia Huang.\n\nThis patch adds strength reduction rules for\n\n    VectorZipHigher(a, all-zeros)\n    VectorZipLower(a, all-zeros)\n\nTaking low / high part of each narrow lan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T18:54:39.628663+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "message": "Clean up JS Temporal getNamedTimeZoneEpochNanoseconds\nhttps://bugs.webkit.org/show_bug.cgi?id=319296\nrdar://182132863\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\ngetNamedTimeZoneEpochNanoseconds makes a number of ICU calls which could\nbe reduced by invoking ICU function ucal_getTimeZoneOffsetFromLo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
