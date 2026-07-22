@@ -15977,5 +15977,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T17:46:13.635194+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "url": "https://github.com/WebKit/WebKit/commit/57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "message": "[JSC][Temporal] japanese calendar can use ISO year, day, month, monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319964\nrdar://182889728\n\nReviewed by Yijia Huang.\n\nSince japanese calendar is using proleptic Gregorian calendar, for year,\nday, month, monthcode, we do not need to query to the calendar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T17:46:51.858320+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "url": "https://github.com/WebKit/WebKit/commit/57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "message": "[JSC][Temporal] japanese calendar can use ISO year, day, month, monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319964\nrdar://182889728\n\nReviewed by Yijia Huang.\n\nSince japanese calendar is using proleptic Gregorian calendar, for year,\nday, month, monthcode, we do not need to query to the calendar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T17:47:29.972178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "url": "https://github.com/WebKit/WebKit/commit/b02d6f0d8dbbb2b69e2a742d32e59beefbb371f4",
+    "message": "[Site Isolation] remove storage access on commit\nhttps://bugs.webkit.org/show_bug.cgi?id=317934\nrdar://180735236\n\nReviewed by Alex Christensen.\n\nWhen a navigation of an iframe is initiated by a different, cross-site\nframe, that iframe should lose its frame-specific storage access. This is\ndescribed ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
