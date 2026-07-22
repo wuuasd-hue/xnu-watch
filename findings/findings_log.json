@@ -16157,5 +16157,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T21:33:49.310254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "url": "https://github.com/WebKit/WebKit/commit/4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "message": "[JSC] Use more FTL select for arithmetic ops\nhttps://bugs.webkit.org/show_bug.cgi?id=319951\nrdar://182872024\n\nReviewed by Sosuke Suzuki.\n\nApply more FTL select operations for arithmetic ops diamond to remove\nmicro basic blocks.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n(JSC::FTL::DFG::LowerD",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T21:34:26.095639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "url": "https://github.com/WebKit/WebKit/commit/4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "message": "[JSC] Use more FTL select for arithmetic ops\nhttps://bugs.webkit.org/show_bug.cgi?id=319951\nrdar://182872024\n\nReviewed by Sosuke Suzuki.\n\nApply more FTL select operations for arithmetic ops diamond to remove\nmicro basic blocks.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n(JSC::FTL::DFG::LowerD",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T21:35:03.172174+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "url": "https://github.com/WebKit/WebKit/commit/1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "message": "Export VM::hasLanguageChange() so WebCore can link against it\nhttps://bugs.webkit.org/show_bug.cgi?id=319925\nrdar://182851292\n\nReviewed by Keith Miller.\n\nr8d261de036d4 (\"Cache Intl.DateTimeFormat\") changed the inline\nVM::hasAnyEntryScopeServiceRequest() to call the out-of-line\nVM::hasLanguageChange(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
