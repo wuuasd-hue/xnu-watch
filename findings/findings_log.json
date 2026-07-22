@@ -15657,5 +15657,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T06:19:06.822972+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c6275e1441775ef617f65034e8fe99de9e517f5",
+    "url": "https://github.com/WebKit/WebKit/commit/8c6275e1441775ef617f65034e8fe99de9e517f5",
+    "message": "[YARR] `InputStream::reread()` should check the code unit before a trail surrogate, not after\nhttps://bugs.webkit.org/show_bug.cgi?id=319932\n\nReviewed by Yusuke Suzuki.\n\nreread() returns errorCodePoint for a trail surrogate whose *following* code\nunit is a lead. The error case is a read landing in t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T06:19:44.714515+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1663a8831d14cd4ef327591402996ff061d3c91c",
+    "url": "https://github.com/WebKit/WebKit/commit/1663a8831d14cd4ef327591402996ff061d3c91c",
+    "message": "Web Inspector: [SI] implement Page.getResourceContent under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=319605\nrdar://182434202\n\nReviewed by Qianlang Chen.\n\nPage.getResourceContent was a stub under Site Isolation, breaking the\nResources tab fallback content path for cross-origin frames (t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T06:20:22.694284+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c6275e1441775ef617f65034e8fe99de9e517f5",
+    "url": "https://github.com/WebKit/WebKit/commit/8c6275e1441775ef617f65034e8fe99de9e517f5",
+    "message": "[YARR] `InputStream::reread()` should check the code unit before a trail surrogate, not after\nhttps://bugs.webkit.org/show_bug.cgi?id=319932\n\nReviewed by Yusuke Suzuki.\n\nreread() returns errorCodePoint for a trail surrogate whose *following* code\nunit is a lead. The error case is a read landing in t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
