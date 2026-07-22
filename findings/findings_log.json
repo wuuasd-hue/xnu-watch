@@ -16277,5 +16277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T23:50:30.517035+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "611ca787893172f79815dcf7748054a0559a2257",
+    "url": "https://github.com/WebKit/WebKit/commit/611ca787893172f79815dcf7748054a0559a2257",
+    "message": "Unreviewed, reverting 317671@main (41115cd8a3fd)\nhttps://bugs.webkit.org/show_bug.cgi?id=320034\n\nJSC codesign is not working\n\nReverted change:\n\n    [CMake] Centralize code signing and add missing entitlements\n    https://bugs.webkit.org/show_bug.cgi?id=319641\n    317671@main (41115cd8a3fd)\n\nCanonica",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T23:51:07.753130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "611ca787893172f79815dcf7748054a0559a2257",
+    "url": "https://github.com/WebKit/WebKit/commit/611ca787893172f79815dcf7748054a0559a2257",
+    "message": "Unreviewed, reverting 317671@main (41115cd8a3fd)\nhttps://bugs.webkit.org/show_bug.cgi?id=320034\n\nJSC codesign is not working\n\nReverted change:\n\n    [CMake] Centralize code signing and add missing entitlements\n    https://bugs.webkit.org/show_bug.cgi?id=319641\n    317671@main (41115cd8a3fd)\n\nCanonica",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-22T23:51:47.172881+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a88a607d357e17b158c318100fac93ce2407c2b1",
+    "url": "https://github.com/WebKit/WebKit/commit/a88a607d357e17b158c318100fac93ce2407c2b1",
+    "message": "[JSC] Inline `ArrayBuffer.isView` in DFG/FTL by extending `IsCellWithType` to a JSType range\nhttps://bugs.webkit.org/show_bug.cgi?id=319796\n\nReviewed by Yusuke Suzuki.\n\nArrayBuffer.isView had no intrinsic, so DFG/FTL emitted a host function call\nfor it.\n\nThis patch adds ArrayBufferIsViewIntrinsic an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
