@@ -16697,5 +16697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T16:57:03.528849+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "message": "Clean up JS Temporal getNamedTimeZoneEpochNanoseconds\nhttps://bugs.webkit.org/show_bug.cgi?id=319296\nrdar://182132863\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\ngetNamedTimeZoneEpochNanoseconds makes a number of ICU calls which could\nbe reduced by invoking ICU function ucal_getTimeZoneOffsetFromLo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T16:57:41.360071+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "url": "https://github.com/WebKit/WebKit/commit/4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "message": "[JSC] Use more FTL select for arithmetic ops\nhttps://bugs.webkit.org/show_bug.cgi?id=319951\nrdar://182872024\n\nReviewed by Sosuke Suzuki.\n\nApply more FTL select operations for arithmetic ops diamond to remove\nmicro basic blocks.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n(JSC::FTL::DFG::LowerD",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
