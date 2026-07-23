@@ -16657,5 +16657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T15:29:44.206003+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "url": "https://github.com/WebKit/WebKit/commit/57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "message": "[JSC][Temporal] japanese calendar can use ISO year, day, month, monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319964\nrdar://182889728\n\nReviewed by Yijia Huang.\n\nSince japanese calendar is using proleptic Gregorian calendar, for year,\nday, month, monthcode, we do not need to query to the calendar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T15:30:22.337545+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8082ccd8788955200b95084e2bad3e933fdff05",
+    "url": "https://github.com/WebKit/WebKit/commit/d8082ccd8788955200b95084e2bad3e933fdff05",
+    "message": "[JSC] Add VectorZipX(a, all-zeros) strength reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=319991\nrdar://182920842\n\nReviewed by Yijia Huang.\n\nThis patch adds strength reduction rules for\n\n    VectorZipHigher(a, all-zeros)\n    VectorZipLower(a, all-zeros)\n\nTaking low / high part of each narrow lan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
