@@ -16337,5 +16337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T01:21:10.541876+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8339909e6ce15eb0070e5ec79871bff7e7c76148",
+    "url": "https://github.com/WebKit/WebKit/commit/8339909e6ce15eb0070e5ec79871bff7e7c76148",
+    "message": "[JSC] Avoid zero-filling and `gcSafeMemcpy` in `tryCreateObjectViaCloning`\nhttps://bugs.webkit.org/show_bug.cgi?id=319850\n\nReviewed by Yusuke Suzuki.\n\ntryCreateObjectViaCloning, which implements the fast path of object spread `{ ...source }`,\nwas creating a JSFinalObject via createWithButterfly, whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T01:21:48.488592+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41115cd8a3fd26adecce6678fe4dd6eed2f990df",
+    "url": "https://github.com/WebKit/WebKit/commit/41115cd8a3fd26adecce6678fe4dd6eed2f990df",
+    "message": "[CMake] Centralize code signing and add missing entitlements\nhttps://bugs.webkit.org/show_bug.cgi?id=319641\n\nReviewed by Keith Miller.\n\nReplace some one-off implementations of code signing with centralized\nlogic. When building for Apple platforms, dylib and executable targets\nget a codesign task add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
