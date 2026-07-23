@@ -16777,5 +16777,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:52:40.547267+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "message": "Expose navigator.globalPrivacyControl only when enabled through the WKWebpagePreferences API\nhttps://bugs.webkit.org/show_bug.cgi?id=319630\nrdar://182454821\n\nReviewed by Matthew Finkel.\n\nConsolidate GlobalPrivacyControl onto a single control surface. Previously it could be toggled both\nby the API an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:53:18.260604+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bfd6c750726a25617c844de7be79c4400f3c088",
+    "url": "https://github.com/WebKit/WebKit/commit/4bfd6c750726a25617c844de7be79c4400f3c088",
+    "message": "[JSC][Wasm] Fix OMG inlined stack origin lookup skipping deeper frames\nhttps://bugs.webkit.org/show_bug.cgi?id=270832\n\nReviewed by Yusuke Suzuki.\n\ngetCodeOrigin used a broken lower_bound comparator on lastInlineCSI\n(integer subtraction coerced to bool), so it could start mid-list and\nskip deeper pos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:53:56.433013+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2b3dcb3f9522bff14378bce042dcadeca6502d4",
+    "url": "https://github.com/WebKit/WebKit/commit/c2b3dcb3f9522bff14378bce042dcadeca6502d4",
+    "message": "[CMake] Make JavaScriptCore a real Clang module for the Mac Swift importer\nhttps://bugs.webkit.org/show_bug.cgi?id=319625\nrdar://182449652\n\nReviewed by Adrian Taylor.\n\nThe CMake Mac build stages JavaScriptCore's headers flat with no module\nmap, so every <JavaScriptCore/*.h> include is parsed textual",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:54:34.926233+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e59e295bb71290f66f6011096123ad962956ff22",
+    "url": "https://github.com/WebKit/WebKit/commit/e59e295bb71290f66f6011096123ad962956ff22",
+    "message": "[CMake] Centralize code signing and add missing entitlements\nhttps://bugs.webkit.org/show_bug.cgi?id=319641\n\nReviewed by Richard Robinson and Zak Ridouh.\n\nReland shared codesigning infrastructure added in 317671@main and add\nlogic to fully process entitlements.\n\nAdd a WEBKIT_GENERATE_ENTITLEMENTS fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:55:12.758401+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "message": "Expose navigator.globalPrivacyControl only when enabled through the WKWebpagePreferences API\nhttps://bugs.webkit.org/show_bug.cgi?id=319630\nrdar://182454821\n\nReviewed by Matthew Finkel.\n\nConsolidate GlobalPrivacyControl onto a single control surface. Previously it could be toggled both\nby the API an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T19:55:50.606683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bfd6c750726a25617c844de7be79c4400f3c088",
+    "url": "https://github.com/WebKit/WebKit/commit/4bfd6c750726a25617c844de7be79c4400f3c088",
+    "message": "[JSC][Wasm] Fix OMG inlined stack origin lookup skipping deeper frames\nhttps://bugs.webkit.org/show_bug.cgi?id=270832\n\nReviewed by Yusuke Suzuki.\n\ngetCodeOrigin used a broken lower_bound comparator on lastInlineCSI\n(integer subtraction coerced to bool), so it could start mid-list and\nskip deeper pos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
