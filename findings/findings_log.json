@@ -17017,5 +17017,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T23:45:41.717204+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "url": "https://github.com/WebKit/WebKit/commit/96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "message": "Web Inspector: Network: disabling resource cache always sets `Cache-Control: no-cache`\nhttps://bugs.webkit.org/show_bug.cgi?id=320033\n\nReviewed by Basuke Suzuki.\n\nWhen Web Inspector disables the resource cache, `FrameLoader::updateRequestAndAddExtraFields` forces every request to `ReloadIgnoringCach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T23:46:19.288657+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "259d2999018347dae277c3b7041abbcb4fd16a86",
+    "url": "https://github.com/WebKit/WebKit/commit/259d2999018347dae277c3b7041abbcb4fd16a86",
+    "message": "[JSC] Materialize .length/.name for bound^2 functions\nhttps://bugs.webkit.org/show_bug.cgi?id=320017\nrdar://182269995\n\nReviewed by Marcus Plutowski.\n\n314682@main unified handling of bound functions (i.e. functions returned by\nF.p.bind) with native functions for .length/.name materialization. This\nma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T23:46:56.276961+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "url": "https://github.com/WebKit/WebKit/commit/96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "message": "Web Inspector: Network: disabling resource cache always sets `Cache-Control: no-cache`\nhttps://bugs.webkit.org/show_bug.cgi?id=320033\n\nReviewed by Basuke Suzuki.\n\nWhen Web Inspector disables the resource cache, `FrameLoader::updateRequestAndAddExtraFields` forces every request to `ReloadIgnoringCach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T23:47:33.234289+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "259d2999018347dae277c3b7041abbcb4fd16a86",
+    "url": "https://github.com/WebKit/WebKit/commit/259d2999018347dae277c3b7041abbcb4fd16a86",
+    "message": "[JSC] Materialize .length/.name for bound^2 functions\nhttps://bugs.webkit.org/show_bug.cgi?id=320017\nrdar://182269995\n\nReviewed by Marcus Plutowski.\n\n314682@main unified handling of bound functions (i.e. functions returned by\nF.p.bind) with native functions for .length/.name materialization. This\nma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
