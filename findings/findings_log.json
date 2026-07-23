@@ -16617,5 +16617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T13:16:39.637100+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "url": "https://github.com/WebKit/WebKit/commit/c432535e2dd2f474007a2398f0156106eb87ed0e",
+    "message": "[Web Inspector] [Site Isolation] Deliver DOM custom-element and pseudo-element events to Frame Targets\nhttps://bugs.webkit.org/show_bug.cgi?id=NNNNNN\nrdar://179176056\n\nReviewed by Qianlang Chen.\n\nWeb Inspector's Elements tree for an out-of-process iframe went\nstale on these lifecycle changes:\n\n- DOM",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T13:17:16.718598+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "message": "Web Inspector: [SI] route shadowRootPushed/Popped to per-frame FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=X\nrdar://179248483\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation a cross-origin iframe's DOM lives in a separate\nWebProcess with its own FrameDOMAgent. The DOM.shadowRootPushed an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
