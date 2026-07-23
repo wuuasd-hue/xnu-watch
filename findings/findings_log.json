@@ -16737,5 +16737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T18:07:42.667740+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "url": "https://github.com/WebKit/WebKit/commit/55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "message": "Unreviewed, reverting 315966@main (0071dfd4f18a)\nhttps://bugs.webkit.org/show_bug.cgi?id=320022\n\ntrips RELEASE_ASSERT\n\nReverted change:\n\n    [JSC] Use `InstanceOf` DFG node for `Object#isPrototypeOf`\n    https://bugs.webkit.org/show_bug.cgi?id=317821\n    315966@main (0071dfd4f18a)\n\nCanonical link: h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-23T18:08:20.350046+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "611ca787893172f79815dcf7748054a0559a2257",
+    "url": "https://github.com/WebKit/WebKit/commit/611ca787893172f79815dcf7748054a0559a2257",
+    "message": "Unreviewed, reverting 317671@main (41115cd8a3fd)\nhttps://bugs.webkit.org/show_bug.cgi?id=320034\n\nJSC codesign is not working\n\nReverted change:\n\n    [CMake] Centralize code signing and add missing entitlements\n    https://bugs.webkit.org/show_bug.cgi?id=319641\n    317671@main (41115cd8a3fd)\n\nCanonica",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
