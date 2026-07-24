@@ -17397,5 +17397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T11:28:11.519442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bfd6c750726a25617c844de7be79c4400f3c088",
+    "url": "https://github.com/WebKit/WebKit/commit/4bfd6c750726a25617c844de7be79c4400f3c088",
+    "message": "[JSC][Wasm] Fix OMG inlined stack origin lookup skipping deeper frames\nhttps://bugs.webkit.org/show_bug.cgi?id=270832\n\nReviewed by Yusuke Suzuki.\n\ngetCodeOrigin used a broken lower_bound comparator on lastInlineCSI\n(integer subtraction coerced to bool), so it could start mid-list and\nskip deeper pos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T11:28:48.176647+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2b3dcb3f9522bff14378bce042dcadeca6502d4",
+    "url": "https://github.com/WebKit/WebKit/commit/c2b3dcb3f9522bff14378bce042dcadeca6502d4",
+    "message": "[CMake] Make JavaScriptCore a real Clang module for the Mac Swift importer\nhttps://bugs.webkit.org/show_bug.cgi?id=319625\nrdar://182449652\n\nReviewed by Adrian Taylor.\n\nThe CMake Mac build stages JavaScriptCore's headers flat with no module\nmap, so every <JavaScriptCore/*.h> include is parsed textual",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
