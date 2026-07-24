@@ -17097,5 +17097,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T01:17:23.986063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89be2da97f720db0fec908746d1cfe3a3c56c91c",
+    "url": "https://github.com/WebKit/WebKit/commit/89be2da97f720db0fec908746d1cfe3a3c56c91c",
+    "message": "[JSC] Add OOB mode to `StringCharCodeAt` node in DFG/FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=319928\n\nReviewed by Yusuke Suzuki.\n\nWhen the inlined StringCharCodeAt hits an out-of-bounds index, it OSR exits (Uncountable in\nDFG, OutOfBounds in FTL), and once that exit site is recorded the bytecode ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T01:18:02.552702+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "url": "https://github.com/WebKit/WebKit/commit/fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "message": "[JSC] Make releaseBBQCallee tolerate missing BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=290296\n\nReviewed by Yusuke Suzuki.\n\nWhen freeRetiredWasmCode retires BBQ after OMG installs, there is not\nalways a same-mode BBQCallee to release. releaseBBQCallee assumed a\nBBQ was present whenever an optimized",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T01:18:41.322573+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89be2da97f720db0fec908746d1cfe3a3c56c91c",
+    "url": "https://github.com/WebKit/WebKit/commit/89be2da97f720db0fec908746d1cfe3a3c56c91c",
+    "message": "[JSC] Add OOB mode to `StringCharCodeAt` node in DFG/FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=319928\n\nReviewed by Yusuke Suzuki.\n\nWhen the inlined StringCharCodeAt hits an out-of-bounds index, it OSR exits (Uncountable in\nDFG, OutOfBounds in FTL), and once that exit site is recorded the bytecode ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T01:19:18.922216+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "url": "https://github.com/WebKit/WebKit/commit/fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "message": "[JSC] Make releaseBBQCallee tolerate missing BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=290296\n\nReviewed by Yusuke Suzuki.\n\nWhen freeRetiredWasmCode retires BBQ after OMG installs, there is not\nalways a same-mode BBQCallee to release. releaseBBQCallee assumed a\nBBQ was present whenever an optimized",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
