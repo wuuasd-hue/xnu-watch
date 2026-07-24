@@ -17517,5 +17517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T15:55:46.566164+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "url": "https://github.com/WebKit/WebKit/commit/fb935fc3e266c357c09b4f0e65b4d7c8c03f263a",
+    "message": "[JSC] Make releaseBBQCallee tolerate missing BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=290296\n\nReviewed by Yusuke Suzuki.\n\nWhen freeRetiredWasmCode retires BBQ after OMG installs, there is not\nalways a same-mode BBQCallee to release. releaseBBQCallee assumed a\nBBQ was present whenever an optimized",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T15:56:23.570397+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d328c270769037f111e31474429e19999c446382",
+    "url": "https://github.com/WebKit/WebKit/commit/d328c270769037f111e31474429e19999c446382",
+    "message": "[JSC] DFG / FTL should have fast-fail filter for RegExp with BOL assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=320128\nrdar://183067008\n\nReviewed by Yijia Huang.\n\n/^regexp/ or sticky bit (y) is used for testing frequently, and the\npurpose of this is typically accepting or rejecting a subject. In",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
