@@ -17337,5 +17337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T09:41:07.203361+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ae9a398d5b21981372633d31f7ccf115230485d",
+    "url": "https://github.com/WebKit/WebKit/commit/6ae9a398d5b21981372633d31f7ccf115230485d",
+    "message": "[GStreamer] Remove the GstWebRTC backend\nhttps://bugs.webkit.org/show_bug.cgi?id=318669\n\nReviewed by Xabier Rodriguez-Calvar.\n\nThis backend is un-maintained and provides incomplete WebRTC support. The WPE and GTK ports will\nleverage LibWebRTC from now on.\n\nCanonical link: https://commits.webkit.org/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T09:41:44.275093+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ae9a398d5b21981372633d31f7ccf115230485d",
+    "url": "https://github.com/WebKit/WebKit/commit/6ae9a398d5b21981372633d31f7ccf115230485d",
+    "message": "[GStreamer] Remove the GstWebRTC backend\nhttps://bugs.webkit.org/show_bug.cgi?id=318669\n\nReviewed by Xabier Rodriguez-Calvar.\n\nThis backend is un-maintained and provides incomplete WebRTC support. The WPE and GTK ports will\nleverage LibWebRTC from now on.\n\nCanonical link: https://commits.webkit.org/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T09:42:21.546428+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "message": "Expose navigator.globalPrivacyControl only when enabled through the WKWebpagePreferences API\nhttps://bugs.webkit.org/show_bug.cgi?id=319630\nrdar://182454821\n\nReviewed by Matthew Finkel.\n\nConsolidate GlobalPrivacyControl onto a single control surface. Previously it could be toggled both\nby the API an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
