@@ -17257,5 +17257,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T07:24:12.140563+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d651aafbb69606ecc27bde540533e014d5908ce5",
+    "url": "https://github.com/WebKit/WebKit/commit/d651aafbb69606ecc27bde540533e014d5908ce5",
+    "message": "[JSC] Remove `AbstractModuleRecord::m_dependencies`\nhttps://bugs.webkit.org/show_bug.cgi?id=320144\n\nReviewed by Yusuke Suzuki.\n\nAbstractModuleRecord::m_dependencies duplicated the specifier-to-module mapping\nthat m_loadedModules ([[LoadedModules]]) already holds, and was populated a second\ntime duri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T07:24:50.123782+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ff602ecc1e5e30db643ea2c2fef475381772cae",
+    "url": "https://github.com/WebKit/WebKit/commit/9ff602ecc1e5e30db643ea2c2fef475381772cae",
+    "message": "Unreviewed, reverting 317823@main (89be2da97f72)\nhttps://bugs.webkit.org/show_bug.cgi?id=320165\nrdar://183100201\n\nJetStream3/postcss-wtb 5-6% regression\n\nReverted change:\n\n    [JSC] Add OOB mode to `StringCharCodeAt` node in DFG/FTL\n    https://bugs.webkit.org/show_bug.cgi?id=319928\n    317823@main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T07:25:27.380523+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d651aafbb69606ecc27bde540533e014d5908ce5",
+    "url": "https://github.com/WebKit/WebKit/commit/d651aafbb69606ecc27bde540533e014d5908ce5",
+    "message": "[JSC] Remove `AbstractModuleRecord::m_dependencies`\nhttps://bugs.webkit.org/show_bug.cgi?id=320144\n\nReviewed by Yusuke Suzuki.\n\nAbstractModuleRecord::m_dependencies duplicated the specifier-to-module mapping\nthat m_loadedModules ([[LoadedModules]]) already holds, and was populated a second\ntime duri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T07:26:04.802778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ff602ecc1e5e30db643ea2c2fef475381772cae",
+    "url": "https://github.com/WebKit/WebKit/commit/9ff602ecc1e5e30db643ea2c2fef475381772cae",
+    "message": "Unreviewed, reverting 317823@main (89be2da97f72)\nhttps://bugs.webkit.org/show_bug.cgi?id=320165\nrdar://183100201\n\nJetStream3/postcss-wtb 5-6% regression\n\nReverted change:\n\n    [JSC] Add OOB mode to `StringCharCodeAt` node in DFG/FTL\n    https://bugs.webkit.org/show_bug.cgi?id=319928\n    317823@main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
