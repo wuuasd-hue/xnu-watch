@@ -17177,5 +17177,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T04:40:57.543443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d328c270769037f111e31474429e19999c446382",
+    "url": "https://github.com/WebKit/WebKit/commit/d328c270769037f111e31474429e19999c446382",
+    "message": "[JSC] DFG / FTL should have fast-fail filter for RegExp with BOL assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=320128\nrdar://183067008\n\nReviewed by Yijia Huang.\n\n/^regexp/ or sticky bit (y) is used for testing frequently, and the\npurpose of this is typically accepting or rejecting a subject. In",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T04:41:35.099415+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "url": "https://github.com/WebKit/WebKit/commit/2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "message": "[YARR] Enable Boyer-Moore lookahead optimization for Unicode patterns\nhttps://bugs.webkit.org/show_bug.cgi?id=307635\n\nReviewed by Yusuke Suzuki.\n\nThe Boyer-Moore lookahead skip optimization in Yarr JIT was disabled for\npatterns with the /u or /v flags.\n\nThis change:\n\n  1. Removes the eitherUnicode()",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T04:42:12.449908+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d328c270769037f111e31474429e19999c446382",
+    "url": "https://github.com/WebKit/WebKit/commit/d328c270769037f111e31474429e19999c446382",
+    "message": "[JSC] DFG / FTL should have fast-fail filter for RegExp with BOL assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=320128\nrdar://183067008\n\nReviewed by Yijia Huang.\n\n/^regexp/ or sticky bit (y) is used for testing frequently, and the\npurpose of this is typically accepting or rejecting a subject. In",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T04:42:49.639318+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "url": "https://github.com/WebKit/WebKit/commit/2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "message": "[YARR] Enable Boyer-Moore lookahead optimization for Unicode patterns\nhttps://bugs.webkit.org/show_bug.cgi?id=307635\n\nReviewed by Yusuke Suzuki.\n\nThe Boyer-Moore lookahead skip optimization in Yarr JIT was disabled for\npatterns with the /u or /v flags.\n\nThis change:\n\n  1. Removes the eitherUnicode()",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
