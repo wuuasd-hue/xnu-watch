@@ -17437,5 +17437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T12:54:34.634731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e59e295bb71290f66f6011096123ad962956ff22",
+    "url": "https://github.com/WebKit/WebKit/commit/e59e295bb71290f66f6011096123ad962956ff22",
+    "message": "[CMake] Centralize code signing and add missing entitlements\nhttps://bugs.webkit.org/show_bug.cgi?id=319641\n\nReviewed by Richard Robinson and Zak Ridouh.\n\nReland shared codesigning infrastructure added in 317671@main and add\nlogic to fully process entitlements.\n\nAdd a WEBKIT_GENERATE_ENTITLEMENTS fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T12:55:11.339216+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "url": "https://github.com/WebKit/WebKit/commit/96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "message": "Web Inspector: Network: disabling resource cache always sets `Cache-Control: no-cache`\nhttps://bugs.webkit.org/show_bug.cgi?id=320033\n\nReviewed by Basuke Suzuki.\n\nWhen Web Inspector disables the resource cache, `FrameLoader::updateRequestAndAddExtraFields` forces every request to `ReloadIgnoringCach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
