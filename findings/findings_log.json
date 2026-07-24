@@ -17737,5 +17737,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T21:34:00.204685+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "97187c70fb8727a668d979e6314a9a605e31d605",
+    "url": "https://github.com/WebKit/WebKit/commit/97187c70fb8727a668d979e6314a9a605e31d605",
+    "message": "[Memory64] Allow Wasm modules with an oversized initial table size to compile\nhttps://bugs.webkit.org/show_bug.cgi?id=320132\nrdar://183070350\n\nReviewed by Marcus Plutowski.\n\nLayoutTests/imported/w3c/web-platform-tests/wasm/core/memory64/table64.wast.js\ntest #10 and #33 are failing because modules wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T21:34:37.300841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "240de0cf9d96a953b256e8c87fa479a558bef9ef",
+    "url": "https://github.com/WebKit/WebKit/commit/240de0cf9d96a953b256e8c87fa479a558bef9ef",
+    "message": "[JSC] Implement Joint Iteration proposal\nhttps://bugs.webkit.org/show_bug.cgi?id=319921\nrdar://180967133\n\nReviewed by Yusuke Suzuki.\n\nThis patch implements Iterator.zip and Iterator.zipKeyed, which are\npart of the TC39 Joint Iteration proposal (which is Stage 4 as of\nthis writing). The feature is ga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T21:35:14.425535+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd5b5997ff3424e7fdc0be8e451d8ed1bd59a379",
+    "url": "https://github.com/WebKit/WebKit/commit/fd5b5997ff3424e7fdc0be8e451d8ed1bd59a379",
+    "message": "Make WebTransport's session a Ref instead of a RefPtr\nhttps://bugs.webkit.org/show_bug.cgi?id=320161\nrdar://183095821\n\nReviewed by Basuke Suzuki.\n\nThis removes unneeded null checks and makes the code more consistent.\nEverything the WebTransportSession does that returns something uses NativePromise\nt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T21:35:51.153339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "97187c70fb8727a668d979e6314a9a605e31d605",
+    "url": "https://github.com/WebKit/WebKit/commit/97187c70fb8727a668d979e6314a9a605e31d605",
+    "message": "[Memory64] Allow Wasm modules with an oversized initial table size to compile\nhttps://bugs.webkit.org/show_bug.cgi?id=320132\nrdar://183070350\n\nReviewed by Marcus Plutowski.\n\nLayoutTests/imported/w3c/web-platform-tests/wasm/core/memory64/table64.wast.js\ntest #10 and #33 are failing because modules wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-24T21:36:28.321766+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "240de0cf9d96a953b256e8c87fa479a558bef9ef",
+    "url": "https://github.com/WebKit/WebKit/commit/240de0cf9d96a953b256e8c87fa479a558bef9ef",
+    "message": "[JSC] Implement Joint Iteration proposal\nhttps://bugs.webkit.org/show_bug.cgi?id=319921\nrdar://180967133\n\nReviewed by Yusuke Suzuki.\n\nThis patch implements Iterator.zip and Iterator.zipKeyed, which are\npart of the TC39 Joint Iteration proposal (which is Stage 4 as of\nthis writing). The feature is ga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
