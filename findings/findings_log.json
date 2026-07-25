@@ -18457,5 +18457,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T20:02:44.936009+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "221e657b4111aac908f10f176e4889f3766724a2",
+    "url": "https://github.com/WebKit/WebKit/commit/221e657b4111aac908f10f176e4889f3766724a2",
+    "message": "[Site Isolation] Preserve Private Click Measurement across cross-process top-frame navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=317781\nrdar://180548257\n\nReviewed by Alex Christensen.\n\nWhen an <a target=\"_top\"> link with attribution attributes is clicked\ninside a cross-origin iframe, the main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T20:03:22.204498+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "url": "https://github.com/WebKit/WebKit/commit/b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "message": "[JSC][Temporal] Fix PMD reference-year drop for Chinese leap months\nhttps://bugs.webkit.org/show_bug.cgi?id=319656\nrdar://182481524\n\nReviewed by Yusuke Suzuki.\n\nPlainMonthDay.from({calendar:\"chinese\", year:1651, monthCode:\"M01L\",\nday:29}) returned 1651-02-19[u-ca=chinese] instead of the canonical\n19",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
