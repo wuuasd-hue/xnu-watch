@@ -18537,5 +18537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T22:14:52.326216+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03d11dcd3986d5218cf235dd40f6088ca222ec4c",
+    "url": "https://github.com/WebKit/WebKit/commit/03d11dcd3986d5218cf235dd40f6088ca222ec4c",
+    "message": "[JSC] Put slow path of emitWriteBarrier in m_slowPaths\nhttps://bugs.webkit.org/show_bug.cgi?id=319688\nrdar://182533142\n\nReviewed by Keith Miller.\n\nLet's place the slow path of emitWriteBarrier in m_slowPaths to make the\nmain path tight and clean.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT.cpp:\n(JSC::W",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T22:15:29.636079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "url": "https://github.com/WebKit/WebKit/commit/bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "message": "[JSC] Run WPT Wasm tests in run-jsc-stress-tests' wasm.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319669\nrdar://182513824\n\nReviewed by Yusuke Suzuki.\n\nRun the imported Web Platform Tests WebAssembly suite\n(LayoutTests/imported/w3c/web-platform-tests/wasm/{core/js,jsapi}) directly in the jsc\ncomman",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
