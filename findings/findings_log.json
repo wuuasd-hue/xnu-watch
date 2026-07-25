@@ -18177,5 +18177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T11:54:50.255771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1171d7da90fa90cbec9c2881007361fa6516660",
+    "url": "https://github.com/WebKit/WebKit/commit/e1171d7da90fa90cbec9c2881007361fa6516660",
+    "message": "[WASM] Allow linking immutable exnref global imports\nhttps://bugs.webkit.org/show_bug.cgi?id=293340\n\nReviewed by Keith Miller.\n\nImporting an immutable (ref null exn) global called Global::get(), which\nrejects exnref for the JS API. Wasm-to-wasm linking only needs the stored\nreference, not a JS-visib",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T11:55:27.949746+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7935a51ec31047310970afdf9c0a73765686058d",
+    "url": "https://github.com/WebKit/WebKit/commit/7935a51ec31047310970afdf9c0a73765686058d",
+    "message": "[Page Loading] Network process crashes when downloading a cross-origin target=_blank link\nhttps://bugs.webkit.org/show_bug.cgi?id=319427\nrdar://182181803\n\nReviewed by Chris Dumez.\n\nOption-clicking a cross-origin link with target=\"_blank\" (for example the \"Full logs\"\nlink on an ews-build.webkit.org r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
