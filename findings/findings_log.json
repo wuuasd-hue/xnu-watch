@@ -18257,5 +18257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T14:24:29.014190+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "url": "https://github.com/WebKit/WebKit/commit/615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "message": "[JSC][Temporal] Extract GetTemporalCalendarIdentifierWithISODefault as a shared helper\nhttps://bugs.webkit.org/show_bug.cgi?id=319602\nrdar://182431498\n\nReviewed by Yusuke Suzuki.\n\nAdds JSC::getTemporalCalendarIdentifierWithISODefault matching the spec AO at [1],\nincluding step 1 (Temporal internal-s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T14:25:06.286699+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "url": "https://github.com/WebKit/WebKit/commit/12196a032b7678f9b8f60a483ae22c01cc14af97",
+    "message": "[JSC][DFG][x86_64] String.prototype.substr INT_MIN length clamp miscompile creates invalid JSString length   and Release abort/OOB-read evidence\nhttps://bugs.webkit.org/show_bug.cgi?id=317480\nrdar://180105216\n\nReviewed by Sosuke Suzuki.\n\nx86_64 move(TrustedImm32, register) uses xor for 0 creation, w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
