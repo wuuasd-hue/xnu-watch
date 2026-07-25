@@ -18297,5 +18297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T15:34:16.546457+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "url": "https://github.com/WebKit/WebKit/commit/ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "message": "[JSC] op_async_iterator_next DFG should also subscribe promise-watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319624\nrdar://182448235\n\nReviewed by Yijia Huang.\n\nWe were subscribing promise-watchpoint on op_async_iterator_open but not\nin op_async_iterator_next, that's not correct since we may cha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-25T15:34:53.680412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a23c46e872e19fffbb7e470ac01a79389493942",
+    "url": "https://github.com/WebKit/WebKit/commit/8a23c46e872e19fffbb7e470ac01a79389493942",
+    "message": "Unreviewed, update safer cpp expectations after 317368@main\nhttps://bugs.webkit.org/show_bug.cgi?id=319657\n\nUpdate safer cpp expectations after 317368@main, which fixed a lot of them.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
