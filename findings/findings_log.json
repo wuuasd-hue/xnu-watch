@@ -19077,5 +19077,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T18:49:02.201795+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "url": "https://github.com/WebKit/WebKit/commit/10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "message": "[JSC] DFG Object.defineProperty descriptor cell confusion (JIT code invalid cell dereference)\nhttps://bugs.webkit.org/show_bug.cgi?id=318139\nrdar://180958800\n\nReviewed by Yijia Huang.\n\nWhen constant-folding ObjectDefineProperty, we should emit checks\nattached in the edges to ensure that these filter",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T18:49:40.016721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ad86bc0929908508cec4c5857055e151908707d",
+    "url": "https://github.com/WebKit/WebKit/commit/6ad86bc0929908508cec4c5857055e151908707d",
+    "message": "Web Inspector: `Console.setLoggingChannelLevel` shouldn't exist for `Worker`\nhttps://bugs.webkit.org/show_bug.cgi?id=319708\n\nReviewed by Alexey Proskuryakov.\n\n`Console.getLoggingChannels` and `Console.setLoggingChannelLevel` are only implemented by `PageConsoleAgent` and `FrameConsoleAgent`.\n\nAs suc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
