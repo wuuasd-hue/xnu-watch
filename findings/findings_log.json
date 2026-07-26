@@ -18657,5 +18657,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T04:49:31.655172+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9cbcbb9905590a2f45487a466d92e348e64250e2",
+    "url": "https://github.com/WebKit/WebKit/commit/9cbcbb9905590a2f45487a466d92e348e64250e2",
+    "message": "[JSC] `JSModuleRecord` should not retain the parser's `VariableEnvironments`\nhttps://bugs.webkit.org/show_bug.cgi?id=320151\n\nReviewed by Yusuke Suzuki.\n\nJSModuleRecord kept copies of the module's declared and lexical VariableEnvironments alive for\nthe lifetime of the record, but the lexical one is o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T04:50:09.702782+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f79baf7bc085f19e03dcbce2800870afb57eeb7",
+    "url": "https://github.com/WebKit/WebKit/commit/0f79baf7bc085f19e03dcbce2800870afb57eeb7",
+    "message": "[YARR] `tryReadUnicodeChar` should read the first code unit before testing whether a second one is needed\nhttps://bugs.webkit.org/show_bug.cgi?id=320088\n\nReviewed by Yusuke Suzuki.\n\ntryReadUnicodeCharImpl loads 32 bits up front so that it can detect a\nsurrogate pair, and therefore checks that both c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T04:50:46.699083+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76de9fe5aa14384920ede9b66991607d8a9e29b3",
+    "url": "https://github.com/WebKit/WebKit/commit/76de9fe5aa14384920ede9b66991607d8a9e29b3",
+    "message": "[JSC][Temporal] Resolve supported Chinese and Dangi field resolution\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319814\n\nReviewed by Yijia Huang.\n\nResolve ordinary supported Chinese and Dangi related-year and ordinal numeric-month field resolution without relying on ICU extended-year identity. Keep yea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T04:51:23.425988+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9cbcbb9905590a2f45487a466d92e348e64250e2",
+    "url": "https://github.com/WebKit/WebKit/commit/9cbcbb9905590a2f45487a466d92e348e64250e2",
+    "message": "[JSC] `JSModuleRecord` should not retain the parser's `VariableEnvironments`\nhttps://bugs.webkit.org/show_bug.cgi?id=320151\n\nReviewed by Yusuke Suzuki.\n\nJSModuleRecord kept copies of the module's declared and lexical VariableEnvironments alive for\nthe lifetime of the record, but the lexical one is o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-26T04:52:00.985092+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f79baf7bc085f19e03dcbce2800870afb57eeb7",
+    "url": "https://github.com/WebKit/WebKit/commit/0f79baf7bc085f19e03dcbce2800870afb57eeb7",
+    "message": "[YARR] `tryReadUnicodeChar` should read the first code unit before testing whether a second one is needed\nhttps://bugs.webkit.org/show_bug.cgi?id=320088\n\nReviewed by Yusuke Suzuki.\n\ntryReadUnicodeCharImpl loads 32 bits up front so that it can detect a\nsurrogate pair, and therefore checks that both c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
