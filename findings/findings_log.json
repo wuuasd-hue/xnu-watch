@@ -19637,5 +19637,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T20:00:52.277033+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "url": "https://github.com/WebKit/WebKit/commit/28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "message": "[Site Isolation] Web Inspector: Implement Network.loadResource\nhttps://bugs.webkit.org/show_bug.cgi?id=319019\nrdar://181636193\n\nReviewed by BJ Burg.\n\nImplement the ProxyingNetworkAgent::loadResource that was a stub.\n\nNetwork.loadResource loads a URL in a frame's context on behalf of the\ninspector (e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T20:01:29.126653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "url": "https://github.com/WebKit/WebKit/commit/479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "message": "[Site Isolation] Web Inspector: Implement Network.getSerializedCertificate\nhttps://bugs.webkit.org/show_bug.cgi?id=319020\nrdar://181636486\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the Network domain is served by ProxyingNetworkAgent\nin the UIProcess, which routes each requestId-keyed command to t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T20:02:05.984816+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "url": "https://github.com/WebKit/WebKit/commit/28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "message": "[Site Isolation] Web Inspector: Implement Network.loadResource\nhttps://bugs.webkit.org/show_bug.cgi?id=319019\nrdar://181636193\n\nReviewed by BJ Burg.\n\nImplement the ProxyingNetworkAgent::loadResource that was a stub.\n\nNetwork.loadResource loads a URL in a frame's context on behalf of the\ninspector (e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T20:02:42.991546+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "url": "https://github.com/WebKit/WebKit/commit/479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "message": "[Site Isolation] Web Inspector: Implement Network.getSerializedCertificate\nhttps://bugs.webkit.org/show_bug.cgi?id=319020\nrdar://181636486\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the Network domain is served by ProxyingNetworkAgent\nin the UIProcess, which routes each requestId-keyed command to t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
