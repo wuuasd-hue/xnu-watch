@@ -19497,5 +19497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T16:37:12.284440+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "url": "https://github.com/WebKit/WebKit/commit/cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "message": "[JSC] Add fast flag for ToPrimitive(Object) calls in runtime\nhttps://bugs.webkit.org/show_bug.cgi?id=320343\nrdar://183289080\n\nReviewed by Sosuke Suzuki.\n\nMake ToPrimitive(object) faster by caching a flag in StructureRareData.\nm_cachedHasDefaultToPrimitiveFastAndNonObservable says that we can use\ntoS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T16:37:49.728614+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "url": "https://github.com/WebKit/WebKit/commit/cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "message": "[JSC] Add fast flag for ToPrimitive(Object) calls in runtime\nhttps://bugs.webkit.org/show_bug.cgi?id=320343\nrdar://183289080\n\nReviewed by Sosuke Suzuki.\n\nMake ToPrimitive(object) faster by caching a flag in StructureRareData.\nm_cachedHasDefaultToPrimitiveFastAndNonObservable says that we can use\ntoS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T16:38:26.966718+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8ccbe522e1f14bc3356a6124fa05b7e53a5f723c",
+    "url": "https://github.com/WebKit/WebKit/commit/8ccbe522e1f14bc3356a6124fa05b7e53a5f723c",
+    "message": "[JSC][Temporal] Fix Japanese, ROC, and Buddhist calendar fields\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319663\n\nReviewed by Yusuke Suzuki.\n\nICU derived Gregorian calendars retain a Julian-to-Gregorian cutover that cannot be disabled. Use an unconditional ISO year for Japanese dates, keep pre-1873 a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
