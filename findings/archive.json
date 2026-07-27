@@ -3513,9 +3513,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -4252,5 +4253,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/generateWasmOpsHeader.py ---\n@@ -37,7 +37,7 @@\n wasm = Wasm(args[0], args[1])\n types = wasm.types\n opcodes = wasm.opcodes\n-wasmOpsHFile = open(args[2], \"w\")\n+wasmOpsHFile = open(args[2], \"w\", encoding=\"utf-8\")\n \n \n def cppType(type):\n",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

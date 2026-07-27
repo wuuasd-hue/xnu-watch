@@ -19317,5 +19317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T04:59:14.640666+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T04:59:51.412388+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T05:00:28.740660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "url": "https://github.com/WebKit/WebKit/commit/e0c2f4d3e0b37ad876502a0af22773e222cda0ab",
+    "message": "[JSC] Add JIT support for BigInt64 / BigUInt64 allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=319872\nrdar://182776366\n\nReviewed by Yijia Huang.\n\nThis patch adds JIT support to BigInt64 / BigUInt64 allocations.\nWe allocate JSBigInt and appropriately configure the content and flags.\n\n    data-view",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
