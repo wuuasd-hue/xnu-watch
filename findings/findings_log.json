@@ -19377,5 +19377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T08:26:47.603078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-27T08:27:25.456073+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "url": "https://github.com/WebKit/WebKit/commit/1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "message": "Export VM::hasLanguageChange() so WebCore can link against it\nhttps://bugs.webkit.org/show_bug.cgi?id=319925\nrdar://182851292\n\nReviewed by Keith Miller.\n\nr8d261de036d4 (\"Cache Intl.DateTimeFormat\") changed the inline\nVM::hasAnyEntryScopeServiceRequest() to call the out-of-line\nVM::hasLanguageChange(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
