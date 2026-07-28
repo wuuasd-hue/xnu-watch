@@ -20317,5 +20317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T17:50:16.238528+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "url": "https://github.com/WebKit/WebKit/commit/1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "message": "[JSC] Add an 8-byte SWAR fast path to JSON.stringify's stringCopyUpconvert for short strings\nhttps://bugs.webkit.org/show_bug.cgi?id=320419\nrdar://183378922\n\nReviewed by Yusuke Suzuki.\n\nstringCopyUpconvert() is stringCopySameType()'s Latin1-to-char16_t upconvert\nsibling and has the same gap: a scala",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T17:51:01.903076+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "url": "https://github.com/WebKit/WebKit/commit/1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "message": "[JSC] Add an 8-byte SWAR fast path to JSON.stringify's stringCopyUpconvert for short strings\nhttps://bugs.webkit.org/show_bug.cgi?id=320419\nrdar://183378922\n\nReviewed by Yusuke Suzuki.\n\nstringCopyUpconvert() is stringCopySameType()'s Latin1-to-char16_t upconvert\nsibling and has the same gap: a scala",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T17:51:52.799199+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "url": "https://github.com/WebKit/WebKit/commit/f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "message": "Set timeOrigin to align with spec, even when BCG switches take place.\nhttps://bugs.webkit.org/show_bug.cgi?id=316291\n\nReviewed by Alex Christensen.\n\nCurrently the timeOrigin is set when the final process starts the navigation request load.\nBut in the case of a BCG switch, that load ends up resuming/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
