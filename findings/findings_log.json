@@ -20517,5 +20517,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T22:46:52.789127+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "url": "https://github.com/WebKit/WebKit/commit/7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "message": "[CMake] Merge Mac and iOS ports into \"Cocoa\"\nhttps://bugs.webkit.org/show_bug.cgi?id=320387\nrdar://183348215\n\nReviewed by Richard Robinson.\n\nHighly mechanical first change to merge the port codepaths into a single\nCocoa port. While there *are* meaningful differences between the Mac and\niOS builds, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T22:47:31.216339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "url": "https://github.com/WebKit/WebKit/commit/7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "message": "[CMake] Merge Mac and iOS ports into \"Cocoa\"\nhttps://bugs.webkit.org/show_bug.cgi?id=320387\nrdar://183348215\n\nReviewed by Richard Robinson.\n\nHighly mechanical first change to merge the port codepaths into a single\nCocoa port. While there *are* meaningful differences between the Mac and\niOS builds, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T22:48:10.289523+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "184ee4c654bdc0653e57c7aefd6c4b90a8dd9269",
+    "url": "https://github.com/WebKit/WebKit/commit/184ee4c654bdc0653e57c7aefd6c4b90a8dd9269",
+    "message": "[Memory64] Implement Table64 in the OMG tier\nhttps://bugs.webkit.org/show_bug.cgi?id=320014\nrdar://182949083\n\nReviewed by Keith Miller.\n\nThis patch adds support for Table64 in the OMG tier.\n\n* JSTests/wasm/stress/table64-bulk.js:\n* JSTests/wasm/stress/table64-call-indirect.js:\n* JSTests/wasm/stress/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
