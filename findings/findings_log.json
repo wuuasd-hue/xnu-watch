@@ -20097,5 +20097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T12:18:18.401091+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "url": "https://github.com/WebKit/WebKit/commit/f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "message": "Set timeOrigin to align with spec, even when BCG switches take place.\nhttps://bugs.webkit.org/show_bug.cgi?id=316291\n\nReviewed by Alex Christensen.\n\nCurrently the timeOrigin is set when the final process starts the navigation request load.\nBut in the case of a BCG switch, that load ends up resuming/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T12:18:57.196264+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "url": "https://github.com/WebKit/WebKit/commit/f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "message": "Set timeOrigin to align with spec, even when BCG switches take place.\nhttps://bugs.webkit.org/show_bug.cgi?id=316291\n\nReviewed by Alex Christensen.\n\nCurrently the timeOrigin is set when the final process starts the navigation request load.\nBut in the case of a BCG switch, that load ends up resuming/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T12:19:35.140421+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "url": "https://github.com/WebKit/WebKit/commit/6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "message": "Update safer C++ expectations (2026-07-27)\nhttps://bugs.webkit.org/show_bug.cgi?id=320415\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/ForwardDeclCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectations/MemoryUnsafeCastCheckerExpectations:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
