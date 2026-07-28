@@ -20417,5 +20417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T20:38:29.441980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "83540481435f16b21495a8463bc3c0bf79c670a1",
+    "url": "https://github.com/WebKit/WebKit/commit/83540481435f16b21495a8463bc3c0bf79c670a1",
+    "message": "[JSC] Allocate DFG `BasicBlock::intersectionOfPastValuesAtHead` only for OSR entry targets\nhttps://bugs.webkit.org/show_bug.cgi?id=320177\n\nReviewed by Yusuke Suzuki.\n\nEvery DFG BasicBlock allocates intersectionOfPastValuesAtHead, an\nOperands<AbstractValue> costing 32 bytes per operand, but its only\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T20:39:07.239356+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f9370cc729f0e035aa09416b3ca84e6ac8a69c5",
+    "url": "https://github.com/WebKit/WebKit/commit/9f9370cc729f0e035aa09416b3ca84e6ac8a69c5",
+    "message": "[JSC] Fix JSON stringify regression due to toJSON check\nhttps://bugs.webkit.org/show_bug.cgi?id=320437\nrdar://183400665\n\nReviewed by Sosuke Suzuki.\n\n316941@main becomes performance regression in JSON.stringify because we\ninsert toJSON name check in the one of the hottest loop listing\nproperties. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
