@@ -19977,5 +19977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T04:32:58.298125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "url": "https://github.com/WebKit/WebKit/commit/6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "message": "Update safer C++ expectations (2026-07-27)\nhttps://bugs.webkit.org/show_bug.cgi?id=320415\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/ForwardDeclCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectations/MemoryUnsafeCastCheckerExpectations:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T04:33:38.259344+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "url": "https://github.com/WebKit/WebKit/commit/479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "message": "[Site Isolation] Web Inspector: Implement Network.getSerializedCertificate\nhttps://bugs.webkit.org/show_bug.cgi?id=319020\nrdar://181636486\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the Network domain is served by ProxyingNetworkAgent\nin the UIProcess, which routes each requestId-keyed command to t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
