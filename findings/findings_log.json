@@ -19897,5 +19897,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T01:13:06.488925+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "url": "https://github.com/WebKit/WebKit/commit/f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "message": "[Win] Build fixes August 27\nhttps://bugs.webkit.org/show_bug.cgi?id=320179\n\nUnreviewed build fix.\n\nFix several independent breakages of the Windows build, found by\nbuilding main in the Windows EWS configuration now that its image\nincludes Swift 6.3.3:\n\n* Source/cmake/OptionsWin.cmake:\nOpt out of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T01:13:44.124765+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "url": "https://github.com/WebKit/WebKit/commit/6de57e1b5eaaa2ef237409e11de9c465a0d81bf7",
+    "message": "Update safer C++ expectations (2026-07-27)\nhttps://bugs.webkit.org/show_bug.cgi?id=320415\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/ForwardDeclCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectations/MemoryUnsafeCastCheckerExpectations:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T01:14:21.469559+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d202bedc5ff6a3256f6de16f842ff12a48f0fcac",
+    "url": "https://github.com/WebKit/WebKit/commit/d202bedc5ff6a3256f6de16f842ff12a48f0fcac",
+    "message": "[Memory64] Implement Table64 in the BBQ tier\nhttps://bugs.webkit.org/show_bug.cgi?id=319924\nrdar://182851267\n\nReviewed by Keith Miller.\n\nThis patch introduces support for Table64 in the BBQ tier. Most of the table\nfunctions in the BBQ tier are just C calls to wasmOperations.h functions, so\na lot of ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T01:14:58.857841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "url": "https://github.com/WebKit/WebKit/commit/f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "message": "[Win] Build fixes August 27\nhttps://bugs.webkit.org/show_bug.cgi?id=320179\n\nUnreviewed build fix.\n\nFix several independent breakages of the Windows build, found by\nbuilding main in the Windows EWS configuration now that its image\nincludes Swift 6.3.3:\n\n* Source/cmake/OptionsWin.cmake:\nOpt out of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
