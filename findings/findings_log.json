@@ -20577,5 +20577,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T23:46:33.058749+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "url": "https://github.com/WebKit/WebKit/commit/7eb640d408f81acd4ff1ff98016c28f8176c243f",
+    "message": "[CMake] Merge Mac and iOS ports into \"Cocoa\"\nhttps://bugs.webkit.org/show_bug.cgi?id=320387\nrdar://183348215\n\nReviewed by Richard Robinson.\n\nHighly mechanical first change to merge the port codepaths into a single\nCocoa port. While there *are* meaningful differences between the Mac and\niOS builds, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-28T23:47:10.830653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1663a8831d14cd4ef327591402996ff061d3c91c",
+    "url": "https://github.com/WebKit/WebKit/commit/1663a8831d14cd4ef327591402996ff061d3c91c",
+    "message": "Web Inspector: [SI] implement Page.getResourceContent under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=319605\nrdar://182434202\n\nReviewed by Qianlang Chen.\n\nPage.getResourceContent was a stub under Site Isolation, breaking the\nResources tab fallback content path for cross-origin frames (t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
