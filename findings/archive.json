@@ -3751,9 +3751,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -4682,5 +4683,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "f9c7e1033362aa474ed608e994dfec49297b3347",
+    "message": "REGRESSION (317357@main): imported/w3c/web-platform-tests/navigation-api/navigation-methods/traverseTo-with-cross-origin-in-history.html fails on Site Isolation bots\nhttps://bugs.webkit.org/show_bug.cgi?id=320325\nrdar://183266525\n\nReviewed by Alex Christensen.\n\n317357@main taught isFullyActive to tr",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/dom/Document.cpp ---\n@@ -4142,11 +4142,9 @@ bool Document::isFullyActive() const\n     if (!frame || frame->document() != this)\n         return false;\n \n-    // Walk the ancestor chain: the document is fully active only if it reaches the main\n-    // frame. A RemoteFrame ancestor lives in another process, but if it became parentless\n-    // without being the main frame, its iframe was removed in the parent process and the\n-    // chain was severed. (The local chain may briefly lag that removal until this process\n-    // receives the IPC; we treat it as up to date.)\n+    // The document is fully active only if the ancestor chain reaches the main frame. A\n+    // RemoteFrame ancestor lives in another process, but if it became parentless without\n+    // being the main frame, its iframe was removed there and the chain was severed.\n     for (RefPtr ancestor = frame->tree().parent(); ancestor; ancestor = ancestor->tree().parent()) {\n         if (RefPtr localAncestor = dynamicDowncast<LocalFrame>(ancestor.get())) {\n             if (!localAncestor->document() || localAncestor->document()->frame() != localAncestor)\n@@ -4156,7 +4154,10 @@ bool Document::isFullyActive() const\n         if (!ancestor->tree().parent())\n             return ancestor->isMainFrame();\n     }\n-    return frame->isMainFrame();\n+\n+    // A provisional frame for a cross-process navigation is parentless by construction until its\n+    // load commits, so parentlessness alone does not mean the chain was severed.\n+    return frame->isMainFrame() || frame->loader().client().isProvisionalFrame();\n }\n \n // https://html.spec.whatwg.org/multipage/interaction.html#fully-active-descendant-of-a-top-level-traversable-with-user-attention\n\n--- Source/WebCore/loader/LocalFrameLoaderClient.cpp ---\n@@ -81,6 +81,11 @@ RefPtr<Frame> LocalFrameLoaderClient::provisionalParentFrame() const\n     return nullptr;\n }\n \n+bool LocalFrameLoaderClient::isProvisionalFrame() const\n+{\n+    return false;\n+}\n+\n void LocalFrameLoaderClient::dispatchBackForwardItemLoading(const URL& url, const String& referer, LocalFrame& childFrame)\n {\n     Ref loader = m_loader;\n\n--- Source/WebCore/loader/LocalFrameLoaderClient.h ---\n@@ -366,6 +366,10 @@ class WEBCORE_EXPORT LocalFrameLoaderClient : public FrameLoaderClient {\n \n     virtual RefPtr<Frame> provisionalParentFrame() const;\n \n+    // True while this frame is a provisional frame for a cross-process navigation that has not\n+    // committed yet, and so is not in the frame tree even though it has a parent to be attached to.\n+    virtual bool isProvisionalFrame() const;\n+\n     virtual AllowsContentJavaScript allowsContentJavaScriptFromMostRecentNavigation() const { return AllowsContentJavaScript::Yes; }\n \n #if ENABLE(APP_BOUND_DOMAINS)\n\n--- Source/WebKit/WebProcess/WebCoreSupport/WebLocalFrameLoaderClient.cpp ---\n@@ -2175,6 +2175,11 @@ RefPtr<WebCore::Frame> WebLocalFrameLoaderClient::provisionalParentFrame() const\n     return nullptr;\n }\n \n+bool WebLocalFrameLoaderClient::isProvisionalFrame() const\n+{\n+    return webFrame().provisionalFrame() == m_localFrame.ptr();\n+}\n+\n #if ENABLE(CONTENT_EXTENSIONS)\n \n void WebLocalFrameLoaderClient::didExceedNetworkUsageThreshold()\n\n--- Source/WebKit/WebProcess/WebCoreSupport/WebLocalFrameLoaderClient.h ---\n@@ -335,6 +335,7 @@ class WebLocalFrameLoaderClient final : public WebCore::LocalFrameLoaderClient,\n     RefPtr<WebCore::HistoryItem> createHistoryItemTree(bool clipAtTarget, WebCore::BackForwardItemIdentifier) const final;\n \n     RefPtr<WebCore::Frame> provisionalParentFrame() const final;\n+    bool isProvisionalFrame() const final;\n };\n \n } // namespace WebKit\n",
+    "url": "https://github.com/WebKit/WebKit/commit/f9c7e1033362aa474ed608e994dfec49297b3347",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

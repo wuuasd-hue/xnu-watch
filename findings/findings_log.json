@@ -21157,5 +21157,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T21:24:11.244527+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9c7e1033362aa474ed608e994dfec49297b3347",
+    "url": "https://github.com/WebKit/WebKit/commit/f9c7e1033362aa474ed608e994dfec49297b3347",
+    "message": "REGRESSION (317357@main): imported/w3c/web-platform-tests/navigation-api/navigation-methods/traverseTo-with-cross-origin-in-history.html fails on Site Isolation bots\nhttps://bugs.webkit.org/show_bug.cgi?id=320325\nrdar://183266525\n\nReviewed by Alex Christensen.\n\n317357@main taught isFullyActive to tr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T21:24:48.561992+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9c7e1033362aa474ed608e994dfec49297b3347",
+    "url": "https://github.com/WebKit/WebKit/commit/f9c7e1033362aa474ed608e994dfec49297b3347",
+    "message": "REGRESSION (317357@main): imported/w3c/web-platform-tests/navigation-api/navigation-methods/traverseTo-with-cross-origin-in-history.html fails on Site Isolation bots\nhttps://bugs.webkit.org/show_bug.cgi?id=320325\nrdar://183266525\n\nReviewed by Alex Christensen.\n\n317357@main taught isFullyActive to tr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T21:25:26.183216+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "message": "Clean up JS Temporal getNamedTimeZoneEpochNanoseconds\nhttps://bugs.webkit.org/show_bug.cgi?id=319296\nrdar://182132863\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\ngetNamedTimeZoneEpochNanoseconds makes a number of ICU calls which could\nbe reduced by invoking ICU function ucal_getTimeZoneOffsetFromLo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
