@@ -21217,5 +21217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T22:25:56.530619+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9c7e1033362aa474ed608e994dfec49297b3347",
+    "url": "https://github.com/WebKit/WebKit/commit/f9c7e1033362aa474ed608e994dfec49297b3347",
+    "message": "REGRESSION (317357@main): imported/w3c/web-platform-tests/navigation-api/navigation-methods/traverseTo-with-cross-origin-in-history.html fails on Site Isolation bots\nhttps://bugs.webkit.org/show_bug.cgi?id=320325\nrdar://183266525\n\nReviewed by Alex Christensen.\n\n317357@main taught isFullyActive to tr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T22:26:34.078616+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "url": "https://github.com/WebKit/WebKit/commit/4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "message": "[JSC] Use more FTL select for arithmetic ops\nhttps://bugs.webkit.org/show_bug.cgi?id=319951\nrdar://182872024\n\nReviewed by Sosuke Suzuki.\n\nApply more FTL select operations for arithmetic ops diamond to remove\nmicro basic blocks.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n(JSC::FTL::DFG::LowerD",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
