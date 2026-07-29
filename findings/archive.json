@@ -4646,9 +4646,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "WebKit/WebKit",
@@ -4675,8 +4676,9 @@
     "url": "https://github.com/WebKit/WebKit/commit/7c5dbbcba11029727e3494d5a12ae482a542774d",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   }
 ]
