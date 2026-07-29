@@ -20857,5 +20857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T12:26:40.059587+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4ebed247914456072e142b14fd83f4228782b4fb",
+    "url": "https://github.com/WebKit/WebKit/commit/4ebed247914456072e142b14fd83f4228782b4fb",
+    "message": "[JSC] Make addSortedRange faster by using binary search\nhttps://bugs.webkit.org/show_bug.cgi?id=320497\nrdar://183461597\n\nReviewed by Yijia Huang.\n\nInterestingly we found that particular kind of RegExp is taking long\ntime in this construction because of linear-search. We should just use\nbinary search",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T12:27:18.418517+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "960adeccefcd5f0320489e46f1aa4af764983853",
+    "url": "https://github.com/WebKit/WebKit/commit/960adeccefcd5f0320489e46f1aa4af764983853",
+    "message": "[JSC] Add fast operation for Array#shift\nhttps://bugs.webkit.org/show_bug.cgi?id=320484\nrdar://183450092\n\nReviewed by Yijia Huang.\n\nThis patch adds optimized code for Array#shift by leveraging ArrayMode-based speculation.\n\n1. We are already emitting Write based ArrayMode in DFGByteCodeParser.\n   So ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
