@@ -20797,5 +20797,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T10:23:53.789405+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "url": "https://github.com/WebKit/WebKit/commit/ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "message": "Treat creating or destroying a CheckedPtr as no-delete\nhttps://bugs.webkit.org/show_bug.cgi?id=320500\n\nReviewed by Chris Dumez.\n\nAnnotated incrementCheckedPtrCount and decrementCheckedPtrCount with NODELETE.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncheckedCallArgsCheckerExpectations:\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T10:24:31.910678+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "url": "https://github.com/WebKit/WebKit/commit/ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "message": "Treat creating or destroying a CheckedPtr as no-delete\nhttps://bugs.webkit.org/show_bug.cgi?id=320500\n\nReviewed by Chris Dumez.\n\nAnnotated incrementCheckedPtrCount and decrementCheckedPtrCount with NODELETE.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncheckedCallArgsCheckerExpectations:\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-29T10:25:09.759472+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2c2a4add5574c8388732a753dd1841715ed15fc4",
+    "url": "https://github.com/WebKit/WebKit/commit/2c2a4add5574c8388732a753dd1841715ed15fc4",
+    "message": "Add foundation for Accessibility Custom Color Mode\nhttps://webkit.org/b/320261\nrdar://183153900\n\nReviewed by Tim Nguyen.\n\nAdd foundation for Accessibility Custom Color Mode.\n\n* Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml:\n* Source/WebCore/dom/Document.cpp:\n(WebCore::Document::adjustSty",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
