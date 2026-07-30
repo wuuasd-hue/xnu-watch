@@ -21317,5 +21317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T00:53:21.708557+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bfb1b1183bc24fae86e740a2f23c9374b8bba793",
+    "url": "https://github.com/WebKit/WebKit/commit/bfb1b1183bc24fae86e740a2f23c9374b8bba793",
+    "message": "[JSC] Remove the B3 Air graph coloring register allocator\nhttps://bugs.webkit.org/show_bug.cgi?id=305997\nrdar://168629094\n\nReviewed by Yusuke Suzuki.\n\nThe greedy register allocator has been the default B3 Air register\nallocator for all configurations for a while now, and we haven't\nencountered any n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T00:53:59.012260+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bfb1b1183bc24fae86e740a2f23c9374b8bba793",
+    "url": "https://github.com/WebKit/WebKit/commit/bfb1b1183bc24fae86e740a2f23c9374b8bba793",
+    "message": "[JSC] Remove the B3 Air graph coloring register allocator\nhttps://bugs.webkit.org/show_bug.cgi?id=305997\nrdar://168629094\n\nReviewed by Yusuke Suzuki.\n\nThe greedy register allocator has been the default B3 Air register\nallocator for all configurations for a while now, and we haven't\nencountered any n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T00:54:36.371342+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f54300b848acb86f95da242cbd1d7538c5d0cf9",
+    "url": "https://github.com/WebKit/WebKit/commit/4f54300b848acb86f95da242cbd1d7538c5d0cf9",
+    "message": "[JSC] Assemble diagnostic data when getDirect returns an all-zero JSValue during llint_slow_path_get_by_id\nhttps://bugs.webkit.org/show_bug.cgi?id=320240\nrdar://183368480\n\nReviewed by Mark Lam.\n\nIn a case where we'd crash anyway, stuff some useful data into\nregisters first to make debugging easier i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
