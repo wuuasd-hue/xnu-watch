@@ -21937,5 +21937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T22:04:52.401680+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "url": "https://github.com/WebKit/WebKit/commit/f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "message": "Add preserve_most to most fastMalloc APIs on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=320661\nrdar://183640618\n\nReviewed by Mark Lam, Yusuke Suzuki, and Marcus Plutowski.\n\nThis patch adds Clang's preserve_most attribute to most fastMalloc APIs.\nThe preserve_most attribute on ARM64 turns `x9-x15`",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T22:05:30.266050+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "url": "https://github.com/WebKit/WebKit/commit/f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "message": "Add preserve_most to most fastMalloc APIs on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=320661\nrdar://183640618\n\nReviewed by Mark Lam, Yusuke Suzuki, and Marcus Plutowski.\n\nThis patch adds Clang's preserve_most attribute to most fastMalloc APIs.\nThe preserve_most attribute on ARM64 turns `x9-x15`",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T22:06:07.858108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f66c3804ee6c2efbaf23130a1a282fa345f299cd",
+    "url": "https://github.com/WebKit/WebKit/commit/f66c3804ee6c2efbaf23130a1a282fa345f299cd",
+    "message": "[JSC][Wasm] Shrink Type to a pointer-sized payload on 64-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=247454\n\nReviewed by Yusuke Suzuki.\n\nOn ADDRESS64, store Wasm::Type in one pointer-sized word with\nCompactPointerTuple (pointer half + TypeKind bits as the tag). Use the same\nType API on 32-bit where ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
