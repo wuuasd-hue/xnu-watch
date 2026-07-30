@@ -21757,5 +21757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T16:56:16.145391+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "url": "https://github.com/WebKit/WebKit/commit/cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "message": "[JSC] Extend Array.from()'s Set fast path to cover set.keys()/.values()\nhttps://bugs.webkit.org/show_bug.cgi?id=320575\nrdar://183552376\n\nReviewed by Yusuke Suzuki.\n\nArray.from() already bypasses the generic iterator protocol for plain\nArray.from(set) and Array.from(map.keys()/.values()), reading int",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T16:56:54.902770+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "url": "https://github.com/WebKit/WebKit/commit/cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "message": "[JSC] Extend Array.from()'s Set fast path to cover set.keys()/.values()\nhttps://bugs.webkit.org/show_bug.cgi?id=320575\nrdar://183552376\n\nReviewed by Yusuke Suzuki.\n\nArray.from() already bypasses the generic iterator protocol for plain\nArray.from(set) and Array.from(map.keys()/.values()), reading int",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T16:57:32.695632+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "46a4b17efbe9a1b9fe05a4ca8b6452650b001b51",
+    "url": "https://github.com/WebKit/WebKit/commit/46a4b17efbe9a1b9fe05a4ca8b6452650b001b51",
+    "message": "[YARR] Do not filter the contents of a negative lookahead in `optimizeBOL`\nhttps://bugs.webkit.org/show_bug.cgi?id=320611\n\nReviewed by Yusuke Suzuki.\n\n    /^a|(?!^)b/.exec(\"b\") // [\"b\"], should be null\n\noptimizeBOL()'s loop copy drops subterms that can only match at the start of\nthe input, since the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
