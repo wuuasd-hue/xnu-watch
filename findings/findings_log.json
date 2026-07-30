@@ -21497,5 +21497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T06:15:18.969771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9610c2113b4510c465fe0cf6b5dd3cd0c5a2f7f7",
+    "url": "https://github.com/WebKit/WebKit/commit/9610c2113b4510c465fe0cf6b5dd3cd0c5a2f7f7",
+    "message": "[JSC] offlineasm never emits ARM64 register-offset addressing for BaseIndex operands\nhttps://bugs.webkit.org/show_bug.cgi?id=320532\n\nReviewed by Yusuke Suzuki.\n\nThe ARM64 predicate passed to riscLowerMalformedAddresses compared\naddress.scale (an Immediate AST node) against Ruby integers, and\nImmedia",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T06:15:56.892904+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54916608d7d648c662f4524d57000ec33b0eb431",
+    "url": "https://github.com/WebKit/WebKit/commit/54916608d7d648c662f4524d57000ec33b0eb431",
+    "message": "[YARR] Fix non-BMP advance latch and simplify `tryReadUnicodeCharImpl`\nhttps://bugs.webkit.org/show_bug.cgi?id=308288\n\nReviewed by Yusuke Suzuki.\n\nFor /u patterns, YARR JIT uses firstCharacterAdditionalReadSize (the advance latch)\nto move the match start past both units of a surrogate pair when a ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
