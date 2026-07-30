@@ -21697,5 +21697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T15:09:39.164199+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "url": "https://github.com/swiftlang/swift/commit/408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "message": "Merge pull request #90187 from ktoso/wip-unblock-windows-test-distributed-resolvable\n\n[Distributed][Windows] Fix witness table allocation style for windows",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T15:10:20.781789+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "url": "https://github.com/swiftlang/swift/commit/408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "message": "Merge pull request #90187 from ktoso/wip-unblock-windows-test-distributed-resolvable\n\n[Distributed][Windows] Fix witness table allocation style for windows",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-30T15:11:04.659958+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54916608d7d648c662f4524d57000ec33b0eb431",
+    "url": "https://github.com/WebKit/WebKit/commit/54916608d7d648c662f4524d57000ec33b0eb431",
+    "message": "[YARR] Fix non-BMP advance latch and simplify `tryReadUnicodeCharImpl`\nhttps://bugs.webkit.org/show_bug.cgi?id=308288\n\nReviewed by Yusuke Suzuki.\n\nFor /u patterns, YARR JIT uses firstCharacterAdditionalReadSize (the advance latch)\nto move the match start past both units of a surrogate pair when a ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
