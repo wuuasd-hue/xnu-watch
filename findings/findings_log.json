@@ -22317,5 +22317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T10:24:59.062500+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1566615170ec213c8f5c9188609d7b03fe245118",
+    "url": "https://github.com/WebKit/WebKit/commit/1566615170ec213c8f5c9188609d7b03fe245118",
+    "message": "[JSC] `EnumeratorNextUpdateIndexAndMode` should require the original array structure before using `InBoundsSaneChain`\nhttps://bugs.webkit.org/show_bug.cgi?id=320620\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nThe sane-chain speculation for the indexed enumerator mode was guarded\nonly by benefitsFr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T10:25:39.370984+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "90b2ecf79ae30cf5c76d5a8ae6b6761a474f347b",
+    "url": "https://github.com/WebKit/WebKit/commit/90b2ecf79ae30cf5c76d5a8ae6b6761a474f347b",
+    "message": "[JSC] `hostResolveImportedModule` should respect the module request's import attribute type\nhttps://bugs.webkit.org/show_bug.cgi?id=320341\n\nReviewed by Yusuke Suzuki.\n\nSince 317844@main, hostResolveImportedModule looks up [[LoadedModules]] by specifier\nalone, probing each ScriptFetchParameters::Type",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
