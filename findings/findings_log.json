@@ -22757,5 +22757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T22:05:32.926100+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "39b1bb9cfc85b74fa5ead850deee710547b2df71",
+    "url": "https://github.com/WebKit/WebKit/commit/39b1bb9cfc85b74fa5ead850deee710547b2df71",
+    "message": "[JSC] Deploy Comba multiplication more broadly\nhttps://bugs.webkit.org/show_bug.cgi?id=320676\nrdar://183655373\n\nReviewed by Yijia Huang.\n\n1. Introduce cachedModFixed, which is basically 1:1 version of cachedMod\n   but it uses fixed size for input so that it can streamline the\n   computation, making ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T22:06:10.291269+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1566615170ec213c8f5c9188609d7b03fe245118",
+    "url": "https://github.com/WebKit/WebKit/commit/1566615170ec213c8f5c9188609d7b03fe245118",
+    "message": "[JSC] `EnumeratorNextUpdateIndexAndMode` should require the original array structure before using `InBoundsSaneChain`\nhttps://bugs.webkit.org/show_bug.cgi?id=320620\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nThe sane-chain speculation for the indexed enumerator mode was guarded\nonly by benefitsFr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
