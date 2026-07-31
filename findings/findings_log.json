@@ -22537,5 +22537,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T18:01:45.316913+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5daad377031ccf0ab88a4010411fd0d7999f52d6",
+    "url": "https://github.com/WebKit/WebKit/commit/5daad377031ccf0ab88a4010411fd0d7999f52d6",
+    "message": "[GTK][WPE] Enable -Wthread-safety\nhttps://bugs.webkit.org/show_bug.cgi?id=320734\n\nReviewed by Adrian Perez de Castro and Carlos Alberto Lopez Perez.\n\nIt helps to catch thread safety issues at build time.\n\n* Source/JavaScriptCore/CMakeLists.txt:\n* Source/WTF/wtf/CMakeLists.txt:\n* Source/WebCore/CMake",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T18:02:25.650592+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "581f1d9583295898e8569aa01753b143356913f2",
+    "url": "https://github.com/WebKit/WebKit/commit/581f1d9583295898e8569aa01753b143356913f2",
+    "message": "[YARR] Start matching end-anchored fixed-size regexps at the only possible position\nhttps://bugs.webkit.org/show_bug.cgi?id=320154\n\nReviewed by Yusuke Suzuki.\n\nWhen every top-level alternative of a pattern ends with a non-multiline $\nand consumes a fixed number of code units, a match can only start ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T18:03:05.400428+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5daad377031ccf0ab88a4010411fd0d7999f52d6",
+    "url": "https://github.com/WebKit/WebKit/commit/5daad377031ccf0ab88a4010411fd0d7999f52d6",
+    "message": "[GTK][WPE] Enable -Wthread-safety\nhttps://bugs.webkit.org/show_bug.cgi?id=320734\n\nReviewed by Adrian Perez de Castro and Carlos Alberto Lopez Perez.\n\nIt helps to catch thread safety issues at build time.\n\n* Source/JavaScriptCore/CMakeLists.txt:\n* Source/WTF/wtf/CMakeLists.txt:\n* Source/WebCore/CMake",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T18:03:48.017376+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "581f1d9583295898e8569aa01753b143356913f2",
+    "url": "https://github.com/WebKit/WebKit/commit/581f1d9583295898e8569aa01753b143356913f2",
+    "message": "[YARR] Start matching end-anchored fixed-size regexps at the only possible position\nhttps://bugs.webkit.org/show_bug.cgi?id=320154\n\nReviewed by Yusuke Suzuki.\n\nWhen every top-level alternative of a pattern ends with a non-multiline $\nand consumes a fixed number of code units, a match can only start ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
