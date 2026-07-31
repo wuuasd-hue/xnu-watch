@@ -22137,5 +22137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T04:50:10.130359+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "url": "https://github.com/WebKit/WebKit/commit/51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "message": "[JSC][Wasm] Add DEFINE_IPINT_THUNK_FOR_ENTRY for IPInt entry\nhttps://bugs.webkit.org/show_bug.cgi?id=294584\n\nReviewed by Yusuke Suzuki.\n\nAdd DEFINE_IPINT_THUNK_FOR_ENTRY for the IPInt function entry thunk,\nmirroring DEFINE_IPINT_THUNK_FOR_CATCH. Entry is only used under\nENABLE(JIT) (callers fall bac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T04:50:47.210351+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "url": "https://github.com/WebKit/WebKit/commit/51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "message": "[JSC][Wasm] Add DEFINE_IPINT_THUNK_FOR_ENTRY for IPInt entry\nhttps://bugs.webkit.org/show_bug.cgi?id=294584\n\nReviewed by Yusuke Suzuki.\n\nAdd DEFINE_IPINT_THUNK_FOR_ENTRY for the IPInt function entry thunk,\nmirroring DEFINE_IPINT_THUNK_FOR_CATCH. Entry is only used under\nENABLE(JIT) (callers fall bac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-07-31T04:51:24.463951+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "862994e2cc372c16a11440b96b4f5c34158431f2",
+    "url": "https://github.com/WebKit/WebKit/commit/862994e2cc372c16a11440b96b4f5c34158431f2",
+    "message": "[Memory64] Wasm table imports don't check that the address type matches\nhttps://bugs.webkit.org/show_bug.cgi?id=320672\nrdar://183653434\n\nReviewed by Keith Miller.\n\nWhen linking a table import, we validated the element type, 'initial', and\n'maximum', but never compared the address type of the provide",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
