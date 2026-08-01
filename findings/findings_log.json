@@ -23697,5 +23697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T23:24:40.534652+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d188aac4126a0ef736af8549f967a932e209fa6",
+    "url": "https://github.com/WebKit/WebKit/commit/0d188aac4126a0ef736af8549f967a932e209fa6",
+    "message": "Simple drive-by safer-cpp fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=320778\n\nReviewed by Yusuke Suzuki.\n\n[armv7] Remove ARMv7 JIT support - #70306 triggers these safer cpp\nerrors. This patch fixes them so that the other patch stays clean.\n\nCanonical link: https://commits.webkit.org/318382@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T23:25:18.510006+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "url": "https://github.com/WebKit/WebKit/commit/24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "message": "[Wasm] Optimize JITCallee publication\nhttps://bugs.webkit.org/show_bug.cgi?id=320747\nrdar://183747593\n\nReviewed by Yusuke Suzuki.\n\nPublishing a freshly compiled wasm function held CalleeGroup::m_lock across the two most\nexpensive steps in the sequence: a per-callsite icache flush for every outgoing ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
