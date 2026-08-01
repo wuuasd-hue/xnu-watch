@@ -23477,5 +23477,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T18:46:23.874683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d188aac4126a0ef736af8549f967a932e209fa6",
+    "url": "https://github.com/WebKit/WebKit/commit/0d188aac4126a0ef736af8549f967a932e209fa6",
+    "message": "Simple drive-by safer-cpp fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=320778\n\nReviewed by Yusuke Suzuki.\n\n[armv7] Remove ARMv7 JIT support - #70306 triggers these safer cpp\nerrors. This patch fixes them so that the other patch stays clean.\n\nCanonical link: https://commits.webkit.org/318382@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T18:47:02.481716+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d188aac4126a0ef736af8549f967a932e209fa6",
+    "url": "https://github.com/WebKit/WebKit/commit/0d188aac4126a0ef736af8549f967a932e209fa6",
+    "message": "Simple drive-by safer-cpp fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=320778\n\nReviewed by Yusuke Suzuki.\n\n[armv7] Remove ARMv7 JIT support - #70306 triggers these safer cpp\nerrors. This patch fixes them so that the other patch stays clean.\n\nCanonical link: https://commits.webkit.org/318382@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T18:47:40.580756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "message": "[JSC] Implement Crandall reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=320763\nrdar://183764395\n\nReviewed by Justin Michaud.\n\nThis patch implements Crandall reduction for fast modulo calculation.\nWhen you have\n\n    R = A mod B\n    R ≡ A (mod B)\n\nIf B is Pseudo-Mersenne (2^k - C, where C is small)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
