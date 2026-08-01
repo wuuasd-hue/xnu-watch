@@ -23077,5 +23077,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T08:59:25.818483+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "url": "https://github.com/WebKit/WebKit/commit/4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "message": "[JSC] `Array.from(set.keys()/.values())` fast path ignores `Symbol.iterator` overrides\nhttps://bugs.webkit.org/show_bug.cgi?id=320748\n\nReviewed by Yusuke Suzuki.\n\n318251@main wired JSSetIteratorType into @arrayFromFastWithoutMapFn, which runs\nbefore Array.from reads items[@@iterator], but the Set-si",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T09:00:03.383198+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "url": "https://github.com/WebKit/WebKit/commit/4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "message": "[JSC] `Array.from(set.keys()/.values())` fast path ignores `Symbol.iterator` overrides\nhttps://bugs.webkit.org/show_bug.cgi?id=320748\n\nReviewed by Yusuke Suzuki.\n\n318251@main wired JSSetIteratorType into @arrayFromFastWithoutMapFn, which runs\nbefore Array.from reads items[@@iterator], but the Set-si",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T09:00:40.152161+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "68cde6ba2ad363f71e6c9faa71ae9ba7955b4506",
+    "url": "https://github.com/WebKit/WebKit/commit/68cde6ba2ad363f71e6c9faa71ae9ba7955b4506",
+    "message": "Make IRO faster\nhttps://bugs.webkit.org/show_bug.cgi?id=320289\n\nReviewed by Keith Miller.\n\nIRO is pretty dumb sometimes, but it takes up a lot of compile time. Here\nI have tuned it to not pessimise any existing benchmarks, but to stop\nearly in larger functions. When we get larger functions that bene",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
