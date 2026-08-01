@@ -23577,5 +23577,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T21:14:00.677391+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "url": "https://github.com/WebKit/WebKit/commit/24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "message": "[Wasm] Optimize JITCallee publication\nhttps://bugs.webkit.org/show_bug.cgi?id=320747\nrdar://183747593\n\nReviewed by Yusuke Suzuki.\n\nPublishing a freshly compiled wasm function held CalleeGroup::m_lock across the two most\nexpensive steps in the sequence: a per-callsite icache flush for every outgoing ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T21:14:37.613142+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "url": "https://github.com/WebKit/WebKit/commit/24527bbb9ac882ec69bbb900711d5ca479d12316",
+    "message": "[Wasm] Optimize JITCallee publication\nhttps://bugs.webkit.org/show_bug.cgi?id=320747\nrdar://183747593\n\nReviewed by Yusuke Suzuki.\n\nPublishing a freshly compiled wasm function held CalleeGroup::m_lock across the two most\nexpensive steps in the sequence: a per-callsite icache flush for every outgoing ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T21:15:15.488250+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "url": "https://github.com/WebKit/WebKit/commit/1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "message": "Fix regex setLastIndex on 32-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320781\n\nReviewed by Yusuke Suzuki.\n\nsize_t -> uint64_t quick fix\n\nCanonical link: https://commits.webkit.org/318378@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
