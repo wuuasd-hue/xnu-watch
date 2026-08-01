@@ -22857,5 +22857,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T01:00:52.380773+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "url": "https://github.com/WebKit/WebKit/commit/92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "message": "[JSC] Add JSArrayIterator::next\nhttps://bugs.webkit.org/show_bug.cgi?id=320731\nrdar://183717343\n\nReviewed by Marcus Plutowski.\n\nLet's add next and nextWithAdvance to JSArrayIterator as the same to the\nother iterators like JSSetIterator. This cleans up a lot of code which\nmanually modifies JSArrayIte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T01:01:29.294785+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "url": "https://github.com/WebKit/WebKit/commit/15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "message": "[Memory64] Add SIMD support\nhttps://bugs.webkit.org/show_bug.cgi?id=320755\nrdar://183755031\n\nReviewed by Keith Miller.\n\nAdd SIMD support in memory64\n\n* JSTests/wasm/stress/memory64-simd.js: Added.\n(13):\n(3):\n(8):\n(2):\n(func.export.string_appeared_here.param.addr.i64.param.value.i64.i64.store.local.a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T01:02:06.895115+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "url": "https://github.com/WebKit/WebKit/commit/92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "message": "[JSC] Add JSArrayIterator::next\nhttps://bugs.webkit.org/show_bug.cgi?id=320731\nrdar://183717343\n\nReviewed by Marcus Plutowski.\n\nLet's add next and nextWithAdvance to JSArrayIterator as the same to the\nother iterators like JSSetIterator. This cleans up a lot of code which\nmanually modifies JSArrayIte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T01:02:47.206824+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "url": "https://github.com/WebKit/WebKit/commit/15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "message": "[Memory64] Add SIMD support\nhttps://bugs.webkit.org/show_bug.cgi?id=320755\nrdar://183755031\n\nReviewed by Keith Miller.\n\nAdd SIMD support in memory64\n\n* JSTests/wasm/stress/memory64-simd.js: Added.\n(13):\n(3):\n(8):\n(2):\n(func.export.string_appeared_here.param.addr.i64.param.value.i64.i64.store.local.a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
