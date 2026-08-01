@@ -23377,5 +23377,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T16:43:29.961457+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "url": "https://github.com/WebKit/WebKit/commit/3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "message": "REGRESSION(318202@main): Win-Build-EWS -  failing compile-webkit\nhttps://bugs.webkit.org/show_bug.cgi?id=320754\nrdar://183756146\n\nReviewed by Yusuke Suzuki and Ian Grunert.\n\nThe generated AirOpcodeUtils.h and AirOpcodeGenerated.h #undef the <windows.h>\nmacros that collide with Air opcode names (Rota",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T16:44:07.810343+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "url": "https://github.com/WebKit/WebKit/commit/3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "message": "REGRESSION(318202@main): Win-Build-EWS -  failing compile-webkit\nhttps://bugs.webkit.org/show_bug.cgi?id=320754\nrdar://183756146\n\nReviewed by Yusuke Suzuki and Ian Grunert.\n\nThe generated AirOpcodeUtils.h and AirOpcodeGenerated.h #undef the <windows.h>\nmacros that collide with Air opcode names (Rota",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T16:44:45.455916+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "url": "https://github.com/WebKit/WebKit/commit/15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "message": "[Memory64] Add SIMD support\nhttps://bugs.webkit.org/show_bug.cgi?id=320755\nrdar://183755031\n\nReviewed by Keith Miller.\n\nAdd SIMD support in memory64\n\n* JSTests/wasm/stress/memory64-simd.js: Added.\n(13):\n(3):\n(8):\n(2):\n(func.export.string_appeared_here.param.addr.i64.param.value.i64.i64.store.local.a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
