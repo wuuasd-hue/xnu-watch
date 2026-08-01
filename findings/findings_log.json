@@ -23257,5 +23257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T14:18:37.975617+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2beca7a439f62be8619f7a86dbea17cecad5d14",
+    "url": "https://github.com/WebKit/WebKit/commit/c2beca7a439f62be8619f7a86dbea17cecad5d14",
+    "message": "[JSC] Scan an int token in a single pass\nhttps://bugs.webkit.org/show_bug.cgi?id=320708\nrdar://183694790\n\nReviewed by Yusuke Suzuki.\n\nOn the fast path for scanning an int token, we scan a token it two passes. First we scan\nthe input to find the end of the token, then if the token is not too long, we",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T14:19:14.935632+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "url": "https://github.com/WebKit/WebKit/commit/92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "message": "[JSC] Add JSArrayIterator::next\nhttps://bugs.webkit.org/show_bug.cgi?id=320731\nrdar://183717343\n\nReviewed by Marcus Plutowski.\n\nLet's add next and nextWithAdvance to JSArrayIterator as the same to the\nother iterators like JSSetIterator. This cleans up a lot of code which\nmanually modifies JSArrayIte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
