@@ -22937,5 +22937,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T04:21:32.858322+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "url": "https://github.com/WebKit/WebKit/commit/e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "message": "Web Inspector: Canvas: instrument WebGPU pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320698\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUShaderModule.h:\n(WebCore::GPUShaderModule::create):\n(WebCore::GPUShaderModule::source const): Added.\n(WebCore::GPUShaderModule::GPUShad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T04:22:09.700987+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "url": "https://github.com/WebKit/WebKit/commit/1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "message": "[JSC][Wasm] Speed up WebAssembly.Table construction\nhttps://bugs.webkit.org/show_bug.cgi?id=288529\n\nReviewed by Yusuke Suzuki.\n\nTable construction filled every live slot through JSWebAssemblyTable::set,\nwhich did a full integrity audit and write barrier per index. For null fill\nvalues the slots alre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T04:22:46.588838+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "message": "[JSC] Implement Crandall reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=320763\nrdar://183764395\n\nReviewed by Justin Michaud.\n\nThis patch implements Crandall reduction for fast modulo calculation.\nWhen you have\n\n    R = A mod B\n    R ≡ A (mod B)\n\nIf B is Pseudo-Mersenne (2^k - C, where C is small)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T04:23:23.558974+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "url": "https://github.com/WebKit/WebKit/commit/e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "message": "Web Inspector: Canvas: instrument WebGPU pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320698\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUShaderModule.h:\n(WebCore::GPUShaderModule::create):\n(WebCore::GPUShaderModule::source const): Added.\n(WebCore::GPUShaderModule::GPUShad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T04:24:00.443777+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "url": "https://github.com/WebKit/WebKit/commit/1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "message": "[JSC][Wasm] Speed up WebAssembly.Table construction\nhttps://bugs.webkit.org/show_bug.cgi?id=288529\n\nReviewed by Yusuke Suzuki.\n\nTable construction filled every live slot through JSWebAssemblyTable::set,\nwhich did a full integrity audit and write barrier per index. For null fill\nvalues the slots alre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
