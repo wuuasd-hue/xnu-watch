@@ -23217,5 +23217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T12:45:50.610125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfb222f3c4d1632e4bb21c18f57db2117dc11c40",
+    "url": "https://github.com/WebKit/WebKit/commit/cfb222f3c4d1632e4bb21c18f57db2117dc11c40",
+    "message": "[CMake] Run cleandead at the end of configuration to delete stale files\nhttps://bugs.webkit.org/show_bug.cgi?id=320723\nrdar://183704798\n\nReviewed by Richard Robinson and Zak Ridouh.\n\n`ninja -t cleandead` deletes files from the log that are no longer part\nof the build graph. By hacking ninja-wrapper,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T12:46:28.298903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f7a9d16e1531496bbe9d20952252b0d28aa56061",
+    "url": "https://github.com/WebKit/WebKit/commit/f7a9d16e1531496bbe9d20952252b0d28aa56061",
+    "message": "Add removeIf() to WeakHashSet and WeakListHashSet and adopt it to simplify more remove-matching-entries loops\n<https://bugs.webkit.org/show_bug.cgi?id=320324>\n<rdar://183264359>\n\nReviewed by Darin Adler, Abrar Rahman Protyasha, and Zak Ridouh.\n\nFollow-up to 317934@main, which implemented the same op",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
