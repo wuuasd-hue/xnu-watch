@@ -23537,5 +23537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T20:02:39.971142+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "url": "https://github.com/WebKit/WebKit/commit/4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "message": "[JSC] `Array.from(set.keys()/.values())` fast path ignores `Symbol.iterator` overrides\nhttps://bugs.webkit.org/show_bug.cgi?id=320748\n\nReviewed by Yusuke Suzuki.\n\n318251@main wired JSSetIteratorType into @arrayFromFastWithoutMapFn, which runs\nbefore Array.from reads items[@@iterator], but the Set-si",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T20:03:17.768591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "url": "https://github.com/WebKit/WebKit/commit/232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "message": "Remove big endian support and support for platforms without unaligned loads/stores\nhttps://bugs.webkit.org/show_bug.cgi?id=320780\n\nReviewed by Yusuke Suzuki.\n\nThis streamlines the supported set of builds, and now seems like a good\ntime since we are also dropping armv7 to cloop.\n\nCanonical link: http",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
