@@ -23297,5 +23297,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T15:32:56.625446+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "url": "https://github.com/WebKit/WebKit/commit/232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "message": "Remove big endian support and support for platforms without unaligned loads/stores\nhttps://bugs.webkit.org/show_bug.cgi?id=320780\n\nReviewed by Yusuke Suzuki.\n\nThis streamlines the supported set of builds, and now seems like a good\ntime since we are also dropping armv7 to cloop.\n\nCanonical link: http",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T15:33:33.650834+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "url": "https://github.com/WebKit/WebKit/commit/1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "message": "Fix regex setLastIndex on 32-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320781\n\nReviewed by Yusuke Suzuki.\n\nsize_t -> uint64_t quick fix\n\nCanonical link: https://commits.webkit.org/318378@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T15:34:12.967634+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "url": "https://github.com/WebKit/WebKit/commit/232cebabc1f3c9c0e7abfd5bf6a173e5aae8329a",
+    "message": "Remove big endian support and support for platforms without unaligned loads/stores\nhttps://bugs.webkit.org/show_bug.cgi?id=320780\n\nReviewed by Yusuke Suzuki.\n\nThis streamlines the supported set of builds, and now seems like a good\ntime since we are also dropping armv7 to cloop.\n\nCanonical link: http",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T15:34:50.505264+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "url": "https://github.com/WebKit/WebKit/commit/1c006b0b0f62949c4d5ad5d0cae3fc31856190e8",
+    "message": "Fix regex setLastIndex on 32-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320781\n\nReviewed by Yusuke Suzuki.\n\nsize_t -> uint64_t quick fix\n\nCanonical link: https://commits.webkit.org/318378@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
