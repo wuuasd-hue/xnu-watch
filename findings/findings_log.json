@@ -23037,5 +23037,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T06:45:24.222277+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "message": "[JSC] Implement Crandall reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=320763\nrdar://183764395\n\nReviewed by Justin Michaud.\n\nThis patch implements Crandall reduction for fast modulo calculation.\nWhen you have\n\n    R = A mod B\n    R ≡ A (mod B)\n\nIf B is Pseudo-Mersenne (2^k - C, where C is small)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-01T06:46:01.451581+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c566b9a406af95a7cfaaf120a4ede210991e6713",
+    "url": "https://github.com/swiftlang/swift/commit/c566b9a406af95a7cfaaf120a4ede210991e6713",
+    "message": "Merge pull request #90965 from DougGregor/embedded-concurrency-freestanding\n\n[Embedded] Build Embedded Concurrency library as freestanding",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
