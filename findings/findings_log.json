@@ -24137,5 +24137,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T14:20:16.945313+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7be5445e4a22c61e7c197e81bbcb15d965650f7c",
+    "url": "https://github.com/WebKit/WebKit/commit/7be5445e4a22c61e7c197e81bbcb15d965650f7c",
+    "message": "Web Inspector: Canvas: support disabling WebGPU render pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320700\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/agents/InspectorCanvasAgent.h:\n(WebCore::InspectorCanvasAgent::setShaderP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T14:20:54.928532+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bfd6c750726a25617c844de7be79c4400f3c088",
+    "url": "https://github.com/WebKit/WebKit/commit/4bfd6c750726a25617c844de7be79c4400f3c088",
+    "message": "[JSC][Wasm] Fix OMG inlined stack origin lookup skipping deeper frames\nhttps://bugs.webkit.org/show_bug.cgi?id=270832\n\nReviewed by Yusuke Suzuki.\n\ngetCodeOrigin used a broken lower_bound comparator on lastInlineCSI\n(integer subtraction coerced to bool), so it could start mid-list and\nskip deeper pos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
