@@ -23737,5 +23737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T01:03:11.922126+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "857bd4334690edda28e6f535e2f828dbc5064c4d",
+    "url": "https://github.com/WebKit/WebKit/commit/857bd4334690edda28e6f535e2f828dbc5064c4d",
+    "message": "[armv7] Remove ARMv7 JIT support\nhttps://bugs.webkit.org/show_bug.cgi?id=320416\n\nReviewed by Yusuke Suzuki.\n\nARMv7 runs on CLoop now. We remove all 32-bit jit\nreferences, and some dangling x86 references too.\n\nCanonical link: https://commits.webkit.org/318389@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T01:03:49.935309+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "02d16b1d8e1a8fe076e354412936c1af5a07f675",
+    "url": "https://github.com/WebKit/WebKit/commit/02d16b1d8e1a8fe076e354412936c1af5a07f675",
+    "message": "[JSC] Skew small function's OMG tierup call counts\nhttps://bugs.webkit.org/show_bug.cgi?id=320046\nrdar://182981673\n\nReviewed by Mark Lam.\n\nWhen tiering up from BBQ to OMG, we would like to deprioritize very small\nfunctions.\n\n1. Very small functions are not having meaningful improvements from the\n   ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
