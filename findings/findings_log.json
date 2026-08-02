@@ -23997,5 +23997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T10:57:12.596050+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29ceb3c03de31db81c3c7df2079a32c09f245967",
+    "url": "https://github.com/WebKit/WebKit/commit/29ceb3c03de31db81c3c7df2079a32c09f245967",
+    "message": "Remove 32-bit JSValues.\nhttps://bugs.webkit.org/show_bug.cgi?id=320803\n\nReviewed by Marcus Plutowski.\n\n32-bit JSValues aren't actually needed for cloop, so let's remove them.\n\nWhile we are at it, we also remove NEEDS_ALIGNED_ACCESS. RV64 shouldn't\nneed this on hardware powerful enough to actually ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T10:57:50.158260+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a458a6c1f0a71390a7641f8fbb5a5485c6900a1e",
+    "url": "https://github.com/WebKit/WebKit/commit/a458a6c1f0a71390a7641f8fbb5a5485c6900a1e",
+    "message": "[YARR] Stop the chunked v-mode class set operation loop as soon as it can produce nothing more\nhttps://bugs.webkit.org/show_bug.cgi?id=320619\n\nReviewed by Yusuke Suzuki.\n\nCharacterClassConstructor::nonLatin1OpSorted() computes v-mode class set\noperations over the non-Latin-1 range by walking 0x100..",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
