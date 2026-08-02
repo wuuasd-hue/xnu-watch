@@ -24517,5 +24517,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T23:25:08.476363+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2f66f5ed23f9a3ce154e7b5745861f76eeda67f0",
+    "url": "https://github.com/WebKit/WebKit/commit/2f66f5ed23f9a3ce154e7b5745861f76eeda67f0",
+    "message": "[JSC] Add support for Regular Expression Buffer Boundaries proposal\nhttps://bugs.webkit.org/show_bug.cgi?id=315887\nrdar://178287060\n\nReviewed by Yusuke Suzuki.\n\nThis patch adds support for regexp buffer boundary assertions (\\A, \\z, \\Z).\nSee https://github.com/tc39/proposal-regexp-buffer-boundaries f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T23:25:45.924016+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3722912ff800feef138f91f0f4fe26f13d68742e",
+    "url": "https://github.com/WebKit/WebKit/commit/3722912ff800feef138f91f0f4fe26f13d68742e",
+    "message": "Web Inspector: Canvas: support recording WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=201651\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUDevice.idl:\n* Source/WebCore/Modules/WebGPU/GPUDevice.h:\n(WebCore::GPUDevice::hasActiveInspectorCanvasCallTracer const): Added.\n(W",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-02T23:26:23.300725+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2f66f5ed23f9a3ce154e7b5745861f76eeda67f0",
+    "url": "https://github.com/WebKit/WebKit/commit/2f66f5ed23f9a3ce154e7b5745861f76eeda67f0",
+    "message": "[JSC] Add support for Regular Expression Buffer Boundaries proposal\nhttps://bugs.webkit.org/show_bug.cgi?id=315887\nrdar://178287060\n\nReviewed by Yusuke Suzuki.\n\nThis patch adds support for regexp buffer boundary assertions (\\A, \\z, \\Z).\nSee https://github.com/tc39/proposal-regexp-buffer-boundaries f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
