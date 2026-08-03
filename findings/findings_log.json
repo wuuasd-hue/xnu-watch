@@ -25277,5 +25277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T22:46:18.628829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86575c4e15164c6b9b9e76765cb9771ea2fda91b",
+    "url": "https://github.com/WebKit/WebKit/commit/86575c4e15164c6b9b9e76765cb9771ea2fda91b",
+    "message": "Web Inspector: Canvas: show WebGPU `label` where able\nhttps://bugs.webkit.org/show_bug.cgi?id=320841\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/InspectorCanvas.cpp:\n(WebCore::InspectorCanvas::buildObjectForCanvas):\n* Source/WebC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T22:46:55.929508+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3722912ff800feef138f91f0f4fe26f13d68742e",
+    "url": "https://github.com/WebKit/WebKit/commit/3722912ff800feef138f91f0f4fe26f13d68742e",
+    "message": "Web Inspector: Canvas: support recording WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=201651\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUDevice.idl:\n* Source/WebCore/Modules/WebGPU/GPUDevice.h:\n(WebCore::GPUDevice::hasActiveInspectorCanvasCallTracer const): Added.\n(W",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
