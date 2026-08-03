@@ -24877,5 +24877,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T11:51:43.890671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99473681ff5ee5bc7d666904274b1491a81c5196",
+    "url": "https://github.com/WebKit/WebKit/commit/99473681ff5ee5bc7d666904274b1491a81c5196",
+    "message": "[JSC][Temporal][Intl.Era] Implement intl-era-monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319855\nrdar://182753821\n\nReviewed by Yusuke Suzuki.\n\nImplement the Stage 4 proposal-intl-era-monthcode[1] end-to-end and drop the\nuseIntlEraMonthcode transition flag.\n\nCalendarICUBridge is consolidated aro",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T11:52:22.149854+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86132c7a3b4c8491f4a4e6a8f635bac1a07c5315",
+    "url": "https://github.com/WebKit/WebKit/commit/86132c7a3b4c8491f4a4e6a8f635bac1a07c5315",
+    "message": "Unreviewed, speculative fix for watchOS\nhttps://bugs.webkit.org/show_bug.cgi?id=320878\nrdar://183898854\n\n* Source/JavaScriptCore/assembler/RegisterInfo.h:\n\nCanonical link: https://commits.webkit.org/318438@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
