@@ -25057,5 +25057,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T18:30:16.900097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55659d048725ba3ec6b8182ee3c81a8dadce8e67",
+    "url": "https://github.com/WebKit/WebKit/commit/55659d048725ba3ec6b8182ee3c81a8dadce8e67",
+    "message": "Unreviewed, remove USE(JSVALUE64_32)\nhttps://bugs.webkit.org/show_bug.cgi?id=320914\nrdar://183941625\n\n* Source/JavaScriptCore/heap/StrongBlock.h:\n\nCanonical link: https://commits.webkit.org/318470@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T18:30:54.255126+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4ccb3f3a1c85f1983007f8721f5696f88266a0dc",
+    "url": "https://github.com/WebKit/WebKit/commit/4ccb3f3a1c85f1983007f8721f5696f88266a0dc",
+    "message": "Web Inspector: Canvas: expose client metadata for WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=320876\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/html/HTMLCanvasElement.cpp:\n(WebCore::HTMLCanvasElement::getContext):\nUse `navigator.gpu` when creating a WebGPU context for internal calle",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T18:31:31.981371+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13ada10535a452a15c0734938f3c3e5eb1390a0e",
+    "url": "https://github.com/WebKit/WebKit/commit/13ada10535a452a15c0734938f3c3e5eb1390a0e",
+    "message": "[JSC] Avoid ensureArrayStorage transition on Wasm GC objects\nhttps://bugs.webkit.org/show_bug.cgi?id=319087\n\nReviewed by Keith Miller.\n\nThe jsc and $vm ensureArrayStorage test helpers passed any object to\nensureArrayStorage. Wasm GC objects have no butterfly, so that path\ntransitioned Structure and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T18:32:10.350371+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55659d048725ba3ec6b8182ee3c81a8dadce8e67",
+    "url": "https://github.com/WebKit/WebKit/commit/55659d048725ba3ec6b8182ee3c81a8dadce8e67",
+    "message": "Unreviewed, remove USE(JSVALUE64_32)\nhttps://bugs.webkit.org/show_bug.cgi?id=320914\nrdar://183941625\n\n* Source/JavaScriptCore/heap/StrongBlock.h:\n\nCanonical link: https://commits.webkit.org/318470@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T18:32:47.796487+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4ccb3f3a1c85f1983007f8721f5696f88266a0dc",
+    "url": "https://github.com/WebKit/WebKit/commit/4ccb3f3a1c85f1983007f8721f5696f88266a0dc",
+    "message": "Web Inspector: Canvas: expose client metadata for WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=320876\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/html/HTMLCanvasElement.cpp:\n(WebCore::HTMLCanvasElement::getContext):\nUse `navigator.gpu` when creating a WebGPU context for internal calle",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
