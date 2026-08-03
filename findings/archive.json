@@ -5677,8 +5677,24 @@
     "url": "https://github.com/WebKit/WebKit/commit/465d5ab28c60bc2521fb30cdce3c68dc289f5d71",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "a5c78b4fff5c9924361287388ca95ee718a760be",
+    "message": "REGRESSION(312307@main): [JSC] Clang reports unsafe buffer usage in JSStringInlines.h\nhttps://bugs.webkit.org/show_bug.cgi?id=320887\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/runtime/JSStringInlines.h:\n(JSC::JSString::tryFindLastOneChar const): Change plain arrays to use\nbounds-checked std",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/JSStringInlines.h ---\n@@ -253,8 +253,8 @@ std::optional<size_t> JSString::tryFindLastOneChar(JSGlobalObject*, char16_t cha\n     }\n \n     const JSRopeString* rope = static_cast<const JSRopeString*>(this);\n-    unsigned fiberLengths[JSRopeString::s_maxInternalRopeLength] { };\n-    JSString* fibers[JSRopeString::s_maxInternalRopeLength] { };\n+    std::array<unsigned, JSRopeString::s_maxInternalRopeLength> fiberLengths;\n+    std::array<JSString*, JSRopeString::s_maxInternalRopeLength> fibers;\n     unsigned fiberCount = 0;\n     for (unsigned i = 0; i < JSRopeString::s_maxInternalRopeLength; ++i) {\n         JSString* fiber = rope->fiber(i);\n",
+    "url": "https://github.com/WebKit/WebKit/commit/a5c78b4fff5c9924361287388ca95ee718a760be",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
