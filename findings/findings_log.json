@@ -24577,5 +24577,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T01:01:13.177425+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29d016fbd9f466795ace2e38d9508523633202e7",
+    "url": "https://github.com/WebKit/WebKit/commit/29d016fbd9f466795ace2e38d9508523633202e7",
+    "message": "[YARR] Do not filter the contents of a lookbehind in `optimizeBOL`\nhttps://bugs.webkit.org/show_bug.cgi?id=320722\n\nReviewed by Yusuke Suzuki.\n\n    /(?<=(?=^)a)b|c/.exec(\"ab\") // null, should be [\"b\"]\n\noptimizeBOL()'s loop copy drops alternatives that can only match at the start of\nthe input. A lookb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T01:01:50.754494+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "url": "https://github.com/WebKit/WebKit/commit/ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "message": "[YARR] Clean up YarrJIT ifdefs\nhttps://bugs.webkit.org/show_bug.cgi?id=320845\nrdar://183873163\n\nReviewed by Yijia Huang.\n\nARMv7 JIT is dropped. So upstream JIT we care is only ARM64 and X86_64\n(RISCV64 is unmaintained). We can clean up many of YarrJIT flags so that\nit makes code much cleaner.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T01:02:28.287418+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "540f0965c655f2b6a78683c12ea43fd269978886",
+    "url": "https://github.com/WebKit/WebKit/commit/540f0965c655f2b6a78683c12ea43fd269978886",
+    "message": "[YARR] v-mode class set operations produce stale character widths\nhttps://bugs.webkit.org/show_bug.cgi?id=320720\n\nReviewed by Yusuke Suzuki.\n\nCharacterClassConstructor tracked m_characterWidths incrementally in\naddSorted / addSortedRange, but the UnicodeSets set-op and inversion paths\n(latin1Op, non",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T01:03:06.632599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29d016fbd9f466795ace2e38d9508523633202e7",
+    "url": "https://github.com/WebKit/WebKit/commit/29d016fbd9f466795ace2e38d9508523633202e7",
+    "message": "[YARR] Do not filter the contents of a lookbehind in `optimizeBOL`\nhttps://bugs.webkit.org/show_bug.cgi?id=320722\n\nReviewed by Yusuke Suzuki.\n\n    /(?<=(?=^)a)b|c/.exec(\"ab\") // null, should be [\"b\"]\n\noptimizeBOL()'s loop copy drops alternatives that can only match at the start of\nthe input. A lookb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T01:03:46.040310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "url": "https://github.com/WebKit/WebKit/commit/ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "message": "[YARR] Clean up YarrJIT ifdefs\nhttps://bugs.webkit.org/show_bug.cgi?id=320845\nrdar://183873163\n\nReviewed by Yijia Huang.\n\nARMv7 JIT is dropped. So upstream JIT we care is only ARM64 and X86_64\n(RISCV64 is unmaintained). We can clean up many of YarrJIT flags so that\nit makes code much cleaner.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
