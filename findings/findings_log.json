@@ -24677,5 +24677,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:54:37.899509+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "url": "https://github.com/WebKit/WebKit/commit/f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "message": "[JSC] LLInt prologue should zero the new frame 16 bytes per iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=320799\n\nReviewed by Yusuke Suzuki.\n\nThe LLInt prologue's frame-clearing loop from 199147@main zeroes the frame 8 bytes\nper top-tested iteration, and on ARM64 the immediate store re-materiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:55:15.245165+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d6747ef60d4327f25547d55277cb7735a623854",
+    "url": "https://github.com/WebKit/WebKit/commit/5d6747ef60d4327f25547d55277cb7735a623854",
+    "message": "[JSC] Object-literal shorthand in an arrow function should not force the enclosing function to capture arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=320789\n\nReviewed by Yusuke Suzuki.\n\nSince 172894@main, parseProperty calls setInnerArrowFunctionUsesEval() for every\nshorthand property inside an a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:55:52.667548+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2a8926009f4582ee79a99ddc2ab83a21aa29476c",
+    "url": "https://github.com/WebKit/WebKit/commit/2a8926009f4582ee79a99ddc2ab83a21aa29476c",
+    "message": "[JSC] Remove USE_BUILTIN_FRAME_ADDRESS, as it should be always enabled on JIT platforms\nhttps://bugs.webkit.org/show_bug.cgi?id=320849\nrdar://183881009\n\nReviewed by Keith Miller.\n\nRemove USE(BUILTIN_FRAME_ADDRESS) as all JIT platfroms should implement it now.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFG",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:56:30.057604+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99473681ff5ee5bc7d666904274b1491a81c5196",
+    "url": "https://github.com/WebKit/WebKit/commit/99473681ff5ee5bc7d666904274b1491a81c5196",
+    "message": "[JSC][Temporal][Intl.Era] Implement intl-era-monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319855\nrdar://182753821\n\nReviewed by Yusuke Suzuki.\n\nImplement the Stage 4 proposal-intl-era-monthcode[1] end-to-end and drop the\nuseIntlEraMonthcode transition flag.\n\nCalendarICUBridge is consolidated aro",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:57:07.872351+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "540f0965c655f2b6a78683c12ea43fd269978886",
+    "url": "https://github.com/WebKit/WebKit/commit/540f0965c655f2b6a78683c12ea43fd269978886",
+    "message": "[YARR] v-mode class set operations produce stale character widths\nhttps://bugs.webkit.org/show_bug.cgi?id=320720\n\nReviewed by Yusuke Suzuki.\n\nCharacterClassConstructor tracked m_characterWidths incrementally in\naddSorted / addSortedRange, but the UnicodeSets set-op and inversion paths\n(latin1Op, non",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-03T04:57:45.980208+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "url": "https://github.com/WebKit/WebKit/commit/f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "message": "[JSC] LLInt prologue should zero the new frame 16 bytes per iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=320799\n\nReviewed by Yusuke Suzuki.\n\nThe LLInt prologue's frame-clearing loop from 199147@main zeroes the frame 8 bytes\nper top-tested iteration, and on ARM64 the immediate store re-materiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
