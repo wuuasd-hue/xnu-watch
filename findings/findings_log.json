@@ -25357,5 +25357,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T01:21:48.493756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89c1884e15a927c5dd681311418d44b66cf8012e",
+    "url": "https://github.com/WebKit/WebKit/commit/89c1884e15a927c5dd681311418d44b66cf8012e",
+    "message": "[JSC][Temporal] Guard PlainDate construction against out-of-range years; consolidate CalendarResolveFields\nhttps://bugs.webkit.org/show_bug.cgi?id=320927\nrdar://183960408\n\nReviewed by Yusuke Suzuki.\n\nPlainDate's constructor now sanitizes `year` itself instead of asserting and\ntrusting every caller t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T01:22:27.399438+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb95a2f78031283cada762bcad6e521b98536380",
+    "url": "https://github.com/WebKit/WebKit/commit/bb95a2f78031283cada762bcad6e521b98536380",
+    "message": "Introduce `AsyncImageDecoder`\nhttps://bugs.webkit.org/show_bug.cgi?id=315970\nrdar://178390303\n\nReviewed by Simon Fraser.\n\nBitmapImage manages the async image decoding separate from the ImageDecoder in\na class named `ImageFrameWorkQueue`. The `WebCodecsImageDecoder` needs to have\nthe async image deco",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T01:23:06.960191+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89c1884e15a927c5dd681311418d44b66cf8012e",
+    "url": "https://github.com/WebKit/WebKit/commit/89c1884e15a927c5dd681311418d44b66cf8012e",
+    "message": "[JSC][Temporal] Guard PlainDate construction against out-of-range years; consolidate CalendarResolveFields\nhttps://bugs.webkit.org/show_bug.cgi?id=320927\nrdar://183960408\n\nReviewed by Yusuke Suzuki.\n\nPlainDate's constructor now sanitizes `year` itself instead of asserting and\ntrusting every caller t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T01:23:45.543240+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb95a2f78031283cada762bcad6e521b98536380",
+    "url": "https://github.com/WebKit/WebKit/commit/bb95a2f78031283cada762bcad6e521b98536380",
+    "message": "Introduce `AsyncImageDecoder`\nhttps://bugs.webkit.org/show_bug.cgi?id=315970\nrdar://178390303\n\nReviewed by Simon Fraser.\n\nBitmapImage manages the async image decoding separate from the ImageDecoder in\na class named `ImageFrameWorkQueue`. The `WebCodecsImageDecoder` needs to have\nthe async image deco",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
