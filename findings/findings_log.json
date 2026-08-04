@@ -26137,5 +26137,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T22:50:21.036482+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e0acedee048e3444ba9c7ed63aab0d8915437c4",
+    "url": "https://github.com/WebKit/WebKit/commit/0e0acedee048e3444ba9c7ed63aab0d8915437c4",
+    "message": "[JSC] Document the cell construction protocol at JSCell::finishCreation()\nhttps://bugs.webkit.org/show_bug.cgi?id=321025\nrdar://184061438\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nThe old comment was opaque: it hinted at a protocol but did not fully\ndescribe it, in particular the caller's obliga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T22:50:58.945194+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "url": "https://github.com/WebKit/WebKit/commit/484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "message": "`<link rel=preload as>` keywords should be matched ASCII case-insensitively\nhttps://bugs.webkit.org/show_bug.cgi?id=320980\nrdar://184013239\n\nReviewed by Frédéric Wang Nélar.\n\nThis patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\n`as` is an enumerated attribute [1], so determining its ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T22:51:36.480868+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e0acedee048e3444ba9c7ed63aab0d8915437c4",
+    "url": "https://github.com/WebKit/WebKit/commit/0e0acedee048e3444ba9c7ed63aab0d8915437c4",
+    "message": "[JSC] Document the cell construction protocol at JSCell::finishCreation()\nhttps://bugs.webkit.org/show_bug.cgi?id=321025\nrdar://184061438\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nThe old comment was opaque: it hinted at a protocol but did not fully\ndescribe it, in particular the caller's obliga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T22:52:13.567227+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "url": "https://github.com/WebKit/WebKit/commit/484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "message": "`<link rel=preload as>` keywords should be matched ASCII case-insensitively\nhttps://bugs.webkit.org/show_bug.cgi?id=320980\nrdar://184013239\n\nReviewed by Frédéric Wang Nélar.\n\nThis patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\n`as` is an enumerated attribute [1], so determining its ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
