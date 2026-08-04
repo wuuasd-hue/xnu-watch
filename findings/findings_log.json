@@ -25777,5 +25777,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T14:56:08.633706+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a7f711d887ed01907e9f8d1d61710c543f967ac",
+    "url": "https://github.com/WebKit/WebKit/commit/1a7f711d887ed01907e9f8d1d61710c543f967ac",
+    "message": "Web Inspector: map WebAssembly byte offsets to original source with source maps\nhttps://bugs.webkit.org/show_bug.cgi?id=320621\n\nReviewed by Yusuke Suzuki.\n\nWebAssembly source maps use module byte offsets as generated columns on line `0`.\nPreserve canonical `(0, byteOffset)` positions without requiri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T14:56:45.892272+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a5272cf9acb5e290cb58b1ec6b5a9a1ef1ee70",
+    "url": "https://github.com/WebKit/WebKit/commit/33a5272cf9acb5e290cb58b1ec6b5a9a1ef1ee70",
+    "message": "[JSC] Cache the collator for `String#localeCompare` with a string locale\nhttps://bugs.webkit.org/show_bug.cgi?id=320962\n\nReviewed by Yusuke Suzuki.\n\n`String#localeCompare(that, locale)` created a fresh IntlCollator on\nevery call whenever `locales` was not undefined, running full option\nprobing, reso",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T14:57:26.298434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "url": "https://github.com/WebKit/WebKit/commit/37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "message": "[YARR] Let `\\A` and `\\z` use the anchoring optimizations of non-multiline `^` and `$`\nhttps://bugs.webkit.org/show_bug.cgi?id=320873\n\nReviewed by Yusuke Suzuki.\n\n\\A and \\z were compiled into their own assertion terms without participating in the\nBOL/EOL anchoring machinery, so a failing /\\Afoo/u or ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T14:58:04.470273+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a7f711d887ed01907e9f8d1d61710c543f967ac",
+    "url": "https://github.com/WebKit/WebKit/commit/1a7f711d887ed01907e9f8d1d61710c543f967ac",
+    "message": "Web Inspector: map WebAssembly byte offsets to original source with source maps\nhttps://bugs.webkit.org/show_bug.cgi?id=320621\n\nReviewed by Yusuke Suzuki.\n\nWebAssembly source maps use module byte offsets as generated columns on line `0`.\nPreserve canonical `(0, byteOffset)` positions without requiri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
