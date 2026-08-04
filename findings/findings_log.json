@@ -26097,5 +26097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T21:44:23.616962+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c9a7dc13ae58ba3f1d38258b6af10be8325a354",
+    "url": "https://github.com/WebKit/WebKit/commit/3c9a7dc13ae58ba3f1d38258b6af10be8325a354",
+    "message": "[JSC] BBQJIT::addTableCopy's assertion is incorrect\nhttps://bugs.webkit.org/show_bug.cgi?id=321001\nrdar://184039749\n\nReviewed by Dan Hecht.\n\ndestination and source address type assertions are swapped.\n\nTest: JSTests/wasm/stress/table-copy-mixed-address-types.js\n\n* JSTests/wasm/stress/table-copy-mixe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T21:45:01.312404+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "url": "https://github.com/WebKit/WebKit/commit/ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "message": "[YARR] Clean up YarrJIT ifdefs\nhttps://bugs.webkit.org/show_bug.cgi?id=320845\nrdar://183873163\n\nReviewed by Yijia Huang.\n\nARMv7 JIT is dropped. So upstream JIT we care is only ARM64 and X86_64\n(RISCV64 is unmaintained). We can clean up many of YarrJIT flags so that\nit makes code much cleaner.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
