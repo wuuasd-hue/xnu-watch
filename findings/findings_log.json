@@ -25657,5 +25657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T10:07:29.494834+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "url": "https://github.com/WebKit/WebKit/commit/2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "message": "[JSC] `Function#bind` strength reduction in DFG should accept method structures\nhttps://bugs.webkit.org/show_bug.cgi?id=320959\n\nReviewed by Yusuke Suzuki.\n\n296674@main split JSFunction structures for functions without a \"prototype\" property\n(class methods, object-literal shorthand methods, accessors",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-04T10:08:06.600689+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6010a9ea6ce6d9fc818c7c15b8e169fac7495f7e",
+    "url": "https://github.com/WebKit/WebKit/commit/6010a9ea6ce6d9fc818c7c15b8e169fac7495f7e",
+    "message": "[JSC] Follow-up cleanups after ARMv7 JIT removal\nhttps://bugs.webkit.org/show_bug.cgi?id=320852\n\nReviewed by Justin Michaud.\n\n318389@main removed the ARMv7 JIT, and 32-bit ARM is now CLoop-only:\nMacroAssembler.h and GPRInfo.h have no ARM32 backend, so everything under\nENABLE(ASSEMBLER)/ENABLE(JIT)/E",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
