@@ -6223,9 +6223,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/13dc8fa6e3d57f2a783cb5e4d7fa2daaf686ef65",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -6237,9 +6238,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/de45b9be42db063e9d045f47c8d2a7628e5429df",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -6249,6 +6251,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- JSTests/stress/string-locale-compare-locales-cache-language-change.js ---\n@@ -0,0 +1,27 @@\n+//@ runDefault(\"--useDollarVM=1\")\n+\n+if (typeof $vm === \"undefined\" || typeof $vm.setUserPreferredLanguages !== \"function\")\n+    quit();\n+\n+function shouldBe(actual, expected, message) {\n+    if (actual !== expected)\n+        throw new Error(`${message}: bad value: ${actual}, expected: ${expected}`);\n+}\n+\n+// \"xx\" is structurally valid but not an available locale, so it resolves via the default locale.\n+// The cached String#localeCompare collator must not survive a default-locale change.\n+$vm.setUserPreferredLanguages([\"en-US\"]);\n+\n+setTimeout(() => {\n+    for (let i = 0; i < 3; ++i)\n+        shouldBe(\"ö\".localeCompare(\"z\", \"xx\"), new Intl.Collator(\"xx\").compare(\"ö\", \"z\"), \"en-US\");\n+    shouldBe(\"ö\".localeCompare(\"z\", \"xx\") < 0, true, \"en-US ordering\");\n+\n+    $vm.setUserPreferredLanguages([\"sv-SE\"]);\n+\n+    setTimeout(() => {\n+        shouldBe(new Intl.Collator(\"xx\").compare(\"ö\", \"z\") > 0, true, \"sv-SE ordering via fresh collator\");\n+        for (let i = 0; i < 3; ++i)\n+            shouldBe(\"ö\".localeCompare(\"z\", \"xx\"), new Intl.Collator(\"xx\").compare(\"ö\", \"z\"), \"sv-SE\");\n+    }, 0);\n+}, 0);\n\n--- Source/JavaScriptCore/runtime/IntlCache.h ---\n@@ -79,6 +79,7 @@ class IntlCache {\n     }\n \n     void clearForTimeZoneChange() { clearDateTimeFormatImplCache(); }\n+    uint64_t languagesEpoch() const { return m_lastSeenLanguagesEpoch; }\n     bool hasLanguageChange() const { return m_lastSeenLanguagesEpoch != s_languagesEpoch.load(std::memory_order_acquire); }\n     void clearForLanguageChange()\n     {\n\n--- Source/JavaScriptCore/runtime/JSGlobalObject.cpp ---\n@@ -88,6 +88,7 @@\n #include \"GlobalObjectMethodTable.h\"\n #include \"HeapIterationScope.h\"\n #include \"ImportMap.h\"\n+#include \"IntlCache.h\"\n #include \"IntlCollator.h\"\n #include \"IntlCollatorPrototype.h\"\n #include \"IntlDateTimeFormat.h\"\n@@ -3163,14 +3164,15 @@ IntlCollator* JSGlobalObject::cachedLocaleCompareCollator(JSString* locale)\n     String localeString = locale->value(this);\n     RETURN_IF_EXCEPTION(scope, nullptr);\n \n-    if (m_cachedLocaleCompareCollator && m_cachedLocaleCompareCollatorLocale == localeString)\n+    if (m_cachedLocaleCompareCollator && m_cachedLocaleCompareCollatorLanguagesEpoch == vm.intlCache().languagesEpoch() && m_cachedLocaleCompareCollatorLocale == localeString)\n         return m_cachedLocaleCompareCollator.get();\n \n     IntlCollator* collator = IntlCollator::create(vm, collatorStructure());\n     collator->initializeCollator(this, locale, jsUndefined());\n     RETURN_IF_EXCEPTION(scope, nullptr);\n \n     m_cachedLocaleCompareCollatorLocale = WTF::move(localeString);\n+    m_cachedLocaleCompareCollatorLanguagesEpoch = vm.intlCache().languagesEpoch();\n     m_cachedLocaleCompareCollator.set(vm, this, collator);\n     return collator;\n }\n\n--- Source/JavaScriptCore/runtime/JSGlobalObject.h ---\n@@ -302,6 +302,7 @@ class JSGlobalObject : public JSSegmentedVariableObject {\n     // Cached collator object for String#localeCompare\n     WriteBarrier<IntlCollator> m_cachedLocaleCompareCollator;\n     String m_cachedLocaleCompareCollatorLocale;\n+    uint64_t m_cachedLocaleCompareCollatorLanguagesEpoch { 0 };\n \n     LazyClassStructure m_durationStructure;\n     LazyClassStructure m_instantStructure;\n",
     "url": "https://github.com/WebKit/WebKit/commit/7d0200e4e6ed21a62e502459658984fe341dcf61",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "swiftlang/swift",
+    "sha": "65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "message": "Merge pull request #91237 from swiftlang/jepa-main4\n\nAdjust to some upstream llvm-project changes",
+    "description": "Swift runtime - bellek guvenligi/tip sistemi hassas alanlari",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- include/swift/Basic/EncodedSequence.h ---\n@@ -25,7 +25,7 @@\n #include \"swift/Basic/LLVM.h\"\n #include \"swift/Basic/PrefixMap.h\"\n #include \"llvm/ADT/ArrayRef.h\"\n-#include \"llvm/TargetParser/Host.h\"\n+#include \"llvm/Support/SwapByteOrder.h\"\n #include \"llvm/Support/TrailingObjects.h\"\n #include <climits>\n \n\n--- stdlib/public/runtime/CrashHandlerLinux.cpp ---\n@@ -766,6 +766,8 @@ memserver_start()\n   }\n \n   memserver_pid = getpid();\n+  // FIXME: variable 'memserver_pid' set but not used. Forgot to use or remove?\n+  (void)memserver_pid;\n \n   return fds[1];\n }\n",
+    "url": "https://github.com/swiftlang/swift/commit/65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"

@@ -26597,5 +26597,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T10:05:50.336302+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "url": "https://github.com/swiftlang/swift/commit/65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "message": "Merge pull request #91237 from swiftlang/jepa-main4\n\nAdjust to some upstream llvm-project changes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T10:06:28.859132+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13dc8fa6e3d57f2a783cb5e4d7fa2daaf686ef65",
+    "url": "https://github.com/WebKit/WebKit/commit/13dc8fa6e3d57f2a783cb5e4d7fa2daaf686ef65",
+    "message": "[JSC] Reserve initial capacity for AtomStringTable and BuiltinNames' m_privateNameSet\nhttps://bugs.webkit.org/show_bug.cgi?id=321058\nrdar://184090428\n\nReviewed by Yijia Huang.\n\nWe found that we are taking too long time in VM launching for\nAtomStringTable construction. This patch reseves initial capa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T10:07:07.022899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de45b9be42db063e9d045f47c8d2a7628e5429df",
+    "url": "https://github.com/WebKit/WebKit/commit/de45b9be42db063e9d045f47c8d2a7628e5429df",
+    "message": "[JSC] Fix memory.init's overflow check\nhttps://bugs.webkit.org/show_bug.cgi?id=321056\nrdar://184086611\n\nReviewed by Dan Hecht.\n\nMemory::init's overflow check is using uint32_t, but it is not correct\nas memory64 is introduced. We use uint64_t instead. Also we drop dead\nMemory::fill / Memory::copy imp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
