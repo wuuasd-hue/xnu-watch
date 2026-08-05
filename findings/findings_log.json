@@ -26837,5 +26837,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T17:59:23.807035+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76f57a9311b1aa0b75f75c697030546f58185347",
+    "url": "https://github.com/WebKit/WebKit/commit/76f57a9311b1aa0b75f75c697030546f58185347",
+    "message": "[JSC] Include ARM64E in the LLInt prologue frame zeroing\nhttps://bugs.webkit.org/show_bug.cgi?id=321070\nrdar://184102859\n\nReviewed by Yijia Huang.\n\nLLInt ARM64E needs to be enabled specifically.\n\n* Source/JavaScriptCore/llint/LowLevelInterpreter.asm:\n\nCanonical link: https://commits.webkit.org/31864",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T18:00:01.034230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9226ba78d93d9c8d5b99accb87b4528e5a9a3dde",
+    "url": "https://github.com/WebKit/WebKit/commit/9226ba78d93d9c8d5b99accb87b4528e5a9a3dde",
+    "message": "[JSC] Remove enableInt52\nhttps://bugs.webkit.org/show_bug.cgi?id=321072\nrdar://184103404\n\nReviewed by Yijia Huang.\n\nAs ARMv7 JIT is removed, now this is unconditionally enabled. Remove enableInt52.\n\n* Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h:\n(JSC::DFG::AbstractInterpreter<AbstractS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T18:00:38.438818+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f771c5060cd789680bae34cfee0b0d5f032cf6f8",
+    "url": "https://github.com/WebKit/WebKit/commit/f771c5060cd789680bae34cfee0b0d5f032cf6f8",
+    "message": "[JSC] Use FrameTracer in wasm ref_func, table_get, and array_init_elem operations\nhttps://bugs.webkit.org/show_bug.cgi?id=321032\nrdar://183455247\n\nReviewed by Sosuke Suzuki.\n\nref.func, table.get, and array.init_elem can all materialize wrapper functions,\nwhich can GC and update ShadowChicken, and th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T18:01:16.569491+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "2698c7698786af4d01ec6ab920be248c2456e4fb",
+    "url": "https://github.com/swiftlang/swift/commit/2698c7698786af4d01ec6ab920be248c2456e4fb",
+    "message": "Merge pull request #91202 from compnerd/com-runtime-existential-metadata\n\nRuntime,RemoteInspection: add COM existential metadata and value witness",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T18:01:53.922118+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76f57a9311b1aa0b75f75c697030546f58185347",
+    "url": "https://github.com/WebKit/WebKit/commit/76f57a9311b1aa0b75f75c697030546f58185347",
+    "message": "[JSC] Include ARM64E in the LLInt prologue frame zeroing\nhttps://bugs.webkit.org/show_bug.cgi?id=321070\nrdar://184102859\n\nReviewed by Yijia Huang.\n\nLLInt ARM64E needs to be enabled specifically.\n\n* Source/JavaScriptCore/llint/LowLevelInterpreter.asm:\n\nCanonical link: https://commits.webkit.org/31864",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
