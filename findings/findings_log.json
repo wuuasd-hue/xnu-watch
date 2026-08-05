@@ -26657,5 +26657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T12:21:36.385940+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d0200e4e6ed21a62e502459658984fe341dcf61",
+    "url": "https://github.com/WebKit/WebKit/commit/7d0200e4e6ed21a62e502459658984fe341dcf61",
+    "message": "[JSC] `String#localeCompare` collator cache goes stale across language changes\nhttps://bugs.webkit.org/show_bug.cgi?id=321039\n\nReviewed by Yusuke Suzuki.\n\n318542@main added a per-JSGlobalObject collator cache for\n`String#localeCompare(that, locale)` keyed only by the locale string.\nAn unavailable-bu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T12:22:14.531837+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "url": "https://github.com/swiftlang/swift/commit/65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "message": "Merge pull request #91237 from swiftlang/jepa-main4\n\nAdjust to some upstream llvm-project changes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
