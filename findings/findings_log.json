@@ -26317,5 +26317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T01:13:26.168979+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6bdb4f69e23bba6d8c105477da09c4edec06ffaa",
+    "url": "https://github.com/WebKit/WebKit/commit/6bdb4f69e23bba6d8c105477da09c4edec06ffaa",
+    "message": "[JSC] Simplify VM teardown via specialized stopAllocationForGood\nhttps://bugs.webkit.org/show_bug.cgi?id=321015\nrdar://184053208\n\nReviewed by Keith Miller.\n\nThis attempts to reduce VM teardown time by simplifying\nMarkedSpace::lastChanceToFinalize. In MarkedBlock::Handle::stopAllocating,\nwe add StopA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T01:14:08.747361+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8776c95a1b0ab0ff7361f3cbf66b4efc625328ee",
+    "url": "https://github.com/WebKit/WebKit/commit/8776c95a1b0ab0ff7361f3cbf66b4efc625328ee",
+    "message": "Widen JS Temporal time zone cache in TimeZoneICUBridge.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=320917\nrdar://183947401\n\nReviewed by Yusuke Suzuki.\n\nProposal test durationtotal was slightly below V8 with the original\ncache size 8, and raising the size to 16 brings it to parity.\n\n                 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T01:14:46.009557+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6bdb4f69e23bba6d8c105477da09c4edec06ffaa",
+    "url": "https://github.com/WebKit/WebKit/commit/6bdb4f69e23bba6d8c105477da09c4edec06ffaa",
+    "message": "[JSC] Simplify VM teardown via specialized stopAllocationForGood\nhttps://bugs.webkit.org/show_bug.cgi?id=321015\nrdar://184053208\n\nReviewed by Keith Miller.\n\nThis attempts to reduce VM teardown time by simplifying\nMarkedSpace::lastChanceToFinalize. In MarkedBlock::Handle::stopAllocating,\nwe add StopA",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
