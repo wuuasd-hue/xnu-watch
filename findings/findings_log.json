@@ -27097,5 +27097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T23:26:42.451493+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "url": "https://github.com/WebKit/WebKit/commit/87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "message": "Web Inspector: Canvas: support highlighting WebGPU render pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320701\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUTexture.h:\n(WebCore::GPUTexture::create):\n(WebCore::GPUTexture::isCanvasBacking const): Added.\n(WebCore::GPUTexture::G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T23:27:19.781995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "url": "https://github.com/WebKit/WebKit/commit/87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "message": "Web Inspector: Canvas: support highlighting WebGPU render pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320701\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUTexture.h:\n(WebCore::GPUTexture::create):\n(WebCore::GPUTexture::isCanvasBacking const): Added.\n(WebCore::GPUTexture::G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-05T23:27:58.858883+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99473681ff5ee5bc7d666904274b1491a81c5196",
+    "url": "https://github.com/WebKit/WebKit/commit/99473681ff5ee5bc7d666904274b1491a81c5196",
+    "message": "[JSC][Temporal][Intl.Era] Implement intl-era-monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319855\nrdar://182753821\n\nReviewed by Yusuke Suzuki.\n\nImplement the Stage 4 proposal-intl-era-monthcode[1] end-to-end and drop the\nuseIntlEraMonthcode transition flag.\n\nCalendarICUBridge is consolidated aro",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
