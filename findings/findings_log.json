@@ -27197,5 +27197,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T03:47:21.493811+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "url": "https://github.com/WebKit/WebKit/commit/9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "message": "Implement JIT Cage Relaxation\nhttps://bugs.webkit.org/show_bug.cgi?id=320667\nrdar://183644612\n\nReviewed by Yusuke Suzuki.\n\nAs-is, the instrumentation afforded by the JIT Cage feature is disabled\nby default on some platforms due to the overhead that comes with the\nfull instrumentation. This patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T03:47:59.743553+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "url": "https://github.com/WebKit/WebKit/commit/9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "message": "Implement JIT Cage Relaxation\nhttps://bugs.webkit.org/show_bug.cgi?id=320667\nrdar://183644612\n\nReviewed by Yusuke Suzuki.\n\nAs-is, the instrumentation afforded by the JIT Cage feature is disabled\nby default on some platforms due to the overhead that comes with the\nfull instrumentation. This patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T03:48:39.097303+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4c01e1b810582bf2081e1ffc70af6d3d70385b0c",
+    "url": "https://github.com/WebKit/WebKit/commit/4c01e1b810582bf2081e1ffc70af6d3d70385b0c",
+    "message": "[JSC] Fix NoUncountedMember in WasmConstExprGenerator\nhttps://bugs.webkit.org/show_bug.cgi?id=314998\n\nReviewed by Keith Miller.\n\nConstExprGenerator held a raw reference to ModuleInformation, which\ntrips NoUncountedMemberChecker. Hold it as const Ref, and mark the\nclass WTF_FORBID_HEAP_ALLOCATION sin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
