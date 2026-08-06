@@ -27257,5 +27257,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T06:19:35.504325+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "url": "https://github.com/WebKit/WebKit/commit/19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "message": "REGRESSION(318413@main) [WPE][GTK] Build is broken on GCC < 15\nhttps://bugs.webkit.org/show_bug.cgi?id=321080\n\nReviewed by Yusuke Suzuki.\n\n`__builtin_addcll` and `__builtin_addc` are only available on GCC 15 and later [1].\n\n1. https://libc.llvm.org/dev/builtin_compatibility.html\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T06:20:12.468036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a011564b98ab104896256b0aaffd3ecb254d744a",
+    "url": "https://github.com/WebKit/WebKit/commit/a011564b98ab104896256b0aaffd3ecb254d744a",
+    "message": "[JSC] `Array#sort` without a comparator is not stable\nhttps://bugs.webkit.org/show_bug.cgi?id=320982\n\nReviewed by Yusuke Suzuki.\n\nThe no-comparator string sort falls back to std::ranges::sort for buckets smaller\nthan 32 entries and past the depth cap, and std::ranges::sort is not stable. The\ndefault",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T06:20:49.699152+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "url": "https://github.com/WebKit/WebKit/commit/19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "message": "REGRESSION(318413@main) [WPE][GTK] Build is broken on GCC < 15\nhttps://bugs.webkit.org/show_bug.cgi?id=321080\n\nReviewed by Yusuke Suzuki.\n\n`__builtin_addcll` and `__builtin_addc` are only available on GCC 15 and later [1].\n\n1. https://libc.llvm.org/dev/builtin_compatibility.html\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-06T06:21:26.616753+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a011564b98ab104896256b0aaffd3ecb254d744a",
+    "url": "https://github.com/WebKit/WebKit/commit/a011564b98ab104896256b0aaffd3ecb254d744a",
+    "message": "[JSC] `Array#sort` without a comparator is not stable\nhttps://bugs.webkit.org/show_bug.cgi?id=320982\n\nReviewed by Yusuke Suzuki.\n\nThe no-comparator string sort falls back to std::ranges::sort for buckets smaller\nthan 32 entries and past the depth cap, and std::ranges::sort is not stable. The\ndefault",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

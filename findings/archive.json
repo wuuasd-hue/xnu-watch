@@ -6430,5 +6430,35 @@
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "message": "REGRESSION(318413@main) [WPE][GTK] Build is broken on GCC < 15\nhttps://bugs.webkit.org/show_bug.cgi?id=321080\n\nReviewed by Yusuke Suzuki.\n\n`__builtin_addcll` and `__builtin_addc` are only available on GCC 15 and later [1].\n\n1. https://libc.llvm.org/dev/builtin_compatibility.html\n\n* Source/JavaScript",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/JSBigInt.cpp ---\n@@ -768,6 +768,14 @@ class DigitColumnAccumulator {\n private:\n     ALWAYS_INLINE static Digit addCarrying(Digit a, Digit b, Digit carryIn, Digit& carryOut)\n     {\n+#if COMPILER(GCC) && GCC_VERSION < 150000\n+        Digit sum = 0;\n+        bool carry0 = __builtin_add_overflow(a, b, &sum);\n+        Digit result = 0;\n+        bool carry1 = __builtin_add_overflow(sum, carryIn, &result);\n+        carryOut = static_cast<Digit>(carry0 | carry1);\n+        return result;\n+#else\n         if constexpr (sizeof(Digit) == sizeof(unsigned long long)) {\n             unsigned long long out = 0;\n             Digit result = __builtin_addcll(a, b, carryIn, &out);\n@@ -779,6 +787,7 @@ class DigitColumnAccumulator {\n             carryOut = static_cast<Digit>(out);\n             return result;\n         }\n+#endif\n     }\n \n     Digit t0 { 0 };\n",
+    "url": "https://github.com/WebKit/WebKit/commit/19b7a8a4dbf67d6aa011e5e9d2e566db7432d222",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "a011564b98ab104896256b0aaffd3ecb254d744a",
+    "message": "[JSC] `Array#sort` without a comparator is not stable\nhttps://bugs.webkit.org/show_bug.cgi?id=320982\n\nReviewed by Yusuke Suzuki.\n\nThe no-comparator string sort falls back to std::ranges::sort for buckets smaller\nthan 32 entries and past the depth cap, and std::ranges::sort is not stable. The\ndefault",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/array-sort-default-comparator-stability.js ---\n@@ -0,0 +1,29 @@\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(\"bad value: \" + actual + \", expected: \" + expected);\n+}\n+\n+function makeEntries(count, distinct, prefix) {\n+    let entries = [];\n+    for (let i = 0; i < count; ++i) {\n+        let key = prefix + String.fromCharCode(0x41 + ((i * 7) % distinct));\n+        entries.push({ id: i, key, toString() { return this.key; } });\n+    }\n+    return entries;\n+}\n+\n+function verifyStable(entries) {\n+    let expected = entries.slice().sort((a, b) => a.key < b.key ? -1 : a.key > b.key ? 1 : a.id - b.id);\n+    let actual = entries.slice().sort();\n+    shouldBe(actual.length, expected.length);\n+    for (let i = 0; i < actual.length; ++i)\n+        shouldBe(actual[i].id, expected[i].id);\n+}\n+\n+for (let count = 20; count <= 40; ++count) {\n+    for (let distinct of [1, 2, 3, 5])\n+        verifyStable(makeEntries(count, distinct, \"\"));\n+}\n+\n+for (let count of [40, 100])\n+    verifyStable(makeEntries(count, 3, \"0123456789012345678901234567890123456789\"));\n\n--- Source/JavaScriptCore/runtime/ArrayPrototype.cpp ---\n@@ -893,7 +893,7 @@ static ALWAYS_INLINE std::tuple<uint64_t, IndexingType, std::span<EncodedJSValue\n static unsigned sortBucketSort(std::span<EncodedJSValue> sorted, unsigned dst, SortEntryVector& bucket, unsigned depth)\n {\n     if (bucket.size() < 32 || depth > 32) {\n-        std::ranges::sort(bucket, WTF::codePointCompareLessThan, [](const auto& element) {\n+        std::ranges::stable_sort(bucket, WTF::codePointCompareLessThan, [](const auto& element) {\n             return std::get<1>(element);\n         });\n         for (auto& entry : bucket)\n",
+    "url": "https://github.com/WebKit/WebKit/commit/a011564b98ab104896256b0aaffd3ecb254d744a",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
