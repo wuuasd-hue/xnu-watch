@@ -27717,5 +27717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T06:39:29.919882+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d25934d08a80e7338018fb98ddcf7a8a5c27f77",
+    "url": "https://github.com/WebKit/WebKit/commit/0d25934d08a80e7338018fb98ddcf7a8a5c27f77",
+    "message": "[JSC] Share VM-independent JIT thunks\nhttps://bugs.webkit.org/show_bug.cgi?id=320916\nrdar://183943385\n\nReviewed by Yijia Huang.\n\nWe have various handler IC thunks and others, but most of them do not\nneed to have embedded VM*, which means they are VM-independent. Let's\nshare them globally among multi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T06:40:07.857284+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bff3814d76f74308c64bd502b0630afa08c8d59b",
+    "url": "https://github.com/WebKit/WebKit/commit/bff3814d76f74308c64bd502b0630afa08c8d59b",
+    "message": "[JSC][Linux] Don't re-read /proc/self/maps when handling checkpoint OSR side state\nhttps://bugs.webkit.org/show_bug.cgi?id=320559\n\nReviewed by Yusuke Suzuki and Justin Michaud.\n\nVM::pushCheckpointOSRSideState() has an ASSERT_ENABLED block that checks\nthat the side state stack remains ordered. To do ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
