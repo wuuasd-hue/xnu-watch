@@ -28477,5 +28477,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T21:05:46.050205+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "url": "https://github.com/WebKit/WebKit/commit/039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "message": "Unreviewed, fix weird formatting\nhttps://bugs.webkit.org/show_bug.cgi?id=321321\nrdar://184361372\n\n* Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp:\n(JSC::CheckPrivateBrandStatus::computeForBaseline):\n(JSC::CheckPrivateBrandStatus::computeFor):\n* Source/JavaScriptCore/bytecode/CheckPrivat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T21:06:24.603924+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "url": "https://github.com/WebKit/WebKit/commit/039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "message": "Unreviewed, fix weird formatting\nhttps://bugs.webkit.org/show_bug.cgi?id=321321\nrdar://184361372\n\n* Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp:\n(JSC::CheckPrivateBrandStatus::computeForBaseline):\n(JSC::CheckPrivateBrandStatus::computeFor):\n* Source/JavaScriptCore/bytecode/CheckPrivat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T21:07:03.391677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81d660ceeb2ee5a2245dfebb8d264c445ee2c05e",
+    "url": "https://github.com/WebKit/WebKit/commit/81d660ceeb2ee5a2245dfebb8d264c445ee2c05e",
+    "message": "[JSC] Compute builtin executable metadata in python script\nhttps://bugs.webkit.org/show_bug.cgi?id=320968\nrdar://183997090\n\nReviewed by Yijia Huang.\n\nThis patch computes metadata information in python script when parsing\nbuiltin JS code so that we do not need to compute them at runtime (VM\nlaunch ti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
