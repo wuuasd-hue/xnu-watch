@@ -27797,5 +27797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T09:28:25.312720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb299342a5802f73fa1bfd395dcc7aaac45e7010",
+    "url": "https://github.com/WebKit/WebKit/commit/fb299342a5802f73fa1bfd395dcc7aaac45e7010",
+    "message": "[JSC] Use first-character-filter even for UntypedUse edge\nhttps://bugs.webkit.org/show_bug.cgi?id=320877\nrdar://183897657\n\nReviewed by Sosuke Suzuki.\n\nSome real world code was not using this first-character-filter just\nbecause it is taking UntypedUse instead of StringUse. This patch extend\nthe cover",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T09:29:02.095815+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "url": "https://github.com/WebKit/WebKit/commit/84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "message": "[JSC] Remove various scratch registers as branchIfNumber etc. no longer need to take a scratch for 64bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320861\nrdar://183890729\n\nReviewed by Sosuke Suzuki.\n\nWe had unnecessary scratch registers on 64bit because 32bit\nbranchIfNotNumber etc. requires a scratch ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
