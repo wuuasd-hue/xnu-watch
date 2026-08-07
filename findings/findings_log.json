@@ -28537,5 +28537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T22:01:31.912560+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "url": "https://github.com/swiftlang/swift/commit/e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "message": "Merge pull request #91267 from mikeash/fix-typedecoder-value-generic-validation\n\n[Runtime] Reject more integer/metadata mixups in mangled name lookup.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T22:02:09.513781+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "url": "https://github.com/swiftlang/swift/commit/e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "message": "Merge pull request #91267 from mikeash/fix-typedecoder-value-generic-validation\n\n[Runtime] Reject more integer/metadata mixups in mangled name lookup.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T22:02:47.077087+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b91045c99b1bf34920bb033d7af8d4b2a1a82a20",
+    "url": "https://github.com/WebKit/WebKit/commit/b91045c99b1bf34920bb033d7af8d4b2a1a82a20",
+    "message": "[JSC] Do not truncate table64 maximum size to uint32_t\nhttps://bugs.webkit.org/show_bug.cgi?id=321000\nrdar://184038951\n\nReviewed by Keith Miller.\n\nWe are silently truncating the maximum value to uint32_t. This patch\nfixes it.\n\nTest: JSTests/wasm/stress/table64-maximum.js\n\n* JSTests/wasm/js-api/table",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
