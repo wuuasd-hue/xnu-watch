@@ -27837,5 +27837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T10:24:38.995512+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8aa3307b46af61b6f3f3dc7ee15df203f4146fe1",
+    "url": "https://github.com/WebKit/WebKit/commit/8aa3307b46af61b6f3f3dc7ee15df203f4146fe1",
+    "message": "[JSC] Move two rarely-executed code paths out of the lexer and parser hot functions\nhttps://bugs.webkit.org/show_bug.cgi?id=320930\nrdar://183964804\n\nReviewed by Yusuke Suzuki.\n\nThis patch moves seldom executed code out of two hot functions in Lexer and Parser,\nreducing the containing functions' regi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T10:25:15.843983+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0270fd0a8d77d6e96aa6bfed787cc0ce199e4287",
+    "url": "https://github.com/WebKit/WebKit/commit/0270fd0a8d77d6e96aa6bfed787cc0ce199e4287",
+    "message": "[JSC] Make the first corrective subtract in JSBigInt Crandall reduction branch-free\nhttps://bugs.webkit.org/show_bug.cgi?id=320860\nrdar://183888656\n\nReviewed by Yijia Huang.\n\nCrandall reduction does correction loop at the end. Typically it runs\nfactor q times. But it turned out that this is really c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
