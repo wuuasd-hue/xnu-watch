@@ -28597,5 +28597,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T23:01:03.716289+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "url": "https://github.com/WebKit/WebKit/commit/c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "message": "[JSC] Propagate uint64_t index until we do bound-check for TypedArray\nhttps://bugs.webkit.org/show_bug.cgi?id=321317\nrdar://184355743\n\nReviewed by Yijia Huang.\n\nIt is 32bit only issue. We should propagate uint64_t index until we do\nbound check, after that, we can use size_t. In 64bit, it does not ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T23:01:41.331453+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "url": "https://github.com/WebKit/WebKit/commit/c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "message": "[JSC] Propagate uint64_t index until we do bound-check for TypedArray\nhttps://bugs.webkit.org/show_bug.cgi?id=321317\nrdar://184355743\n\nReviewed by Yijia Huang.\n\nIt is 32bit only issue. We should propagate uint64_t index until we do\nbound check, after that, we can use size_t. In 64bit, it does not ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T23:02:19.508506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c9a7dc13ae58ba3f1d38258b6af10be8325a354",
+    "url": "https://github.com/WebKit/WebKit/commit/3c9a7dc13ae58ba3f1d38258b6af10be8325a354",
+    "message": "[JSC] BBQJIT::addTableCopy's assertion is incorrect\nhttps://bugs.webkit.org/show_bug.cgi?id=321001\nrdar://184039749\n\nReviewed by Dan Hecht.\n\ndestination and source address type assertions are swapped.\n\nTest: JSTests/wasm/stress/table-copy-mixed-address-types.js\n\n* JSTests/wasm/stress/table-copy-mixe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
