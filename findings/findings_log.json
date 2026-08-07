@@ -28177,5 +28177,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T17:37:58.648868+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "url": "https://github.com/WebKit/WebKit/commit/71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "message": "[JSC] Retire Lexer::lexExpectIdentifier()\nhttps://bugs.webkit.org/show_bug.cgi?id=321188\nrdar://184247644\n\nReviewed by Yusuke Suzuki.\n\nLexer::lexExpectIdentifier() is intended as the fast path for quickly parsing an\nidentifier. It was introduced a long time ago. In the meantime, the baseline\nLexer::",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T17:38:36.115711+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "url": "https://github.com/WebKit/WebKit/commit/71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "message": "[JSC] Retire Lexer::lexExpectIdentifier()\nhttps://bugs.webkit.org/show_bug.cgi?id=321188\nrdar://184247644\n\nReviewed by Yusuke Suzuki.\n\nLexer::lexExpectIdentifier() is intended as the fast path for quickly parsing an\nidentifier. It was introduced a long time ago. In the meantime, the baseline\nLexer::",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T17:39:13.995720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f049dc9046e56f460fc85d239c1a15e9b6ba3c6",
+    "url": "https://github.com/WebKit/WebKit/commit/4f049dc9046e56f460fc85d239c1a15e9b6ba3c6",
+    "message": "[JSC][Temporal] Finish PrepareCalendarFields consolidation; fix monthCode TypeError regression\nhttps://bugs.webkit.org/show_bug.cgi?id=320953\nrdar://183980712\n\nReviewed by Yusuke Suzuki.\n\nRoute PlainDateTime.from/with, PlainDate.prototype.with's ISO branch, and\nDuration.relativeTo through the two sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
