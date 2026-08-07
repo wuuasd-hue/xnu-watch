@@ -27997,5 +27997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T14:43:33.784422+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33a5272cf9acb5e290cb58b1ec6b5a9a1ef1ee70",
+    "url": "https://github.com/WebKit/WebKit/commit/33a5272cf9acb5e290cb58b1ec6b5a9a1ef1ee70",
+    "message": "[JSC] Cache the collator for `String#localeCompare` with a string locale\nhttps://bugs.webkit.org/show_bug.cgi?id=320962\n\nReviewed by Yusuke Suzuki.\n\n`String#localeCompare(that, locale)` created a fresh IntlCollator on\nevery call whenever `locales` was not undefined, running full option\nprobing, reso",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-07T14:44:10.711401+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2502369f53465396d09122b4d4761f76eda161ec",
+    "url": "https://github.com/WebKit/WebKit/commit/2502369f53465396d09122b4d4761f76eda161ec",
+    "message": "DocumentLoader::subresource() should remove the fragment identifier before looking up a resource\nhttps://bugs.webkit.org/show_bug.cgi?id=320918\nrdar://183950261\n\nReviewed by Chris Dumez.\n\nCachedResourceLoader::cachedResource(const URL&) requires its caller to have\nalready removed the fragment identi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
