@@ -29517,5 +29517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T15:52:24.777319+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11a216a7fd0399dd9d93fca02a356f354ccabc2e",
+    "url": "https://github.com/WebKit/WebKit/commit/11a216a7fd0399dd9d93fca02a356f354ccabc2e",
+    "message": "[Site Isolation] Some website policies applied to main frame navigations don't apply to cross site iframes\nrdar://184091553\nhttps://bugs.webkit.org/show_bug.cgi?id=321060\n\nReviewed by Matthew Finkel.\n\nWebKit API clients can apply various website policies on a per navigation basis.\nThese policies are",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T15:53:05.000621+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22a13eb9ee2fc782b1836cc15a906cabf3943ed6",
+    "url": "https://github.com/WebKit/WebKit/commit/22a13eb9ee2fc782b1836cc15a906cabf3943ed6",
+    "message": "[JSC][Temporal] Align time zone identifier parsing with the spec's parse records\nhttps://bugs.webkit.org/show_bug.cgi?id=321136\nrdar://184169471\n\nReviewed by Yusuke Suzuki.\n\nIntroduce ISO8601::TimeZoneIdentifierParseRecord, the spec's Time Zone\nIdentifier Parse Record { [[Name]], [[OffsetMinutes]] }",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
