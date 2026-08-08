@@ -30137,5 +30137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T23:15:30.616480+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "url": "https://github.com/swiftlang/swift/commit/c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "message": "Merge pull request #91332 from mikeash/lazy-link-upward-deps\n\n[Build] Add SWIFT_STDLIB_ENABLE_LAZY_LINK for upward-linked symbols.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T23:16:08.541333+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "url": "https://github.com/swiftlang/swift/commit/c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "message": "Merge pull request #91332 from mikeash/lazy-link-upward-deps\n\n[Build] Add SWIFT_STDLIB_ENABLE_LAZY_LINK for upward-linked symbols.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T23:16:45.612552+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75bb1892f1b4d3fd773e008cbf93802f192ca6ca",
+    "url": "https://github.com/WebKit/WebKit/commit/75bb1892f1b4d3fd773e008cbf93802f192ca6ca",
+    "message": "Stop including <objc/objc-runtime.h> and forbid it via check-webkit-style\n<https://bugs.webkit.org/show_bug.cgi?id=321315>\n<rdar://184350335>\n\nReviewed by Zak Ridouh and Yusuke Suzuki.\n\nThe legacy `<objc/objc-runtime.h>` umbrella header is not present in\nthe iOS 27 SDK (it remains in the macOS SDK),",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
