@@ -29117,5 +29117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T09:06:33.555314+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d319ee7c278e6969bb9243fd5cb20f0874121cdf",
+    "url": "https://github.com/WebKit/WebKit/commit/d319ee7c278e6969bb9243fd5cb20f0874121cdf",
+    "message": "[JSC] Due to IPInt, we need to ensure that wasm multi-memory does not support memory64\nhttps://bugs.webkit.org/show_bug.cgi?id=321038\nrdar://184070346\n\nReviewed by Cole Carley and Yijia Huang.\n\nWe would like to restrict that memory64 only has one memory. But right\nnow, if we define 32bit memory afte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T09:07:10.665697+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13dc8fa6e3d57f2a783cb5e4d7fa2daaf686ef65",
+    "url": "https://github.com/WebKit/WebKit/commit/13dc8fa6e3d57f2a783cb5e4d7fa2daaf686ef65",
+    "message": "[JSC] Reserve initial capacity for AtomStringTable and BuiltinNames' m_privateNameSet\nhttps://bugs.webkit.org/show_bug.cgi?id=321058\nrdar://184090428\n\nReviewed by Yijia Huang.\n\nWe found that we are taking too long time in VM launching for\nAtomStringTable construction. This patch reseves initial capa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
