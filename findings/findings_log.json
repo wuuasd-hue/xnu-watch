@@ -28757,5 +28757,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T02:47:10.859745+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "url": "https://github.com/WebKit/WebKit/commit/e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "message": "[JSC][Temporal] Replace the four monthCode search walks with one primitive\nhttps://bugs.webkit.org/show_bug.cgi?id=321313\nrdar://184352721\n\nReviewed by Yusuke Suzuki.\n\nsetCalendarToMonthCode walked the months of a calendar year twice, once for\nHebrew and once for everything else, and resolveMonthCod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T02:47:50.013154+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e8a96a8c5857b071f073feea215c90803f22520",
+    "url": "https://github.com/WebKit/WebKit/commit/2e8a96a8c5857b071f073feea215c90803f22520",
+    "message": "[JSC] Fix Wasm memory64 memarg offset parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321328\nrdar://184364662\n\nReviewed by Yijia Huang.\n\nRegardless of memory64 / memory32, memarg offset is u64. This patch\nfixes that by introducing `parseMemoryOffset`. We decode VarUInt64, and\nthen do range check for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T02:48:27.859861+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "url": "https://github.com/WebKit/WebKit/commit/e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "message": "[JSC][Temporal] Replace the four monthCode search walks with one primitive\nhttps://bugs.webkit.org/show_bug.cgi?id=321313\nrdar://184352721\n\nReviewed by Yusuke Suzuki.\n\nsetCalendarToMonthCode walked the months of a calendar year twice, once for\nHebrew and once for everything else, and resolveMonthCod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T02:49:05.726087+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e8a96a8c5857b071f073feea215c90803f22520",
+    "url": "https://github.com/WebKit/WebKit/commit/2e8a96a8c5857b071f073feea215c90803f22520",
+    "message": "[JSC] Fix Wasm memory64 memarg offset parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321328\nrdar://184364662\n\nReviewed by Yijia Huang.\n\nRegardless of memory64 / memory32, memarg offset is u64. This patch\nfixes that by introducing `parseMemoryOffset`. We decode VarUInt64, and\nthen do range check for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
