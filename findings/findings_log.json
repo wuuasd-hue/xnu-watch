@@ -29197,5 +29197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T10:31:23.688076+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "url": "https://github.com/swiftlang/swift/commit/65082a23de47335b6f5e1fc0fcfbc337be2ae01f",
+    "message": "Merge pull request #91237 from swiftlang/jepa-main4\n\nAdjust to some upstream llvm-project changes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T10:32:00.439052+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b48f01b7f1b125646d7b77e3ddcc3fe7943462cb",
+    "url": "https://github.com/WebKit/WebKit/commit/b48f01b7f1b125646d7b77e3ddcc3fe7943462cb",
+    "message": "[JSC][Temporal] Fix constructor newTarget.prototype ordering and unify CreateTemporalX helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=321041\nrdar://184072358\n\nReviewed by Yusuke Suzuki.\n\nEvery CreateTemporalX AO validates its slots before OrdinaryCreateFromConstructor,\nwhose Get(NewTarget, \"prototy",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
