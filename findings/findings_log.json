@@ -29597,5 +29597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T16:58:23.649929+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f641af0b8e472dd959f5e0763e18a68072bfca6e",
+    "url": "https://github.com/WebKit/WebKit/commit/f641af0b8e472dd959f5e0763e18a68072bfca6e",
+    "message": "Add missing writeBarrier to Array.unshift\nhttps://bugs.webkit.org/show_bug.cgi?id=321217\nrdar://183142160\n\nReviewed by Yusuke Suzuki.\n\nIn 313475@main we added support for Array.p.unshift in the DFG based on\nArray.push. Unlike Array.push, when relocating elements they may become\ninvisible to the GC. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T16:59:00.938714+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "399973c04a04c5fbd4519c6b51f28a54b1acf59a",
+    "url": "https://github.com/WebKit/WebKit/commit/399973c04a04c5fbd4519c6b51f28a54b1acf59a",
+    "message": "[JSC][Temporal] Implement ISODateToFields and CalendarMergeFields as the spec's own operations\nhttps://bugs.webkit.org/show_bug.cgi?id=321189\nrdar://184247766\n\nReviewed by Yusuke Suzuki.\n\nAdd isoDateToFields and calendarMergeFields, plus the CalendarFieldKeysPresent,\nCalendarFieldKeysToIgnore and No",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
