@@ -29557,5 +29557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T16:16:24.945336+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95ffc89f5eb494d6b3918b7f6e98cc85bad52892",
+    "url": "https://github.com/WebKit/WebKit/commit/95ffc89f5eb494d6b3918b7f6e98cc85bad52892",
+    "message": "[JSC] `JSC_JIT_CAGE_PROBE{,_IMPL}` fallback macros in `JITOperationValidation.h` do not compile\nhttps://bugs.webkit.org/show_bug.cgi?id=321214\n\nReviewed by Keith Miller.\n\n318675@main added no-op fallbacks for JSC_JIT_CAGE_PROBE and\nJSC_JIT_CAGE_PROBE_IMPL for when <WebKitAdditions/JITCageAdditions.h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T16:17:02.012298+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01ea2a8eb95530c8af1ba9596658bc3acbfefc9e",
+    "url": "https://github.com/WebKit/WebKit/commit/01ea2a8eb95530c8af1ba9596658bc3acbfefc9e",
+    "message": "[JSC] `String#split` should not atomize the results of a non-atom subject\nhttps://bugs.webkit.org/show_bug.cgi?id=320966\n\nReviewed by Yusuke Suzuki.\n\nSplitting strings built at runtime (e.g. parsing CSV/log rows) is common, and such\nsubjects are not atom strings. stringSplitFast still atomized every",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
