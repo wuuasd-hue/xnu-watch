@@ -29477,5 +29477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T15:16:07.604156+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81a11702ef82c7a084d1a009dfa010b68e1e2981",
+    "url": "https://github.com/WebKit/WebKit/commit/81a11702ef82c7a084d1a009dfa010b68e1e2981",
+    "message": "[JSC] RegExp trim fast path in `String#replace` is skipped once the caller tiers up to DFG/FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=321161\n\nReviewed by Yusuke Suzuki.\n\n291345@main added tryTrimSpaces() to replaceUsingRegExpSearch() so that\n`str.replace(/^\\s+/, \"\")` and `str.replace(/\\s+$/, \"\")` a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T15:16:49.323250+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6380373fc6a1a7651f2c4ce9159ee05093810394",
+    "url": "https://github.com/WebKit/WebKit/commit/6380373fc6a1a7651f2c4ce9159ee05093810394",
+    "message": "[JSC] Use counting sort for `Array#sort`\nhttps://bugs.webkit.org/show_bug.cgi?id=317103\n\nReviewed by Yusuke Suzuki.\n\nSorting an array of strings without a comparator is common, e.g. `Object.keys(obj).sort()`.\nThe current implementation partitions entries into a StdMap<char16_t, Vector> per character",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
