@@ -29277,5 +29277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T11:49:55.676261+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76f57a9311b1aa0b75f75c697030546f58185347",
+    "url": "https://github.com/WebKit/WebKit/commit/76f57a9311b1aa0b75f75c697030546f58185347",
+    "message": "[JSC] Include ARM64E in the LLInt prologue frame zeroing\nhttps://bugs.webkit.org/show_bug.cgi?id=321070\nrdar://184102859\n\nReviewed by Yijia Huang.\n\nLLInt ARM64E needs to be enabled specifically.\n\n* Source/JavaScriptCore/llint/LowLevelInterpreter.asm:\n\nCanonical link: https://commits.webkit.org/31864",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T11:50:33.236591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9226ba78d93d9c8d5b99accb87b4528e5a9a3dde",
+    "url": "https://github.com/WebKit/WebKit/commit/9226ba78d93d9c8d5b99accb87b4528e5a9a3dde",
+    "message": "[JSC] Remove enableInt52\nhttps://bugs.webkit.org/show_bug.cgi?id=321072\nrdar://184103404\n\nReviewed by Yijia Huang.\n\nAs ARMv7 JIT is removed, now this is unconditionally enabled. Remove enableInt52.\n\n* Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h:\n(JSC::DFG::AbstractInterpreter<AbstractS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
