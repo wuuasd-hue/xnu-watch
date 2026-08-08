@@ -28957,5 +28957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T05:12:42.874376+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "url": "https://github.com/WebKit/WebKit/commit/3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "message": "[JSC] SerializedScriptValue is not carrying memory64 flag\nhttps://bugs.webkit.org/show_bug.cgi?id=321332\nrdar://184365775\n\nReviewed by Yijia Huang.\n\nMemory64 Wasm Memory was not correctly propagating memory64 flag. And\nSerializedScriptValue is incorrectly accessing addressType() of non\nattached memo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T05:13:22.227582+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "707048fdabb7f80ccb5222e342ca5a4257eb1dd2",
+    "url": "https://github.com/WebKit/WebKit/commit/707048fdabb7f80ccb5222e342ca5a4257eb1dd2",
+    "message": "[JSC] WebAssembly.Memory.prototype.type() needs to report current size\nhttps://bugs.webkit.org/show_bug.cgi?id=321329\nrdar://184364939\n\nReviewed by Yijia Huang.\n\nWebAssembly.Memory.prototype.type()'s minimum size is mem_type's\nminimum limit[2], which is the current size of the memory, not initially\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
