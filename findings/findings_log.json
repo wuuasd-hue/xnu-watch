@@ -29637,5 +29637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T17:23:45.797501+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "72928a517633537696c0e6a9f14ed0114791cb46",
+    "url": "https://github.com/WebKit/WebKit/commit/72928a517633537696c0e6a9f14ed0114791cb46",
+    "message": "[JSC] Reserve 0-slot cached memory base and size even when a module declares no memory\nhttps://bugs.webkit.org/show_bug.cgi?id=321355\nrdar://184387395\n\nReviewed by Mark Lam.\n\nWe need to zero clear all cachedMemoryBaseSizePairs initially.\nAlso we must need to call updateCachedMemoryBaseSizePair(0) wh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T17:24:23.370041+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "72928a517633537696c0e6a9f14ed0114791cb46",
+    "url": "https://github.com/WebKit/WebKit/commit/72928a517633537696c0e6a9f14ed0114791cb46",
+    "message": "[JSC] Reserve 0-slot cached memory base and size even when a module declares no memory\nhttps://bugs.webkit.org/show_bug.cgi?id=321355\nrdar://184387395\n\nReviewed by Mark Lam.\n\nWe need to zero clear all cachedMemoryBaseSizePairs initially.\nAlso we must need to call updateCachedMemoryBaseSizePair(0) wh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T17:25:01.592903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2c2c1af3574308929fecb71bc1897b8f6b04dc2e",
+    "url": "https://github.com/WebKit/WebKit/commit/2c2c1af3574308929fecb71bc1897b8f6b04dc2e",
+    "message": "[JSC] Overhaul ArrayBuffer & Wasm::Memory sizing with memory64\nhttps://bugs.webkit.org/show_bug.cgi?id=321182\nrdar://184241045\n\nReviewed by Yijia Huang.\n\nCurrently memory64 crashes when growing a shared buffer more than 4GB.\nWe have an inconsistency in our current implementation in terms of\nsize. Ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
