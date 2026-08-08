@@ -28837,5 +28837,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:00:57.483870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "url": "https://github.com/WebKit/WebKit/commit/b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "message": "Unreviewed, use WASM_FAIL_IF_HELPER_FAILS\nhttps://bugs.webkit.org/show_bug.cgi?id=321348\nrdar://184382576\n\n* JSTests/wasm/stress/const-expr-i32-wrap.js:\n(assert.eq):\n* JSTests/wasm/stress/data-segment-offset-2gb.js:\n* JSTests/wasm/stress/exception-trace-stack.js:\n* JSTests/wasm/stress/instance-ancho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:01:34.900044+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa8167a2feb9a49f5380353389324102f2a63462",
+    "url": "https://github.com/WebKit/WebKit/commit/aa8167a2feb9a49f5380353389324102f2a63462",
+    "message": "[JSC] Table64 size should be checked when creating / growing, not parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321338\nrdar://184367247\n\nReviewed by Yijia Huang.\n\nClamping the table size at parsing time will cause incorrect table size\nreporting. The correct behavior is (1) parsing should accept, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:02:15.419914+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "url": "https://github.com/WebKit/WebKit/commit/3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "message": "[JSC] SerializedScriptValue is not carrying memory64 flag\nhttps://bugs.webkit.org/show_bug.cgi?id=321332\nrdar://184365775\n\nReviewed by Yijia Huang.\n\nMemory64 Wasm Memory was not correctly propagating memory64 flag. And\nSerializedScriptValue is incorrectly accessing addressType() of non\nattached memo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:02:53.751408+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "707048fdabb7f80ccb5222e342ca5a4257eb1dd2",
+    "url": "https://github.com/WebKit/WebKit/commit/707048fdabb7f80ccb5222e342ca5a4257eb1dd2",
+    "message": "[JSC] WebAssembly.Memory.prototype.type() needs to report current size\nhttps://bugs.webkit.org/show_bug.cgi?id=321329\nrdar://184364939\n\nReviewed by Yijia Huang.\n\nWebAssembly.Memory.prototype.type()'s minimum size is mem_type's\nminimum limit[2], which is the current size of the memory, not initially\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:03:31.483632+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "url": "https://github.com/WebKit/WebKit/commit/b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "message": "Unreviewed, use WASM_FAIL_IF_HELPER_FAILS\nhttps://bugs.webkit.org/show_bug.cgi?id=321348\nrdar://184382576\n\n* JSTests/wasm/stress/const-expr-i32-wrap.js:\n(assert.eq):\n* JSTests/wasm/stress/data-segment-offset-2gb.js:\n* JSTests/wasm/stress/exception-trace-stack.js:\n* JSTests/wasm/stress/instance-ancho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T04:04:09.187645+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa8167a2feb9a49f5380353389324102f2a63462",
+    "url": "https://github.com/WebKit/WebKit/commit/aa8167a2feb9a49f5380353389324102f2a63462",
+    "message": "[JSC] Table64 size should be checked when creating / growing, not parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321338\nrdar://184367247\n\nReviewed by Yijia Huang.\n\nClamping the table size at parsing time will cause incorrect table size\nreporting. The correct behavior is (1) parsing should accept, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
