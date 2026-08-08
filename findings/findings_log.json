@@ -29317,5 +29317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T12:19:12.311097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f771c5060cd789680bae34cfee0b0d5f032cf6f8",
+    "url": "https://github.com/WebKit/WebKit/commit/f771c5060cd789680bae34cfee0b0d5f032cf6f8",
+    "message": "[JSC] Use FrameTracer in wasm ref_func, table_get, and array_init_elem operations\nhttps://bugs.webkit.org/show_bug.cgi?id=321032\nrdar://183455247\n\nReviewed by Sosuke Suzuki.\n\nref.func, table.get, and array.init_elem can all materialize wrapper functions,\nwhich can GC and update ShadowChicken, and th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T12:19:51.181167+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "099f93fe499309ffdfdc1a7ad7db439973837a82",
+    "url": "https://github.com/WebKit/WebKit/commit/099f93fe499309ffdfdc1a7ad7db439973837a82",
+    "message": "[JSC] Fix the memory64 JS APIs\nhttps://bugs.webkit.org/show_bug.cgi?id=321045\nrdar://184073455\n\nReviewed by Yijia Huang.\n\nAdd addressValueFromUint64 and bulk-fixing memory64 JS APIs which need\nto use BigInt for 64bit case. Also handling max-bytes correctly:\ncurrently ArrayBuffer can only handle up t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
