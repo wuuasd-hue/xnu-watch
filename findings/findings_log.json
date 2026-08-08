@@ -29077,5 +29077,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T08:05:06.024204+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0cc69e2993f4dc953765fd64593ae2579752132f",
+    "url": "https://github.com/WebKit/WebKit/commit/0cc69e2993f4dc953765fd64593ae2579752132f",
+    "message": "[JSC] BBQ materializePointer should take uint64_t offset\nhttps://bugs.webkit.org/show_bug.cgi?id=321043\nrdar://184072653\n\nReviewed by Keith Miller.\n\nFor 64bit address, we first do bound-check and after that, we\nmaterialize a pointer. Currently since we are not supporting memory size\nmore than 4GB, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T08:05:43.411614+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64153f963497bad197d2231657c2a73c2e9488a4",
+    "url": "https://github.com/WebKit/WebKit/commit/64153f963497bad197d2231657c2a73c2e9488a4",
+    "message": "[JSC] Wasm Memory64 operands are differently decoded in unreachable code\nhttps://bugs.webkit.org/show_bug.cgi?id=321035\nrdar://184068455\n\nReviewed by Cole Carley.\n\nWasm unreachable code is decoding memory64 operands differently, causing\nwasm parse error. Correctly handling memory64 operands in the s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
