@@ -28717,5 +28717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T00:37:47.269296+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "url": "https://github.com/WebKit/WebKit/commit/484d5bdbd1e21e8a66b88477850d8d7553fb3094",
+    "message": "`<link rel=preload as>` keywords should be matched ASCII case-insensitively\nhttps://bugs.webkit.org/show_bug.cgi?id=320980\nrdar://184013239\n\nReviewed by Frédéric Wang Nélar.\n\nThis patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\n`as` is an enumerated attribute [1], so determining its ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T00:38:25.224362+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8af849be6f0d1b75cd19f82bf16ad80bcf8ddef",
+    "url": "https://github.com/WebKit/WebKit/commit/b8af849be6f0d1b75cd19f82bf16ad80bcf8ddef",
+    "message": "[JSC] Wasm table64 JS API interfaces\nhttps://bugs.webkit.org/show_bug.cgi?id=321017\nrdar://184053551\n\nReviewed by Cole Carley.\n\nWe fix table64 JS API interfaces,\n\n1. Table.length[1] is defined as AddressValue[2], so it should return\n   BigInt when table is 64bit. But the current code is not doing so",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
