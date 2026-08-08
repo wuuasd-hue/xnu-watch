@@ -29437,5 +29437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T14:55:08.435047+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a011564b98ab104896256b0aaffd3ecb254d744a",
+    "url": "https://github.com/WebKit/WebKit/commit/a011564b98ab104896256b0aaffd3ecb254d744a",
+    "message": "[JSC] `Array#sort` without a comparator is not stable\nhttps://bugs.webkit.org/show_bug.cgi?id=320982\n\nReviewed by Yusuke Suzuki.\n\nThe no-comparator string sort falls back to std::ranges::sort for buckets smaller\nthan 32 entries and past the depth cap, and std::ranges::sort is not stable. The\ndefault",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T14:55:45.682732+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f3ecec97431e17f44f275c201a8ba068500c9e5",
+    "url": "https://github.com/WebKit/WebKit/commit/4f3ecec97431e17f44f275c201a8ba068500c9e5",
+    "message": "[JSC] `JSON.stringify` fast path should accept final objects with non `Object` prototypes\nhttps://bugs.webkit.org/show_bug.cgi?id=321151\n\nReviewed by Yusuke Suzuki.\n\nFastStringifier bails out for any object whose prototype is not Object.prototype,\nso a single class instance in the payload reruns the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
