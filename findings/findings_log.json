@@ -28997,5 +28997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T06:02:25.654676+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e942b93cdaa04a323f26b3b0facbed690ca6db63",
+    "url": "https://github.com/WebKit/WebKit/commit/e942b93cdaa04a323f26b3b0facbed690ca6db63",
+    "message": "[JSC] Active element segment offsets are truncated for a table64\nhttps://bugs.webkit.org/show_bug.cgi?id=321008\nrdar://184044756\n\nReviewed by Cole Carley.\n\nThis is similar to 317633@main, but for table64.\nforEachActiveElement is narrowing down the elementIndex to uint32_t, so\nlet's not do it. Also e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-08T06:03:02.610645+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8776c95a1b0ab0ff7361f3cbf66b4efc625328ee",
+    "url": "https://github.com/WebKit/WebKit/commit/8776c95a1b0ab0ff7361f3cbf66b4efc625328ee",
+    "message": "Widen JS Temporal time zone cache in TimeZoneICUBridge.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=320917\nrdar://183947401\n\nReviewed by Yusuke Suzuki.\n\nProposal test durationtotal was slightly below V8 with the original\ncache size 8, and raising the size to 16 brings it to parity.\n\n                 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
