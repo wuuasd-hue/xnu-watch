@@ -30937,5 +30937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T15:53:46.327288+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "960adeccefcd5f0320489e46f1aa4af764983853",
+    "url": "https://github.com/WebKit/WebKit/commit/960adeccefcd5f0320489e46f1aa4af764983853",
+    "message": "[JSC] Add fast operation for Array#shift\nhttps://bugs.webkit.org/show_bug.cgi?id=320484\nrdar://183450092\n\nReviewed by Yijia Huang.\n\nThis patch adds optimized code for Array#shift by leveraging ArrayMode-based speculation.\n\n1. We are already emitting Write based ArrayMode in DFGByteCodeParser.\n   So ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T15:54:23.826403+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "url": "https://github.com/WebKit/WebKit/commit/ff1f31c83dc7a38f82912154fa1b11ae18d92f51",
+    "message": "Treat creating or destroying a CheckedPtr as no-delete\nhttps://bugs.webkit.org/show_bug.cgi?id=320500\n\nReviewed by Chris Dumez.\n\nAnnotated incrementCheckedPtrCount and decrementCheckedPtrCount with NODELETE.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncheckedCallArgsCheckerExpectations:\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
