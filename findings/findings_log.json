@@ -30477,5 +30477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T08:06:57.003174+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "url": "https://github.com/WebKit/WebKit/commit/cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "message": "[JSC] Add fast flag for ToPrimitive(Object) calls in runtime\nhttps://bugs.webkit.org/show_bug.cgi?id=320343\nrdar://183289080\n\nReviewed by Sosuke Suzuki.\n\nMake ToPrimitive(object) faster by caching a flag in StructureRareData.\nm_cachedHasDefaultToPrimitiveFastAndNonObservable says that we can use\ntoS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T08:07:35.043134+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b128ddd863ab9e89a71288a461606b0aee6b3bca",
+    "url": "https://github.com/WebKit/WebKit/commit/b128ddd863ab9e89a71288a461606b0aee6b3bca",
+    "message": "[YARR] The dot-star-wrapped-expression optimization is wrong for sticky patterns\nhttps://bugs.webkit.org/show_bug.cgi?id=320348\nrdar://183300106\n\nReviewed by Yijia Huang.\n\noptimizeDotStarWrappedExpressions() rewrites /^.*EXPR.*$/ into EXPR\nfollowed by a DotStarEnclosure term standing in for the dele",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
