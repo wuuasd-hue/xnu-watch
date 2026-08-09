@@ -30437,5 +30437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T07:28:31.420856+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76de9fe5aa14384920ede9b66991607d8a9e29b3",
+    "url": "https://github.com/WebKit/WebKit/commit/76de9fe5aa14384920ede9b66991607d8a9e29b3",
+    "message": "[JSC][Temporal] Resolve supported Chinese and Dangi field resolution\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319814\n\nReviewed by Yijia Huang.\n\nResolve ordinary supported Chinese and Dangi related-year and ordinal numeric-month field resolution without relying on ICU extended-year identity. Keep yea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T07:29:09.485591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
