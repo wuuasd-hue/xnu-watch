@@ -31297,5 +31297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T21:24:27.283528+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b84cf3719fa3c23a2cf8bac7a029738c723aebc",
+    "url": "https://github.com/WebKit/WebKit/commit/5b84cf3719fa3c23a2cf8bac7a029738c723aebc",
+    "message": "__builtin_trap instead of inline asm when running clang static analyzer\nhttps://bugs.webkit.org/show_bug.cgi?id=320577\n\nReviewed by Geoffrey Garen.\n\nUse __builtin_trap instead of inline asm when running safer C++ static analysis\nsince no-delete analysis gets confused with inline asm.\n\nNo new tests s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T21:25:05.366536+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bf0425598904dd7ae7929e7e9e4ac248d93b9bdd",
+    "url": "https://github.com/WebKit/WebKit/commit/bf0425598904dd7ae7929e7e9e4ac248d93b9bdd",
+    "message": "[Memory64] Expand memory's declared limits in Memory64 case\nhttps://bugs.webkit.org/show_bug.cgi?id=320681\nrdar://183666875\n\nReviewed by Keith Miller.\n\nWe rejected at parse time any memory declaring more than 65,536 pages,\nregardless of index type. This is right for only the memory32 case.\nThe JS AP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
