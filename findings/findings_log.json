@@ -31217,5 +31217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T20:16:36.016263+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "url": "https://github.com/swiftlang/swift/commit/408632e59834c1a5ee4166ff61dd2c8b0585a1c5",
+    "message": "Merge pull request #90187 from ktoso/wip-unblock-windows-test-distributed-resolvable\n\n[Distributed][Windows] Fix witness table allocation style for windows",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T20:17:13.344937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "url": "https://github.com/WebKit/WebKit/commit/cb1c48b3e95fb9670d91b400cc1111ea7b420dbe",
+    "message": "[JSC] Extend Array.from()'s Set fast path to cover set.keys()/.values()\nhttps://bugs.webkit.org/show_bug.cgi?id=320575\nrdar://183552376\n\nReviewed by Yusuke Suzuki.\n\nArray.from() already bypasses the generic iterator protocol for plain\nArray.from(set) and Array.from(map.keys()/.values()), reading int",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
