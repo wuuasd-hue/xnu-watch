@@ -30897,5 +30897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T15:23:49.394811+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2c2a4add5574c8388732a753dd1841715ed15fc4",
+    "url": "https://github.com/WebKit/WebKit/commit/2c2a4add5574c8388732a753dd1841715ed15fc4",
+    "message": "Add foundation for Accessibility Custom Color Mode\nhttps://webkit.org/b/320261\nrdar://183153900\n\nReviewed by Tim Nguyen.\n\nAdd foundation for Accessibility Custom Color Mode.\n\n* Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml:\n* Source/WebCore/dom/Document.cpp:\n(WebCore::Document::adjustSty",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T15:24:28.266341+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4ebed247914456072e142b14fd83f4228782b4fb",
+    "url": "https://github.com/WebKit/WebKit/commit/4ebed247914456072e142b14fd83f4228782b4fb",
+    "message": "[JSC] Make addSortedRange faster by using binary search\nhttps://bugs.webkit.org/show_bug.cgi?id=320497\nrdar://183461597\n\nReviewed by Yijia Huang.\n\nInterestingly we found that particular kind of RegExp is taking long\ntime in this construction because of linear-search. We should just use\nbinary search",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
