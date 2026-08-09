@@ -31337,5 +31337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T21:54:53.233232+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "url": "https://github.com/WebKit/WebKit/commit/51d3dbaa278ef8b8283ec7172bc4913256ea366a",
+    "message": "[JSC][Wasm] Add DEFINE_IPINT_THUNK_FOR_ENTRY for IPInt entry\nhttps://bugs.webkit.org/show_bug.cgi?id=294584\n\nReviewed by Yusuke Suzuki.\n\nAdd DEFINE_IPINT_THUNK_FOR_ENTRY for the IPInt function entry thunk,\nmirroring DEFINE_IPINT_THUNK_FOR_CATCH. Entry is only used under\nENABLE(JIT) (callers fall bac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T21:55:32.809720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7ea27dd3bb648bfff86a210d1cd640f96f21d1c",
+    "url": "https://github.com/WebKit/WebKit/commit/a7ea27dd3bb648bfff86a210d1cd640f96f21d1c",
+    "message": "[GTK][WPE] Fix thread safety issues caught by -Wthread-safety\nhttps://bugs.webkit.org/show_bug.cgi?id=320639\n\nReviewed by Adrian Perez de Castro.\n\nMost of them are false positives that just require proper annotations,\nbut there are quite a few real issues too.\n\n* Source/JavaScriptCore/API/glib/JSCVi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
