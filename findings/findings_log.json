@@ -30357,5 +30357,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T05:27:50.422091+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e28b6ce22ee4fccd38c23498a469f3d8508a47a",
+    "url": "https://github.com/WebKit/WebKit/commit/5e28b6ce22ee4fccd38c23498a469f3d8508a47a",
+    "message": "[JSC] Use op_async_iterator_open and op_async_iterator_next for yield*\nhttps://bugs.webkit.org/show_bug.cgi?id=319946\nrdar://182862712\n\nReviewed by Yijia Huang.\n\nThis patch applies op_async_iterator_open and op_async_iterator_next to\nyield* in async generator functions. Previously we cannot apply th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T05:28:28.834398+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c7d5cdee6369ebb6b6f8e502ce16836737f73ca",
+    "url": "https://github.com/WebKit/WebKit/commit/8c7d5cdee6369ebb6b6f8e502ce16836737f73ca",
+    "message": "Evaluate element segment expressions exactly once per instance\nhttps://bugs.webkit.org/show_bug.cgi?id=320129\nrdar://183067192\n\nReviewed by Marcus Plutowski.\n\nPer the Wasm spec, an element segment's element expressions are evaluated\nexactly once during module instantiation, and the resulting referen",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
