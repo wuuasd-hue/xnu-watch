@@ -30977,5 +30977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T16:18:21.228874+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d434a41411a3712e8b90d0ccb5866195d28079c3",
+    "url": "https://github.com/WebKit/WebKit/commit/d434a41411a3712e8b90d0ccb5866195d28079c3",
+    "message": "[JSC][Wasm] Optimize BBQ br.table for consecutive same-target runs\nhttps://bugs.webkit.org/show_bug.cgi?id=277686\n\nReviewed by Yusuke Suzuki.\n\nBBQ used to emit a full binary search over every br.table index even when\nlong stretches shared the same target. Collapse consecutive identical\ntargets into ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T16:18:58.162502+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "72ea806faa2186f39c48899724ad6c2f336270ac",
+    "url": "https://github.com/WebKit/WebKit/commit/72ea806faa2186f39c48899724ad6c2f336270ac",
+    "message": "[JSC] Use overflow-safe range when choosing a switch jump table\nhttps://bugs.webkit.org/show_bug.cgi?id=317022\n\nReviewed by Keith Miller.\n\nrecursivelyBuildSwitch picks a jump table when (last - first + 1) / n is\nbelow a density limit. When case values span more than 2^63, that\nsubtraction overflows ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
