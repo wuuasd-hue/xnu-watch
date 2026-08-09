@@ -30517,5 +30517,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T09:08:09.308476+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "url": "https://github.com/WebKit/WebKit/commit/7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "message": "[YARR] `\\P{...}` on the right side of a v-mode `&&` or `--` becomes a union\nhttps://bugs.webkit.org/show_bug.cgi?id=321252\n\nReviewed by Yusuke Suzuki.\n\nappendInverted() adds the complement of its operand directly to the accumulated\nmatches and ranges without consulting m_setOp, so a pending && or --",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T09:08:47.857862+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "url": "https://github.com/WebKit/WebKit/commit/7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "message": "[YARR] `\\P{...}` on the right side of a v-mode `&&` or `--` becomes a union\nhttps://bugs.webkit.org/show_bug.cgi?id=321252\n\nReviewed by Yusuke Suzuki.\n\nappendInverted() adds the complement of its operand directly to the accumulated\nmatches and ranges without consulting m_setOp, so a pending && or --",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T09:09:27.680871+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "98d0367d2247df6cfc363a38eadc33fa2ce1723e",
+    "url": "https://github.com/WebKit/WebKit/commit/98d0367d2247df6cfc363a38eadc33fa2ce1723e",
+    "message": "[YARR] A ^ inside a parenthesis that can match empty does not anchor the pattern\nhttps://bugs.webkit.org/show_bug.cgi?id=320347\nrdar://183300022\n\nReviewed by Yijia Huang.\n\n/(?:^a)?b/ is incorrectly working since it is marked as m_startsWithBOL.\nBut we need to ensure that ^ parentheses does not pass ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
