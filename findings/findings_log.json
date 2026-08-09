@@ -31097,5 +31097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T18:19:57.690476+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "73e4c589c1e6f099ef31cab839174494da20d909",
+    "url": "https://github.com/WebKit/WebKit/commit/73e4c589c1e6f099ef31cab839174494da20d909",
+    "message": "[JSC] Extend StringSplitCache for RegExp\nhttps://bugs.webkit.org/show_bug.cgi?id=320591\nrdar://183565424\n\nReviewed by Yijia Huang.\n\nThis patch extends existing StringSplitCache to have RegExp splitting\nversion as it is also common in practice. We basically follow to the\nsame conditions used for stri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T18:20:34.632660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "173a0bd6d9373b6131006bbea2ba7a613b675a63",
+    "url": "https://github.com/WebKit/WebKit/commit/173a0bd6d9373b6131006bbea2ba7a613b675a63",
+    "message": "[JSC] Use `defaultToPrimitiveFastAndNonObservable` for `JSObject::toString`\nhttps://bugs.webkit.org/show_bug.cgi?id=320540\n\nReviewed by Yusuke Suzuki.\n\nStructure::defaultToPrimitiveFastAndNonObservable has been added by 317978@main.\nThis patch changes to use it for `JSObject::toString` as well.\n\n* S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
