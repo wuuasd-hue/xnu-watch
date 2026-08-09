@@ -31257,5 +31257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T20:58:12.504906+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "url": "https://github.com/WebKit/WebKit/commit/f5716f6401ed2ce8769c42fa2aa33f7c4a4dd39b",
+    "message": "Add preserve_most to most fastMalloc APIs on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=320661\nrdar://183640618\n\nReviewed by Mark Lam, Yusuke Suzuki, and Marcus Plutowski.\n\nThis patch adds Clang's preserve_most attribute to most fastMalloc APIs.\nThe preserve_most attribute on ARM64 turns `x9-x15`",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T20:58:50.407757+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "862994e2cc372c16a11440b96b4f5c34158431f2",
+    "url": "https://github.com/WebKit/WebKit/commit/862994e2cc372c16a11440b96b4f5c34158431f2",
+    "message": "[Memory64] Wasm table imports don't check that the address type matches\nhttps://bugs.webkit.org/show_bug.cgi?id=320672\nrdar://183653434\n\nReviewed by Keith Miller.\n\nWhen linking a table import, we validated the element type, 'initial', and\n'maximum', but never compared the address type of the provide",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
