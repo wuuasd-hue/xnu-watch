@@ -30577,5 +30577,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T10:01:46.305056+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "url": "https://github.com/WebKit/WebKit/commit/7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "message": "[YARR] `\\P{...}` on the right side of a v-mode `&&` or `--` becomes a union\nhttps://bugs.webkit.org/show_bug.cgi?id=321252\n\nReviewed by Yusuke Suzuki.\n\nappendInverted() adds the complement of its operand directly to the accumulated\nmatches and ranges without consulting m_setOp, so a pending && or --",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T10:02:23.200781+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "url": "https://github.com/WebKit/WebKit/commit/28b979b1659bca24e518a83cd0e55d8e8ed7a424",
+    "message": "[Site Isolation] Web Inspector: Implement Network.loadResource\nhttps://bugs.webkit.org/show_bug.cgi?id=319019\nrdar://181636193\n\nReviewed by BJ Burg.\n\nImplement the ProxyingNetworkAgent::loadResource that was a stub.\n\nNetwork.loadResource loads a URL in a frame's context on behalf of the\ninspector (e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
