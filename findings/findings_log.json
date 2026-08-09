@@ -30617,5 +30617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T10:58:32.356790+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "url": "https://github.com/WebKit/WebKit/commit/479edb2e4395baaa1f7bec9655aacf4b24a611a6",
+    "message": "[Site Isolation] Web Inspector: Implement Network.getSerializedCertificate\nhttps://bugs.webkit.org/show_bug.cgi?id=319020\nrdar://181636486\n\nReviewed by BJ Burg.\n\nUnder Site Isolation the Network domain is served by ProxyingNetworkAgent\nin the UIProcess, which routes each requestId-keyed command to t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-09T10:59:09.858716+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e43057f135a31c9c9c893ab4efe2874cef8e426",
+    "url": "https://github.com/WebKit/WebKit/commit/1e43057f135a31c9c9c893ab4efe2874cef8e426",
+    "message": "[JSC][YARR] Extend first-character filter more\nhttps://bugs.webkit.org/show_bug.cgi?id=320258\nrdar://183182586\n\nReviewed by Yijia Huang.\n\nThis patch extends first-character fast-fail filter in DFG / FTL.\n\n1. Inverted character class is supported. Just collecting the set\n   and inverted set is merged",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
