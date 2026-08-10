@@ -31857,5 +31857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T10:53:48.331806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cc673d7b23bf95edb4b50924009a193ecbe56a05",
+    "url": "https://github.com/WebKit/WebKit/commit/cc673d7b23bf95edb4b50924009a193ecbe56a05",
+    "message": "[JSC] Update import-defer implementation based on the proposal update\nhttps://bugs.webkit.org/show_bug.cgi?id=321369\nrdar://184423667\n\nReviewed by Sosuke Suzuki.\n\nAfter 313139@main implemented import-defer, the proposal fixed several\nbugs. This patch applies these fixes.\n\n1. https://github.com/tc39/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T10:54:27.285254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40d37f36527f72f11f033b0353643099a40437f7",
+    "url": "https://github.com/WebKit/WebKit/commit/40d37f36527f72f11f033b0353643099a40437f7",
+    "message": "[JSC] memory64 should accept large sized page numbers in module parsing, and should reject creation at runtime\nhttps://bugs.webkit.org/show_bug.cgi?id=321372\nrdar://184424841\n\nReviewed by Sosuke Suzuki.\n\nWe should do the same to table64. Module parsing should accept very large\nnumber of memory size ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
