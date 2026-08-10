@@ -31997,5 +31997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T14:09:30.032017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "message": "[JSC] Implement Crandall reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=320763\nrdar://183764395\n\nReviewed by Justin Michaud.\n\nThis patch implements Crandall reduction for fast modulo calculation.\nWhen you have\n\n    R = A mod B\n    R ≡ A (mod B)\n\nIf B is Pseudo-Mersenne (2^k - C, where C is small)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T14:10:08.011914+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "url": "https://github.com/WebKit/WebKit/commit/4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "message": "[JSC] `Array.from(set.keys()/.values())` fast path ignores `Symbol.iterator` overrides\nhttps://bugs.webkit.org/show_bug.cgi?id=320748\n\nReviewed by Yusuke Suzuki.\n\n318251@main wired JSSetIteratorType into @arrayFromFastWithoutMapFn, which runs\nbefore Array.from reads items[@@iterator], but the Set-si",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
