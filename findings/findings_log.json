@@ -32077,5 +32077,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:14:15.672619+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "url": "https://github.com/WebKit/WebKit/commit/b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "message": "[RISC-V] Fix build errors\nhttps://bugs.webkit.org/show_bug.cgi?id=321326\n\nReviewed by Yusuke Suzuki.\n\nQuick fixes for some bitrot.\n\nCanonical link: https://commits.webkit.org/318902@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:14:55.470711+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "url": "https://github.com/WebKit/WebKit/commit/11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "message": "[JSC][Temporal] Decide duration rounding on exact integers, not doubles\nhttps://bugs.webkit.org/show_bug.cgi?id=321407\nrdar://184472920\n\nReviewed by Sosuke Suzuki.\n\nThree rounding paths decided on a double that had already lost the distinction the\ndecision rests on.\n\n    until(\"2000-02-29T00:01\", mo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:15:37.335180+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2233ac176432e7d890d5d7aef59e1e34b111e24",
+    "url": "https://github.com/WebKit/WebKit/commit/b2233ac176432e7d890d5d7aef59e1e34b111e24",
+    "message": "[JSC][Temporal] Fix undefined behavior, a loose bound, and remove dead code\nhttps://bugs.webkit.org/show_bug.cgi?id=321415\nrdar://184484038\n\nReviewed by Sosuke Suzuki.\n\nNudgeResult and Nudged left members uninitialized, and roundRelativeDuration\ndefault-constructs a NudgeResult before the branch tha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:16:15.097097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "url": "https://github.com/WebKit/WebKit/commit/66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "message": "Use `inline constexpr` instead of `constexpr inline` in JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=321379\nrdar://184429352\n\nReviewed by Keith Miller.\n\ninline constexpr is the more common order in JSC (113 to 45).\nThis purely improves consistency and doesn't introduce any behavioral chang",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:16:52.415539+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "url": "https://github.com/WebKit/WebKit/commit/b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "message": "[RISC-V] Fix build errors\nhttps://bugs.webkit.org/show_bug.cgi?id=321326\n\nReviewed by Yusuke Suzuki.\n\nQuick fixes for some bitrot.\n\nCanonical link: https://commits.webkit.org/318902@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T16:17:30.024783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "url": "https://github.com/WebKit/WebKit/commit/11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "message": "[JSC][Temporal] Decide duration rounding on exact integers, not doubles\nhttps://bugs.webkit.org/show_bug.cgi?id=321407\nrdar://184472920\n\nReviewed by Sosuke Suzuki.\n\nThree rounding paths decided on a double that had already lost the distinction the\ndecision rests on.\n\n    until(\"2000-02-29T00:01\", mo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
