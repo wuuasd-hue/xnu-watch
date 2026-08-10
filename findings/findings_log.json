@@ -31617,5 +31617,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T05:00:26.933310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "url": "https://github.com/WebKit/WebKit/commit/6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "message": "[YARR] Interpreter should skip every once-through alternative after advancing the start position\nhttps://bugs.webkit.org/show_bug.cgi?id=321253\n\nReviewed by Yusuke Suzuki.\n\noptimizeBOL() marks the body alternatives as once-through and appends copies of\nthe non-`^` ones as the looping set, so once-th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T05:01:06.060893+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "url": "https://github.com/WebKit/WebKit/commit/6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "message": "[YARR] Interpreter should skip every once-through alternative after advancing the start position\nhttps://bugs.webkit.org/show_bug.cgi?id=321253\n\nReviewed by Yusuke Suzuki.\n\noptimizeBOL() marks the body alternatives as once-through and appends copies of\nthe non-`^` ones as the looping set, so once-th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T05:01:44.152989+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "url": "https://github.com/WebKit/WebKit/commit/92c6650c7947d5f16d5568a8e03fea7b3706fd54",
+    "message": "[JSC] Add JSArrayIterator::next\nhttps://bugs.webkit.org/show_bug.cgi?id=320731\nrdar://183717343\n\nReviewed by Marcus Plutowski.\n\nLet's add next and nextWithAdvance to JSArrayIterator as the same to the\nother iterators like JSSetIterator. This cleans up a lot of code which\nmanually modifies JSArrayIte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
