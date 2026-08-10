@@ -31677,5 +31677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T06:10:04.262575+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "url": "https://github.com/WebKit/WebKit/commit/6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "message": "[YARR] Interpreter should skip every once-through alternative after advancing the start position\nhttps://bugs.webkit.org/show_bug.cgi?id=321253\n\nReviewed by Yusuke Suzuki.\n\noptimizeBOL() marks the body alternatives as once-through and appends copies of\nthe non-`^` ones as the looping set, so once-th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T06:10:43.455134+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "url": "https://github.com/WebKit/WebKit/commit/15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "message": "[Memory64] Add SIMD support\nhttps://bugs.webkit.org/show_bug.cgi?id=320755\nrdar://183755031\n\nReviewed by Keith Miller.\n\nAdd SIMD support in memory64\n\n* JSTests/wasm/stress/memory64-simd.js: Added.\n(13):\n(3):\n(8):\n(2):\n(func.export.string_appeared_here.param.addr.i64.param.value.i64.i64.store.local.a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
