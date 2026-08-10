@@ -32597,5 +32597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T23:02:18.903921+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fedbb7bdc250525145431ecbc2243004bc754fef",
+    "url": "https://github.com/WebKit/WebKit/commit/fedbb7bdc250525145431ecbc2243004bc754fef",
+    "message": "[JSC] Add counting-sort to 1-byte element TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=321263\nrdar://184313545\n\nReviewed by Sosuke Suzuki.\n\nSince 1-byte element is only having 256 patterns, we can apply\ncounting-sort easily. This patch applies counting-sort to 1-byte element\nTypedArrays.\n\n1. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T23:02:57.187890+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "url": "https://github.com/WebKit/WebKit/commit/66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "message": "Use `inline constexpr` instead of `constexpr inline` in JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=321379\nrdar://184429352\n\nReviewed by Keith Miller.\n\ninline constexpr is the more common order in JSC (113 to 45).\nThis purely improves consistency and doesn't introduce any behavioral chang",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
