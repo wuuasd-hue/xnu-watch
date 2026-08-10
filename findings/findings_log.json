@@ -31897,5 +31897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T11:39:07.029575+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "url": "https://github.com/WebKit/WebKit/commit/bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "message": "[YARR] Read raw code units for surrogate-free BMP character classes in unicode mode\nhttps://bugs.webkit.org/show_bug.cgi?id=320903\n\nReviewed by Yusuke Suzuki.\n\nWith the /u and /v flags, YARR JIT decodes surrogate pairs for every character read.\nFor a non-inverted character class holding only non-sur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T11:39:44.690321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "url": "https://github.com/WebKit/WebKit/commit/bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "message": "[YARR] Read raw code units for surrogate-free BMP character classes in unicode mode\nhttps://bugs.webkit.org/show_bug.cgi?id=320903\n\nReviewed by Yusuke Suzuki.\n\nWith the /u and /v flags, YARR JIT decodes surrogate pairs for every character read.\nFor a non-inverted character class holding only non-sur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T11:40:22.235933+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "url": "https://github.com/WebKit/WebKit/commit/e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "message": "Web Inspector: Canvas: instrument WebGPU pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320698\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUShaderModule.h:\n(WebCore::GPUShaderModule::create):\n(WebCore::GPUShaderModule::source const): Added.\n(WebCore::GPUShaderModule::GPUShad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
