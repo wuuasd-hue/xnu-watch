@@ -32277,5 +32277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T18:09:32.280259+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "283a44eb95ccc7d9d219dad06f9f028cc2083fa8",
+    "url": "https://github.com/WebKit/WebKit/commit/283a44eb95ccc7d9d219dad06f9f028cc2083fa8",
+    "message": "Update CMAKE files for Cmake 4\nhttps://bugs.webkit.org/show_bug.cgi?id=321292\n\nReviewed by Fujii Hironori.\n\nCMP0048 old behaviour is dropped in cmake 4; Drive-by fixes for\nmake_directory too.\n\nCanonical link: https://commits.webkit.org/318903@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-10T18:10:09.602790+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "de2fa444240f36ac2d03740bdbb190ae7cf95047",
+    "url": "https://github.com/swiftlang/swift/commit/de2fa444240f36ac2d03740bdbb190ae7cf95047",
+    "message": "Merge pull request #91264 from mikeash/fix-runtime-layout-size-truncation\n\n[Runtime] Trap overflow in size/layout computations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
