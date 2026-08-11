@@ -33157,5 +33157,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T09:46:09.935683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a704bb74f1ebf85b886913aadb3675581180df7",
+    "url": "https://github.com/WebKit/WebKit/commit/0a704bb74f1ebf85b886913aadb3675581180df7",
+    "message": "[JSC][Wasm] Align IPInt loop OSR stack check with BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=303686\n\nReviewed by Yusuke Suzuki.\n\nBBQ's loop OSR entry rejects a stack pointer at or below the soft limit, and\ncrashes rather than falling back because the IPInt stack is gone by then. The\nslow path compa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T09:46:49.186516+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fedbb7bdc250525145431ecbc2243004bc754fef",
+    "url": "https://github.com/WebKit/WebKit/commit/fedbb7bdc250525145431ecbc2243004bc754fef",
+    "message": "[JSC] Add counting-sort to 1-byte element TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=321263\nrdar://184313545\n\nReviewed by Sosuke Suzuki.\n\nSince 1-byte element is only having 256 patterns, we can apply\ncounting-sort easily. This patch applies counting-sort to 1-byte element\nTypedArrays.\n\n1. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
