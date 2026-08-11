@@ -33637,5 +33637,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T21:21:55.654461+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6c491404f2de22f0215652f915ff852bef51043",
+    "url": "https://github.com/WebKit/WebKit/commit/f6c491404f2de22f0215652f915ff852bef51043",
+    "message": "[JSC][Temporal] Adopt three audit tests and remove a dead ICU epoch probe\nhttps://bugs.webkit.org/show_bug.cgi?id=321521\nrdar://184631238\n\nReviewed by Yusuke Suzuki.\n\nlunarCalendarExtendedYearFor1972 has no callers. constrainMonthCodeInternal now reads the year\nfield positionCalendarToYearStart writ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T21:22:35.357468+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8b5e6ebb64e65a4aefd8c9de48916c7da5438841",
+    "url": "https://github.com/WebKit/WebKit/commit/8b5e6ebb64e65a4aefd8c9de48916c7da5438841",
+    "message": "[JSC] Reland: cache FastStringifier's buffer pointer and length across property-name emission\nhttps://bugs.webkit.org/show_bug.cgi?id=321518\nrdar://184628273\n\nReviewed by Yusuke Suzuki.\n\nRelands 318944@main (ea3fbb33caa5), reverted in 318969@main (ba1d526398de) for a\nperf regression, with the proper",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T21:23:13.344412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7600ab4bec971aa283a234db6ba4ff6b3d5df212",
+    "url": "https://github.com/WebKit/WebKit/commit/7600ab4bec971aa283a234db6ba4ff6b3d5df212",
+    "message": "[JSC] Fix repeated OSR exit via VarargsOverflow\nhttps://bugs.webkit.org/show_bug.cgi?id=321512\nrdar://184624051\n\nReviewed by Yijia Huang and Dan Hecht.\n\nThis patch fixes a bug that we are getting repeated VarargsOverflow,\nby suppressing Varargs inlining when we repeatedly encounter the\nVarargsOverfl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T21:23:50.488862+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6c491404f2de22f0215652f915ff852bef51043",
+    "url": "https://github.com/WebKit/WebKit/commit/f6c491404f2de22f0215652f915ff852bef51043",
+    "message": "[JSC][Temporal] Adopt three audit tests and remove a dead ICU epoch probe\nhttps://bugs.webkit.org/show_bug.cgi?id=321521\nrdar://184631238\n\nReviewed by Yusuke Suzuki.\n\nlunarCalendarExtendedYearFor1972 has no callers. constrainMonthCodeInternal now reads the year\nfield positionCalendarToYearStart writ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T21:24:28.823215+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8b5e6ebb64e65a4aefd8c9de48916c7da5438841",
+    "url": "https://github.com/WebKit/WebKit/commit/8b5e6ebb64e65a4aefd8c9de48916c7da5438841",
+    "message": "[JSC] Reland: cache FastStringifier's buffer pointer and length across property-name emission\nhttps://bugs.webkit.org/show_bug.cgi?id=321518\nrdar://184628273\n\nReviewed by Yusuke Suzuki.\n\nRelands 318944@main (ea3fbb33caa5), reverted in 318969@main (ba1d526398de) for a\nperf regression, with the proper",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
