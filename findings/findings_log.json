@@ -33237,5 +33237,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T11:34:43.145000+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "49246d26127685998d42f9ede4f925d490e15449",
+    "url": "https://github.com/WebKit/WebKit/commit/49246d26127685998d42f9ede4f925d490e15449",
+    "message": "[JSC] Implement import-text\nhttps://bugs.webkit.org/show_bug.cgi?id=321389\nrdar://184443879\n\nReviewed by Yijia Huang.\n\nThis patch implements import-text proposal[1]. This adds type: \"text\"\nattribute to the import statement / dynamic-import so that we can load a\ntext from the source. This is pretty s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T11:35:24.278671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4687d7ecfefad54c517d4af8e238e556ff4eefb3",
+    "url": "https://github.com/WebKit/WebKit/commit/4687d7ecfefad54c517d4af8e238e556ff4eefb3",
+    "message": "[JSC][Wasm] Elide BBQ null checks on non-nullable refs\nhttps://bugs.webkit.org/show_bug.cgi?id=321439\nReviewed by Yusuke Suzuki.\n\nOMG already skips the null check when the reference type is\nnon-nullable. BBQ still always emitted it for ref.as_non_null,\ncall_ref, and throw_ref because those emitters ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
