@@ -33277,5 +33277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T12:34:01.107980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dc35ebdb9bf4758406098b665ee7974f1b28cb76",
+    "url": "https://github.com/WebKit/WebKit/commit/dc35ebdb9bf4758406098b665ee7974f1b28cb76",
+    "message": "[YARR] JIT string-list alternative with a non-BMP character matches after only its leading characters\nhttps://bugs.webkit.org/show_bug.cgi?id=321251\n\nReviewed by Yusuke Suzuki.\n\nIn a string-list group, a non-last alternative may branch to the group's\nsuccess target only from the comparison of its la",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T12:34:38.033254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "edd953757f9fb56212a3fd02b16b79a1e8f51d8d",
+    "url": "https://github.com/WebKit/WebKit/commit/edd953757f9fb56212a3fd02b16b79a1e8f51d8d",
+    "message": "[JSC] Shrink `StructureRareData` back to 96 bytes\nhttps://bugs.webkit.org/show_bug.cgi?id=321423\n\nReviewed by Keith Miller.\n\n317978@main appended a 2-bit TriState bit-field to StructureRareData, whose\nmembers already filled exactly 96 bytes. The new field spilled into byte 97,\nso sizeof(StructureRar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
