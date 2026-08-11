@@ -32757,5 +32757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T02:56:40.388003+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "49246d26127685998d42f9ede4f925d490e15449",
+    "url": "https://github.com/WebKit/WebKit/commit/49246d26127685998d42f9ede4f925d490e15449",
+    "message": "[JSC] Implement import-text\nhttps://bugs.webkit.org/show_bug.cgi?id=321389\nrdar://184443879\n\nReviewed by Yijia Huang.\n\nThis patch implements import-text proposal[1]. This adds type: \"text\"\nattribute to the import statement / dynamic-import so that we can load a\ntext from the source. This is pretty s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T02:57:20.419981+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "49246d26127685998d42f9ede4f925d490e15449",
+    "url": "https://github.com/WebKit/WebKit/commit/49246d26127685998d42f9ede4f925d490e15449",
+    "message": "[JSC] Implement import-text\nhttps://bugs.webkit.org/show_bug.cgi?id=321389\nrdar://184443879\n\nReviewed by Yijia Huang.\n\nThis patch implements import-text proposal[1]. This adds type: \"text\"\nattribute to the import statement / dynamic-import so that we can load a\ntext from the source. This is pretty s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T02:57:57.920389+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ff1104e4d0bc8fa3f382aa055415f27f60d3574",
+    "url": "https://github.com/WebKit/WebKit/commit/7ff1104e4d0bc8fa3f382aa055415f27f60d3574",
+    "message": "Avoid repeated OSR exits in op_get_from_scope and op_put_to_scope\nhttps://bugs.webkit.org/show_bug.cgi?id=320802\nrdar://183815105\n\nReviewed by Keith Miller.\n\nThe GlobalProperty paths of op_get_from_scope and op_put_to_scope\nresolve their status with GetByStatus/PutByStatus computeFor overloads\nthat ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
