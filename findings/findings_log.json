@@ -33497,5 +33497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T17:24:08.678912+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "url": "https://github.com/WebKit/WebKit/commit/af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "message": "[JSC] Address -Wunused-template warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=321339\nrdar://184187975\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nAddress -Wunused-template warnings in JSC. Mostly this is removing dead code or\nmoving templates in headers from internal to external linkage.\n\nNo te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T17:24:46.118305+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "url": "https://github.com/WebKit/WebKit/commit/af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "message": "[JSC] Address -Wunused-template warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=321339\nrdar://184187975\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nAddress -Wunused-template warnings in JSC. Mostly this is removing dead code or\nmoving templates in headers from internal to external linkage.\n\nNo te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T17:25:23.781010+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47f20d8cfd63af0e383c7094c03189100d3253f7",
+    "url": "https://github.com/WebKit/WebKit/commit/47f20d8cfd63af0e383c7094c03189100d3253f7",
+    "message": "[Wasm] `call_indirect` in unreachable code should validate the table element type and the signature kind\nhttps://bugs.webkit.org/show_bug.cgi?id=321416\n\nReviewed by Yusuke Suzuki.\n\nparseUnreachableExpression's CallIndirect case checked table existence and\nthe bounds of both immediates, but not that ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
