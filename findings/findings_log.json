@@ -33417,5 +33417,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T16:15:18.854846+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "url": "https://github.com/WebKit/WebKit/commit/8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "message": "Update safer C++ expectations (2026-08-11)\nhttps://bugs.webkit.org/show_bug.cgi?id=321510\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n\nCanonical link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T16:15:56.343705+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "url": "https://github.com/WebKit/WebKit/commit/ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "message": "Unreviewed, reverting 318944@main (ea3fbb33caa5)\nhttps://bugs.webkit.org/show_bug.cgi?id=321508\n\nPerf regression\n\nReverted change:\n\n    [JSC] Cache FastStringifier's buffer pointer and length across property emission\n    https://bugs.webkit.org/show_bug.cgi?id=321452\n    318944@main (ea3fbb33caa5)\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T16:16:34.085500+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "url": "https://github.com/WebKit/WebKit/commit/8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "message": "Update safer C++ expectations (2026-08-11)\nhttps://bugs.webkit.org/show_bug.cgi?id=321510\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n\nCanonical link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T16:17:12.161495+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "url": "https://github.com/WebKit/WebKit/commit/ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "message": "Unreviewed, reverting 318944@main (ea3fbb33caa5)\nhttps://bugs.webkit.org/show_bug.cgi?id=321508\n\nPerf regression\n\nReverted change:\n\n    [JSC] Cache FastStringifier's buffer pointer and length across property emission\n    https://bugs.webkit.org/show_bug.cgi?id=321452\n    318944@main (ea3fbb33caa5)\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

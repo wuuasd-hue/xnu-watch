@@ -7544,5 +7544,35 @@
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "message": "Update safer C++ expectations (2026-08-11)\nhttps://bugs.webkit.org/show_bug.cgi?id=321510\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n\nCanonical link",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations ---\n@@ -139,6 +139,7 @@ runtime/Watchdog.cpp\n tools/FunctionOverrides.cpp\n tools/JSDollarVM.cpp\n wasm/WasmBBQJIT.cpp\n+wasm/WasmBBQJIT64.cpp\n wasm/WasmCallee.cpp\n wasm/WasmCalleeGroup.cpp\n wasm/WasmEntryPlan.cpp\n\n--- Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations ---\n@@ -3,6 +3,8 @@ dom/FragmentDirectiveRangeFinder.cpp\n dom/UserGestureIndicator.cpp\n [ macOS ] inspector/InspectorFrontendHost.cpp\n layout/formattingContexts/inline/InlineLineBuilder.cpp\n+layout/integration/LayoutIntegrationFormattingContextLayout.cpp\n+layout/integration/inline/LayoutIntegrationLineLayout.cpp\n loader/EmptyClients.cpp\n loader/TextResourceDecoder.cpp\n page/EventHandler.cpp\n",
+    "url": "https://github.com/WebKit/WebKit/commit/8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "message": "Unreviewed, reverting 318944@main (ea3fbb33caa5)\nhttps://bugs.webkit.org/show_bug.cgi?id=321508\n\nPerf regression\n\nReverted change:\n\n    [JSC] Cache FastStringifier's buffer pointer and length across property emission\n    https://bugs.webkit.org/show_bug.cgi?id=321452\n    318944@main (ea3fbb33caa5)\n\n",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/JSONObject.cpp ---\n@@ -1529,54 +1529,30 @@ void FastStringifier<CharType, bufferMode>::append(JSValue value)\n                 recordBufferFull();\n                 return false;\n             }\n+            if (needComma)\n+                buffer()[m_length++] = ',';\n+            if constexpr (hasGap == HasGap::Yes)\n+                appendNewLineAndIndentUnchecked();\n+            buffer()[m_length] = '\"';\n \n-            {\n-                // m_dynamicBuffer has inline capacity, so buffer() can point inside this object\n-                // next to m_length: stores through it may-alias the members, forcing the compiler\n-                // to reload both after every store. Cache them instead. Scoped because the pointer\n-                // dies at the next hasRemainingCapacity(), which can reallocate.\n-                CharType* out = buffer();\n-                unsigned length = m_length;\n-\n-                if (needComma)\n-                    out[length++] = ',';\n-\n-                if constexpr (hasGap == HasGap::Yes) {\n-                    // The callee reads m_length and advances it.\n-                    m_length = length;\n-                    appendNewLineAndIndentUnchecked();\n-                    out = buffer();\n-                    length = m_length;\n+            if constexpr (std::same_as<CharType, char16_t>) {\n+                if (stringCopyUpconvert(span, buffer() + m_length + 1)) [[unlikely]] {\n+                    recordFailure(\"property name character needs escaping\"_s);\n+                    return false;\n                 }\n-\n-                out[length] = '\"';\n-\n-                // Publish m_length before every bail-out.\n-                if constexpr (std::same_as<CharType, char16_t>) {\n-                    if (stringCopyUpconvert(span, out + length + 1)) [[unlikely]] {\n-                        m_length = length;\n-                        recordFailure(\"property name character needs escaping\"_s);\n-                        return false;\n-                    }\n-                } else {\n-                    if (stringCopySameType(span, out + length + 1)) [[unlikely]] {\n-                        m_length = length;\n-                        recordFailure(\"property name character needs escaping\"_s);\n-                        return false;\n-                    }\n+            } else {\n+                if (stringCopySameType(span, buffer() + m_length + 1)) [[unlikely]] {\n+                    recordFailure(\"property name character needs escaping\"_s);\n+                    return false;\n                 }\n-\n-                out[length + 1 + span.size()] = '\"';\n-                out[length + 1 + span.size() + 1] = ':';\n-                length += 1 + span.size() + 2;\n-                if constexpr (hasGap == HasGap::Yes)\n-                    out[length++] = ' ';\n-\n-                // Mandatory, not bookkeeping: the next hasRemainingCapacity() sizes itself from\n-                // m_length, so leaving a stale value here would under-count the space needed.\n-                m_length = length;\n             }\n \n+            buffer()[m_length + 1 + span.size()] = '\"';\n+            buffer()[m_length + 1 + span.size() + 1] = ':';\n+            m_length += 1 + span.size() + 2;\n+            if constexpr (hasGap == HasGap::Yes)\n+                buffer()[m_length++] = ' ';\n+\n             if constexpr (std::same_as<CharType, Latin1Character>) {\n                 // Inlining String case here since it is too common.\n                 if (value.isCell() && value.asCell()->type() == StringType) [[likely]] {\n@@ -1587,17 +1563,11 @@ void FastStringifier<CharType, bufferMode>::append(JSValue value)\n                             recordBufferFull();\n                             return false;\n                         }\n-\n-                        {\n-                            // Same reason as the property name above; cache after the capacity check.\n-                            CharType* out = buffer();\n-                            unsigned length = m_length;\n-                            o\n",
+    "url": "https://github.com/WebKit/WebKit/commit/ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
