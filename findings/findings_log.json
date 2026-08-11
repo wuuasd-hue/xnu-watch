@@ -33557,5 +33557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T18:12:29.873786+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b3637884b68bfd82fc35fa2f59647d0f717d13a",
+    "url": "https://github.com/WebKit/WebKit/commit/9b3637884b68bfd82fc35fa2f59647d0f717d13a",
+    "message": "[JSC][Wasm] Treat missing Global value setter argument as undefined\nhttps://bugs.webkit.org/show_bug.cgi?id=321493\n\nReviewed by Keith Miller.\n\nWebAssembly.Global.prototype.value's setter threw NotEnoughArguments\nwhen invoked with no argument. The JS API and the WPT treat a missing\nargument as undefi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T18:13:08.210870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "url": "https://github.com/WebKit/WebKit/commit/8dd6b2158e44aba9646b2e793f28b436ebfe962f",
+    "message": "Update safer C++ expectations (2026-08-11)\nhttps://bugs.webkit.org/show_bug.cgi?id=321510\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n\nCanonical link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
