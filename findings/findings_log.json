@@ -33597,5 +33597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T20:30:38.349082+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "url": "https://github.com/WebKit/WebKit/commit/ba1d526398de34807b2b80b9cca82f99749d74fe",
+    "message": "Unreviewed, reverting 318944@main (ea3fbb33caa5)\nhttps://bugs.webkit.org/show_bug.cgi?id=321508\n\nPerf regression\n\nReverted change:\n\n    [JSC] Cache FastStringifier's buffer pointer and length across property emission\n    https://bugs.webkit.org/show_bug.cgi?id=321452\n    318944@main (ea3fbb33caa5)\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T20:31:16.188206+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "url": "https://github.com/WebKit/WebKit/commit/af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "message": "[JSC] Address -Wunused-template warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=321339\nrdar://184187975\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nAddress -Wunused-template warnings in JSC. Mostly this is removing dead code or\nmoving templates in headers from internal to external linkage.\n\nNo te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
