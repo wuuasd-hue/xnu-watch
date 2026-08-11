@@ -33197,5 +33197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T10:39:05.569836+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "284afdacfb77ee797e4874af70539b8b8b3b16d9",
+    "url": "https://github.com/WebKit/WebKit/commit/284afdacfb77ee797e4874af70539b8b8b3b16d9",
+    "message": "[JSC][Temporal] Fix non-ISO date field resolution at the range edges\nhttps://bugs.webkit.org/show_bug.cgi?id=321414\nrdar://184478785\n\nReviewed by Yusuke Suzuki.\n\ntoPlainDate's non-ISO branch narrowed day to uint8_t, so day mod 256 decided the answer,\nand both clamps in nonISOCalendarDateToISO were o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T10:39:43.474495+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea3fbb33caa535e1284ece06efc997479ffe5896",
+    "url": "https://github.com/WebKit/WebKit/commit/ea3fbb33caa535e1284ece06efc997479ffe5896",
+    "message": "[JSC] Cache FastStringifier's buffer pointer and length across property emission\nhttps://bugs.webkit.org/show_bug.cgi?id=321452\nrdar://184544084\n\nReviewed by Yusuke Suzuki.\n\nappend() writes the property name as buffer()[m_length] one character at a time,\nand every store forces a reload of both membe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
