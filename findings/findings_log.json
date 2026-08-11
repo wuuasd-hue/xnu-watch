@@ -33037,5 +33037,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T08:00:20.423645+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c00fd8a9713c5c2ab4a542ea533d00cd205ec8f2",
+    "url": "https://github.com/WebKit/WebKit/commit/c00fd8a9713c5c2ab4a542ea533d00cd205ec8f2",
+    "message": "[JSC] Implement op_switch_string fast path in baseline JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321476\nrdar://184566236\n\nReviewed by Yusuke Suzuki.\n\nHigher JIT tiers generate a fast path for op_switch_string to perform pointer\nidentity-based inline dispatch if the scrutinee is an atom. Baseline J",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T08:00:58.015581+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c00fd8a9713c5c2ab4a542ea533d00cd205ec8f2",
+    "url": "https://github.com/WebKit/WebKit/commit/c00fd8a9713c5c2ab4a542ea533d00cd205ec8f2",
+    "message": "[JSC] Implement op_switch_string fast path in baseline JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321476\nrdar://184566236\n\nReviewed by Yusuke Suzuki.\n\nHigher JIT tiers generate a fast path for op_switch_string to perform pointer\nidentity-based inline dispatch if the scrutinee is an atom. Baseline J",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-11T08:01:36.772584+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de82d628262585b0a92b33ddd5321b8ee34fa6f9",
+    "url": "https://github.com/WebKit/WebKit/commit/de82d628262585b0a92b33ddd5321b8ee34fa6f9",
+    "message": "Web inspector should show memory use data for canvas and WebGL\nhttps://bugs.webkit.org/show_bug.cgi?id=190546\n\nReviewed by Mike Wyrzykowski.\n\nInclude associated graphics resources in Web Inspector's canvas memory estimate.\nKeep the estimate cheap and deliberately approximate; it only needs to put th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
