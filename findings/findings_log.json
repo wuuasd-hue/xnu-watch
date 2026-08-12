@@ -34677,5 +34677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T21:12:40.882899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "deb0d2fa4be6ecd15bf67bf44613db50820999d7",
+    "url": "https://github.com/WebKit/WebKit/commit/deb0d2fa4be6ecd15bf67bf44613db50820999d7",
+    "message": "[JSC] Deply add / sub / mul tightening to JSBigInt\nhttps://bugs.webkit.org/show_bug.cgi?id=320806\nrdar://183823079\n\nReviewed by Yijia Huang.\n\nThis patch tightening JSBigInt add / sub / mul.\n\n1. We add size-fixed streamlined implementations to add and sub as the\n   same to mul.\n2. Removed unnecessary",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T21:13:18.253803+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86575c4e15164c6b9b9e76765cb9771ea2fda91b",
+    "url": "https://github.com/WebKit/WebKit/commit/86575c4e15164c6b9b9e76765cb9771ea2fda91b",
+    "message": "Web Inspector: Canvas: show WebGPU `label` where able\nhttps://bugs.webkit.org/show_bug.cgi?id=320841\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/InspectorCanvas.cpp:\n(WebCore::InspectorCanvas::buildObjectForCanvas):\n* Source/WebC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
