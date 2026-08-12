@@ -34757,5 +34757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T23:07:35.157348+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "url": "https://github.com/WebKit/WebKit/commit/1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "message": "Web Inspector: Canvas: record object arguments and result objects\nhttps://bugs.webkit.org/show_bug.cgi?id=321489\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Recording.json:\n* Source/WebCore/bindings/scripts/CodeGeneratorJS.pm:\n(GenerateImplementationFunctionCall):\n(Gen",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T23:08:12.658607+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "url": "https://github.com/WebKit/WebKit/commit/1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "message": "Web Inspector: Canvas: record object arguments and result objects\nhttps://bugs.webkit.org/show_bug.cgi?id=321489\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Recording.json:\n* Source/WebCore/bindings/scripts/CodeGeneratorJS.pm:\n(GenerateImplementationFunctionCall):\n(Gen",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T23:08:50.974595+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29d016fbd9f466795ace2e38d9508523633202e7",
+    "url": "https://github.com/WebKit/WebKit/commit/29d016fbd9f466795ace2e38d9508523633202e7",
+    "message": "[YARR] Do not filter the contents of a lookbehind in `optimizeBOL`\nhttps://bugs.webkit.org/show_bug.cgi?id=320722\n\nReviewed by Yusuke Suzuki.\n\n    /(?<=(?=^)a)b|c/.exec(\"ab\") // null, should be [\"b\"]\n\noptimizeBOL()'s loop copy drops alternatives that can only match at the start of\nthe input. A lookb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
