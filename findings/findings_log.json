@@ -33857,5 +33857,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T03:01:46.965024+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "url": "https://github.com/WebKit/WebKit/commit/fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "message": "[JSC] Fix CallLinkInfo::m_maxArgumentCountIncludingThisForVarargs feedback collection\nhttps://bugs.webkit.org/show_bug.cgi?id=321549\nrdar://184657982\n\nReviewed by Yijia Huang.\n\nCallLinkInfo::m_maxArgumentCountIncludingThisForVarargs is uint8_t so we\nshould not use branch32 with Address(). load8 firs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T03:02:24.632269+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4093dea3b7cfce7d9f43f7d8c79438f2f7046e9",
+    "url": "https://github.com/WebKit/WebKit/commit/d4093dea3b7cfce7d9f43f7d8c79438f2f7046e9",
+    "message": "[Navigation API] SourceElement is the element responsible for the navigation, not the deepest element that was clicked\nhttps://bugs.webkit.org/show_bug.cgi?id=321490\nrdar://184581613\n\nReviewed by Jessica Lee.\n\nThe HTML spec (https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks)\nsay",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T03:03:02.618146+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee16ce938a8f8535cce4d77bfc0a7150d864dc5b",
+    "url": "https://github.com/WebKit/WebKit/commit/ee16ce938a8f8535cce4d77bfc0a7150d864dc5b",
+    "message": "[JSC][Temporal] Give CalendarDateUntil and NonISODateUntil one home each\nhttps://bugs.webkit.org/show_bug.cgi?id=321538\nrdar://184650946\n\nReviewed by Yusuke Suzuki.\n\nFour functions claimed #sec-temporal-calendardateuntil and only one held an algorithm. The\nCalendarArithmetic.cpp pass-through and the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T03:03:39.973068+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "url": "https://github.com/WebKit/WebKit/commit/fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "message": "[JSC] Fix CallLinkInfo::m_maxArgumentCountIncludingThisForVarargs feedback collection\nhttps://bugs.webkit.org/show_bug.cgi?id=321549\nrdar://184657982\n\nReviewed by Yijia Huang.\n\nCallLinkInfo::m_maxArgumentCountIncludingThisForVarargs is uint8_t so we\nshould not use branch32 with Address(). load8 firs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T03:04:17.748728+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4093dea3b7cfce7d9f43f7d8c79438f2f7046e9",
+    "url": "https://github.com/WebKit/WebKit/commit/d4093dea3b7cfce7d9f43f7d8c79438f2f7046e9",
+    "message": "[Navigation API] SourceElement is the element responsible for the navigation, not the deepest element that was clicked\nhttps://bugs.webkit.org/show_bug.cgi?id=321490\nrdar://184581613\n\nReviewed by Jessica Lee.\n\nThe HTML spec (https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks)\nsay",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
