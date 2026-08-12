@@ -34037,5 +34037,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T06:49:37.141169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "69b336c0ac0539338e0d764beba3da19bc58af3c",
+    "url": "https://github.com/WebKit/WebKit/commit/69b336c0ac0539338e0d764beba3da19bc58af3c",
+    "message": "[JSC] `SourceProviderCacheItem::create` over-allocates the trailing `PackedPtr` array\nhttps://bugs.webkit.org/show_bug.cgi?id=321488\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCacheItem stores its used-variable names in a trailing\nPackedPtr<UniquedStringImpl> array, whose element is 6 bytes on 64-bi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T06:50:14.465705+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "url": "https://github.com/WebKit/WebKit/commit/fbb79b137a9048f25d7a99c326d7abbb7ccfe1fe",
+    "message": "[JSC] Fix CallLinkInfo::m_maxArgumentCountIncludingThisForVarargs feedback collection\nhttps://bugs.webkit.org/show_bug.cgi?id=321549\nrdar://184657982\n\nReviewed by Yijia Huang.\n\nCallLinkInfo::m_maxArgumentCountIncludingThisForVarargs is uint8_t so we\nshould not use branch32 with Address(). load8 firs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
