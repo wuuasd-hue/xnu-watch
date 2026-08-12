@@ -34237,5 +34237,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T11:36:40.606042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4df93500a72428a2220aa1282f4801dced50471",
+    "url": "https://github.com/WebKit/WebKit/commit/a4df93500a72428a2220aa1282f4801dced50471",
+    "message": "[JSC] `Array#join` on Int32 arrays should use `JSOnlyStringsAndInt32sJoiner` for any separator\nhttps://bugs.webkit.org/show_bug.cgi?id=321228\n\nReviewed by Yusuke Suzuki.\n\n295918@main taught JSOnlyStringsAndInt32sJoiner to write Int32 elements\ndirectly into the result buffer, but fastArrayJoin's ALL_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T11:37:17.415889+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4df93500a72428a2220aa1282f4801dced50471",
+    "url": "https://github.com/WebKit/WebKit/commit/a4df93500a72428a2220aa1282f4801dced50471",
+    "message": "[JSC] `Array#join` on Int32 arrays should use `JSOnlyStringsAndInt32sJoiner` for any separator\nhttps://bugs.webkit.org/show_bug.cgi?id=321228\n\nReviewed by Yusuke Suzuki.\n\n295918@main taught JSOnlyStringsAndInt32sJoiner to write Int32 elements\ndirectly into the result buffer, but fastArrayJoin's ALL_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T11:37:54.164640+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "url": "https://github.com/WebKit/WebKit/commit/8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "message": "[JSC] Move `m_parentScopeTDZVariables` into `UnlinkedFunctionExecutable` itself\nhttps://bugs.webkit.org/show_bug.cgi?id=321497\n\nReviewed by Yusuke Suzuki.\n\n210869@main moved m_parentScopeTDZVariables into UnlinkedFunctionExecutable::RareData\nbecause it was non-empty for only ~1% of executables at th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
