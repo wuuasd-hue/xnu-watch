@@ -34457,5 +34457,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T17:24:24.968884+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "message": "[Memory64] Hoist memory64 offset sum overflow checks into a helper\nhttps://bugs.webkit.org/show_bug.cgi?id=321546\nrdar://184657114\n\nReviewed by Keith Miller.\n\nThere is a lot of duplicate code that checks for overflow after\nadding the offset and size of operation. This patch consolidates\nthese checks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T17:25:02.431797+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "message": "[Memory64] Hoist memory64 offset sum overflow checks into a helper\nhttps://bugs.webkit.org/show_bug.cgi?id=321546\nrdar://184657114\n\nReviewed by Keith Miller.\n\nThere is a lot of duplicate code that checks for overflow after\nadding the offset and size of operation. This patch consolidates\nthese checks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T17:25:39.935497+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2f2c2ddf6371b6238958865ea46cff6c97a1661",
+    "url": "https://github.com/WebKit/WebKit/commit/f2f2c2ddf6371b6238958865ea46cff6c97a1661",
+    "message": "[JSC] Remove StringRecursionChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=320820\nrdar://183831879\n\nReviewed by Justin Michaud.\n\nStringRecursionChecker behavior is not specified in the spec, and rather\ncausing many random weird behavior. For example, array.join should\nfinish even if we are using a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
