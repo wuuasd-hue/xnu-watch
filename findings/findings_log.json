@@ -34417,5 +34417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T16:15:08.299016+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a458a6c1f0a71390a7641f8fbb5a5485c6900a1e",
+    "url": "https://github.com/WebKit/WebKit/commit/a458a6c1f0a71390a7641f8fbb5a5485c6900a1e",
+    "message": "[YARR] Stop the chunked v-mode class set operation loop as soon as it can produce nothing more\nhttps://bugs.webkit.org/show_bug.cgi?id=320619\n\nReviewed by Yusuke Suzuki.\n\nCharacterClassConstructor::nonLatin1OpSorted() computes v-mode class set\noperations over the non-Latin-1 range by walking 0x100..",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T16:15:45.426036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64be3bc711542fa36a1fd466ae6381fe618d3258",
+    "url": "https://github.com/WebKit/WebKit/commit/64be3bc711542fa36a1fd466ae6381fe618d3258",
+    "message": "Unreviewed build fix\nhttps://bugs.webkit.org/show_bug.cgi?id=320822\n\nUnreviewed build fix.\n\nFix for:\n\nLLIntOffsetsExtractor.cpp:\n    unique_ptr.h:78:19: error: invalid application of 'sizeof' to an incomplete type\n                       'JSC::PropertyInlineCacheClearingWatchpoint'\n    note: in impli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
