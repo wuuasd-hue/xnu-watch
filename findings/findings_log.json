@@ -34597,5 +34597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T19:32:29.943464+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7c0c2f7dfaebb618e33e9f8f6ebe5748d246c9e",
+    "message": "[Memory64] Hoist memory64 offset sum overflow checks into a helper\nhttps://bugs.webkit.org/show_bug.cgi?id=321546\nrdar://184657114\n\nReviewed by Keith Miller.\n\nThere is a lot of duplicate code that checks for overflow after\nadding the offset and size of operation. This patch consolidates\nthese checks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T19:33:07.057798+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57a1c44be6ebeed6a826bddc078d71f2707845d2",
+    "url": "https://github.com/WebKit/WebKit/commit/57a1c44be6ebeed6a826bddc078d71f2707845d2",
+    "message": "[JSC] BBQ materializePointer should take actual access width\nhttps://bugs.webkit.org/show_bug.cgi?id=321575\nrdar://184683719\n\nReviewed by Keith Miller.\n\nmaterializePointer and emitCheckAndPrepareAndMaterializePointerApply is\nasking isValidAddrForm whether the offset can be valid with Width128,\nbut w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
