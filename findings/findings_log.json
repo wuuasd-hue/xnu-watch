@@ -34117,5 +34117,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T09:35:52.765969+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "url": "https://github.com/WebKit/WebKit/commit/8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "message": "[JSC] Move `m_parentScopeTDZVariables` into `UnlinkedFunctionExecutable` itself\nhttps://bugs.webkit.org/show_bug.cgi?id=321497\n\nReviewed by Yusuke Suzuki.\n\n210869@main moved m_parentScopeTDZVariables into UnlinkedFunctionExecutable::RareData\nbecause it was non-empty for only ~1% of executables at th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T09:36:30.059914+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "url": "https://github.com/WebKit/WebKit/commit/6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "message": "[JSC] Tighten WasmGC allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=321522\nrdar://184632964\n\nReviewed by Yijia Huang.\n\nThis patch tightens WasmGC allocations.\n\n1. While allocator is not a constant in WasmGC struct allocations (it is\n   coming from JSWebAssemblyInstance field), size is constant w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T09:37:07.867506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "url": "https://github.com/WebKit/WebKit/commit/8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "message": "[JSC] Move `m_parentScopeTDZVariables` into `UnlinkedFunctionExecutable` itself\nhttps://bugs.webkit.org/show_bug.cgi?id=321497\n\nReviewed by Yusuke Suzuki.\n\n210869@main moved m_parentScopeTDZVariables into UnlinkedFunctionExecutable::RareData\nbecause it was non-empty for only ~1% of executables at th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T09:37:45.740425+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "url": "https://github.com/WebKit/WebKit/commit/6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "message": "[JSC] Tighten WasmGC allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=321522\nrdar://184632964\n\nReviewed by Yijia Huang.\n\nThis patch tightens WasmGC allocations.\n\n1. While allocator is not a constant in WasmGC struct allocations (it is\n   coming from JSWebAssemblyInstance field), size is constant w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
