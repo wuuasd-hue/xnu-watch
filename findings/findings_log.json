@@ -33817,5 +33817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T00:04:40.167333+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "url": "https://github.com/WebKit/WebKit/commit/3108e0a68c0ea7f887716cdb73cbd3f9109ddc78",
+    "message": "REGRESSION(318202@main): Win-Build-EWS -  failing compile-webkit\nhttps://bugs.webkit.org/show_bug.cgi?id=320754\nrdar://183756146\n\nReviewed by Yusuke Suzuki and Ian Grunert.\n\nThe generated AirOpcodeUtils.h and AirOpcodeGenerated.h #undef the <windows.h>\nmacros that collide with Air opcode names (Rota",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-12T00:05:17.110642+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d188aac4126a0ef736af8549f967a932e209fa6",
+    "url": "https://github.com/WebKit/WebKit/commit/0d188aac4126a0ef736af8549f967a932e209fa6",
+    "message": "Simple drive-by safer-cpp fixes\nhttps://bugs.webkit.org/show_bug.cgi?id=320778\n\nReviewed by Yusuke Suzuki.\n\n[armv7] Remove ARMv7 JIT support - #70306 triggers these safer cpp\nerrors. This patch fixes them so that the other patch stays clean.\n\nCanonical link: https://commits.webkit.org/318382@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
