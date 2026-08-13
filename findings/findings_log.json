@@ -35377,5 +35377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T11:36:27.643981+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "url": "https://github.com/WebKit/WebKit/commit/1240a421fe562bc191b7b82822b4cd32440bdd47",
+    "message": "Web Inspector: Canvas: record object arguments and result objects\nhttps://bugs.webkit.org/show_bug.cgi?id=321489\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Recording.json:\n* Source/WebCore/bindings/scripts/CodeGeneratorJS.pm:\n(GenerateImplementationFunctionCall):\n(Gen",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T11:37:04.397103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f4f06bc1151fe9f14da9f05774162f39351ed537",
+    "url": "https://github.com/WebKit/WebKit/commit/f4f06bc1151fe9f14da9f05774162f39351ed537",
+    "message": "[YARR] Compile lookbehinds in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321496\n\nReviewed by Daniel Liu.\n\nA pattern containing a lookbehind never reached YarrJIT: RegExp::compile did not call\njitCompile for it and YarrGenerator::compile bailed out on m_containsLookbehinds, so a single\nlookbehin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
