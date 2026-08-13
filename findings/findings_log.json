@@ -34997,5 +34997,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T05:14:38.123521+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "url": "https://github.com/WebKit/WebKit/commit/01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "message": "Remove ThreadSafeWeakOrStrongPtr\nhttps://bugs.webkit.org/show_bug.cgi?id=321619\nrdar://184749450\n\nReviewed by Yusuke Suzuki.\n\nMultiple ThreadSafeWeakPtrs can be used to safely access the same object from\ndifferent threads, but currently one ThreadSafeWeakPtr can't be safely accessed\nfrom multiple th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T05:15:23.228254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a10860dc35cd5fd9f388244773c119a687b6313",
+    "url": "https://github.com/WebKit/WebKit/commit/4a10860dc35cd5fd9f388244773c119a687b6313",
+    "message": "[JSC] Make Air Liveness computation faster\nhttps://bugs.webkit.org/show_bug.cgi?id=321628\nrdar://184756552\n\nReviewed by Yijia Huang.\n\nThis patch makes Air Liveness computation faster via two changes.\n\n1. Tighten WTF::Liveness\n\nLet's avoid iterating blocks unnecessarily. We do not need to have\nbounda",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T05:16:02.833854+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "url": "https://github.com/WebKit/WebKit/commit/84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "message": "about:blank inherits cross-origin policy container due to empty document URL\nhttps://bugs.webkit.org/show_bug.cgi?id=316512\nrdar://176188073\n\nReviewed by Alex Christensen.\n\nDocuments created via javascript: URL have an empty internal URL. Document::setURL() would\nnormally normalize this to aboutBlan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T05:16:40.203397+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "url": "https://github.com/WebKit/WebKit/commit/ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "message": "[JSC] Air DCE worklist should be seeded via backward ordering\nhttps://bugs.webkit.org/show_bug.cgi?id=321624\nrdar://184754923\n\nReviewed by Vassili Bykov.\n\nCurrently we are seeding Air DCE worklist in a program ordering and\nforward ordering in the basic block, which is really bad for liveness\nanalysi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T05:17:18.207679+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "url": "https://github.com/WebKit/WebKit/commit/01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "message": "Remove ThreadSafeWeakOrStrongPtr\nhttps://bugs.webkit.org/show_bug.cgi?id=321619\nrdar://184749450\n\nReviewed by Yusuke Suzuki.\n\nMultiple ThreadSafeWeakPtrs can be used to safely access the same object from\ndifferent threads, but currently one ThreadSafeWeakPtr can't be safely accessed\nfrom multiple th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
