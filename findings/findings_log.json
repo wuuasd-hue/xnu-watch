@@ -35757,5 +35757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T19:31:22.130117+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "url": "https://github.com/swiftlang/swift/commit/f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "message": "Merge pull request #91451 from swiftlang/eng/PR-184046378\n\n[Backtracing][Linux] Remove unused `memserver_pid` variable.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T19:31:59.618382+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "url": "https://github.com/swiftlang/swift/commit/f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "message": "Merge pull request #91451 from swiftlang/eng/PR-184046378\n\n[Backtracing][Linux] Remove unused `memserver_pid` variable.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T19:32:38.184105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5821b05faa72aa3be5a4e4af7d2e39e0339736aa",
+    "url": "https://github.com/WebKit/WebKit/commit/5821b05faa72aa3be5a4e4af7d2e39e0339736aa",
+    "message": "[JSC] Introduce AirInstAnalyzer\nhttps://bugs.webkit.org/show_bug.cgi?id=321637\nrdar://184764993\n\nReviewed by Yijia Huang.\n\nWe have several analysis which scans entire Air graph and populating the\nanalysis result. But scanning the graph multiple times is really costly\nsince typically Air graph is lar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
