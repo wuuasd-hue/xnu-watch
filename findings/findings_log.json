@@ -35337,5 +35337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T10:49:04.528817+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a02f99629f76ee4bc721eb5f16a1bdf7286792c3",
+    "url": "https://github.com/WebKit/WebKit/commit/a02f99629f76ee4bc721eb5f16a1bdf7286792c3",
+    "message": "[JSC] FTL OSR exit: handle DataFormatStorage in reboxAccordingToFormat\nhttps://bugs.webkit.org/show_bug.cgi?id=314579\nrdar://176131036\n\nReviewed by Marcus Plutowski.\n\n300523@main relaxed validation so that PhantomNewArrayWithButterfly may\nreference a non-phantom NewButterflyWithSize, and taught\nFTLL",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T10:49:41.608376+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "79a508d4b8c3af0515aca12db343ca1da4ffb32d",
+    "url": "https://github.com/swiftlang/swift/commit/79a508d4b8c3af0515aca12db343ca1da4ffb32d",
+    "message": "Merge pull request #91386 from tbkka/tbkka-any-NonCopyable-Part1\n\n[any ~Copyable] Part 2: Basic support for existential-to-concrete casting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
