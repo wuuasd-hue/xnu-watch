@@ -35577,5 +35577,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T16:15:12.027989+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "url": "https://github.com/WebKit/WebKit/commit/f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "message": "Same-frame fragment navigation that starts after a download attribute click, in the same task, cancels the download\nhttps://bugs.webkit.org/show_bug.cgi?id=302895\nrdar://165498647\n\nReviewed by Brady Eidson and Alex Christensen.\n\nActivating a link with a download attribute runs \"download the hyperlin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T16:15:51.675755+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "url": "https://github.com/WebKit/WebKit/commit/f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "message": "Same-frame fragment navigation that starts after a download attribute click, in the same task, cancels the download\nhttps://bugs.webkit.org/show_bug.cgi?id=302895\nrdar://165498647\n\nReviewed by Brady Eidson and Alex Christensen.\n\nActivating a link with a download attribute runs \"download the hyperlin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T16:16:28.983954+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "url": "https://github.com/WebKit/WebKit/commit/01a43483d35fa5330f40b68da4c10a79beca26b6",
+    "message": "Remove ThreadSafeWeakOrStrongPtr\nhttps://bugs.webkit.org/show_bug.cgi?id=321619\nrdar://184749450\n\nReviewed by Yusuke Suzuki.\n\nMultiple ThreadSafeWeakPtrs can be used to safely access the same object from\ndifferent threads, but currently one ThreadSafeWeakPtr can't be safely accessed\nfrom multiple th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
