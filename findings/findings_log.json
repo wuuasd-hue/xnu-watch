@@ -35637,5 +35637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T17:25:23.203060+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "da12fb32aeb97f8774681deafc767602667934e2",
+    "url": "https://github.com/WebKit/WebKit/commit/da12fb32aeb97f8774681deafc767602667934e2",
+    "message": "[JSC] Improve FastStringifier's short string copy tiers\nhttps://bugs.webkit.org/show_bug.cgi?id=321622\nrdar://184750925\n\nReviewed by Yusuke Suzuki.\n\nstringCopySameType tiers by length: SIMD at the vector stride, an 8-byte SWAR\nloop below that, then a per-character loop. Short JSON property names fal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T17:26:00.324740+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "da12fb32aeb97f8774681deafc767602667934e2",
+    "url": "https://github.com/WebKit/WebKit/commit/da12fb32aeb97f8774681deafc767602667934e2",
+    "message": "[JSC] Improve FastStringifier's short string copy tiers\nhttps://bugs.webkit.org/show_bug.cgi?id=321622\nrdar://184750925\n\nReviewed by Yusuke Suzuki.\n\nstringCopySameType tiers by length: SIMD at the vector stride, an 8-byte SWAR\nloop below that, then a per-character loop. Short JSON property names fal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T17:26:37.245434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a10860dc35cd5fd9f388244773c119a687b6313",
+    "url": "https://github.com/WebKit/WebKit/commit/4a10860dc35cd5fd9f388244773c119a687b6313",
+    "message": "[JSC] Make Air Liveness computation faster\nhttps://bugs.webkit.org/show_bug.cgi?id=321628\nrdar://184756552\n\nReviewed by Yijia Huang.\n\nThis patch makes Air Liveness computation faster via two changes.\n\n1. Tighten WTF::Liveness\n\nLet's avoid iterating blocks unnecessarily. We do not need to have\nbounda",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
