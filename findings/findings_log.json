@@ -34917,5 +34917,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T03:04:58.474208+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "url": "https://github.com/WebKit/WebKit/commit/04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "message": "[JSC] Fix callExceptionFuzz clobbering linkRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=321634\nrdar://184763021\n\nReviewed by Yijia Huang.\n\nWhen callExceptionFuzz is called, we are saving and restoring GPR\nregisters as if this call is not happening. But linkRegister is\nclobbered and not restored ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T03:05:36.934263+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "url": "https://github.com/WebKit/WebKit/commit/ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "message": "[JSC] Air DCE worklist should be seeded via backward ordering\nhttps://bugs.webkit.org/show_bug.cgi?id=321624\nrdar://184754923\n\nReviewed by Vassili Bykov.\n\nCurrently we are seeding Air DCE worklist in a program ordering and\nforward ordering in the basic block, which is really bad for liveness\nanalysi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T03:06:15.318893+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7fac902847a0415841fc9965941403d2a6401a5",
+    "url": "https://github.com/WebKit/WebKit/commit/b7fac902847a0415841fc9965941403d2a6401a5",
+    "message": "[YARR] Unicode property escapes ignore case-insensitivity in u and v modes\nhttps://bugs.webkit.org/show_bug.cgi?id=321422\n\nReviewed by Yusuke Suzuki.\n\nCharacter classes are matched without canonicalizing the input, so a class has to\ncarry the case-folding closure of its members when ignoreCase is se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T03:06:53.317856+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "url": "https://github.com/WebKit/WebKit/commit/04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "message": "[JSC] Fix callExceptionFuzz clobbering linkRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=321634\nrdar://184763021\n\nReviewed by Yijia Huang.\n\nWhen callExceptionFuzz is called, we are saving and restoring GPR\nregisters as if this call is not happening. But linkRegister is\nclobbered and not restored ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

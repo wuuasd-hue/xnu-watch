@@ -7889,6 +7889,36 @@
     "url": "https://github.com/WebKit/WebKit/commit/b7fac902847a0415841fc9965941403d2a6401a5",
     "last_outcome": "DISCARD",
     "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "message": "[JSC] Fix callExceptionFuzz clobbering linkRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=321634\nrdar://184763021\n\nReviewed by Yijia Huang.\n\nWhen callExceptionFuzz is called, we are saving and restoring GPR\nregisters as if this call is not happening. But linkRegister is\nclobbered and not restored ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/jit/AssemblyHelpers.cpp ---\n@@ -278,12 +278,22 @@ void AssemblyHelpers::callExceptionFuzz(VM& vm, GPRReg exceptionReg)\n         storeDouble(FPRInfo::toRegister(i), Address(GPRInfo::regT0));\n     }\n \n+    // An exception check can be emitted where the caller still holds its return address in the link\n+    // register, so the call below has to leave that register as it found it.\n+#if CPU(ARM64) || CPU(RISCV64)\n+    pushPair(framePointerRegister, linkRegister);\n+#endif\n+\n     // Set up one argument.\n     move(TrustedImmPtr(&vm), GPRInfo::argumentGPR0);\n     move(TrustedImmPtr(tagCFunction<OperationPtrTag>(operationExceptionFuzzWithCallFrame)), GPRInfo::nonPreservedNonReturnGPR);\n     prepareCallOperation(vm);\n     call(GPRInfo::nonPreservedNonReturnGPR, OperationPtrTag);\n \n+#if CPU(ARM64) || CPU(RISCV64)\n+    popPair(framePointerRegister, linkRegister);\n+#endif\n+\n     for (unsigned i = 0; i < FPRInfo::numberOfRegisters; ++i) {\n         move(TrustedImmPtr(buffer + GPRInfo::numberOfRegisters + i), GPRInfo::regT0);\n         loadDouble(Address(GPRInfo::regT0), FPRInfo::toRegister(i));\n",
+    "url": "https://github.com/WebKit/WebKit/commit/04e2383bacab0060b45b2a7a10332e325e974c5d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "message": "[JSC] Air DCE worklist should be seeded via backward ordering\nhttps://bugs.webkit.org/show_bug.cgi?id=321624\nrdar://184754923\n\nReviewed by Vassili Bykov.\n\nCurrently we are seeding Air DCE worklist in a program ordering and\nforward ordering in the basic block, which is really bad for liveness\nanalysi",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/air/AirEliminateDeadCode.cpp ---\n@@ -90,18 +90,22 @@ bool eliminateDeadCode(Code& code)\n         }\n     };\n \n-    Vector<Inst*> possiblyDead;\n-\n-    for (BasicBlock* block : code) {\n-        for (Inst& inst : *block) {\n+    Vector<Inst*> deadCandidatesInBackwardOrder;\n+\n+    for (unsigned blockIndex = code.size(); blockIndex--;) {\n+        BasicBlock* block = code[blockIndex];\n+        if (!block)\n+            continue;\n+        for (unsigned instIndex = block->size(); instIndex--;) {\n+            Inst& inst = block->at(instIndex);\n             if (!isInstLive(inst))\n-                possiblyDead.append(&inst);\n+                deadCandidatesInBackwardOrder.append(&inst);\n             else\n                 markArgsLive(inst);\n         }\n     }\n \n-    // Inst in possiblyDead already have hasNonArgEffects() == false, invariant\n+    // Inst in deadCandidatesInBackwardOrder already have hasNonArgEffects() == false, invariant\n     // under live-set growth, so the fixpoint skips that re-check.\n     auto handleInst = [&] (Inst& inst) -> bool {\n         if (!isInstLiveByDefs(inst))\n@@ -110,9 +114,9 @@ bool eliminateDeadCode(Code& code)\n         return true;\n     };\n \n-    auto runForward = [&] () -> bool {\n+    auto runBackward = [&] () -> bool {\n         changed = false;\n-        possiblyDead.removeAllMatching(\n+        deadCandidatesInBackwardOrder.removeAllMatching(\n             [&] (Inst* inst) -> bool {\n                 bool result = handleInst(*inst);\n                 changed |= result;\n@@ -121,13 +125,13 @@ bool eliminateDeadCode(Code& code)\n         return changed;\n     };\n \n-    auto runBackward = [&] () -> bool {\n+    auto runForward = [&] () -> bool {\n         changed = false;\n-        for (unsigned i = possiblyDead.size(); i--;) {\n-            bool result = handleInst(*possiblyDead[i]);\n+        for (unsigned i = deadCandidatesInBackwardOrder.size(); i--;) {\n+            bool result = handleInst(*deadCandidatesInBackwardOrder[i]);\n             if (result) {\n-                possiblyDead[i] = possiblyDead.last();\n-                possiblyDead.removeLast();\n+                deadCandidatesInBackwardOrder[i] = deadCandidatesInBackwardOrder.last();\n+                deadCandidatesInBackwardOrder.removeLast();\n                 changed = true;\n             }\n         }\n@@ -146,12 +150,12 @@ bool eliminateDeadCode(Code& code)\n             break;\n     }\n \n-    // After the fixpoint, possiblyDead holds exactly the dead Insts. Null them\n+    // After the fixpoint, deadCandidatesInBackwardOrder holds exactly the dead Insts. Null them\n     // out and sweep with the cheap !inst predicate.\n-    if (possiblyDead.isEmpty())\n+    if (deadCandidatesInBackwardOrder.isEmpty())\n         return false;\n \n-    for (Inst* inst : possiblyDead)\n+    for (Inst* inst : deadCandidatesInBackwardOrder)\n         *inst = Inst();\n \n     for (BasicBlock* block : code) {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/ee4f0240590dabdfc2fd03598ded4d722c615f13",
+    "last_outcome": "DISCARD",
+    "focus_used": [
       "initial pass (target-specific lens)"
     ],
     "times_reexamined": 0
