@@ -35697,5 +35697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T18:14:05.376290+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "url": "https://github.com/WebKit/WebKit/commit/4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "message": "[JSC] Avoid unnecessary work in JIT code generation loop\nhttps://bugs.webkit.org/show_bug.cgi?id=321655\nrdar://184783026\n\nReviewed by Justin Michaud.\n\nThis patch removes unnecessary work done in JIT code generation main\nloop in Air, BBQ, and Baseline JIT.\n\n1. Disassembler's label creation\n\nCreating ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T18:14:43.037450+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "url": "https://github.com/WebKit/WebKit/commit/4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "message": "[JSC] Avoid unnecessary work in JIT code generation loop\nhttps://bugs.webkit.org/show_bug.cgi?id=321655\nrdar://184783026\n\nReviewed by Justin Michaud.\n\nThis patch removes unnecessary work done in JIT code generation main\nloop in Air, BBQ, and Baseline JIT.\n\n1. Disassembler's label creation\n\nCreating ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-13T18:15:20.699278+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "url": "https://github.com/WebKit/WebKit/commit/84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "message": "about:blank inherits cross-origin policy container due to empty document URL\nhttps://bugs.webkit.org/show_bug.cgi?id=316512\nrdar://176188073\n\nReviewed by Alex Christensen.\n\nDocuments created via javascript: URL have an empty internal URL. Document::setURL() would\nnormally normalize this to aboutBlan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
