@@ -36957,5 +36957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T21:45:44.390859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff64aee116d45c7475acd8f59e087ace63af548f",
+    "url": "https://github.com/WebKit/WebKit/commit/ff64aee116d45c7475acd8f59e087ace63af548f",
+    "message": "[JSC] Introduce StrongBlock\nhttps://bugs.webkit.org/show_bug.cgi?id=320824\nrdar://183834334\n\nReviewed by Keith Miller.\n\nThis patch replaces existing HandleBlock / HandleSet with new StrongBlock and\nStrongSet. The mechanism is significantly more efficient in terms of memory\nand faster performance.\n\nT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T21:46:21.089667+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4c01e1b810582bf2081e1ffc70af6d3d70385b0c",
+    "url": "https://github.com/WebKit/WebKit/commit/4c01e1b810582bf2081e1ffc70af6d3d70385b0c",
+    "message": "[JSC] Fix NoUncountedMember in WasmConstExprGenerator\nhttps://bugs.webkit.org/show_bug.cgi?id=314998\n\nReviewed by Keith Miller.\n\nConstExprGenerator held a raw reference to ModuleInformation, which\ntrips NoUncountedMemberChecker. Hold it as const Ref, and mark the\nclass WTF_FORBID_HEAP_ALLOCATION sin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
