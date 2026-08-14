@@ -36797,5 +36797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:00:53.356950+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89c464cce8ce7591d4a0d926d4e79f2b621136d4",
+    "url": "https://github.com/WebKit/WebKit/commit/89c464cce8ce7591d4a0d926d4e79f2b621136d4",
+    "message": "[WebTransport] Add headers and responseHeaders support\nhttps://bugs.webkit.org/show_bug.cgi?id=311299\n\nReviewed by Alex Christensen.\n\nImplement the headers constructor option and responseHeaders attribute\nfrom the WebTransport spec (https://github.com/w3c/webtransport/pull/713).\n\nheaders allows sett",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:01:30.860714+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f770b1bd5958779d19eec644e05c3c183103e0d",
+    "url": "https://github.com/WebKit/WebKit/commit/9f770b1bd5958779d19eec644e05c3c183103e0d",
+    "message": "[JSC] Add a fast path to Parser::useVariable\nhttps://bugs.webkit.org/show_bug.cgi?id=321716\nrdar://184855343\n\nReviewed by Yijia Huang.\n\nParser::useVariable adds a variable to the top set of the m_usedVariables stack.\nIt's not uncommon for the same variable to be added repeatedly, so it helps\nto reme",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
