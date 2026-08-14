@@ -36297,5 +36297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T09:31:41.937639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a53d011599e7726daa97e9fd8f233b0cc95aaed5",
+    "url": "https://github.com/WebKit/WebKit/commit/a53d011599e7726daa97e9fd8f233b0cc95aaed5",
+    "message": "[JSC] Rename finalizeUnconditionally to reconcileWeakReferencesAtGCEnd\nhttps://bugs.webkit.org/show_bug.cgi?id=321688\nrdar://184832952\n\nReviewed by Keith Miller.\n\nThis runs during the End phase on every marked, surviving cell and settles its\nuntraced pointers against the liveness that marking just e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T09:32:18.895080+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "62692012c98a7e0fe29e6f44d5b059c7f5ff66f9",
+    "url": "https://github.com/WebKit/WebKit/commit/62692012c98a7e0fe29e6f44d5b059c7f5ff66f9",
+    "message": "[JSC] Rename HeapFinalizerCallback to GCCompletionCallback\nhttps://bugs.webkit.org/show_bug.cgi?id=321690\nrdar://184834345\n\nReviewed by Vassili Bykov.\n\nThis is a once-per-GC embedder callback, not a finalizer: it is passed no object\nand runs at the end of every collection. It is the internal half of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
