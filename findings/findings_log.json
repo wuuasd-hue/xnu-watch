@@ -36557,5 +36557,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T16:10:55.269814+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "171864159318a3d0c4c344f0775ab26210e841b9",
+    "url": "https://github.com/WebKit/WebKit/commit/171864159318a3d0c4c344f0775ab26210e841b9",
+    "message": "[JSC][Intl] Compute the \"Before Hijra\" year from the calendar, not ICU's rendered text\nhttps://bugs.webkit.org/show_bug.cgi?id=321713\nrdar://184853584\n\nReviewed by Sosuke Suzuki.\n\nIslamic calendars have only one ICU era value, so pre-Hijra dates come back as a negative raw\nyear under it instead of a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T16:11:33.238111+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "171864159318a3d0c4c344f0775ab26210e841b9",
+    "url": "https://github.com/WebKit/WebKit/commit/171864159318a3d0c4c344f0775ab26210e841b9",
+    "message": "[JSC][Intl] Compute the \"Before Hijra\" year from the calendar, not ICU's rendered text\nhttps://bugs.webkit.org/show_bug.cgi?id=321713\nrdar://184853584\n\nReviewed by Sosuke Suzuki.\n\nIslamic calendars have only one ICU era value, so pre-Hijra dates come back as a negative raw\nyear under it instead of a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T16:12:10.557681+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e165fd1fce9a07e76b7a711c065b6ada222fdae6",
+    "url": "https://github.com/WebKit/WebKit/commit/e165fd1fce9a07e76b7a711c065b6ada222fdae6",
+    "message": "[JSC][Temporal] Delete constrainMonthCodeInternal and inline constrainMonthCodeGivenContainment\nhttps://bugs.webkit.org/show_bug.cgi?id=321685\nrdar://184829841\n\nReviewed by Sosuke Suzuki.\n\nconstrainMonthCodeInternal re-checked ConstrainMonthCode via a live ICU cursor for its only caller,\npositionCur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
