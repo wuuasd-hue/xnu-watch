@@ -36177,5 +36177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T05:11:30.970255+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "87405926351bfc6f3a49d2c0eb8ba9828105511f",
+    "url": "https://github.com/swiftlang/swift/commit/87405926351bfc6f3a49d2c0eb8ba9828105511f",
+    "message": "Merge pull request #91313 from mikeash/fix-dynamiccast-metatype-class-existential\n\n[Runtime] Don't satisfy a Swift-protocol class existential with a class metatype.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T05:12:07.670022+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "url": "https://github.com/WebKit/WebKit/commit/f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "message": "Same-frame fragment navigation that starts after a download attribute click, in the same task, cancels the download\nhttps://bugs.webkit.org/show_bug.cgi?id=302895\nrdar://165498647\n\nReviewed by Brady Eidson and Alex Christensen.\n\nActivating a link with a download attribute runs \"download the hyperlin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
