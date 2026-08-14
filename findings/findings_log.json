@@ -36377,5 +36377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T11:34:09.969831+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff58822738d05b2f630cd50a422db2279bb4d432",
+    "url": "https://github.com/WebKit/WebKit/commit/ff58822738d05b2f630cd50a422db2279bb4d432",
+    "message": "[iOS 27] Update SDKDB baseline\nhttps://bugs.webkit.org/show_bug.cgi?id=321638\nrdar://184765013\n\nReviewed by Ryan Haddad.\n\n* Configurations/CommonBase.xcconfig: Bring back the override to disable\n  auditing on older internal builds of iOS. Internally, we keep older\n  SDKDB baselines around, so we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T11:34:46.630581+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "url": "https://github.com/WebKit/WebKit/commit/ac2afd10b8ac26ed79a3781501cc1ea1381d3bd9",
+    "message": "[YARR] Clean up YarrJIT ifdefs\nhttps://bugs.webkit.org/show_bug.cgi?id=320845\nrdar://183873163\n\nReviewed by Yijia Huang.\n\nARMv7 JIT is dropped. So upstream JIT we care is only ARM64 and X86_64\n(RISCV64 is unmaintained). We can clean up many of YarrJIT flags so that\nit makes code much cleaner.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
