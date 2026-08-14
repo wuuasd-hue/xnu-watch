@@ -36077,5 +36077,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T00:03:51.337873+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff58822738d05b2f630cd50a422db2279bb4d432",
+    "url": "https://github.com/WebKit/WebKit/commit/ff58822738d05b2f630cd50a422db2279bb4d432",
+    "message": "[iOS 27] Update SDKDB baseline\nhttps://bugs.webkit.org/show_bug.cgi?id=321638\nrdar://184765013\n\nReviewed by Ryan Haddad.\n\n* Configurations/CommonBase.xcconfig: Bring back the override to disable\n  auditing on older internal builds of iOS. Internally, we keep older\n  SDKDB baselines around, so we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T00:04:28.459954+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff58822738d05b2f630cd50a422db2279bb4d432",
+    "url": "https://github.com/WebKit/WebKit/commit/ff58822738d05b2f630cd50a422db2279bb4d432",
+    "message": "[iOS 27] Update SDKDB baseline\nhttps://bugs.webkit.org/show_bug.cgi?id=321638\nrdar://184765013\n\nReviewed by Ryan Haddad.\n\n* Configurations/CommonBase.xcconfig: Bring back the override to disable\n  auditing on older internal builds of iOS. Internally, we keep older\n  SDKDB baselines around, so we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T00:05:05.454660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a02f99629f76ee4bc721eb5f16a1bdf7286792c3",
+    "url": "https://github.com/WebKit/WebKit/commit/a02f99629f76ee4bc721eb5f16a1bdf7286792c3",
+    "message": "[JSC] FTL OSR exit: handle DataFormatStorage in reboxAccordingToFormat\nhttps://bugs.webkit.org/show_bug.cgi?id=314579\nrdar://176131036\n\nReviewed by Marcus Plutowski.\n\n300523@main relaxed validation so that PhantomNewArrayWithButterfly may\nreference a non-phantom NewButterflyWithSize, and taught\nFTLL",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
