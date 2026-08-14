@@ -36137,5 +36137,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T03:03:53.104476+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "79a508d4b8c3af0515aca12db343ca1da4ffb32d",
+    "url": "https://github.com/swiftlang/swift/commit/79a508d4b8c3af0515aca12db343ca1da4ffb32d",
+    "message": "Merge pull request #91386 from tbkka/tbkka-any-NonCopyable-Part1\n\n[any ~Copyable] Part 2: Basic support for existential-to-concrete casting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T03:04:30.109514+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1375d28c26b39005f5ddbfa23087a59e120c1673",
+    "url": "https://github.com/WebKit/WebKit/commit/1375d28c26b39005f5ddbfa23087a59e120c1673",
+    "message": "[JSC][Temporal] Give CalendarMonthDayToISOReferenceDate and NonISOMonthDayToISOReferenceDate their own functions\nhttps://bugs.webkit.org/show_bug.cgi?id=321661\nrdar://184788558\n\nReviewed by Yusuke Suzuki.\n\nmonthDayFromFields was one function with hand-written ISO and non-ISO branches, each re-derivi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
