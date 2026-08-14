@@ -36417,5 +36417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T12:33:35.198921+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "540f0965c655f2b6a78683c12ea43fd269978886",
+    "url": "https://github.com/WebKit/WebKit/commit/540f0965c655f2b6a78683c12ea43fd269978886",
+    "message": "[YARR] v-mode class set operations produce stale character widths\nhttps://bugs.webkit.org/show_bug.cgi?id=320720\n\nReviewed by Yusuke Suzuki.\n\nCharacterClassConstructor tracked m_characterWidths incrementally in\naddSorted / addSortedRange, but the UnicodeSets set-op and inversion paths\n(latin1Op, non",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T12:34:13.127804+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "url": "https://github.com/WebKit/WebKit/commit/f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "message": "[JSC] LLInt prologue should zero the new frame 16 bytes per iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=320799\n\nReviewed by Yusuke Suzuki.\n\nThe LLInt prologue's frame-clearing loop from 199147@main zeroes the frame 8 bytes\nper top-tested iteration, and on ARM64 the immediate store re-materiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
