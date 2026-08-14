@@ -36837,5 +36837,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:51:52.015704+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "url": "https://github.com/WebKit/WebKit/commit/b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "message": "[JSC] Remove dead JettisonDueToProfiledWatchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=321803\nrdar://184938292\n\nReviewed by Yijia Huang.\n\nRemove some dead code.\n\n* Source/JavaScriptCore/profiler/ProfilerJettisonReason.cpp:\n(WTF::printInternal):\n* Source/JavaScriptCore/profiler/ProfilerJettisonRea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:52:29.528338+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ee1aef89dac209e9afdfda943d5585b5ac291e6",
+    "url": "https://github.com/WebKit/WebKit/commit/6ee1aef89dac209e9afdfda943d5585b5ac291e6",
+    "message": "[Navigation API] precommitHandler-traverse.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=321694\nrdar://184840625\n\nReviewed by Chris Dumez.\n\nThe test builds five history entries in a single document, then runs three subtests.\nThe first subtest rejectBeforeCommit traverses back four steps to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:53:07.434957+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "url": "https://github.com/WebKit/WebKit/commit/b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "message": "[JSC] Remove dead JettisonDueToProfiledWatchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=321803\nrdar://184938292\n\nReviewed by Yijia Huang.\n\nRemove some dead code.\n\n* Source/JavaScriptCore/profiler/ProfilerJettisonReason.cpp:\n(WTF::printInternal):\n* Source/JavaScriptCore/profiler/ProfilerJettisonRea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T20:53:47.840504+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ee1aef89dac209e9afdfda943d5585b5ac291e6",
+    "url": "https://github.com/WebKit/WebKit/commit/6ee1aef89dac209e9afdfda943d5585b5ac291e6",
+    "message": "[Navigation API] precommitHandler-traverse.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=321694\nrdar://184840625\n\nReviewed by Chris Dumez.\n\nThe test builds five history entries in a single document, then runs three subtests.\nThe first subtest rejectBeforeCommit traverses back four steps to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
