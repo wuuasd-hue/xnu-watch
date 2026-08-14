@@ -5723,9 +5723,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -8270,5 +8271,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "e165fd1fce9a07e76b7a711c065b6ada222fdae6",
+    "message": "[JSC][Temporal] Delete constrainMonthCodeInternal and inline constrainMonthCodeGivenContainment\nhttps://bugs.webkit.org/show_bug.cgi?id=321685\nrdar://184829841\n\nReviewed by Sosuke Suzuki.\n\nconstrainMonthCodeInternal re-checked ConstrainMonthCode via a live ICU cursor for its only caller,\npositionCur",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/temporal/core/CalendarICUBridge.cpp ---\n@@ -1580,10 +1580,15 @@ TemporalResult<bool> yearContainsMonthCode(CalendarID calendarId, int32_t year,\n }\n \n // https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-constrainmonthcode\n-static TemporalResult<ParsedMonthCode> constrainMonthCodeGivenContainment(CalendarID calendarId, ParsedMonthCode monthCode, bool contained, TemporalOverflow overflow)\n+TemporalResult<ParsedMonthCode> constrainMonthCode(CalendarID calendarId, int32_t year, ParsedMonthCode monthCode, TemporalOverflow overflow)\n {\n+    // Step 1: Assert IsValidMonthCodeForCalendar.\n+    ASSERT(isValidMonthCodeForCalendar(calendarId, monthCode));\n+    auto contained = yearContainsMonthCode(calendarId, year, monthCode);\n+    if (!contained) [[unlikely]]\n+        return makeUnexpected(contained.error());\n     // Step 2: If YearContainsMonthCode, return monthCode.\n-    if (contained)\n+    if (*contained)\n         return monthCode;\n     // Step 3: If overflow is ~reject~, throw RangeError.\n     if (overflow == TemporalOverflow::Reject)\n@@ -1597,30 +1602,6 @@ static TemporalResult<ParsedMonthCode> constrainMonthCodeGivenContainment(Calend\n     ASSERT(monthCode.monthNumber == 5 && monthCode.isLeapMonth);\n     return ParsedMonthCode { 6, false };\n }\n-TemporalResult<ParsedMonthCode> constrainMonthCode(CalendarID calendarId, int32_t year, ParsedMonthCode monthCode, TemporalOverflow overflow)\n-{\n-    // Step 1: Assert IsValidMonthCodeForCalendar.\n-    ASSERT(isValidMonthCodeForCalendar(calendarId, monthCode));\n-    // Steps 2-8: delegate to algorithm extract with cursor-computed containment.\n-    auto contained = yearContainsMonthCode(calendarId, year, monthCode);\n-    if (!contained) [[unlikely]]\n-        return makeUnexpected(contained.error());\n-    return constrainMonthCodeGivenContainment(calendarId, monthCode, *contained, overflow);\n-}\n-static TemporalResult<ParsedMonthCode> constrainMonthCodeInternal(UCalendar* cal, CalendarID calendarId, ParsedMonthCode monthCode, TemporalOverflow overflow)\n-{\n-    // Step 1: Assert IsValidMonthCodeForCalendar.\n-    ASSERT(isValidMonthCodeForCalendar(calendarId, monthCode));\n-    UErrorCode status = U_ZERO_ERROR;\n-    int32_t year = ucal_get(cal, UCAL_EXTENDED_YEAR, &status);\n-    if (U_FAILURE(status)) [[unlikely]]\n-        return makeUnexpected(rangeError(icuReadCalendarFailed));\n-    // Steps 2-8: delegate to algorithm extract with cursor-computed containment.\n-    auto contained = yearContainsMonthCodeInternal(cal, calendarId, year, monthCode);\n-    if (!contained) [[unlikely]]\n-        return makeUnexpected(rangeError(icuReadCalendarFailed));\n-    return constrainMonthCodeGivenContainment(calendarId, monthCode, *contained, overflow);\n-}\n \n // https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-monthcodetoordinal\n TemporalResult<int32_t> monthCodeOrdinalInYear(CalendarID calendarId, ParsedMonthCode monthCode, int32_t year)\n@@ -2511,29 +2492,16 @@ static void setICUCalendarYear(UCalendar* cal, CalendarID calendarId, std::optio\n     ucal_set(cal, UCAL_EXTENDED_YEAR, year.value_or(0));\n }\n \n-static TemporalResult<void> positionCursorAtConstrainedMonthCode(UCalendar* cal, CalendarID calendarId, const ParsedMonthCode& monthCode, TemporalOverflow overflow)\n+static TemporalResult<void> positionCursorAtConstrainedMonthCode(UCalendar* cal, CalendarID calendarId, const ParsedMonthCode& monthCode)\n {\n     if (!isValidMonthCodeForCalendar(calendarId, monthCode)) [[unlikely]]\n         return makeUnexpected(rangeError(\"monthCode is not valid for this calendar\"_s));\n \n-    auto constrained = constrainMonthCodeInternal(cal, calendarId, monthCode, overflow);\n-    if (!constrained) [[unlikely]]\n-        return makeUnexpected(constrained.error());\n+    ASSERT(!monthCode.isLeapMonth);\n \n-    // Position the cursor at the constrained monthCode.\n-    UErrorCode status = U_ZERO_ERROR;\n-    if (calendarIsLunisolar(calendarId)) {\n-        String targetCode = makeString(\"M\"_s, constrained->monthNumber < 10 ? \"0\"_s : \"\"_s,\n-            constrain\n\n--- Source/JavaScriptCore/runtime/temporal/core/TemporalEnums.h ---\n@@ -104,8 +104,6 @@ enum class TemporalUnit : uint8_t {\n static constexpr unsigned numberOfTemporalUnits = 0 JSC_TEMPORAL_UNITS(JSC_COUNT_TEMPORAL_UNITS);\n static constexpr unsigned numberOfTemporalPlainDateUnits = 0 JSC_TEMPORAL_PLAIN_DATE_UNITS(JSC_COUNT_TEMPORAL_UNITS);\n static constexpr unsigned numberOfTemporalPlainTimeUnits = 0 JSC_TEMPORAL_PLAIN_TIME_UNITS(JSC_COUNT_TEMPORAL_UNITS);\n-static constexpr unsigned numberOfTemporalPlainYearMonthUnits = 0 JSC_TEMPORAL_PLAIN_YEAR_MONTH_UNITS(JSC_COUNT_TEMPORAL_UNITS);\n-static constexpr unsigned numberOfTemporalPlainMonthDayUnits = 0 JSC_TEMPORAL_PLAIN_MONTH_DAY_UNITS(JSC_COUNT_TEMPORAL_UNITS);\n #undef JSC_COUNT_TEMPORAL_UNITS\n \n // https://tc39.es/proposal-temporal/#table-temporal-temporaldurationlike-properties\n",
+    "url": "https://github.com/WebKit/WebKit/commit/e165fd1fce9a07e76b7a711c065b6ada222fdae6",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
