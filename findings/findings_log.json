@@ -36257,5 +36257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T08:05:40.102637+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "url": "https://github.com/swiftlang/swift/commit/f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "message": "Merge pull request #91451 from swiftlang/eng/PR-184046378\n\n[Backtracing][Linux] Remove unused `memserver_pid` variable.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T08:06:17.113515+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f4da7823ee1d1dacf4b080de2986759a051003ee",
+    "url": "https://github.com/WebKit/WebKit/commit/f4da7823ee1d1dacf4b080de2986759a051003ee",
+    "message": "[JSC] Rename Heap::finalize to Heap::runCollectionEpilogue\nhttps://bugs.webkit.org/show_bug.cgi?id=321689\nrdar://184833847\n\nReviewed by Keith Miller.\n\nHeap::finalize is the mutator-side epilogue of a collection cycle, not\nfinalization. It flushes HasOwnPropertyCache, MegamorphicCache and the string\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
