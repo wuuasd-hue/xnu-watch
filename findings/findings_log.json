@@ -36617,5 +36617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T17:21:04.876609+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "171864159318a3d0c4c344f0775ab26210e841b9",
+    "url": "https://github.com/WebKit/WebKit/commit/171864159318a3d0c4c344f0775ab26210e841b9",
+    "message": "[JSC][Intl] Compute the \"Before Hijra\" year from the calendar, not ICU's rendered text\nhttps://bugs.webkit.org/show_bug.cgi?id=321713\nrdar://184853584\n\nReviewed by Sosuke Suzuki.\n\nIslamic calendars have only one ICU era value, so pre-Hijra dates come back as a negative raw\nyear under it instead of a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T17:21:42.200187+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86132c7a3b4c8491f4a4e6a8f635bac1a07c5315",
+    "url": "https://github.com/WebKit/WebKit/commit/86132c7a3b4c8491f4a4e6a8f635bac1a07c5315",
+    "message": "Unreviewed, speculative fix for watchOS\nhttps://bugs.webkit.org/show_bug.cgi?id=320878\nrdar://183898854\n\n* Source/JavaScriptCore/assembler/RegisterInfo.h:\n\nCanonical link: https://commits.webkit.org/318438@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
