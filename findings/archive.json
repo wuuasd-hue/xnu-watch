@@ -5791,9 +5791,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -8386,5 +8387,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "message": "[JSC] Add small-sized fast copy before memcpy in operationMemoryCopy\nhttps://bugs.webkit.org/show_bug.cgi?id=321793\nrdar://184928316\n\nReviewed by Vassili Bykov and Dan Hecht.\n\nmemcpy does not inline itself when count is unknown. And wasm\nmemory.copy is concentrated into operationMemoryCopy instructi",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/B3Operations.cpp ---\n@@ -26,15 +26,73 @@\n #include \"config.h\"\n #include \"B3Operations.h\"\n \n+#include <wtf/Int128.h>\n+#include <wtf/UnalignedAccess.h>\n+\n WTF_ALLOW_UNSAFE_BUFFER_USAGE_BEGIN\n \n #if ENABLE(B3_JIT)\n \n namespace JSC::B3 {\n \n+namespace {\n+\n+#if HAVE(INT128_T)\n+using WidestCopyUnit = UInt128;\n+#else\n+using WidestCopyUnit = uint64_t;\n+#endif\n+\n+constexpr size_t maxFastCopyCount = 4 * sizeof(WidestCopyUnit);\n+\n+// Copies count bytes as two overlapping sizeof(T) accesses, so it needs\n+// sizeof(T) <= count <= 2 * sizeof(T). Both source reads happen before either destination write,\n+// which is what makes this safe for overlapping ranges without comparing the two pointers.\n+template<typename T>\n+ALWAYS_INLINE void copyOverlappingEnds(uint8_t* dst, const uint8_t* src, size_t count)\n+{\n+    T low = WTF::unalignedLoad<T>(src);\n+    T high = WTF::unalignedLoad<T>(src + count - sizeof(T));\n+    WTF::unalignedStore<T>(dst, low);\n+    WTF::unalignedStore<T>(dst + count - sizeof(T), high);\n+}\n+\n+// The same idea one step wider: two overlapping pairs, for\n+// 2 * sizeof(T) <= count <= 4 * sizeof(T).\n+template<typename T>\n+ALWAYS_INLINE void copyOverlappingEndPairs(uint8_t* dst, const uint8_t* src, size_t count)\n+{\n+    T low0 = WTF::unalignedLoad<T>(src);\n+    T low1 = WTF::unalignedLoad<T>(src + sizeof(T));\n+    T high0 = WTF::unalignedLoad<T>(src + count - 2 * sizeof(T));\n+    T high1 = WTF::unalignedLoad<T>(src + count - sizeof(T));\n+    WTF::unalignedStore<T>(dst, low0);\n+    WTF::unalignedStore<T>(dst + sizeof(T), low1);\n+    WTF::unalignedStore<T>(dst + count - 2 * sizeof(T), high0);\n+    WTF::unalignedStore<T>(dst + count - sizeof(T), high1);\n+}\n+\n+} // namespace\n \n JSC_DEFINE_NOEXCEPT_JIT_OPERATION(operationMemoryCopy, void, (void* dst, const void* src, size_t count))\n {\n+    // Short copies dominate this operation, because memory.copy is what a compiler targeting wasm\n+    // emits for memcpy. libc's memmove spends more on dispatching by size than a short copy costs,\n+    // so handle the short counts here. One unsigned compare rejects both the too-short and the\n+    // too-long counts.\n+    if (count - sizeof(uint32_t) <= maxFastCopyCount - sizeof(uint32_t)) {\n+        auto* to = static_cast<uint8_t*>(dst);\n+        const auto* from = static_cast<const uint8_t*>(src);\n+        if (count < sizeof(uint64_t))\n+            copyOverlappingEnds<uint32_t>(to, from, count);\n+        else if (count < 2 * sizeof(uint64_t))\n+            copyOverlappingEnds<uint64_t>(to, from, count);\n+        else if (count < 2 * sizeof(WidestCopyUnit))\n+            copyOverlappingEnds<WidestCopyUnit>(to, from, count);\n+        else\n+            copyOverlappingEndPairs<WidestCopyUnit>(to, from, count);\n+        return;\n+    }\n     memmove(dst, src, count);\n }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

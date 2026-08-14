@@ -36997,5 +36997,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T22:09:50.705177+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "url": "https://github.com/WebKit/WebKit/commit/53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "message": "[JSC] Add small-sized fast copy before memcpy in operationMemoryCopy\nhttps://bugs.webkit.org/show_bug.cgi?id=321793\nrdar://184928316\n\nReviewed by Vassili Bykov and Dan Hecht.\n\nmemcpy does not inline itself when count is unknown. And wasm\nmemory.copy is concentrated into operationMemoryCopy instructi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T22:10:27.543412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "url": "https://github.com/WebKit/WebKit/commit/53517eb3a2b824d9cad0e95b1263ee68c8cd9762",
+    "message": "[JSC] Add small-sized fast copy before memcpy in operationMemoryCopy\nhttps://bugs.webkit.org/show_bug.cgi?id=321793\nrdar://184928316\n\nReviewed by Vassili Bykov and Dan Hecht.\n\nmemcpy does not inline itself when count is unknown. And wasm\nmemory.copy is concentrated into operationMemoryCopy instructi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-14T22:11:04.347308+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "465d5ab28c60bc2521fb30cdce3c68dc289f5d71",
+    "url": "https://github.com/WebKit/WebKit/commit/465d5ab28c60bc2521fb30cdce3c68dc289f5d71",
+    "message": "[JSC] Inline `String#substring` in DFG/FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=320045\n\nReviewed by Yusuke Suzuki.\n\nStringSubstring was always lowered to operationStringSubstring(WithEnd) in\nboth tiers, while its siblings StringSlice and StringSubstr have inline fast\npaths.\n\nsubstring only differ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
