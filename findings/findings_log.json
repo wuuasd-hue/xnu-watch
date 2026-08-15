@@ -38397,5 +38397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T17:10:19.220262+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f3ecec97431e17f44f275c201a8ba068500c9e5",
+    "url": "https://github.com/WebKit/WebKit/commit/4f3ecec97431e17f44f275c201a8ba068500c9e5",
+    "message": "[JSC] `JSON.stringify` fast path should accept final objects with non `Object` prototypes\nhttps://bugs.webkit.org/show_bug.cgi?id=321151\n\nReviewed by Yusuke Suzuki.\n\nFastStringifier bails out for any object whose prototype is not Object.prototype,\nso a single class instance in the payload reruns the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T17:10:57.007528+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81a11702ef82c7a084d1a009dfa010b68e1e2981",
+    "url": "https://github.com/WebKit/WebKit/commit/81a11702ef82c7a084d1a009dfa010b68e1e2981",
+    "message": "[JSC] RegExp trim fast path in `String#replace` is skipped once the caller tiers up to DFG/FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=321161\n\nReviewed by Yusuke Suzuki.\n\n291345@main added tryTrimSpaces() to replaceUsingRegExpSearch() so that\n`str.replace(/^\\s+/, \"\")` and `str.replace(/\\s+$/, \"\")` a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
