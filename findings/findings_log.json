@@ -38837,5 +38837,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T22:05:59.212174+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "url": "https://github.com/WebKit/WebKit/commit/c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "message": "[Navigation API] navigation-back-cross-document-preventDefault.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=300006\nrdar://161203519\n\nReviewed by Basuke Suzuki.\n\nThe very last assert in this test is failing: assert_true(navigate_called);\n\nFor a cross-document traversal of the top-level fra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T22:06:36.061339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "url": "https://github.com/WebKit/WebKit/commit/c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "message": "[Navigation API] navigation-back-cross-document-preventDefault.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=300006\nrdar://161203519\n\nReviewed by Basuke Suzuki.\n\nThe very last assert in this test is failing: assert_true(navigate_called);\n\nFor a cross-document traversal of the top-level fra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T22:07:12.993859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ef04dabf52d7432a3e7ab13f44f9d8b4bd933a0",
+    "url": "https://github.com/WebKit/WebKit/commit/9ef04dabf52d7432a3e7ab13f44f9d8b4bd933a0",
+    "message": "[JSC] Intl.Locale's collections should be sorted\nhttps://bugs.webkit.org/show_bug.cgi?id=321273\nrdar://184322384\n\nReviewed by Yijia Huang.\n\nIntl.Locale's returned arrays should be sorted according to the spec[1].\n\n[1]: https://tc39.es/proposal-intl-locale-info/#sec-collations-of-locale\n\n* JSTests/st",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
