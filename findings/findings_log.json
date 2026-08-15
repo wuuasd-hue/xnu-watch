@@ -37217,5 +37217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T01:55:07.046330+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb95a2f78031283cada762bcad6e521b98536380",
+    "url": "https://github.com/WebKit/WebKit/commit/bb95a2f78031283cada762bcad6e521b98536380",
+    "message": "Introduce `AsyncImageDecoder`\nhttps://bugs.webkit.org/show_bug.cgi?id=315970\nrdar://178390303\n\nReviewed by Simon Fraser.\n\nBitmapImage manages the async image decoding separate from the ImageDecoder in\na class named `ImageFrameWorkQueue`. The `WebCodecsImageDecoder` needs to have\nthe async image deco",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T01:55:44.804976+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb299342a5802f73fa1bfd395dcc7aaac45e7010",
+    "url": "https://github.com/WebKit/WebKit/commit/fb299342a5802f73fa1bfd395dcc7aaac45e7010",
+    "message": "[JSC] Use first-character-filter even for UntypedUse edge\nhttps://bugs.webkit.org/show_bug.cgi?id=320877\nrdar://183897657\n\nReviewed by Sosuke Suzuki.\n\nSome real world code was not using this first-character-filter just\nbecause it is taking UntypedUse instead of StringUse. This patch extend\nthe cover",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
