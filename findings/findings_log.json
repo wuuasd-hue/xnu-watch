@@ -37377,5 +37377,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T04:55:12.358173+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "url": "https://github.com/WebKit/WebKit/commit/ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "message": "[JSC][Wasm] Fast-path i64 BigInt on Wasm-to-JS import returns\nhttps://bugs.webkit.org/show_bug.cgi?id=220053\n\nReviewed by Yusuke Suzuki.\n\nWasm-to-JS import stubs always called operationConvertToI64 for an i64\nresult. If the JS value is already a HeapBigInt, convert it in the stub\nthe same way JS-to-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T04:55:49.745327+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "url": "https://github.com/WebKit/WebKit/commit/ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "message": "[JSC][Wasm] Fast-path i64 BigInt on Wasm-to-JS import returns\nhttps://bugs.webkit.org/show_bug.cgi?id=220053\n\nReviewed by Yusuke Suzuki.\n\nWasm-to-JS import stubs always called operationConvertToI64 for an i64\nresult. If the JS value is already a HeapBigInt, convert it in the stub\nthe same way JS-to-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T04:56:26.821747+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91d96b29d6b286a0355782507d61298d39146083",
+    "url": "https://github.com/WebKit/WebKit/commit/91d96b29d6b286a0355782507d61298d39146083",
+    "message": "[JSC] `AbstractInterpreter::forAllValues` should handle tuple nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=320948\n\nReviewed by Yusuke Suzuki.\n\n315180@main inlines StringIteratorPrototype.next into DFG, which places the\nStringIteratorNextWithUndefined tuple node into an ordinary straight-line block.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

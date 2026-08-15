@@ -6063,9 +6063,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -8418,5 +8419,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "message": "[JSC][Wasm] Fast-path i64 BigInt on Wasm-to-JS import returns\nhttps://bugs.webkit.org/show_bug.cgi?id=220053\n\nReviewed by Yusuke Suzuki.\n\nWasm-to-JS import stubs always called operationConvertToI64 for an i64\nresult. If the JS value is already a HeapBigInt, convert it in the stub\nthe same way JS-to-",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/wasm/stress/import-return-i64-bigint.js ---\n@@ -0,0 +1,40 @@\n+// https://bugs.webkit.org/show_bug.cgi?id=220053\n+import { instantiate } from \"../wabt-wrapper.js\";\n+import * as assert from \"../assert.js\";\n+\n+const values = [\n+    0n,\n+    1n,\n+    -1n,\n+    20n,\n+    0x7fffffffffffffffn,\n+    -0x8000000000000000n,\n+    0xffffffffffffffffn,\n+    0x10000000000000000n,\n+    -0x10000000000000000n,\n+    42n,\n+];\n+\n+async function test() {\n+    for (const value of values) {\n+        const expected = BigInt.asIntN(64, value);\n+        const inst = await instantiate(`\n+(module\n+  (func $imp (import \"imp\" \"func\") (result i64))\n+  (func (export \"run\") (result i64)\n+    (call $imp))\n+)`, { imp: { func: () => value } });\n+        for (let i = 0; i < 100; i++)\n+            assert.eq(inst.exports.run(), expected);\n+    }\n+\n+    const inst = await instantiate(`\n+(module\n+  (func $imp (import \"imp\" \"func\") (result i64))\n+  (func (export \"run\") (result i64)\n+    (call $imp))\n+)`, { imp: { func: () => 20 } });\n+    assert.throws(() => inst.exports.run(), TypeError, \"Invalid argument type in ToBigInt operation\");\n+}\n+\n+await assert.asyncTest(test());\n\n--- Source/JavaScriptCore/wasm/js/WasmToJS.cpp ---\n@@ -326,15 +326,30 @@ Expected<MacroAssemblerCodeRef<WasmEntryPtrTag>, BindingFailure> wasmToJS(const\n         const auto& returnType = signature.returnType(0);\n         switch (returnType.kind()) {\n         case TypeKind::I64: {\n-            // FIXME: Optimize I64 extraction from BigInt.\n-            // https://bugs.webkit.org/show_bug.cgi?id=220053\n-            JSValueRegs dest = wasmCallInfo.results[0].location.jsr();\n+            CCallHelpers::JumpList done;\n+            CCallHelpers::JumpList slowPath;\n+            JSValueRegs destJSR = wasmCallInfo.results[0].location.jsr();\n+            GPRReg destGPR = destJSR.payloadGPR();\n+            GPRReg cellGPR = JSRInfo::returnValueJSR.payloadGPR();\n+\n+            slowPath.append(jit.branchIfNotCell(JSRInfo::returnValueJSR, DoNotHaveTagRegisters));\n+            slowPath.append(jit.branchIfNotHeapBigInt(cellGPR));\n+            if (cellGPR == destGPR) {\n+                GPRReg scratch = GPRInfo::nonPreservedNonReturnGPR;\n+                jit.move(cellGPR, scratch);\n+                jit.toBigInt64(scratch, destGPR);\n+            } else\n+                jit.toBigInt64(cellGPR, destGPR);\n+            done.append(jit.jump());\n+\n+            slowPath.link(&jit);\n             jit.prepareWasmCallOperation(GPRInfo::wasmContextInstancePointer);\n             jit.setupArguments<decltype(operationConvertToI64)>(GPRInfo::wasmContextInstancePointer, JSRInfo::returnValueJSR);\n             jit.callOperation<OperationPtrTag>(operationConvertToI64);\n             using ResultType = typename FunctionTraits<decltype(operationConvertToI64)>::ResultType;\n             exceptionChecks.append(jit.branchTestPtr(CCallHelpers::NonZero, CCallHelpers::operationExceptionRegister<ResultType>()));\n-            jit.moveValueRegs(JSRInfo::returnValueJSR, dest);\n+            jit.moveValueRegs(JSRInfo::returnValueJSR, destJSR);\n+            done.link(&jit);\n             break;\n         }\n         case TypeKind::I32: {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
