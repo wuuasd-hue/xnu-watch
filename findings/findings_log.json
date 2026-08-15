@@ -38977,5 +38977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T23:41:07.960689+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1b0566f244ebf72f8cdd87ea3e9de08b768eff8",
+    "url": "https://github.com/WebKit/WebKit/commit/b1b0566f244ebf72f8cdd87ea3e9de08b768eff8",
+    "message": "[JSC] Wasm table.copy should not use index to check identity\nhttps://bugs.webkit.org/show_bug.cgi?id=321316\nrdar://184355393\n\nReviewed by Yijia Huang.\n\nYou can set the same tables in different table index. So you cannot\ncheck the table identity by table index. We should check the actual\ntable's poin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T23:41:45.156656+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "url": "https://github.com/WebKit/WebKit/commit/e07ecf4c4a07c61d5c331dfe900266ee50785cdf",
+    "message": "[JSC][Temporal] Replace the four monthCode search walks with one primitive\nhttps://bugs.webkit.org/show_bug.cgi?id=321313\nrdar://184352721\n\nReviewed by Yusuke Suzuki.\n\nsetCalendarToMonthCode walked the months of a calendar year twice, once for\nHebrew and once for everything else, and resolveMonthCod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
