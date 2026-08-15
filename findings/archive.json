@@ -6641,9 +6641,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -8516,5 +8517,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "3c64729cefbca0dc42bfa07e6f0c301ae663fbbf",
+    "message": "Fix -Wthread-safety-precise and constexpr for clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321848\n\nUnreviewed build fix.\n\nCanonical link: https://commits.webkit.org/319233@main",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmCalleeGroup.cpp ---\n@@ -376,13 +376,14 @@ bool CalleeGroup::installOptimizedCallee(Locker<Lock>& locker, const ModuleInfor\n #endif\n #if ENABLE(WEBASSEMBLY_BBQJIT)\n     if (callee->compilationMode() == CompilationMode::BBQMode) {\n-        Locker bbqLocker { slot->m_bbqCallee.lock() };\n+        auto& bbqCallee = slot->m_bbqCallee;\n+        Locker bbqLocker { bbqCallee.lock() };\n         // A retired BBQCallee may still be here: releaseBBQCallee re-arms IPInt's tier-up counter, so\n         // a function can be compiled to BBQ again before the previous callee is destroyed. Overwriting\n         // that weak reference is fine, it does not own the callee. Overwriting a strong one would drop\n         // the last reference to code that may still be executing.\n-        RELEASE_ASSERT(!slot->m_bbqCallee.isStrong() || !slot->m_bbqCallee.get());\n-        slot->m_bbqCallee = Ref { uncheckedDowncast<BBQCallee>(callee.get()) };\n+        RELEASE_ASSERT(!bbqCallee.isStrong() || !bbqCallee.get());\n+        bbqCallee = Ref { uncheckedDowncast<BBQCallee>(callee.get()) };\n     }\n #endif\n \n\n--- Source/WebCore/platform/LayoutUnit.h ---\n@@ -69,7 +69,7 @@ class LayoutUnit {\n public:\n     constexpr LayoutUnit() : m_value(0) { }\n     LayoutUnit(const LayoutUnit&) = default;\n-    LayoutUnit(int value) { setValue(value); }\n+    constexpr LayoutUnit(int value) { setValue(value); }\n     LayoutUnit(unsigned short value) { setValue(value); }\n     LayoutUnit(unsigned value) { setValue(value); }\n     explicit LayoutUnit(unsigned long value)\n@@ -227,7 +227,7 @@ class LayoutUnit {\n         return ::abs(value) <= std::numeric_limits<int>::max() / kFixedPointDenominator;\n     }\n \n-    inline void setValue(int value)\n+    constexpr void setValue(int value)\n     {\n         if (value > intMaxForLayoutUnit)\n             m_value = std::numeric_limits<int>::max();\n@@ -361,7 +361,7 @@ inline double operator*(const double a, const LayoutUnit& b)\n     return a * b.toDouble();\n }\n \n-inline LayoutUnit operator/(const LayoutUnit& a, const LayoutUnit& b)\n+constexpr LayoutUnit operator/(const LayoutUnit& a, const LayoutUnit& b)\n {\n     long long rawVal = static_cast<long long>(kFixedPointDenominator) * a.rawValue() / b.rawValue();\n     return LayoutUnit::fromRawValue(clampTo<int>(rawVal));\n@@ -377,7 +377,7 @@ inline double operator/(const LayoutUnit& a, double b)\n     return a.toDouble() / b;\n }\n \n-inline LayoutUnit operator/(const LayoutUnit& a, int b)\n+constexpr LayoutUnit operator/(const LayoutUnit& a, int b)\n {\n     return a / LayoutUnit(b);\n }\n\n--- Source/WebCore/platform/graphics/LayoutPoint.h ---\n@@ -39,7 +39,7 @@ namespace WebCore {\n class LayoutPoint {\n public:\n     constexpr LayoutPoint() = default;\n-    template<typename T, typename U> LayoutPoint(T x, U y) : m_x(x), m_y(y) { }\n+    template<typename T, typename U> constexpr LayoutPoint(T x, U y) : m_x(x), m_y(y) { }\n     LayoutPoint(const IntPoint& point) : m_x(point.x()), m_y(point.y()) { }\n     explicit LayoutPoint(const FloatPoint& size)\n         : m_x(size.x()), m_y(size.y()) { }\n@@ -240,4 +240,3 @@ struct LayoutPointLimits {\n };\n \n } // namespace WebCore\n-\n\n--- Source/WebCore/platform/graphics/LayoutRect.h ---\n@@ -50,7 +50,7 @@ class LayoutRect {\n     LayoutRect(const LayoutPoint& location, const LayoutSize& size)\n         : m_location(location), m_size(size) { }\n     template<typename T1, typename T2, typename U1, typename U2>\n-    LayoutRect(T1 x, T2 y, U1 width, U2 height)\n+    constexpr LayoutRect(T1 x, T2 y, U1 width, U2 height)\n         : m_location(LayoutPoint(x, y)), m_size(LayoutSize(width, height)) { }\n     LayoutRect(const LayoutPoint& topLeft, const LayoutPoint& bottomRight)\n         : m_location(topLeft), m_size(LayoutSize(bottomRight.x() - topLeft.x(), bottomRight.y() - topLeft.y())) { }\n@@ -314,4 +314,3 @@ FloatRect encloseRectToDevicePixels(const LayoutRect&, float pixelSnappingFactor\n WEBCORE_EXPORT WTF::TextStream& operator<<(WTF::TextStream&, const LayoutRect&);\n \n } // namespace WebCore\n-\n\n--- Source/WebCore/platform/graphics/LayoutSize.h ---\n@@ -51,7 +51,7 @@ class LayoutSize {\n public:\n     LayoutSize() = default;\n     LayoutSize(const IntSize& size) : m_width(size.width()), m_height(size.height()) { }\n-    template<typename T, typename U> LayoutSize(T width, U height) : m_width(width), m_height(height) { }\n+    template<typename T, typename U> constexpr LayoutSize(T width, U height) : m_width(width), m_height(height) { }\n \n     explicit LayoutSize(const FloatSize& size) : m_width(size.width()), m_height(size.height()) { }\n     \n@@ -215,4 +215,3 @@ struct LayoutSizeLimits {\n };\n \n } // namespace WebCore\n-\n",
+    "url": "https://github.com/WebKit/WebKit/commit/3c64729cefbca0dc42bfa07e6f0c301ae663fbbf",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
