@@ -38937,5 +38937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T23:08:40.571291+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "url": "https://github.com/swiftlang/swift/commit/e5fb381d21f45be6f0eef0fcf43176c2d72b0c56",
+    "message": "Merge pull request #91267 from mikeash/fix-typedecoder-value-generic-validation\n\n[Runtime] Reject more integer/metadata mixups in mangled name lookup.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T23:09:17.321762+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "url": "https://github.com/WebKit/WebKit/commit/c7ed9fcf795770aaef1c237379693dbfc4b205c3",
+    "message": "[JSC] Propagate uint64_t index until we do bound-check for TypedArray\nhttps://bugs.webkit.org/show_bug.cgi?id=321317\nrdar://184355743\n\nReviewed by Yijia Huang.\n\nIt is 32bit only issue. We should propagate uint64_t index until we do\nbound check, after that, we can use size_t. In 64bit, it does not ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
