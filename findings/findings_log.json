@@ -37897,5 +37897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T10:44:46.235404+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ddf3655422ded3195d1f6f598a504cfcb2b1370c",
+    "url": "https://github.com/WebKit/WebKit/commit/ddf3655422ded3195d1f6f598a504cfcb2b1370c",
+    "message": "[YARR] Compile lookbehinds in unicode patterns in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321656\n\nReviewed by Daniel Liu.\n\n319067@main still sent every pattern with a lookbehind and the u or v flag to the interpreter.\n\nTwo things were missing. reverseDisjunctionForBackward() now counts a fix",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T10:45:23.008005+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b00e0c35f823f59fd5ee06f517c2ce1fdf5c465e",
+    "url": "https://github.com/WebKit/WebKit/commit/b00e0c35f823f59fd5ee06f517c2ce1fdf5c465e",
+    "message": "[JSC] Move repatching-only fields out of `HandlerPropertyInlineCache`\nhttps://bugs.webkit.org/show_bug.cgi?id=321765\n\nReviewed by Yusuke Suzuki.\n\nPropertyInlineCache keeps slowPathStartLocation and six GPRReg fields in the base class, so every\nHandlerPropertyInlineCache carries them too. Handler ICs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
