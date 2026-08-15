@@ -38717,5 +38717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T20:44:26.521744+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "url": "https://github.com/WebKit/WebKit/commit/71c68f4b3b35d98548525c85b7d740a8c83613db",
+    "message": "[JSC] Retire Lexer::lexExpectIdentifier()\nhttps://bugs.webkit.org/show_bug.cgi?id=321188\nrdar://184247644\n\nReviewed by Yusuke Suzuki.\n\nLexer::lexExpectIdentifier() is intended as the fast path for quickly parsing an\nidentifier. It was introduced a long time ago. In the meantime, the baseline\nLexer::",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T20:45:03.503329+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bbab514b1010b4a0eddd2ed5c479747a0511108d",
+    "url": "https://github.com/WebKit/WebKit/commit/bbab514b1010b4a0eddd2ed5c479747a0511108d",
+    "message": "[JSC] LazyJSValue::emit leaks a StringImpl reference when finalization is skipped\nhttps://bugs.webkit.org/show_bug.cgi?id=321221\nrdar://184272837\n\nReviewed by Yusuke Suzuki.\n\nemit() manually refs a NewStringImpl's StringImpl and relies on the main-thread\nfinalization task to deref it, but several pa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
