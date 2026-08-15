@@ -38257,5 +38257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T15:41:24.834709+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "url": "https://github.com/WebKit/WebKit/commit/87399235b55a2f1bc93cdd06c68bc72d5642f9a7",
+    "message": "Web Inspector: Canvas: support highlighting WebGPU render pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320701\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUTexture.h:\n(WebCore::GPUTexture::create):\n(WebCore::GPUTexture::isCanvasBacking const): Added.\n(WebCore::GPUTexture::G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T15:42:01.891658+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "url": "https://github.com/WebKit/WebKit/commit/9fcacd82ac42795b0edd38dcf02eacf8a5027b4f",
+    "message": "Implement JIT Cage Relaxation\nhttps://bugs.webkit.org/show_bug.cgi?id=320667\nrdar://183644612\n\nReviewed by Yusuke Suzuki.\n\nAs-is, the instrumentation afforded by the JIT Cage feature is disabled\nby default on some platforms due to the overhead that comes with the\nfull instrumentation. This patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
