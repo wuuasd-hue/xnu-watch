@@ -38097,5 +38097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T13:48:30.552767+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b48f01b7f1b125646d7b77e3ddcc3fe7943462cb",
+    "url": "https://github.com/WebKit/WebKit/commit/b48f01b7f1b125646d7b77e3ddcc3fe7943462cb",
+    "message": "[JSC][Temporal] Fix constructor newTarget.prototype ordering and unify CreateTemporalX helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=321041\nrdar://184072358\n\nReviewed by Yusuke Suzuki.\n\nEvery CreateTemporalX AO validates its slots before OrdinaryCreateFromConstructor,\nwhose Get(NewTarget, \"prototy",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T13:49:08.297951+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd024f84dbb3e26a34b2ecf4d71e34d56b50107",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd024f84dbb3e26a34b2ecf4d71e34d56b50107",
+    "message": "Web Inspector: Canvas: support editing WebGPU shaders\nhttps://bugs.webkit.org/show_bug.cgi?id=320699\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/agents/InspectorCanvasAgent.h:\n* Source/WebCore/inspector/agents/InspectorCanvasAgen",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
