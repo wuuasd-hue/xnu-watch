@@ -37297,5 +37297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T03:27:21.898748+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0270fd0a8d77d6e96aa6bfed787cc0ce199e4287",
+    "url": "https://github.com/WebKit/WebKit/commit/0270fd0a8d77d6e96aa6bfed787cc0ce199e4287",
+    "message": "[JSC] Make the first corrective subtract in JSBigInt Crandall reduction branch-free\nhttps://bugs.webkit.org/show_bug.cgi?id=320860\nrdar://183888656\n\nReviewed by Yijia Huang.\n\nCrandall reduction does correction loop at the end. Typically it runs\nfactor q times. But it turned out that this is really c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T03:28:00.607517+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "url": "https://github.com/WebKit/WebKit/commit/2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "message": "[JSC] `Function#bind` strength reduction in DFG should accept method structures\nhttps://bugs.webkit.org/show_bug.cgi?id=320959\n\nReviewed by Yusuke Suzuki.\n\n296674@main split JSFunction structures for functions without a \"prototype\" property\n(class methods, object-literal shorthand methods, accessors",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
