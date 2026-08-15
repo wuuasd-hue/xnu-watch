@@ -37937,5 +37937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T11:08:00.641665+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a73e86f9a37f81647b8ebd3eab3482e3e7b038ae",
+    "url": "https://github.com/WebKit/WebKit/commit/a73e86f9a37f81647b8ebd3eab3482e3e7b038ae",
+    "message": "[JSC] Do not eagerly create `Set.prototype`, `WeakRef`, and `FinalizationRegistry` in `JSGlobalObject::init()`\nhttps://bugs.webkit.org/show_bug.cgi?id=321649\n\nReviewed by Yusuke Suzuki.\n\nJSGlobalObject::init() materializes a few builtins for every global object\neven when they are never used:\n\n1. Set",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T11:08:37.357172+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ddf3655422ded3195d1f6f598a504cfcb2b1370c",
+    "url": "https://github.com/WebKit/WebKit/commit/ddf3655422ded3195d1f6f598a504cfcb2b1370c",
+    "message": "[YARR] Compile lookbehinds in unicode patterns in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321656\n\nReviewed by Daniel Liu.\n\n319067@main still sent every pattern with a lookbehind and the u or v flag to the interpreter.\n\nTwo things were missing. reverseDisjunctionForBackward() now counts a fix",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
