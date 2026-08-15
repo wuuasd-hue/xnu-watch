@@ -37257,5 +37257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T02:41:43.912124+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "url": "https://github.com/WebKit/WebKit/commit/84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "message": "[JSC] Remove various scratch registers as branchIfNumber etc. no longer need to take a scratch for 64bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320861\nrdar://183890729\n\nReviewed by Sosuke Suzuki.\n\nWe had unnecessary scratch registers on 64bit because 32bit\nbranchIfNotNumber etc. requires a scratch ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T02:42:21.576177+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8aa3307b46af61b6f3f3dc7ee15df203f4146fe1",
+    "url": "https://github.com/WebKit/WebKit/commit/8aa3307b46af61b6f3f3dc7ee15df203f4146fe1",
+    "message": "[JSC] Move two rarely-executed code paths out of the lexer and parser hot functions\nhttps://bugs.webkit.org/show_bug.cgi?id=320930\nrdar://183964804\n\nReviewed by Yusuke Suzuki.\n\nThis patch moves seldom executed code out of two hot functions in Lexer and Parser,\nreducing the containing functions' regi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
