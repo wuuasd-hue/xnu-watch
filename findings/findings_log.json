@@ -37437,5 +37437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T05:13:43.073092+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "url": "https://github.com/WebKit/WebKit/commit/ca730ef8b0fedfc8abb24dfef9f49a55e6bbaa85",
+    "message": "[JSC][Wasm] Fast-path i64 BigInt on Wasm-to-JS import returns\nhttps://bugs.webkit.org/show_bug.cgi?id=220053\n\nReviewed by Yusuke Suzuki.\n\nWasm-to-JS import stubs always called operationConvertToI64 for an i64\nresult. If the JS value is already a HeapBigInt, convert it in the stub\nthe same way JS-to-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T05:14:21.264338+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "url": "https://github.com/WebKit/WebKit/commit/37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "message": "[YARR] Let `\\A` and `\\z` use the anchoring optimizations of non-multiline `^` and `$`\nhttps://bugs.webkit.org/show_bug.cgi?id=320873\n\nReviewed by Yusuke Suzuki.\n\n\\A and \\z were compiled into their own assertion terms without participating in the\nBOL/EOL anchoring machinery, so a failing /\\Afoo/u or ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
