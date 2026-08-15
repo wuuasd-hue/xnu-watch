@@ -38677,5 +38677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T20:08:15.285813+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "399973c04a04c5fbd4519c6b51f28a54b1acf59a",
+    "url": "https://github.com/WebKit/WebKit/commit/399973c04a04c5fbd4519c6b51f28a54b1acf59a",
+    "message": "[JSC][Temporal] Implement ISODateToFields and CalendarMergeFields as the spec's own operations\nhttps://bugs.webkit.org/show_bug.cgi?id=321189\nrdar://184247766\n\nReviewed by Yusuke Suzuki.\n\nAdd isoDateToFields and calendarMergeFields, plus the CalendarFieldKeysPresent,\nCalendarFieldKeysToIgnore and No",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T20:08:53.622685+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2c2c1af3574308929fecb71bc1897b8f6b04dc2e",
+    "url": "https://github.com/WebKit/WebKit/commit/2c2c1af3574308929fecb71bc1897b8f6b04dc2e",
+    "message": "[JSC] Overhaul ArrayBuffer & Wasm::Memory sizing with memory64\nhttps://bugs.webkit.org/show_bug.cgi?id=321182\nrdar://184241045\n\nReviewed by Yijia Huang.\n\nCurrently memory64 crashes when growing a shared buffer more than 4GB.\nWe have an inconsistency in our current implementation in terms of\nsize. Ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
