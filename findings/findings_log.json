@@ -38437,5 +38437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T17:41:58.045276+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6380373fc6a1a7651f2c4ce9159ee05093810394",
+    "url": "https://github.com/WebKit/WebKit/commit/6380373fc6a1a7651f2c4ce9159ee05093810394",
+    "message": "[JSC] Use counting sort for `Array#sort`\nhttps://bugs.webkit.org/show_bug.cgi?id=317103\n\nReviewed by Yusuke Suzuki.\n\nSorting an array of strings without a comparator is common, e.g. `Object.keys(obj).sort()`.\nThe current implementation partitions entries into a StdMap<char16_t, Vector> per character",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T17:42:35.130225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11a216a7fd0399dd9d93fca02a356f354ccabc2e",
+    "url": "https://github.com/WebKit/WebKit/commit/11a216a7fd0399dd9d93fca02a356f354ccabc2e",
+    "message": "[Site Isolation] Some website policies applied to main frame navigations don't apply to cross site iframes\nrdar://184091553\nhttps://bugs.webkit.org/show_bug.cgi?id=321060\n\nReviewed by Matthew Finkel.\n\nWebKit API clients can apply various website policies on a per navigation basis.\nThese policies are",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
