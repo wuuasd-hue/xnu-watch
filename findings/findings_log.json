@@ -37757,5 +37757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T09:46:00.170160+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "102fd6db184d0c8caabe935080062ba4504144b8",
+    "url": "https://github.com/WebKit/WebKit/commit/102fd6db184d0c8caabe935080062ba4504144b8",
+    "message": "[JSC] OMG needs to mark memory traps with memory index\nhttps://bugs.webkit.org/show_bug.cgi?id=321034\nrdar://184067419\n\nReviewed by Justin Michaud.\n\nFix memoryKind's trap condition: under multi-memory environment, only\nmemory-0 is using trapping and the other ones are using bound-checking.\nWe should",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T09:46:38.594426+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0cc69e2993f4dc953765fd64593ae2579752132f",
+    "url": "https://github.com/WebKit/WebKit/commit/0cc69e2993f4dc953765fd64593ae2579752132f",
+    "message": "[JSC] BBQ materializePointer should take uint64_t offset\nhttps://bugs.webkit.org/show_bug.cgi?id=321043\nrdar://184072653\n\nReviewed by Keith Miller.\n\nFor 64bit address, we first do bound-check and after that, we\nmaterialize a pointer. Currently since we are not supporting memory size\nmore than 4GB, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
