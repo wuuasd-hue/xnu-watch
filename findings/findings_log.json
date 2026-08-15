@@ -38137,5 +38137,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T14:09:45.330669+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "2698c7698786af4d01ec6ab920be248c2456e4fb",
+    "url": "https://github.com/swiftlang/swift/commit/2698c7698786af4d01ec6ab920be248c2456e4fb",
+    "message": "Merge pull request #91202 from compnerd/com-runtime-existential-metadata\n\nRuntime,RemoteInspection: add COM existential metadata and value witness",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T14:10:22.072338+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76f57a9311b1aa0b75f75c697030546f58185347",
+    "url": "https://github.com/WebKit/WebKit/commit/76f57a9311b1aa0b75f75c697030546f58185347",
+    "message": "[JSC] Include ARM64E in the LLInt prologue frame zeroing\nhttps://bugs.webkit.org/show_bug.cgi?id=321070\nrdar://184102859\n\nReviewed by Yijia Huang.\n\nLLInt ARM64E needs to be enabled specifically.\n\n* Source/JavaScriptCore/llint/LowLevelInterpreter.asm:\n\nCanonical link: https://commits.webkit.org/31864",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
