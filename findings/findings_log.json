@@ -37177,5 +37177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T00:27:26.359387+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bff3814d76f74308c64bd502b0630afa08c8d59b",
+    "url": "https://github.com/WebKit/WebKit/commit/bff3814d76f74308c64bd502b0630afa08c8d59b",
+    "message": "[JSC][Linux] Don't re-read /proc/self/maps when handling checkpoint OSR side state\nhttps://bugs.webkit.org/show_bug.cgi?id=320559\n\nReviewed by Yusuke Suzuki and Justin Michaud.\n\nVM::pushCheckpointOSRSideState() has an ASSERT_ENABLED block that checks\nthat the side state stack remains ordered. To do ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T00:28:05.693909+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89c1884e15a927c5dd681311418d44b66cf8012e",
+    "url": "https://github.com/WebKit/WebKit/commit/89c1884e15a927c5dd681311418d44b66cf8012e",
+    "message": "[JSC][Temporal] Guard PlainDate construction against out-of-range years; consolidate CalendarResolveFields\nhttps://bugs.webkit.org/show_bug.cgi?id=320927\nrdar://183960408\n\nReviewed by Yusuke Suzuki.\n\nPlainDate's constructor now sanitizes `year` itself instead of asserting and\ntrusting every caller t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
