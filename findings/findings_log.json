@@ -38897,5 +38897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T22:43:53.563152+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "url": "https://github.com/WebKit/WebKit/commit/c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "message": "[Navigation API] navigation-back-cross-document-preventDefault.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=300006\nrdar://161203519\n\nReviewed by Basuke Suzuki.\n\nThe very last assert in this test is failing: assert_true(navigate_called);\n\nFor a cross-document traversal of the top-level fra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T22:44:30.928859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "url": "https://github.com/WebKit/WebKit/commit/039dce84d4e0eda9e1e6b3a58964d50731e8e581",
+    "message": "Unreviewed, fix weird formatting\nhttps://bugs.webkit.org/show_bug.cgi?id=321321\nrdar://184361372\n\n* Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp:\n(JSC::CheckPrivateBrandStatus::computeForBaseline):\n(JSC::CheckPrivateBrandStatus::computeFor):\n* Source/JavaScriptCore/bytecode/CheckPrivat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
