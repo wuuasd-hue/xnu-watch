@@ -38797,5 +38797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T21:40:55.286594+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7417386b7da17bdb83f5c8f90aafb25234967e66",
+    "url": "https://github.com/WebKit/WebKit/commit/7417386b7da17bdb83f5c8f90aafb25234967e66",
+    "message": "[JSC] Align Iterator#join to the latest spec\nhttps://bugs.webkit.org/show_bug.cgi?id=321270\nrdar://184321382\n\nReviewed by Yijia Huang.\n\nAlign Iterator#join implementation more to the spec.\n\n1. even if undefined/null element exists, we still need to append a\n   separator. This fixes a test262 failure",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T21:41:32.036668+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "547e1555ce4d3fc9a0b016c2cc6cd84c29fe03ce",
+    "url": "https://github.com/WebKit/WebKit/commit/547e1555ce4d3fc9a0b016c2cc6cd84c29fe03ce",
+    "message": "[JSC] Align Iterator#chunk / Iterator#windows to the latest spec\nhttps://bugs.webkit.org/show_bug.cgi?id=321272\nrdar://184321801\n\nReviewed by Yijia Huang.\n\nIterator#chunk / Iterator#windows handles input chunk-size / window-size\ndifferently. This patch fixes them to align them to the latest spec.\n\n*",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
