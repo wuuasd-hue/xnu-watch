@@ -38757,5 +38757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T21:09:33.889413+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "35cfc0baa7e78315ea8453fd3239765ab652968f",
+    "url": "https://github.com/WebKit/WebKit/commit/35cfc0baa7e78315ea8453fd3239765ab652968f",
+    "message": "Plug-in byte-range requests are blocked by connect-src instead of being governed by object-src\nhttps://bugs.webkit.org/show_bug.cgi?id=321145\nrdar://184258237\n\nReviewed by Ryan Reno.\n\nNetscapePlugInStreamLoader left ResourceLoaderOptions::destination at its default value of the empty\nstring, so the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-15T21:10:10.714393+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af624adbb3bc34102a4e7f99703c9d1350e8fc66",
+    "url": "https://github.com/WebKit/WebKit/commit/af624adbb3bc34102a4e7f99703c9d1350e8fc66",
+    "message": "Web Inspector: Canvas: distinguish configured WebGPU `<canvas>` from CSS canvas client nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=321150\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/InspectorCanvas.h:\n* Source/WebCore/inspector",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
