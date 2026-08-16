@@ -40257,5 +40257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T19:11:34.785047+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a10860dc35cd5fd9f388244773c119a687b6313",
+    "url": "https://github.com/WebKit/WebKit/commit/4a10860dc35cd5fd9f388244773c119a687b6313",
+    "message": "[JSC] Make Air Liveness computation faster\nhttps://bugs.webkit.org/show_bug.cgi?id=321628\nrdar://184756552\n\nReviewed by Yijia Huang.\n\nThis patch makes Air Liveness computation faster via two changes.\n\n1. Tighten WTF::Liveness\n\nLet's avoid iterating blocks unnecessarily. We do not need to have\nbounda",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T19:12:13.183216+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "url": "https://github.com/WebKit/WebKit/commit/84ea03ded8bb54fd046a1f5c2b2379f308a3f5af",
+    "message": "about:blank inherits cross-origin policy container due to empty document URL\nhttps://bugs.webkit.org/show_bug.cgi?id=316512\nrdar://176188073\n\nReviewed by Alex Christensen.\n\nDocuments created via javascript: URL have an empty internal URL. Document::setURL() would\nnormally normalize this to aboutBlan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
