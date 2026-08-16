@@ -39817,5 +39817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T13:49:49.542618+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "url": "https://github.com/WebKit/WebKit/commit/af6d6f483e633128594fb7ceb35f5e46169aba03",
+    "message": "[JSC] Address -Wunused-template warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=321339\nrdar://184187975\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nAddress -Wunused-template warnings in JSC. Mostly this is removing dead code or\nmoving templates in headers from internal to external linkage.\n\nNo te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T13:50:26.505810+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6c491404f2de22f0215652f915ff852bef51043",
+    "url": "https://github.com/WebKit/WebKit/commit/f6c491404f2de22f0215652f915ff852bef51043",
+    "message": "[JSC][Temporal] Adopt three audit tests and remove a dead ICU epoch probe\nhttps://bugs.webkit.org/show_bug.cgi?id=321521\nrdar://184631238\n\nReviewed by Yusuke Suzuki.\n\nlunarCalendarExtendedYearFor1972 has no callers. constrainMonthCodeInternal now reads the year\nfield positionCalendarToYearStart writ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
