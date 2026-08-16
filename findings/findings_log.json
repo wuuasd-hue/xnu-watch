@@ -39017,5 +39017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T00:27:35.489927+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e8a96a8c5857b071f073feea215c90803f22520",
+    "url": "https://github.com/WebKit/WebKit/commit/2e8a96a8c5857b071f073feea215c90803f22520",
+    "message": "[JSC] Fix Wasm memory64 memarg offset parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321328\nrdar://184364662\n\nReviewed by Yijia Huang.\n\nRegardless of memory64 / memory32, memarg offset is u64. This patch\nfixes that by introducing `parseMemoryOffset`. We decode VarUInt64, and\nthen do range check for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T00:28:12.594427+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "url": "https://github.com/WebKit/WebKit/commit/b1bfab65c61e36f4daccb86aee42f7ff31e45dc6",
+    "message": "Unreviewed, use WASM_FAIL_IF_HELPER_FAILS\nhttps://bugs.webkit.org/show_bug.cgi?id=321348\nrdar://184382576\n\n* JSTests/wasm/stress/const-expr-i32-wrap.js:\n(assert.eq):\n* JSTests/wasm/stress/data-segment-offset-2gb.js:\n* JSTests/wasm/stress/exception-trace-stack.js:\n* JSTests/wasm/stress/instance-ancho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
