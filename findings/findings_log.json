@@ -39057,5 +39057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T02:03:29.905748+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa8167a2feb9a49f5380353389324102f2a63462",
+    "url": "https://github.com/WebKit/WebKit/commit/aa8167a2feb9a49f5380353389324102f2a63462",
+    "message": "[JSC] Table64 size should be checked when creating / growing, not parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321338\nrdar://184367247\n\nReviewed by Yijia Huang.\n\nClamping the table size at parsing time will cause incorrect table size\nreporting. The correct behavior is (1) parsing should accept, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T02:04:07.690953+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "url": "https://github.com/WebKit/WebKit/commit/3e351c7849f30e38846e49f2ed1c5e94d9a59d29",
+    "message": "[JSC] SerializedScriptValue is not carrying memory64 flag\nhttps://bugs.webkit.org/show_bug.cgi?id=321332\nrdar://184365775\n\nReviewed by Yijia Huang.\n\nMemory64 Wasm Memory was not correctly propagating memory64 flag. And\nSerializedScriptValue is incorrectly accessing addressType() of non\nattached memo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
