@@ -39657,5 +39657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T11:09:09.920661+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "edd953757f9fb56212a3fd02b16b79a1e8f51d8d",
+    "url": "https://github.com/WebKit/WebKit/commit/edd953757f9fb56212a3fd02b16b79a1e8f51d8d",
+    "message": "[JSC] Shrink `StructureRareData` back to 96 bytes\nhttps://bugs.webkit.org/show_bug.cgi?id=321423\n\nReviewed by Keith Miller.\n\n317978@main appended a 2-bit TriState bit-field to StructureRareData, whose\nmembers already filled exactly 96 bytes. The new field spilled into byte 97,\nso sizeof(StructureRar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T11:09:47.108210+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "642d9211add2a4e20dbe7be9a2012d0de1916b2c",
+    "url": "https://github.com/WebKit/WebKit/commit/642d9211add2a4e20dbe7be9a2012d0de1916b2c",
+    "message": "[JSC][Temporal] Give the ICU paths an error channel instead of plausible values\nhttps://bugs.webkit.org/show_bug.cgi?id=321477\nrdar://184567556\n\nReviewed by Yusuke Suzuki.\n\nSites across the calendar and time zone bridges folded an ICU failure into a\nlegitimate-looking answer. No test: none of it is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
