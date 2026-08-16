@@ -39217,5 +39217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T05:16:52.013329+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "url": "https://github.com/WebKit/WebKit/commit/6a1ef9a1ef991163b6a0dc04f85891624ec3af7d",
+    "message": "[YARR] Interpreter should skip every once-through alternative after advancing the start position\nhttps://bugs.webkit.org/show_bug.cgi?id=321253\n\nReviewed by Yusuke Suzuki.\n\noptimizeBOL() marks the body alternatives as once-through and appends copies of\nthe non-`^` ones as the looping set, so once-th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T05:17:28.773465+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d02c68d04f969b9c0cb8103abf7c80c860fb2181",
+    "url": "https://github.com/WebKit/WebKit/commit/d02c68d04f969b9c0cb8103abf7c80c860fb2181",
+    "message": "[JSC] Fix memory related wasm parsing\nhttps://bugs.webkit.org/show_bug.cgi?id=321366\nrdar://184418597\n\nReviewed by Sosuke Suzuki.\n\nThis patch fixes wasm memory related operations.\n\n1. Remove parseMemoryIndexForBulkOp and just use parseMemoryIndex. The\n   spec test is already fixed, so we no longer n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
