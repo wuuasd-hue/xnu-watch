@@ -39377,5 +39377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T07:50:58.053052+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "url": "https://github.com/WebKit/WebKit/commit/66f7ee58d73d45e83b16c4b4022bfaef5a5711bb",
+    "message": "Use `inline constexpr` instead of `constexpr inline` in JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=321379\nrdar://184429352\n\nReviewed by Keith Miller.\n\ninline constexpr is the more common order in JSC (113 to 45).\nThis purely improves consistency and doesn't introduce any behavioral chang",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T07:51:34.743408+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "283a44eb95ccc7d9d219dad06f9f028cc2083fa8",
+    "url": "https://github.com/WebKit/WebKit/commit/283a44eb95ccc7d9d219dad06f9f028cc2083fa8",
+    "message": "Update CMAKE files for Cmake 4\nhttps://bugs.webkit.org/show_bug.cgi?id=321292\n\nReviewed by Fujii Hironori.\n\nCMP0048 old behaviour is dropped in cmake 4; Drive-by fixes for\nmake_directory too.\n\nCanonical link: https://commits.webkit.org/318903@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
