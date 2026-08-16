@@ -40497,5 +40497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T22:06:01.656200+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "url": "https://github.com/WebKit/WebKit/commit/4af3bbad9cda43c2c6a6580bc45f493fd010c161",
+    "message": "[JSC] Avoid unnecessary work in JIT code generation loop\nhttps://bugs.webkit.org/show_bug.cgi?id=321655\nrdar://184783026\n\nReviewed by Justin Michaud.\n\nThis patch removes unnecessary work done in JIT code generation main\nloop in Air, BBQ, and Baseline JIT.\n\n1. Disassembler's label creation\n\nCreating ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T22:06:39.687392+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "url": "https://github.com/swiftlang/swift/commit/f65ad9614e14d8eb4ef1440b86ad2cb36e09bf3a",
+    "message": "Merge pull request #91451 from swiftlang/eng/PR-184046378\n\n[Backtracing][Linux] Remove unused `memserver_pid` variable.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
