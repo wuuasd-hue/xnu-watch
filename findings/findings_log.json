@@ -40577,5 +40577,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T23:07:48.200641+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "62692012c98a7e0fe29e6f44d5b059c7f5ff66f9",
+    "url": "https://github.com/WebKit/WebKit/commit/62692012c98a7e0fe29e6f44d5b059c7f5ff66f9",
+    "message": "[JSC] Rename HeapFinalizerCallback to GCCompletionCallback\nhttps://bugs.webkit.org/show_bug.cgi?id=321690\nrdar://184834345\n\nReviewed by Vassili Bykov.\n\nThis is a once-per-GC embedder callback, not a finalizer: it is passed no object\nand runs at the end of every collection. It is the internal half of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T23:08:25.330943+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5602ec36107bd2d82e39b5f071f932c1241f6ac1",
+    "url": "https://github.com/WebKit/WebKit/commit/5602ec36107bd2d82e39b5f071f932c1241f6ac1",
+    "message": "[JSC] Rename the visitWeak family to reconcileWeakReferencesAtGCEnd\nhttps://bugs.webkit.org/show_bug.cgi?id=321714\nrdar://184853952\n\nReviewed by Vassili Bykov.\n\nFollow-on to the reconcileWeakReferencesAtGCEnd rename; these are the leaves of the same\npass. \"visitWeak\" was doubly misleading. Usually i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
