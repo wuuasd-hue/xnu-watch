@@ -40617,5 +40617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T23:40:16.558287+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3d37c6da40ba652c58d5a6336ba61cc86ada9ba8",
+    "url": "https://github.com/WebKit/WebKit/commit/3d37c6da40ba652c58d5a6336ba61cc86ada9ba8",
+    "message": "[JSC] Rename Status/Variant finalize predicates to isStillLive\nhttps://bugs.webkit.org/show_bug.cgi?id=321710\nrdar://184852271\n\nReviewed by Yijia Huang.\n\nThese don't finalize anything. They check whether the cells a status or variant refers\nto are still marked and return a bool; the caller does the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T23:40:54.420904+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff58822738d05b2f630cd50a422db2279bb4d432",
+    "url": "https://github.com/WebKit/WebKit/commit/ff58822738d05b2f630cd50a422db2279bb4d432",
+    "message": "[iOS 27] Update SDKDB baseline\nhttps://bugs.webkit.org/show_bug.cgi?id=321638\nrdar://184765013\n\nReviewed by Ryan Haddad.\n\n* Configurations/CommonBase.xcconfig: Bring back the override to disable\n  auditing on older internal builds of iOS. Internally, we keep older\n  SDKDB baselines around, so we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
