@@ -40417,5 +40417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T21:08:12.537650+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1375d28c26b39005f5ddbfa23087a59e120c1673",
+    "url": "https://github.com/WebKit/WebKit/commit/1375d28c26b39005f5ddbfa23087a59e120c1673",
+    "message": "[JSC][Temporal] Give CalendarMonthDayToISOReferenceDate and NonISOMonthDayToISOReferenceDate their own functions\nhttps://bugs.webkit.org/show_bug.cgi?id=321661\nrdar://184788558\n\nReviewed by Yusuke Suzuki.\n\nmonthDayFromFields was one function with hand-written ISO and non-ISO branches, each re-derivi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T21:08:49.630434+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "87405926351bfc6f3a49d2c0eb8ba9828105511f",
+    "url": "https://github.com/swiftlang/swift/commit/87405926351bfc6f3a49d2c0eb8ba9828105511f",
+    "message": "Merge pull request #91313 from mikeash/fix-dynamiccast-metatype-class-existential\n\n[Runtime] Don't satisfy a Swift-protocol class existential with a class metatype.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
