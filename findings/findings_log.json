@@ -39337,5 +39337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T07:06:29.617159+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "url": "https://github.com/WebKit/WebKit/commit/11615f86705a3ca40514087f48cac4c05a3abb0a",
+    "message": "[JSC][Temporal] Decide duration rounding on exact integers, not doubles\nhttps://bugs.webkit.org/show_bug.cgi?id=321407\nrdar://184472920\n\nReviewed by Sosuke Suzuki.\n\nThree rounding paths decided on a double that had already lost the distinction the\ndecision rests on.\n\n    until(\"2000-02-29T00:01\", mo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T07:07:07.011169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2233ac176432e7d890d5d7aef59e1e34b111e24",
+    "url": "https://github.com/WebKit/WebKit/commit/b2233ac176432e7d890d5d7aef59e1e34b111e24",
+    "message": "[JSC][Temporal] Fix undefined behavior, a loose bound, and remove dead code\nhttps://bugs.webkit.org/show_bug.cgi?id=321415\nrdar://184484038\n\nReviewed by Sosuke Suzuki.\n\nNudgeResult and Nudged left members uninitialized, and roundRelativeDuration\ndefault-constructs a NudgeResult before the branch tha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
