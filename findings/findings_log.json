@@ -39737,5 +39737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T12:12:02.243937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47f20d8cfd63af0e383c7094c03189100d3253f7",
+    "url": "https://github.com/WebKit/WebKit/commit/47f20d8cfd63af0e383c7094c03189100d3253f7",
+    "message": "[Wasm] `call_indirect` in unreachable code should validate the table element type and the signature kind\nhttps://bugs.webkit.org/show_bug.cgi?id=321416\n\nReviewed by Yusuke Suzuki.\n\nparseUnreachableExpression's CallIndirect case checked table existence and\nthe bounds of both immediates, but not that ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T12:12:38.968787+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b3637884b68bfd82fc35fa2f59647d0f717d13a",
+    "url": "https://github.com/WebKit/WebKit/commit/9b3637884b68bfd82fc35fa2f59647d0f717d13a",
+    "message": "[JSC][Wasm] Treat missing Global value setter argument as undefined\nhttps://bugs.webkit.org/show_bug.cgi?id=321493\n\nReviewed by Keith Miller.\n\nWebAssembly.Global.prototype.value's setter threw NotEnoughArguments\nwhen invoked with no argument. The JS API and the WPT treat a missing\nargument as undefi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
