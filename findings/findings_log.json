@@ -40017,5 +40017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T16:09:10.226421+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "url": "https://github.com/WebKit/WebKit/commit/6589b2e5c18c0a0d4180c0e77ad2fb46f4be0d46",
+    "message": "[JSC] Tighten WasmGC allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=321522\nrdar://184632964\n\nReviewed by Yijia Huang.\n\nThis patch tightens WasmGC allocations.\n\n1. While allocator is not a constant in WasmGC struct allocations (it is\n   coming from JSWebAssemblyInstance field), size is constant w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T16:09:47.252626+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4df93500a72428a2220aa1282f4801dced50471",
+    "url": "https://github.com/WebKit/WebKit/commit/a4df93500a72428a2220aa1282f4801dced50471",
+    "message": "[JSC] `Array#join` on Int32 arrays should use `JSOnlyStringsAndInt32sJoiner` for any separator\nhttps://bugs.webkit.org/show_bug.cgi?id=321228\n\nReviewed by Yusuke Suzuki.\n\n295918@main taught JSOnlyStringsAndInt32sJoiner to write Int32 elements\ndirectly into the result buffer, but fastArrayJoin's ALL_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
