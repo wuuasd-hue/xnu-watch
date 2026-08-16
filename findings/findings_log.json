@@ -39297,5 +39297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T06:17:12.226293+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "url": "https://github.com/WebKit/WebKit/commit/bbc000ae4f3ddb38ec1598977b06aad6236d9ac1",
+    "message": "[YARR] Read raw code units for surrogate-free BMP character classes in unicode mode\nhttps://bugs.webkit.org/show_bug.cgi?id=320903\n\nReviewed by Yusuke Suzuki.\n\nWith the /u and /v flags, YARR JIT decodes surrogate pairs for every character read.\nFor a non-inverted character class holding only non-sur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T06:17:48.994892+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "url": "https://github.com/WebKit/WebKit/commit/b3e77266e1a40adceea14377fbe897dbd09f0020",
+    "message": "[RISC-V] Fix build errors\nhttps://bugs.webkit.org/show_bug.cgi?id=321326\n\nReviewed by Yusuke Suzuki.\n\nQuick fixes for some bitrot.\n\nCanonical link: https://commits.webkit.org/318902@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
