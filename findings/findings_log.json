@@ -39177,5 +39177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T04:55:57.944863+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "url": "https://github.com/swiftlang/swift/commit/c0d83e8a380d28efc31266e3df02957cb9e792a0",
+    "message": "Merge pull request #91332 from mikeash/lazy-link-upward-deps\n\n[Build] Add SWIFT_STDLIB_ENABLE_LAZY_LINK for upward-linked symbols.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T04:56:34.714040+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "url": "https://github.com/WebKit/WebKit/commit/7b5e7da783f58bd8ee2321ff0a399617f0d2acc8",
+    "message": "[YARR] `\\P{...}` on the right side of a v-mode `&&` or `--` becomes a union\nhttps://bugs.webkit.org/show_bug.cgi?id=321252\n\nReviewed by Yusuke Suzuki.\n\nappendInverted() adds the complement of its operand directly to the accumulated\nmatches and ranges without consulting m_setOp, so a pending && or --",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
