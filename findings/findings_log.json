@@ -39497,5 +39497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T09:14:42.381204+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c0625bcafb6cc6cf5774ecbeb47ca330fe4f0cf6",
+    "url": "https://github.com/WebKit/WebKit/commit/c0625bcafb6cc6cf5774ecbeb47ca330fe4f0cf6",
+    "message": "Error.isError() should return true for DOMException\nhttps://bugs.webkit.org/show_bug.cgi?id=321064\n<rdar://problem/183139377>\n\nReviewed by Yusuke Suzuki.\n\nPer the \"is-error\" proposal and WebIDL PR #1421, DOMException has the\n[[ErrorData]] internal slot, so Error.isError(new DOMException()) must\nretu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T09:15:20.549073+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a704bb74f1ebf85b886913aadb3675581180df7",
+    "url": "https://github.com/WebKit/WebKit/commit/0a704bb74f1ebf85b886913aadb3675581180df7",
+    "message": "[JSC][Wasm] Align IPInt loop OSR stack check with BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=303686\n\nReviewed by Yusuke Suzuki.\n\nBBQ's loop OSR entry rejects a stack pointer at or below the soft limit, and\ncrashes rather than falling back because the IPInt stack is gone by then. The\nslow path compa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
