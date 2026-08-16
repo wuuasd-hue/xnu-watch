@@ -39977,5 +39977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T15:42:12.864662+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "69b336c0ac0539338e0d764beba3da19bc58af3c",
+    "url": "https://github.com/WebKit/WebKit/commit/69b336c0ac0539338e0d764beba3da19bc58af3c",
+    "message": "[JSC] `SourceProviderCacheItem::create` over-allocates the trailing `PackedPtr` array\nhttps://bugs.webkit.org/show_bug.cgi?id=321488\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCacheItem stores its used-variable names in a trailing\nPackedPtr<UniquedStringImpl> array, whose element is 6 bytes on 64-bi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T15:42:50.264532+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "url": "https://github.com/WebKit/WebKit/commit/8d33a8ff591daa32c3d2f441d3cfd82197f296c1",
+    "message": "[JSC] Move `m_parentScopeTDZVariables` into `UnlinkedFunctionExecutable` itself\nhttps://bugs.webkit.org/show_bug.cgi?id=321497\n\nReviewed by Yusuke Suzuki.\n\n210869@main moved m_parentScopeTDZVariables into UnlinkedFunctionExecutable::RareData\nbecause it was non-empty for only ~1% of executables at th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
