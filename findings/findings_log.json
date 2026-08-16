@@ -39617,5 +39617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T10:45:01.885359+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4687d7ecfefad54c517d4af8e238e556ff4eefb3",
+    "url": "https://github.com/WebKit/WebKit/commit/4687d7ecfefad54c517d4af8e238e556ff4eefb3",
+    "message": "[JSC][Wasm] Elide BBQ null checks on non-nullable refs\nhttps://bugs.webkit.org/show_bug.cgi?id=321439\nReviewed by Yusuke Suzuki.\n\nOMG already skips the null check when the reference type is\nnon-nullable. BBQ still always emitted it for ref.as_non_null,\ncall_ref, and throw_ref because those emitters ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T10:45:39.736579+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dc35ebdb9bf4758406098b665ee7974f1b28cb76",
+    "url": "https://github.com/WebKit/WebKit/commit/dc35ebdb9bf4758406098b665ee7974f1b28cb76",
+    "message": "[YARR] JIT string-list alternative with a non-BMP character matches after only its leading characters\nhttps://bugs.webkit.org/show_bug.cgi?id=321251\n\nReviewed by Yusuke Suzuki.\n\nIn a string-list group, a non-last alternative may branch to the group's\nsuccess target only from the comparison of its la",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
