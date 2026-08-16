@@ -40457,5 +40457,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T21:40:22.759792+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "url": "https://github.com/WebKit/WebKit/commit/f3f75e999f1ddd211c21e69c3af81b978e4b92a0",
+    "message": "Same-frame fragment navigation that starts after a download attribute click, in the same task, cancels the download\nhttps://bugs.webkit.org/show_bug.cgi?id=302895\nrdar://165498647\n\nReviewed by Brady Eidson and Alex Christensen.\n\nActivating a link with a download attribute runs \"download the hyperlin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T21:40:59.513267+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "da12fb32aeb97f8774681deafc767602667934e2",
+    "url": "https://github.com/WebKit/WebKit/commit/da12fb32aeb97f8774681deafc767602667934e2",
+    "message": "[JSC] Improve FastStringifier's short string copy tiers\nhttps://bugs.webkit.org/show_bug.cgi?id=321622\nrdar://184750925\n\nReviewed by Yusuke Suzuki.\n\nstringCopySameType tiers by length: SIMD at the vector stride, an 8-byte SWAR\nloop below that, then a per-character loop. Short JSON property names fal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
