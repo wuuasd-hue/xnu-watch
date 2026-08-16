@@ -39417,5 +39417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T08:13:26.990200+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "de2fa444240f36ac2d03740bdbb190ae7cf95047",
+    "url": "https://github.com/swiftlang/swift/commit/de2fa444240f36ac2d03740bdbb190ae7cf95047",
+    "message": "Merge pull request #91264 from mikeash/fix-runtime-layout-size-truncation\n\n[Runtime] Trap overflow in size/layout computations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T08:14:05.218614+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ff1104e4d0bc8fa3f382aa055415f27f60d3574",
+    "url": "https://github.com/WebKit/WebKit/commit/7ff1104e4d0bc8fa3f382aa055415f27f60d3574",
+    "message": "Avoid repeated OSR exits in op_get_from_scope and op_put_to_scope\nhttps://bugs.webkit.org/show_bug.cgi?id=320802\nrdar://183815105\n\nReviewed by Keith Miller.\n\nThe GlobalProperty paths of op_get_from_scope and op_put_to_scope\nresolve their status with GetByStatus/PutByStatus computeFor overloads\nthat ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
