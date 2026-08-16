@@ -39137,5 +39137,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T04:05:13.216121+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75bb1892f1b4d3fd773e008cbf93802f192ca6ca",
+    "url": "https://github.com/WebKit/WebKit/commit/75bb1892f1b4d3fd773e008cbf93802f192ca6ca",
+    "message": "Stop including <objc/objc-runtime.h> and forbid it via check-webkit-style\n<https://bugs.webkit.org/show_bug.cgi?id=321315>\n<rdar://184350335>\n\nReviewed by Zak Ridouh and Yusuke Suzuki.\n\nThe legacy `<objc/objc-runtime.h>` umbrella header is not present in\nthe iOS 27 SDK (it remains in the macOS SDK),",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T04:05:51.013613+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2ec9a4586eec8c6fd9d9871980b6ddc525174d3",
+    "url": "https://github.com/WebKit/WebKit/commit/b2ec9a4586eec8c6fd9d9871980b6ddc525174d3",
+    "message": "[JSC][Intl] formatToParts must emit the era separator that format() inserts\nhttps://bugs.webkit.org/show_bug.cgi?id=321347\nrdar://184382546\n\nReviewed by Yusuke Suzuki.\n\nICU emits no era name for coptic dates before Anno Martyrum or islamic-* dates\nbefore the Hijra, so both format() overloads synthes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
