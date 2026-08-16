@@ -40337,5 +40337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T20:06:32.976417+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64243d698a349da07c92d9ab7d5b322c23faf9a0",
+    "url": "https://github.com/WebKit/WebKit/commit/64243d698a349da07c92d9ab7d5b322c23faf9a0",
+    "message": "[YARR] Collect Boyer-Moore info through parenthetical assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=321645\n\nReviewed by Yusuke Suzuki.\n\ncollectBoyerMooreInfoFromTerm() gave up on a lookahead or lookbehind, so a body\nalternative starting with one, such as /(?<=\\$)\\d+/, got neither the Boyer-Moor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T20:07:10.036419+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "45434d689d024c7f54fbf5a316f2f7559af09f4b",
+    "url": "https://github.com/WebKit/WebKit/commit/45434d689d024c7f54fbf5a316f2f7559af09f4b",
+    "message": "[Navigation API] Implement Precommit Handler\nhttps://bugs.webkit.org/show_bug.cgi?id=321260\nrdar://184311803\n\nReviewed by Basuke Suzuki.\n\nThis patch implements the Precommit Handler of the Navigation API according\nto https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api.\n\nThis ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
