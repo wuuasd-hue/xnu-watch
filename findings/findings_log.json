@@ -39937,5 +39937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T15:09:06.576795+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee16ce938a8f8535cce4d77bfc0a7150d864dc5b",
+    "url": "https://github.com/WebKit/WebKit/commit/ee16ce938a8f8535cce4d77bfc0a7150d864dc5b",
+    "message": "[JSC][Temporal] Give CalendarDateUntil and NonISODateUntil one home each\nhttps://bugs.webkit.org/show_bug.cgi?id=321538\nrdar://184650946\n\nReviewed by Yusuke Suzuki.\n\nFour functions claimed #sec-temporal-calendardateuntil and only one held an algorithm. The\nCalendarArithmetic.cpp pass-through and the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-16T15:09:43.525621+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3eee8becf0b5d458f667d35392b2dc62aeb8b847",
+    "url": "https://github.com/WebKit/WebKit/commit/3eee8becf0b5d458f667d35392b2dc62aeb8b847",
+    "message": "[JSC] Fill alignment gap in WasmGC structs\nhttps://bugs.webkit.org/show_bug.cgi?id=321545\nrdar://184655909\n\nReviewed by Vassili Bykov.\n\nWasmGC Struct may have padding like what C++ struct is because of\nalignment requirement of fields. But since offset of fields are not\nexposed as ABI, we can fill ga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
