@@ -40957,5 +40957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T06:27:51.484288+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "url": "https://github.com/swiftlang/swift/commit/7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "message": "Merge pull request #91506 from mikeash/unify-reportoncrash\n\n[Runtime] Unify the two copies of reportOnCrash().",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T06:28:29.803991+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "31f35870966c055d8ffb5cac2be896174cd513c1",
+    "url": "https://github.com/WebKit/WebKit/commit/31f35870966c055d8ffb5cac2be896174cd513c1",
+    "message": "[JSC] Add small-sized fast fill before memset in operationMemoryFill\nhttps://bugs.webkit.org/show_bug.cgi?id=321850\nrdar://185002028\n\nReviewed by Justin Michaud.\n\nAs the same to 319202@main, we do inlined small-sized memset in\noperationMemoryFill function before calling memset.\nWe do not do the same",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
