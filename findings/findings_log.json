@@ -41737,5 +41737,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T17:15:09.685672+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "url": "https://github.com/WebKit/WebKit/commit/39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "message": "[JSC][Wasm] Re-exported imported Tag should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321931\n\nReviewed by Yusuke Suzuki.\n\nImporting a WebAssembly.Tag and re-exporting it should return the same\nJS object. Export always created a new wrapper, so === failed.\n\nRemember the imported wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T17:15:46.558664+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "url": "https://github.com/WebKit/WebKit/commit/39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "message": "[JSC][Wasm] Re-exported imported Tag should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321931\n\nReviewed by Yusuke Suzuki.\n\nImporting a WebAssembly.Tag and re-exporting it should return the same\nJS object. Export always created a new wrapper, so === failed.\n\nRemember the imported wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T17:16:23.348748+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eeb2440ba085136496a90de543f848d09090d108",
+    "url": "https://github.com/WebKit/WebKit/commit/eeb2440ba085136496a90de543f848d09090d108",
+    "message": "[JSC] Inline StringSlice rope construction in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=318320\nrdar://181105431\n\nReviewed by Sosuke Suzuki.\n\nThis patch inlines StringSlice's rope construction path in FTL, as\nthis is really hot in many of workloads. We are preparing the similar\nthing to StringSubst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
