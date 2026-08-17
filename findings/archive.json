@@ -300,9 +300,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -8833,8 +8834,9 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   }
 ]

@@ -41837,5 +41837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T18:18:20.122465+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "url": "https://github.com/WebKit/WebKit/commit/39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "message": "[JSC][Wasm] Re-exported imported Tag should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321931\n\nReviewed by Yusuke Suzuki.\n\nImporting a WebAssembly.Tag and re-exporting it should return the same\nJS object. Export always created a new wrapper, so === failed.\n\nRemember the imported wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T18:18:57.365859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "449c42b27f306b9b4906702b33d9f731dd558055",
+    "url": "https://github.com/WebKit/WebKit/commit/449c42b27f306b9b4906702b33d9f731dd558055",
+    "message": "ExpressionInfo::Encoder computes the offset to Extension Islands incorrectly.\nhttps://bugs.webkit.org/show_bug.cgi?id=312525\nrdar://174626446\n\nReviewed by Yijia Huang.\n\nWhen an Extension ExpressionInfo is emitted, it needs to encode a displacement offset from\nits location to the location of its exte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
