@@ -41137,5 +41137,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T09:05:14.546249+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1701b34890898dc083648cfc97f038bb6566131",
+    "url": "https://github.com/WebKit/WebKit/commit/b1701b34890898dc083648cfc97f038bb6566131",
+    "message": "[JSC] Check maxLength == 0 when specified in fromBase64\nhttps://bugs.webkit.org/show_bug.cgi?id=321895\nrdar://185073630\n\nReviewed by Sosuke Suzuki.\n\nWhen maxLength is specified (setFromBase64 case), we stop processing\nbefore touching anything[1] (see step 3). This patch correctly\nimplements it.\n\n[1]",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T09:05:51.765347+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2d0855229c8f35a87c7bca8f36456ed76f86a5fb",
+    "url": "https://github.com/WebKit/WebKit/commit/2d0855229c8f35a87c7bca8f36456ed76f86a5fb",
+    "message": "[WTF] Add small inlined memcpy for copyElements\nhttps://bugs.webkit.org/show_bug.cgi?id=321902\nrdar://185078337\n\nReviewed by Yijia Huang.\n\nWe found that our memcpy / memmove is not efficient enough for small\ncopying, and it is commonly happening in practice. This patch moves B3's\nMemoryCopy's preced",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
