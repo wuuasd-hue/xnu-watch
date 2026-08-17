@@ -42117,5 +42117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T22:10:24.013571+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9022c6e5ac10b05b0eb4b98eb64843422848598",
+    "url": "https://github.com/WebKit/WebKit/commit/c9022c6e5ac10b05b0eb4b98eb64843422848598",
+    "message": "Drive-by cleanups in IRO and ArrayMode\nhttps://bugs.webkit.org/show_bug.cgi?id=316679\n\nReviewed by Yusuke Suzuki.\n\nAdd some missing NODELETES to help with some other patches I have\nin progress; Also, fix an issue where hashes involving ArrayMode\ncan sometimes be wrong because of padding bits.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T22:11:01.590409+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a1a55949c63662f939521a257dd897030d473a0a",
+    "url": "https://github.com/WebKit/WebKit/commit/a1a55949c63662f939521a257dd897030d473a0a",
+    "message": "Check httpNavigationWithHTTPSOnlyError without constructing a new one\nhttps://bugs.webkit.org/show_bug.cgi?id=318360\nrdar://181151216\n\nReviewed by Brady Eidson.\n\nWe shouldn't need to construct a new httpNavigationWithHTTPSOnlyError just to\ncheck if the error we have is the of the same type. We inste",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
