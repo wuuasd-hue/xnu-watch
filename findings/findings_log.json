@@ -41537,5 +41537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T14:50:34.453277+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
+    "message": "dyld-1378\n\nImported from dyld-1378.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T14:51:11.833198+00:00",
+    "repo": "apple-oss-distributions/dyld",
+    "sha": "e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "url": "https://github.com/apple-oss-distributions/dyld/commit/e9da5ae571b4191dcdbcfd827363f19847c84561",
+    "message": "dyld-1376.6\n\nImported from dyld-1376.6.tar.gz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
