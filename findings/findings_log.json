@@ -41257,5 +41257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T10:53:10.493735+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee4b2082674de598acc8179672ec2d833fdab266",
+    "url": "https://github.com/WebKit/WebKit/commit/ee4b2082674de598acc8179672ec2d833fdab266",
+    "message": "[JSC] Do not allocate `UnlinkedFunctionExecutable::RareData` for generator/async bodies whose wrapper has no parameters\nhttps://bugs.webkit.org/show_bug.cgi?id=321845\n\nReviewed by Yusuke Suzuki.\n\nWhen compiling a generator or async function wrapper, BytecodeGenerator::makeFunction() passes the\nwrapp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T10:53:48.487120+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70eb5015aec426e421fad75c7df80b0e82417da6",
+    "url": "https://github.com/WebKit/WebKit/commit/70eb5015aec426e421fad75c7df80b0e82417da6",
+    "message": "[JSC] Move `PropertyInlineCache`'s buffered-structures set to `RepatchingPropertyInlineCache`\nhttps://bugs.webkit.org/show_bug.cgi?id=321903\n\nReviewed by Yusuke Suzuki.\n\nm_bufferedStructures exists so that a repatching IC does not buffer the same (Structure, identifier)\ntwice while it waits for buff",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
