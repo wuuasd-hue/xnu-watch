@@ -40737,5 +40737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T02:56:36.504053+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f770b1bd5958779d19eec644e05c3c183103e0d",
+    "url": "https://github.com/WebKit/WebKit/commit/9f770b1bd5958779d19eec644e05c3c183103e0d",
+    "message": "[JSC] Add a fast path to Parser::useVariable\nhttps://bugs.webkit.org/show_bug.cgi?id=321716\nrdar://184855343\n\nReviewed by Yijia Huang.\n\nParser::useVariable adds a variable to the top set of the m_usedVariables stack.\nIt's not uncommon for the same variable to be added repeatedly, so it helps\nto reme",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T02:57:14.228286+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "url": "https://github.com/WebKit/WebKit/commit/b9d3ef9f6a0fe8ef9770f79a71738902f0e82ae3",
+    "message": "[JSC] Remove dead JettisonDueToProfiledWatchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=321803\nrdar://184938292\n\nReviewed by Yijia Huang.\n\nRemove some dead code.\n\n* Source/JavaScriptCore/profiler/ProfilerJettisonReason.cpp:\n(WTF::printInternal):\n* Source/JavaScriptCore/profiler/ProfilerJettisonRea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
