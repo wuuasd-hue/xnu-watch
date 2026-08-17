@@ -41297,5 +41297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T11:13:50.834941+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ec06de15a0dfa8686509598a5d7e70d62163e66",
+    "url": "https://github.com/WebKit/WebKit/commit/2ec06de15a0dfa8686509598a5d7e70d62163e66",
+    "message": "[JSC] Skip WasmGC struct search when nothing else holds the key\nhttps://bugs.webkit.org/show_bug.cgi?id=321781\nrdar://184903374\n\nReviewed by Justin Michaud.\n\nCSE::findWasmStructValue walks every transitive predecessor block whenever a\nWasmStructGet or WasmStructSet has no match in its own block. Thi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T11:14:31.839538+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "url": "https://github.com/WebKit/WebKit/commit/c2efc73ec496407f393d9b8edb6f8e7fca48241c",
+    "message": "[Navigation API] navigation-back-cross-document-preventDefault.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=300006\nrdar://161203519\n\nReviewed by Basuke Suzuki.\n\nThe very last assert in this test is failing: assert_true(navigate_called);\n\nFor a cross-document traversal of the top-level fra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
