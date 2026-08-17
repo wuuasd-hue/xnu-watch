@@ -41797,5 +41797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T17:50:49.462103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "url": "https://github.com/WebKit/WebKit/commit/39de2d4eea61f947ee9ea9d364fc54715a17de84",
+    "message": "[JSC][Wasm] Re-exported imported Tag should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321931\n\nReviewed by Yusuke Suzuki.\n\nImporting a WebAssembly.Tag and re-exporting it should return the same\nJS object. Export always created a new wrapper, so === failed.\n\nRemember the imported wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T17:51:26.687998+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ecce0f050d283d922a3a68100c1a583edb432be",
+    "url": "https://github.com/WebKit/WebKit/commit/5ecce0f050d283d922a3a68100c1a583edb432be",
+    "message": "[JSC] Manually pipeline memory fetching for GC marking\nhttps://bugs.webkit.org/show_bug.cgi?id=318297\nrdar://181088818\n\nReviewed by Keith Miller and Dan Hecht.\n\nIn GC marking, the highest cost comes from marking a large graph, and it\nis bound by a cache miss for each GC-managed cell.\n\nThis patch add",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
