@@ -40697,5 +40697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T01:59:39.035016+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ec445d2204215668407ddbdc65c1d4d35327e9eb",
+    "url": "https://github.com/WebKit/WebKit/commit/ec445d2204215668407ddbdc65c1d4d35327e9eb",
+    "message": "[Navigation API] traverseTo-detach-between-navigate-and-navigatesuccess.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=321639\nrdar://184766408\n\nReviewed by Charlie Wolfe.\n\nThis test tests that if an iframe uses the Navigation API to traverse but gets\nremoved after committing but before fini",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T02:00:17.467164+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89c464cce8ce7591d4a0d926d4e79f2b621136d4",
+    "url": "https://github.com/WebKit/WebKit/commit/89c464cce8ce7591d4a0d926d4e79f2b621136d4",
+    "message": "[WebTransport] Add headers and responseHeaders support\nhttps://bugs.webkit.org/show_bug.cgi?id=311299\n\nReviewed by Alex Christensen.\n\nImplement the headers constructor option and responseHeaders attribute\nfrom the WebTransport spec (https://github.com/w3c/webtransport/pull/713).\n\nheaders allows sett",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
