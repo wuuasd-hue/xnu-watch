@@ -40897,5 +40897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T05:56:10.000713+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "url": "https://github.com/swiftlang/swift/commit/7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "message": "Merge pull request #91506 from mikeash/unify-reportoncrash\n\n[Runtime] Unify the two copies of reportOnCrash().",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T05:56:47.945169+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "url": "https://github.com/swiftlang/swift/commit/7b67cb772c9ec80c030f8f1d278489ce97077a5f",
+    "message": "Merge pull request #91506 from mikeash/unify-reportoncrash\n\n[Runtime] Unify the two copies of reportOnCrash().",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T05:57:26.086612+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c64729cefbca0dc42bfa07e6f0c301ae663fbbf",
+    "url": "https://github.com/WebKit/WebKit/commit/3c64729cefbca0dc42bfa07e6f0c301ae663fbbf",
+    "message": "Fix -Wthread-safety-precise and constexpr for clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321848\n\nUnreviewed build fix.\n\nCanonical link: https://commits.webkit.org/319233@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
