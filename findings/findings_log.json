@@ -41097,5 +41097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T08:07:09.329982+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2d0855229c8f35a87c7bca8f36456ed76f86a5fb",
+    "url": "https://github.com/WebKit/WebKit/commit/2d0855229c8f35a87c7bca8f36456ed76f86a5fb",
+    "message": "[WTF] Add small inlined memcpy for copyElements\nhttps://bugs.webkit.org/show_bug.cgi?id=321902\nrdar://185078337\n\nReviewed by Yijia Huang.\n\nWe found that our memcpy / memmove is not efficient enough for small\ncopying, and it is commonly happening in practice. This patch moves B3's\nMemoryCopy's preced",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-17T08:07:46.726419+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f38ebbabf35e067114a9ccdd56103132c880b4f",
+    "url": "https://github.com/WebKit/WebKit/commit/7f38ebbabf35e067114a9ccdd56103132c880b4f",
+    "message": "[JSC] Apply Promise.try spec change\nhttps://bugs.webkit.org/show_bug.cgi?id=321890\nrdar://185064567\n\nReviewed by Sosuke Suzuki.\n\nTest262 is updated[1] to include the latest spec change proposal\nfor Promise.try[2], which uses PromiseResolve instead of a promise\ncreated by NewPromiseCapability. This s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
