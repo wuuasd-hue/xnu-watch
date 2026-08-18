@@ -42577,5 +42577,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T04:57:59.072731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "url": "https://github.com/WebKit/WebKit/commit/bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "message": "[JSC] Add global priority queue inliner\nhttps://bugs.webkit.org/show_bug.cgi?id=321720\nrdar://184856840\n\nReviewed by Yijia Huang.\n\nThis patch adds an option for JS inlining to globally rank all\ninlining candidates prior to DFG bytecode parsing. Currently this\ndoesn't do much to change which candidat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T04:58:36.205382+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "url": "https://github.com/WebKit/WebKit/commit/bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "message": "[JSC] Add global priority queue inliner\nhttps://bugs.webkit.org/show_bug.cgi?id=321720\nrdar://184856840\n\nReviewed by Yijia Huang.\n\nThis patch adds an option for JS inlining to globally rank all\ninlining candidates prior to DFG bytecode parsing. Currently this\ndoesn't do much to change which candidat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T04:59:13.009290+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "url": "https://github.com/WebKit/WebKit/commit/7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "message": "[Site Isolation] User interaction and last user gesture timestamp flags aren't updated on remote frames\nhttps://bugs.webkit.org/show_bug.cgi?id=321900\nrdar://185076535\n\nReviewed by Wenson Hsieh.\n\nWhen a user gesture occurs, UserGestureIndicator currently only updates the user interaction and\nlast us",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
