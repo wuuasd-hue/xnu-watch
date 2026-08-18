@@ -43977,5 +43977,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T22:46:17.432510+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6446fdc8e0be049f61e48d8beb8556ee8e2e1009",
+    "url": "https://github.com/WebKit/WebKit/commit/6446fdc8e0be049f61e48d8beb8556ee8e2e1009",
+    "message": "Support writing ISOBoxes as well as reading/parsing\nrdar://180057740\nhttps://bugs.webkit.org/show_bug.cgi?id=317430\n\nReviewed by Jean-Yves Avenard.\n\nISOBoxes and their subclasses are parsed representations of ISO-BMFF media data. In addition\nto reading these boxes from files and memory, we may also ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T22:46:54.777345+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c7f0230afde14d2b886fd4236851a66580853d9",
+    "url": "https://github.com/WebKit/WebKit/commit/3c7f0230afde14d2b886fd4236851a66580853d9",
+    "message": "Append CompressionDictionary to FetchOptionsDestination instead of inserting it\nhttps://bugs.webkit.org/show_bug.cgi?id=322030\n\nReviewed by Alex Christensen.\n\nFetchOptions::encodePersistent() writes destination as its raw value, and says\nthat changes to its encoding should bump the NetworkCache Stor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T22:47:32.304791+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6446fdc8e0be049f61e48d8beb8556ee8e2e1009",
+    "url": "https://github.com/WebKit/WebKit/commit/6446fdc8e0be049f61e48d8beb8556ee8e2e1009",
+    "message": "Support writing ISOBoxes as well as reading/parsing\nrdar://180057740\nhttps://bugs.webkit.org/show_bug.cgi?id=317430\n\nReviewed by Jean-Yves Avenard.\n\nISOBoxes and their subclasses are parsed representations of ISO-BMFF media data. In addition\nto reading these boxes from files and memory, we may also ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T22:48:09.772905+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c7f0230afde14d2b886fd4236851a66580853d9",
+    "url": "https://github.com/WebKit/WebKit/commit/3c7f0230afde14d2b886fd4236851a66580853d9",
+    "message": "Append CompressionDictionary to FetchOptionsDestination instead of inserting it\nhttps://bugs.webkit.org/show_bug.cgi?id=322030\n\nReviewed by Alex Christensen.\n\nFetchOptions::encodePersistent() writes destination as its raw value, and says\nthat changes to its encoding should bump the NetworkCache Stor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
