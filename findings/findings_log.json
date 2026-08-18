@@ -42877,5 +42877,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T08:32:03.742667+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "url": "https://github.com/WebKit/WebKit/commit/20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "message": "[JSC][Wasm] Re-exported imported immutable Global should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321924\n\nReviewed by Yusuke Suzuki.\n\nImmutable imported globals copy their value into the instance. Export\nthen built a new JS wrapper, so re-exporting an imported\nWebAssembly.Global pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T08:32:40.982711+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db2d849cbee5ea5c6779bcb34525979cffc791c2",
+    "url": "https://github.com/WebKit/WebKit/commit/db2d849cbee5ea5c6779bcb34525979cffc791c2",
+    "message": "[JSC] Use std::array for fixed-sized ArgList\nhttps://bugs.webkit.org/show_bug.cgi?id=321955\nrdar://185140117\n\nReviewed by Yijia Huang.\n\nInstead of using MarkedArgumentBuffer, let's just use std::array and\nArgList when we know the # of arguments statically.\n\n* Source/JavaScriptCore/dfg/DFGOperations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
