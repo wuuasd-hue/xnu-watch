@@ -42977,5 +42977,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T09:55:05.553958+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20d622b6d656cb7de8d97480534d15edb08aac78",
+    "url": "https://github.com/WebKit/WebKit/commit/20d622b6d656cb7de8d97480534d15edb08aac78",
+    "message": "Build failure when building for GTK using clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321997\nrdar://185184098\n\nUnreviewed build fix.\n\nReplace BBQCalleeReference::operator= with set() to fix -Wthread-safety-precise on GTK\nAliasing slot->m_bbqCallee into a local reference silenced the analyzer fo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T09:55:42.604690+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "url": "https://github.com/WebKit/WebKit/commit/3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "message": "[JSC] Move the fields only global code uses out of `UnlinkedCodeBlock`\nhttps://bugs.webkit.org/show_bug.cgi?id=321764\n\nReviewed by Yusuke Suzuki.\n\nUnlinkedCodeBlock has m_features, m_lineCount, m_endColumn and the two source URL directives.\nOnly Program / Eval / Module code writes them, so that Code",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
