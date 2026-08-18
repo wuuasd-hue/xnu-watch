@@ -43457,5 +43457,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T16:15:49.210571+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "url": "https://github.com/WebKit/WebKit/commit/0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "message": "[JSC] Remove `UnlinkedCodeBlock::m_jumpTargets`\nhttps://bugs.webkit.org/show_bug.cgi?id=321843\n\nReviewed by Yusuke Suzuki.\n\nBytecodeGenerator records the offset of every label it emits, and UnlinkedCodeBlockGenerator::finalize\ncopies the list into UnlinkedCodeBlock::m_jumpTargets, where it stays for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T16:16:26.288873+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "url": "https://github.com/WebKit/WebKit/commit/3df7f122b6c75b2cc4f0e4dfb4022d2351d5bc8a",
+    "message": "Web Inspector: JavaScript breakpoint on a line with just a semicolon doesn't get triggered\nhttps://bugs.webkit.org/show_bug.cgi?id=272916\n<rdar://problem/126707973>\n\nReviewed by Keith Miller.\n\nDon't add a pause location for empty statements as there's nothing to execute.\n\n* Source/JavaScriptCore/par",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
