@@ -42317,5 +42317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T01:55:41.667910+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "url": "https://github.com/WebKit/WebKit/commit/6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "message": "Fetch dictionaries declared by rel=compression-dictionary and Link headers\nhttps://bugs.webkit.org/show_bug.cgi?id=321527\n\nReviewed by Alex Christensen.\n\nAdd a runtime flag for Compression Dictionary Transport, handle the\n\"compression-dictionary\" link, and fetch its resource. All described\nfrom what",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T01:56:18.537900+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "url": "https://github.com/WebKit/WebKit/commit/6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "message": "Fetch dictionaries declared by rel=compression-dictionary and Link headers\nhttps://bugs.webkit.org/show_bug.cgi?id=321527\n\nReviewed by Alex Christensen.\n\nAdd a runtime flag for Compression Dictionary Transport, handle the\n\"compression-dictionary\" link, and fetch its resource. All described\nfrom what",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T01:56:55.295358+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "url": "https://github.com/WebKit/WebKit/commit/f53d1f284bc24887cb00783ef8aee9e35809b8bc",
+    "message": "Assert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nhttps://bugs.webkit.org/show_bug.cgi?id=318088\n\nReviewed by Darin Adler.\n\nAssert RunLoop::Timer is stopped and destroyed on its own run loop's thread\nto help find thread safety bugs. Use ASSERT_WITH_SECURITY_IMPLICATION\nto h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
