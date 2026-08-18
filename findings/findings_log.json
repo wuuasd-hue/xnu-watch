@@ -43397,5 +43397,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T15:53:05.237072+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "url": "https://github.com/WebKit/WebKit/commit/0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "message": "[JSC] Remove `UnlinkedCodeBlock::m_jumpTargets`\nhttps://bugs.webkit.org/show_bug.cgi?id=321843\n\nReviewed by Yusuke Suzuki.\n\nBytecodeGenerator records the offset of every label it emits, and UnlinkedCodeBlockGenerator::finalize\ncopies the list into UnlinkedCodeBlock::m_jumpTargets, where it stays for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T15:53:42.492706+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "url": "https://github.com/WebKit/WebKit/commit/0b92c2bcd0d55ced7be0cbbd1fa38009b5138f4c",
+    "message": "[JSC] Remove `UnlinkedCodeBlock::m_jumpTargets`\nhttps://bugs.webkit.org/show_bug.cgi?id=321843\n\nReviewed by Yusuke Suzuki.\n\nBytecodeGenerator records the offset of every label it emits, and UnlinkedCodeBlockGenerator::finalize\ncopies the list into UnlinkedCodeBlock::m_jumpTargets, where it stays for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T15:54:19.380287+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3400ff6aa7b63e840b7cecd229e38e2c19e538ae",
+    "url": "https://github.com/WebKit/WebKit/commit/3400ff6aa7b63e840b7cecd229e38e2c19e538ae",
+    "message": "Don't share StringImpl for worker names\nhttps://bugs.webkit.org/show_bug.cgi?id=321818\n\nReviewed by Yusuke Suzuki.\n\nSince not all fields of StringImpl are atomic yet, it is\nbetter form to just not share them, even if this site is\nbenign\n\n* JSTests/wasm/stress/wasm-imported-string-constants-utf8.js: ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
