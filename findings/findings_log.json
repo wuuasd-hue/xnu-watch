@@ -42677,5 +42677,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T05:51:32.093486+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "url": "https://github.com/WebKit/WebKit/commit/3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "message": "[JSC] Move the fields only global code uses out of `UnlinkedCodeBlock`\nhttps://bugs.webkit.org/show_bug.cgi?id=321764\n\nReviewed by Yusuke Suzuki.\n\nUnlinkedCodeBlock has m_features, m_lineCount, m_endColumn and the two source URL directives.\nOnly Program / Eval / Module code writes them, so that Code",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T05:52:11.048389+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "url": "https://github.com/WebKit/WebKit/commit/3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "message": "[JSC] Move the fields only global code uses out of `UnlinkedCodeBlock`\nhttps://bugs.webkit.org/show_bug.cgi?id=321764\n\nReviewed by Yusuke Suzuki.\n\nUnlinkedCodeBlock has m_features, m_lineCount, m_endColumn and the two source URL directives.\nOnly Program / Eval / Module code writes them, so that Code",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T05:52:48.883884+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "url": "https://github.com/WebKit/WebKit/commit/bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "message": "[JSC] Add global priority queue inliner\nhttps://bugs.webkit.org/show_bug.cgi?id=321720\nrdar://184856840\n\nReviewed by Yijia Huang.\n\nThis patch adds an option for JS inlining to globally rank all\ninlining candidates prior to DFG bytecode parsing. Currently this\ndoesn't do much to change which candidat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
