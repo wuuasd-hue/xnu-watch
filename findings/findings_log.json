@@ -43357,5 +43357,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T15:23:39.664195+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3400ff6aa7b63e840b7cecd229e38e2c19e538ae",
+    "url": "https://github.com/WebKit/WebKit/commit/3400ff6aa7b63e840b7cecd229e38e2c19e538ae",
+    "message": "Don't share StringImpl for worker names\nhttps://bugs.webkit.org/show_bug.cgi?id=321818\n\nReviewed by Yusuke Suzuki.\n\nSince not all fields of StringImpl are atomic yet, it is\nbetter form to just not share them, even if this site is\nbenign\n\n* JSTests/wasm/stress/wasm-imported-string-constants-utf8.js: ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T15:24:17.817608+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "080d15ac450c9264e900ac141810ce8e71f39cca",
+    "url": "https://github.com/WebKit/WebKit/commit/080d15ac450c9264e900ac141810ce8e71f39cca",
+    "message": "Web Inspector: 'arguments' should be accessible from the console\nhttps://bugs.webkit.org/show_bug.cgi?id=121208\n<rdar://problem/14972198>\n\nReviewed by Keith Miller.\n\n* Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp:\n(JSC::BytecodeGenerator::BytecodeGenerator):\nForce `arguments` to be creat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
