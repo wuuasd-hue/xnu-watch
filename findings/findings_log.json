@@ -42377,5 +42377,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T02:45:03.936716+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "url": "https://github.com/WebKit/WebKit/commit/0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "message": "[JSC] Implement wasm memory64 with multi-memory\nhttps://bugs.webkit.org/show_bug.cgi?id=321972\nrdar://185152671\n\nReviewed by Yijia Huang.\n\nThis patch implements memory64 handling for multi-memory in IPInt.\nThat was a blocker for memory64 with multi-memory support so now we\nremove the check in WasmSe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T02:45:42.867608+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "url": "https://github.com/WebKit/WebKit/commit/7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "message": "[Site Isolation] User interaction and last user gesture timestamp flags aren't updated on remote frames\nhttps://bugs.webkit.org/show_bug.cgi?id=321900\nrdar://185076535\n\nReviewed by Wenson Hsieh.\n\nWhen a user gesture occurs, UserGestureIndicator currently only updates the user interaction and\nlast us",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T02:46:19.740318+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "url": "https://github.com/WebKit/WebKit/commit/0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "message": "[JSC] Implement wasm memory64 with multi-memory\nhttps://bugs.webkit.org/show_bug.cgi?id=321972\nrdar://185152671\n\nReviewed by Yijia Huang.\n\nThis patch implements memory64 handling for multi-memory in IPInt.\nThat was a blocker for memory64 with multi-memory support so now we\nremove the check in WasmSe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T02:46:56.556499+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "url": "https://github.com/WebKit/WebKit/commit/7f8277fb2bb0cb76b0b575ecf7e599878e63c438",
+    "message": "[Site Isolation] User interaction and last user gesture timestamp flags aren't updated on remote frames\nhttps://bugs.webkit.org/show_bug.cgi?id=321900\nrdar://185076535\n\nReviewed by Wenson Hsieh.\n\nWhen a user gesture occurs, UserGestureIndicator currently only updates the user interaction and\nlast us",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
