@@ -43017,5 +43017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T10:15:12.229828+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "url": "https://github.com/WebKit/WebKit/commit/20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "message": "[JSC][Wasm] Re-exported imported immutable Global should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321924\n\nReviewed by Yusuke Suzuki.\n\nImmutable imported globals copy their value into the instance. Export\nthen built a new JS wrapper, so re-exporting an imported\nWebAssembly.Global pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T10:15:49.898335+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20d622b6d656cb7de8d97480534d15edb08aac78",
+    "url": "https://github.com/WebKit/WebKit/commit/20d622b6d656cb7de8d97480534d15edb08aac78",
+    "message": "Build failure when building for GTK using clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321997\nrdar://185184098\n\nUnreviewed build fix.\n\nReplace BBQCalleeReference::operator= with set() to fix -Wthread-safety-precise on GTK\nAliasing slot->m_bbqCallee into a local reference silenced the analyzer fo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
