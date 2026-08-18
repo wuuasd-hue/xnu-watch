@@ -42917,5 +42917,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T09:19:20.873806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20d622b6d656cb7de8d97480534d15edb08aac78",
+    "url": "https://github.com/WebKit/WebKit/commit/20d622b6d656cb7de8d97480534d15edb08aac78",
+    "message": "Build failure when building for GTK using clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321997\nrdar://185184098\n\nUnreviewed build fix.\n\nReplace BBQCalleeReference::operator= with set() to fix -Wthread-safety-precise on GTK\nAliasing slot->m_bbqCallee into a local reference silenced the analyzer fo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T09:19:57.635628+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20d622b6d656cb7de8d97480534d15edb08aac78",
+    "url": "https://github.com/WebKit/WebKit/commit/20d622b6d656cb7de8d97480534d15edb08aac78",
+    "message": "Build failure when building for GTK using clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321997\nrdar://185184098\n\nUnreviewed build fix.\n\nReplace BBQCalleeReference::operator= with set() to fix -Wthread-safety-precise on GTK\nAliasing slot->m_bbqCallee into a local reference silenced the analyzer fo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T09:20:35.474352+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "url": "https://github.com/WebKit/WebKit/commit/bdb72467372c43614a9d6207ee7b789cdc9561d6",
+    "message": "[JSC] Add global priority queue inliner\nhttps://bugs.webkit.org/show_bug.cgi?id=321720\nrdar://184856840\n\nReviewed by Yijia Huang.\n\nThis patch adds an option for JS inlining to globally rank all\ninlining candidates prior to DFG bytecode parsing. Currently this\ndoesn't do much to change which candidat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

@@ -8959,9 +8959,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -8994,5 +8995,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "20d622b6d656cb7de8d97480534d15edb08aac78",
+    "message": "Build failure when building for GTK using clang 18\nhttps://bugs.webkit.org/show_bug.cgi?id=321997\nrdar://185184098\n\nUnreviewed build fix.\n\nReplace BBQCalleeReference::operator= with set() to fix -Wthread-safety-precise on GTK\nAliasing slot->m_bbqCallee into a local reference silenced the analyzer fo",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmCalleeGroup.cpp ---\n@@ -383,7 +383,7 @@ bool CalleeGroup::installOptimizedCallee(Locker<Lock>& locker, const ModuleInfor\n         // that weak reference is fine, it does not own the callee. Overwriting a strong one would drop\n         // the last reference to code that may still be executing.\n         RELEASE_ASSERT(!bbqCallee.isStrong() || !bbqCallee.get());\n-        bbqCallee = Ref { uncheckedDowncast<BBQCallee>(callee.get()) };\n+        bbqCallee.set(Ref { uncheckedDowncast<BBQCallee>(callee.get()) });\n     }\n #endif\n \n\n--- Source/JavaScriptCore/wasm/WasmCalleeGroup.h ---\n@@ -89,15 +89,14 @@ class CalleeGroup final : public ThreadSafeRefCounted<CalleeGroup> {\n                 return strong;\n             }\n \n-            BBQCalleeReference& operator=(Ref<BBQCallee>&& strongReference) WTF_REQUIRES_LOCK(m_bbqCalleeLock)\n+            void set(Ref<BBQCallee>&& strongReference) WTF_REQUIRES_LOCK(m_bbqCalleeLock)\n             {\n                 if (m_isWeak) {\n                     std::destroy_at(&m_pointer.weak);\n                     std::construct_at(&m_pointer.strong);\n                     m_isWeak = false;\n                 }\n                 m_pointer.strong = WTF::move(strongReference);\n-                return *this;\n             }\n \n         private:\n",
+    "url": "https://github.com/WebKit/WebKit/commit/20d622b6d656cb7de8d97480534d15edb08aac78",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
