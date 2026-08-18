@@ -42737,5 +42737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T06:19:44.614686+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "url": "https://github.com/WebKit/WebKit/commit/3d0e6c14b12c2641c27faaf2f213483432d13b7a",
+    "message": "[JSC] Move the fields only global code uses out of `UnlinkedCodeBlock`\nhttps://bugs.webkit.org/show_bug.cgi?id=321764\n\nReviewed by Yusuke Suzuki.\n\nUnlinkedCodeBlock has m_features, m_lineCount, m_endColumn and the two source URL directives.\nOnly Program / Eval / Module code writes them, so that Code",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T06:20:22.339495+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "url": "https://github.com/WebKit/WebKit/commit/6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "message": "Fetch dictionaries declared by rel=compression-dictionary and Link headers\nhttps://bugs.webkit.org/show_bug.cgi?id=321527\n\nReviewed by Alex Christensen.\n\nAdd a runtime flag for Compression Dictionary Transport, handle the\n\"compression-dictionary\" link, and fetch its resource. All described\nfrom what",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
