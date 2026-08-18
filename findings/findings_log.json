@@ -43857,5 +43857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T21:11:16.255694+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d09127ca947791dc0a72109466a9b0433ab898e",
+    "url": "https://github.com/WebKit/WebKit/commit/7d09127ca947791dc0a72109466a9b0433ab898e",
+    "message": "Return a digest instead of the Cookie header for Vary: Cookie validation\nhttps://bugs.webkit.org/show_bug.cgi?id=321579\nrdar://184690236\n\nReviewed by Charlie Wolfe.\n\nCookieRequestHeaderFieldValue returned the full Cookie header to a web process,\nHttpOnly cookies included. A web process must never se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T21:11:55.407251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38027ff0ecca7efe0e74a7f1d7ca71061083381a",
+    "url": "https://github.com/WebKit/WebKit/commit/38027ff0ecca7efe0e74a7f1d7ca71061083381a",
+    "message": "Remove @newPromiseCapability\nhttps://bugs.webkit.org/show_bug.cgi?id=321999\nrdar://185184613\n\nReviewed by Yijia Huang.\n\nLet's just use `@newPromise` and\n@rejectPromiseWithFirstResolvingFunctionCallCheck etc. that is much more\nefficient (not allocating an object for a tuple), not doing any property\nl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
