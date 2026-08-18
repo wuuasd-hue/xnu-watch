@@ -43257,5 +43257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T14:02:27.902201+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "url": "https://github.com/WebKit/WebKit/commit/dd186f5a3502de386ee96ceba7dfd3202d5c3466",
+    "message": "[CMake] Fix the CMake build after 316448@main\nhttps://bugs.webkit.org/show_bug.cgi?id=318590\nrdar://181368662\n\nReviewed by Pascoe.\n\n316448@main moved DeferredWorkTimer::create() into an inline definition in\nthe class body of DeferredWorkTimer.h (the JSC-internal DeferredWorkTimerInlines.h\nwas delete",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T14:03:04.768125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "url": "https://github.com/WebKit/WebKit/commit/8e15aeeee3bc2d5257fec145a08f5532ae7447d7",
+    "message": "[JSC] Improve exception unwinding performance\nhttps://bugs.webkit.org/show_bug.cgi?id=318292\n\nReviewed by Yusuke Suzuki.\n\nI noticed that JSC is significantly slower than V8 at unwinding when an\nexception is thrown from a deep call stack. Profiling shows that most of\nthe time is spent in per-frame ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
