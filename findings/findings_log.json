@@ -42817,5 +42817,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T07:59:21.650098+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "url": "https://github.com/WebKit/WebKit/commit/20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "message": "[JSC][Wasm] Re-exported imported immutable Global should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321924\n\nReviewed by Yusuke Suzuki.\n\nImmutable imported globals copy their value into the instance. Export\nthen built a new JS wrapper, so re-exporting an imported\nWebAssembly.Global pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T07:59:58.768900+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "url": "https://github.com/WebKit/WebKit/commit/20c0bd7d62f4eaef2e9d82e34875ba340b016b0f",
+    "message": "[JSC][Wasm] Re-exported imported immutable Global should be the same object\nhttps://bugs.webkit.org/show_bug.cgi?id=321924\n\nReviewed by Yusuke Suzuki.\n\nImmutable imported globals copy their value into the instance. Export\nthen built a new JS wrapper, so re-exporting an imported\nWebAssembly.Global pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T08:00:35.768535+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6b13bfa7ba4341e5041b6f02566d2dd89fd2b855",
+    "url": "https://github.com/WebKit/WebKit/commit/6b13bfa7ba4341e5041b6f02566d2dd89fd2b855",
+    "message": "[JSC] Implement radix-sort for TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=321877\nrdar://185056908\n\nReviewed by Sosuke Suzuki.\n\nSince TypedArrays' element size are fixed, we can apply radix-sort. For\n1-byte sized elements, we already introduced counting-sort. And for the\nrest of the element ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
