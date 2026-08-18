@@ -42537,5 +42537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T04:22:14.387115+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "url": "https://github.com/WebKit/WebKit/commit/6248fa7145849f04f88e49a8a08ee6172b6bb9fe",
+    "message": "Fetch dictionaries declared by rel=compression-dictionary and Link headers\nhttps://bugs.webkit.org/show_bug.cgi?id=321527\n\nReviewed by Alex Christensen.\n\nAdd a runtime flag for Compression Dictionary Transport, handle the\n\"compression-dictionary\" link, and fetch its resource. All described\nfrom what",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T04:22:52.157749+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "url": "https://github.com/WebKit/WebKit/commit/0bbbac7b52ca09e5c3508e6f89dd63e7fe885b69",
+    "message": "[JSC] Implement wasm memory64 with multi-memory\nhttps://bugs.webkit.org/show_bug.cgi?id=321972\nrdar://185152671\n\nReviewed by Yijia Huang.\n\nThis patch implements memory64 handling for multi-memory in IPInt.\nThat was a blocker for memory64 with multi-memory support so now we\nremove the check in WasmSe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
