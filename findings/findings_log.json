@@ -42637,5 +42637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T05:21:46.395781+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6b13bfa7ba4341e5041b6f02566d2dd89fd2b855",
+    "url": "https://github.com/WebKit/WebKit/commit/6b13bfa7ba4341e5041b6f02566d2dd89fd2b855",
+    "message": "[JSC] Implement radix-sort for TypedArrays\nhttps://bugs.webkit.org/show_bug.cgi?id=321877\nrdar://185056908\n\nReviewed by Sosuke Suzuki.\n\nSince TypedArrays' element size are fixed, we can apply radix-sort. For\n1-byte sized elements, we already introduced counting-sort. And for the\nrest of the element ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-18T05:22:23.550456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db2d849cbee5ea5c6779bcb34525979cffc791c2",
+    "url": "https://github.com/WebKit/WebKit/commit/db2d849cbee5ea5c6779bcb34525979cffc791c2",
+    "message": "[JSC] Use std::array for fixed-sized ArgList\nhttps://bugs.webkit.org/show_bug.cgi?id=321955\nrdar://185140117\n\nReviewed by Yijia Huang.\n\nInstead of using MarkedArgumentBuffer, let's just use std::array and\nArgList when we know the # of arguments statically.\n\n* Source/JavaScriptCore/dfg/DFGOperations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
