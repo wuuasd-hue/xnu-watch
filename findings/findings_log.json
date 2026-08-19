@@ -45597,5 +45597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T19:45:55.607308+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2de233cfdb90e022d982dddbcc669d488c80f879",
+    "url": "https://github.com/WebKit/WebKit/commit/2de233cfdb90e022d982dddbcc669d488c80f879",
+    "message": "Unreviewed, reverting 316794@main (1a159c20bace)\nhttps://bugs.webkit.org/show_bug.cgi?id=318958\nrdar://181804700\n\nREGRESSION(316794@main): Disruptive changes found, in project bmalloc\n\nReverted change:\n\n    Web Inspector: remove unused protocol code\n    https://bugs.webkit.org/show_bug.cgi?id=318182",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T19:46:32.432380+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdd3b71e35c2327ec2eeb82a52c1e86e7fbd0e3a",
+    "url": "https://github.com/WebKit/WebKit/commit/bdd3b71e35c2327ec2eeb82a52c1e86e7fbd0e3a",
+    "message": "[JSC][Temporal] Fix PlainMonthDay bugs and simplify helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=318977\nrdar://181832650\n\nReviewed by Yusuke Suzuki.\n\nFixes six PMD correctness bugs uncovered by a full audit against V8\nand temporal_rs.\n\nBugs fixed:\n.toPlainDate({era, eraYear}) threw TypeError on e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
