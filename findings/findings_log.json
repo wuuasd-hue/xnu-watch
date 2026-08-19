@@ -44437,5 +44437,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T05:22:20.454669+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76b474b3225c59cd3c31f39d5eed60a63a084a3d",
+    "url": "https://github.com/WebKit/WebKit/commit/76b474b3225c59cd3c31f39d5eed60a63a084a3d",
+    "message": "[JSC][Wasm] Split type definitions out of TypeKind\nhttps://bugs.webkit.org/show_bug.cgi?id=261640\n\nReviewed by Sosuke Suzuki.\n\nTypeKind mixed value types with type-section forms (func, struct, array,\nrec, sub, subfinal). Those are not value types, so every TypeKind switch\nneeded dummy cases for them",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T05:22:57.137544+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7afce9416a9ef663661eb59613768529ea65101",
+    "url": "https://github.com/WebKit/WebKit/commit/b7afce9416a9ef663661eb59613768529ea65101",
+    "message": "[JSC][Wasm] Prefer lowest function index for concurrent CompileError\nhttps://bugs.webkit.org/show_bug.cgi?id=283476\n\nReviewed by Yusuke Suzuki.\n\nWhen multiple functions fail validation under concurrent compilation,\nkeep the error message for the lowest function index instead of\nwhichever worker fini",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T05:23:33.785105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cc12fa76b1f68595032ab541295f237462665e6",
+    "url": "https://github.com/WebKit/WebKit/commit/4cc12fa76b1f68595032ab541295f237462665e6",
+    "message": "[JSC][Wasm] Don't assert NativeCallee on JS frames in wasm exception paths\nhttps://bugs.webkit.org/show_bug.cgi?id=296371\n\nReviewed by Yusuke Suzuki.\n\nStack overflow during JS-to-Wasm or Wasm-to-JS can invoke\noperationWasmToJSException while DECLARE_WASM_CALL_FRAME still points at\na JS callee. Debug",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T05:24:12.362673+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76b474b3225c59cd3c31f39d5eed60a63a084a3d",
+    "url": "https://github.com/WebKit/WebKit/commit/76b474b3225c59cd3c31f39d5eed60a63a084a3d",
+    "message": "[JSC][Wasm] Split type definitions out of TypeKind\nhttps://bugs.webkit.org/show_bug.cgi?id=261640\n\nReviewed by Sosuke Suzuki.\n\nTypeKind mixed value types with type-section forms (func, struct, array,\nrec, sub, subfinal). Those are not value types, so every TypeKind switch\nneeded dummy cases for them",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T05:24:52.044265+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7afce9416a9ef663661eb59613768529ea65101",
+    "url": "https://github.com/WebKit/WebKit/commit/b7afce9416a9ef663661eb59613768529ea65101",
+    "message": "[JSC][Wasm] Prefer lowest function index for concurrent CompileError\nhttps://bugs.webkit.org/show_bug.cgi?id=283476\n\nReviewed by Yusuke Suzuki.\n\nWhen multiple functions fail validation under concurrent compilation,\nkeep the error message for the lowest function index instead of\nwhichever worker fini",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
