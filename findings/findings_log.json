@@ -44677,5 +44677,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T07:58:59.234390+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce878e190fef3abba29f10243a8454fde765f573",
+    "url": "https://github.com/WebKit/WebKit/commit/ce878e190fef3abba29f10243a8454fde765f573",
+    "message": "[JSC] Inline `Map#forEach` / `Set#forEach` iteration in DFG and FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322069\n\nReviewed by Yusuke Suzuki.\n\nMap.prototype.forEach and Set.prototype.forEach are JS builtins that walk the\nstorage with @mapIterationNext, @mapIterationEntry, @mapIterationEntryKey and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T07:59:36.379354+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c823243598c5b0ada8561918280e9a1d0649000d",
+    "url": "https://github.com/WebKit/WebKit/commit/c823243598c5b0ada8561918280e9a1d0649000d",
+    "message": "[JSC] Bytecode cache should generate `CodeForConstruct` for class constructors\nhttps://bugs.webkit.org/show_bug.cgi?id=193823\n\nReviewed by Yusuke Suzuki.\n\ngenerateUnlinkedCodeBlockForFunctions only generates the CodeForCall variant of every function.\nFor a class constructor that variant is just the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T08:00:13.761878+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce878e190fef3abba29f10243a8454fde765f573",
+    "url": "https://github.com/WebKit/WebKit/commit/ce878e190fef3abba29f10243a8454fde765f573",
+    "message": "[JSC] Inline `Map#forEach` / `Set#forEach` iteration in DFG and FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322069\n\nReviewed by Yusuke Suzuki.\n\nMap.prototype.forEach and Set.prototype.forEach are JS builtins that walk the\nstorage with @mapIterationNext, @mapIterationEntry, @mapIterationEntryKey and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T08:00:51.336177+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c823243598c5b0ada8561918280e9a1d0649000d",
+    "url": "https://github.com/WebKit/WebKit/commit/c823243598c5b0ada8561918280e9a1d0649000d",
+    "message": "[JSC] Bytecode cache should generate `CodeForConstruct` for class constructors\nhttps://bugs.webkit.org/show_bug.cgi?id=193823\n\nReviewed by Yusuke Suzuki.\n\ngenerateUnlinkedCodeBlockForFunctions only generates the CodeForCall variant of every function.\nFor a class constructor that variant is just the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
