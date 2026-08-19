@@ -45797,5 +45797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T21:46:35.458169+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "46ffe35849c8120a5d3f9f1aa91446e569bdd459",
+    "url": "https://github.com/swiftlang/swift/commit/46ffe35849c8120a5d3f9f1aa91446e569bdd459",
+    "message": "[Concurrency] Add global task registry to Swift Concurrency runtime\n\nAdd a global, sharded task registry to the Swift Concurrency runtime for debugger and diagnostic task inspection. The registry uses intrusive O(1) linking, 64-way sharding, and is compiled out for embedded targets, with new C APIs ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T21:47:13.462046+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f324cca020c0e50244783167f30a433f24758888",
+    "url": "https://github.com/WebKit/WebKit/commit/f324cca020c0e50244783167f30a433f24758888",
+    "message": "Don't cache HTTP/network errors in the module map\nhttps://bugs.webkit.org/show_bug.cgi?id=319492\n\nReviewed by Keith Miller.\n\nThis implements the spec changes from https://github.com/whatwg/html/pull/10327 to avoid caching HTTP or network module import failures.\n\nNo new tests, but lots of progression",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
