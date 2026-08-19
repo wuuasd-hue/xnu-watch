@@ -44177,5 +44177,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T01:57:39.188987+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "218421554bbbf1b029d2cd2a0484fce36a46d5dd",
+    "url": "https://github.com/WebKit/WebKit/commit/218421554bbbf1b029d2cd2a0484fce36a46d5dd",
+    "message": "[JSC] Defer Array materialization in JSON.parse\nhttps://bugs.webkit.org/show_bug.cgi?id=322048\nrdar://185243612\n\nReviewed by Sosuke Suzuki.\n\nThis patch introduces deferred Array materialization mechanism in JSON.parse.\nInstead of placing an element each time, we push it to the stack, and we\nmaterial",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T01:58:18.236481+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7a9e233ce5453340b20c2023be0793de4811e21",
+    "url": "https://github.com/WebKit/WebKit/commit/a7a9e233ce5453340b20c2023be0793de4811e21",
+    "message": "[JSC] JSON.parse int32 lexing should not repeat int32 materialization again\nhttps://bugs.webkit.org/show_bug.cgi?id=322054\nrdar://185245662\n\nReviewed by Dan Hecht.\n\nBasically applying the similar optimization to 318347@main. Let's avoid\nlexing int32 value twice in the fast path.\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T01:58:56.166885+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "218421554bbbf1b029d2cd2a0484fce36a46d5dd",
+    "url": "https://github.com/WebKit/WebKit/commit/218421554bbbf1b029d2cd2a0484fce36a46d5dd",
+    "message": "[JSC] Defer Array materialization in JSON.parse\nhttps://bugs.webkit.org/show_bug.cgi?id=322048\nrdar://185243612\n\nReviewed by Sosuke Suzuki.\n\nThis patch introduces deferred Array materialization mechanism in JSON.parse.\nInstead of placing an element each time, we push it to the stack, and we\nmaterial",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T01:59:33.887677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7a9e233ce5453340b20c2023be0793de4811e21",
+    "url": "https://github.com/WebKit/WebKit/commit/a7a9e233ce5453340b20c2023be0793de4811e21",
+    "message": "[JSC] JSON.parse int32 lexing should not repeat int32 materialization again\nhttps://bugs.webkit.org/show_bug.cgi?id=322054\nrdar://185245662\n\nReviewed by Dan Hecht.\n\nBasically applying the similar optimization to 318347@main. Let's avoid\nlexing int32 value twice in the fast path.\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
