@@ -45417,5 +45417,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:46:44.391656+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "url": "https://github.com/WebKit/WebKit/commit/1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "message": "Set a more reasonable default number of wasm threads\nhttps://bugs.webkit.org/show_bug.cgi?id=321653\n\nReviewed by Carlos Alberto Lopez Perez.\n\nWe have some wasm OOM crashes on the bots because they have\nvery high core counts but not enough memory.\n\nEx: https://build.webkit.org/#/builders/2018/builds/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:47:21.681113+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "url": "https://github.com/WebKit/WebKit/commit/1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "message": "Set a more reasonable default number of wasm threads\nhttps://bugs.webkit.org/show_bug.cgi?id=321653\n\nReviewed by Carlos Alberto Lopez Perez.\n\nWe have some wasm OOM crashes on the bots because they have\nvery high core counts but not enough memory.\n\nEx: https://build.webkit.org/#/builders/2018/builds/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:47:58.797190+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "message": "[JSC] DFG SwitchChar releases its operand before speculating that it is a string\nhttps://bugs.webkit.org/show_bug.cgi?id=322101\nrdar://183337191\n\nReviewed by Yusuke Suzuki.\n\nemitSwitchChar()'s StringUse case called op1.use() before speculateString(), so\nthe operand's death event preceded the BadType",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

@@ -9337,6 +9337,22 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+    ],
+    "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "message": "Set a more reasonable default number of wasm threads\nhttps://bugs.webkit.org/show_bug.cgi?id=321653\n\nReviewed by Carlos Alberto Lopez Perez.\n\nWe have some wasm OOM crashes on the bots because they have\nvery high core counts but not enough memory.\n\nEx: https://build.webkit.org/#/builders/2018/builds/",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/Options.cpp ---\n@@ -439,7 +439,10 @@ unsigned Options::computeNumberOfWorkerThreads(int maxNumberOfWorkerThreads, int\n \n     // Be paranoid, it is the OS we're dealing with, after all.\n     ASSERT(cpusToUse >= 1);\n-    return std::max(cpusToUse, minimum);\n+    cpusToUse = std::max(cpusToUse, minimum);\n+    if constexpr (!isDarwin())\n+        return std::min(cpusToUse, 32);\n+    return cpusToUse;\n }\n \n int32_t Options::computePriorityDeltaOfWorkerThreads(int32_t twoCorePriorityDelta, int32_t multiCorePriorityDelta)\n\n--- Source/JavaScriptCore/runtime/Options.h ---\n@@ -28,6 +28,7 @@\n #include <JavaScriptCore/CPU.h>\n #include <JavaScriptCore/JSCConfig.h>\n #include <JavaScriptCore/JSExportMacros.h>\n+#include <JavaScriptCore/OSCheck.h>\n #include <stdint.h>\n #include <wtf/ForbidHeapAllocation.h>\n #include <wtf/Noncopyable.h>\n",
+    "url": "https://github.com/WebKit/WebKit/commit/1c2c282d06f0a0c454ca7715044d179c9bfd5139",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
