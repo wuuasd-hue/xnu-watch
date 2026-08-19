@@ -45877,5 +45877,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T22:46:56.208254+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "url": "https://github.com/swiftlang/swift/commit/2efecc6e2002d1ec8c533acdd747e3ece2d205ea",
+    "message": "Merge pull request #90533 from etcwilde/ewilde/duplicate-metadata-sections\n\nELF Metadata: Consistent retain flags",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T22:47:34.512658+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "url": "https://github.com/swiftlang/swift/commit/fe53f627966dd32709a1d4d6444d1820b0bafc8b",
+    "message": "Merge pull request #90521 from compnerd/funnel\n\nruntime: account for InstanceAddressPoint in alloc and dealloc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
