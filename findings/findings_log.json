@@ -45837,5 +45837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T22:11:30.278374+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "46ffe35849c8120a5d3f9f1aa91446e569bdd459",
+    "url": "https://github.com/swiftlang/swift/commit/46ffe35849c8120a5d3f9f1aa91446e569bdd459",
+    "message": "[Concurrency] Add global task registry to Swift Concurrency runtime\n\nAdd a global, sharded task registry to the Swift Concurrency runtime for debugger and diagnostic task inspection. The registry uses intrusive O(1) linking, 64-way sharding, and is compiled out for embedded targets, with new C APIs ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T22:12:07.888416+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "url": "https://github.com/WebKit/WebKit/commit/4a90fcb7abb68ad3621b37fc58f96421ddb28dff",
+    "message": "Unreviewed, reverting 316776@main (6cfa6948d6bd)\nhttps://bugs.webkit.org/show_bug.cgi?id=319099\nrdar://181768070\n\nREGRESSION(316776@main): Builds are failing with unrecognized selector \"didEvaluateModule:\" and 2 other errors\n\nReverted change:\n\n    Add WK_ENABLE_SLOW_BUILD_VERIFICATION for slow build",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
