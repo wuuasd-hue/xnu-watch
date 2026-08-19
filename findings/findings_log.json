@@ -44757,5 +44757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T08:31:24.024765+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9516ed8a4ffc897ddca5eebfbf7b7218a729c406",
+    "url": "https://github.com/WebKit/WebKit/commit/9516ed8a4ffc897ddca5eebfbf7b7218a729c406",
+    "message": "[JSC] Apply StringSwitch for substrings\nhttps://bugs.webkit.org/show_bug.cgi?id=322078\nrdar://185270122\n\nReviewed by Yijia Huang.\n\nLike 313752@main, if rope is substring, we can access to the underlying\nstring data cheaply. This patch extends StringSwitch to substring 8-bit\nropes (previously only no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T08:32:01.160253+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce878e190fef3abba29f10243a8454fde765f573",
+    "url": "https://github.com/WebKit/WebKit/commit/ce878e190fef3abba29f10243a8454fde765f573",
+    "message": "[JSC] Inline `Map#forEach` / `Set#forEach` iteration in DFG and FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322069\n\nReviewed by Yusuke Suzuki.\n\nMap.prototype.forEach and Set.prototype.forEach are JS builtins that walk the\nstorage with @mapIterationNext, @mapIterationEntry, @mapIterationEntryKey and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
