@@ -45677,5 +45677,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T20:50:24.107020+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f324cca020c0e50244783167f30a433f24758888",
+    "url": "https://github.com/WebKit/WebKit/commit/f324cca020c0e50244783167f30a433f24758888",
+    "message": "Don't cache HTTP/network errors in the module map\nhttps://bugs.webkit.org/show_bug.cgi?id=319492\n\nReviewed by Keith Miller.\n\nThis implements the spec changes from https://github.com/whatwg/html/pull/10327 to avoid caching HTTP or network module import failures.\n\nNo new tests, but lots of progression",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T20:51:01.974037+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f324cca020c0e50244783167f30a433f24758888",
+    "url": "https://github.com/WebKit/WebKit/commit/f324cca020c0e50244783167f30a433f24758888",
+    "message": "Don't cache HTTP/network errors in the module map\nhttps://bugs.webkit.org/show_bug.cgi?id=319492\n\nReviewed by Keith Miller.\n\nThis implements the spec changes from https://github.com/whatwg/html/pull/10327 to avoid caching HTTP or network module import failures.\n\nNo new tests, but lots of progression",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T20:51:38.809069+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "url": "https://github.com/WebKit/WebKit/commit/75d9be0204db1a1c7c0cfd3ba63f70afaf53ef01",
+    "message": "[JSC][Temporal] Fix Temporal.<Type>.prototype.constructor before first access\nhttps://bugs.webkit.org/show_bug.cgi?id=318990\nrdar://181842591\n\nReviewed by Yusuke Suzuki.\n\nBefore Temporal.<Type> was accessed as a property for the first time,\nTemporal.Now.plainDateISO().constructor.name returned \"Obje",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
