@@ -44637,5 +44637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T07:11:56.861435+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7afce9416a9ef663661eb59613768529ea65101",
+    "url": "https://github.com/WebKit/WebKit/commit/b7afce9416a9ef663661eb59613768529ea65101",
+    "message": "[JSC][Wasm] Prefer lowest function index for concurrent CompileError\nhttps://bugs.webkit.org/show_bug.cgi?id=283476\n\nReviewed by Yusuke Suzuki.\n\nWhen multiple functions fail validation under concurrent compilation,\nkeep the error message for the lowest function index instead of\nwhichever worker fini",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T07:12:33.764819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cc12fa76b1f68595032ab541295f237462665e6",
+    "url": "https://github.com/WebKit/WebKit/commit/4cc12fa76b1f68595032ab541295f237462665e6",
+    "message": "[JSC][Wasm] Don't assert NativeCallee on JS frames in wasm exception paths\nhttps://bugs.webkit.org/show_bug.cgi?id=296371\n\nReviewed by Yusuke Suzuki.\n\nStack overflow during JS-to-Wasm or Wasm-to-JS can invoke\noperationWasmToJSException while DECLARE_WASM_CALL_FRAME still points at\na JS callee. Debug",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
