@@ -1722,9 +1722,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -9324,5 +9325,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "message": "[JSC] DFG SwitchChar releases its operand before speculating that it is a string\nhttps://bugs.webkit.org/show_bug.cgi?id=322101\nrdar://183337191\n\nReviewed by Yusuke Suzuki.\n\nemitSwitchChar()'s StringUse case called op1.use() before speculateString(), so\nthe operand's death event preceded the BadType",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/switch-char-scrutinee-live-at-osr-exit.js ---\n@@ -0,0 +1,13 @@\n+//@ requireOptions(\"--useLLInt=0\", \"--forceEagerCompilation=1\", \"--poisonDeadOSRExitVariables=1\")\n+\n+function opt(a4) {\n+    switch (a4) {\n+    case 'a':\n+        function f() { a4 }\n+    case 'b':\n+    case 'c':\n+    }\n+}\n+\n+opt('');\n+opt([]);\n\n--- Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp ---\n@@ -12709,9 +12709,9 @@ void SpeculativeJIT::emitSwitchChar(Node* node, SwitchData* data)\n         GPRReg op1GPR = op1.gpr();\n         GPRReg tempGPR = temp.gpr();\n \n+        speculateString(node->child1(), op1GPR);\n         op1.use();\n \n-        speculateString(node->child1(), op1GPR);\n         emitSwitchCharStringJump(node, data, op1GPR, tempGPR, node->child1());\n         noResult(node, UseChildrenCalledExplicitly);\n         break;\n",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

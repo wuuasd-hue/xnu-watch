@@ -45357,5 +45357,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:14:58.661625+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "message": "[JSC] DFG SwitchChar releases its operand before speculating that it is a string\nhttps://bugs.webkit.org/show_bug.cgi?id=322101\nrdar://183337191\n\nReviewed by Yusuke Suzuki.\n\nemitSwitchChar()'s StringUse case called op1.use() before speculateString(), so\nthe operand's death event preceded the BadType",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:15:35.694859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddc7045b7c5a9ccb6ef09124c7b8efb93527208",
+    "message": "[JSC] DFG SwitchChar releases its operand before speculating that it is a string\nhttps://bugs.webkit.org/show_bug.cgi?id=322101\nrdar://183337191\n\nReviewed by Yusuke Suzuki.\n\nemitSwitchChar()'s StringUse case called op1.use() before speculateString(), so\nthe operand's death event preceded the BadType",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-19T17:16:12.691314+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "url": "https://github.com/WebKit/WebKit/commit/7a764d7acc545eff4dcd690bbf1ae75c64a67796",
+    "message": "[JSC] Yarr should collect BM info for fixed-count terms\nhttps://bugs.webkit.org/show_bug.cgi?id=318665\n\nReviewed by Yusuke Suzuki.\n\ncollectBoyerMooreInfoFromTerm bails out on any term with\nquantityMaxCount != 1, so patterns spelled with counted quantifiers\nlike /\\b\\d{3}-\\d{2}-\\d{4}\\b/ never get the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
