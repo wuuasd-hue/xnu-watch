@@ -47437,5 +47437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T20:52:39.051096+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "url": "https://github.com/WebKit/WebKit/commit/5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "message": "[JSC][Wasm] Unwrap immutable globals in the ESM module namespace\nhttps://bugs.webkit.org/show_bug.cgi?id=322115\n\nReviewed by Yusuke Suzuki.\n\nESM import of a Wasm module should expose immutable globals as JS\nvalues, not WebAssembly.Global objects. Instance.exports is unchanged.\nv128 and exnref cannot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T20:53:17.925214+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d508ef34a245890f462af1e12d62e8e61276458",
+    "url": "https://github.com/WebKit/WebKit/commit/1d508ef34a245890f462af1e12d62e8e61276458",
+    "message": "Log active quirks to inspector console\nhttps://bugs.webkit.org/show_bug.cgi?id=322057\nrdar://185246801\n\nReviewed by Brent Fulgham.\n\nI added a log to the web inspector that shows the active quirks\non a website if they are present. The log is triggered after the\nframe loader recieves it's first data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
