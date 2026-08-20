@@ -47757,5 +47757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T23:46:13.964677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c25fbbd346c41a623bd62984d004b727eccbc605",
+    "url": "https://github.com/WebKit/WebKit/commit/c25fbbd346c41a623bd62984d004b727eccbc605",
+    "message": "[JSC] Fix stale assertion in BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=322212\nrdar://185448549\n\nReviewed by Mark Lam.\n\nFix a wrong assertion here.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl::BBQJIT::emitModOrDiv):\n\nCanonical link: https://commits.webkit.org/319553@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T23:46:51.349641+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "url": "https://github.com/swiftlang/swift/commit/58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "message": "Merge pull request #91437 from mikeash/env-var-privilege-gating\n\n[Runtime] Gate SWIFT_* environment variables on process privilege.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
