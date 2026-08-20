@@ -46437,5 +46437,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T07:13:28.418431+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "url": "https://github.com/WebKit/WebKit/commit/03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "message": "[JSC] Terminate Atomics.wait / Wasm atomic.wait on worker.terminate()\nhttps://bugs.webkit.org/show_bug.cgi?id=289686\n\nReviewed by Yusuke Suzuki.\n\nAfter https://bugs.webkit.org/show_bug.cgi?id=305440, notifyNeedTermination()\nonly fires the NeedTermination trap bit and no longer sets\nhasTerminationReq",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T07:14:05.306298+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "url": "https://github.com/WebKit/WebKit/commit/03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "message": "[JSC] Terminate Atomics.wait / Wasm atomic.wait on worker.terminate()\nhttps://bugs.webkit.org/show_bug.cgi?id=289686\n\nReviewed by Yusuke Suzuki.\n\nAfter https://bugs.webkit.org/show_bug.cgi?id=305440, notifyNeedTermination()\nonly fires the NeedTermination trap bit and no longer sets\nhasTerminationReq",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T07:14:42.404878+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5031c9001ee2e3d43e727a6d95df8d0734bc1311",
+    "url": "https://github.com/WebKit/WebKit/commit/5031c9001ee2e3d43e727a6d95df8d0734bc1311",
+    "message": "[JSC] Implement String.raw in C++\nhttps://bugs.webkit.org/show_bug.cgi?id=319012\nrdar://181857218\n\nReviewed by Keith Miller.\n\nThis patch implements String.raw in C++, which removes builtin JS\nversion of String.raw. Since array is frozen, builtin JS iteration does\nnot offer much in fact. We can write",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
