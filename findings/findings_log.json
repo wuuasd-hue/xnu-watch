@@ -47377,5 +47377,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T20:14:25.724223+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "url": "https://github.com/WebKit/WebKit/commit/5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "message": "[JSC][Wasm] Unwrap immutable globals in the ESM module namespace\nhttps://bugs.webkit.org/show_bug.cgi?id=322115\n\nReviewed by Yusuke Suzuki.\n\nESM import of a Wasm module should expose immutable globals as JS\nvalues, not WebAssembly.Global objects. Instance.exports is unchanged.\nv128 and exnref cannot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T20:15:02.600873+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "url": "https://github.com/WebKit/WebKit/commit/5cfff9fe44c6ff31639c0024dc286e909b971710",
+    "message": "[JSC][Wasm] Unwrap immutable globals in the ESM module namespace\nhttps://bugs.webkit.org/show_bug.cgi?id=322115\n\nReviewed by Yusuke Suzuki.\n\nESM import of a Wasm module should expose immutable globals as JS\nvalues, not WebAssembly.Global objects. Instance.exports is unchanged.\nv128 and exnref cannot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T20:15:39.518625+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "url": "https://github.com/WebKit/WebKit/commit/3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "message": "[JSC] Preallocate SourceProviderCache::m_map\nhttps://bugs.webkit.org/show_bug.cgi?id=322139\nrdar://185362748\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCache includes a hash map (m_map) which currently starts out empty. This patch\nuses the source length to estimate and reserve some initial capacity ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
