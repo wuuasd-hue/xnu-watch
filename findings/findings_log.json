@@ -47537,5 +47537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:49:51.834299+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "url": "https://github.com/swiftlang/swift/commit/58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "message": "Merge pull request #91437 from mikeash/env-var-privilege-gating\n\n[Runtime] Gate SWIFT_* environment variables on process privilege.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:50:28.696388+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "url": "https://github.com/swiftlang/swift/commit/58c3ae25d7c6b81aed8781076ce53251f55be883",
+    "message": "Merge pull request #91437 from mikeash/env-var-privilege-gating\n\n[Runtime] Gate SWIFT_* environment variables on process privilege.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:51:05.541321+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "url": "https://github.com/swiftlang/swift/commit/55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "message": "[Runtime] Allocate metadata memory with the MTE canonical tag. (#91600)\n\nUse MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG to allocate metadata when\nit's available. Allocated metadata includes classes. ObjC classes, and\nthus Swift classes, must be allocated with the canonical tag because the\nObjC runtime ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
