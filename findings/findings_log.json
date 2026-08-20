@@ -47117,5 +47117,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:20:56.806636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "url": "https://github.com/WebKit/WebKit/commit/3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "message": "[JSC] Preallocate SourceProviderCache::m_map\nhttps://bugs.webkit.org/show_bug.cgi?id=322139\nrdar://185362748\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCache includes a hash map (m_map) which currently starts out empty. This patch\nuses the source length to estimate and reserve some initial capacity ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:21:35.956170+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "url": "https://github.com/WebKit/WebKit/commit/3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "message": "[JSC] Preallocate SourceProviderCache::m_map\nhttps://bugs.webkit.org/show_bug.cgi?id=322139\nrdar://185362748\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCache includes a hash map (m_map) which currently starts out empty. This patch\nuses the source length to estimate and reserve some initial capacity ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:22:14.179815+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ca8f08b8936335761c02c8f24129340e257a502",
+    "url": "https://github.com/WebKit/WebKit/commit/0ca8f08b8936335761c02c8f24129340e257a502",
+    "message": "[JSC] Remove the obsolete optimization in Lexer::shift\nhttps://bugs.webkit.org/show_bug.cgi?id=322038\nrdar://185230995\n\nReviewed by Yijia Huang, Mark Lam, and Yusuke Suzuki.\n\nLexer::shift is implemented so that m_current is first unconditionally zeroed, and then\nset to contain the current character ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

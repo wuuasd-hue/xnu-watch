@@ -9550,9 +9550,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "WebKit/WebKit",
@@ -9562,6 +9563,21 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/parser/Parser.cpp ---\n@@ -5427,7 +5427,20 @@ template <class TreeBuilder> TreeExpression Parser<LexerType>::parseMemberExpres\n     TreeExpression base = 0;\n     JSTextPosition expressionStart = tokenStartPosition();\n     JSTokenLocation location = tokenLocation();\n-    Vector<JSTextPosition, 4> newTokenStartPositions;\n+\n+    // No need to accumulate newTokenStartPositions if the builder is SyntaxChecker.\n+    struct IgnoredPositions {\n+        void append(const JSTextPosition&) { ++m_size; }\n+        JSTextPosition operator[](size_t) const { return { }; }\n+        size_t size() const { return m_size; }\n+    private:\n+        unsigned m_size { 0 };\n+    };\n+    static_assert(!std::is_same_v<TreeBuilder, SyntaxChecker>\n+        || requires (TreeBuilder& builder, TreeExpression expression, const JSTokenLocation& newLocation) { builder.createNewExpr(newLocation, expression, 0, 0, 0); },\n+        \"SyntaxChecker::createNewExpr is expected to accept ints instead of JSTextPositions and ignore them.\");\n+\n+    std::conditional_t<std::is_same_v<TreeBuilder, SyntaxChecker>, IgnoredPositions, Vector<JSTextPosition, 4>> newTokenStartPositions;\n     while (match(NEW)) {\n         newTokenStartPositions.append(tokenStartPosition());\n         next();\n",
     "url": "https://github.com/WebKit/WebKit/commit/24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "message": "[JSC] Preallocate SourceProviderCache::m_map\nhttps://bugs.webkit.org/show_bug.cgi?id=322139\nrdar://185362748\n\nReviewed by Yusuke Suzuki.\n\nSourceProviderCache includes a hash map (m_map) which currently starts out empty. This patch\nuses the source length to estimate and reserve some initial capacity ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/parser/SourceProviderCache.cpp ---\n@@ -31,6 +31,15 @@ namespace JSC {\n DEFINE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCache);\n DEFINE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCacheItem);\n \n+SourceProviderCache::SourceProviderCache(unsigned sourceLength)\n+{\n+    static constexpr unsigned conservativeSourceBytesPerEntry = 512;\n+    static constexpr unsigned maximumEntriesToReserve = 64 * 1024;\n+\n+    unsigned estimatedEntries = sourceLength / conservativeSourceBytesPerEntry;\n+    m_map.reserveInitialCapacity(std::min(estimatedEntries, maximumEntriesToReserve));\n+}\n+\n SourceProviderCache::~SourceProviderCache()\n {\n     clear();\n\n--- Source/JavaScriptCore/parser/SourceProviderCache.h ---\n@@ -36,14 +36,20 @@ DECLARE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCache);\n class SourceProviderCache : public RefCounted<SourceProviderCache> {\n     WTF_DEPRECATED_MAKE_STRUCT_FAST_ALLOCATED_WITH_HEAP_IDENTIFIER(SourceProviderCache, SourceProviderCache);\n public:\n-    SourceProviderCache() { }\n+    static Ref<SourceProviderCache> create(unsigned sourceLength)\n+    {\n+        return adoptRef(*new SourceProviderCache(sourceLength));\n+    }\n+\n     JS_EXPORT_PRIVATE ~SourceProviderCache();\n \n     JS_EXPORT_PRIVATE void clear();\n     void add(int sourcePosition, std::unique_ptr<SourceProviderCacheItem>);\n     const SourceProviderCacheItem* get(int sourcePosition) const LIFETIME_BOUND { return m_map.get(sourcePosition); }\n \n private:\n+    explicit SourceProviderCache(unsigned sourceLength);\n+\n     UncheckedKeyHashMap<int, std::unique_ptr<SourceProviderCacheItem>, WTF::IntHash<int>, WTF::UnsignedWithZeroKeyHashTraits<int>> m_map;\n };\n \n\n--- Source/JavaScriptCore/runtime/VM.cpp ---\n@@ -1058,7 +1058,7 @@ SourceProviderCache* VM::addSourceProviderCache(SourceProvider* sourceProvider)\n {\n     auto addResult = sourceProviderCacheMap.add(sourceProvider, nullptr);\n     if (addResult.isNewEntry)\n-        addResult.iterator->value = adoptRef(new SourceProviderCache);\n+        addResult.iterator->value = SourceProviderCache::create(sourceProvider->source().length());\n     return addResult.iterator->value.get();\n }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/3302d7a4550490f246ee50dcd46fe4dd584a1c51",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
