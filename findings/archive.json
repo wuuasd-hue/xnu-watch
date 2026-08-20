@@ -9685,6 +9685,22 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+    ],
+    "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "c25fbbd346c41a623bd62984d004b727eccbc605",
+    "message": "[JSC] Fix stale assertion in BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=322212\nrdar://185448549\n\nReviewed by Mark Lam.\n\nFix a wrong assertion here.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl::BBQJIT::emitModOrDiv):\n\nCanonical link: https://commits.webkit.org/319553@main",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmBBQJIT64.h ---\n@@ -223,7 +223,7 @@ void BBQJIT::emitModOrDiv(Value& lhs, Location lhsLocation, Value& rhs, Location\n \n     ASSERT(resultLocation.isRegister());\n     ASSERT(lhsLocation.asGPR() != X86Registers::eax && lhsLocation.asGPR() != X86Registers::edx);\n-    ASSERT(rhsLocation.asGPR() != X86Registers::eax && lhsLocation.asGPR() != X86Registers::edx);\n+    ASSERT(rhsLocation.asGPR() != X86Registers::eax && rhsLocation.asGPR() != X86Registers::edx);\n \n     ScratchScope<2, 0> scratches(*this, lhsLocation, rhsLocation, resultLocation);\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/c25fbbd346c41a623bd62984d004b727eccbc605",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1

@@ -47697,5 +47697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T23:13:34.165303+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c25fbbd346c41a623bd62984d004b727eccbc605",
+    "url": "https://github.com/WebKit/WebKit/commit/c25fbbd346c41a623bd62984d004b727eccbc605",
+    "message": "[JSC] Fix stale assertion in BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=322212\nrdar://185448549\n\nReviewed by Mark Lam.\n\nFix a wrong assertion here.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl::BBQJIT::emitModOrDiv):\n\nCanonical link: https://commits.webkit.org/319553@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T23:14:11.132830+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c25fbbd346c41a623bd62984d004b727eccbc605",
+    "url": "https://github.com/WebKit/WebKit/commit/c25fbbd346c41a623bd62984d004b727eccbc605",
+    "message": "[JSC] Fix stale assertion in BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=322212\nrdar://185448549\n\nReviewed by Mark Lam.\n\nFix a wrong assertion here.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl::BBQJIT::emitModOrDiv):\n\nCanonical link: https://commits.webkit.org/319553@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T23:14:47.886003+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "url": "https://github.com/WebKit/WebKit/commit/e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "message": "[JSC] Fix BBQ i64.mul_wide register assignment in x64\nhttps://bugs.webkit.org/show_bug.cgi?id=322211\nrdar://185448059\n\nReviewed by Mark Lam.\n\nx64 needs to extract 128bit result from rdx:rax, but if register\nallocator assigns resultLo = rdx and resultHi = rax, we clobber them.\nThis is the similar pat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
