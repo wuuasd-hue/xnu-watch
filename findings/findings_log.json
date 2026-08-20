@@ -47637,5 +47637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T22:50:43.715276+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "url": "https://github.com/WebKit/WebKit/commit/e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "message": "[JSC] Fix BBQ i64.mul_wide register assignment in x64\nhttps://bugs.webkit.org/show_bug.cgi?id=322211\nrdar://185448059\n\nReviewed by Mark Lam.\n\nx64 needs to extract 128bit result from rdx:rax, but if register\nallocator assigns resultLo = rdx and resultHi = rax, we clobber them.\nThis is the similar pat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T22:51:21.532711+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "url": "https://github.com/WebKit/WebKit/commit/e88b92e29f0753e644abe33fdbc2b78c051ebf59",
+    "message": "[JSC] Fix BBQ i64.mul_wide register assignment in x64\nhttps://bugs.webkit.org/show_bug.cgi?id=322211\nrdar://185448059\n\nReviewed by Mark Lam.\n\nx64 needs to extract 128bit result from rdx:rax, but if register\nallocator assigns resultLo = rdx and resultHi = rax, we clobber them.\nThis is the similar pat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T22:51:59.067136+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "url": "https://github.com/swiftlang/swift/commit/55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "message": "[Runtime] Allocate metadata memory with the MTE canonical tag. (#91600)\n\nUse MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG to allocate metadata when\nit's available. Allocated metadata includes classes. ObjC classes, and\nthus Swift classes, must be allocated with the canonical tag because the\nObjC runtime ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
