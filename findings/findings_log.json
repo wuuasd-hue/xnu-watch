@@ -46717,5 +46717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T11:14:35.236082+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2fb282a825385d9f53f09b6adc07b18f19203276",
+    "url": "https://github.com/WebKit/WebKit/commit/2fb282a825385d9f53f09b6adc07b18f19203276",
+    "message": "[JSC][Temporal] Fix non-ISO Calendar bugs in CalendarICUBridge\nhttps://bugs.webkit.org/show_bug.cgi?id=319278\nrdar://182118211\n\nReviewed by Yusuke Suzuki.\n\nFour bugs found by cross-checking against temporal_rs and icu4x:\n\n1. Coptic / Ethiopic `am` era was mapped to ICU era 0 (before-AM); the\ncorrect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T11:15:11.936452+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7be57c077eda4ed04a6f77b547f01ffe214891d8",
+    "url": "https://github.com/WebKit/WebKit/commit/7be57c077eda4ed04a6f77b547f01ffe214891d8",
+    "message": "[JSC] Support cross-realm Array fast path in `forEachInIterable`\nhttps://bugs.webkit.org/show_bug.cgi?id=317731\n\nReviewed by Keith Miller.\n\nThe 2-argument getIterationMode (used only by forEachInIterable) gated FastArray\non the caller realm's isOriginalArrayStructure, so cross-realm arrays always\nfe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
