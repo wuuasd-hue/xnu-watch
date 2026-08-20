@@ -46237,5 +46237,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:00:06.603264+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fbae40455e736badcdd2f44b6062460668866cb",
+    "url": "https://github.com/WebKit/WebKit/commit/6fbae40455e736badcdd2f44b6062460668866cb",
+    "message": "[JSC] Use StringSwitch with resolved rope strings in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322144\nrdar://185366501\n\nReviewed by Yijia Huang.\n\nFTL StringSwitch is really efficient for non atom strings, so let's use\nit even for resolved rope strings. When we encounter a rope string, we\ncall a fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:00:50.033322+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fbae40455e736badcdd2f44b6062460668866cb",
+    "url": "https://github.com/WebKit/WebKit/commit/6fbae40455e736badcdd2f44b6062460668866cb",
+    "message": "[JSC] Use StringSwitch with resolved rope strings in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322144\nrdar://185366501\n\nReviewed by Yijia Huang.\n\nFTL StringSwitch is really efficient for non atom strings, so let's use\nit even for resolved rope strings. When we encounter a rope string, we\ncall a fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:01:32.860384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "url": "https://github.com/WebKit/WebKit/commit/e6fd50a3da8403cf38fa2d44745fd770783cff38",
+    "message": "RegExpStringIterator next can't use SpecObjectOther type check filtering\nhttps://bugs.webkit.org/show_bug.cgi?id=318142\nrdar://180958970\n\nReviewed by Yusuke Suzuki.\n\nSpecObjectOther type filtering is too wide for the assumptions of the\noperationRegExpStringIteratorNext operation. Since DFG/FTL_TYPE_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
