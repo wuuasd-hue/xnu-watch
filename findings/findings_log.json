@@ -46497,5 +46497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T08:02:01.340325+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "url": "https://github.com/WebKit/WebKit/commit/03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "message": "[JSC] Terminate Atomics.wait / Wasm atomic.wait on worker.terminate()\nhttps://bugs.webkit.org/show_bug.cgi?id=289686\n\nReviewed by Yusuke Suzuki.\n\nAfter https://bugs.webkit.org/show_bug.cgi?id=305440, notifyNeedTermination()\nonly fires the NeedTermination trap bit and no longer sets\nhasTerminationReq",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T08:02:38.070798+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "url": "https://github.com/WebKit/WebKit/commit/8490d02c5dcc8461ce5d8161717d292d8085a596",
+    "message": "[JSC] AsyncFromSyncIterator does not close correctly when the sync iterator yields a rejected value promise\nhttps://bugs.webkit.org/show_bug.cgi?id=319185\n\nReviewed by Yusuke Suzuki.\n\nPer IteratorClose[1] invoked with a throw completion, any exception thrown\nwhile getting or calling the return metho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
