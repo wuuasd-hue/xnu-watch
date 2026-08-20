@@ -47297,5 +47297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T19:07:36.560308+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d508ef34a245890f462af1e12d62e8e61276458",
+    "url": "https://github.com/WebKit/WebKit/commit/1d508ef34a245890f462af1e12d62e8e61276458",
+    "message": "Log active quirks to inspector console\nhttps://bugs.webkit.org/show_bug.cgi?id=322057\nrdar://185246801\n\nReviewed by Brent Fulgham.\n\nI added a log to the web inspector that shows the active quirks\non a website if they are present. The log is triggered after the\nframe loader recieves it's first data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T19:08:13.779068+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ef470855921ed52f4a67f07e1b89dd664d1d060",
+    "url": "https://github.com/WebKit/WebKit/commit/7ef470855921ed52f4a67f07e1b89dd664d1d060",
+    "message": "[JSC] Stop computing free variables twice when popping a function scope\nhttps://bugs.webkit.org/show_bug.cgi?id=322157\nrdar://185383752\n\nReviewed by Yusuke Suzuki.\n\nWhen Parser::parseFunctionInfo creates a record for the function in source provider cache,\nthe fillParametersForSourceProviderCache fun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
