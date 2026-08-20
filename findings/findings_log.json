@@ -47477,5 +47477,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:15:30.587655+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "url": "https://github.com/swiftlang/swift/commit/55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "message": "[Runtime] Allocate metadata memory with the MTE canonical tag. (#91600)\n\nUse MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG to allocate metadata when\nit's available. Allocated metadata includes classes. ObjC classes, and\nthus Swift classes, must be allocated with the canonical tag because the\nObjC runtime ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:16:08.106396+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "url": "https://github.com/swiftlang/swift/commit/55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "message": "[Runtime] Allocate metadata memory with the MTE canonical tag. (#91600)\n\nUse MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG to allocate metadata when\nit's available. Allocated metadata includes classes. ObjC classes, and\nthus Swift classes, must be allocated with the canonical tag because the\nObjC runtime ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T21:16:51.620735+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ef470855921ed52f4a67f07e1b89dd664d1d060",
+    "url": "https://github.com/WebKit/WebKit/commit/7ef470855921ed52f4a67f07e1b89dd664d1d060",
+    "message": "[JSC] Stop computing free variables twice when popping a function scope\nhttps://bugs.webkit.org/show_bug.cgi?id=322157\nrdar://185383752\n\nReviewed by Yusuke Suzuki.\n\nWhen Parser::parseFunctionInfo creates a record for the function in source provider cache,\nthe fillParametersForSourceProviderCache fun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

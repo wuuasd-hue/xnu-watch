@@ -9619,9 +9619,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -9638,5 +9639,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "swiftlang/swift",
+    "sha": "55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "message": "[Runtime] Allocate metadata memory with the MTE canonical tag. (#91600)\n\nUse MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG to allocate metadata when\nit's available. Allocated metadata includes classes. ObjC classes, and\nthus Swift classes, must be allocated with the canonical tag because the\nObjC runtime ",
+    "description": "Swift runtime - bellek guvenligi/tip sistemi hassas alanlari",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- stdlib/public/runtime/Metadata.cpp ---\n@@ -52,6 +52,9 @@\n #include <new>\n #include <unordered_set>\n #include <vector>\n+#if defined(__APPLE__) && SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC\n+#include <malloc/malloc.h>\n+#endif\n #if SWIFT_PTRAUTH\n #include <ptrauth.h>\n #endif\n@@ -8477,6 +8480,31 @@ static void checkAllocatorDebugEnvironmentVariables(void *context) {\n   _swift_debug_allocationPoolBackPointerOffset = PoolRange::PageSize - sizeof(PoolTrailer);\n }\n \n+// Used to allocate new pages for the allocator, or for metadata allocations\n+// larger than the pool allocation size.\n+static void *allocateRawMetadataMemory(size_t size, size_t alignMask) {\n+#ifdef MALLOC_ZONE_MALLOC_DEFAULT_ALIGN\n+  // ObjC classes (and thus Swift classes) need to be allocated with the\n+  // canonical tag, because the ObjC runtime uses the high bits of the isa field\n+  // for other purposes. For now, force all Swift metadata to be allocated with\n+  // the canonical tag. In the future, we should be able to refine this so that\n+  // only classes use the canonical tag, and maybe only NSObject subclasses.\n+  //\n+  // Match the value of MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG without\n+  // referencing it, so we can build against SDKs that don't have it.\n+  auto canonicalTag = (malloc_zone_malloc_options_t)(1u << 1);\n+  size_t alignment = alignMask + 1;\n+  if (alignment < sizeof(void *))\n+    alignment = sizeof(void *);\n+  size = roundUpToAlignment(size, alignment);\n+\n+  if (__builtin_available(macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0,\n+                          visionOS 26.0, *))\n+    return malloc_zone_malloc_with_options(NULL, alignment, size, canonicalTag);\n+#endif\n+  return swift_slowAlloc(size, alignMask);\n+}\n+\n void *MetadataAllocator::Allocate(size_t size, size_t alignment) {\n   assert(Tag != 0);\n   assert(alignment <= alignof(void*));\n@@ -8487,7 +8515,7 @@ void *MetadataAllocator::Allocate(size_t size, size_t alignment) {\n \n   // If the size is larger than the maximum, just do a normal heap allocation.\n   if (size > PoolRange::MaxPoolAllocationSize) {\n-    void *allocation = swift_slowAlloc(size, alignment - 1);\n+    void *allocation = allocateRawMetadataMemory(size, alignment - 1);\n     memsetScribble(allocation, size);\n     return allocation;\n   }\n@@ -8510,8 +8538,8 @@ void *MetadataAllocator::Allocate(size_t size, size_t alignment) {\n                            curState.Remaining - sizeWithHeader};\n     } else {\n       allocatedNewPage = true;\n-      allocation = reinterpret_cast<char *>(swift_slowAlloc(PoolRange::PageSize,\n-                                                            alignof(char) - 1));\n+      allocation = reinterpret_cast<char *>(\n+          allocateRawMetadataMemory(PoolRange::PageSize, alignof(char) - 1));\n       memsetScribble(allocation, PoolRange::PageSize);\n \n       auto poolSize = PoolRange::PageSize;\n\n--- stdlib/public/runtime/MetadataCache.h ---\n@@ -17,6 +17,7 @@\n #include \"swift/Runtime/Metadata.h\"\n #include \"swift/Threading/Mutex.h\"\n \n+#include \"swift/Basic/MathUtils.h\"\n #include \"swift/shims/Visibility.h\"\n \n #include \"llvm/ADT/Hashing.h\"\n@@ -26,6 +27,9 @@\n #include <condition_variable>\n #include <optional>\n #include <tuple>\n+#if defined(__APPLE__) && SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC\n+#include <malloc/malloc.h>\n+#endif\n \n #ifndef SWIFT_DEBUG_RUNTIME\n #define SWIFT_DEBUG_RUNTIME 0\n@@ -79,6 +83,25 @@ class MetadataAllocator {\n   SWIFT_RETURNS_NONNULL SWIFT_NODISCARD\n   void *Allocate(size_t size, size_t alignment) {\n     if (alignment < sizeof(void*)) alignment = sizeof(void*);\n+\n+#ifdef MALLOC_ZONE_MALLOC_DEFAULT_ALIGN\n+    // ObjC classes (and thus Swift classes) need to be allocated with the\n+    // canonical tag, because the ObjC runtime uses the high bits of the isa\n+    // field for other purposes. For now, force all Swift metadata to be\n+    // allocated with the canonical tag. In the future, we should be able to\n+    // refine this so that only classes use the canonical tag, and maybe only\n+    // NSObject subclasses.\n+    //\n+    // Match the value of MALLOC_ZONE_MALLOC_OPTION_CANONICAL_TAG without\n+    // referencing it, so we can build against SDKs that don't have it.\n+    auto canonicalTag = (malloc_zone_malloc_options_t)(1u << 1);\n+    size = roundUpToAlignment(size, alignment);\n+    if (__builtin_available(macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0,\n+                            visionOS 26.0, *))\n+      return malloc_zone_malloc_with_options(NULL, alignment, size,\n+                                             canonicalTag);\n+#endif\n+\n     void *ptr = nullptr;\n     if (SWIFT_UNLIKELY(posix_memalign(&ptr, alignment, size) != 0 || !ptr)) {\n       swift::crash(\"Could not allocate memory for type metadata.\");\n",
+    "url": "https://github.com/swiftlang/swift/commit/55dedd2f6c30c2b9c65296726dea9d73eda7ab4f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
