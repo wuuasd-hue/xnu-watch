@@ -46077,5 +46077,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T02:48:49.907209+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de9231d86e640102a22bc9a6091eb6dbf94bb4d4",
+    "url": "https://github.com/WebKit/WebKit/commit/de9231d86e640102a22bc9a6091eb6dbf94bb4d4",
+    "message": "[JSC] Use `FixedVector` for `RegExp::m_ovector` and `RareData::m_captureGroupNames`\nhttps://bugs.webkit.org/show_bug.cgi?id=322090\n\nReviewed by Yusuke Suzuki.\n\nBoth vectors are sized once in RegExp::finishCreation and never grow, so\nVector's capacity field is wasted. Worse, Vector::resize honors the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T02:49:27.681212+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9d03f483401c594b5e54d32a80dd1993f4346100",
+    "url": "https://github.com/WebKit/WebKit/commit/9d03f483401c594b5e54d32a80dd1993f4346100",
+    "message": "[JSC] Remove `CallLinkInfo::m_slowPathCount`\nhttps://bugs.webkit.org/show_bug.cgi?id=322096\n\nReviewed by Yusuke Suzuki.\n\nm_slowPathCount is only incremented by the virtual call thunks, and the only\nway for a call site to reach those thunks is setVirtualCall(), which also sets\nm_clearedByVirtual. Cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T02:50:05.552299+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de9231d86e640102a22bc9a6091eb6dbf94bb4d4",
+    "url": "https://github.com/WebKit/WebKit/commit/de9231d86e640102a22bc9a6091eb6dbf94bb4d4",
+    "message": "[JSC] Use `FixedVector` for `RegExp::m_ovector` and `RareData::m_captureGroupNames`\nhttps://bugs.webkit.org/show_bug.cgi?id=322090\n\nReviewed by Yusuke Suzuki.\n\nBoth vectors are sized once in RegExp::finishCreation and never grow, so\nVector's capacity field is wasted. Worse, Vector::resize honors the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T02:50:43.377302+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9d03f483401c594b5e54d32a80dd1993f4346100",
+    "url": "https://github.com/WebKit/WebKit/commit/9d03f483401c594b5e54d32a80dd1993f4346100",
+    "message": "[JSC] Remove `CallLinkInfo::m_slowPathCount`\nhttps://bugs.webkit.org/show_bug.cgi?id=322096\n\nReviewed by Yusuke Suzuki.\n\nm_slowPathCount is only incremented by the virtual call thunks, and the only\nway for a call site to reach those thunks is setVirtualCall(), which also sets\nm_clearedByVirtual. Cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
