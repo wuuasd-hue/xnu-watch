@@ -47177,5 +47177,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:52:24.693084+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d508ef34a245890f462af1e12d62e8e61276458",
+    "url": "https://github.com/WebKit/WebKit/commit/1d508ef34a245890f462af1e12d62e8e61276458",
+    "message": "Log active quirks to inspector console\nhttps://bugs.webkit.org/show_bug.cgi?id=322057\nrdar://185246801\n\nReviewed by Brent Fulgham.\n\nI added a log to the web inspector that shows the active quirks\non a website if they are present. The log is triggered after the\nframe loader recieves it's first data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:53:01.781939+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d508ef34a245890f462af1e12d62e8e61276458",
+    "url": "https://github.com/WebKit/WebKit/commit/1d508ef34a245890f462af1e12d62e8e61276458",
+    "message": "Log active quirks to inspector console\nhttps://bugs.webkit.org/show_bug.cgi?id=322057\nrdar://185246801\n\nReviewed by Brent Fulgham.\n\nI added a log to the web inspector that shows the active quirks\non a website if they are present. The log is triggered after the\nframe loader recieves it's first data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T17:53:39.129655+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "url": "https://github.com/WebKit/WebKit/commit/24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "message": "[JSC] Do not accumulate new token positions in parseMemberExpression for SyntaxChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=322035\nrdar://185228426\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\nParser::newMemberExpression accumulates the positions of NEW tokens in a Vector held in\nnewTokenStartPos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

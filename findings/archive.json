@@ -9566,9 +9566,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "WebKit/WebKit",
@@ -9578,6 +9579,21 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/parser/SourceProviderCache.cpp ---\n@@ -31,6 +31,15 @@ namespace JSC {\n DEFINE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCache);\n DEFINE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCacheItem);\n \n+SourceProviderCache::SourceProviderCache(unsigned sourceLength)\n+{\n+    static constexpr unsigned conservativeSourceBytesPerEntry = 512;\n+    static constexpr unsigned maximumEntriesToReserve = 64 * 1024;\n+\n+    unsigned estimatedEntries = sourceLength / conservativeSourceBytesPerEntry;\n+    m_map.reserveInitialCapacity(std::min(estimatedEntries, maximumEntriesToReserve));\n+}\n+\n SourceProviderCache::~SourceProviderCache()\n {\n     clear();\n\n--- Source/JavaScriptCore/parser/SourceProviderCache.h ---\n@@ -36,14 +36,20 @@ DECLARE_ALLOCATOR_WITH_HEAP_IDENTIFIER(SourceProviderCache);\n class SourceProviderCache : public RefCounted<SourceProviderCache> {\n     WTF_DEPRECATED_MAKE_STRUCT_FAST_ALLOCATED_WITH_HEAP_IDENTIFIER(SourceProviderCache, SourceProviderCache);\n public:\n-    SourceProviderCache() { }\n+    static Ref<SourceProviderCache> create(unsigned sourceLength)\n+    {\n+        return adoptRef(*new SourceProviderCache(sourceLength));\n+    }\n+\n     JS_EXPORT_PRIVATE ~SourceProviderCache();\n \n     JS_EXPORT_PRIVATE void clear();\n     void add(int sourcePosition, std::unique_ptr<SourceProviderCacheItem>);\n     const SourceProviderCacheItem* get(int sourcePosition) const LIFETIME_BOUND { return m_map.get(sourcePosition); }\n \n private:\n+    explicit SourceProviderCache(unsigned sourceLength);\n+\n     UncheckedKeyHashMap<int, std::unique_ptr<SourceProviderCacheItem>, WTF::IntHash<int>, WTF::UnsignedWithZeroKeyHashTraits<int>> m_map;\n };\n \n\n--- Source/JavaScriptCore/runtime/VM.cpp ---\n@@ -1058,7 +1058,7 @@ SourceProviderCache* VM::addSourceProviderCache(SourceProvider* sourceProvider)\n {\n     auto addResult = sourceProviderCacheMap.add(sourceProvider, nullptr);\n     if (addResult.isNewEntry)\n-        addResult.iterator->value = adoptRef(new SourceProviderCache);\n+        addResult.iterator->value = SourceProviderCache::create(sourceProvider->source().length());\n     return addResult.iterator->value.get();\n }\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/3302d7a4550490f246ee50dcd46fe4dd584a1c51",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "1d508ef34a245890f462af1e12d62e8e61276458",
+    "message": "Log active quirks to inspector console\nhttps://bugs.webkit.org/show_bug.cgi?id=322057\nrdar://185246801\n\nReviewed by Brent Fulgham.\n\nI added a log to the web inspector that shows the active quirks\non a website if they are present. The log is triggered after the\nframe loader recieves it's first data i",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/FrameLoader.cpp ---\n@@ -814,6 +814,9 @@ void FrameLoader::receivedFirstData()\n     ASSERT(frame->document());\n     Ref document = *frame->document();\n \n+    if (frame->isMainFrame())\n+        document->quirks().logQuirksToConsoleIfNecessary();\n+\n     LinkLoader::loadLinksFromHeader(documentLoader->response().httpHeaderField(HTTPHeaderName::Link), document->url(), document, LinkLoader::MediaAttributeCheck::MediaAttributeEmpty);\n \n     scheduleRefreshIfNeeded(document, documentLoader->response().httpHeaderField(HTTPHeaderName::Refresh), IsMetaRefresh::No);\n\n--- Source/WebCore/page/Quirks.cpp ---\n@@ -4339,6 +4339,33 @@ void Quirks::determineRelevantQuirks()\n     m_quirksData.setQuirkState(QuirksData::SiteSpecificQuirk::ShouldPreventOrientationMediaQueryFromEvaluatingToLandscapeQuirk, shouldPreventOrientationMediaQueryFromEvaluatingToLandscapeInternal(quirksURL));\n }\n \n+void Quirks::logQuirksToConsoleIfNecessary() const\n+{\n+    RefPtr document = m_document.get();\n+    if (!document)\n+        return;\n+\n+    // FIXME: should we use log english sentences instead of the quirk enum names?\n+    const auto quirks = activeQuirks();\n+    if (quirks.isEmpty())\n+        return;\n+\n+    const auto formattedQuirksList = makeStringByJoining(quirks, \", \"_s);\n+    const auto message = makeString(topDocumentURL().string(), \" has active WebKit quirks: \"_s, formattedQuirksList, \". Visit https://docs.webkit.org/Infrastructure/Quirks.html for more information.\"_s);\n+    document->addConsoleMessage(MessageSource::Other, MessageLevel::Warning, message);\n+}\n+\n+Vector<String> Quirks::activeQuirks() const\n+{\n+    Vector<String> result;\n+\n+    for (auto quirk : m_quirksData.activeQuirks)\n+        result.append(String { WTF::enumName(static_cast<QuirksData::SiteSpecificQuirk>(quirk)) });\n+\n+    std::ranges::sort(result, codePointCompareLessThan);\n+    return result;\n+}\n+\n bool Quirks::hasRelevantQuirks() const\n {\n     return !m_quirksData.activeQuirks.isEmpty();\n\n--- Source/WebCore/page/Quirks.h ---\n@@ -229,6 +229,8 @@ class Quirks {\n \n     static bool shouldOmitHTMLDocumentSupportedPropertyNames();\n \n+    WEBCORE_EXPORT Vector<String> activeQuirks() const;\n+\n #if PLATFORM(IOS) || PLATFORM(VISION)\n     WEBCORE_EXPORT bool allowLayeredFullscreenVideos() const;\n #endif\n@@ -370,6 +372,7 @@ class Quirks {\n     void clearLogoutSurvivingIdentityCookiesIfNeeded(const URL& fetchURL, int httpStatusCode);\n \n     void determineRelevantQuirks();\n+    void logQuirksToConsoleIfNecessary() const;\n \n #if PLATFORM(IOS_FAMILY) && ENABLE(IOS_TOUCH_EVENTS)\n     WEBCORE_EXPORT bool shouldAllowNativeTapsOnMediaElements(const Node*) const;\n",
+    "url": "https://github.com/WebKit/WebKit/commit/1d508ef34a245890f462af1e12d62e8e61276458",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
