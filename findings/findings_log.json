@@ -46537,5 +46537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T09:01:50.446682+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "url": "https://github.com/WebKit/WebKit/commit/03e836de2f7bd5627a95f60357633d59fb6bb18d",
+    "message": "[JSC] Terminate Atomics.wait / Wasm atomic.wait on worker.terminate()\nhttps://bugs.webkit.org/show_bug.cgi?id=289686\n\nReviewed by Yusuke Suzuki.\n\nAfter https://bugs.webkit.org/show_bug.cgi?id=305440, notifyNeedTermination()\nonly fires the NeedTermination trap bit and no longer sets\nhasTerminationReq",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T09:02:27.190097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "url": "https://github.com/WebKit/WebKit/commit/94ff9f23ee9c041c4bb9b657469a327ebb79ae12",
+    "message": "Off-by-one out-of-bounds read in KanjiCode::judge()\nhttps://bugs.webkit.org/show_bug.cgi?id=318680\n\nReviewed by Chris Dumez.\n\nKanjiCode::judge() scans response bytes to guess a Japanese encoding\nduring charset autodetection. Two branches guard the string[i + 1]\nlookahead with (string.size() - i >= 1",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
