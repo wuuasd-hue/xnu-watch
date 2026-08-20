@@ -46297,5 +46297,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:27:59.204477+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a5fa580c849f0d81096e8650be79392ae1517f59",
+    "url": "https://github.com/WebKit/WebKit/commit/a5fa580c849f0d81096e8650be79392ae1517f59",
+    "message": "[JSC] B3::hoistLoopInvariantValues should be better at handling interference between control dependence and side exits\nhttps://bugs.webkit.org/show_bug.cgi?id=174763\nrdar://185360182\n\nReviewed by Keith Miller.\n\nThis patch extends B3's LICM to handle trapping loads. Currently we were\nreally conservat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:28:37.411979+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a5fa580c849f0d81096e8650be79392ae1517f59",
+    "url": "https://github.com/WebKit/WebKit/commit/a5fa580c849f0d81096e8650be79392ae1517f59",
+    "message": "[JSC] B3::hoistLoopInvariantValues should be better at handling interference between control dependence and side exits\nhttps://bugs.webkit.org/show_bug.cgi?id=174763\nrdar://185360182\n\nReviewed by Keith Miller.\n\nThis patch extends B3's LICM to handle trapping loads. Currently we were\nreally conservat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T05:29:15.299739+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fbae40455e736badcdd2f44b6062460668866cb",
+    "url": "https://github.com/WebKit/WebKit/commit/6fbae40455e736badcdd2f44b6062460668866cb",
+    "message": "[JSC] Use StringSwitch with resolved rope strings in FTL\nhttps://bugs.webkit.org/show_bug.cgi?id=322144\nrdar://185366501\n\nReviewed by Yijia Huang.\n\nFTL StringSwitch is really efficient for non atom strings, so let's use\nit even for resolved rope strings. When we encounter a rope string, we\ncall a fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
