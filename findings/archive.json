@@ -9538,5 +9538,35 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "0ca8f08b8936335761c02c8f24129340e257a502",
+    "message": "[JSC] Remove the obsolete optimization in Lexer::shift\nhttps://bugs.webkit.org/show_bug.cgi?id=322038\nrdar://185230995\n\nReviewed by Yijia Huang, Mark Lam, and Yusuke Suzuki.\n\nLexer::shift is implemented so that m_current is first unconditionally zeroed, and then\nset to contain the current character ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/parser/Lexer.cpp ---\n@@ -598,11 +598,11 @@ template <int shiftAmount> ALWAYS_INLINE void Lexer<T>::internalShift()\n template <typename T>\n ALWAYS_INLINE void Lexer<T>::shift()\n {\n-    // At one point timing showed that setting m_current to 0 unconditionally was faster than an if-else sequence.\n-    m_current = 0;\n     ++m_code;\n     if (m_code < m_codeEnd) [[likely]]\n         m_current = *m_code;\n+    else\n+        m_current = 0;\n }\n \n template <typename T>\n",
+    "url": "https://github.com/WebKit/WebKit/commit/0ca8f08b8936335761c02c8f24129340e257a502",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "message": "[JSC] Do not accumulate new token positions in parseMemberExpression for SyntaxChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=322035\nrdar://185228426\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\nParser::newMemberExpression accumulates the positions of NEW tokens in a Vector held in\nnewTokenStartPos",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/parser/Parser.cpp ---\n@@ -5427,7 +5427,20 @@ template <class TreeBuilder> TreeExpression Parser<LexerType>::parseMemberExpres\n     TreeExpression base = 0;\n     JSTextPosition expressionStart = tokenStartPosition();\n     JSTokenLocation location = tokenLocation();\n-    Vector<JSTextPosition, 4> newTokenStartPositions;\n+\n+    // No need to accumulate newTokenStartPositions if the builder is SyntaxChecker.\n+    struct IgnoredPositions {\n+        void append(const JSTextPosition&) { ++m_size; }\n+        JSTextPosition operator[](size_t) const { return { }; }\n+        size_t size() const { return m_size; }\n+    private:\n+        unsigned m_size { 0 };\n+    };\n+    static_assert(!std::is_same_v<TreeBuilder, SyntaxChecker>\n+        || requires (TreeBuilder& builder, TreeExpression expression, const JSTokenLocation& newLocation) { builder.createNewExpr(newLocation, expression, 0, 0, 0); },\n+        \"SyntaxChecker::createNewExpr is expected to accept ints instead of JSTextPositions and ignore them.\");\n+\n+    std::conditional_t<std::is_same_v<TreeBuilder, SyntaxChecker>, IgnoredPositions, Vector<JSTextPosition, 4>> newTokenStartPositions;\n     while (match(NEW)) {\n         newTokenStartPositions.append(tokenStartPosition());\n         next();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

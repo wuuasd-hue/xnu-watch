@@ -47037,5 +47037,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T16:57:46.931709+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ca8f08b8936335761c02c8f24129340e257a502",
+    "url": "https://github.com/WebKit/WebKit/commit/0ca8f08b8936335761c02c8f24129340e257a502",
+    "message": "[JSC] Remove the obsolete optimization in Lexer::shift\nhttps://bugs.webkit.org/show_bug.cgi?id=322038\nrdar://185230995\n\nReviewed by Yijia Huang, Mark Lam, and Yusuke Suzuki.\n\nLexer::shift is implemented so that m_current is first unconditionally zeroed, and then\nset to contain the current character ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T16:58:24.871991+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "url": "https://github.com/WebKit/WebKit/commit/24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "message": "[JSC] Do not accumulate new token positions in parseMemberExpression for SyntaxChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=322035\nrdar://185228426\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\nParser::newMemberExpression accumulates the positions of NEW tokens in a Vector held in\nnewTokenStartPos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T16:59:02.870220+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ca8f08b8936335761c02c8f24129340e257a502",
+    "url": "https://github.com/WebKit/WebKit/commit/0ca8f08b8936335761c02c8f24129340e257a502",
+    "message": "[JSC] Remove the obsolete optimization in Lexer::shift\nhttps://bugs.webkit.org/show_bug.cgi?id=322038\nrdar://185230995\n\nReviewed by Yijia Huang, Mark Lam, and Yusuke Suzuki.\n\nLexer::shift is implemented so that m_current is first unconditionally zeroed, and then\nset to contain the current character ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-20T16:59:40.746465+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "url": "https://github.com/WebKit/WebKit/commit/24a6944b57e48e3972f2a75f69e3727b527d081f",
+    "message": "[JSC] Do not accumulate new token positions in parseMemberExpression for SyntaxChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=322035\nrdar://185228426\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\nParser::newMemberExpression accumulates the positions of NEW tokens in a Vector held in\nnewTokenStartPos",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
