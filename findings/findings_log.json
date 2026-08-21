@@ -47917,5 +47917,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T03:26:58.218540+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c0f403d81c9ce38a7f5256f0209f941610de414",
+    "url": "https://github.com/WebKit/WebKit/commit/3c0f403d81c9ce38a7f5256f0209f941610de414",
+    "message": "[JSC] Optimize wasm array.copy and array.fill\nhttps://bugs.webkit.org/show_bug.cgi?id=322222\nrdar://185455041\n\nReviewed by Yijia Huang.\n\nThis patch optimizes WasmGC array.copy and array.fill.\n\n1. We noticed that they are called frequently with count = 0. So we do\n   bound check etc. in the JIT code ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T03:27:37.244665+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3c0f403d81c9ce38a7f5256f0209f941610de414",
+    "url": "https://github.com/WebKit/WebKit/commit/3c0f403d81c9ce38a7f5256f0209f941610de414",
+    "message": "[JSC] Optimize wasm array.copy and array.fill\nhttps://bugs.webkit.org/show_bug.cgi?id=322222\nrdar://185455041\n\nReviewed by Yijia Huang.\n\nThis patch optimizes WasmGC array.copy and array.fill.\n\n1. We noticed that they are called frequently with count = 0. So we do\n   bound check etc. in the JIT code ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T03:28:15.188512+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "url": "https://github.com/WebKit/WebKit/commit/01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "message": "[YARR] Compile lookbehinds containing backreferences in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321867\n\nReviewed by Daniel Liu.\n\nA backreference inside a lookbehind sent the whole pattern to the interpreter.\n\nMatched backward, a backreference succeeds when the captured text ends at the curre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
