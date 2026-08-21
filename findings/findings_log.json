@@ -47837,5 +47837,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T02:07:19.394114+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "url": "https://github.com/WebKit/WebKit/commit/01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "message": "[YARR] Compile lookbehinds containing backreferences in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321867\n\nReviewed by Daniel Liu.\n\nA backreference inside a lookbehind sent the whole pattern to the interpreter.\n\nMatched backward, a backreference succeeds when the captured text ends at the curre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T02:07:57.134440+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "url": "https://github.com/WebKit/WebKit/commit/2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "message": "[YARR] `tryConsumeBackReference` should restore input position when a surrogate pair read fails in interpreter\nhttps://bugs.webkit.org/show_bug.cgi?id=321409\n\nReviewed by Yusuke Suzuki.\n\nIn tryConsumeBackReference, the Forward direction speculatively advances the\ninput by matchSize before comparing.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T02:08:35.119311+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "url": "https://github.com/WebKit/WebKit/commit/01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "message": "[YARR] Compile lookbehinds containing backreferences in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321867\n\nReviewed by Daniel Liu.\n\nA backreference inside a lookbehind sent the whole pattern to the interpreter.\n\nMatched backward, a backreference succeeds when the captured text ends at the curre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T02:09:13.362714+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "url": "https://github.com/WebKit/WebKit/commit/2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "message": "[YARR] `tryConsumeBackReference` should restore input position when a surrogate pair read fails in interpreter\nhttps://bugs.webkit.org/show_bug.cgi?id=321409\n\nReviewed by Yusuke Suzuki.\n\nIn tryConsumeBackReference, the Forward direction speculatively advances the\ninput by matchSize before comparing.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
