@@ -49017,5 +49017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T19:03:47.910174+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "url": "https://github.com/WebKit/WebKit/commit/9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "message": "[Linux] Remove RT threads\nhttps://bugs.webkit.org/show_bug.cgi?id=319535\n\nReviewed by Carlos Garcia Campos.\n\n(reland due to macOS regression; now there is no behaviour change on darwin)\n\nPatch 1 of 2, the second removes sched_yield.\n\nRT threads showed a 10% win on MotionMark clamped to two cores. Th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T19:04:25.077994+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "url": "https://github.com/WebKit/WebKit/commit/9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "message": "[Linux] Remove RT threads\nhttps://bugs.webkit.org/show_bug.cgi?id=319535\n\nReviewed by Carlos Garcia Campos.\n\n(reland due to macOS regression; now there is no behaviour change on darwin)\n\nPatch 1 of 2, the second removes sched_yield.\n\nRT threads showed a 10% win on MotionMark clamped to two cores. Th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T19:05:02.223078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "url": "https://github.com/WebKit/WebKit/commit/615cb1ee94e2c1fc27ca7d12fe21da824d7f8e75",
+    "message": "[JSC][Temporal] Extract GetTemporalCalendarIdentifierWithISODefault as a shared helper\nhttps://bugs.webkit.org/show_bug.cgi?id=319602\nrdar://182431498\n\nReviewed by Yusuke Suzuki.\n\nAdds JSC::getTemporalCalendarIdentifierWithISODefault matching the spec AO at [1],\nincluding step 1 (Temporal internal-s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
