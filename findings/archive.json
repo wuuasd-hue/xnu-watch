@@ -9776,5 +9776,35 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "ce60d5d618367a814de46344cb0e45696bf27786",
+    "message": "[JSC] Emit mutatorFence in BBQ JIT for WasmGC\nhttps://bugs.webkit.org/show_bug.cgi?id=322246\nrdar://185480157\n\nReviewed by Sosuke Suzuki.\n\nEven if the stored values are constant, we should still emit\nmutatorFence since it can be visited by the concurrent collector.\nThis patch fixes it in BBQ JIT. Fe",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmBBQJIT64.cpp ---\n@@ -2066,7 +2066,7 @@ void BBQJIT::emitAllocateGCStructUninitialized(GPRReg resultGPR, TypeSignatureIn\n         emitAllocateGCStructUninitialized(resultGPR, typeIndex, wasmScratchGPR, scratchGPR);\n \n         JIT_COMMENT(m_jit, \"Struct allocation done, do initialization\");\n-        bool needsMutatorFence = false;\n+        bool needsMutatorFence = structType.hasRefFieldTypes();\n         for (StructFieldCount i = 0; i < structType.fieldCount(); ++i) {\n             if (Wasm::isRefType(structType.field(i).type))\n                 needsMutatorFence |= emitStructSet(resultGPR, structType, i, Value::fromRef(TypeKind::RefNull, JSValue::encode(jsNull())));\n@@ -2077,8 +2077,8 @@ void BBQJIT::emitAllocateGCStructUninitialized(GPRReg resultGPR, TypeSignatureIn\n                 needsMutatorFence |= emitStructSet(resultGPR, structType, i, Value::fromI64(0));\n         }\n \n-        // No write barrier needed here as all fields are set to constants.\n-        ASSERT_UNUSED(needsMutatorFence, !needsMutatorFence);\n+        if (needsMutatorFence)\n+            emitMutatorFence();\n     }\n \n     result = topValue(TypeKind::Ref);\n@@ -2112,7 +2112,7 @@ void BBQJIT::emitAllocateGCStructUninitialized(GPRReg resultGPR, TypeSignatureIn\n         emitAllocateGCStructUninitialized(resultGPR, typeIndex, wasmScratchGPR, scratchGPR);\n \n         JIT_COMMENT(m_jit, \"Struct allocation done, do initialization\");\n-        bool needsMutatorFence = false;\n+        bool needsMutatorFence = structType.hasRefFieldTypes();\n         for (uint32_t i = 0; i < args.size(); ++i)\n             needsMutatorFence |= emitStructSet(resultGPR, structType, i, args[i]);\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/ce60d5d618367a814de46344cb0e45696bf27786",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "message": "[JSC] Avoid clobbering scratchRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=322248\nrdar://185480166\n\nReviewed by Sosuke Suzuki.\n\nIf this constant is large enough, addPtr uses scratchRegister, and it\ncan clobber this value which is used before. This does not affect on the\nactual behavior since clo",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmBBQJIT.cpp ---\n@@ -4669,7 +4669,8 @@ void BBQJIT::emitIndirectCall(const char* opcode, unsigned callProfileIndex, con\n         profilingDone.append(m_jit.branchTestPtr(CCallHelpers::NonZero, m_jit.scratchRegister(), TrustedImm32(CallProfile::Megamorphic)));\n \n         updateProfile.append(m_jit.branchTestPtr(CCallHelpers::Zero, m_jit.scratchRegister()));\n-        m_jit.addPtr(TrustedImm32(safeCast<int32_t>(BaselineData::offsetOfData() + sizeof(CallProfile) * callProfileIndex)), GPRInfo::jitDataRegister, GPRInfo::wasmContextInstancePointer);\n+        m_jit.move(TrustedImm32(safeCast<int32_t>(BaselineData::offsetOfData() + sizeof(CallProfile) * callProfileIndex)), GPRInfo::wasmContextInstancePointer);\n+        m_jit.addPtr(GPRInfo::jitDataRegister, GPRInfo::wasmContextInstancePointer);\n         m_jit.nearCallThunk(CodeLocationLabel<JITThunkPtrTag>(Thunks::singleton().stub(callPolymorphicCalleeGenerator).code()));\n         afterCall.append(m_jit.jump());\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
