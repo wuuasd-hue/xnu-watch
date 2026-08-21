@@ -9721,9 +9721,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -9756,5 +9757,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "message": "[JSC] Clear MicrotaskCallCache in VM when CodeBlock gets detached\nhttps://bugs.webkit.org/show_bug.cgi?id=322226\nrdar://184993354\n\nReviewed by Yijia Huang.\n\nWhen Heap::deleteAllCodeBlocks is called, CodeBlock is forcefully\ndetached from the ScriptExecutable. As a result, many of CallLinkInfo\ncache's",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/microtask-call-cache-delete-all-code.js ---\n@@ -0,0 +1,31 @@\n+function shouldBe(actual, expected)\n+{\n+    if (actual !== expected)\n+        throw new Error(`bad value: expected ${expected} but got ${actual}`);\n+}\n+\n+const count = 3000;\n+\n+async function* generator()\n+{\n+    for (let index = 0; index < count; ++index)\n+        yield index;\n+}\n+\n+async function sum()\n+{\n+    let result = 0;\n+    for await (const value of generator())\n+        result += value;\n+    return result;\n+}\n+\n+asyncTestStart(1);\n+sum().then((result) => {\n+    shouldBe(result, count * (count - 1) / 2);\n+    asyncTestPassed();\n+});\n+\n+// Deleting all code detaches every CodeBlock from its executable, and it runs once this script returns,\n+// so the resumptions above happen afterwards and must not reuse the entry points cached for them here.\n+$vm.deleteAllCodeWhenIdle();\n\n--- Source/JavaScriptCore/heap/Heap.cpp ---\n@@ -1148,6 +1148,10 @@ void Heap::deleteAllCodeBlocks(DeleteAllCodeEffort effort)\n                 });\n         });\n \n+    // MicrotaskCallCache lives outside any CodeBlock and keys its cached entry points on the callee's\n+    // executable, so after the code is detached above its callee check would still hit and call into it.\n+    vm.clearMicrotaskCallCaches();\n+\n #if ENABLE(WEBASSEMBLY)\n     {\n         // We must ensure that we clear the JS call ICs from Wasm. Otherwise, Wasm will\n\n--- Source/JavaScriptCore/interpreter/MicrotaskCall.cpp ---\n@@ -73,16 +73,20 @@ void MicrotaskCall::unlinkOrUpgradeImpl(VM&, CodeBlock* oldCodeBlock, CodeBlock*\n     m_addressForCall = nullptr;\n }\n \n+void MicrotaskCall::clear()\n+{\n+    if (isOnList())\n+        remove();\n+    m_addressForCall = nullptr;\n+    m_codeBlock = nullptr;\n+    m_functionExecutable = nullptr;\n+    m_numParameters = 0;\n+}\n+\n void MicrotaskCall::reconcileWeakReferencesAtGCEnd(VM& vm)\n {\n-    if ((m_functionExecutable && !vm.heap.isMarked(m_functionExecutable)) || (m_codeBlock && !vm.heap.isMarked(m_codeBlock))) {\n-        if (isOnList())\n-            remove();\n-        m_addressForCall = nullptr;\n-        m_codeBlock = nullptr;\n-        m_functionExecutable = nullptr;\n-        m_numParameters = 0;\n-    }\n+    if ((m_functionExecutable && !vm.heap.isMarked(m_functionExecutable)) || (m_codeBlock && !vm.heap.isMarked(m_codeBlock)))\n+        clear();\n }\n \n } // namespace JSC\n\n--- Source/JavaScriptCore/interpreter/MicrotaskCall.h ---\n@@ -68,6 +68,7 @@ class MicrotaskCall final : public CallLinkInfoBase {\n     void unlinkOrUpgradeImpl(VM&, CodeBlock* oldCodeBlock, CodeBlock* newCodeBlock);\n     void relink(VM&, JSFunction*);\n \n+    void clear();\n     void reconcileWeakReferencesAtGCEnd(VM&);\n \n private:\n@@ -109,6 +110,12 @@ class MicrotaskCallCache final {\n         return result;\n     }\n \n+    void clear()\n+    {\n+        for (auto& entry : m_entries)\n+            entry.clear();\n+    }\n+\n     void reconcileWeakReferencesAtGCEnd(VM& vm)\n     {\n         for (auto& entry : m_entries)\n\n--- Source/JavaScriptCore/runtime/CodeCache.h ---\n@@ -230,7 +230,11 @@ class CodeCache {\n \n     void updateCache(const UnlinkedFunctionExecutable*, const SourceCode&, CodeSpecializationKind, const UnlinkedFunctionCodeBlock*);\n \n-    void clear() { m_sourceCode.clear(); }\n+    void clear()\n+    {\n+        write();\n+        m_sourceCode.clear();\n+    }\n     JS_EXPORT_PRIVATE void write();\n \n private:\n\n--- Source/JavaScriptCore/runtime/MicrotaskQueue.cpp ---\n@@ -170,6 +170,9 @@ DEFINE_VISIT_AGGREGATE(MarkedMicrotaskDeque);\n template<bool useCallOnEachMicrotask>\n ALWAYS_INLINE std::pair<JSGlobalObject*, bool> MicrotaskQueue::drainImpl(JSGlobalObject* currentGlobalObject, VM& vm, TopExceptionScope& catchScope)\n {\n+    // Entries hold the callee's CodeBlock and entry point untraced, which is only sound on the stack:\n+    // conservative scanning keeps them alive, and code is detached only outside a VM entry scope. A cache\n+    // that outlives a drain needs clear() and reconcileWeakReferencesAtGCEnd, as VM's own cache does.\n     MicrotaskCallCache microtaskCallCache;\n \n     while (!m_queue.isEmpty()) {\n\n--- Source/JavaScriptCore/runtime/VM.cpp ---\n@@ -1899,6 +1899,11 @@ void VM::reconcileWeakReferencesAtGCEnd()\n     m_syncResumeCallCache->reconcileWeakReferencesAtGCEnd(*this);\n }\n \n+void VM::clearMicrotaskCallCaches()\n+{\n+    m_syncResumeCallCache->clear();\n+}\n+\n template<typename Visitor>\n void VM::visitAggregateImpl(Visitor& visitor)\n {\n\n--- Source/JavaScriptCore/runtime/VM.h ---\n@@ -936,6 +936,7 @@ class VM : public ThreadSafeRefCountedWithSuppressingSaferCPPChecking<VM> {\n \n     const UniqueRef<MicrotaskCallCache> m_syncResumeCallCache;\n     MicrotaskCallCache& syncResumeCallCache() { return m_syncResumeCallCache.get(); }\n+    void clearMicrotaskCallCaches();\n \n     enum class StructureChainIntegrityEvent : uint8_t {\n         Add,\n",
+    "url": "https://github.com/WebKit/WebKit/commit/75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

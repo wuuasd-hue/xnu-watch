@@ -48017,5 +48017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T05:00:16.812717+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "url": "https://github.com/WebKit/WebKit/commit/75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "message": "[JSC] Clear MicrotaskCallCache in VM when CodeBlock gets detached\nhttps://bugs.webkit.org/show_bug.cgi?id=322226\nrdar://184993354\n\nReviewed by Yijia Huang.\n\nWhen Heap::deleteAllCodeBlocks is called, CodeBlock is forcefully\ndetached from the ScriptExecutable. As a result, many of CallLinkInfo\ncache's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T05:00:53.600810+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "url": "https://github.com/WebKit/WebKit/commit/75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "message": "[JSC] Clear MicrotaskCallCache in VM when CodeBlock gets detached\nhttps://bugs.webkit.org/show_bug.cgi?id=322226\nrdar://184993354\n\nReviewed by Yijia Huang.\n\nWhen Heap::deleteAllCodeBlocks is called, CodeBlock is forcefully\ndetached from the ScriptExecutable. As a result, many of CallLinkInfo\ncache's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T05:01:30.287549+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "url": "https://github.com/WebKit/WebKit/commit/01f04c4fb45608321ce6be8237a0e90a2f487f86",
+    "message": "[YARR] Compile lookbehinds containing backreferences in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=321867\n\nReviewed by Daniel Liu.\n\nA backreference inside a lookbehind sent the whole pattern to the interpreter.\n\nMatched backward, a backreference succeeds when the captured text ends at the curre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
