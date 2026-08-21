@@ -49117,5 +49117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T20:10:48.574253+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "url": "https://github.com/WebKit/WebKit/commit/9a18171a13fbfc3aea4c53e341edb856eed21f02",
+    "message": "[Linux] Remove RT threads\nhttps://bugs.webkit.org/show_bug.cgi?id=319535\n\nReviewed by Carlos Garcia Campos.\n\n(reland due to macOS regression; now there is no behaviour change on darwin)\n\nPatch 1 of 2, the second removes sched_yield.\n\nRT threads showed a 10% win on MotionMark clamped to two cores. Th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T20:11:25.872723+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "url": "https://github.com/WebKit/WebKit/commit/ee99d3c4eb6b97db2b7ab60e56186f92a332b5db",
+    "message": "[JSC] op_async_iterator_next DFG should also subscribe promise-watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319624\nrdar://182448235\n\nReviewed by Yijia Huang.\n\nWe were subscribing promise-watchpoint on op_async_iterator_open but not\nin op_async_iterator_next, that's not correct since we may cha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
