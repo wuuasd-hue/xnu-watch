@@ -48797,5 +48797,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T16:24:21.740185+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c52bbb5187e1602b26568547b57440f196bba56a",
+    "url": "https://github.com/WebKit/WebKit/commit/c52bbb5187e1602b26568547b57440f196bba56a",
+    "message": "Srcdoc iframes bypass SameSite Strict and Lax cookies\nhttps://bugs.webkit.org/show_bug.cgi?id=313220\nrdar://175498842\n\nReviewed by Charlie Wolfe.\n\nWhen we set firstPartyForCookies on a subframe, we check if either:\n\n1) shouldInheritSecurityOriginFromOwner is true for the current document's URL, or\n2",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T16:24:59.556198+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c52bbb5187e1602b26568547b57440f196bba56a",
+    "url": "https://github.com/WebKit/WebKit/commit/c52bbb5187e1602b26568547b57440f196bba56a",
+    "message": "Srcdoc iframes bypass SameSite Strict and Lax cookies\nhttps://bugs.webkit.org/show_bug.cgi?id=313220\nrdar://175498842\n\nReviewed by Charlie Wolfe.\n\nWhen we set firstPartyForCookies on a subframe, we check if either:\n\n1) shouldInheritSecurityOriginFromOwner is true for the current document's URL, or\n2",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T16:25:37.548889+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "url": "https://github.com/WebKit/WebKit/commit/bccb52eace5ba6706ce9d44c7dadd1b1a8b9055c",
+    "message": "[JSC] BBQ: strength-reduce signed div/rem by negative power-of-two constants\nhttps://bugs.webkit.org/show_bug.cgi?id=269744\n\nReviewed by Keith Miller.\n\nWhen BBQ sees a constant divisor that is a power of two, it turns\ndiv/rem into shifts and masks. That path only ran for positive\ndivisors, so values",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
