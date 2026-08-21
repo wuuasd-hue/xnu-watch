@@ -48337,5 +48337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T09:57:07.632080+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce60d5d618367a814de46344cb0e45696bf27786",
+    "url": "https://github.com/WebKit/WebKit/commit/ce60d5d618367a814de46344cb0e45696bf27786",
+    "message": "[JSC] Emit mutatorFence in BBQ JIT for WasmGC\nhttps://bugs.webkit.org/show_bug.cgi?id=322246\nrdar://185480157\n\nReviewed by Sosuke Suzuki.\n\nEven if the stored values are constant, we should still emit\nmutatorFence since it can be visited by the concurrent collector.\nThis patch fixes it in BBQ JIT. Fe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T09:57:44.553926+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "url": "https://github.com/WebKit/WebKit/commit/958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "message": "[JSC] Avoid clobbering scratchRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=322248\nrdar://185480166\n\nReviewed by Sosuke Suzuki.\n\nIf this constant is large enough, addPtr uses scratchRegister, and it\ncan clobber this value which is used before. This does not affect on the\nactual behavior since clo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
