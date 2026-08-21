@@ -48757,5 +48757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T15:58:16.950881+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fdbc1f896f5865455335e43a63137772389ed54c",
+    "url": "https://github.com/WebKit/WebKit/commit/fdbc1f896f5865455335e43a63137772389ed54c",
+    "message": "[cleanup] Replace Document's two render tree booleans with an explicit RenderTreeState\nhttps://bugs.webkit.org/show_bug.cgi?id=322218\n<rdar://problem/185452641>\n\nReviewed by Sam Weinig.\n\nA document's render tree is in one of three states: not built, built, or being taken down. Taking one down is not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T15:58:55.002840+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "url": "https://github.com/WebKit/WebKit/commit/3af9d4073d75a9b44668cebc03a41223dbef5745",
+    "message": "JSC feature flags should be driven by UnifiedWebPreferences.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319384\nrdar://182210113\n\nReviewed by Ben Nham.\n\nJSC's feature-flag options (e.g. useTemporal, useJSPI, and the wasm feature\nflags) were declared standalone in OptionsList.h, separate from the web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
