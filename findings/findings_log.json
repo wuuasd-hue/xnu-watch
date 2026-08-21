@@ -48657,5 +48657,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T14:59:24.986458+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fdbc1f896f5865455335e43a63137772389ed54c",
+    "url": "https://github.com/WebKit/WebKit/commit/fdbc1f896f5865455335e43a63137772389ed54c",
+    "message": "[cleanup] Replace Document's two render tree booleans with an explicit RenderTreeState\nhttps://bugs.webkit.org/show_bug.cgi?id=322218\n<rdar://problem/185452641>\n\nReviewed by Sam Weinig.\n\nA document's render tree is in one of three states: not built, built, or being taken down. Taking one down is not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T15:00:01.789414+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fdbc1f896f5865455335e43a63137772389ed54c",
+    "url": "https://github.com/WebKit/WebKit/commit/fdbc1f896f5865455335e43a63137772389ed54c",
+    "message": "[cleanup] Replace Document's two render tree booleans with an explicit RenderTreeState\nhttps://bugs.webkit.org/show_bug.cgi?id=322218\n<rdar://problem/185452641>\n\nReviewed by Sam Weinig.\n\nA document's render tree is in one of three states: not built, built, or being taken down. Taking one down is not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T15:00:38.618996+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3130bd507b02a77372bf2365ddf0164e546c6605",
+    "url": "https://github.com/WebKit/WebKit/commit/3130bd507b02a77372bf2365ddf0164e546c6605",
+    "message": "[JSC] Use the generic path in `jsSpliceSubstringsWithSeparator(s)` for short two-range results\nhttps://bugs.webkit.org/show_bug.cgi?id=319023\n\nReviewed by Yusuke Suzuki.\n\nFor a global RegExp replace with a single match (rangeCount == 2, separatorCount == 1),\nwe create two substring StringImpls and c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
