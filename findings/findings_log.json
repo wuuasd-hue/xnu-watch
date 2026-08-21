@@ -48297,5 +48297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T09:04:20.850252+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "url": "https://github.com/WebKit/WebKit/commit/958a13ecadda5806cf85cc0b61904b1d6cb6e868",
+    "message": "[JSC] Avoid clobbering scratchRegister\nhttps://bugs.webkit.org/show_bug.cgi?id=322248\nrdar://185480166\n\nReviewed by Sosuke Suzuki.\n\nIf this constant is large enough, addPtr uses scratchRegister, and it\ncan clobber this value which is used before. This does not affect on the\nactual behavior since clo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T09:04:57.880781+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1fdc80a34f021efa512e23d136c5727b18687e8",
+    "url": "https://github.com/WebKit/WebKit/commit/e1fdc80a34f021efa512e23d136c5727b18687e8",
+    "message": "[JSC] `WTF::weekDay` overflows for days near `INT32_MAX` and is duplicated in Temporal\nhttps://bugs.webkit.org/show_bug.cgi?id=322247\n\nReviewed by Yusuke Suzuki.\n\nWTF::weekDay computed (days + 4) % 7, which is signed overflow for\ndays > INT32_MAX - 4. No caller reaches that today because days is\ncli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
