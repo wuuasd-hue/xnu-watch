@@ -48077,5 +48077,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T05:30:50.474588+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "url": "https://github.com/WebKit/WebKit/commit/75a9d414a4a8b98d26840162d103eb16227eaeb6",
+    "message": "[JSC] Clear MicrotaskCallCache in VM when CodeBlock gets detached\nhttps://bugs.webkit.org/show_bug.cgi?id=322226\nrdar://184993354\n\nReviewed by Yijia Huang.\n\nWhen Heap::deleteAllCodeBlocks is called, CodeBlock is forcefully\ndetached from the ScriptExecutable. As a result, many of CallLinkInfo\ncache's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T05:31:27.315938+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "url": "https://github.com/WebKit/WebKit/commit/2165451fd3ee573c8dec57c8e05aac5910ffe877",
+    "message": "[YARR] `tryConsumeBackReference` should restore input position when a surrogate pair read fails in interpreter\nhttps://bugs.webkit.org/show_bug.cgi?id=321409\n\nReviewed by Yusuke Suzuki.\n\nIn tryConsumeBackReference, the Forward direction speculatively advances the\ninput by matchSize before comparing.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
