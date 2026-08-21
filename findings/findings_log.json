@@ -49197,5 +49197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T21:11:37.666372+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d886174dfa9e1a4608f81260947531009eb1c31e",
+    "url": "https://github.com/WebKit/WebKit/commit/d886174dfa9e1a4608f81260947531009eb1c31e",
+    "message": "[YARR] JIT backtracking of greedy variable-width character classes in unicode mode is `O(count)` per step\nhttps://bugs.webkit.org/show_bug.cgi?id=319370\n\nReviewed by Yusuke Suzuki.\n\nWhen backtracking a greedy character class that can match both BMP and\nnon-BMP characters under the unicode flag, back",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T21:12:15.206499+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "url": "https://github.com/WebKit/WebKit/commit/bafc1f2d7f1e8c6c2eb2ebc395c8f94af5f35c33",
+    "message": "[JSC] Introduce MicrotaskCallCache for async generator driver path\nhttps://bugs.webkit.org/show_bug.cgi?id=319650\nrdar://182472828\n\nReviewed by Sosuke Suzuki.\n\nLet's have per-VM MicrotaskCallCache for async generator driver path.\nSince MicrotaskCallCache is no longer on the stack, we need to finaliz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
