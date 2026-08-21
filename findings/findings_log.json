@@ -49317,5 +49317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T22:10:20.038421+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b9afb2b4f23fc2eb9555835a2ce0c6ebdb26056",
+    "url": "https://github.com/WebKit/WebKit/commit/3b9afb2b4f23fc2eb9555835a2ce0c6ebdb26056",
+    "message": "[JSC] Fix boundary related code in BBQ / OMG\nhttps://bugs.webkit.org/show_bug.cgi?id=322255\nrdar://185488178\n\nReviewed by Yijia Huang.\n\n1. ref.cast's trapping null check should be used only when\n   Options::useWasmFaultSignalHandler() is true. (in practice, currently\n   all wasm environment is havin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T22:10:57.131109+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "d5be9be2c6dd833e324b4eb25225d18a3ee1933a",
+    "url": "https://github.com/swiftlang/swift/commit/d5be9be2c6dd833e324b4eb25225d18a3ee1933a",
+    "message": "Merge pull request #91643 from mikeash/fix-isprivilegedprocess-conditional\n\n[Runtime] Narrow Apple platform check for _swift_isPrivilegedProcess.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
