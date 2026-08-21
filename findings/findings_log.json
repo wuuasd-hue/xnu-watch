@@ -48897,5 +48897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T17:20:34.201556+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c52bbb5187e1602b26568547b57440f196bba56a",
+    "url": "https://github.com/WebKit/WebKit/commit/c52bbb5187e1602b26568547b57440f196bba56a",
+    "message": "Srcdoc iframes bypass SameSite Strict and Lax cookies\nhttps://bugs.webkit.org/show_bug.cgi?id=313220\nrdar://175498842\n\nReviewed by Charlie Wolfe.\n\nWhen we set firstPartyForCookies on a subframe, we check if either:\n\n1) shouldInheritSecurityOriginFromOwner is true for the current document's URL, or\n2",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-21T17:21:11.009659+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "605bd7edf69445e082f71fc5b288b68b28c36045",
+    "url": "https://github.com/WebKit/WebKit/commit/605bd7edf69445e082f71fc5b288b68b28c36045",
+    "message": "[JSC] for-await fast consumer must re-check the Promise species watchpoint\nhttps://bugs.webkit.org/show_bug.cgi?id=319530\nrdar://182353926\n\nReviewed by Yijia Huang.\n\nFastAsyncGenerator fast path should skip promise creation only when\npromise watchpoint is not fired since PromiseResolve accesses prom",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
