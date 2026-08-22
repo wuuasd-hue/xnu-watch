@@ -50837,5 +50837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T19:13:19.973722+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "016fcfbca076fd98152cf0ad5d3d65c1ec695237",
+    "url": "https://github.com/WebKit/WebKit/commit/016fcfbca076fd98152cf0ad5d3d65c1ec695237",
+    "message": "[YARR] `tryReadUnicodeChar` should take the BMP fast path for any non-surrogate character\nhttps://bugs.webkit.org/show_bug.cgi?id=319943\n\nReviewed by Yusuke Suzuki.\n\ntryReadUnicodeChar loads two code units at once and masks the pair with\n0xfc00fc00, taking the inline BMP path only when the result is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T19:13:57.834764+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f66c3804ee6c2efbaf23130a1a282fa345f299cd",
+    "url": "https://github.com/WebKit/WebKit/commit/f66c3804ee6c2efbaf23130a1a282fa345f299cd",
+    "message": "[JSC][Wasm] Shrink Type to a pointer-sized payload on 64-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=247454\n\nReviewed by Yusuke Suzuki.\n\nOn ADDRESS64, store Wasm::Type in one pointer-sized word with\nCompactPointerTuple (pointer half + TypeKind bits as the tag). Use the same\nType API on 32-bit where ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
