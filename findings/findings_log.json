@@ -49917,5 +49917,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T07:51:02.916430+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "url": "https://github.com/WebKit/WebKit/commit/3a8fc98f2190516aebf47e9bee7bb7609af8a4f5",
+    "message": "[JSC] Make AsyncFromSyncIterator handled in async_iterator_open / async_iterator_next\nrdar://182251956\nhttps://bugs.webkit.org/show_bug.cgi?id=319435\n\nReviewed by Yijia Huang.\n\nThis patch adds cooperative driving mechanism to AsyncFromSyncIterator.\nThis also moves all of functions of AsyncFromSyncIt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T07:51:39.612165+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c46df7f6e142a38fc92073960ce90389913387f4",
+    "url": "https://github.com/WebKit/WebKit/commit/c46df7f6e142a38fc92073960ce90389913387f4",
+    "message": "[JSC][Temporal] Fix Ethiopic AA era mapping\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319787\n\nReviewed by Yijia Huang.\n\nICU represents the historical Ethiopic AA era as era 0 and the modern AM era as era 1. Map those values explicitly in both directions so Temporal accepts AA property bags and report",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
