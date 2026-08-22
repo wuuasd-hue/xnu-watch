@@ -50037,5 +50037,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T09:14:52.466178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a6f9b723771ef40d176aaae2cd3f3e3f99e9750c",
+    "url": "https://github.com/WebKit/WebKit/commit/a6f9b723771ef40d176aaae2cd3f3e3f99e9750c",
+    "message": "[JSC] Wire ARM64 min / max specialized thunks into `thunkGeneratorForIntrinsic`\nhttps://bugs.webkit.org/show_bug.cgi?id=319795\n\nReviewed by Yusuke Suzuki.\n\n281118@main added maxThunkGenerator / minThunkGenerator for ARM64, which have fast paths for\nInt32-Int32 / Int32-Double / Double-Int32 / Double-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T09:15:29.905820+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "url": "https://github.com/WebKit/WebKit/commit/10b3c7332780d0ebdd37868da4858fee93593cc4",
+    "message": "[JSC] DFG Object.defineProperty descriptor cell confusion (JIT code invalid cell dereference)\nhttps://bugs.webkit.org/show_bug.cgi?id=318139\nrdar://180958800\n\nReviewed by Yijia Huang.\n\nWhen constant-folding ObjectDefineProperty, we should emit checks\nattached in the edges to ensure that these filter",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
