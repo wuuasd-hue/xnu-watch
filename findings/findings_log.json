@@ -49577,5 +49577,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T02:44:31.198336+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "url": "https://github.com/WebKit/WebKit/commit/cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "message": "[WTF] Align PriorityQueue to std::priority_queue and fix WasmWorklist\nhttps://bugs.webkit.org/show_bug.cgi?id=322303\nrdar://185541345\n\nReviewed by Dan Hecht.\n\nWe found that WasmWorklist's PriorityQueue's ordering is opposite and\nnot correct. The reason is that PriorityQueue and std::priority_queue's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T02:45:09.989224+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03d11dcd3986d5218cf235dd40f6088ca222ec4c",
+    "url": "https://github.com/WebKit/WebKit/commit/03d11dcd3986d5218cf235dd40f6088ca222ec4c",
+    "message": "[JSC] Put slow path of emitWriteBarrier in m_slowPaths\nhttps://bugs.webkit.org/show_bug.cgi?id=319688\nrdar://182533142\n\nReviewed by Keith Miller.\n\nLet's place the slow path of emitWriteBarrier in m_slowPaths to make the\nmain path tight and clean.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT.cpp:\n(JSC::W",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
