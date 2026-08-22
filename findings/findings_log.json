@@ -50877,5 +50877,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T19:42:24.981736+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "02d16b1d8e1a8fe076e354412936c1af5a07f675",
+    "url": "https://github.com/WebKit/WebKit/commit/02d16b1d8e1a8fe076e354412936c1af5a07f675",
+    "message": "[JSC] Skew small function's OMG tierup call counts\nhttps://bugs.webkit.org/show_bug.cgi?id=320046\nrdar://182981673\n\nReviewed by Mark Lam.\n\nWhen tiering up from BBQ to OMG, we would like to deprioritize very small\nfunctions.\n\n1. Very small functions are not having meaningful improvements from the\n   ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T19:43:02.011882+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "url": "https://github.com/WebKit/WebKit/commit/c7b5fcf1c50e97c4206bc674c6efd8fbd52dcb4e",
+    "message": "Expose navigator.globalPrivacyControl only when enabled through the WKWebpagePreferences API\nhttps://bugs.webkit.org/show_bug.cgi?id=319630\nrdar://182454821\n\nReviewed by Matthew Finkel.\n\nConsolidate GlobalPrivacyControl onto a single control surface. Previously it could be toggled both\nby the API an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
