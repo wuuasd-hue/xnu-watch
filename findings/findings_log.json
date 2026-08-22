@@ -49877,5 +49877,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T07:06:08.977504+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "url": "https://github.com/WebKit/WebKit/commit/2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "message": "[JSC] Make Air::padInference faster by avoiding visiting args twice\nhttps://bugs.webkit.org/show_bug.cgi?id=322311\nrdar://185549590\n\nReviewed by Dan Hecht.\n\nAvoiding calling forEachArg twice and collecting hasEarlyDef /\nhasLateUseOrDef at once via paddingSummary.\n\n* Source/JavaScriptCore/b3/air/AirI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T07:06:45.987225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "url": "https://github.com/WebKit/WebKit/commit/6aaccf24c3d5771482f1f8d763b89d1bffd01f27",
+    "message": "[JSC][Temporal] Fix Ethioaa arithmetic year\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319785\n\nReviewed by Yijia Huang.\n\nUCAL_YEAR is the calendar-native field for Ethioaa's single AA era and matches Temporal's arithmetic year. Older ICU versions expose an Amete Mihret-relative UCAL_EXTENDED_YEAR, whi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
