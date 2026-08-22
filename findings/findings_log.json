@@ -49617,5 +49617,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T03:31:07.595355+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "url": "https://github.com/WebKit/WebKit/commit/cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "message": "[WTF] Align PriorityQueue to std::priority_queue and fix WasmWorklist\nhttps://bugs.webkit.org/show_bug.cgi?id=322303\nrdar://185541345\n\nReviewed by Dan Hecht.\n\nWe found that WasmWorklist's PriorityQueue's ordering is opposite and\nnot correct. The reason is that PriorityQueue and std::priority_queue's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T03:31:44.413819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "url": "https://github.com/WebKit/WebKit/commit/bdf5f869dc927e99bacd206f46558a505ebbd5a1",
+    "message": "[JSC] Run WPT Wasm tests in run-jsc-stress-tests' wasm.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=319669\nrdar://182513824\n\nReviewed by Yusuke Suzuki.\n\nRun the imported Web Platform Tests WebAssembly suite\n(LayoutTests/imported/w3c/web-platform-tests/wasm/{core/js,jsapi}) directly in the jsc\ncomman",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
