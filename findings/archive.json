@@ -3954,9 +3954,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10026,5 +10027,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "96ca975b2a61a52093cccecd9249e2b410085eea",
+    "message": "[JSC] Use `objectCloneFast` for the first source in `Object.assign`'s batching path\nhttps://bugs.webkit.org/show_bug.cgi?id=322161\n\nReviewed by Yusuke Suzuki.\n\nObject.assign({}, state, patch) with 2 or 3 sources goes through the batching path in\nobjectConstructorAssign, which enumerates every source",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/microbenchmarks/object-assign-clone-multiple-sources.js ---\n@@ -0,0 +1,4 @@\n+var cities = [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\"];\n+var state = { id: 1, name: \"x\", age: 3, city: \"z\", zip: 0, flag: true, score: 1.5, tag: \"t\" };\n+for (var i = 0; i < 1e4; ++i)\n+    state = Object.assign({}, state, { city: cities[i & 7], zip: i });\n\n--- JSTests/stress/object-assign-clone-multiple-sources.js ---\n@@ -0,0 +1,58 @@\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error('bad value: ' + actual);\n+}\n+\n+function shouldBeArray(actual, expected) {\n+    shouldBe(actual.length, expected.length);\n+    for (var i = 0; i < expected.length; ++i)\n+        shouldBe(actual[i], expected[i]);\n+}\n+\n+function makeState() {\n+    var state = {};\n+    for (var i = 0; i < 8; ++i)\n+        state[\"k\" + i] = i;\n+    return state;\n+}\n+\n+for (var i = 0; i < testLoopCount; ++i) {\n+    var state = makeState();\n+    var result = Object.assign({}, state, { k3: -1, extra: i });\n+    shouldBeArray(Object.keys(result), [\"k0\", \"k1\", \"k2\", \"k3\", \"k4\", \"k5\", \"k6\", \"k7\", \"extra\"]);\n+    shouldBe(result.k3, -1);\n+    shouldBe(result.k7, 7);\n+    shouldBe(result.extra, i);\n+    shouldBe(state.k3, 3);\n+    result.k0 = 42;\n+    shouldBe(state.k0, 0);\n+\n+    var empty = Object.assign({}, state, {});\n+    shouldBeArray(Object.keys(empty), Object.keys(state));\n+    shouldBe(Object.getPrototypeOf(empty), Object.prototype);\n+    shouldBe(Object.isFrozen(empty), false);\n+\n+    var three = Object.assign({}, { a: 1 }, { b: 2 }, { a: 3 });\n+    shouldBeArray(Object.keys(three), [\"a\", \"b\"]);\n+    shouldBe(three.a, 3);\n+\n+    var frozen = Object.freeze(makeState());\n+    var fromFrozen = Object.assign({}, frozen, { k1: \"x\" });\n+    shouldBe(Object.isFrozen(fromFrozen), false);\n+    fromFrozen.k0 = \"y\";\n+    shouldBe(fromFrozen.k0, \"y\");\n+    shouldBe(fromFrozen.k1, \"x\");\n+    shouldBe(frozen.k1, 1);\n+\n+    var sym = Symbol(\"s\");\n+    var withSymbol = makeState();\n+    withSymbol[sym] = \"sym\";\n+    Object.defineProperty(withSymbol, \"hidden\", { value: 1, enumerable: false });\n+    var copied = Object.assign({}, withSymbol, { k2: 2 });\n+    shouldBe(copied[sym], \"sym\");\n+    shouldBe(Object.getOwnPropertyDescriptor(copied, \"hidden\"), undefined);\n+\n+    var nonEmptyTarget = Object.assign({ first: 0 }, state, {});\n+    shouldBe(Object.keys(nonEmptyTarget)[0], \"first\");\n+    shouldBe(Object.keys(nonEmptyTarget).length, 9);\n+}\n\n--- Source/JavaScriptCore/runtime/ObjectConstructor.cpp ---\n@@ -348,7 +348,10 @@ JSC_DEFINE_HOST_FUNCTION(objectConstructorAssign, (JSGlobalObject* globalObject,\n             Vector<UniquedStringImpl*, 32> properties; // structures ensures the lifetimes of these strings.\n             MarkedArgumentBufferWithSize<32> values;\n             MarkedArgumentBuffer structures;\n-            for (unsigned i = 1; i < argsCount; ++i) {\n+            unsigned startIndex = 1;\n+            if (objectCloneFast(vm, targetObject, asObject(callFrame->uncheckedArgument(1))))\n+                startIndex = 2;\n+            for (unsigned i = startIndex; i < argsCount; ++i) {\n                 JSValue sourceValue = callFrame->uncheckedArgument(i);\n                 JSObject* source = asObject(sourceValue);\n                 auto sourceStructure = source->structure();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/96ca975b2a61a52093cccecd9249e2b410085eea",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

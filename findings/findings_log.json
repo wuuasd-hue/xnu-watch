@@ -50557,5 +50557,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T16:08:41.038249+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96ca975b2a61a52093cccecd9249e2b410085eea",
+    "url": "https://github.com/WebKit/WebKit/commit/96ca975b2a61a52093cccecd9249e2b410085eea",
+    "message": "[JSC] Use `objectCloneFast` for the first source in `Object.assign`'s batching path\nhttps://bugs.webkit.org/show_bug.cgi?id=322161\n\nReviewed by Yusuke Suzuki.\n\nObject.assign({}, state, patch) with 2 or 3 sources goes through the batching path in\nobjectConstructorAssign, which enumerates every source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T16:09:19.035369+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96ca975b2a61a52093cccecd9249e2b410085eea",
+    "url": "https://github.com/WebKit/WebKit/commit/96ca975b2a61a52093cccecd9249e2b410085eea",
+    "message": "[JSC] Use `objectCloneFast` for the first source in `Object.assign`'s batching path\nhttps://bugs.webkit.org/show_bug.cgi?id=322161\n\nReviewed by Yusuke Suzuki.\n\nObject.assign({}, state, patch) with 2 or 3 sources goes through the batching path in\nobjectConstructorAssign, which enumerates every source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T16:09:56.844799+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8082ccd8788955200b95084e2bad3e933fdff05",
+    "url": "https://github.com/WebKit/WebKit/commit/d8082ccd8788955200b95084e2bad3e933fdff05",
+    "message": "[JSC] Add VectorZipX(a, all-zeros) strength reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=319991\nrdar://182920842\n\nReviewed by Yijia Huang.\n\nThis patch adds strength reduction rules for\n\n    VectorZipHigher(a, all-zeros)\n    VectorZipLower(a, all-zeros)\n\nTaking low / high part of each narrow lan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
