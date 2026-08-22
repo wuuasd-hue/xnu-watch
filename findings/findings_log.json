@@ -51117,5 +51117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T22:08:05.576796+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "314133b7a60e4c00c9160e685cf56cc11901c298",
+    "url": "https://github.com/WebKit/WebKit/commit/314133b7a60e4c00c9160e685cf56cc11901c298",
+    "message": "[WTF] Remove UUID version of ObjectIdentifier\nhttps://bugs.webkit.org/show_bug.cgi?id=322324\nrdar://185566036\n\nReviewed by Ben Nham.\n\nI introduced this version of ObjectIdentifier two years ago, when I was more naïve and less pragmatic.\nRemove this unnecessary and unused version by effectively rever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T22:08:42.640695+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "url": "https://github.com/WebKit/WebKit/commit/96437189e7eecba977fe0a452b7e35fecc6ea776",
+    "message": "Web Inspector: Network: disabling resource cache always sets `Cache-Control: no-cache`\nhttps://bugs.webkit.org/show_bug.cgi?id=320033\n\nReviewed by Basuke Suzuki.\n\nWhen Web Inspector disables the resource cache, `FrameLoader::updateRequestAndAddExtraFields` forces every request to `ReloadIgnoringCach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
