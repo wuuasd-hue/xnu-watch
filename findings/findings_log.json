@@ -49957,5 +49957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T08:14:10.998909+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "url": "https://github.com/WebKit/WebKit/commit/512dfa371a12e5b7497f03cfea9c1588c0d00043",
+    "message": "[JSC] Fold String.prototype.at negative-index adjustment to a branchless csel\nhttps://bugs.webkit.org/show_bug.cgi?id=319789\nrdar://182662211\n\nReviewed by Yijia Huang.\n\nstringCharLoad<RelativeNegativeIndex::Yes> is having very small jumps to\ncovert the negative-index to the positive one. But this ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T08:14:47.952454+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f2a8878118543bfc97b64abd558e5c8e75e33f4",
+    "url": "https://github.com/WebKit/WebKit/commit/5f2a8878118543bfc97b64abd558e5c8e75e33f4",
+    "message": "[JSC] `JSON.parse` should create 8-bit strings for Latin1 values in a 16-bit input\nhttps://bugs.webkit.org/show_bug.cgi?id=319782\n\nReviewed by Yusuke Suzuki.\n\nWhen the input to JSON.parse is a 16-bit string (e.g. it contains a single emoji anywhere),\nLiteralParser<char16_t> creates every value strin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
