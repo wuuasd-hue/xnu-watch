@@ -51017,5 +51017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T21:09:44.411076+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "314133b7a60e4c00c9160e685cf56cc11901c298",
+    "url": "https://github.com/WebKit/WebKit/commit/314133b7a60e4c00c9160e685cf56cc11901c298",
+    "message": "[WTF] Remove UUID version of ObjectIdentifier\nhttps://bugs.webkit.org/show_bug.cgi?id=322324\nrdar://185566036\n\nReviewed by Ben Nham.\n\nI introduced this version of ObjectIdentifier two years ago, when I was more naïve and less pragmatic.\nRemove this unnecessary and unused version by effectively rever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T21:10:21.337476+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "314133b7a60e4c00c9160e685cf56cc11901c298",
+    "url": "https://github.com/WebKit/WebKit/commit/314133b7a60e4c00c9160e685cf56cc11901c298",
+    "message": "[WTF] Remove UUID version of ObjectIdentifier\nhttps://bugs.webkit.org/show_bug.cgi?id=322324\nrdar://185566036\n\nReviewed by Ben Nham.\n\nI introduced this version of ObjectIdentifier two years ago, when I was more naïve and less pragmatic.\nRemove this unnecessary and unused version by effectively rever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T21:10:58.189054+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7711916200dda7e418b321e34493f66a7af2a0b0",
+    "url": "https://github.com/WebKit/WebKit/commit/7711916200dda7e418b321e34493f66a7af2a0b0",
+    "message": "[JSC] NodeMustGenerate incorrectly cleared on CheckOverflow ArithAdd/ArithSub in DFGFixupPhase Inc/Dec handler\nhttps://bugs.webkit.org/show_bug.cgi?id=315213\nrdar://176984293\n\nReviewed by Yijia Huang.\n\nThis patch prevents overflow checks for increment/decrement in DFG from being mistakenly DCE'd.\n\nT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
