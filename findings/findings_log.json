@@ -50197,5 +50197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T11:09:08.987286+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dd0abc261828479fac8134d26d7138b962df5a3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dd0abc261828479fac8134d26d7138b962df5a3",
+    "message": "[JSC][Temporal] Fix fixed-solar non-ISO calendar arithmetic\n\nhttps://bugs.webkit.org/show_bug.cgi?id=319804\n\nReviewed by Yijia Huang.\n\nICU calendar arithmetic can clamp at the supported instant boundaries, leaving partially clamped native fields for fixed-solar non-ISO calendars. Construct and verif",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T11:09:45.922510+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd66f17f455cb8886b11755882ee5853226bca4",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd66f17f455cb8886b11755882ee5853226bca4",
+    "message": "Enable wasm multimemory feature flag\nhttps://bugs.webkit.org/show_bug.cgi?id=319389\nrdar://182219080\n\nReviewed by Dan Hecht.\n\nSwitch on --useWasmMultiMemory by default\n\n* JSTests/wasm/function-tests/memory-section-and-import.js:\n* JSTests/wasm/js-api/test_memory.js:\n* JSTests/wasm/js-api/validate.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
