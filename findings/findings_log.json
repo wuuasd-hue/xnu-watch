@@ -51237,5 +51237,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T23:41:21.576806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "url": "https://github.com/WebKit/WebKit/commit/2cea56a80c68a9512e6e62c528c69ebb77887ff8",
+    "message": "[YARR] Enable Boyer-Moore lookahead optimization for Unicode patterns\nhttps://bugs.webkit.org/show_bug.cgi?id=307635\n\nReviewed by Yusuke Suzuki.\n\nThe Boyer-Moore lookahead skip optimization in Yarr JIT was disabled for\npatterns with the /u or /v flags.\n\nThis change:\n\n  1. Removes the eitherUnicode()",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T23:41:58.485032+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d651aafbb69606ecc27bde540533e014d5908ce5",
+    "url": "https://github.com/WebKit/WebKit/commit/d651aafbb69606ecc27bde540533e014d5908ce5",
+    "message": "[JSC] Remove `AbstractModuleRecord::m_dependencies`\nhttps://bugs.webkit.org/show_bug.cgi?id=320144\n\nReviewed by Yusuke Suzuki.\n\nAbstractModuleRecord::m_dependencies duplicated the specifier-to-module mapping\nthat m_loadedModules ([[LoadedModules]]) already holds, and was populated a second\ntime duri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
