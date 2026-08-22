@@ -3324,9 +3324,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "swiftlang/swift",
@@ -9974,5 +9975,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "message": "[JSC] Make Air::padInference faster by avoiding visiting args twice\nhttps://bugs.webkit.org/show_bug.cgi?id=322311\nrdar://185549590\n\nReviewed by Dan Hecht.\n\nAvoiding calling forEachArg twice and collecting hasEarlyDef /\nhasLateUseOrDef at once via paddingSummary.\n\n* Source/JavaScriptCore/b3/air/AirI",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/air/AirInst.cpp ---\n@@ -57,10 +57,21 @@ bool Inst::hasLateUseOrDef()\n     return result;\n }\n \n-bool Inst::needsPadding(Inst* prevInst, Inst* nextInst)\n+Inst::PaddingSummary Inst::paddingSummary()\n {\n-    bool result = prevInst && nextInst && prevInst->hasLateUseOrDef() && nextInst->hasEarlyDef();\n-    return result;\n+    PaddingSummary summary;\n+    if (kind.opcode == Patch) {\n+        summary.hasEarlyDef = !extraEarlyClobberedRegs().isEmpty();\n+        summary.hasLateUseOrDef = !extraClobberedRegs().isEmpty();\n+        if (summary.hasEarlyDef && summary.hasLateUseOrDef)\n+            return summary;\n+    }\n+    forEachArg(\n+        [&] (Arg&, Arg::Role role, Bank, Width) {\n+            summary.hasEarlyDef |= Arg::isEarlyDef(role);\n+            summary.hasLateUseOrDef |= Arg::isLateUse(role) || Arg::isLateDef(role);\n+        });\n+    return summary;\n }\n \n bool Inst::hasArgEffects()\n\n--- Source/JavaScriptCore/b3/air/AirInst.h ---\n@@ -194,12 +194,15 @@ struct Inst {\n     template<typename Thing, typename Functor>\n     static void forEachUse(Inst* prevInst, Inst* nextInst, const Functor&);\n \n-    // Some summaries about all arguments. These are useful for needsPadding().\n+    struct PaddingSummary {\n+        bool hasEarlyDef { false };\n+        bool hasLateUseOrDef { false };\n+    };\n+    PaddingSummary paddingSummary();\n+\n     bool hasEarlyDef();\n     bool hasLateUseOrDef();\n \n-    static bool needsPadding(Inst* prevInst, Inst* nextInst);\n-    \n     // Use this to report which registers are live. This should be done just before codegen. Note\n     // that for efficiency, reportUsedRegisters() only works for the Patch opcode.\n     void reportUsedRegisters(const RegisterSet&);\n\n--- Source/JavaScriptCore/b3/air/AirPadInterference.cpp ---\n@@ -30,17 +30,25 @@\n \n #include \"AirCode.h\"\n #include \"AirInsertionSet.h\"\n+#include \"AirInstInlines.h\"\n+#include \"Options.h\"\n \n namespace JSC { namespace B3 { namespace Air {\n \n void padInterference(Code& code)\n {\n     InsertionSet insertionSet(code);\n     for (BasicBlock* block : code) {\n+        if (block->size() < 2)\n+            continue;\n+\n+        bool prevHasLateUseOrDef = block->at(0).paddingSummary().hasLateUseOrDef;\n         for (unsigned instIndex = 1; instIndex < block->size(); ++instIndex) {\n             Inst& inst = block->at(instIndex);\n-            if (Inst::needsPadding(&block->at(instIndex - 1), &inst))\n+            Inst::PaddingSummary summary = inst.paddingSummary();\n+            if (prevHasLateUseOrDef && summary.hasEarlyDef)\n                 insertionSet.insert(instIndex, Padding, inst.origin);\n+            prevHasLateUseOrDef = summary.hasLateUseOrDef;\n         }\n         insertionSet.execute(block);\n     }\n",
+    "url": "https://github.com/WebKit/WebKit/commit/2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

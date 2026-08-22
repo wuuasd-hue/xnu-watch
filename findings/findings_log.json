@@ -49777,5 +49777,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T05:48:59.572560+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "url": "https://github.com/WebKit/WebKit/commit/2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "message": "[JSC] Make Air::padInference faster by avoiding visiting args twice\nhttps://bugs.webkit.org/show_bug.cgi?id=322311\nrdar://185549590\n\nReviewed by Dan Hecht.\n\nAvoiding calling forEachArg twice and collecting hasEarlyDef /\nhasLateUseOrDef at once via paddingSummary.\n\n* Source/JavaScriptCore/b3/air/AirI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T05:49:36.404129+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "url": "https://github.com/WebKit/WebKit/commit/2cba6521075d9a3a968a4a00f5e352f6e578c61f",
+    "message": "[JSC] Make Air::padInference faster by avoiding visiting args twice\nhttps://bugs.webkit.org/show_bug.cgi?id=322311\nrdar://185549590\n\nReviewed by Dan Hecht.\n\nAvoiding calling forEachArg twice and collecting hasEarlyDef /\nhasLateUseOrDef at once via paddingSummary.\n\n* Source/JavaScriptCore/b3/air/AirI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T05:50:13.234166+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "575b7fa2016905586dc82337b53bd04065f094c5",
+    "url": "https://github.com/WebKit/WebKit/commit/575b7fa2016905586dc82337b53bd04065f094c5",
+    "message": "[JSC] Wasm-backed resizable ArrayBuffers should throw for all invalid sizes\nhttps://bugs.webkit.org/show_bug.cgi?id=319705\nrdar://181293951\n\nReviewed by Mark Lam and Yusuke Suzuki.\n\nResizable ArrayBuffers that are backed by Wasm memories cannot grow beyond\n65536 pages.  Currently, we RELEASE_ASSERT ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
