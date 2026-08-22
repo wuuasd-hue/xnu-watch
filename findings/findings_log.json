@@ -50517,5 +50517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T15:42:02.186845+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/034bf10318cda0200ec8efc019bca8c0202da9e8",
+    "message": "Web Inspector: [SI] route shadowRootPushed/Popped to per-frame FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=X\nrdar://179248483\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation a cross-origin iframe's DOM lives in a separate\nWebProcess with its own FrameDOMAgent. The DOM.shadowRootPushed an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T15:42:39.379552+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "url": "https://github.com/WebKit/WebKit/commit/57b041070824fe1a7ad9675c08cdb05711eadb00",
+    "message": "[JSC][Temporal] japanese calendar can use ISO year, day, month, monthcode\nhttps://bugs.webkit.org/show_bug.cgi?id=319964\nrdar://182889728\n\nReviewed by Yijia Huang.\n\nSince japanese calendar is using proleptic Gregorian calendar, for year,\nday, month, monthcode, we do not need to query to the calendar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
