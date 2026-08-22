@@ -50317,5 +50317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T13:06:44.304809+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "url": "https://github.com/WebKit/WebKit/commit/1406a9ebc32d5aebb56b987141810590c0b4270d",
+    "message": "Export VM::hasLanguageChange() so WebCore can link against it\nhttps://bugs.webkit.org/show_bug.cgi?id=319925\nrdar://182851292\n\nReviewed by Keith Miller.\n\nr8d261de036d4 (\"Cache Intl.DateTimeFormat\") changed the inline\nVM::hasAnyEntryScopeServiceRequest() to call the out-of-line\nVM::hasLanguageChange(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T13:07:22.546867+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "url": "https://github.com/WebKit/WebKit/commit/a357eef6dd9359e1f73662ebc012b2f30c6b51df",
+    "message": "[JSC] `Symbol.keyFor` should reuse the symbol's cached description string\nhttps://bugs.webkit.org/show_bug.cgi?id=319843\n\nReviewed by Yusuke Suzuki.\n\nSerializers call Symbol.keyFor on the same registered symbols while walking an\nobject graph, and each call allocates a fresh JSString even though Symb",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
