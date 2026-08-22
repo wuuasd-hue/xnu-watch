@@ -4170,9 +4170,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10072,5 +10073,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "7711916200dda7e418b321e34493f66a7af2a0b0",
+    "message": "[JSC] NodeMustGenerate incorrectly cleared on CheckOverflow ArithAdd/ArithSub in DFGFixupPhase Inc/Dec handler\nhttps://bugs.webkit.org/show_bug.cgi?id=315213\nrdar://176984293\n\nReviewed by Yijia Huang.\n\nThis patch prevents overflow checks for increment/decrement in DFG from being mistakenly DCE'd.\n\nT",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/inc-dec-int32-overflow-dce.js ---\n@@ -0,0 +1,28 @@\n+//@ requireOptions(\"--useConcurrentJIT=0\", \"--thresholdForFTLOptimizeAfterWarmUp=1000\")\n+\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(\"FAIL: got \" + actual + \", expected \" + expected);\n+}\n+\n+function inc(k) {\n+    let y = k;\n+    ++y;\n+    return (y | 0) === y;\n+}\n+noInline(inc);\n+\n+function dec(k) {\n+    let y = k;\n+    --y;\n+    return (y | 0) === y;\n+}\n+noInline(dec);\n+\n+for (let i = 0; i < 1e6; ++i) {\n+    inc(1);\n+    dec(1);\n+}\n+\n+shouldBe(inc(2147483647), false);\n+shouldBe(dec(-2147483648), false);\n\n--- Source/JavaScriptCore/dfg/DFGFixupPhase.cpp ---\n@@ -295,8 +295,8 @@ class FixupPhase : public Phase {\n                 fixEdge<DoubleRepUse>(node->child1());\n                 fixEdge<DoubleRepUse>(node->child2());\n                 node->setResult(NodeResultDouble);\n+                node->clearFlags(NodeMustGenerate);\n             }\n-            node->clearFlags(NodeMustGenerate);\n             break;\n         }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/7711916200dda7e418b321e34493f66a7af2a0b0",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

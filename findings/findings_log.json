@@ -50957,5 +50957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T20:45:04.804396+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7711916200dda7e418b321e34493f66a7af2a0b0",
+    "url": "https://github.com/WebKit/WebKit/commit/7711916200dda7e418b321e34493f66a7af2a0b0",
+    "message": "[JSC] NodeMustGenerate incorrectly cleared on CheckOverflow ArithAdd/ArithSub in DFGFixupPhase Inc/Dec handler\nhttps://bugs.webkit.org/show_bug.cgi?id=315213\nrdar://176984293\n\nReviewed by Yijia Huang.\n\nThis patch prevents overflow checks for increment/decrement in DFG from being mistakenly DCE'd.\n\nT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T20:45:41.731925+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7711916200dda7e418b321e34493f66a7af2a0b0",
+    "url": "https://github.com/WebKit/WebKit/commit/7711916200dda7e418b321e34493f66a7af2a0b0",
+    "message": "[JSC] NodeMustGenerate incorrectly cleared on CheckOverflow ArithAdd/ArithSub in DFGFixupPhase Inc/Dec handler\nhttps://bugs.webkit.org/show_bug.cgi?id=315213\nrdar://176984293\n\nReviewed by Yijia Huang.\n\nThis patch prevents overflow checks for increment/decrement in DFG from being mistakenly DCE'd.\n\nT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T20:46:18.988629+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e59e295bb71290f66f6011096123ad962956ff22",
+    "url": "https://github.com/WebKit/WebKit/commit/e59e295bb71290f66f6011096123ad962956ff22",
+    "message": "[CMake] Centralize code signing and add missing entitlements\nhttps://bugs.webkit.org/show_bug.cgi?id=319641\n\nReviewed by Richard Robinson and Zak Ridouh.\n\nReland shared codesigning infrastructure added in 317671@main and add\nlogic to fully process entitlements.\n\nAdd a WEBKIT_GENERATE_ENTITLEMENTS fu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
