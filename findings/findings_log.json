@@ -50677,5 +50677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T17:10:11.587675+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cea233cedec0d634e84b0eb2d3e495e62c9a6959",
+    "url": "https://github.com/WebKit/WebKit/commit/cea233cedec0d634e84b0eb2d3e495e62c9a6959",
+    "message": "[JSC] `SymbolTableEntry` should not allocate a `WatchpointSet` until somebody watches the variable\nhttps://bugs.webkit.org/show_bug.cgi?id=321587\n\nReviewed by Yusuke Suzuki.\n\nEvery closure variable that its own function stores to (which includes the initializing store of\n`var` / `let` / `function` /",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T17:10:49.430987+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96ca975b2a61a52093cccecd9249e2b410085eea",
+    "url": "https://github.com/WebKit/WebKit/commit/96ca975b2a61a52093cccecd9249e2b410085eea",
+    "message": "[JSC] Use `objectCloneFast` for the first source in `Object.assign`'s batching path\nhttps://bugs.webkit.org/show_bug.cgi?id=322161\n\nReviewed by Yusuke Suzuki.\n\nObject.assign({}, state, patch) with 2 or 3 sources goes through the batching path in\nobjectConstructorAssign, which enumerates every source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
