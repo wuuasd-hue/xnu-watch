@@ -49517,5 +49517,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T01:55:46.977185+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "url": "https://github.com/WebKit/WebKit/commit/cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "message": "[WTF] Align PriorityQueue to std::priority_queue and fix WasmWorklist\nhttps://bugs.webkit.org/show_bug.cgi?id=322303\nrdar://185541345\n\nReviewed by Dan Hecht.\n\nWe found that WasmWorklist's PriorityQueue's ordering is opposite and\nnot correct. The reason is that PriorityQueue and std::priority_queue's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T01:56:24.580971+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "url": "https://github.com/WebKit/WebKit/commit/cffd5ed032c478c1dee5311a89b91e64909e8b90",
+    "message": "[WTF] Align PriorityQueue to std::priority_queue and fix WasmWorklist\nhttps://bugs.webkit.org/show_bug.cgi?id=322303\nrdar://185541345\n\nReviewed by Dan Hecht.\n\nWe found that WasmWorklist's PriorityQueue's ordering is opposite and\nnot correct. The reason is that PriorityQueue and std::priority_queue's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T01:57:02.199577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "url": "https://github.com/WebKit/WebKit/commit/6f4a962539ff1caca2ad3b6beb87cedd45f92f12",
+    "message": "[Xcode] Sandboxing override for \"Work around rdar://109484516\" not taking effect\nhttps://bugs.webkit.org/show_bug.cgi?id=319710\nrdar://182549120\n\nReviewed by Richard Robinson.\n\nThis script phase needs to be opted-out because it prunes old task\noutputs (and would cause a dependency cycle if it listed",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
