@@ -49697,5 +49697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T04:55:50.438723+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40772733505bef5ce93894e6cda61196687b9593",
+    "url": "https://github.com/WebKit/WebKit/commit/40772733505bef5ce93894e6cda61196687b9593",
+    "message": "Deduplicate buildArrayForVector/mapToArray in Inspector canvas recording code\nhttps://bugs.webkit.org/show_bug.cgi?id=319740\nrdar://182580121\n\nReviewed by Devin Rousso.\n\nInspectorCanvas.cpp's buildArrayForVector<T> was structurally identical\nto the no-functor mapToArray overload in InspectorCanvasAr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T04:56:27.862537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1d43e57f4b1f721602480ec3bf2379e69ade3d0",
+    "message": "[JSC] Use ApproximateTime for deadline in Opportunistic Task Scheduler and Incremental Sweeper\nhttps://bugs.webkit.org/show_bug.cgi?id=319662\nrdar://182496956\n\nReviewed by Yijia Huang.\n\nNow UnbarrieredMonotonicTime is used in ApproximateTime if possible, so\nusing ApproximateTime for deadline represe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
