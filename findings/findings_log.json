@@ -49477,5 +49477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T00:26:39.248586+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "url": "https://github.com/WebKit/WebKit/commit/b7d86046792af67a49c7f8f2a8c94af0270b759a",
+    "message": "[JSC][Temporal] Fix PMD reference-year drop for Chinese leap months\nhttps://bugs.webkit.org/show_bug.cgi?id=319656\nrdar://182481524\n\nReviewed by Yusuke Suzuki.\n\nPlainMonthDay.from({calendar:\"chinese\", year:1651, monthCode:\"M01L\",\nday:29}) returned 1651-02-19[u-ca=chinese] instead of the canonical\n19",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T00:27:16.050409+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd9a87c22d4f285d0f4cafc8bf3096a65b7d26d",
+    "message": "Replace start and stop markers in ExecutionHandlerIdleStopTest.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=319690\nrdar://182535047\n\nReviewed by Yijia Huang.\n\nWhen I search for git conflict markers \"<<<<<<<\" and \">>>>>>>\" these always show up.\nAdd some = characters to make the search for merge confli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
