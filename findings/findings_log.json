@@ -49997,5 +49997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T08:53:12.294369+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41ee8b26825110c19e6aab1580e2d8ad89a2abb8",
+    "url": "https://github.com/WebKit/WebKit/commit/41ee8b26825110c19e6aab1580e2d8ad89a2abb8",
+    "message": "[JSC] Match non-canonical SBFX form in B3LowerToAir\nhttps://bugs.webkit.org/show_bug.cgi?id=271412\n\nReviewed by Yijia Huang.\n\nB3LowerToAir already selected sbfx for SShr(Shl((Z|S)Shr(src, lsb), amount), amount).\nAlso match SShr(Shl(src, leftAmt), rightAmt) with rightAmt > leftAmt so that form\nselect",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T08:53:50.808605+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6654fe520c0b94de12aff50be1839be853f9e15e",
+    "url": "https://github.com/WebKit/WebKit/commit/6654fe520c0b94de12aff50be1839be853f9e15e",
+    "message": "[JSC] Use `vectorLengthHint` in `ArrayAllocationProfile` for `NewArrayWithSize` node\nhttps://bugs.webkit.org/show_bug.cgi?id=317466\n\nReviewed by Yusuke Suzuki.\n\nArray.prototype.filter creates its result via op_new_array_with_species\nwith length 0, which the DFG converts to NewArrayWithSize(0). The\nr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
