@@ -50757,5 +50757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T18:10:07.052294+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "url": "https://github.com/WebKit/WebKit/commit/4d7b4aee32e5575bf55de5e18d88b427814503da",
+    "message": "[JSC] Use more FTL select for arithmetic ops\nhttps://bugs.webkit.org/show_bug.cgi?id=319951\nrdar://182872024\n\nReviewed by Sosuke Suzuki.\n\nApply more FTL select operations for arithmetic ops diamond to remove\nmicro basic blocks.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n(JSC::FTL::DFG::LowerD",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T18:10:45.555769+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "url": "https://github.com/WebKit/WebKit/commit/55653be38dd52f0e4213528ba4fd9301c40689a0",
+    "message": "Unreviewed, reverting 315966@main (0071dfd4f18a)\nhttps://bugs.webkit.org/show_bug.cgi?id=320022\n\ntrips RELEASE_ASSERT\n\nReverted change:\n\n    [JSC] Use `InstanceOf` DFG node for `Object#isPrototypeOf`\n    https://bugs.webkit.org/show_bug.cgi?id=317821\n    315966@main (0071dfd4f18a)\n\nCanonical link: h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
