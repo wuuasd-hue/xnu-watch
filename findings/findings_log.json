@@ -50717,5 +50717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T17:42:02.620167+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cea233cedec0d634e84b0eb2d3e495e62c9a6959",
+    "url": "https://github.com/WebKit/WebKit/commit/cea233cedec0d634e84b0eb2d3e495e62c9a6959",
+    "message": "[JSC] `SymbolTableEntry` should not allocate a `WatchpointSet` until somebody watches the variable\nhttps://bugs.webkit.org/show_bug.cgi?id=321587\n\nReviewed by Yusuke Suzuki.\n\nEvery closure variable that its own function stores to (which includes the initializing store of\n`var` / `let` / `function` /",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-22T17:42:39.975317+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df073f7df0ffd5ca628c52d47943c54cad3d5cd9",
+    "message": "Clean up JS Temporal getNamedTimeZoneEpochNanoseconds\nhttps://bugs.webkit.org/show_bug.cgi?id=319296\nrdar://182132863\n\nReviewed by Yijia Huang and Yusuke Suzuki.\n\ngetNamedTimeZoneEpochNanoseconds makes a number of ICU calls which could\nbe reduced by invoking ICU function ucal_getTimeZoneOffsetFromLo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
