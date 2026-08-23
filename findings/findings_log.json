@@ -52297,5 +52297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T16:09:56.190263+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "46a4b17efbe9a1b9fe05a4ca8b6452650b001b51",
+    "url": "https://github.com/WebKit/WebKit/commit/46a4b17efbe9a1b9fe05a4ca8b6452650b001b51",
+    "message": "[YARR] Do not filter the contents of a negative lookahead in `optimizeBOL`\nhttps://bugs.webkit.org/show_bug.cgi?id=320611\n\nReviewed by Yusuke Suzuki.\n\n    /^a|(?!^)b/.exec(\"b\") // [\"b\"], should be null\n\noptimizeBOL()'s loop copy drops subterms that can only match at the start of\nthe input, since the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T16:10:33.023150+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e759fa9dd06385bb3cdd8e6150c16322df0f1feb",
+    "url": "https://github.com/WebKit/WebKit/commit/e759fa9dd06385bb3cdd8e6150c16322df0f1feb",
+    "message": "[JSC] Inline hot part of `op_enter` in LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=320530\n\nReviewed by Keith Miller.\n\nThe LLInt's op_enter unconditionally calls slow_path_enter on every\nfunction entry, paying a C++ call for what is usually just one store of\nthe callee's scope. 280547@main inlined ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
