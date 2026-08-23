@@ -52897,5 +52897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T23:09:04.191386+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5178278df2e968475df523946dd4caf468069d57",
+    "url": "https://github.com/WebKit/WebKit/commit/5178278df2e968475df523946dd4caf468069d57",
+    "message": "[cleanup] Ask whether a document is fully active rather than whether it has a render tree\nhttps://bugs.webkit.org/show_bug.cgi?id=322292\n<rdar://problem/185534759>\n\nReviewed by Antti Koivisto.\n\nThese call sites checked whether a document had a render tree when what they meant was whether it can ever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T23:09:40.974671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "url": "https://github.com/WebKit/WebKit/commit/e8c97076834e3182b2e3342ccb3fe179c21e7790",
+    "message": "Web Inspector: Canvas: instrument WebGPU pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320698\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUShaderModule.h:\n(WebCore::GPUShaderModule::create):\n(WebCore::GPUShaderModule::source const): Added.\n(WebCore::GPUShaderModule::GPUShad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
