@@ -52537,5 +52537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T19:12:54.107738+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "90b2ecf79ae30cf5c76d5a8ae6b6761a474f347b",
+    "url": "https://github.com/WebKit/WebKit/commit/90b2ecf79ae30cf5c76d5a8ae6b6761a474f347b",
+    "message": "[JSC] `hostResolveImportedModule` should respect the module request's import attribute type\nhttps://bugs.webkit.org/show_bug.cgi?id=320341\n\nReviewed by Yusuke Suzuki.\n\nSince 317844@main, hostResolveImportedModule looks up [[LoadedModules]] by specifier\nalone, probing each ScriptFetchParameters::Type",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T19:13:31.659616+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c566b9a406af95a7cfaaf120a4ede210991e6713",
+    "url": "https://github.com/swiftlang/swift/commit/c566b9a406af95a7cfaaf120a4ede210991e6713",
+    "message": "Merge pull request #90965 from DougGregor/embedded-concurrency-freestanding\n\n[Embedded] Build Embedded Concurrency library as freestanding",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
