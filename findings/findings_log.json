@@ -52837,5 +52837,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T22:44:18.556542+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5178278df2e968475df523946dd4caf468069d57",
+    "url": "https://github.com/WebKit/WebKit/commit/5178278df2e968475df523946dd4caf468069d57",
+    "message": "[cleanup] Ask whether a document is fully active rather than whether it has a render tree\nhttps://bugs.webkit.org/show_bug.cgi?id=322292\n<rdar://problem/185534759>\n\nReviewed by Antti Koivisto.\n\nThese call sites checked whether a document had a render tree when what they meant was whether it can ever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T22:44:55.680677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5178278df2e968475df523946dd4caf468069d57",
+    "url": "https://github.com/WebKit/WebKit/commit/5178278df2e968475df523946dd4caf468069d57",
+    "message": "[cleanup] Ask whether a document is fully active rather than whether it has a render tree\nhttps://bugs.webkit.org/show_bug.cgi?id=322292\n<rdar://problem/185534759>\n\nReviewed by Antti Koivisto.\n\nThese call sites checked whether a document had a render tree when what they meant was whether it can ever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T22:45:32.798209+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "url": "https://github.com/WebKit/WebKit/commit/15aa6fad53e3f14050c4e361c0fe777d5e4f0ee1",
+    "message": "[Memory64] Add SIMD support\nhttps://bugs.webkit.org/show_bug.cgi?id=320755\nrdar://183755031\n\nReviewed by Keith Miller.\n\nAdd SIMD support in memory64\n\n* JSTests/wasm/stress/memory64-simd.js: Added.\n(13):\n(3):\n(8):\n(2):\n(func.export.string_appeared_here.param.addr.i64.param.value.i64.i64.store.local.a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
