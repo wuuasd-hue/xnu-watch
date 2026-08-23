@@ -51557,5 +51557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T06:18:17.461613+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "244cd98f79863e405e0094b78d13c20817e3cfea",
+    "url": "https://github.com/WebKit/WebKit/commit/244cd98f79863e405e0094b78d13c20817e3cfea",
+    "message": "generateWasmOpsHeader.py makes an error without UTF-8 environments\nhttps://bugs.webkit.org/show_bug.cgi?id=320150\n\nReviewed by Yusuke Suzuki.\n\nSource\\JavaScriptCore\\wasm\\generateWasmOpsHeader.py\nrequires UTF-8 encoding, but in a Japanese environment\non Windows, CP932 is used by default.\nTherefore, t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T06:18:54.246206+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "url": "https://github.com/WebKit/WebKit/commit/cd91e7f128dd09f6f9bb8f19e8bc66c6d7e94dfa",
+    "message": "[JSC] Add fast flag for ToPrimitive(Object) calls in runtime\nhttps://bugs.webkit.org/show_bug.cgi?id=320343\nrdar://183289080\n\nReviewed by Sosuke Suzuki.\n\nMake ToPrimitive(object) faster by caching a flag in StructureRareData.\nm_cachedHasDefaultToPrimitiveFastAndNonObservable says that we can use\ntoS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
