@@ -51777,5 +51777,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T09:14:59.395256+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f924849f534426b33d9b81e64365ab85597626d",
+    "url": "https://github.com/WebKit/WebKit/commit/0f924849f534426b33d9b81e64365ab85597626d",
+    "message": "[CMake] Fix the CMake build after 319646@main\nhttps://bugs.webkit.org/show_bug.cgi?id=322348\nrdar://185619817\n\nReviewed by Zak Ridouh.\n\nThe CMake build requires `JSC::SymbolTableEntry::inflate` to be `JS_EXPORT_PRIVATE` since it uses\n`-fpch-codegen` which hoists inline function bodies out of the PCH",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T09:15:36.575565+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "url": "https://github.com/WebKit/WebKit/commit/f2429bc7943a842d3b066cbb4a63bd8930d9388a",
+    "message": "[Win] Build fixes August 27\nhttps://bugs.webkit.org/show_bug.cgi?id=320179\n\nUnreviewed build fix.\n\nFix several independent breakages of the Windows build, found by\nbuilding main in the Windows EWS configuration now that its image\nincludes Swift 6.3.3:\n\n* Source/cmake/OptionsWin.cmake:\nOpt out of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
