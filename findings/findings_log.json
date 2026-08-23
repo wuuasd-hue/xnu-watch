@@ -51857,5 +51857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T10:10:28.651066+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "url": "https://github.com/WebKit/WebKit/commit/f8352ee5402eeb2d84d156b368e5abf0f0659fc1",
+    "message": "Set timeOrigin to align with spec, even when BCG switches take place.\nhttps://bugs.webkit.org/show_bug.cgi?id=316291\n\nReviewed by Alex Christensen.\n\nCurrently the timeOrigin is set when the final process starts the navigation request load.\nBut in the case of a BCG switch, that load ends up resuming/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T10:11:06.709062+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "09917ef55b0f95601817be0ad3100e4ff5044a69",
+    "url": "https://github.com/WebKit/WebKit/commit/09917ef55b0f95601817be0ad3100e4ff5044a69",
+    "message": "[JSC] Add missing `U_FAILURE(status)` for `actualLunisolarMonthLength`\nhttps://bugs.webkit.org/show_bug.cgi?id=320313\n\nReviewed by Yusuke Suzuki.\n\nThe U_FAILURE(status) check sat after the early return for non-Chinese/Dangi\ncalendars (i.e. Hebrew), so it never guarded the ucal_getLimit call: on ICU\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
