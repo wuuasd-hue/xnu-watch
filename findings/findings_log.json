@@ -52657,5 +52657,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T20:45:05.464252+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "url": "https://github.com/WebKit/WebKit/commit/9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "message": "[JSC] Do not clone patchpoints for Wasm calls within a try block\nrdar://178657225\nhttps://bugs.webkit.org/show_bug.cgi?id=316791\n\nReviewed by Yijia Huang.\n\nSimilar to throw/rethrow patchpoints, a Wasm OMG call patchpoint inside\na Try block carries an exception-restoration stackmap keyed by its CallS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T20:45:42.451391+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "url": "https://github.com/WebKit/WebKit/commit/9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "message": "[JSC] Do not clone patchpoints for Wasm calls within a try block\nrdar://178657225\nhttps://bugs.webkit.org/show_bug.cgi?id=316791\n\nReviewed by Yijia Huang.\n\nSimilar to throw/rethrow patchpoints, a Wasm OMG call patchpoint inside\na Try block carries an exception-restoration stackmap keyed by its CallS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T20:46:19.513500+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f3e34dde7c9d3ed83bca6c9445800cb499bd8b5d",
+    "url": "https://github.com/WebKit/WebKit/commit/f3e34dde7c9d3ed83bca6c9445800cb499bd8b5d",
+    "message": "Web Inspector: Canvas: instrument WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=320694\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUDevice.h:\n(WebCore::GPUDevice::create):\n(WebCore::GPUDevice::instances): Added.\n(WebCore::GPUDevice::instancesLock): Added.\n(WebCore::GPU",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
