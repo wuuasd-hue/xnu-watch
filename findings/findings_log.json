@@ -52937,5 +52937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T23:41:32.064559+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "url": "https://github.com/WebKit/WebKit/commit/8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "message": "[JSC] DFG Uint32Array load should consider about Int32 speculation path\nhttps://bugs.webkit.org/show_bug.cgi?id=319112\nrdar://176792844\n\nReviewed by Mark Lam.\n\nDFG Uint32Array GetByVal may have Int32 result with speculation. But the\ncurrent code is always using boxed-double for boxed result. We shou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T23:42:09.423115+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "url": "https://github.com/WebKit/WebKit/commit/8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "message": "[JSC] DFG Uint32Array load should consider about Int32 speculation path\nhttps://bugs.webkit.org/show_bug.cgi?id=319112\nrdar://176792844\n\nReviewed by Mark Lam.\n\nDFG Uint32Array GetByVal may have Int32 result with speculation. But the\ncurrent code is always using boxed-double for boxed result. We shou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T23:42:46.897332+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5178278df2e968475df523946dd4caf468069d57",
+    "url": "https://github.com/WebKit/WebKit/commit/5178278df2e968475df523946dd4caf468069d57",
+    "message": "[cleanup] Ask whether a document is fully active rather than whether it has a render tree\nhttps://bugs.webkit.org/show_bug.cgi?id=322292\n<rdar://problem/185534759>\n\nReviewed by Antti Koivisto.\n\nThese call sites checked whether a document had a render tree when what they meant was whether it can ever",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

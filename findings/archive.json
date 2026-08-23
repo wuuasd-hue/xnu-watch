@@ -10233,8 +10233,24 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "message": "[JSC] DFG Uint32Array load should consider about Int32 speculation path\nhttps://bugs.webkit.org/show_bug.cgi?id=319112\nrdar://176792844\n\nReviewed by Mark Lam.\n\nDFG Uint32Array GetByVal may have Int32 result with speculation. But the\ncurrent code is always using boxed-double for boxed result. We shou",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/uint32-array-result-int32-dfg.js ---\n@@ -0,0 +1,41 @@\n+//@ runDefault(\"--useConcurrentJIT=false\", \"--useFTLJIT=false\", \"--jitPolicyScale=0.1\")\n+// See rdar://176792844 for additional details on this test.\n+\n+let a = new Uint32Array(4);\n+a[0] = 42;\n+\n+let dummy = [1, 2, 3]; dummy[0] = 1; dummy[0] = {};\n+\n+const sBodyArgs = ['a', 'idx', 'flag', 'intArr',\n+\"\\n\" +\n+\"    let i = idx;\\n\" +\n+\"    if (flag) i = 0.5;\\n\" +\n+\"    let v = a[i];\\n\" +\n+\"    let d = v - 0.5;\\n\" +\n+\"    intArr[0] = v;\\n\" +\n+\"    return d;\\n\"];\n+\n+let f1 = new Function(...sBodyArgs);\n+noInline(f1);\n+\n+let intArr1 = [1, 2, 3]; intArr1[0] = 1;\n+for (let k = 0; k < 100; k++)\n+    f1(a, 0, false, intArr1);\n+\n+for (let k = 0; k < 110; k++)\n+    f1(a, 100, false, intArr1);\n+\n+let evict = new Function('z', 'return z'); evict(0);\n+\n+let f2 = new Function(...sBodyArgs);\n+noInline(f2);\n+\n+let intArr2 = [1, 2, 3]; intArr2[0] = 1;\n+\n+for (let k = 0; k < 100; k++)\n+    f2(a, 0, false, intArr2);\n+\n+f2(a, 0, false, intArr2);\n+\n+if (intArr2[0] !== 42)\n+    throw new Error(\"incorrect value \" + intArr2[0]);\n\n--- Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp ---\n@@ -3210,8 +3210,13 @@ void SpeculativeJIT::setIntTypedArrayLoadResult(Node* node, JSValueRegs resultRe\n \n     if (shouldBox) {\n         if (isUInt32) {\n-            convertUInt32ToDouble(resultReg, resultFPR);\n-            boxDouble(resultFPR, resultRegs);\n+            if (node->shouldSpeculateInt32() && canSpeculate) {\n+                speculationCheck(ExitKind::Overflow, JSValueRegs(), nullptr, branch32(LessThan, resultReg, TrustedImm32(0)));\n+                boxInt32(resultReg, resultRegs);\n+            } else {\n+                convertUInt32ToDouble(resultReg, resultFPR);\n+                boxDouble(resultFPR, resultRegs);\n+            }\n         } else\n             boxInt32(resultRegs.payloadGPR(), resultRegs);\n         if (outOfBounds.isSet())\n",
+    "url": "https://github.com/WebKit/WebKit/commit/8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
