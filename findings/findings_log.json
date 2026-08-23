@@ -51937,5 +51937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T11:10:01.971955+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f9370cc729f0e035aa09416b3ca84e6ac8a69c5",
+    "url": "https://github.com/WebKit/WebKit/commit/9f9370cc729f0e035aa09416b3ca84e6ac8a69c5",
+    "message": "[JSC] Fix JSON stringify regression due to toJSON check\nhttps://bugs.webkit.org/show_bug.cgi?id=320437\nrdar://183400665\n\nReviewed by Sosuke Suzuki.\n\n316941@main becomes performance regression in JSON.stringify because we\ninsert toJSON name check in the one of the hottest loop listing\nproperties. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T11:10:39.327819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "url": "https://github.com/WebKit/WebKit/commit/1d355c27ea88a9e50184d16b7a76adb1ed6492bb",
+    "message": "[JSC] Add an 8-byte SWAR fast path to JSON.stringify's stringCopyUpconvert for short strings\nhttps://bugs.webkit.org/show_bug.cgi?id=320419\nrdar://183378922\n\nReviewed by Yusuke Suzuki.\n\nstringCopyUpconvert() is stringCopySameType()'s Latin1-to-char16_t upconvert\nsibling and has the same gap: a scala",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
