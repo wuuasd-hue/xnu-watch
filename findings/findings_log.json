@@ -51677,5 +51677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T08:14:36.846745+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e43057f135a31c9c9c893ab4efe2874cef8e426",
+    "url": "https://github.com/WebKit/WebKit/commit/1e43057f135a31c9c9c893ab4efe2874cef8e426",
+    "message": "[JSC][YARR] Extend first-character filter more\nhttps://bugs.webkit.org/show_bug.cgi?id=320258\nrdar://183182586\n\nReviewed by Yijia Huang.\n\nThis patch extends first-character fast-fail filter in DFG / FTL.\n\n1. Inverted character class is supported. Just collecting the set\n   and inverted set is merged",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T08:15:13.847555+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "656d3c36830f999c3dee135b2fc80e7a3e374128",
+    "url": "https://github.com/WebKit/WebKit/commit/656d3c36830f999c3dee135b2fc80e7a3e374128",
+    "message": "[JSC] Add an 8-byte SWAR fast path to JSON.stringify's stringCopySameType for short strings\nhttps://bugs.webkit.org/show_bug.cgi?id=320393\nrdar://183349883\n\nReviewed by Yusuke Suzuki.\n\nstringCopySameType() copies a string's bytes into the output buffer while\nchecking for characters that need JSON es",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
