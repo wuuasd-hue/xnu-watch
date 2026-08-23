@@ -51437,5 +51437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T04:58:14.362930+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "14549e6b85926dcf5f87f114d2d688b73053f2f1",
+    "url": "https://github.com/WebKit/WebKit/commit/14549e6b85926dcf5f87f114d2d688b73053f2f1",
+    "message": "Web Inspector: Sources: show WebAssembly modules\nhttps://bugs.webkit.org/show_bug.cgi?id=319168\n\nReviewed by Yusuke Suzuki.\n\n* Source/JavaScriptCore/wasm/WasmModule.h:\n(JSC::Wasm::Module::validateAsync):\n(JSC::Wasm::Module::create):\n(JSC::Wasm::Module::Module):\n* Source/JavaScriptCore/wasm/WasmModul",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T04:58:51.534403+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e28b6ce22ee4fccd38c23498a469f3d8508a47a",
+    "url": "https://github.com/WebKit/WebKit/commit/5e28b6ce22ee4fccd38c23498a469f3d8508a47a",
+    "message": "[JSC] Use op_async_iterator_open and op_async_iterator_next for yield*\nhttps://bugs.webkit.org/show_bug.cgi?id=319946\nrdar://182862712\n\nReviewed by Yijia Huang.\n\nThis patch applies op_async_iterator_open and op_async_iterator_next to\nyield* in async generator functions. Previously we cannot apply th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
