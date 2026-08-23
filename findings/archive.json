@@ -4710,9 +4710,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10136,5 +10137,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "0f924849f534426b33d9b81e64365ab85597626d",
+    "message": "[CMake] Fix the CMake build after 319646@main\nhttps://bugs.webkit.org/show_bug.cgi?id=322348\nrdar://185619817\n\nReviewed by Zak Ridouh.\n\nThe CMake build requires `JSC::SymbolTableEntry::inflate` to be `JS_EXPORT_PRIVATE` since it uses\n`-fpch-codegen` which hoists inline function bodies out of the PCH",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/runtime/SymbolTable.h ---\n@@ -351,7 +351,7 @@ struct SymbolTableEntry {\n         return std::bit_cast<FatEntry*>(m_bits);\n     }\n     \n-    void NODELETE inflate();\n+    JS_EXPORT_PRIVATE void NODELETE inflate();\n     \n     ALWAYS_INLINE intptr_t bits() const\n     {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/0f924849f534426b33d9b81e64365ab85597626d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
