@@ -3,5 +3,5 @@
   "apple-oss-distributions/dyld": "fd8d0c4d52320ebf64db34f3cb280310d905c5ae",
   "apple-oss-distributions/Security": "db15acbe6a7f257a859ad9a3bb86097bfe0679d9",
   "WebKit/WebKit": "1feb6ac19b06a18bee095b204f70551cb22eff3b",
-  "swiftlang/swift": "1108bb0bc692e4355612ab3e596d30f02c44165e"
+  "swiftlang/swift": "3d6aa6cefdf88801903a4ae549eeca202b4347e3"
 }
