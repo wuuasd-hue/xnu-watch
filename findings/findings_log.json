@@ -52717,5 +52717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T21:09:12.528543+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "url": "https://github.com/WebKit/WebKit/commit/9f07374e9eb2398ebf629352f5fc0a509ae631b8",
+    "message": "[JSC] Do not clone patchpoints for Wasm calls within a try block\nrdar://178657225\nhttps://bugs.webkit.org/show_bug.cgi?id=316791\n\nReviewed by Yijia Huang.\n\nSimilar to throw/rethrow patchpoints, a Wasm OMG call patchpoint inside\na Try block carries an exception-restoration stackmap keyed by its CallS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-23T21:09:49.306034+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cfb222f3c4d1632e4bb21c18f57db2117dc11c40",
+    "url": "https://github.com/WebKit/WebKit/commit/cfb222f3c4d1632e4bb21c18f57db2117dc11c40",
+    "message": "[CMake] Run cleandead at the end of configuration to delete stale files\nhttps://bugs.webkit.org/show_bug.cgi?id=320723\nrdar://183704798\n\nReviewed by Richard Robinson and Zak Ridouh.\n\n`ninja -t cleandead` deletes files from the log that are no longer part\nof the build graph. By hacking ninja-wrapper,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
