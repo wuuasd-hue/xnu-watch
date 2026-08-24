@@ -54057,5 +54057,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T19:07:33.775183+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "url": "https://github.com/WebKit/WebKit/commit/1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "message": "[JSC] Fix B3 ReduceStrength Select specialization when a Check appears between the Select and triggering Check\nhttps://bugs.webkit.org/show_bug.cgi?id=316347\nrdar://177687354\n\nReviewed by Marcus Plutowski.\n\nIn B3ReduceStrength, specializeSelect() specializes a Select that has a constant\narm and is r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T19:08:10.975105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "url": "https://github.com/WebKit/WebKit/commit/1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "message": "[JSC] Fix B3 ReduceStrength Select specialization when a Check appears between the Select and triggering Check\nhttps://bugs.webkit.org/show_bug.cgi?id=316347\nrdar://177687354\n\nReviewed by Marcus Plutowski.\n\nIn B3ReduceStrength, specializeSelect() specializes a Select that has a constant\narm and is r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T19:08:48.102747+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d867192b7ab40a0c797e68d86a5842884729bea",
+    "url": "https://github.com/WebKit/WebKit/commit/7d867192b7ab40a0c797e68d86a5842884729bea",
+    "message": "[JSC] Fix BackwardsGraph for loops with multiple back-edge sources\nhttps://bugs.webkit.org/show_bug.cgi?id=317603\nrdar://178735697\n\nReviewed by Marcus Plutowski.\n\nThe addRootSuccessor lambda in WTF::BackwardsGraph used a single\nGraphNodeWorklist both to decide synthetic-root membership and to drive\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
