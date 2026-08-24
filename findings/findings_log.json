@@ -53037,5 +53037,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T02:04:56.367342+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "url": "https://github.com/WebKit/WebKit/commit/bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "message": "[cmake] Provide ability to run Safari with webkit built by cmake\nhttps://bugs.webkit.org/show_bug.cgi?id=322249\nrdar://185482522\n\nReviewed by Zak Ridouh.\n\nMake --cmake option given to run-safari works.\nCouple of issues with the cmake webkit build that prevented Safari to start:\n- compatibility versi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T02:05:34.816497+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "url": "https://github.com/WebKit/WebKit/commit/bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "message": "[cmake] Provide ability to run Safari with webkit built by cmake\nhttps://bugs.webkit.org/show_bug.cgi?id=322249\nrdar://185482522\n\nReviewed by Zak Ridouh.\n\nMake --cmake option given to run-safari works.\nCouple of issues with the cmake webkit build that prevented Safari to start:\n- compatibility versi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T02:06:13.166807+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "url": "https://github.com/WebKit/WebKit/commit/8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "message": "[JSC] DFG Uint32Array load should consider about Int32 speculation path\nhttps://bugs.webkit.org/show_bug.cgi?id=319112\nrdar://176792844\n\nReviewed by Mark Lam.\n\nDFG Uint32Array GetByVal may have Int32 result with speculation. But the\ncurrent code is always using boxed-double for boxed result. We shou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
