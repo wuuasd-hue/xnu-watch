@@ -53257,5 +53257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T05:59:08.103309+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "url": "https://github.com/WebKit/WebKit/commit/0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "message": "[WTF] Use std::expected instead of our own std::experimental::expected implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=322297\nrdar://185536453\n\nReviewed by Ryan Reno, Alex Christensen, Abrar Rahman Protyasha, and Cole Carley.\n\nSwitch to using the normal `std::expected` type instead of our own",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T05:59:44.791739+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb77e9c947382dbf8bca4a61c0e794bb5524136",
+    "message": "[JSC] Implement Crandall reduction\nhttps://bugs.webkit.org/show_bug.cgi?id=320763\nrdar://183764395\n\nReviewed by Justin Michaud.\n\nThis patch implements Crandall reduction for fast modulo calculation.\nWhen you have\n\n    R = A mod B\n    R ≡ A (mod B)\n\nIf B is Pseudo-Mersenne (2^k - C, where C is small)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
