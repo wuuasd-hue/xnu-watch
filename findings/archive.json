@@ -5736,9 +5736,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10312,5 +10313,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "d40f4efab0e0cee61e29c8540abff5285bf5275d",
+    "message": "[WebCore] Use-after-free in ImageLoader::dispatchPendingLoadEvent / dispatchPendingErrorEvent\nrdar://177909775\n\nReviewed by Alan Baradlay.\n\ndispatchPendingLoadEvent() and dispatchPendingErrorEvent() dispatch author script and then\ntouch `this` again via updatedHasPendingEvent(). The only thing keepi",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- LayoutTests/fast/images/image-load-event-in-modal-dialog-crash-expected.txt ---\n@@ -0,0 +1,3 @@\n+CONSOLE MESSAGE: Window 'showModalDialog' function is deprecated and will be removed soon.\n+CONSOLE MESSAGE: showModalDialog() is deprecated and will be removed. Please use the <dialog> element instead.\n+PASS if no crash.\n\n--- LayoutTests/fast/images/image-load-event-in-modal-dialog-crash.html ---\n@@ -0,0 +1,37 @@\n+<!-- webkit-test-runner [ ShowModalDialogEnabled=true ] --><!DOCTYPE html>\n+<html>\n+<body>\n+<div id=\"host\" style=\"display:none\"></div>\n+<script>\n+if (window.testRunner) {\n+    testRunner.dumpAsText();\n+    testRunner.waitUntilDone();\n+}\n+if (window.internals)\n+    internals.setCanShowModalDialogOverride(true);\n+\n+var host = document.getElementById('host');\n+var sr = host.attachShadow({mode: 'open'});\n+sr.innerHTML = '<picture id=\"pic\"><source srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><img></picture>';\n+var pic = sr.getElementById('pic');\n+\n+pic.addEventListener('load', function listener() {\n+    pic.removeEventListener('load', listener, true);\n+    // Removing the <img> from its <picture> re-enters ImageLoader::updatedHasPendingEvent()\n+    // and arms m_derefElementTimer.\n+    pic.textContent = '';\n+    // showModalDialog spins a nested run loop which fires m_derefElementTimer, dropping\n+    // m_protectedElement while ImageLoader::dispatchPendingLoadEvent() is still on the stack.\n+    showModalDialog('resources/self-closing-modal-dialog.html');\n+\n+    // The trailing updatedHasPendingEvent() (the crash point) runs after this handler\n+    // returns, so finish on the next task rather than waiting a fixed delay.\n+    setTimeout(function() {\n+        document.write('PASS if no crash.');\n+        if (window.testRunner)\n+            testRunner.notifyDone();\n+    }, 0);\n+}, /*capture*/ true);\n+</script>\n+</body>\n+</html>\n\n--- LayoutTests/fast/images/resources/self-closing-modal-dialog.html ---\n@@ -0,0 +1,8 @@\n+<!DOCTYPE html>\n+<script>\n+setTimeout(function() {\n+    if (window.testRunner)\n+        testRunner.abortModal();\n+    window.close();\n+}, 10);\n+</script>\n\n--- Source/WebCore/loader/ImageLoader.cpp ---\n@@ -701,7 +701,8 @@ void ImageLoader::dispatchPendingLoadEvent()\n     if (!m_image)\n         return;\n     m_hasPendingLoadEvent = false;\n-    Ref document = element().document();\n+    Ref protectedElement = element();\n+    Ref document = protectedElement->document();\n     if (document->canEverRender())\n         dispatchLoadEvent();\n \n@@ -716,9 +717,10 @@ void ImageLoader::dispatchPendingErrorEvent()\n         return;\n     m_hasPendingErrorEvent = false;\n     loadEventSender().cancelEvent(*this, eventNames().errorEvent);\n-    Ref document = element().document();\n+    Ref protectedElement = element();\n+    Ref document = protectedElement->document();\n     if (document->canEverRender())\n-        protect(element())->dispatchEvent(Event::create(eventNames().errorEvent, Event::CanBubble::No, Event::IsCancelable::No));\n+        protectedElement->dispatchEvent(Event::create(eventNames().errorEvent, Event::CanBubble::No, Event::IsCancelable::No));\n \n     // Only consider updating the protection ref-count of the Element immediately before returning\n     // from this function as doing so might result in the destruction of this ImageLoader.\n",
+    "url": "https://github.com/WebKit/WebKit/commit/d40f4efab0e0cee61e29c8540abff5285bf5275d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
