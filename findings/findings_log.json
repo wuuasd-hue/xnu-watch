@@ -54417,5 +54417,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T22:49:25.197632+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "url": "https://github.com/WebKit/WebKit/commit/f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "message": "[JSC] Do not clean up Wasm Type registry repeatedly\nhttps://bugs.webkit.org/show_bug.cgi?id=322439\nrdar://185720499\n\nReviewed by Yijia Huang.\n\nWe are cleaning up Wasm Type registry whenever destroying Wasm Modules.\nBut this is happening too much. We should batch them by destroying many\nWasm Modules.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T22:50:07.058582+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "url": "https://github.com/WebKit/WebKit/commit/f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "message": "[JSC] Do not clean up Wasm Type registry repeatedly\nhttps://bugs.webkit.org/show_bug.cgi?id=322439\nrdar://185720499\n\nReviewed by Yijia Huang.\n\nWe are cleaning up Wasm Type registry whenever destroying Wasm Modules.\nBut this is happening too much. We should batch them by destroying many\nWasm Modules.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T22:50:46.235362+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f057e7bc12bee1ce5870e2a290f3658bf186d477",
+    "url": "https://github.com/WebKit/WebKit/commit/f057e7bc12bee1ce5870e2a290f3658bf186d477",
+    "message": "Clean up ScopedLambda API for modern C++\nhttps://bugs.webkit.org/show_bug.cgi?id=322406\nrdar://185695582\n\nReviewed by Yusuke Suzuki.\n\nScopedLambda required every caller to name the function signature at the\ncall site by wrapping the lambda in a scopedLambda<Sig>() call. This is\nbecause ScopedLambda ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

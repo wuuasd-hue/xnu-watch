@@ -10473,9 +10473,10 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
   },
   {
     "repo": "WebKit/WebKit",
@@ -10492,5 +10493,20 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "message": "[JSC] Do not clean up Wasm Type registry repeatedly\nhttps://bugs.webkit.org/show_bug.cgi?id=322439\nrdar://185720499\n\nReviewed by Yijia Huang.\n\nWe are cleaning up Wasm Type registry whenever destroying Wasm Modules.\nBut this is happening too much. We should batch them by destroying many\nWasm Modules.",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/heap/Heap.cpp ---\n@@ -609,6 +609,9 @@ void Heap::lastChanceToFinalize()\n     m_arrayBuffers.lastChanceToFinalize();\n     m_objectSpace.lastChanceToFinalize();\n     releaseDelayedReleasedObjects();\n+#if ENABLE(WEBASSEMBLY)\n+    Wasm::TypeInformation::cleanupIfRequested();\n+#endif\n \n     sweepAllLogicallyEmptyWeakBlocks();\n     \n@@ -1311,6 +1314,9 @@ void Heap::sweepSynchronously()\n     }\n     m_objectSpace.sweepBlocks();\n     m_objectSpace.shrink();\n+#if ENABLE(WEBASSEMBLY)\n+    Wasm::TypeInformation::cleanupIfRequested();\n+#endif\n     if (Options::logGC()) [[unlikely]] {\n         MonotonicTime after = MonotonicTime::now();\n         dataLog(\"=> \", capacity() / 1024, \"kb, \", (after - before).milliseconds(), \"ms\");\n@@ -2364,6 +2370,9 @@ void Heap::runCollectionEpilogue()\n         deleteSourceProviderCaches();\n         sweepEagerlyInEpilogue();\n     }\n+#if ENABLE(WEBASSEMBLY)\n+    Wasm::TypeInformation::cleanupIfRequested();\n+#endif\n     \n     if (HasOwnPropertyCache* cache = vm().hasOwnPropertyCache())\n         cache->clear();\n\n--- Source/JavaScriptCore/wasm/WasmTypeDefinition.cpp ---\n@@ -862,6 +862,20 @@ bool TypeInformation::isReferenceValueAssignable(JSValue refValue, bool allowNul\n     return false;\n }\n \n+static std::atomic<bool> s_typeCleanupRequested { false };\n+\n+void TypeInformation::requestCleanup()\n+{\n+    s_typeCleanupRequested.store(true, std::memory_order_release);\n+}\n+\n+void TypeInformation::cleanupIfRequested()\n+{\n+    if (!s_typeCleanupRequested.exchange(false, std::memory_order_acquire))\n+        return;\n+    tryCleanup();\n+}\n+\n void TypeInformation::tryCleanup()\n {\n     auto& info = singleton();\n\n--- Source/JavaScriptCore/wasm/WasmTypeDefinition.h ---\n@@ -1193,12 +1193,15 @@ class TypeInformation {\n     // convention).\n     static RefPtr<const RTT> tryGetRTT(TypeIndex);\n \n-    static void tryCleanup();\n+    static void requestCleanup();\n+    static void cleanupIfRequested();\n \n     // Total canonical entries currently retained. Used by tests.\n     static size_t canonicalTypeCount();\n \n private:\n+    static void tryCleanup();\n+\n     static Ref<const RTT> typeDefinitionForFunction(const Vector<Type, 16>& returnTypes, const Vector<Type, 16>& argumentTypes);\n     static Ref<const RTT> typeDefinitionForStruct(const Vector<FieldType>& fields);\n     static Ref<const RTT> typeDefinitionForArray(FieldType);\n\n--- Source/JavaScriptCore/wasm/js/JSWebAssemblyModule.cpp ---\n@@ -88,7 +88,7 @@ void JSWebAssemblyModule::finishCreation(VM& vm)\n void JSWebAssemblyModule::destroy(JSCell* cell)\n {\n     static_cast<JSWebAssemblyModule*>(cell)->JSWebAssemblyModule::~JSWebAssemblyModule();\n-    Wasm::TypeInformation::tryCleanup();\n+    Wasm::TypeInformation::requestCleanup();\n }\n \n const Wasm::ModuleInformation& JSWebAssemblyModule::moduleInformation() const\n",
+    "url": "https://github.com/WebKit/WebKit/commit/f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
