@@ -53097,5 +53097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T03:28:17.478107+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "url": "https://github.com/WebKit/WebKit/commit/97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "message": "Handle overflows in UnlinkedMetadataTable::finalize().\nhttps://bugs.webkit.org/show_bug.cgi?id=317632\nrdar://172794625\n\nReviewed by Dan Hecht.\n\nIf the number of opcodes (with metadata of substantive size) is large, the 32-bit unsigned\ncomputed buffer offsets in UnlinkedMetadataTable::finalize() can ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T03:28:54.420597+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "url": "https://github.com/WebKit/WebKit/commit/97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "message": "Handle overflows in UnlinkedMetadataTable::finalize().\nhttps://bugs.webkit.org/show_bug.cgi?id=317632\nrdar://172794625\n\nReviewed by Dan Hecht.\n\nIf the number of opcodes (with metadata of substantive size) is large, the 32-bit unsigned\ncomputed buffer offsets in UnlinkedMetadataTable::finalize() can ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T03:29:31.256105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "url": "https://github.com/WebKit/WebKit/commit/bc9f76805019f00c439c5b5cc4fa197b5fc4cc1a",
+    "message": "[cmake] Provide ability to run Safari with webkit built by cmake\nhttps://bugs.webkit.org/show_bug.cgi?id=322249\nrdar://185482522\n\nReviewed by Zak Ridouh.\n\nMake --cmake option given to run-safari works.\nCouple of issues with the cmake webkit build that prevented Safari to start:\n- compatibility versi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
