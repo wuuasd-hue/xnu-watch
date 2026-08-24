@@ -5916,9 +5916,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10356,5 +10357,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "f69625842f3157301031121ad3d8fcf48f52080d",
+    "message": "Build failure with jit disabled\nhttps://bugs.webkit.org/show_bug.cgi?id=322113\n\nReviewed by Yusuke Suzuki.\n\nOnly compile the WasmAddressType B3::type constructor where B3::type is\ndefined.\n\n* Source/JavaScriptCore/wasm/WasmAddressType.cpp:\n* Source/JavaScriptCore/wasm/WasmAddressType.h:\n\nCanonical l",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmAddressType.cpp ---\n@@ -48,7 +48,7 @@ AddressType::AddressType(TypeKind typeKind)\n     }\n }\n \n-#if !PLATFORM(PLAYSTATION)\n+#if !PLATFORM(PLAYSTATION) && ENABLE(JIT)\n AddressType::AddressType(B3::Type type)\n {\n     switch (type.kind()) {\n@@ -88,7 +88,7 @@ Wasm::Type AddressType::asWasmType() const\n     RELEASE_ASSERT_NOT_REACHED(invalidAddressTypeConversion);\n }\n \n-#if !PLATFORM(PLAYSTATION)\n+#if !PLATFORM(PLAYSTATION) && ENABLE(JIT)\n B3::TypeKind AddressType::asB3TypeKind() const\n {\n     switch (m_type) {\n\n--- Source/JavaScriptCore/wasm/WasmAddressType.h ---\n@@ -48,7 +48,7 @@ class AddressType {\n     constexpr AddressType(AddressType::Kind addressType)\n         : m_type(addressType)\n     { }\n-#if !PLATFORM(PLAYSTATION)\n+#if !PLATFORM(PLAYSTATION) && ENABLE(JIT)\n     AddressType(B3::Type);\n #endif\n     explicit constexpr AddressType(bool is64Bit)\n",
+    "url": "https://github.com/WebKit/WebKit/commit/f69625842f3157301031121ad3d8fcf48f52080d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

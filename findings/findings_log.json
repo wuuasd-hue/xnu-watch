@@ -53777,5 +53777,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T15:06:33.590228+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f69625842f3157301031121ad3d8fcf48f52080d",
+    "url": "https://github.com/WebKit/WebKit/commit/f69625842f3157301031121ad3d8fcf48f52080d",
+    "message": "Build failure with jit disabled\nhttps://bugs.webkit.org/show_bug.cgi?id=322113\n\nReviewed by Yusuke Suzuki.\n\nOnly compile the WasmAddressType B3::type constructor where B3::type is\ndefined.\n\n* Source/JavaScriptCore/wasm/WasmAddressType.cpp:\n* Source/JavaScriptCore/wasm/WasmAddressType.h:\n\nCanonical l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T15:07:11.228499+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f69625842f3157301031121ad3d8fcf48f52080d",
+    "url": "https://github.com/WebKit/WebKit/commit/f69625842f3157301031121ad3d8fcf48f52080d",
+    "message": "Build failure with jit disabled\nhttps://bugs.webkit.org/show_bug.cgi?id=322113\n\nReviewed by Yusuke Suzuki.\n\nOnly compile the WasmAddressType B3::type constructor where B3::type is\ndefined.\n\n* Source/JavaScriptCore/wasm/WasmAddressType.cpp:\n* Source/JavaScriptCore/wasm/WasmAddressType.h:\n\nCanonical l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T15:07:48.571313+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3722912ff800feef138f91f0f4fe26f13d68742e",
+    "url": "https://github.com/WebKit/WebKit/commit/3722912ff800feef138f91f0f4fe26f13d68742e",
+    "message": "Web Inspector: Canvas: support recording WebGPU devices\nhttps://bugs.webkit.org/show_bug.cgi?id=201651\n\nReviewed by Mike Wyrzykowski.\n\n* Source/WebCore/Modules/WebGPU/GPUDevice.idl:\n* Source/WebCore/Modules/WebGPU/GPUDevice.h:\n(WebCore::GPUDevice::hasActiveInspectorCanvasCallTracer const): Added.\n(W",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
