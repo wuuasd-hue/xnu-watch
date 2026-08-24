@@ -53297,5 +53297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T06:48:11.846834+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "url": "https://github.com/WebKit/WebKit/commit/0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "message": "[WTF] Use std::expected instead of our own std::experimental::expected implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=322297\nrdar://185536453\n\nReviewed by Ryan Reno, Alex Christensen, Abrar Rahman Protyasha, and Cole Carley.\n\nSwitch to using the normal `std::expected` type instead of our own",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T06:48:48.827068+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "url": "https://github.com/WebKit/WebKit/commit/4a2e724d6789f60954f5b3be90dc907f76625b19",
+    "message": "[JSC] `Array.from(set.keys()/.values())` fast path ignores `Symbol.iterator` overrides\nhttps://bugs.webkit.org/show_bug.cgi?id=320748\n\nReviewed by Yusuke Suzuki.\n\n318251@main wired JSSetIteratorType into @arrayFromFastWithoutMapFn, which runs\nbefore Array.from reads items[@@iterator], but the Set-si",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
