@@ -53957,5 +53957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:53:40.384927+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "url": "https://github.com/WebKit/WebKit/commit/ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "message": "[JSC] Make FixObviousSpills faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322351\nrdar://185622139\n\nReviewed by Sosuke Suzuki.\n\nApply several optimizations.\n\n1. State tends to be empty frequently. So let's skip various analysis\n   when state is empty.\n2. Do quick check before copying Inst.\n3. Do not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:54:17.559224+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "url": "https://github.com/WebKit/WebKit/commit/ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "message": "[JSC] Make FixObviousSpills faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322351\nrdar://185622139\n\nReviewed by Sosuke Suzuki.\n\nApply several optimizations.\n\n1. State tends to be empty frequently. So let's skip various analysis\n   when state is empty.\n2. Do quick check before copying Inst.\n3. Do not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:54:54.575382+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "url": "https://github.com/WebKit/WebKit/commit/96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "message": "[JSC] Make Air Greedy RegAlloc faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322350\nrdar://185620492\n\nReviewed by Sosuke Suzuki.\n\nPerform several optimizations to reduce compile time in Air Greedy RegAlloc.\n\n1. Caching ClobberSite for each point. Some of Air Inst, like Call is\n   clobbering all cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
