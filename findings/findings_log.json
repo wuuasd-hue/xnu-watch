@@ -54017,5 +54017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T18:20:16.419510+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "url": "https://github.com/WebKit/WebKit/commit/ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "message": "[JSC] Make FixObviousSpills faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322351\nrdar://185622139\n\nReviewed by Sosuke Suzuki.\n\nApply several optimizations.\n\n1. State tends to be empty frequently. So let's skip various analysis\n   when state is empty.\n2. Do quick check before copying Inst.\n3. Do not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T18:20:55.756591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f69625842f3157301031121ad3d8fcf48f52080d",
+    "url": "https://github.com/WebKit/WebKit/commit/f69625842f3157301031121ad3d8fcf48f52080d",
+    "message": "Build failure with jit disabled\nhttps://bugs.webkit.org/show_bug.cgi?id=322113\n\nReviewed by Yusuke Suzuki.\n\nOnly compile the WasmAddressType B3::type constructor where B3::type is\ndefined.\n\n* Source/JavaScriptCore/wasm/WasmAddressType.cpp:\n* Source/JavaScriptCore/wasm/WasmAddressType.h:\n\nCanonical l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
