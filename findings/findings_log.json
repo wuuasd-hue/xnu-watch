@@ -53197,5 +53197,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T05:07:57.787075+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "url": "https://github.com/WebKit/WebKit/commit/0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "message": "[WTF] Use std::expected instead of our own std::experimental::expected implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=322297\nrdar://185536453\n\nReviewed by Ryan Reno, Alex Christensen, Abrar Rahman Protyasha, and Cole Carley.\n\nSwitch to using the normal `std::expected` type instead of our own",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T05:08:35.602841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "url": "https://github.com/WebKit/WebKit/commit/0c7e7ad97b9c50e549387914d31ecc2908ae0171",
+    "message": "[WTF] Use std::expected instead of our own std::experimental::expected implementation\nhttps://bugs.webkit.org/show_bug.cgi?id=322297\nrdar://185536453\n\nReviewed by Ryan Reno, Alex Christensen, Abrar Rahman Protyasha, and Cole Carley.\n\nSwitch to using the normal `std::expected` type instead of our own",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T05:09:13.215422+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "url": "https://github.com/WebKit/WebKit/commit/97df94ead028cddcfc21e48ec6f2f72d25ec1662",
+    "message": "Handle overflows in UnlinkedMetadataTable::finalize().\nhttps://bugs.webkit.org/show_bug.cgi?id=317632\nrdar://172794625\n\nReviewed by Dan Hecht.\n\nIf the number of opcodes (with metadata of substantive size) is large, the 32-bit unsigned\ncomputed buffer offsets in UnlinkedMetadataTable::finalize() can ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
