@@ -52997,5 +52997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T00:27:12.002225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "url": "https://github.com/WebKit/WebKit/commit/8283d4f1273add66f659b203baaae8e56c4fc3f2",
+    "message": "[JSC] DFG Uint32Array load should consider about Int32 speculation path\nhttps://bugs.webkit.org/show_bug.cgi?id=319112\nrdar://176792844\n\nReviewed by Mark Lam.\n\nDFG Uint32Array GetByVal may have Int32 result with speculation. But the\ncurrent code is always using boxed-double for boxed result. We shou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T00:27:50.821814+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "url": "https://github.com/WebKit/WebKit/commit/1803d6109d98baae1f4a4b9ad02b83546f25837e",
+    "message": "[JSC][Wasm] Speed up WebAssembly.Table construction\nhttps://bugs.webkit.org/show_bug.cgi?id=288529\n\nReviewed by Yusuke Suzuki.\n\nTable construction filled every live slot through JSWebAssemblyTable::set,\nwhich did a full integrity audit and write barrier per index. For null fill\nvalues the slots alre",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
