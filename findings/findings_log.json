@@ -53897,5 +53897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:01:53.359111+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "url": "https://github.com/WebKit/WebKit/commit/96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "message": "[JSC] Make Air Greedy RegAlloc faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322350\nrdar://185620492\n\nReviewed by Sosuke Suzuki.\n\nPerform several optimizations to reduce compile time in Air Greedy RegAlloc.\n\n1. Caching ClobberSite for each point. Some of Air Inst, like Call is\n   clobbering all cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:02:31.151240+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "url": "https://github.com/WebKit/WebKit/commit/96b1030b8df45a6799b4e4bc1f354287c20e56c8",
+    "message": "[JSC] Make Air Greedy RegAlloc faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322350\nrdar://185620492\n\nReviewed by Sosuke Suzuki.\n\nPerform several optimizations to reduce compile time in Air Greedy RegAlloc.\n\n1. Caching ClobberSite for each point. Some of Air Inst, like Call is\n   clobbering all cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T17:03:08.787639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d867192b7ab40a0c797e68d86a5842884729bea",
+    "url": "https://github.com/WebKit/WebKit/commit/7d867192b7ab40a0c797e68d86a5842884729bea",
+    "message": "[JSC] Fix BackwardsGraph for loops with multiple back-edge sources\nhttps://bugs.webkit.org/show_bug.cgi?id=317603\nrdar://178735697\n\nReviewed by Marcus Plutowski.\n\nThe addRootSuccessor lambda in WTF::BackwardsGraph used a single\nGraphNodeWorklist both to decide synthetic-root membership and to drive\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
