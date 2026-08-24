@@ -53517,5 +53517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T10:59:05.791122+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d40f4efab0e0cee61e29c8540abff5285bf5275d",
+    "url": "https://github.com/WebKit/WebKit/commit/d40f4efab0e0cee61e29c8540abff5285bf5275d",
+    "message": "[WebCore] Use-after-free in ImageLoader::dispatchPendingLoadEvent / dispatchPendingErrorEvent\nrdar://177909775\n\nReviewed by Alan Baradlay.\n\ndispatchPendingLoadEvent() and dispatchPendingErrorEvent() dispatch author script and then\ntouch `this` again via updatedHasPendingEvent(). The only thing keepi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T10:59:42.582584+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bf6512f84f7d9275332b8d119ab2b79a72ee8287",
+    "url": "https://github.com/WebKit/WebKit/commit/bf6512f84f7d9275332b8d119ab2b79a72ee8287",
+    "message": "[JSC][Wasm] Support WebAssembly.Exception options.traceStack\nhttps://bugs.webkit.org/show_bug.cgi?id=319826\n\nReviewed by Keith Miller.\n\nAccept the optional ExceptionOptions argument on WebAssembly.Exception.\nWhen traceStack is true, capture a stack and store it under a private\nname; expose it via a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
