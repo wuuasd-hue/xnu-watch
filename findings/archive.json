@@ -5862,9 +5862,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10336,5 +10337,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "message": "Require GCC 13.1.0 and remove dead checks for older GCC versions\nhttps://bugs.webkit.org/show_bug.cgi?id=317724\n\nReviewed by Yusuke Suzuki and Michael Catanzaro.\n\n312858@main (relanded in 315305@main) uses C++23 std::format in WTF,\nwhich libstdc++ first provides in GCC 13.1. Raise the minimum requir",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/jit/JIT.h ---\n@@ -289,15 +289,7 @@ namespace JSC {\n         template<typename Op> void compileOpStrictEqJump(const JSInstruction*);\n \n         enum class WriteBarrierMode { UnconditionalWriteBarrier, ShouldFilterBase, ShouldFilterValue, ShouldFilterBaseAndValue };\n-#if COMPILER(GCC) && GCC_VERSION < 120300\n-        // Workaround for GCC < 12.3.0 ICE with using-enum in templates: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=103081\n-        static constexpr auto UnconditionalWriteBarrier = WriteBarrierMode::UnconditionalWriteBarrier;\n-        static constexpr auto ShouldFilterBase = WriteBarrierMode::ShouldFilterBase;\n-        static constexpr auto ShouldFilterValue = WriteBarrierMode::ShouldFilterValue;\n-        static constexpr auto ShouldFilterBaseAndValue = WriteBarrierMode::ShouldFilterBaseAndValue;\n-#else\n         using enum WriteBarrierMode;\n-#endif\n         // value register in write barrier is used before any scratch registers\n         // so may safely be the same as either of the scratch registers.\n         void emitWriteBarrier(JSValueRegs owner, WriteBarrierMode);\n\n--- Source/cmake/WebKitCommon.cmake ---\n@@ -132,8 +132,8 @@ if (NOT HAS_RUN_WEBKIT_COMMON)\n     endif ()\n \n     if (${CMAKE_CXX_COMPILER_ID} STREQUAL \"GNU\")\n-        if (${CMAKE_CXX_COMPILER_VERSION} VERSION_LESS \"12.2.0\")\n-            message(FATAL_ERROR \"GCC 12.2 or newer is required to build WebKit. Use a newer GCC version or Clang.\")\n+        if (${CMAKE_CXX_COMPILER_VERSION} VERSION_LESS \"13.1.0\")\n+            message(FATAL_ERROR \"GCC 13.1 or newer is required to build WebKit. Use a newer GCC version or Clang.\")\n         endif ()\n     endif ()\n \n\n--- Source/cmake/WebKitCompilerFlags.cmake ---\n@@ -254,12 +254,6 @@ if (COMPILER_IS_GCC_OR_CLANG)\n         )\n     endif ()\n \n-    # GCC < 12.0 gives false warnings for mismatched-new-delete <https://webkit.org/b/241516>\n-    if ((CMAKE_CXX_COMPILER_ID MATCHES \"GNU\") AND (CMAKE_CXX_COMPILER_VERSION VERSION_LESS \"12.0.0\"))\n-        WEBKIT_PREPEND_GLOBAL_COMPILER_FLAGS(-Wno-mismatched-new-delete)\n-        WEBKIT_PREPEND_GLOBAL_COMPILER_FLAGS(-Wno-uninitialized)\n-    endif ()\n-\n     # GCC gives false warnings for subobject-linkage <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105595>\n     if (CMAKE_CXX_COMPILER_ID MATCHES \"GNU\")\n         WEBKIT_PREPEND_GLOBAL_COMPILER_FLAGS(-Wno-subobject-linkage)\n",
+    "url": "https://github.com/WebKit/WebKit/commit/1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

@@ -53637,5 +53637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T12:19:27.357030+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "url": "https://github.com/WebKit/WebKit/commit/1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "message": "Require GCC 13.1.0 and remove dead checks for older GCC versions\nhttps://bugs.webkit.org/show_bug.cgi?id=317724\n\nReviewed by Yusuke Suzuki and Michael Catanzaro.\n\n312858@main (relanded in 315305@main) uses C++23 std::format in WTF,\nwhich libstdc++ first provides in GCC 13.1. Raise the minimum requir",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T12:20:04.783284+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "url": "https://github.com/WebKit/WebKit/commit/1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "message": "Require GCC 13.1.0 and remove dead checks for older GCC versions\nhttps://bugs.webkit.org/show_bug.cgi?id=317724\n\nReviewed by Yusuke Suzuki and Michael Catanzaro.\n\n312858@main (relanded in 315305@main) uses C++23 std::format in WTF,\nwhich libstdc++ first provides in GCC 13.1. Raise the minimum requir",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T12:20:41.651818+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7be5445e4a22c61e7c197e81bbcb15d965650f7c",
+    "url": "https://github.com/WebKit/WebKit/commit/7be5445e4a22c61e7c197e81bbcb15d965650f7c",
+    "message": "Web Inspector: Canvas: support disabling WebGPU render pipelines\nhttps://bugs.webkit.org/show_bug.cgi?id=320700\n\nReviewed by Mike Wyrzykowski.\n\n* Source/JavaScriptCore/inspector/protocol/Canvas.json:\n* Source/WebCore/inspector/agents/InspectorCanvasAgent.h:\n(WebCore::InspectorCanvasAgent::setShaderP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
