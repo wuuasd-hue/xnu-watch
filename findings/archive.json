@@ -10435,6 +10435,22 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+    ],
+    "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "cb05a6083ae0246da0eeee815a7ba5daf3b20c25",
+    "message": "[JSC] Refresh AI state when folding GetScope to Identity\nhttps://bugs.webkit.org/show_bug.cgi?id=316803\nrdar://178423757\n\nReviewed by Yusuke Suzuki.\n\nA GetScope could be constant folded to Identity. When this happens, the\nabstract interpreter isn't re-executed on the Identity node. If a previous run",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/dfg-getscope-fold-stale-cfa-state.js ---\n@@ -0,0 +1,29 @@\n+function opt(a1, a2, a3, a4, a5) {\n+    try {\n+        class Trans extends Array {\n+        };\n+        function inline() {\n+            try {\n+                a2([\"Āሴ￿\", a5]);\n+            } catch (x) {\n+            };\n+        };\n+        inline();\n+    } catch (x) {\n+    };\n+    function foo(a, b) {\n+        for (var x = 0; x < 10000; x++) {\n+        };\n+        return a == b;\n+    }\n+    foo(-1, a5);\n+    class C {\n+    };\n+}\n+\n+for (let i = 0; i < 10000; i++) {\n+    try {\n+        opt(Function.prototype.apply, Function.prototype.toString, 1.1, '💩', Object.defineProperty);\n+    } catch (e) {\n+    }\n+}\n\n--- Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp ---\n@@ -1719,6 +1719,7 @@ class ConstantFoldingPhase : public Phase {\n                 case NewAsyncFunction: {\n                     node->convertToIdentityOn(node->child1()->child1().node());\n                     node->child1().setUseKind(KnownCellUse);\n+                    m_interpreter.execute(indexInBlock); // Catch the fact that we may overwrite a stale AbstractValue.\n                     eliminated = true;\n                     break;\n                 }\n",
+    "url": "https://github.com/WebKit/WebKit/commit/cb05a6083ae0246da0eeee815a7ba5daf3b20c25",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
