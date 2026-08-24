@@ -54477,5 +54477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T23:11:55.703687+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "url": "https://github.com/WebKit/WebKit/commit/f479ae9f534c9e093b97fad9c186f4c2d8513f45",
+    "message": "[JSC] Do not clean up Wasm Type registry repeatedly\nhttps://bugs.webkit.org/show_bug.cgi?id=322439\nrdar://185720499\n\nReviewed by Yijia Huang.\n\nWe are cleaning up Wasm Type registry whenever destroying Wasm Modules.\nBut this is happening too much. We should batch them by destroying many\nWasm Modules.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T23:12:33.385271+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03a07e420089127130f5e8560d8b1888ccc4d6f4",
+    "url": "https://github.com/WebKit/WebKit/commit/03a07e420089127130f5e8560d8b1888ccc4d6f4",
+    "message": "[JSC] Pin upstream checks that DFG IRO range proofs rely on\nrdar://179027979\nhttps://bugs.webkit.org/show_bug.cgi?id=317611\n\nReviewed by Keith Miller.\n\nDFGIntegerRangeOptimizationPhase (IRO) flips checked arithmetic to\nArith::Unchecked using range proofs derived from other checked ops in\nthe graph, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
