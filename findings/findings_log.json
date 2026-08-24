@@ -53697,5 +53697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T13:27:12.877983+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "url": "https://github.com/WebKit/WebKit/commit/1fec4985d1794c782ff12e2aefc088b76023ba16",
+    "message": "Require GCC 13.1.0 and remove dead checks for older GCC versions\nhttps://bugs.webkit.org/show_bug.cgi?id=317724\n\nReviewed by Yusuke Suzuki and Michael Catanzaro.\n\n312858@main (relanded in 315305@main) uses C++23 std::format in WTF,\nwhich libstdc++ first provides in GCC 13.1. Raise the minimum requir",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T13:27:51.236727+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "deb0d2fa4be6ecd15bf67bf44613db50820999d7",
+    "url": "https://github.com/WebKit/WebKit/commit/deb0d2fa4be6ecd15bf67bf44613db50820999d7",
+    "message": "[JSC] Deply add / sub / mul tightening to JSBigInt\nhttps://bugs.webkit.org/show_bug.cgi?id=320806\nrdar://183823079\n\nReviewed by Yijia Huang.\n\nThis patch tightening JSBigInt add / sub / mul.\n\n1. We add size-fixed streamlined implementations to add and sub as the\n   same to mul.\n2. Removed unnecessary",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
