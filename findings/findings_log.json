@@ -54217,5 +54217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T20:54:28.610928+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "url": "https://github.com/WebKit/WebKit/commit/ecc99e50298faee67ef9230e09e691441e1bd81d",
+    "message": "[JSC] Make FixObviousSpills faster\nhttps://bugs.webkit.org/show_bug.cgi?id=322351\nrdar://185622139\n\nReviewed by Sosuke Suzuki.\n\nApply several optimizations.\n\n1. State tends to be empty frequently. So let's skip various analysis\n   when state is empty.\n2. Do quick check before copying Inst.\n3. Do not",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-24T20:55:06.403085+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "url": "https://github.com/WebKit/WebKit/commit/1d5c10e2f9c8f31378c8b14fb71a48423793ce07",
+    "message": "[JSC] Fix B3 ReduceStrength Select specialization when a Check appears between the Select and triggering Check\nhttps://bugs.webkit.org/show_bug.cgi?id=316347\nrdar://177687354\n\nReviewed by Marcus Plutowski.\n\nIn B3ReduceStrength, specializeSelect() specializes a Select that has a constant\narm and is r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
