@@ -56057,5 +56057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T22:12:31.463562+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b0e50239ab5a1a9bc9ab066de1aa7616a67f630",
+    "url": "https://github.com/WebKit/WebKit/commit/2b0e50239ab5a1a9bc9ab066de1aa7616a67f630",
+    "message": "[JSC] Fold the string-impl hash shift into the megamorphic cache hash add\nhttps://bugs.webkit.org/show_bug.cgi?id=322496\n\nReviewed by Yusuke Suzuki.\n\nThe inline megamorphic property cache lookup and the DFG HasOwnPropertyCache\nlookup both recompute UniquedStringImpl::hash() by loading the flags word",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T22:13:08.375509+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "url": "https://github.com/WebKit/WebKit/commit/f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "message": "[JSC] Optimize MarkedBlock::Handle::stopAllocating\nhttps://bugs.webkit.org/show_bug.cgi?id=322480\nrdar://185772918\n\nReviewed by Dan Hecht.\n\nIn MarkedBlock::Handle::stopAllocating, we need to set a bit for\nNewlyAllocated status in BitSet. This can be accelerated by using\nsetEachNthBit as cell size is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
