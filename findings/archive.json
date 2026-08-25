@@ -10763,6 +10763,22 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+    ],
+    "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "2b0e50239ab5a1a9bc9ab066de1aa7616a67f630",
+    "message": "[JSC] Fold the string-impl hash shift into the megamorphic cache hash add\nhttps://bugs.webkit.org/show_bug.cgi?id=322496\n\nReviewed by Yusuke Suzuki.\n\nThe inline megamorphic property cache lookup and the DFG HasOwnPropertyCache\nlookup both recompute UniquedStringImpl::hash() by loading the flags word",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp ---\n@@ -6105,9 +6105,8 @@ void SpeculativeJIT::compile(Node* node)\n         // we're looking for, or we realize we're comparing against another entity, and go to the\n         // slow path anyways.\n         load32(Address(implGPR, UniquedStringImpl::flagsOffset()), hashGPR);\n-        urshift32(TrustedImm32(StringImpl::s_flagCount), hashGPR);\n         load32(Address(objectGPR, JSCell::structureIDOffset()), structureIDGPR);\n-        add32(structureIDGPR, hashGPR);\n+        addUnsignedRightShift32(structureIDGPR, hashGPR, TrustedImm32(StringImpl::s_flagCount), hashGPR);\n         and32(TrustedImm32(HasOwnPropertyCache::mask), hashGPR);\n         if (hasOneBitSet(sizeof(HasOwnPropertyCache::Entry))) // is a power of 2\n             lshift32(TrustedImm32(getLSBSet(sizeof(HasOwnPropertyCache::Entry))), hashGPR);\n\n--- Source/JavaScriptCore/jit/AssemblyHelpers.cpp ---\n@@ -451,8 +451,7 @@ AssemblyHelpers::JumpList AssemblyHelpers::findMegamorphicCacheEntry(VM& vm, GPR\n         // we're looking for, or we realize we're comparing against another entity, and go to the\n         // slow path anyways.\n         load32(Address(uidGPR, UniquedStringImpl::flagsOffset()), scratch2GPR);\n-        urshift32(TrustedImm32(StringImpl::s_flagCount), scratch2GPR);\n-        add32(scratch2GPR, scratch3GPR);\n+        addUnsignedRightShift32(scratch3GPR, scratch2GPR, TrustedImm32(StringImpl::s_flagCount), scratch3GPR);\n     }\n \n     and32(TrustedImm32(primaryMask), scratch3GPR);\n@@ -579,8 +578,7 @@ std::tuple<AssemblyHelpers::JumpList, AssemblyHelpers::JumpList> AssemblyHelpers\n         // we're looking for, or we realize we're comparing against another entity, and go to the\n         // slow path anyways.\n         load32(Address(uidGPR, UniquedStringImpl::flagsOffset()), scratch2GPR);\n-        urshift32(TrustedImm32(StringImpl::s_flagCount), scratch2GPR);\n-        add32(scratch2GPR, scratch3GPR);\n+        addUnsignedRightShift32(scratch3GPR, scratch2GPR, TrustedImm32(StringImpl::s_flagCount), scratch3GPR);\n     }\n \n     and32(TrustedImm32(MegamorphicCache::storeCachePrimaryMask), scratch3GPR);\n@@ -674,8 +672,7 @@ AssemblyHelpers::JumpList AssemblyHelpers::hasMegamorphicProperty(VM& vm, GPRReg\n         // we're looking for, or we realize we're comparing against another entity, and go to the\n         // slow path anyways.\n         load32(Address(uidGPR, UniquedStringImpl::flagsOffset()), scratch2GPR);\n-        urshift32(TrustedImm32(StringImpl::s_flagCount), scratch2GPR);\n-        add32(scratch2GPR, scratch3GPR);\n+        addUnsignedRightShift32(scratch3GPR, scratch2GPR, TrustedImm32(StringImpl::s_flagCount), scratch3GPR);\n     }\n \n     and32(TrustedImm32(MegamorphicCache::hasCachePrimaryMask), scratch3GPR);\n",
+    "url": "https://github.com/WebKit/WebKit/commit/2b0e50239ab5a1a9bc9ab066de1aa7616a67f630",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
