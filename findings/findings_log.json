@@ -54757,5 +54757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T03:37:05.536948+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "url": "https://github.com/WebKit/WebKit/commit/44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "message": "[YARR] Compile lookbehinds containing lookaheads in JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322390\n\nReviewed by Daniel Liu.\n\nA lookbehind containing a lookahead, fell back to the interpreter.\n\nTo match backward, the JIT compiles a lookbehind from a copy of its\ndisjunction tree with the terms rev",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T03:37:42.752261+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "url": "https://github.com/WebKit/WebKit/commit/44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "message": "[YARR] Compile lookbehinds containing lookaheads in JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322390\n\nReviewed by Daniel Liu.\n\nA lookbehind containing a lookahead, fell back to the interpreter.\n\nTo match backward, the JIT compiles a lookbehind from a copy of its\ndisjunction tree with the terms rev",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T03:38:19.815495+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "url": "https://github.com/WebKit/WebKit/commit/c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "message": "[JSC] Use `objectCloneFast` for object rest destructuring in `@copyDataProperties`\nhttps://bugs.webkit.org/show_bug.cgi?id=322374\n\nReviewed by Yusuke Suzuki.\n\nObject rest destructuring (`const { ...rest } = object`) creates an empty object and\ncalls @copyDataProperties, which replays the source's sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
