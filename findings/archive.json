@@ -10729,8 +10729,24 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "message": "[JSC] Do not attempt to link a CallLinkInfo after handleHostCall\nhttps://bugs.webkit.org/show_bug.cgi?id=317142\nrdar://178282225\n\nReviewed by Yusuke Suzuki.\n\nhandleHostCall performs the host call which may execute JS that\nfires a watchpoint invalidating the passed CallLinkInfo. So,\nit's not safe to ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/operation-polymorphic-call-host-call-ic-reset.js ---\n@@ -0,0 +1,33 @@\n+//@ runDefault(\"--useConcurrentJIT=false\", \"--jitPolicyScale=0.1\")\n+var proto = {};\n+\n+function g1() { return 1; }\n+function g2() { return 2; }\n+function g3() { return 3; }\n+\n+proto.__defineGetter__(\"p\", g1);\n+\n+var o = Object.create(proto);\n+\n+function getP(obj) {\n+    return obj.p;\n+}\n+noInline(getP);\n+\n+for (var i = 0; i < 80; ++i)\n+    getP(o);\n+\n+proto.__defineGetter__(\"p\", g2);\n+getP(o);\n+proto.__defineGetter__(\"p\", g3);\n+getP(o);\n+\n+var evil = new Proxy(function() {}, {\n+    apply: function(target, thisArg, args) {\n+        delete proto.p;\n+        return 0x42;\n+    }\n+});\n+proto.__defineGetter__(\"p\", evil);\n+\n+getP(o);\n\n--- Source/JavaScriptCore/bytecode/RepatchInlines.h ---\n@@ -237,7 +237,8 @@ ALWAYS_INLINE void* virtualForWithFunction(VM& vm, JSCell* owner, CallFrame* cal\n     JSValue calleeAsValue = calleeFrame->guaranteedJSValueCallee();\n     calleeAsFunctionCell = getJSFunction(calleeAsValue);\n     if (!calleeAsFunctionCell) [[unlikely]] {\n-        if (is<InternalFunction>(calleeAsValue)) {\n+        if (auto* internalFunction = dynamicDowncast<InternalFunction>(calleeAsValue)) {\n+            calleeAsFunctionCell = internalFunction;\n             CodePtr<JSEntryPtrTag> codePtr = vm.getCTIInternalFunctionTrampolineFor(kind);\n             ASSERT(!!codePtr);\n             return codePtr.taggedPtr();\n\n--- Source/JavaScriptCore/jit/JITOperations.cpp ---\n@@ -2526,7 +2526,9 @@ JSC_DEFINE_JIT_OPERATION(operationPolymorphicCall, UCPURegister, (CallFrame* cal\n     void* callTarget = virtualForWithFunction(vm, owner, calleeFrame, callLinkInfo, calleeAsFunctionCell);\n     if (scope.exception()) [[unlikely]]\n         OPERATION_RETURN(scope, std::bit_cast<UCPURegister>(vm.getCTIStub(CommonJITThunkID::ThrowExceptionFromCall).template retagged<JSEntryPtrTag>().code().taggedPtr()));\n-    linkPolymorphicCall(vm, owner, calleeFrame, *callLinkInfo, CallVariant(calleeAsFunctionCell));\n+    // A null cell means virtualForWithFunction did a host call that ran JS and may have freed *callLinkInfo; don't link.\n+    if (calleeAsFunctionCell) [[likely]]\n+        linkPolymorphicCall(vm, owner, calleeFrame, *callLinkInfo, CallVariant(calleeAsFunctionCell));\n     // Keep owner alive explicitly. Now this function can be called from tail-call. This means that CallFrame for that owner already goes away, so we should keep it alive if we would like to use it.\n     ensureStillAliveHere(owner);\n     if (scope.exception()) [[unlikely]]\n\n--- Source/JavaScriptCore/llint/LLIntSlowPaths.cpp ---\n@@ -653,7 +653,9 @@ extern \"C\" UGPRPair SYSV_ABI llint_polymorphic_call(CallFrame* calleeFrame, Call\n     void* callTarget = virtualForWithFunction(vm, owner, calleeFrame, callLinkInfo, calleeAsFunctionCell);\n     if (scope.exception()) [[unlikely]]\n         return encodeResult(callTarget, std::bit_cast<void*>(&vm));\n-    linkPolymorphicCall(vm, owner, calleeFrame, *callLinkInfo, CallVariant(calleeAsFunctionCell));\n+    // A null cell means virtualForWithFunction did a host call that ran JS and may have freed *callLinkInfo; don't link.\n+    if (calleeAsFunctionCell) [[likely]]\n+        linkPolymorphicCall(vm, owner, calleeFrame, *callLinkInfo, CallVariant(calleeAsFunctionCell));\n     ensureStillAliveHere(owner);\n     if (scope.exception()) [[unlikely]]\n         return encodeResult(callTarget, std::bit_cast<void*>(&vm));\n",
+    "url": "https://github.com/WebKit/WebKit/commit/7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
