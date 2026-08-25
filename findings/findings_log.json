@@ -55637,5 +55637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T17:51:33.252516+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "url": "https://github.com/WebKit/WebKit/commit/33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "message": "[JavaScriptCore] Absence PropertyCondition does not consult non-reified static property tables\nhttps://bugs.webkit.org/show_bug.cgi?id=314836\nrdar://176792596\n\nReviewed by Yusuke Suzuki.\n\nThis patch modifies the Absence case for PropertyCondition::isStillValidAssumingImpurePropertyWatchpoint\nto cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T17:52:10.932596+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "url": "https://github.com/WebKit/WebKit/commit/33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "message": "[JavaScriptCore] Absence PropertyCondition does not consult non-reified static property tables\nhttps://bugs.webkit.org/show_bug.cgi?id=314836\nrdar://176792596\n\nReviewed by Yusuke Suzuki.\n\nThis patch modifies the Absence case for PropertyCondition::isStillValidAssumingImpurePropertyWatchpoint\nto cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T17:52:48.369648+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de94eda046590cdd5c45a8893f3d3099b95ee360",
+    "url": "https://github.com/WebKit/WebKit/commit/de94eda046590cdd5c45a8893f3d3099b95ee360",
+    "message": "Unreviewed, reverting 319776@main (2faf1df3d1dc), 319750@main (ea3dd8bd9889), and 319733@main (d611fcfa40f1)\nhttps://bugs.webkit.org/show_bug.cgi?id=322501\nrdar://185802044\n\nIntroduced a lot of new false positives in safer C++ results\n\nReverted changes:\n\n    Update safer C++ expectations (2026-08-25",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
