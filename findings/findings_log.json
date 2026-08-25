@@ -56197,5 +56197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T23:44:53.177071+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ca559226b1bdd624bc8c4224662a5794227c048",
+    "url": "https://github.com/WebKit/WebKit/commit/2ca559226b1bdd624bc8c4224662a5794227c048",
+    "message": "Speed up lunisolar calendar month walk in JS Temporal\nhttps://bugs.webkit.org/show_bug.cgi?id=322044\nrdar://185152703\n\nReviewed by Yijia Huang.\n\nOptimize chinese/dangi month code resolution in CalendarICUBridge.cpp by\ncaching results and no longer single stepping forward day by day.\n\n               ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T23:45:30.136158+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "url": "https://github.com/WebKit/WebKit/commit/84f83abd45c912c01cee7bda9deffc2bc74dd85c",
+    "message": "[JSC] Remove various scratch registers as branchIfNumber etc. no longer need to take a scratch for 64bit\nhttps://bugs.webkit.org/show_bug.cgi?id=320861\nrdar://183890729\n\nReviewed by Sosuke Suzuki.\n\nWe had unnecessary scratch registers on 64bit because 32bit\nbranchIfNotNumber etc. requires a scratch ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
