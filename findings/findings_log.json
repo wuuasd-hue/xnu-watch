@@ -54597,5 +54597,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T01:58:06.659150+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "url": "https://github.com/WebKit/WebKit/commit/c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "message": "[JSC] Use `objectCloneFast` for object rest destructuring in `@copyDataProperties`\nhttps://bugs.webkit.org/show_bug.cgi?id=322374\n\nReviewed by Yusuke Suzuki.\n\nObject rest destructuring (`const { ...rest } = object`) creates an empty object and\ncalls @copyDataProperties, which replays the source's sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T01:58:43.830139+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "url": "https://github.com/WebKit/WebKit/commit/d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "message": "[YARR] Compile lookbehinds containing quantified groups in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322244\n\nReviewed by Daniel Liu.\n\nA group quantified with anything other than {1} or ? inside a lookbehind, e.g. (?<=(?:ab)+),\nsent the whole pattern to the interpreter.\n\nThe counted and ParenCo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T01:59:20.812468+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f16770926abc5eef3280e3715c7a7831ecf3fba7",
+    "url": "https://github.com/WebKit/WebKit/commit/f16770926abc5eef3280e3715c7a7831ecf3fba7",
+    "message": "Add missing inherited build settings that CommonBase.xcconfig sets\n<https://bugs.webkit.org/show_bug.cgi?id=322273>\n<rdar://185442781>\n\nUnreviewed testing fix.\n\nSeveral xcconfig files assign `GCC_PREPROCESSOR_DEFINITIONS` or\n`SWIFT_ACTIVE_COMPILATION_CONDITIONS` without `$(inherited)`.  Both\nsetting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T01:59:57.776130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "url": "https://github.com/WebKit/WebKit/commit/c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "message": "[JSC] Use `objectCloneFast` for object rest destructuring in `@copyDataProperties`\nhttps://bugs.webkit.org/show_bug.cgi?id=322374\n\nReviewed by Yusuke Suzuki.\n\nObject rest destructuring (`const { ...rest } = object`) creates an empty object and\ncalls @copyDataProperties, which replays the source's sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T02:00:34.874292+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "url": "https://github.com/WebKit/WebKit/commit/d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "message": "[YARR] Compile lookbehinds containing quantified groups in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322244\n\nReviewed by Daniel Liu.\n\nA group quantified with anything other than {1} or ? inside a lookbehind, e.g. (?<=(?:ab)+),\nsent the whole pattern to the interpreter.\n\nThe counted and ParenCo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
