@@ -55217,5 +55217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T10:22:41.512145+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "url": "https://github.com/WebKit/WebKit/commit/44ebe94906dafa251c4d8a96f698e327b17b1614",
+    "message": "[YARR] Compile lookbehinds containing lookaheads in JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322390\n\nReviewed by Daniel Liu.\n\nA lookbehind containing a lookahead, fell back to the interpreter.\n\nTo match backward, the JIT compiles a lookbehind from a copy of its\ndisjunction tree with the terms rev",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T10:23:19.240357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eedeabcb721282641ccc06a25be24cca67ad8df",
+    "url": "https://github.com/WebKit/WebKit/commit/2eedeabcb721282641ccc06a25be24cca67ad8df",
+    "message": "[JSC] Stop broadcasting to every parallel marker when a bonus visitor task ends\nhttps://bugs.webkit.org/show_bug.cgi?id=322451\nrdar://185735562\n\nReviewed by Yijia Huang.\n\nHeap::runTaskInParallel() publishes a bonus task, runs it on the collector\nvisitor (collector thread), then clears it. And both s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
