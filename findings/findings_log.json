@@ -55177,5 +55177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T09:57:30.816291+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1330d5747e024bad42fc5d0d95234bd5db399781",
+    "url": "https://github.com/WebKit/WebKit/commit/1330d5747e024bad42fc5d0d95234bd5db399781",
+    "message": "[JSC] Fold unsigned compares against zero into cbz/cbnz and test\nhttps://bugs.webkit.org/show_bug.cgi?id=322370\n\nReviewed by Yusuke Suzuki.\n\nMacroAssemblerARM64::branch32/branch64 route a zero immediate through\ncommuteCompareToZeroIntoTest(), which rewrites a relational condition into\nthe equivalent",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T09:58:08.234348+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "message": "DOMException should have a stack property, like other errors\nhttps://bugs.webkit.org/show_bug.cgi?id=322388\n\nReviewed by Yusuke Suzuki.\n\nThe WebIDL web-platform-test \"If the implementation has a stack property on\nnormal errors, it also does on DOMExceptions\" was still failing after\n318930@main. That",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
