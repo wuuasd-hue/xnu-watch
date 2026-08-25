@@ -55297,5 +55297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T11:16:11.988065+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "message": "DOMException should have a stack property, like other errors\nhttps://bugs.webkit.org/show_bug.cgi?id=322388\n\nReviewed by Yusuke Suzuki.\n\nThe WebIDL web-platform-test \"If the implementation has a stack property on\nnormal errors, it also does on DOMExceptions\" was still failing after\n318930@main. That",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T11:16:48.788793+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "url": "https://github.com/WebKit/WebKit/commit/f40dcdd0730da87608e5eec3469d8abbb513b681",
+    "message": "[JSC] LLInt prologue should zero the new frame 16 bytes per iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=320799\n\nReviewed by Yusuke Suzuki.\n\nThe LLInt prologue's frame-clearing loop from 199147@main zeroes the frame 8 bytes\nper top-tested iteration, and on ARM64 the immediate store re-materiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
