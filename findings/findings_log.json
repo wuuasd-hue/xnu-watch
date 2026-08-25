@@ -55117,5 +55117,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T09:04:49.248142+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "message": "DOMException should have a stack property, like other errors\nhttps://bugs.webkit.org/show_bug.cgi?id=322388\n\nReviewed by Yusuke Suzuki.\n\nThe WebIDL web-platform-test \"If the implementation has a stack property on\nnormal errors, it also does on DOMExceptions\" was still failing after\n318930@main. That",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T09:05:26.097036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "url": "https://github.com/WebKit/WebKit/commit/045a0c6379ef4d428a45302fe0c95160d4cea9e8",
+    "message": "DOMException should have a stack property, like other errors\nhttps://bugs.webkit.org/show_bug.cgi?id=322388\n\nReviewed by Yusuke Suzuki.\n\nThe WebIDL web-platform-test \"If the implementation has a stack property on\nnormal errors, it also does on DOMExceptions\" was still failing after\n318930@main. That",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T09:06:02.826245+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "752ab9007271ac2a897a91b2ffb65d1e5f709c9c",
+    "url": "https://github.com/WebKit/WebKit/commit/752ab9007271ac2a897a91b2ffb65d1e5f709c9c",
+    "message": "[JSC] Deeply nested destructuring pattern crashes bytecode generation\nhttps://bugs.webkit.org/show_bug.cgi?id=322333\n\nReviewed by Yusuke Suzuki.\n\nThe parser guards its own recursion and accepts destructuring patterns\nnested ~20k levels deep, but ArrayPatternNode::bindValue recurses into\nnested patte",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
