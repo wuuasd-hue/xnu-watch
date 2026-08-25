@@ -55737,5 +55737,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T19:06:01.548629+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b5928f9be1258f7494277df09219007020329a00",
+    "url": "https://github.com/WebKit/WebKit/commit/b5928f9be1258f7494277df09219007020329a00",
+    "message": "[JSC][Wasm] Use loadPair for targetInstance and entrypoint in wasmToWasm stubs\nhttps://bugs.webkit.org/show_bug.cgi?id=322493\n\nReviewed by Keith Miller.\n\nThose two fields are adjacent on WasmCallableFunction. The trampoline\nnow loads them with loadPairPtr.\n\n* Source/JavaScriptCore/wasm/WasmBinding.c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T19:06:43.901773+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b5928f9be1258f7494277df09219007020329a00",
+    "url": "https://github.com/WebKit/WebKit/commit/b5928f9be1258f7494277df09219007020329a00",
+    "message": "[JSC][Wasm] Use loadPair for targetInstance and entrypoint in wasmToWasm stubs\nhttps://bugs.webkit.org/show_bug.cgi?id=322493\n\nReviewed by Keith Miller.\n\nThose two fields are adjacent on WasmCallableFunction. The trampoline\nnow loads them with loadPairPtr.\n\n* Source/JavaScriptCore/wasm/WasmBinding.c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T19:07:20.880521+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "url": "https://github.com/WebKit/WebKit/commit/33876268a1c683eff9a7b1a74e2a1fe6177ed664",
+    "message": "[JavaScriptCore] Absence PropertyCondition does not consult non-reified static property tables\nhttps://bugs.webkit.org/show_bug.cgi?id=314836\nrdar://176792596\n\nReviewed by Yusuke Suzuki.\n\nThis patch modifies the Absence case for PropertyCondition::isStillValidAssumingImpurePropertyWatchpoint\nto cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

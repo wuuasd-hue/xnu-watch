@@ -10711,8 +10711,24 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "b5928f9be1258f7494277df09219007020329a00",
+    "message": "[JSC][Wasm] Use loadPair for targetInstance and entrypoint in wasmToWasm stubs\nhttps://bugs.webkit.org/show_bug.cgi?id=322493\n\nReviewed by Keith Miller.\n\nThose two fields are adjacent on WasmCallableFunction. The trampoline\nnow loads them with loadPairPtr.\n\n* Source/JavaScriptCore/wasm/WasmBinding.c",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/wasm/WasmBinding.cpp ---\n@@ -49,21 +49,15 @@ Expected<MacroAssemblerCodeRef<WasmEntryPtrTag>, BindingFailure> wasmToWasm(cons\n     GPRReg scratch = wasmCallingConvention().prologueScratchGPRs[0];\n     ASSERT(scratch != GPRReg::InvalidGPRReg);\n     ASSERT(noOverlap(scratch, GPRInfo::wasmContextInstancePointer));\n+    static_assert(WasmCallableFunction::offsetOfEntrypointLoadLocation() == WasmCallableFunction::offsetOfTargetInstance() + sizeof(void*));\n \n     JIT_COMMENT(jit, \"Store Callee's wasm callee for import function \", importIndex);\n     jit.loadPtr(JIT::Address(GPRInfo::wasmContextInstancePointer, JSWebAssemblyInstance::offsetOfBoxedCallee(info, importIndex)), scratch);\n     // We are halfway between being the caller and the callee: we have already made the call, but not yet completed the prologue.\n     // On ARM64 this doesn't really matter, but on intel we need to worry about the pushed pc.\n     jit.storeWasmCalleeToCalleeCallFrame(scratch, safeCast<int>(sizeof(CallerFrameAndPC)) - safeCast<int>(prologueStackPointerDelta()));\n \n-    // FIXME: This could be a load pair.\n-    // B3's call codegen ensures that the JSCell is a WebAssemblyFunction.\n-    // While we're accessing that cacheline, also get the wasm entrypoint so we can tail call to it below.\n-\n-    jit.loadPtr(JIT::Address(GPRInfo::wasmContextInstancePointer, JSWebAssemblyInstance::offsetOfEntrypointLoadLocation(info, importIndex)), scratch);\n-    // Get the callee's JSWebAssemblyInstance and set it as WasmContext's instance. The caller will take care of restoring its own JSWebAssemblyInstance.\n-    // This switches the current instance.\n-    jit.loadPtr(JIT::Address(GPRInfo::wasmContextInstancePointer, JSWebAssemblyInstance::offsetOfTargetInstance(info, importIndex)), GPRInfo::wasmContextInstancePointer); // JSWebAssemblyInstance*.\n+    jit.loadPairPtr(GPRInfo::wasmContextInstancePointer, CCallHelpers::TrustedImm32(JSWebAssemblyInstance::offsetOfTargetInstance(info, importIndex)), GPRInfo::wasmContextInstancePointer, scratch);\n \n     // FIXME the following code assumes that all JSWebAssemblyInstance have the same pinned registers. https://bugs.webkit.org/show_bug.cgi?id=162952\n     // Set up the callee's baseMemoryPointer register as well as the memory size registers.\n",
+    "url": "https://github.com/WebKit/WebKit/commit/b5928f9be1258f7494277df09219007020329a00",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
