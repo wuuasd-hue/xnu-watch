@@ -55337,5 +55337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T11:50:12.360829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d6747ef60d4327f25547d55277cb7735a623854",
+    "url": "https://github.com/WebKit/WebKit/commit/5d6747ef60d4327f25547d55277cb7735a623854",
+    "message": "[JSC] Object-literal shorthand in an arrow function should not force the enclosing function to capture arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=320789\n\nReviewed by Yusuke Suzuki.\n\nSince 172894@main, parseProperty calls setInnerArrowFunctionUsesEval() for every\nshorthand property inside an a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T11:50:50.379464+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2a8926009f4582ee79a99ddc2ab83a21aa29476c",
+    "url": "https://github.com/WebKit/WebKit/commit/2a8926009f4582ee79a99ddc2ab83a21aa29476c",
+    "message": "[JSC] Remove USE_BUILTIN_FRAME_ADDRESS, as it should be always enabled on JIT platforms\nhttps://bugs.webkit.org/show_bug.cgi?id=320849\nrdar://183881009\n\nReviewed by Keith Miller.\n\nRemove USE(BUILTIN_FRAME_ADDRESS) as all JIT platfroms should implement it now.\n\n* Source/JavaScriptCore/ftl/FTLLowerDFG",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
