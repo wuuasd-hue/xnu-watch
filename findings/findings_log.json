@@ -54957,5 +54957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T06:21:49.029220+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "url": "https://github.com/WebKit/WebKit/commit/c9740e5b2bb94d45875c64d3ee4da528f534aeea",
+    "message": "[JSC] Use `objectCloneFast` for object rest destructuring in `@copyDataProperties`\nhttps://bugs.webkit.org/show_bug.cgi?id=322374\n\nReviewed by Yusuke Suzuki.\n\nObject rest destructuring (`const { ...rest } = object`) creates an empty object and\ncalls @copyDataProperties, which replays the source's sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T06:22:26.451069+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "url": "https://github.com/WebKit/WebKit/commit/d21310b806f3d23c9a6c0ea4478221c5eb6eafd7",
+    "message": "[YARR] Compile lookbehinds containing quantified groups in the JIT\nhttps://bugs.webkit.org/show_bug.cgi?id=322244\n\nReviewed by Daniel Liu.\n\nA group quantified with anything other than {1} or ? inside a lookbehind, e.g. (?<=(?:ab)+),\nsent the whole pattern to the interpreter.\n\nThe counted and ParenCo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
