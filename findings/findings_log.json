@@ -54697,5 +54697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T02:52:59.823445+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea3dd8bd9889653af60e23e0559de3fadb6f79a0",
+    "url": "https://github.com/WebKit/WebKit/commit/ea3dd8bd9889653af60e23e0559de3fadb6f79a0",
+    "message": "Update macOS safer C++ expectations (2026-08-24)\nhttps://bugs.webkit.org/show_bug.cgi?id=322462\n\nUnreviewed. Update macOS safer C++ expectations after clang/swift toolchain update.\n\n* Source/JavaScriptCore/SaferCPPExpectations/ForwardDeclCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T02:53:44.469017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f16770926abc5eef3280e3715c7a7831ecf3fba7",
+    "url": "https://github.com/WebKit/WebKit/commit/f16770926abc5eef3280e3715c7a7831ecf3fba7",
+    "message": "Add missing inherited build settings that CommonBase.xcconfig sets\n<https://bugs.webkit.org/show_bug.cgi?id=322273>\n<rdar://185442781>\n\nUnreviewed testing fix.\n\nSeveral xcconfig files assign `GCC_PREPROCESSOR_DEFINITIONS` or\n`SWIFT_ACTIVE_COMPILATION_CONDITIONS` without `$(inherited)`.  Both\nsetting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T02:54:26.692968+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea3dd8bd9889653af60e23e0559de3fadb6f79a0",
+    "url": "https://github.com/WebKit/WebKit/commit/ea3dd8bd9889653af60e23e0559de3fadb6f79a0",
+    "message": "Update macOS safer C++ expectations (2026-08-24)\nhttps://bugs.webkit.org/show_bug.cgi?id=322462\n\nUnreviewed. Update macOS safer C++ expectations after clang/swift toolchain update.\n\n* Source/JavaScriptCore/SaferCPPExpectations/ForwardDeclCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
