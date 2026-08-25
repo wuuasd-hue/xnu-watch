@@ -10747,8 +10747,24 @@
     "focus_used": [
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
-      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)",
+      "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
-    "times_reexamined": 2
+    "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "message": "[JSC] Optimize MarkedBlock::Handle::stopAllocating\nhttps://bugs.webkit.org/show_bug.cgi?id=322480\nrdar://185772918\n\nReviewed by Dan Hecht.\n\nIn MarkedBlock::Handle::stopAllocating, we need to set a bit for\nNewlyAllocated status in BitSet. This can be accelerated by using\nsetEachNthBit as cell size is",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/heap/MarkedBlock.cpp ---\n@@ -160,12 +160,7 @@ void MarkedBlock::Handle::stopAllocating(const FreeList& freeList, StopAllocatin\n     \n     blockHeader().m_newlyAllocated.clearAll();\n     blockHeader().m_newlyAllocatedVersion = heap()->objectSpace().newlyAllocatedVersion();\n-\n-    forEachCell(\n-        [&] (size_t, HeapCell* cell, HeapCell::Kind) -> IterationStatus {\n-            block().setNewlyAllocated(cell);\n-            return IterationStatus::Continue;\n-        });\n+    blockHeader().m_newlyAllocated.setEachNthBit(m_atomsPerCell, m_startAtom, endAtom);\n \n     freeList.forEach(\n         [&] (HeapCell* cell) {\n\n--- Source/WTF/wtf/BitSet.h ---\n@@ -453,18 +453,26 @@ inline void BitSet<bitSetSize, WordType>::setEachNthBit(size_t n, size_t start,\n     size_t endWordIndex = end / wordSize;\n     size_t index = start - wordIndex * wordSize;\n     while (wordIndex < endWordIndex) {\n-        while (index < wordSize) {\n-            bits[wordIndex] |= (one << index);\n-            index += n;\n+        if (index < wordSize) {\n+            WordType word = bits[wordIndex];\n+            do {\n+                word |= (one << index);\n+                index += n;\n+            } while (index < wordSize);\n+            bits[wordIndex] = word;\n         }\n         index -= wordSize;\n         wordIndex++;\n     }\n \n     size_t endIndex = end - endWordIndex * wordSize;\n-    while (index < endIndex) {\n-        bits[wordIndex] |= (one << index);\n-        index += n;\n+    if (index < endIndex) {\n+        WordType word = bits[wordIndex];\n+        do {\n+            word |= (one << index);\n+            index += n;\n+        } while (index < endIndex);\n+        bits[wordIndex] = word;\n     }\n \n     cleanseLastWord();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

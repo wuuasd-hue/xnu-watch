@@ -55937,5 +55937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T21:15:00.679934+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "url": "https://github.com/WebKit/WebKit/commit/f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "message": "[JSC] Optimize MarkedBlock::Handle::stopAllocating\nhttps://bugs.webkit.org/show_bug.cgi?id=322480\nrdar://185772918\n\nReviewed by Dan Hecht.\n\nIn MarkedBlock::Handle::stopAllocating, we need to set a bit for\nNewlyAllocated status in BitSet. This can be accelerated by using\nsetEachNthBit as cell size is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T21:15:37.666562+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "url": "https://github.com/WebKit/WebKit/commit/f198e8af3b2af94d6582b4c64ff061f4c433dcb7",
+    "message": "[JSC] Optimize MarkedBlock::Handle::stopAllocating\nhttps://bugs.webkit.org/show_bug.cgi?id=322480\nrdar://185772918\n\nReviewed by Dan Hecht.\n\nIn MarkedBlock::Handle::stopAllocating, we need to set a bit for\nNewlyAllocated status in BitSet. This can be accelerated by using\nsetEachNthBit as cell size is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T21:16:16.374103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "url": "https://github.com/WebKit/WebKit/commit/7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "message": "[JSC] Do not attempt to link a CallLinkInfo after handleHostCall\nhttps://bugs.webkit.org/show_bug.cgi?id=317142\nrdar://178282225\n\nReviewed by Yusuke Suzuki.\n\nhandleHostCall performs the host call which may execute JS that\nfires a watchpoint invalidating the passed CallLinkInfo. So,\nit's not safe to ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
