@@ -10614,5 +10614,35 @@
       "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
     "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "752ab9007271ac2a897a91b2ffb65d1e5f709c9c",
+    "message": "[JSC] Deeply nested destructuring pattern crashes bytecode generation\nhttps://bugs.webkit.org/show_bug.cgi?id=322333\n\nReviewed by Yusuke Suzuki.\n\nThe parser guards its own recursion and accepts destructuring patterns\nnested ~20k levels deep, but ArrayPatternNode::bindValue recurses into\nnested patte",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/destructuring-pattern-deep-recursion.js ---\n@@ -0,0 +1,27 @@\n+function shouldThrowRangeError(script) {\n+    let error;\n+    try {\n+        (0, eval)(script);\n+    } catch (e) {\n+        error = e;\n+    }\n+    if (!(error instanceof RangeError))\n+        throw new Error(\"Expected RangeError, got \" + error);\n+}\n+\n+const depth = 12000;\n+const open = \"[\".repeat(depth);\n+const close = \"]\".repeat(depth);\n+\n+shouldThrowRangeError(\"let \" + open + \"z\" + close + \" = [];\");\n+shouldThrowRangeError(\"var \" + open + \"z\" + close + \" = [];\");\n+shouldThrowRangeError(\"(function (\" + open + \"z\" + close + \") {})([]);\");\n+shouldThrowRangeError(\"try { throw []; } catch (\" + open + \"z\" + close + \") {}\");\n+shouldThrowRangeError(\"let \" + \"{a:\".repeat(depth) + \"z\" + \"}\".repeat(depth) + \" = {};\");\n+\n+let [[[a]]] = [[[42]]];\n+if (a !== 42)\n+    throw new Error(\"shallow array destructuring broken\");\n+let { b: { c } } = { b: { c: 7 } };\n+if (c !== 7)\n+    throw new Error(\"shallow object destructuring broken\");\n\n--- Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp ---\n@@ -5811,6 +5811,11 @@ static void assignDefaultValueIfUndefined(BytecodeGenerator& generator, Register\n \n void ArrayPatternNode::bindValue(BytecodeGenerator& generator, RegisterID* rhs) const\n {\n+    if (!generator.vm().isSafeToRecurse()) [[unlikely]] {\n+        generator.emitThrowExpressionTooDeepException();\n+        return;\n+    }\n+\n     RefPtr<RegisterID> iterable = rhs;\n     RefPtr<RegisterID> iterator = generator.newTemporary();\n     RefPtr<RegisterID> nextOrIndex = generator.newTemporary();\n@@ -6000,6 +6005,11 @@ void ObjectPatternNode::toString(StringBuilder& builder) const\n     \n void ObjectPatternNode::bindValue(BytecodeGenerator& generator, RegisterID* rhs) const\n {\n+    if (!generator.vm().isSafeToRecurse()) [[unlikely]] {\n+        generator.emitThrowExpressionTooDeepException();\n+        return;\n+    }\n+\n     const Identifier* firstPropertyName = nullptr;\n     if (!m_targetPatterns.isEmpty()) {\n         const auto& firstTarget = m_targetPatterns[0];\n",
+    "url": "https://github.com/WebKit/WebKit/commit/752ab9007271ac2a897a91b2ffb65d1e5f709c9c",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "1330d5747e024bad42fc5d0d95234bd5db399781",
+    "message": "[JSC] Fold unsigned compares against zero into cbz/cbnz and test\nhttps://bugs.webkit.org/show_bug.cgi?id=322370\n\nReviewed by Yusuke Suzuki.\n\nMacroAssemblerARM64::branch32/branch64 route a zero immediate through\ncommuteCompareToZeroIntoTest(), which rewrites a relational condition into\nthe equivalent",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/assembler/MacroAssemblerARM64.h ---\n@@ -7310,6 +7310,12 @@ class MacroAssemblerARM64 : public AbstractMacroAssembler<Assembler> {\n         case GreaterThanOrEqual:\n             return PositiveOrZero;\n             break;\n+        case Above:\n+            // Unsigned x > 0 is exactly x != 0.\n+            return NonZero;\n+        case BelowOrEqual:\n+            // Unsigned x <= 0 is exactly x == 0.\n+            return Zero;\n         default:\n             return std::nullopt;\n         }\n\n--- Source/JavaScriptCore/assembler/MacroAssemblerX86_64.h ---\n@@ -3719,6 +3719,12 @@ class MacroAssemblerX86_64 : public AbstractMacroAssembler<Assembler> {\n         case GreaterThanOrEqual:\n             return PositiveOrZero;\n             break;\n+        case Above:\n+            // Unsigned x > 0 is exactly x != 0.\n+            return NonZero;\n+        case BelowOrEqual:\n+            // Unsigned x <= 0 is exactly x == 0.\n+            return Zero;\n         default:\n             return std::nullopt;\n         }\n",
+    "url": "https://github.com/WebKit/WebKit/commit/1330d5747e024bad42fc5d0d95234bd5db399781",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
