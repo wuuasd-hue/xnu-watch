@@ -55897,5 +55897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T20:51:53.757171+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "url": "https://github.com/WebKit/WebKit/commit/7920db18a51b134b3e7aef9d58cc32626bc0ffd6",
+    "message": "[JSC] Do not attempt to link a CallLinkInfo after handleHostCall\nhttps://bugs.webkit.org/show_bug.cgi?id=317142\nrdar://178282225\n\nReviewed by Yusuke Suzuki.\n\nhandleHostCall performs the host call which may execute JS that\nfires a watchpoint invalidating the passed CallLinkInfo. So,\nit's not safe to ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-25T20:52:31.259373+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb95a2f78031283cada762bcad6e521b98536380",
+    "url": "https://github.com/WebKit/WebKit/commit/bb95a2f78031283cada762bcad6e521b98536380",
+    "message": "Introduce `AsyncImageDecoder`\nhttps://bugs.webkit.org/show_bug.cgi?id=315970\nrdar://178390303\n\nReviewed by Simon Fraser.\n\nBitmapImage manages the async image decoding separate from the ImageDecoder in\na class named `ImageFrameWorkQueue`. The `WebCodecsImageDecoder` needs to have\nthe async image deco",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
