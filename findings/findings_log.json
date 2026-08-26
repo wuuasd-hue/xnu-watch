@@ -56697,5 +56697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T10:02:42.887618+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "24f0a336557e9618836f7025396888bc42f25ff1",
+    "url": "https://github.com/WebKit/WebKit/commit/24f0a336557e9618836f7025396888bc42f25ff1",
+    "message": "[JSC] Add JSString::isDefinitelyAtom\nhttps://bugs.webkit.org/show_bug.cgi?id=322536\nrdar://185830225\n\nReviewed by Keith Miller.\n\nThis patch uses JSString's perCellBit for `isDefinitelyAtom` flag. This\nindicates that this JSString is *definitely* having AtomStringImpl\nwithout querying to the actual A",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T10:03:19.714276+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b91045c99b1bf34920bb033d7af8d4b2a1a82a20",
+    "url": "https://github.com/WebKit/WebKit/commit/b91045c99b1bf34920bb033d7af8d4b2a1a82a20",
+    "message": "[JSC] Do not truncate table64 maximum size to uint32_t\nhttps://bugs.webkit.org/show_bug.cgi?id=321000\nrdar://184038951\n\nReviewed by Keith Miller.\n\nWe are silently truncating the maximum value to uint32_t. This patch\nfixes it.\n\nTest: JSTests/wasm/stress/table64-maximum.js\n\n* JSTests/wasm/js-api/table",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
