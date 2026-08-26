@@ -56417,5 +56417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T05:01:36.100335+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91d96b29d6b286a0355782507d61298d39146083",
+    "url": "https://github.com/WebKit/WebKit/commit/91d96b29d6b286a0355782507d61298d39146083",
+    "message": "[JSC] `AbstractInterpreter::forAllValues` should handle tuple nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=320948\n\nReviewed by Yusuke Suzuki.\n\n315180@main inlines StringIteratorPrototype.next into DFG, which places the\nStringIteratorNextWithUndefined tuple node into an ordinary straight-line block.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T05:02:13.173008+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "url": "https://github.com/WebKit/WebKit/commit/37f4628ab5fec6362ec0b39da1179445f7616dea",
+    "message": "[YARR] Let `\\A` and `\\z` use the anchoring optimizations of non-multiline `^` and `$`\nhttps://bugs.webkit.org/show_bug.cgi?id=320873\n\nReviewed by Yusuke Suzuki.\n\n\\A and \\z were compiled into their own assertion terms without participating in the\nBOL/EOL anchoring machinery, so a failing /\\Afoo/u or ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
