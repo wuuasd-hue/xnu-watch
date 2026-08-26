@@ -56997,5 +56997,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T15:57:17.433011+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "url": "https://github.com/WebKit/WebKit/commit/44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "message": "REGRESSION(319727@main): Broke the build with clang 20 due to a self-referential ScopedLambda constraint\nhttps://bugs.webkit.org/show_bug.cgi?id=322567\n\nReviewed by Carlos Garcia Campos.\n\n319727@main gave ScopedLambda a converting constructor from any invocable,\nconstrained on Invocable<Functor, Sig",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T15:57:54.565577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "url": "https://github.com/WebKit/WebKit/commit/44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "message": "REGRESSION(319727@main): Broke the build with clang 20 due to a self-referential ScopedLambda constraint\nhttps://bugs.webkit.org/show_bug.cgi?id=322567\n\nReviewed by Carlos Garcia Campos.\n\n319727@main gave ScopedLambda a converting constructor from any invocable,\nconstrained on Invocable<Functor, Sig",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T15:58:31.710313+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fa946d9a72f9ebd5703e0a301849482f6c8463b",
+    "url": "https://github.com/WebKit/WebKit/commit/9fa946d9a72f9ebd5703e0a301849482f6c8463b",
+    "message": "Clean up jsObjectCall style\nhttps://bugs.webkit.org/show_bug.cgi?id=322290\n\nReviewed by Claudio Saavedra.\n\nThis was bugging me while I was looking at it, little drive-by cleanup.\n\nCanonical link: https://commits.webkit.org/319867@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

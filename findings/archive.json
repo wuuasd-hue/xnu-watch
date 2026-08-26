@@ -10891,6 +10891,22 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
+    ],
+    "times_reexamined": 2
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "message": "REGRESSION(319727@main): Broke the build with clang 20 due to a self-referential ScopedLambda constraint\nhttps://bugs.webkit.org/show_bug.cgi?id=322567\n\nReviewed by Carlos Garcia Campos.\n\n319727@main gave ScopedLambda a converting constructor from any invocable,\nconstrained on Invocable<Functor, Sig",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/air/AirCustom.h ---\n@@ -59,7 +59,7 @@ namespace JSC { namespace B3 { namespace Air {\n // Definition of Patch instruction. Patch is used to delegate the behavior of the instruction to the\n // Special object, which will be the first argument to the instruction.\n struct PatchCustom {\n-    static void forEachArg(Inst& inst, ScopedLambda<Inst::EachArgCallback> lambda)\n+    static void forEachArg(Inst& inst, const ScopedLambda<Inst::EachArgCallback>& lambda)\n     {\n         // This is basically bogus, but it works for analyses that model Special as an\n         // immediate.\n\n--- Source/JavaScriptCore/heap/MarkingConstraintSolver.cpp ---\n@@ -53,7 +53,7 @@ bool MarkingConstraintSolver::didVisitSomething() const\n     return false;\n }\n \n-void MarkingConstraintSolver::execute(SchedulerPreference preference, ScopedLambda<std::optional<unsigned>()> pickNext)\n+void MarkingConstraintSolver::execute(SchedulerPreference preference, const ScopedLambda<std::optional<unsigned>()>& pickNext)\n {\n     m_pickNextIsStillActive = true;\n     RELEASE_ASSERT(!m_numThreadsThatMayProduceWork);\n@@ -152,7 +152,7 @@ void MarkingConstraintSolver::addParallelTask(RefPtr<SharedTask<void(SlotVisitor\n     m_toExecuteInParallel.append(TaskWithConstraint(WTF::move(task), &constraint));\n }\n \n-void MarkingConstraintSolver::runExecutionThread(SlotVisitor& visitor, SchedulerPreference preference, ScopedLambda<std::optional<unsigned>()> pickNext)\n+void MarkingConstraintSolver::runExecutionThread(SlotVisitor& visitor, SchedulerPreference preference, const ScopedLambda<std::optional<unsigned>()>& pickNext)\n {\n     for (;;) {\n         bool doParallelWorkMode;\n\n--- Source/JavaScriptCore/heap/MarkingConstraintSolver.h ---\n@@ -56,7 +56,7 @@ class MarkingConstraintSolver {\n         NextConstraintFirst\n     };\n \n-    void execute(SchedulerPreference, ScopedLambda<std::optional<unsigned>()> pickNext);\n+    void execute(SchedulerPreference, const ScopedLambda<std::optional<unsigned>()>& pickNext);\n     \n     void drain(BitVector& unexecuted);\n     \n@@ -68,7 +68,7 @@ class MarkingConstraintSolver {\n     void addParallelTask(RefPtr<SharedTask<void(SlotVisitor&)>>, MarkingConstraint&);\n     \n private:\n-    void runExecutionThread(SlotVisitor&, SchedulerPreference, ScopedLambda<std::optional<unsigned>()> pickNext);\n+    void runExecutionThread(SlotVisitor&, SchedulerPreference, const ScopedLambda<std::optional<unsigned>()>& pickNext);\n     \n     struct TaskWithConstraint {\n         TaskWithConstraint() { }\n\n--- Source/WTF/wtf/ScopedLambda.h ---\n@@ -66,6 +66,7 @@ class ScopedLambda<ResultType(ArgumentTypes...)> final {\n \n     template<typename Functor>\n     requires (!std::same_as<std::remove_cvref_t<Functor>, std::nullptr_t>\n+        && !std::same_as<std::remove_cvref_t<Functor>, ScopedLambda>\n         && Invocable<Functor, ResultType(ArgumentTypes...)>)\n     ScopedLambda(Functor&& functor LIFETIME_BOUND)\n         : m_impl([] (void* argument, ArgumentTypes... arguments) -> ResultType {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
