@@ -57097,5 +57097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T18:31:52.281642+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "url": "https://github.com/WebKit/WebKit/commit/b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "message": "[GLib] Add API for the HTTPS upgrade policy\nhttps://bugs.webkit.org/show_bug.cgi?id=321724\n\nReviewed by Michael Catanzaro and Carlos Garcia Campos.\n\nAdds WebKitUpgradeToHTTPSPolicy and the upgrade-to-https-policy property,\nmapping onto HTTPSByDefaultMode, so embedders can opt navigations into\nupgrad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T18:32:29.705903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "url": "https://github.com/WebKit/WebKit/commit/b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "message": "[GLib] Add API for the HTTPS upgrade policy\nhttps://bugs.webkit.org/show_bug.cgi?id=321724\n\nReviewed by Michael Catanzaro and Carlos Garcia Campos.\n\nAdds WebKitUpgradeToHTTPSPolicy and the upgrade-to-https-policy property,\nmapping onto HTTPSByDefaultMode, so embedders can opt navigations into\nupgrad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T18:33:06.779717+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "url": "https://github.com/WebKit/WebKit/commit/44d3c5c94dc71fda8748e63c60a5270f2d5e80df",
+    "message": "REGRESSION(319727@main): Broke the build with clang 20 due to a self-referential ScopedLambda constraint\nhttps://bugs.webkit.org/show_bug.cgi?id=322567\n\nReviewed by Carlos Garcia Campos.\n\n319727@main gave ScopedLambda a converting constructor from any invocable,\nconstrained on Invocable<Functor, Sig",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
