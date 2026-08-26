@@ -56497,5 +56497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T06:23:51.479205+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc2c8875fc15984df835f8b328cad607447f7398",
+    "url": "https://github.com/WebKit/WebKit/commit/bc2c8875fc15984df835f8b328cad607447f7398",
+    "message": "[JSC] LINK `op_instanceof` metadata in `CodeBlock::finishCreation`\nhttps://bugs.webkit.org/show_bug.cgi?id=322559\n\nReviewed by Yusuke Suzuki.\n\nop_instanceof is missing from the LINK list, so its two GetByIdModeMetadata stay\nzero-filled (mode = ProtoLoad, hitCountForLLIntCaching = 0) and the LLInt ne",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T06:24:29.071268+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc2c8875fc15984df835f8b328cad607447f7398",
+    "url": "https://github.com/WebKit/WebKit/commit/bc2c8875fc15984df835f8b328cad607447f7398",
+    "message": "[JSC] LINK `op_instanceof` metadata in `CodeBlock::finishCreation`\nhttps://bugs.webkit.org/show_bug.cgi?id=322559\n\nReviewed by Yusuke Suzuki.\n\nop_instanceof is missing from the LINK list, so its two GetByIdModeMetadata stay\nzero-filled (mode = ProtoLoad, hitCountForLLIntCaching = 0) and the LLInt ne",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T06:25:06.524001+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2502369f53465396d09122b4d4761f76eda161ec",
+    "url": "https://github.com/WebKit/WebKit/commit/2502369f53465396d09122b4d4761f76eda161ec",
+    "message": "DocumentLoader::subresource() should remove the fragment identifier before looking up a resource\nhttps://bugs.webkit.org/show_bug.cgi?id=320918\nrdar://183950261\n\nReviewed by Chris Dumez.\n\nCachedResourceLoader::cachedResource(const URL&) requires its caller to have\nalready removed the fragment identi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

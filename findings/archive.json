@@ -6492,9 +6492,10 @@
       "initial pass (target-specific lens)",
       "memory safety (OOB, UAF, overflow, type confusion)",
       "authorization / trust / policy logic (bypass, default-allow, fast-path)",
-      "concurrency (race conditions, double-fetch, TOCTOU)"
+      "concurrency (race conditions, double-fetch, TOCTOU)",
+      "integer arithmetic (truncation, sign-extension, narrowing casts)"
     ],
-    "times_reexamined": 3
+    "times_reexamined": 4
   },
   {
     "repo": "WebKit/WebKit",
@@ -10830,5 +10831,20 @@
       "concurrency (race conditions, double-fetch, TOCTOU)"
     ],
     "times_reexamined": 3
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "bc2c8875fc15984df835f8b328cad607447f7398",
+    "message": "[JSC] LINK `op_instanceof` metadata in `CodeBlock::finishCreation`\nhttps://bugs.webkit.org/show_bug.cgi?id=322559\n\nReviewed by Yusuke Suzuki.\n\nop_instanceof is missing from the LINK list, so its two GetByIdModeMetadata stay\nzero-filled (mode = ProtoLoad, hitCountForLLIntCaching = 0) and the LLInt ne",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/bytecode/CodeBlock.cpp ---\n@@ -510,6 +510,7 @@ bool CodeBlock::finishCreation(VM& vm, ScriptExecutable* ownerExecutable, Unlink\n \n         LINK(OpGetById)\n         LINK(OpGetLength)\n+        LINK(OpInstanceof)\n \n         LINK(OpEnumeratorNext)\n         LINK(OpEnumeratorInByVal)\n",
+    "url": "https://github.com/WebKit/WebKit/commit/bc2c8875fc15984df835f8b328cad607447f7398",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]
