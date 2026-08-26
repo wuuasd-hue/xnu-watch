@@ -56377,5 +56377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T04:09:59.526717+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "url": "https://github.com/WebKit/WebKit/commit/9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "message": "[JSC] Procedure::usesSIMD() not set when OMG inlines a SIMD callee into a non-SIMD root\nhttps://bugs.webkit.org/show_bug.cgi?id=316918\nrdar://177938898\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nThis patch makes OMGIRGenerator mark the procedure as using SIMD when the parser\ndetects SIMD instruction",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T04:10:37.006070+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c1b19d0128090f6cb3e12d4f967028706b37b170",
+    "url": "https://github.com/WebKit/WebKit/commit/c1b19d0128090f6cb3e12d4f967028706b37b170",
+    "message": "[JSC] Split eager and lazy JIT thunks\nhttps://bugs.webkit.org/show_bug.cgi?id=320942\nrdar://183974728\n\nReviewed by Yijia Huang.\n\nThis patch splits eager and lazy JIT thunks so eager ones are commonly\nused so it is created eagerly but lazy ones are created on-demand.\n\n* Source/JavaScriptCore/jit/JITT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
