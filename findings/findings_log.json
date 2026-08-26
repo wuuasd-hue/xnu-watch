@@ -57157,5 +57157,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:20:48.643821+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "80fc868e7373b04d6c0456a974af2c8ea89ace5f",
+    "url": "https://github.com/WebKit/WebKit/commit/80fc868e7373b04d6c0456a974af2c8ea89ace5f",
+    "message": "[JSC] add/sub of a zero immediate should be a mov\nhttps://bugs.webkit.org/show_bug.cgi?id=322504\n\nReviewed by Keith Miller.\n\nThe immediate forms of add32/add64/sub32/sub64 wrote a register-to-register\ncopy the expensive way when the immediate was zero: add xD, xS, #0 or\nsub wD, wS, #0 on arm64, and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:21:26.433358+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e5c29fb322200872ae3cce866c62c7f6529103fc",
+    "url": "https://github.com/WebKit/WebKit/commit/e5c29fb322200872ae3cce866c62c7f6529103fc",
+    "message": "Introducing Mya, a MemorY Analyzer, and libJavaScriptCoreTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=321334\nrdar://184365506\n\nReviewed by Elliott Williams and Dan Hecht.\n\nMya (pronounced like Maya) is a new command line tool for examining the JSC and\nWebKit memory use in a running process.  It at",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:22:03.657771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "url": "https://github.com/WebKit/WebKit/commit/86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "message": "Extension background service worker can't find other extension pages using clients.matchAll\nhttps://bugs.webkit.org/show_bug.cgi?id=322306\nrdar://185462954\n\nReviewed by Youenn Fablet.\n\nThis PR allows custom extension schemes to be found as clients of the service worker if they are\nfrom the same sche",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:22:41.295393+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "url": "https://github.com/WebKit/WebKit/commit/f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "message": "[JSC] Do not broadcast termination from the thread that is about to stop draining\nhttps://bugs.webkit.org/show_bug.cgi?id=322475\nrdar://185763143\n\nReviewed by Yijia Huang.\n\nWhen reaching to termination, there is no work. Then waking up helper\nthreads do not offer anything since it is waiting until (",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:23:18.540638+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "80fc868e7373b04d6c0456a974af2c8ea89ace5f",
+    "url": "https://github.com/WebKit/WebKit/commit/80fc868e7373b04d6c0456a974af2c8ea89ace5f",
+    "message": "[JSC] add/sub of a zero immediate should be a mov\nhttps://bugs.webkit.org/show_bug.cgi?id=322504\n\nReviewed by Keith Miller.\n\nThe immediate forms of add32/add64/sub32/sub64 wrote a register-to-register\ncopy the expensive way when the immediate was zero: add xD, xS, #0 or\nsub wD, wS, #0 on arm64, and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T21:23:55.780462+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e5c29fb322200872ae3cce866c62c7f6529103fc",
+    "url": "https://github.com/WebKit/WebKit/commit/e5c29fb322200872ae3cce866c62c7f6529103fc",
+    "message": "Introducing Mya, a MemorY Analyzer, and libJavaScriptCoreTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=321334\nrdar://184365506\n\nReviewed by Elliott Williams and Dan Hecht.\n\nMya (pronounced like Maya) is a new command line tool for examining the JSC and\nWebKit memory use in a running process.  It at",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
