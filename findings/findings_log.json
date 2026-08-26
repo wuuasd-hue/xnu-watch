@@ -56277,5 +56277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T02:07:54.585775+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "url": "https://github.com/WebKit/WebKit/commit/9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "message": "[JSC] Procedure::usesSIMD() not set when OMG inlines a SIMD callee into a non-SIMD root\nhttps://bugs.webkit.org/show_bug.cgi?id=316918\nrdar://177938898\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nThis patch makes OMGIRGenerator mark the procedure as using SIMD when the parser\ndetects SIMD instruction",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T02:08:32.533361+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "url": "https://github.com/WebKit/WebKit/commit/9a17cd1100ad6cd41afa7aa1f0a2fa5a2e797a10",
+    "message": "[JSC] Procedure::usesSIMD() not set when OMG inlines a SIMD callee into a non-SIMD root\nhttps://bugs.webkit.org/show_bug.cgi?id=316918\nrdar://177938898\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nThis patch makes OMGIRGenerator mark the procedure as using SIMD when the parser\ndetects SIMD instruction",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T02:09:10.973850+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "url": "https://github.com/WebKit/WebKit/commit/2af38faaec709b9af4ffb54373d691d5a894e22a",
+    "message": "[JSC] `Function#bind` strength reduction in DFG should accept method structures\nhttps://bugs.webkit.org/show_bug.cgi?id=320959\n\nReviewed by Yusuke Suzuki.\n\n296674@main split JSFunction structures for functions without a \"prototype\" property\n(class methods, object-literal shorthand methods, accessors",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
