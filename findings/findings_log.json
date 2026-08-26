@@ -56597,5 +56597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T08:05:08.252275+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc2c8875fc15984df835f8b328cad607447f7398",
+    "url": "https://github.com/WebKit/WebKit/commit/bc2c8875fc15984df835f8b328cad607447f7398",
+    "message": "[JSC] LINK `op_instanceof` metadata in `CodeBlock::finishCreation`\nhttps://bugs.webkit.org/show_bug.cgi?id=322559\n\nReviewed by Yusuke Suzuki.\n\nop_instanceof is missing from the LINK list, so its two GetByIdModeMetadata stay\nzero-filled (mode = ProtoLoad, hitCountForLLIntCaching = 0) and the LLInt ne",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T08:05:45.314442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f049dc9046e56f460fc85d239c1a15e9b6ba3c6",
+    "url": "https://github.com/WebKit/WebKit/commit/4f049dc9046e56f460fc85d239c1a15e9b6ba3c6",
+    "message": "[JSC][Temporal] Finish PrepareCalendarFields consolidation; fix monthCode TypeError regression\nhttps://bugs.webkit.org/show_bug.cgi?id=320953\nrdar://183980712\n\nReviewed by Yusuke Suzuki.\n\nRoute PlainDateTime.from/with, PlainDate.prototype.with's ISO branch, and\nDuration.relativeTo through the two sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
