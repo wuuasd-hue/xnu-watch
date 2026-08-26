@@ -56817,5 +56817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T11:52:31.866796+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8af849be6f0d1b75cd19f82bf16ad80bcf8ddef",
+    "url": "https://github.com/WebKit/WebKit/commit/b8af849be6f0d1b75cd19f82bf16ad80bcf8ddef",
+    "message": "[JSC] Wasm table64 JS API interfaces\nhttps://bugs.webkit.org/show_bug.cgi?id=321017\nrdar://184053551\n\nReviewed by Cole Carley.\n\nWe fix table64 JS API interfaces,\n\n1. Table.length[1] is defined as AddressValue[2], so it should return\n   BigInt when table is 64bit. But the current code is not doing so",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-26T11:53:08.831040+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e942b93cdaa04a323f26b3b0facbed690ca6db63",
+    "url": "https://github.com/WebKit/WebKit/commit/e942b93cdaa04a323f26b3b0facbed690ca6db63",
+    "message": "[JSC] Active element segment offsets are truncated for a table64\nhttps://bugs.webkit.org/show_bug.cgi?id=321008\nrdar://184044756\n\nReviewed by Cole Carley.\n\nThis is similar to 317633@main, but for table64.\nforEachActiveElement is narrowing down the elementIndex to uint32_t, so\nlet's not do it. Also e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
