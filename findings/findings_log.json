@@ -57377,5 +57377,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:41:15.034766+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4002a938c8699bcd479e7b3cb998a9675738c8a1",
+    "url": "https://github.com/WebKit/WebKit/commit/4002a938c8699bcd479e7b3cb998a9675738c8a1",
+    "message": "[JSC][Wasm] Growing a shared memory reads its instances' sibling memory handles across threads\nhttps://bugs.webkit.org/show_bug.cgi?id=322405\nrdar://183462752\n\nReviewed by Yusuke Suzuki.\n\nsetMemory() anchors an instance on every imported memory's BufferMemoryHandle, so\ngrowing a shared memory reache",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:41:51.949992+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "url": "https://github.com/WebKit/WebKit/commit/9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "message": "[JSC] `DFGFixupPhase` should not clear `NodeMustGenerate` on checked arith nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=322371\n\nReviewed by Yusuke Suzuki.\n\nDFGFixupPhase cleared NodeMustGenerate on these nodes even when it had just\nselected Arith::CheckOverflow or Arith::CheckOverflowAndNegativeZer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:42:28.811148+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "580b6dade24924fbe758fc530211de0faf00fb43",
+    "url": "https://github.com/WebKit/WebKit/commit/580b6dade24924fbe758fc530211de0faf00fb43",
+    "message": "[JSC] Store `OSRExitDescriptor` exit values as a compact byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=322369\n\nReviewed by Yusuke Suzuki.\n\nFTL::OSRExitDescriptor::m_values is a FixedOperands<ExitValue> with one 9 byte\nentry per argument, local and tmp of the whole inline stack, and it is kept ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:43:05.640986+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "075a8d041b63a6ae6a4cc690e2f96dd635914df9",
+    "url": "https://github.com/WebKit/WebKit/commit/075a8d041b63a6ae6a4cc690e2f96dd635914df9",
+    "message": "window.open() with noopener should not always return null\nhttps://bugs.webkit.org/show_bug.cgi?id=322591\n\nReviewed by Chris Dumez.\n\nThe name lookup in \"the rules for choosing a navigable\" ignores noopener, so\nwindow.open() can reuse an existing navigable when noopener is set. Two things\nwere wrong w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:43:46.797487+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8fdf5eb819d6b75b99ab2288ce2887d33326d27",
+    "url": "https://github.com/WebKit/WebKit/commit/c8fdf5eb819d6b75b99ab2288ce2887d33326d27",
+    "message": "Descendant and dynamic module script fetches send the wrong Referer header\nhttps://bugs.webkit.org/show_bug.cgi?id=322392\n\nReviewed by Yusuke Suzuki and Ryosuke Niwa.\n\nWhen fetching a module script, we never set a referrer on the request, so the load fell back to the\nfetch client's outgoing referrer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T10:44:23.909637+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "url": "https://github.com/WebKit/WebKit/commit/82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "message": "[CMake] Stop rewriting arguments in swiftc-wrapper\nhttps://bugs.webkit.org/show_bug.cgi?id=322312\n\nReviewed by Adrian Taylor and Richard Robinson.\n\nRemove all [1] the custom argument rewriting done in `swiftc-wrapper.py`\nand change the build config to coherently pass them. Now, the compiler\nand link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
