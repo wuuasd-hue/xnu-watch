@@ -57277,5 +57277,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T00:54:04.563400+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8fdf5eb819d6b75b99ab2288ce2887d33326d27",
+    "url": "https://github.com/WebKit/WebKit/commit/c8fdf5eb819d6b75b99ab2288ce2887d33326d27",
+    "message": "Descendant and dynamic module script fetches send the wrong Referer header\nhttps://bugs.webkit.org/show_bug.cgi?id=322392\n\nReviewed by Yusuke Suzuki and Ryosuke Niwa.\n\nWhen fetching a module script, we never set a referrer on the request, so the load fell back to the\nfetch client's outgoing referrer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T00:54:41.678751+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "url": "https://github.com/WebKit/WebKit/commit/82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "message": "[CMake] Stop rewriting arguments in swiftc-wrapper\nhttps://bugs.webkit.org/show_bug.cgi?id=322312\n\nReviewed by Adrian Taylor and Richard Robinson.\n\nRemove all [1] the custom argument rewriting done in `swiftc-wrapper.py`\nand change the build config to coherently pass them. Now, the compiler\nand link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T00:55:19.165012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a67a6646c829465c43ee79154632b039437957d",
+    "url": "https://github.com/WebKit/WebKit/commit/0a67a6646c829465c43ee79154632b039437957d",
+    "message": "[JSC] Baseline: load adjacent metadata pointer fields with a single ldp\nhttps://bugs.webkit.org/show_bug.cgi?id=322566\n\nReviewed by Keith Miller.\n\nop_new_object and op_put_to_scope each read two adjacent pointer-sized\nfields out of the metadata table with two separate loadPtr calls, which on\narm64 i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T00:55:56.739368+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "url": "https://github.com/WebKit/WebKit/commit/86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "message": "Extension background service worker can't find other extension pages using clients.matchAll\nhttps://bugs.webkit.org/show_bug.cgi?id=322306\nrdar://185462954\n\nReviewed by Youenn Fablet.\n\nThis PR allows custom extension schemes to be found as clients of the service worker if they are\nfrom the same sche",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T00:56:33.849759+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "url": "https://github.com/WebKit/WebKit/commit/f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "message": "[JSC] Do not broadcast termination from the thread that is about to stop draining\nhttps://bugs.webkit.org/show_bug.cgi?id=322475\nrdar://185763143\n\nReviewed by Yijia Huang.\n\nWhen reaching to termination, there is no work. Then waking up helper\nthreads do not offer anything since it is waiting until (",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
