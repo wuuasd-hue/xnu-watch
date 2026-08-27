@@ -57497,5 +57497,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T20:50:09.925045+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57d983744d8291b14fccd688f04669011fe80254",
+    "url": "https://github.com/WebKit/WebKit/commit/57d983744d8291b14fccd688f04669011fe80254",
+    "message": "[JSC] Skip the global StructureCache when the prototype has never been a prototype\nhttps://bugs.webkit.org/show_bug.cgi?id=322703\nrdar://185969611\n\nReviewed by Keith Miller.\n\nWe optimize StructureCache lookup cases.\n\n1. When inserting a new entry, we set mayBePrototype bit and then insert\n   it into",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T20:50:47.563700+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f229fb72961093d2f552ecfef65a8f13afd402a",
+    "url": "https://github.com/WebKit/WebKit/commit/8f229fb72961093d2f552ecfef65a8f13afd402a",
+    "message": "[JSC] WebAssembly try/catch result-type confusion omits optimized reference checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317450\nrdar://179017779\n\nReviewed by Yusuke Suzuki.\n\nThis patch expands an expression stack check to force the signature\nin all cases, not just for if/else.\n\nTest: JSTests/wasm/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T20:51:25.263743+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a67a6646c829465c43ee79154632b039437957d",
+    "url": "https://github.com/WebKit/WebKit/commit/0a67a6646c829465c43ee79154632b039437957d",
+    "message": "[JSC] Baseline: load adjacent metadata pointer fields with a single ldp\nhttps://bugs.webkit.org/show_bug.cgi?id=322566\n\nReviewed by Keith Miller.\n\nop_new_object and op_put_to_scope each read two adjacent pointer-sized\nfields out of the metadata table with two separate loadPtr calls, which on\narm64 i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-27T20:52:02.843683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4002a938c8699bcd479e7b3cb998a9675738c8a1",
+    "url": "https://github.com/WebKit/WebKit/commit/4002a938c8699bcd479e7b3cb998a9675738c8a1",
+    "message": "[JSC][Wasm] Growing a shared memory reads its instances' sibling memory handles across threads\nhttps://bugs.webkit.org/show_bug.cgi?id=322405\nrdar://183462752\n\nReviewed by Yusuke Suzuki.\n\nsetMemory() anchors an instance on every imported memory's BufferMemoryHandle, so\ngrowing a shared memory reache",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
