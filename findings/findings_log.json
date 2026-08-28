@@ -57577,5 +57577,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T04:58:48.993434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d9f8faf3642c18971c354d7a3d756d116b5fa9b",
+    "url": "https://github.com/WebKit/WebKit/commit/0d9f8faf3642c18971c354d7a3d756d116b5fa9b",
+    "message": "Drop RefCounted's adoption requirement assertion\nhttps://bugs.webkit.org/show_bug.cgi?id=322707\n\nReviewed by Ryosuke Niwa.\n\nThe point of this assertion was to make sure that we do not forget to\nadopt a RefCounted object after constructing it. However, it also\nprevents ref'ing the object while it is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T04:59:26.858757+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0fb9b2cf502b80dcf30a9387f4a49bc602d4d474",
+    "url": "https://github.com/WebKit/WebKit/commit/0fb9b2cf502b80dcf30a9387f4a49bc602d4d474",
+    "message": "[JSC] Update profile concurrently from GC marker threads\nhttps://bugs.webkit.org/show_bug.cgi?id=322755\nrdar://186016244\n\nReviewed by Yijia Huang.\n\nWe are updating profiles at GC end phase since it is also clearing cells\nwhich will be dead after this GC end phase. So this is necessary, but\nupdating ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T05:00:04.521734+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "48985e195c6fddb7395ad65e72a7614f12366ae2",
+    "url": "https://github.com/WebKit/WebKit/commit/48985e195c6fddb7395ad65e72a7614f12366ae2",
+    "message": "[JSC] Store the DFG `VariableEventStream` as a byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=322713\n\nReviewed by Yusuke Suzuki.\n\nDFG::VariableEventStream keeps one 14 byte VariableEvent per event for as long\nas the DFG code lives, and its only reader is reconstruct() on OSR exit, which\nseeks b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T05:00:42.089113+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "url": "https://github.com/WebKit/WebKit/commit/5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "message": "[JSC][Wasm] Inline table.size\nhttps://bugs.webkit.org/show_bug.cgi?id=322520\n\nReviewed by Yusuke Suzuki.\n\nBBQ and OMG load Table length instead of calling operationGetWasmTableSize.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT.cpp:\n* Source/JavaScriptCore/wasm/WasmOMGIRGenerator.cpp:\n\nCanonical link: ht",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T05:01:19.739036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "url": "https://github.com/WebKit/WebKit/commit/9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "message": "[JSC] `DFGFixupPhase` should not clear `NodeMustGenerate` on checked arith nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=322371\n\nReviewed by Yusuke Suzuki.\n\nDFGFixupPhase cleared NodeMustGenerate on these nodes even when it had just\nselected Arith::CheckOverflow or Arith::CheckOverflowAndNegativeZer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-28T05:01:57.748829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "580b6dade24924fbe758fc530211de0faf00fb43",
+    "url": "https://github.com/WebKit/WebKit/commit/580b6dade24924fbe758fc530211de0faf00fb43",
+    "message": "[JSC] Store `OSRExitDescriptor` exit values as a compact byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=322369\n\nReviewed by Yusuke Suzuki.\n\nFTL::OSRExitDescriptor::m_values is a FixedOperands<ExitValue> with one 9 byte\nentry per argument, local and tmp of the whole inline stack, and it is kept ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
