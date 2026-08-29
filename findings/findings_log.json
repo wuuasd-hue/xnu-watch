@@ -58137,5 +58137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T19:49:50.579823+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "26f0db0fe1756a9579a48c146dfc3f140bbfc193",
+    "url": "https://github.com/WebKit/WebKit/commit/26f0db0fe1756a9579a48c146dfc3f140bbfc193",
+    "message": "[JSC] incorrect ValueProfile is used in BaselineJIT iterator_next\nhttps://bugs.webkit.org/show_bug.cgi?id=322899\nrdar://186150753\n\nReviewed by Keith Miller.\n\niterator_next fast path's result needs to be stored to getValue\ncheckpoint's ValueProfile.\n\nTest: JSTests/stress/for-of-mixed-element-types-va",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T19:50:27.595125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3e6e0f710a4f913cc4281834f9810ab07962797",
+    "url": "https://github.com/WebKit/WebKit/commit/d3e6e0f710a4f913cc4281834f9810ab07962797",
+    "message": "[JSC][Wasm] Fast-path i31ref in the JS-to-Wasm entry stub\nhttps://bugs.webkit.org/show_bug.cgi?id=322525\n\nReviewed by Yusuke Suzuki.\n\nThe JS-to-Wasm IC sent every non-externref to the slow path. Accept a JS\nint32 in the i31 range, and null if the type is nullable.\n\n* Source/JavaScriptCore/wasm/js/JS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T19:51:04.390851+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c9b16dd56d5e2d6865ef612bf2323cb0c9c9920",
+    "url": "https://github.com/WebKit/WebKit/commit/1c9b16dd56d5e2d6865ef612bf2323cb0c9c9920",
+    "message": "[YARR] Fix lastIndex and ^ handling in dotAll mode\nhttps://bugs.webkit.org/show_bug.cgi?id=322037\nrdar://185814135\n\nReviewed by Yusuke Suzuki.\n\nThis PR fixes two bugs with dotAll mode (/s).\n\nOne, lastIndex wasn't being respected in the JIT and was always considered\nzero.\n\nTwo, ^.* was incorrectly ha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

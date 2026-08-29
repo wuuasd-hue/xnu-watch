@@ -11239,9 +11239,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/d3e6e0f710a4f913cc4281834f9810ab07962797",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11253,9 +11254,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/1c9b16dd56d5e2d6865ef612bf2323cb0c9c9920",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11349,6 +11351,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- JSTests/stress/dfg-string-replace-regexp-unicode-empty-match-surrogate-pair.js ---\n@@ -0,0 +1,37 @@\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(`bad value: ${JSON.stringify(actual)}, expected ${JSON.stringify(expected)}`);\n+}\n+\n+function replaceUnicode() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/gu, \"-\");\n+}\n+noInline(replaceUnicode);\n+\n+function replaceUnicodeSets() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/gv, \"-\");\n+}\n+noInline(replaceUnicodeSets);\n+\n+function replaceAllUnicode() {\n+    return \"\\u{1F600}\\u{1F601}\".replaceAll(/(?:)/gu, \"|\");\n+}\n+noInline(replaceAllUnicode);\n+\n+function replaceLoneLead() {\n+    return \"a\\uD83D\".replace(/(?:)/gu, \"-\");\n+}\n+noInline(replaceLoneLead);\n+\n+function replaceNonUnicode() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/g, \"-\");\n+}\n+noInline(replaceNonUnicode);\n+\n+for (var i = 0; i < testLoopCount; ++i) {\n+    shouldBe(replaceUnicode(), \"-a-\\u{1F600}-b-\");\n+    shouldBe(replaceUnicodeSets(), \"-a-\\u{1F600}-b-\");\n+    shouldBe(replaceAllUnicode(), \"|\\u{1F600}|\\u{1F601}|\");\n+    shouldBe(replaceLoneLead(), \"-a-\\uD83D-\");\n+    shouldBe(replaceNonUnicode(), \"-a-\\uD83D-\\uDE00-b-\");\n+}\n\n--- Source/JavaScriptCore/dfg/DFGStrengthReductionPhase.cpp ---\n@@ -1315,6 +1315,11 @@ class StrengthReductionPhase : public Phase {\n                     startPosition++;\n                     if (startPosition > string.length())\n                         break;\n+                    if (regExp->eitherUnicode() && U16_IS_LEAD(string[startPosition - 1]) && U16_IS_TRAIL(string[startPosition])) {\n+                        startPosition++;\n+                        if (startPosition > string.length())\n+                            break;\n+                    }\n                 }\n             } while (regExp->global());\n             if (!ok)\n",
     "url": "https://github.com/WebKit/WebKit/commit/d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "26f0db0fe1756a9579a48c146dfc3f140bbfc193",
+    "message": "[JSC] incorrect ValueProfile is used in BaselineJIT iterator_next\nhttps://bugs.webkit.org/show_bug.cgi?id=322899\nrdar://186150753\n\nReviewed by Keith Miller.\n\niterator_next fast path's result needs to be stored to getValue\ncheckpoint's ValueProfile.\n\nTest: JSTests/stress/for-of-mixed-element-types-va",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/for-of-mixed-element-types-value-profile.js ---\n@@ -0,0 +1,40 @@\n+//@ skip if not $jitTests\n+//@ $skipModes << :lockdown\n+//@ requireOptions(\"--forceUnlinkedDFG=0\")\n+\n+// The baseline JIT's fast-array op_iterator_next path must profile the iterated element into the\n+// getValue checkpoint's value profile. When it wrote to the computeNext slot instead, the DFG kept\n+// predicting the loop variable from whatever the LLInt had sampled, so it re-speculated the same\n+// wrong type on every recompilation until the reoptimization retry counter ran out.\n+\n+function events(i)\n+{\n+    // Only the baseline JIT ever sees the number: by iteration 20000 this function is long past the\n+    // LLInt.\n+    return i < 20000 ? [\"a\", \"bb\", \"ccc\"] : [\"a\", \"bb\", 0];\n+}\n+noInline(events);\n+\n+function walk(i)\n+{\n+    let count = 0;\n+    for (let event of events(i)) {\n+        if (typeof event === \"number\")\n+            count += event;\n+        else\n+            count += event.length;\n+    }\n+    return count;\n+}\n+noInline(walk);\n+\n+let total = 0;\n+for (let i = 0; i < 300000; ++i)\n+    total += walk(i);\n+\n+if (total !== 960000)\n+    throw new Error(`bad result: ${total}`);\n+\n+const compiles = numberOfDFGCompiles(walk);\n+if (compiles > 4)\n+    throw new Error(`walk was DFG-compiled ${compiles} times; the loop variable's value profile is not being updated`);\n\n--- Source/JavaScriptCore/jit/JITCall.cpp ---\n@@ -465,7 +465,6 @@ void JIT::emit_op_iterator_next(const JSInstruction* instruction)\n     genericCases.append(branchIfNotType(nextJSR.payloadGPR(), SentinelType));\n \n     JumpList doneCases;\n-#if CPU(ARM64) || CPU(X86_64)\n     loadGlobalObject(argumentGPR0);\n     emitGetVirtualRegister(bytecode.m_iterator, argumentGPR1);\n     emitGetVirtualRegister(bytecode.m_iterable, argumentGPR2);\n@@ -474,19 +473,7 @@ void JIT::emit_op_iterator_next(const JSInstruction* instruction)\n     emitPutVirtualRegister(bytecode.m_done, returnValueGPR);\n     emitPutVirtualRegister(bytecode.m_value, returnValueGPR2);\n     doneCases.append(branchIfEmpty(JSValueRegs { returnValueGPR2 }));\n-    emitValueProfilingSite(bytecode, JSValueRegs { returnValueGPR2 });\n-#else\n-    auto* tryFastFunction = ([&] () {\n-        switch (instruction->width()) {\n-        case Narrow: return iterator_next_try_fast_narrow;\n-        case Wide16: return iterator_next_try_fast_wide16;\n-        case Wide32: return iterator_next_try_fast_wide32;\n-        default: RELEASE_ASSERT_NOT_REACHED();\n-        }\n-    })();\n-    JITSlowPathCall slowPathCall(this, tryFastFunction);\n-    slowPathCall.call();\n-#endif\n+    emitValueProfilingSite(bytecode, m_bytecodeIndex.withCheckpoint(OpIteratorNext::getValue), JSValueRegs { returnValueGPR2 });\n     doneCases.append(jump());\n \n     genericCases.link(this);\n",
+    "url": "https://github.com/WebKit/WebKit/commit/26f0db0fe1756a9579a48c146dfc3f140bbfc193",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
