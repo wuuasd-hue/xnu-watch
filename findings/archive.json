@@ -11179,9 +11179,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11193,9 +11194,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/6f7bb45088c88c051ca99c0c0afeb5baf9364f16",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11331,6 +11333,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- stdlib/public/runtime/MetadataLookup.cpp ---\n@@ -2932,36 +2932,55 @@ static NodePointer extractFunctionTypeFromMethod(Demangler &demangler,\n   if (!node)\n     return nullptr;\n \n-  node = node->findByKind(Node::Kind::Type, /*maxDepth=*/2);\n-  if (!node)\n+  // The signature is the Function node's last child. Searching the subtree for\n+  // a Type node instead would find the one belonging to the enclosing context,\n+  // which is the Function's first child and can be an entity with a type of its\n+  // own, such as a variable.\n+  node = node->getLastChild();\n+  if (!node || node->getKind() != Node::Kind::Type)\n+    return nullptr;\n+\n+  auto funcType = node->getFirstChild();\n+  if (!funcType)\n     return nullptr;\n \n-  // If this is a generic function, it requires special handling.\n-  if (auto genericType =\n-          node->findByKind(Node::Kind::DependentGenericType, /*maxDepth=*/1)) {\n-    node = genericType->findByKind(Node::Kind::Type, /*maxDepth=*/1);\n-    return node->findByKind(Node::Kind::FunctionType, /*maxDepth=*/1);\n+  // A generic function wraps its signature in a DependentGenericType.\n+  if (funcType->getKind() == Node::Kind::DependentGenericType) {\n+    node = funcType->getLastChild();\n+    if (!node || node->getKind() != Node::Kind::Type)\n+      return nullptr;\n+\n+    funcType = node->getFirstChild();\n+    if (!funcType)\n+      return nullptr;\n   }\n \n-  auto funcType = node->getFirstChild();\n-  assert(funcType->getKind() == Node::Kind::FunctionType);\n+  if (funcType->getKind() != Node::Kind::FunctionType)\n+    return nullptr;\n+\n   return funcType;\n }\n \n /// For a single unlabeled parameter this function returns whole\n-/// `ArgumentTuple`, for everything else a `Tuple` element inside it.\n+/// `ArgumentTuple`, for everything else a `Tuple` element inside it. Returns\n+/// null if the function type doesn't have a well-formed parameter list.\n static NodePointer getParameterList(NodePointer funcType) {\n   assert(funcType->getKind() == Node::Kind::FunctionType);\n \n   auto parameterContainer =\n       funcType->findByKind(Node::Kind::ArgumentTuple, /*maxDepth=*/1);\n-  assert(parameterContainer->getNumChildren() > 0);\n+  if (!parameterContainer)\n+    return nullptr;\n \n   // This is a type that covers entire parameter list.\n   auto parameterList = parameterContainer->getFirstChild();\n-  assert(parameterList->getKind() == Node::Kind::Type);\n+  if (!parameterList || parameterList->getKind() != Node::Kind::Type)\n+    return nullptr;\n \n   auto parameters = parameterList->getFirstChild();\n+  if (!parameters)\n+    return nullptr;\n+\n   if (parameters->getKind() == Node::Kind::Tuple)\n     return parameters;\n \n@@ -2999,6 +3018,9 @@ unsigned swift_func_getParameterCount(const char *typeNameStart,\n     return -1;\n \n   auto parameterList = getParameterList(funcType);\n+  if (!parameterList)\n+    return -1;\n+\n   return parameterList->getNumChildren();\n }\n \n@@ -3015,16 +3037,17 @@ swift_func_getReturnTypeInfo(const char *typeNameStart, size_t typeNameLength,\n     return nullptr;\n \n   auto resultType = funcType->getLastChild();\n-  if (!resultType)\n+  if (!resultType || resultType->getKind() != Node::Kind::ReturnType)\n     return nullptr;\n \n-  assert(resultType->getKind() == Node::Kind::ReturnType);\n-\n   SubstGenericParametersFromMetadata substFn(genericEnv, genericArguments);\n \n   auto request = MetadataRequest(MetadataState::Complete);\n \n   NodePointer nodePointer = resultType->getFirstChild();\n+  if (!nodePointer)\n+    return nullptr;\n+\n   auto typeInfoOrErr = swift_getTypeByMangledNode(\n       request, demangler, nodePointer,\n       /*arguments=*/genericArguments,\n@@ -3075,10 +3098,13 @@ swift_func_getParameterTypeInfo(\n     auto nodePointer = parameterList->getChild(index);\n \n     if (nodePointer->getKind() == Node::Kind::TupleElement) {\n-      assert(nodePointer->getNumChildren() == 1);\n-      nodePointer = nodePointer->getFirstChild();\n+      nodePointer = nodePointer->getLastChild();\n+      if (!nodePointer)\n+        return -3;\n     }\n-    assert(nodePointer->getKind() == Node::Kind\n",
     "url": "https://github.com/swiftlang/swift/commit/346c970f41f29c235693f5e1f0396fb279fa1f58",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "message": "[JSC] DFG `StringReplace` constant folding steps into a surrogate pair after an empty match for unicode RegExps\nhttps://bugs.webkit.org/show_bug.cgi?id=322889\n\nReviewed by Yusuke Suzuki.\n\nDFGStrengthReductionPhase folds String.prototype.replace with a constant\nstring, RegExp and replacement by repla",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/dfg-string-replace-regexp-unicode-empty-match-surrogate-pair.js ---\n@@ -0,0 +1,37 @@\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(`bad value: ${JSON.stringify(actual)}, expected ${JSON.stringify(expected)}`);\n+}\n+\n+function replaceUnicode() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/gu, \"-\");\n+}\n+noInline(replaceUnicode);\n+\n+function replaceUnicodeSets() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/gv, \"-\");\n+}\n+noInline(replaceUnicodeSets);\n+\n+function replaceAllUnicode() {\n+    return \"\\u{1F600}\\u{1F601}\".replaceAll(/(?:)/gu, \"|\");\n+}\n+noInline(replaceAllUnicode);\n+\n+function replaceLoneLead() {\n+    return \"a\\uD83D\".replace(/(?:)/gu, \"-\");\n+}\n+noInline(replaceLoneLead);\n+\n+function replaceNonUnicode() {\n+    return \"a\\u{1F600}b\".replace(/(?:)/g, \"-\");\n+}\n+noInline(replaceNonUnicode);\n+\n+for (var i = 0; i < testLoopCount; ++i) {\n+    shouldBe(replaceUnicode(), \"-a-\\u{1F600}-b-\");\n+    shouldBe(replaceUnicodeSets(), \"-a-\\u{1F600}-b-\");\n+    shouldBe(replaceAllUnicode(), \"|\\u{1F600}|\\u{1F601}|\");\n+    shouldBe(replaceLoneLead(), \"-a-\\uD83D-\");\n+    shouldBe(replaceNonUnicode(), \"-a-\\uD83D-\\uDE00-b-\");\n+}\n\n--- Source/JavaScriptCore/dfg/DFGStrengthReductionPhase.cpp ---\n@@ -1315,6 +1315,11 @@ class StrengthReductionPhase : public Phase {\n                     startPosition++;\n                     if (startPosition > string.length())\n                         break;\n+                    if (regExp->eitherUnicode() && U16_IS_LEAD(string[startPosition - 1]) && U16_IS_TRAIL(string[startPosition])) {\n+                        startPosition++;\n+                        if (startPosition > string.length())\n+                            break;\n+                    }\n                 }\n             } while (regExp->global());\n             if (!ok)\n",
+    "url": "https://github.com/WebKit/WebKit/commit/d545f589c8b77bfa599eed91f845687ed97c2e2b",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"

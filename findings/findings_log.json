@@ -58037,5 +58037,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T13:25:34.484754+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "url": "https://github.com/WebKit/WebKit/commit/d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "message": "[JSC] DFG `StringReplace` constant folding steps into a surrogate pair after an empty match for unicode RegExps\nhttps://bugs.webkit.org/show_bug.cgi?id=322889\n\nReviewed by Yusuke Suzuki.\n\nDFGStrengthReductionPhase folds String.prototype.replace with a constant\nstring, RegExp and replacement by repla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T13:26:11.515957+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "url": "https://github.com/WebKit/WebKit/commit/5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "message": "[JSC][Wasm] Inline table.size\nhttps://bugs.webkit.org/show_bug.cgi?id=322520\n\nReviewed by Yusuke Suzuki.\n\nBBQ and OMG load Table length instead of calling operationGetWasmTableSize.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT.cpp:\n* Source/JavaScriptCore/wasm/WasmOMGIRGenerator.cpp:\n\nCanonical link: ht",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T13:26:48.599377+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f7bb45088c88c051ca99c0c0afeb5baf9364f16",
+    "url": "https://github.com/WebKit/WebKit/commit/6f7bb45088c88c051ca99c0c0afeb5baf9364f16",
+    "message": "[JSC][Wasm] Reserved wasm: and wasm-js: names should LinkError in ESM\nhttps://bugs.webkit.org/show_bug.cgi?id=322118\n\nReviewed by Keith Miller.\n\nESM import of a Wasm module should reject reserved wasm: and wasm-js:\nimport names, export names, and wasm-js: module names with\nWebAssembly.LinkError inst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
