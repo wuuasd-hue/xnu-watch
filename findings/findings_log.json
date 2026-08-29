@@ -58197,5 +58197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T22:03:17.384608+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e5465e49a028df7828885037fd0652891f20e00",
+    "url": "https://github.com/WebKit/WebKit/commit/1e5465e49a028df7828885037fd0652891f20e00",
+    "message": "[JSC] ArrayProfile read / update does not need a lock\nhttps://bugs.webkit.org/show_bug.cgi?id=322771\nrdar://186034745\n\nReviewed by Yijia Huang.\n\nReading and updating ArrayProfile is fine to be racy as it is just a\nsource of prediction and we are not reading complicated data from the\nstored Structure",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T22:03:54.531428+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "26aa84fcd527016df60838ccc19c722f39b6b68a",
+    "url": "https://github.com/WebKit/WebKit/commit/26aa84fcd527016df60838ccc19c722f39b6b68a",
+    "message": "OSR Availability Fails to Invalidate Local Recoveries Across LoadVarargs\nhttps://bugs.webkit.org/show_bug.cgi?id=318348\nrdar://178255543\n\nReviewed by Yusuke Suzuki.\n\nWhen a strict-mode `arguments` allocation produced by an inlined varargs call\nis eliminated to PhantomClonedArguments, OSR availabilit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
