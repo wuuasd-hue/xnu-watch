@@ -58097,5 +58097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T17:15:13.575784+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81b5126daf2dac78574dc7c15bf64d88469ee206",
+    "url": "https://github.com/WebKit/WebKit/commit/81b5126daf2dac78574dc7c15bf64d88469ee206",
+    "message": "[JSC][Wasm] ESM mutable globals should be live unwrapped bindings\nhttps://bugs.webkit.org/show_bug.cgi?id=322116\n\nReviewed by Yusuke Suzuki.\n\nNamespace get of a mutable Wasm global returns the current value\ninstead of the WebAssembly.Global wrapper. Instance.exports stays\nwrapped. v128 / exnref stay",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-29T17:15:51.780443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "565aa489f1f01a6f05274e682d17d9198410fa99",
+    "url": "https://github.com/WebKit/WebKit/commit/565aa489f1f01a6f05274e682d17d9198410fa99",
+    "message": "[JSC][Wasm] Fill wasm ref arrays without per-element set()\nhttps://bugs.webkit.org/show_bug.cgi?id=322524\n\nReviewed by Keith Miller.\n\nRef fill looped set() so each element took a write barrier. Store with\nsetWithoutWriteBarrier, then one writeBarrier.\n\n* Source/JavaScriptCore/wasm/js/JSWebAssemblyAr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
