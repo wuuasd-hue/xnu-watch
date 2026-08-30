@@ -58417,5 +58417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T15:05:19.278230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0839f9342ed5056785ce58ed9c5a0f92b323f625",
+    "url": "https://github.com/WebKit/WebKit/commit/0839f9342ed5056785ce58ed9c5a0f92b323f625",
+    "message": "[JSC] Introduce JSC WarmUpThread for MarkedBlocks\nhttps://bugs.webkit.org/show_bug.cgi?id=322774\nrdar://186036234\n\nReviewed by Marcus Plutowski and Dan Hecht.\n\nSystem page size is 16KB (on Darwin at least) and MarkedBlock size is\nalso 16KB. We end up having a page-fault for each MarkedBlock allocati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T15:05:57.175615+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df289ce5519a13955bd806c44904ce32cca6bcd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df289ce5519a13955bd806c44904ce32cca6bcd9",
+    "message": "[JSC] Reuse `FunctionExecutables` instantiated for module function declarations\nhttps://bugs.webkit.org/show_bug.cgi?id=322887\n\nReviewed by Yusuke Suzuki.\n\nModule-scoped function declarations are instantiated when the module is\nlinked: CyclicModuleRecord::initializeEnvironment links each\nUnlinkedFun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
