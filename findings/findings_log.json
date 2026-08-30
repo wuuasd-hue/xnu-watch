@@ -58277,5 +58277,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T05:36:15.731374+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0839f9342ed5056785ce58ed9c5a0f92b323f625",
+    "url": "https://github.com/WebKit/WebKit/commit/0839f9342ed5056785ce58ed9c5a0f92b323f625",
+    "message": "[JSC] Introduce JSC WarmUpThread for MarkedBlocks\nhttps://bugs.webkit.org/show_bug.cgi?id=322774\nrdar://186036234\n\nReviewed by Marcus Plutowski and Dan Hecht.\n\nSystem page size is 16KB (on Darwin at least) and MarkedBlock size is\nalso 16KB. We end up having a page-fault for each MarkedBlock allocati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T05:36:52.690726+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df289ce5519a13955bd806c44904ce32cca6bcd9",
+    "url": "https://github.com/WebKit/WebKit/commit/df289ce5519a13955bd806c44904ce32cca6bcd9",
+    "message": "[JSC] Reuse `FunctionExecutables` instantiated for module function declarations\nhttps://bugs.webkit.org/show_bug.cgi?id=322887\n\nReviewed by Yusuke Suzuki.\n\nModule-scoped function declarations are instantiated when the module is\nlinked: CyclicModuleRecord::initializeEnvironment links each\nUnlinkedFun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T05:37:29.638011+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "382a689967f2ad2a8935acf90464a58ba05c3bee",
+    "url": "https://github.com/WebKit/WebKit/commit/382a689967f2ad2a8935acf90464a58ba05c3bee",
+    "message": "Skip PGO profiling for JavaScriptCoreTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=322914\nrdar://186179555\n\nReviewed by Mark Lam.\n\nSkip PGO profiling for JavaScriptCoreTools to fix PGO instrument binary build.\n\n* Source/JavaScriptCore/Configurations/libJavaScriptCoreTools.xcconfig:\n\nCanonical link:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T05:38:06.668461+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcd8c65d09cee34b7ca85cd928b00dff0a722014",
+    "url": "https://github.com/WebKit/WebKit/commit/fcd8c65d09cee34b7ca85cd928b00dff0a722014",
+    "message": "[SaferCPP] Address more warnings in Source/WebKit found by the latest version of the static analyzer\nhttps://bugs.webkit.org/show_bug.cgi?id=322817\n\nReviewed by Mike Wyrzykowski and David Kilzer.\n\n* Source/WebCore/platform/graphics/avfoundation/objc/MediaPlayerPrivateMediaSourceAVFObjC.mm:\n(WebCore:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T05:38:43.607498+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "346c970f41f29c235693f5e1f0396fb279fa1f58",
+    "url": "https://github.com/swiftlang/swift/commit/346c970f41f29c235693f5e1f0396fb279fa1f58",
+    "message": "Merge pull request #91737 from mikeash/runtime-func-metadata-lookup-fixes\n\n[Runtime] Take a method's own type node when extracting its function type.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
