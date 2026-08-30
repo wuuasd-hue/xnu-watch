@@ -58457,5 +58457,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T18:40:24.522530+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "382a689967f2ad2a8935acf90464a58ba05c3bee",
+    "url": "https://github.com/WebKit/WebKit/commit/382a689967f2ad2a8935acf90464a58ba05c3bee",
+    "message": "Skip PGO profiling for JavaScriptCoreTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=322914\nrdar://186179555\n\nReviewed by Mark Lam.\n\nSkip PGO profiling for JavaScriptCoreTools to fix PGO instrument binary build.\n\n* Source/JavaScriptCore/Configurations/libJavaScriptCoreTools.xcconfig:\n\nCanonical link:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T18:41:01.373152+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "url": "https://github.com/WebKit/WebKit/commit/b2678ccf7efb04a68ae229eff8edfc8c98ed402e",
+    "message": "[GLib] Add API for the HTTPS upgrade policy\nhttps://bugs.webkit.org/show_bug.cgi?id=321724\n\nReviewed by Michael Catanzaro and Carlos Garcia Campos.\n\nAdds WebKitUpgradeToHTTPSPolicy and the upgrade-to-https-policy property,\nmapping onto HTTPSByDefaultMode, so embedders can opt navigations into\nupgrad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
