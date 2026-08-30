@@ -58537,5 +58537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T23:57:41.410716+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "url": "https://github.com/WebKit/WebKit/commit/2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "message": "Drop WTF::Expected alias usage in IPC and inspector code generation\nhttps://bugs.webkit.org/show_bug.cgi?id=322893\nrdar://186146979\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed. Three code\ngeneration methods reference the alias by name, so we update bot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T23:58:19.310146+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "url": "https://github.com/WebKit/WebKit/commit/2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "message": "Drop WTF::Expected alias usage in IPC and inspector code generation\nhttps://bugs.webkit.org/show_bug.cgi?id=322893\nrdar://186146979\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed. Three code\ngeneration methods reference the alias by name, so we update bot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T23:58:57.366563+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "url": "https://github.com/WebKit/WebKit/commit/86ddc7a7a759e3741432f7dac824120cb7de5e58",
+    "message": "Extension background service worker can't find other extension pages using clients.matchAll\nhttps://bugs.webkit.org/show_bug.cgi?id=322306\nrdar://185462954\n\nReviewed by Youenn Fablet.\n\nThis PR allows custom extension schemes to be found as clients of the service worker if they are\nfrom the same sche",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
