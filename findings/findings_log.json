@@ -58237,5 +58237,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T00:27:40.271909+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dcbd254af217b64f37947d680ce0c6eae0ab7e3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dcbd254af217b64f37947d680ce0c6eae0ab7e3",
+    "message": "[Wasm] Argument and Result block types should always widen\nhttps://bugs.webkit.org/show_bug.cgi?id=318807\nrdar://181458746\n\nReviewed by Yusuke Suzuki.\n\nThe wasm spec says that any types passing through a block signature\nhave to widen to the signature. This is critical both for correctness\nand for se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-30T00:28:17.117789+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87a413dfec8848c3ab69c5e9e94440d7815bb849",
+    "url": "https://github.com/WebKit/WebKit/commit/87a413dfec8848c3ab69c5e9e94440d7815bb849",
+    "message": "Update safer C++ expectations (2026-08-28)\nhttps://bugs.webkit.org/show_bug.cgi?id=322869\n\nUnreviewed. Update safer C++ expectations.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedLambdaCapturesCheckerExpectations:\n\nCanonical link: https://commits.webkit.org/320095@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
