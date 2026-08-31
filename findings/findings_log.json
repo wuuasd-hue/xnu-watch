@@ -58817,5 +58817,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:33:39.927363+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "url": "https://github.com/WebKit/WebKit/commit/8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "message": "[JSC] TypedArray constructor needs to copy JSArray content when its copying may cause side-effect\nhttps://bugs.webkit.org/show_bug.cgi?id=322954\nrdar://186227333\n\nReviewed by Yijia Huang.\n\nWhen constructing a TypedArray from JSArray, we need to copy and convert\nthe content for the array, which invok",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:34:16.896670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70a75461959a91b29395c03ce7ba494745c37c0a",
+    "url": "https://github.com/WebKit/WebKit/commit/70a75461959a91b29395c03ce7ba494745c37c0a",
+    "message": "[JSC] [Intl.DurationFormat] Omit separator when minutes is hidden\nhttps://bugs.webkit.org/show_bug.cgi?id=317486\n\nReviewed by Yusuke Suzuki.\n\n`Intl.DurationFormat.prototype.format()` incorrectly appends a separator, such as \":\",\nwhen both `hoursDisplay` and `minutesDisplay` are set to `\"auto\"` and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:34:54.007041+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "27eb122967d3188a3ea63a018bcff533df3d88e0",
+    "url": "https://github.com/WebKit/WebKit/commit/27eb122967d3188a3ea63a018bcff533df3d88e0",
+    "message": "[JSC] Reject when search-string is longer than the target-string early\nhttps://bugs.webkit.org/show_bug.cgi?id=322924\nrdar://186187306\n\nReviewed by Marcus Plutowski.\n\nFor String#indexOf / String#includes / StringView::find, reject when\nsearch-string is longer than the target-string early before cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:35:31.995627+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a205e11c5e592e7626f3cf1ebec5374217ee07d",
+    "url": "https://github.com/WebKit/WebKit/commit/7a205e11c5e592e7626f3cf1ebec5374217ee07d",
+    "message": "[JSC][Wasm] Enable JS string builtins for ESM Wasm modules\nhttps://bugs.webkit.org/show_bug.cgi?id=322238\n\nReviewed by Yusuke Suzuki.\n\nESM compilation of .wasm now applies the js-string builtin set and\nwasm:js/string-constants. Reserved ESM import checks follow the spec\norder: module name, then impo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:36:09.300104+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "url": "https://github.com/WebKit/WebKit/commit/8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "message": "[JSC] TypedArray constructor needs to copy JSArray content when its copying may cause side-effect\nhttps://bugs.webkit.org/show_bug.cgi?id=322954\nrdar://186227333\n\nReviewed by Yijia Huang.\n\nWhen constructing a TypedArray from JSArray, we need to copy and convert\nthe content for the array, which invok",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T21:36:46.243020+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70a75461959a91b29395c03ce7ba494745c37c0a",
+    "url": "https://github.com/WebKit/WebKit/commit/70a75461959a91b29395c03ce7ba494745c37c0a",
+    "message": "[JSC] [Intl.DurationFormat] Omit separator when minutes is hidden\nhttps://bugs.webkit.org/show_bug.cgi?id=317486\n\nReviewed by Yusuke Suzuki.\n\n`Intl.DurationFormat.prototype.format()` incorrectly appends a separator, such as \":\",\nwhen both `hoursDisplay` and `minutesDisplay` are set to `\"auto\"` and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
