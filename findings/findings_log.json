@@ -58737,5 +58737,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T16:30:55.747222+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "url": "https://github.com/WebKit/WebKit/commit/b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "message": "[css-link-params] Render SVG resources with link parameters\nhttps://bugs.webkit.org/show_bug.cgi?id=322128\nrdar://185355738\n\nReviewed by Antti Koivisto.\n\n319240@main parses, computes and serializes the link-parameters property but does\nnot use the computed value, so it has no rendering effect. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T16:31:32.917982+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "url": "https://github.com/WebKit/WebKit/commit/7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "message": "[CMake] Enable Thread/Unsafe Buffer Warnings on Cocoa Ports\nhttps://bugs.webkit.org/show_bug.cgi?id=322984\nrdar://186256294\n\nReviewed by Zak Ridouh.\n\nThe Cocoa CMake build didn't enable thread safety or unsafe buffer\nwarnings by default. This patch does so. It also applies unsafe buffer\nwarning CFla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T16:32:10.229158+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "url": "https://github.com/WebKit/WebKit/commit/b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "message": "[css-link-params] Render SVG resources with link parameters\nhttps://bugs.webkit.org/show_bug.cgi?id=322128\nrdar://185355738\n\nReviewed by Antti Koivisto.\n\n319240@main parses, computes and serializes the link-parameters property but does\nnot use the computed value, so it has no rendering effect. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T16:32:47.542321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "url": "https://github.com/WebKit/WebKit/commit/7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "message": "[CMake] Enable Thread/Unsafe Buffer Warnings on Cocoa Ports\nhttps://bugs.webkit.org/show_bug.cgi?id=322984\nrdar://186256294\n\nReviewed by Zak Ridouh.\n\nThe Cocoa CMake build didn't enable thread safety or unsafe buffer\nwarnings by default. This patch does so. It also applies unsafe buffer\nwarning CFla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
