@@ -58697,5 +58697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T08:57:02.578423+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b09a39d42ca42d90767e7499dea4fb3f4efa018",
+    "url": "https://github.com/WebKit/WebKit/commit/4b09a39d42ca42d90767e7499dea4fb3f4efa018",
+    "message": "[JSC] Reduce CodeBlock::m_lock held scope\nhttps://bugs.webkit.org/show_bug.cgi?id=322895\nrdar://186148644\n\nReviewed by Keith Miller.\n\nNarrow scope of CodeBlock::m_lock down to reduce lock contention.\n\n* Source/JavaScriptCore/bytecode/CodeBlock.cpp:\n(JSC::CodeBlock::visitChildren):\n* Source/JavaScrip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T08:57:39.476948+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "url": "https://github.com/WebKit/WebKit/commit/f733e45e7f50ad876bd768dfe35ea536ab7045c3",
+    "message": "[JSC] Do not broadcast termination from the thread that is about to stop draining\nhttps://bugs.webkit.org/show_bug.cgi?id=322475\nrdar://185763143\n\nReviewed by Yijia Huang.\n\nWhen reaching to termination, there is no work. Then waking up helper\nthreads do not offer anything since it is waiting until (",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
