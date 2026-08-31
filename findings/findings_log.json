@@ -58597,5 +58597,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T02:32:11.698666+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "00f03c1f906ff25f9536f528e81477c861c0325c",
+    "url": "https://github.com/WebKit/WebKit/commit/00f03c1f906ff25f9536f528e81477c861c0325c",
+    "message": "Drop remaining WTF::Expected alias usage\nhttps://bugs.webkit.org/show_bug.cgi?id=322894\nrdar://186147326\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed, in favor of\nusing <expected> directly.\n\nIn webkit.org/b/322893, we dropped the alias from the IPC and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T02:32:48.481806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e73985a506bdb55ff4a52b3b09cf3485ceb49676",
+    "url": "https://github.com/WebKit/WebKit/commit/e73985a506bdb55ff4a52b3b09cf3485ceb49676",
+    "message": "[JSC] TypedArray setFromTypedArray cannot use memmove when region is intentionally overlapping and spec algorithm read back the modified result\nhttps://bugs.webkit.org/show_bug.cgi?id=322892\nrdar://186145219\n\nReviewed by Keith Miller.\n\nTypedArray setFromTypedArray cannot use memmove when\n\n1. region ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T02:33:25.258975+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b09a39d42ca42d90767e7499dea4fb3f4efa018",
+    "url": "https://github.com/WebKit/WebKit/commit/4b09a39d42ca42d90767e7499dea4fb3f4efa018",
+    "message": "[JSC] Reduce CodeBlock::m_lock held scope\nhttps://bugs.webkit.org/show_bug.cgi?id=322895\nrdar://186148644\n\nReviewed by Keith Miller.\n\nNarrow scope of CodeBlock::m_lock down to reduce lock contention.\n\n* Source/JavaScriptCore/bytecode/CodeBlock.cpp:\n(JSC::CodeBlock::visitChildren):\n* Source/JavaScrip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T02:34:02.119237+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "00f03c1f906ff25f9536f528e81477c861c0325c",
+    "url": "https://github.com/WebKit/WebKit/commit/00f03c1f906ff25f9536f528e81477c861c0325c",
+    "message": "Drop remaining WTF::Expected alias usage\nhttps://bugs.webkit.org/show_bug.cgi?id=322894\nrdar://186147326\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed, in favor of\nusing <expected> directly.\n\nIn webkit.org/b/322893, we dropped the alias from the IPC and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-08-31T02:34:38.986925+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e73985a506bdb55ff4a52b3b09cf3485ceb49676",
+    "url": "https://github.com/WebKit/WebKit/commit/e73985a506bdb55ff4a52b3b09cf3485ceb49676",
+    "message": "[JSC] TypedArray setFromTypedArray cannot use memmove when region is intentionally overlapping and spec algorithm read back the modified result\nhttps://bugs.webkit.org/show_bug.cgi?id=322892\nrdar://186145219\n\nReviewed by Keith Miller.\n\nTypedArray setFromTypedArray cannot use memmove when\n\n1. region ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
