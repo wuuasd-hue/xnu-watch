@@ -59257,5 +59257,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T18:39:46.400041+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "url": "https://github.com/WebKit/WebKit/commit/f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "message": "Replace references to a font's \"computedSize\" with \"usedSize\"\nhttps://bugs.webkit.org/show_bug.cgi?id=322908\n\nReviewed by Darin Adler.\n\nPart 1 of https://bugs.webkit.org/show_bug.cgi?id=319263\n\nFontDescription and Style::ComputedStyleBase reference a font's \"computed size\",\nbut the value they curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T18:40:27.104617+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "url": "https://github.com/WebKit/WebKit/commit/ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "message": "IPInt br_on_cast/br_on_cast_fail must handle overlong LEB128 opcode\nhttps://bugs.webkit.org/show_bug.cgi?id=317349\nrdar://178289134\n\nReviewed by Yusuke Suzuki.\n\nCurrently IPInt implementations of br_on_cast/br_on_cast_fail assume\nflags are at a fixed offset in the instruction but overlong opcodes\nar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T18:41:05.333812+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "url": "https://github.com/WebKit/WebKit/commit/731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "message": "[JSC] Fix Structure transition wrong checking issues\nhttps://bugs.webkit.org/show_bug.cgi?id=323085\nrdar://186339983\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nAdding MonoProto condition to isHandlerPrototypeChainCacheable.\nOtherwise we may get a structure which has differnt [[Prototype]] (due",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T18:41:43.294542+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "url": "https://github.com/WebKit/WebKit/commit/5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "message": "Safari and Swift Browser can't be built against WebKit built with CMake\nhttps://bugs.webkit.org/show_bug.cgi?id=322473\nrdar://185760184\n\nReviewed by Elliott Williams.\n\nThere were a few issues preventing to build Safari against WebKit built via cmake\nas well as problems preventing it to run. Related ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T18:42:21.384915+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "url": "https://github.com/WebKit/WebKit/commit/3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "message": "[JSC] One accessor on a prototype disables the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=322708\n\nReviewed by Yusuke Suzuki.\n\ncanUseMegamorphicPutFastPath rejects a prototype chain if any Structure on\nit has hasReadOnlyOrGetterSetterPropertiesExcludingProto. That flag covers\neve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
