@@ -59157,5 +59157,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T15:15:11.702624+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a261c62aff59aaffd41f5b40e9c99ad863038638",
+    "url": "https://github.com/WebKit/WebKit/commit/a261c62aff59aaffd41f5b40e9c99ad863038638",
+    "message": "[JSC] Store FTL OSR exit `ValueRep`s as a byte stream and shrink `FTL::OSRExit`\nhttps://bugs.webkit.org/show_bug.cgi?id=322888\n\nReviewed by Yusuke Suzuki.\n\nAfter 319934@main (FTL::OSRExitDescriptor) and 320007@main (DFG\nVariableEventStream), the FTL still keeps an 80 byte FTL::OSRExit plus a\nheap-al",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T15:15:48.975337+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "url": "https://github.com/WebKit/WebKit/commit/5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "message": "Safari and Swift Browser can't be built against WebKit built with CMake\nhttps://bugs.webkit.org/show_bug.cgi?id=322473\nrdar://185760184\n\nReviewed by Elliott Williams.\n\nThere were a few issues preventing to build Safari against WebKit built via cmake\nas well as problems preventing it to run. Related ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T15:16:26.708455+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "url": "https://github.com/WebKit/WebKit/commit/3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "message": "[JSC] One accessor on a prototype disables the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=322708\n\nReviewed by Yusuke Suzuki.\n\ncanUseMegamorphicPutFastPath rejects a prototype chain if any Structure on\nit has hasReadOnlyOrGetterSetterPropertiesExcludingProto. That flag covers\neve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T15:17:03.937370+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38281d033aee844d56610d9e9b1ea23894f310be",
+    "url": "https://github.com/WebKit/WebKit/commit/38281d033aee844d56610d9e9b1ea23894f310be",
+    "message": "[YARR] A character following a class set operand in a `/v` class adds `U+0000`\nhttps://bugs.webkit.org/show_bug.cgi?id=322962\n\nReviewed by Yusuke Suzuki.\n\nClassSetParserDelegate holds back the previous character in m_character\nuntil it knows whether it starts a range; m_character is only meaningful\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T15:17:41.284370+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a261c62aff59aaffd41f5b40e9c99ad863038638",
+    "url": "https://github.com/WebKit/WebKit/commit/a261c62aff59aaffd41f5b40e9c99ad863038638",
+    "message": "[JSC] Store FTL OSR exit `ValueRep`s as a byte stream and shrink `FTL::OSRExit`\nhttps://bugs.webkit.org/show_bug.cgi?id=322888\n\nReviewed by Yusuke Suzuki.\n\nAfter 319934@main (FTL::OSRExitDescriptor) and 320007@main (DFG\nVariableEventStream), the FTL still keeps an 80 byte FTL::OSRExit plus a\nheap-al",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
