@@ -59437,5 +59437,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T23:26:55.613234+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74d9ff91dbb7cac871307142a032f8cbefa72046",
+    "url": "https://github.com/WebKit/WebKit/commit/74d9ff91dbb7cac871307142a032f8cbefa72046",
+    "message": "[JSC] Object.freeze should bump megamorphic IC epoch\nhttps://bugs.webkit.org/show_bug.cgi?id=323131\nrdar://186393610\n\nReviewed by Keith Miller.\n\n320236@main allows having accessors in [[Prototype]] chain. But\nObject.freeze is not invalidating megamorphic IC when it is\nmayBePrototype(). It needs to b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T23:27:32.748553+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65ef7f38f8f9195dd239b1cd46b98e4b0a8b6a12",
+    "url": "https://github.com/WebKit/WebKit/commit/65ef7f38f8f9195dd239b1cd46b98e4b0a8b6a12",
+    "message": "Make B3 ccmp chain matcher use RAII\nhttps://bugs.webkit.org/show_bug.cgi?id=315389\nrdar://176792415\n\nReviewed by Keith Miller.\n\nB3 ccmp chain matcher needs to roll back if a given pattern match fails\npart way through. RAII is a more principled and less error prone way to\nhandle this.\n\nTest: JSTests/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T23:28:11.341700+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "url": "https://github.com/WebKit/WebKit/commit/731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "message": "[JSC] Fix Structure transition wrong checking issues\nhttps://bugs.webkit.org/show_bug.cgi?id=323085\nrdar://186339983\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nAdding MonoProto condition to isHandlerPrototypeChainCacheable.\nOtherwise we may get a structure which has differnt [[Prototype]] (due",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T23:28:48.455037+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c91665ec948f498eab32a5662143ac9affd10f7",
+    "url": "https://github.com/WebKit/WebKit/commit/1c91665ec948f498eab32a5662143ac9affd10f7",
+    "message": "[JSC] offlineasm: emit tbz/tbnz for single-bit test branches on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=322779\nrdar://186041838\n\nReviewed by Keith Miller.\n\nriscLowerTest lowers every masked test-and-branch:\n\n    btpnz t0, 8, .foo\n\ninto an and into a temporary followed by a compare-and-branch o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
