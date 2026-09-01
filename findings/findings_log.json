@@ -58997,5 +58997,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:46:48.406841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "url": "https://github.com/WebKit/WebKit/commit/d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "message": "[Cocoa] Apply -Wthread-safety to all Xcode targets via CommonBase.xcconfig\n<https://bugs.webkit.org/show_bug.cgi?id=323013>\n<rdar://186279308>\n\nReviewed by Elliott Williams and Keith Miller.\n\nThe CMake build enables -Wthread-safety globally on Cocoa ports\n(320158@main), so third-party targets such a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:47:25.435943+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "url": "https://github.com/WebKit/WebKit/commit/a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "message": "[JSC][Wasm] Elide write barrier when storing a constant non-cell\nhttps://bugs.webkit.org/show_bug.cgi?id=322500\n\nReviewed by Yusuke Suzuki.\n\nA constant non-cell (jsNull) cannot be a remembered-set source. Skip the\nwrite barrier for that store on a ref field or array element in OMG and\nBBQ.\n\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:48:02.660214+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56241cc1137f1aa6923b80e59522406084e20637",
+    "url": "https://github.com/WebKit/WebKit/commit/56241cc1137f1aa6923b80e59522406084e20637",
+    "message": "[JSC] `Temporal.ZonedDateTime.prototype.round` resolves the rounded wall-clock time with a minute-rounded offset\nhttps://bugs.webkit.org/show_bug.cgi?id=322923\n\nReviewed by Yusuke Suzuki.\n\nround() re-interprets the rounded wall-clock time through\nInterpretISODateTimeOffset with the receiver's curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:48:39.610243+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38281d033aee844d56610d9e9b1ea23894f310be",
+    "url": "https://github.com/WebKit/WebKit/commit/38281d033aee844d56610d9e9b1ea23894f310be",
+    "message": "[YARR] A character following a class set operand in a `/v` class adds `U+0000`\nhttps://bugs.webkit.org/show_bug.cgi?id=322962\n\nReviewed by Yusuke Suzuki.\n\nClassSetParserDelegate holds back the previous character in m_character\nuntil it knows whether it starts a range; m_character is only meaningful\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:49:16.758029+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "471af61580477c3a63158140e15543d5c6d9e2e8",
+    "url": "https://github.com/WebKit/WebKit/commit/471af61580477c3a63158140e15543d5c6d9e2e8",
+    "message": "[JSC] Remove JSValueRegs\nhttps://bugs.webkit.org/show_bug.cgi?id=322929\nrdar://186190599\n\nReviewed by Justin Michaud.\n\nThis patch removes JSValueRegs and related operations / classes.\nThis was introduced just for 32bit since 32bit represents JSValue in two\nregisters. Given that 32bit JIT is dropped,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T05:49:53.905577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "url": "https://github.com/WebKit/WebKit/commit/d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "message": "[Cocoa] Apply -Wthread-safety to all Xcode targets via CommonBase.xcconfig\n<https://bugs.webkit.org/show_bug.cgi?id=323013>\n<rdar://186279308>\n\nReviewed by Elliott Williams and Keith Miller.\n\nThe CMake build enables -Wthread-safety globally on Cocoa ports\n(320158@main), so third-party targets such a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
