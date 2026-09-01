@@ -59117,5 +59117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T10:34:40.313572+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "url": "https://github.com/WebKit/WebKit/commit/a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "message": "[JSC][Wasm] Elide write barrier when storing a constant non-cell\nhttps://bugs.webkit.org/show_bug.cgi?id=322500\n\nReviewed by Yusuke Suzuki.\n\nA constant non-cell (jsNull) cannot be a remembered-set source. Skip the\nwrite barrier for that store on a ref field or array element in OMG and\nBBQ.\n\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T10:35:17.245377+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56241cc1137f1aa6923b80e59522406084e20637",
+    "url": "https://github.com/WebKit/WebKit/commit/56241cc1137f1aa6923b80e59522406084e20637",
+    "message": "[JSC] `Temporal.ZonedDateTime.prototype.round` resolves the rounded wall-clock time with a minute-rounded offset\nhttps://bugs.webkit.org/show_bug.cgi?id=322923\n\nReviewed by Yusuke Suzuki.\n\nround() re-interprets the rounded wall-clock time through\nInterpretISODateTimeOffset with the receiver's curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
