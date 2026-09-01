@@ -59357,5 +59357,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T21:27:57.759393+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c91665ec948f498eab32a5662143ac9affd10f7",
+    "url": "https://github.com/WebKit/WebKit/commit/1c91665ec948f498eab32a5662143ac9affd10f7",
+    "message": "[JSC] offlineasm: emit tbz/tbnz for single-bit test branches on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=322779\nrdar://186041838\n\nReviewed by Keith Miller.\n\nriscLowerTest lowers every masked test-and-branch:\n\n    btpnz t0, 8, .foo\n\ninto an and into a temporary followed by a compare-and-branch o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T21:28:35.255480+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f069ce3b3ce2fda5f7cd113f145ee1abb3b26e0",
+    "url": "https://github.com/WebKit/WebKit/commit/8f069ce3b3ce2fda5f7cd113f145ee1abb3b26e0",
+    "message": "[JSC] YarrJIT non-BMP backtrack trampoline (L>F branch) does not add firstCharacterAdditionalReadSize to index, returns start > end\nhttps://bugs.webkit.org/show_bug.cgi?id=316996\nrdar://177699255\n\nReviewed by Yijia Huang.\n\nThis patch fixes a mistake where firstCharacterAdditionalReadSize isn't added",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T21:29:12.866415+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "url": "https://github.com/WebKit/WebKit/commit/f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "message": "Replace references to a font's \"computedSize\" with \"usedSize\"\nhttps://bugs.webkit.org/show_bug.cgi?id=322908\n\nReviewed by Darin Adler.\n\nPart 1 of https://bugs.webkit.org/show_bug.cgi?id=319263\n\nFontDescription and Style::ComputedStyleBase reference a font's \"computed size\",\nbut the value they curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T21:29:50.382215+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "url": "https://github.com/WebKit/WebKit/commit/ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "message": "IPInt br_on_cast/br_on_cast_fail must handle overlong LEB128 opcode\nhttps://bugs.webkit.org/show_bug.cgi?id=317349\nrdar://178289134\n\nReviewed by Yusuke Suzuki.\n\nCurrently IPInt implementations of br_on_cast/br_on_cast_fail assume\nflags are at a fixed offset in the instruction but overlong opcodes\nar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
