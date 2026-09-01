@@ -58937,5 +58937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T00:50:02.251636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "471af61580477c3a63158140e15543d5c6d9e2e8",
+    "url": "https://github.com/WebKit/WebKit/commit/471af61580477c3a63158140e15543d5c6d9e2e8",
+    "message": "[JSC] Remove JSValueRegs\nhttps://bugs.webkit.org/show_bug.cgi?id=322929\nrdar://186190599\n\nReviewed by Justin Michaud.\n\nThis patch removes JSValueRegs and related operations / classes.\nThis was introduced just for 32bit since 32bit represents JSValue in two\nregisters. Given that 32bit JIT is dropped,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T00:50:39.522152+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "27eb122967d3188a3ea63a018bcff533df3d88e0",
+    "url": "https://github.com/WebKit/WebKit/commit/27eb122967d3188a3ea63a018bcff533df3d88e0",
+    "message": "[JSC] Reject when search-string is longer than the target-string early\nhttps://bugs.webkit.org/show_bug.cgi?id=322924\nrdar://186187306\n\nReviewed by Marcus Plutowski.\n\nFor String#indexOf / String#includes / StringView::find, reject when\nsearch-string is longer than the target-string early before cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-01T00:51:16.861971+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a205e11c5e592e7626f3cf1ebec5374217ee07d",
+    "url": "https://github.com/WebKit/WebKit/commit/7a205e11c5e592e7626f3cf1ebec5374217ee07d",
+    "message": "[JSC][Wasm] Enable JS string builtins for ESM Wasm modules\nhttps://bugs.webkit.org/show_bug.cgi?id=322238\n\nReviewed by Yusuke Suzuki.\n\nESM compilation of .wasm now applies the js-string builtin set and\nwasm:js/string-constants. Reserved ESM import checks follow the spec\norder: module name, then impo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
