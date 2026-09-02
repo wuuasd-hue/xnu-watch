@@ -59877,5 +59877,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T21:09:58.728015+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "url": "https://github.com/WebKit/WebKit/commit/1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "message": "[JSC] Baseline JIT should not construct `GCOwnedDataScope` on the compiler thread\nhttps://bugs.webkit.org/show_bug.cgi?id=323102\n\nReviewed by Yusuke Suzuki.\n\nHeap::m_topGCOwnedDataScope is a debug-only, unsynchronized field that says\nwhether a GCOwnedDataScope is live on the mutator's stack, and\nHea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T21:10:36.404205+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "url": "https://github.com/WebKit/WebKit/commit/afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "message": "Enhance testLibJSCTools to track test suite run time, and fix an intermittent hang.\nhttps://bugs.webkit.org/show_bug.cgi?id=323167\nrdar://186413086\n\nReviewed by Marcus Plutowski and Dan Hecht.\n\nNow introducing and using a SuiteTracer RAII class to track testLibJSCTools' test suite\nrun times.  We wil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T21:11:13.875536+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "url": "https://github.com/WebKit/WebKit/commit/162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "message": "Fire webRequest events for declarativeNetRequest-blocked loads\nhttps://bugs.webkit.org/show_bug.cgi?id=313971\nrdar://176177851\n\nReviewed by Timothy Hatcher.\n\nThis patch makes a Safari Web Extension fire webRequest.onBeforeRequest followed by\nwebRequest.onErrorOccurred when a load is blocked by the e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T21:11:51.425250+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "url": "https://github.com/WebKit/WebKit/commit/a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "message": "bankofamerica.com: cannot complete a wire transfer because the window load event is never dispatched\nhttps://bugs.webkit.org/show_bug.cgi?id=323179\nrdar://186373617\n\nReviewed by Chris Dumez.\n\nOn bankofamerica.com's wire transfer page the \"Continue Transfer\" button stays\ndisabled because the 2FA step",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T21:12:29.042001+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "url": "https://github.com/WebKit/WebKit/commit/1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "message": "[JSC] Baseline JIT should not construct `GCOwnedDataScope` on the compiler thread\nhttps://bugs.webkit.org/show_bug.cgi?id=323102\n\nReviewed by Yusuke Suzuki.\n\nHeap::m_topGCOwnedDataScope is a debug-only, unsynchronized field that says\nwhether a GCOwnedDataScope is live on the mutator's stack, and\nHea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
