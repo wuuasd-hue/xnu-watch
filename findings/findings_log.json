@@ -59517,5 +59517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T01:09:46.078511+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f069ce3b3ce2fda5f7cd113f145ee1abb3b26e0",
+    "url": "https://github.com/WebKit/WebKit/commit/8f069ce3b3ce2fda5f7cd113f145ee1abb3b26e0",
+    "message": "[JSC] YarrJIT non-BMP backtrack trampoline (L>F branch) does not add firstCharacterAdditionalReadSize to index, returns start > end\nhttps://bugs.webkit.org/show_bug.cgi?id=316996\nrdar://177699255\n\nReviewed by Yijia Huang.\n\nThis patch fixes a mistake where firstCharacterAdditionalReadSize isn't added",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T01:10:24.204155+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74d9ff91dbb7cac871307142a032f8cbefa72046",
+    "url": "https://github.com/WebKit/WebKit/commit/74d9ff91dbb7cac871307142a032f8cbefa72046",
+    "message": "[JSC] Object.freeze should bump megamorphic IC epoch\nhttps://bugs.webkit.org/show_bug.cgi?id=323131\nrdar://186393610\n\nReviewed by Keith Miller.\n\n320236@main allows having accessors in [[Prototype]] chain. But\nObject.freeze is not invalidating megamorphic IC when it is\nmayBePrototype(). It needs to b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
