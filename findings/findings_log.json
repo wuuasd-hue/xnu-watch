@@ -59557,5 +59557,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T05:58:38.019385+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba64b8f5131672964e445b50b589635a308feedb",
+    "url": "https://github.com/WebKit/WebKit/commit/ba64b8f5131672964e445b50b589635a308feedb",
+    "message": "NavigationAction::m_type is left uninitialized by the default constructor\nhttps://bugs.webkit.org/show_bug.cgi?id=322905\nrdar://186162338\n\nReviewed by Chris Dumez.\n\nNavigationAction's user-provided default constructor doesn't zero-fill\nmembers, and m_type is the only one without an in-class initiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T05:59:15.515554+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e89e47239c6d427db0321fd13d487a463124607e",
+    "url": "https://github.com/WebKit/WebKit/commit/e89e47239c6d427db0321fd13d487a463124607e",
+    "message": "Capture storedCredentialsPolicy before moving ResourceLoaderOptions in CrossOriginAccessControl\nhttps://bugs.webkit.org/show_bug.cgi?id=322903\nrdar://186161100\n\nReviewed by Chris Dumez.\n\ncreatePotentialAccessControlRequest() read options.storedCredentialsPolicy\nafter WTF::move()'ing options into the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T05:59:52.933970+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "url": "https://github.com/WebKit/WebKit/commit/0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "message": "Reduce sizeof(DocumentThreadableLoader) by grouping its one-byte members\nhttps://bugs.webkit.org/show_bug.cgi?id=322896\nrdar://186149141\n\nReviewed by Chris Dumez.\n\nDocumentThreadableLoader declared its six one-byte members\n(m_responsesCanBeOpaque, m_sameOriginRequest, m_simpleRequest, m_async,\nm_del",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T06:00:30.459772+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "url": "https://github.com/WebKit/WebKit/commit/8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "message": "PolicyChecker.cpp has a dead #undef and leaks five macros into the unified build\nhttps://bugs.webkit.org/show_bug.cgi?id=322897\nrdar://186149389\n\nReviewed by Chris Dumez.\n\nThe #undef block at the end of PolicyChecker.cpp did not match the\nmacros defined at the top of the file: it undef'd IS_ALLOWED,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T06:01:07.905111+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65ef7f38f8f9195dd239b1cd46b98e4b0a8b6a12",
+    "url": "https://github.com/WebKit/WebKit/commit/65ef7f38f8f9195dd239b1cd46b98e4b0a8b6a12",
+    "message": "Make B3 ccmp chain matcher use RAII\nhttps://bugs.webkit.org/show_bug.cgi?id=315389\nrdar://176792415\n\nReviewed by Keith Miller.\n\nB3 ccmp chain matcher needs to roll back if a given pattern match fails\npart way through. RAII is a more principled and less error prone way to\nhandle this.\n\nTest: JSTests/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T06:01:45.185402+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba64b8f5131672964e445b50b589635a308feedb",
+    "url": "https://github.com/WebKit/WebKit/commit/ba64b8f5131672964e445b50b589635a308feedb",
+    "message": "NavigationAction::m_type is left uninitialized by the default constructor\nhttps://bugs.webkit.org/show_bug.cgi?id=322905\nrdar://186162338\n\nReviewed by Chris Dumez.\n\nNavigationAction's user-provided default constructor doesn't zero-fill\nmembers, and m_type is the only one without an in-class initiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

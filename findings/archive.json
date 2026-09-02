@@ -11799,6 +11799,64 @@
     "url": "https://github.com/WebKit/WebKit/commit/65ef7f38f8f9195dd239b1cd46b98e4b0a8b6a12",
     "last_outcome": "DISCARD",
     "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "ba64b8f5131672964e445b50b589635a308feedb",
+    "message": "NavigationAction::m_type is left uninitialized by the default constructor\nhttps://bugs.webkit.org/show_bug.cgi?id=322905\nrdar://186162338\n\nReviewed by Chris Dumez.\n\nNavigationAction's user-provided default constructor doesn't zero-fill\nmembers, and m_type is the only one without an in-class initiali",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/NavigationAction.h ---\n@@ -144,7 +144,7 @@ class NavigationAction : public FrameLoadRequestBase {\n     std::optional<PrivateClickMeasurement> m_privateClickMeasurement;\n     std::function<bool()> m_pendingDispatchNavigateEvent;\n \n-    NavigationType m_type;\n+    NavigationType m_type { NavigationType::Other };\n     std::optional<NavigationNavigationType> m_navigationAPIType;\n \n     bool m_hasOpenedFrames { false };\n",
+    "url": "https://github.com/WebKit/WebKit/commit/ba64b8f5131672964e445b50b589635a308feedb",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "e89e47239c6d427db0321fd13d487a463124607e",
+    "message": "Capture storedCredentialsPolicy before moving ResourceLoaderOptions in CrossOriginAccessControl\nhttps://bugs.webkit.org/show_bug.cgi?id=322903\nrdar://186161100\n\nReviewed by Chris Dumez.\n\ncreatePotentialAccessControlRequest() read options.storedCredentialsPolicy\nafter WTF::move()'ing options into the",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/CrossOriginAccessControl.cpp ---\n@@ -185,8 +185,9 @@ CachedResourceRequest createPotentialAccessControlRequest(ResourceRequest&& requ\n         options.storedCredentialsPolicy = StoredCredentialsPolicy::DoNotUse;\n     }\n \n+    auto storedCredentialsPolicy = options.storedCredentialsPolicy;\n     CachedResourceRequest cachedRequest { WTF::move(request), WTF::move(options) };\n-    updateRequestForAccessControl(cachedRequest.resourceRequest(), protect(document.securityOrigin()).get(), options.storedCredentialsPolicy);\n+    updateRequestForAccessControl(cachedRequest.resourceRequest(), protect(document.securityOrigin()).get(), storedCredentialsPolicy);\n     return cachedRequest;\n }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/e89e47239c6d427db0321fd13d487a463124607e",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "message": "Reduce sizeof(DocumentThreadableLoader) by grouping its one-byte members\nhttps://bugs.webkit.org/show_bug.cgi?id=322896\nrdar://186149141\n\nReviewed by Chris Dumez.\n\nDocumentThreadableLoader declared its six one-byte members\n(m_responsesCanBeOpaque, m_sameOriginRequest, m_simpleRequest, m_async,\nm_del",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/DocumentThreadableLoader.cpp ---\n@@ -1,6 +1,6 @@\n /*\n  * Copyright (C) 2011, 2012 Google Inc. All rights reserved.\n- * Copyright (C) 2011-2025 Apple Inc. All rights reserved.\n+ * Copyright (C) 2011-2026 Apple Inc. All rights reserved.\n  *\n  * Redistribution and use in source and binary forms, with or without\n  * modification, are permitted provided that the following conditions are\n@@ -124,12 +124,12 @@ DocumentThreadableLoader::DocumentThreadableLoader(Document& document, Threadabl\n     , m_options(options)\n     , m_origin(WTF::move(origin))\n     , m_referrer(WTF::move(referrer))\n+    , m_contentSecurityPolicy(WTF::move(contentSecurityPolicy))\n+    , m_crossOriginEmbedderPolicy(WTF::move(crossOriginEmbedderPolicy))\n     , m_sameOriginRequest(protect(securityOrigin())->canRequest(request.url(), OriginAccessPatternsForWebProcess::singleton()))\n     , m_simpleRequest(true)\n     , m_async(blockingBehavior == LoadAsynchronously)\n     , m_delayCallbacksForIntegrityCheck(!m_options.integrity.isEmpty())\n-    , m_contentSecurityPolicy(WTF::move(contentSecurityPolicy))\n-    , m_crossOriginEmbedderPolicy(WTF::move(crossOriginEmbedderPolicy))\n     , m_shouldLogError(shouldLogError)\n {\n     // Setting a referrer header is only supported in the async code path.\n\n--- Source/WebCore/loader/DocumentThreadableLoader.h ---\n@@ -1,6 +1,6 @@\n /*\n  * Copyright (C) 2009, 2012 Google Inc. All rights reserved.\n- * Copyright (C) 2016-2025 Apple Inc. All rights reserved.\n+ * Copyright (C) 2016-2026 Apple Inc. All rights reserved.\n  *\n  * Redistribution and use in source and binary forms, with or without\n  * modification, are permitted provided that the following conditions are\n@@ -131,21 +131,21 @@ class CachedRawResource;\n         WeakPtr<ThreadableLoaderClient> m_client;\n         WeakPtr<Document, WeakPtrImplWithEventTargetData> m_document;\n         ThreadableLoaderOptions m_options;\n-        bool m_responsesCanBeOpaque { true };\n         RefPtr<SecurityOrigin> m_origin;\n         String m_referrer;\n-        bool m_sameOriginRequest;\n-        bool m_simpleRequest;\n-        bool m_async;\n-        bool m_delayCallbacksForIntegrityCheck;\n         std::unique_ptr<ContentSecurityPolicy> m_contentSecurityPolicy;\n         std::optional<CrossOriginEmbedderPolicy> m_crossOriginEmbedderPolicy;\n         RefPtr<CrossOriginPreflightChecker> m_preflightChecker;\n         std::optional<HTTPHeaderMap> m_originalHeaders;\n         URL m_responseURL;\n+        std::optional<ResourceRequest> m_bypassingPreflightForServiceWorkerRequest;\n \n+        bool m_responsesCanBeOpaque { true };\n+        bool m_sameOriginRequest;\n+        bool m_simpleRequest;\n+        bool m_async;\n+        bool m_delayCallbacksForIntegrityCheck;\n         ShouldLogError m_shouldLogError;\n-        std::optional<ResourceRequest> m_bypassingPreflightForServiceWorkerRequest;\n     };\n \n } // namespace WebCore\n",
+    "url": "https://github.com/WebKit/WebKit/commit/0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "message": "PolicyChecker.cpp has a dead #undef and leaks five macros into the unified build\nhttps://bugs.webkit.org/show_bug.cgi?id=322897\nrdar://186149389\n\nReviewed by Chris Dumez.\n\nThe #undef block at the end of PolicyChecker.cpp did not match the\nmacros defined at the top of the file: it undef'd IS_ALLOWED,",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/PolicyChecker.cpp ---\n@@ -420,7 +420,11 @@ void PolicyChecker::handleUnimplementablePolicy(const ResourceError& error)\n \n } // namespace WebCore\n \n-#undef IS_ALLOWED\n #undef PAGE_ID\n+#undef PAGE_ID_WITH_THIS\n #undef FRAME_ID\n+#undef FRAME_ID_WITH_THIS\n+#undef POLICYCHECKER_RELEASE_LOG_WITH_THIS\n #undef POLICYCHECKER_RELEASE_LOG\n+#undef POLICYCHECKER_RELEASE_LOG_FORWARDABLE\n+#undef POLICYCHECKER_RELEASE_LOG_FORWARDABLE_WITH_THIS\n",
+    "url": "https://github.com/WebKit/WebKit/commit/8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "last_outcome": "DISCARD",
+    "focus_used": [
       "initial pass (target-specific lens)"
     ],
     "times_reexamined": 0
