@@ -11889,6 +11889,36 @@
     "url": "https://github.com/WebKit/WebKit/commit/a70377af0564cae4749383349407e6e2c6be4b1e",
     "last_outcome": "DISCARD",
     "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "message": "[JSC] Align JSC shell's main thread QoS to WebContent process' one\nhttps://bugs.webkit.org/show_bug.cgi?id=323207\nrdar://186449124\n\nReviewed by Keith Miller.\n\nTo make performance measurement in JSC shell more aligned to WebContent\nprocess, we call setCurrentThreadIsUserInteractive(-1) to adjust the\n",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/jsc.cpp ---\n@@ -4597,6 +4597,9 @@ int jscmain(int argc, char** argv)\n \n     WTF::initializeMainThread();\n \n+    // Match the QoS of the WebKit WebContent process.\n+    WTF::Thread::setCurrentThreadIsUserInteractive(-1);\n+\n     // Note that the options parsing can affect VM creation, and thus\n     // comes first.\n     mainCommandLine.construct(argc, argv);\n",
+    "url": "https://github.com/WebKit/WebKit/commit/c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "message": "bankofamerica.com: cannot complete a wire transfer because the window load event is never dispatched\nhttps://bugs.webkit.org/show_bug.cgi?id=323179\nrdar://186373617\n\nReviewed by Chris Dumez.\n\nOn bankofamerica.com's wire transfer page the \"Continue Transfer\" button stays\ndisabled because the 2FA step",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- LayoutTests/imported/w3c/web-platform-tests/html/dom/documents/resource-metadata-management/load-event-after-readystatechange-starts-load-expected.txt ---\n@@ -0,0 +1,3 @@\n+\n+PASS The window load event is dispatched when a readystatechange handler starts a new load\n+\n\n--- LayoutTests/imported/w3c/web-platform-tests/html/dom/documents/resource-metadata-management/load-event-after-readystatechange-starts-load.html ---\n@@ -0,0 +1,39 @@\n+<!DOCTYPE html>\n+<meta charset=utf-8>\n+<title>The window load event is dispatched when a readystatechange handler starts a new load</title>\n+<link rel=help href=\"https://html.spec.whatwg.org/multipage/parsing.html#the-end\">\n+<link rel=help href=\"https://html.spec.whatwg.org/multipage/#resource-metadata-management\">\n+<script src=\"/resources/testharness.js\"></script>\n+<script src=\"/resources/testharnessreport.js\"></script>\n+<div id=\"log\"></div>\n+<script>\n+// The readystatechange event for \"complete\" is dispatched synchronously while the document\n+// is being marked as completely loaded, so a handler for it runs before the load event.\n+// Starting a new load from that handler must not stop the load event from being dispatched.\n+//\n+// Engines differ on whether the new load delays the load event, so no ordering between the\n+// two is asserted here.\n+var loadEventTest = async_test(\"The window load event is dispatched when a readystatechange handler starts a new load\");\n+\n+function startLoadFromReadyStateChangeHandler() {\n+    // A dynamically inserted script with a src is async. Its contents are irrelevant; what\n+    // matters is that appending it starts a load.\n+    var scriptURL = URL.createObjectURL(new Blob([], { type: \"text/javascript\" }));\n+\n+    var script = document.createElement(\"script\");\n+    script.src = scriptURL;\n+    script.onload = function() { URL.revokeObjectURL(scriptURL); };\n+    script.onerror = loadEventTest.unreached_func(\"the script started from readystatechange failed to load\");\n+    document.body.appendChild(script);\n+}\n+\n+document.addEventListener(\"readystatechange\", function() {\n+    if (document.readyState === \"complete\")\n+        startLoadFromReadyStateChangeHandler();\n+});\n+\n+// If the load event is never dispatched, this test times out and fails.\n+window.addEventListener(\"load\", loadEventTest.step_func_done(function() {\n+    assert_equals(document.readyState, \"complete\");\n+}));\n+</script>\n\n--- Source/WebCore/loader/FrameLoader.cpp ---\n@@ -1006,31 +1006,43 @@ void FrameLoader::checkCompleted()\n         return;\n     }\n \n-    // Are we still parsing?\n-    if (document->parsing())\n-        return;\n-\n     // Still waiting for images/scripts?\n     if (document->cachedResourceLoader().requestCount())\n         return;\n \n-    // Still waiting for elements that don't go through a FrameLoader?\n-    if (document->isDelayingLoadEvent())\n-        return;\n+    auto isBlockedFromCompleting = [&] {\n+        if (document->parsing())\n+            return true;\n \n-    RefPtr scriptableParser = document->scriptableDocumentParser();\n-    if (scriptableParser && scriptableParser->hasScriptsWaitingForStylesheets())\n-        return;\n+        // Still waiting for elements that don't go through a FrameLoader?\n+        if (document->isDelayingLoadEvent())\n+            return true;\n \n-    // Any frame that hasn't completed yet?\n-    if (!allChildrenAreComplete())\n+        RefPtr scriptableParser = document->scriptableDocumentParser();\n+        if (scriptableParser && scriptableParser->hasScriptsWaitingForStylesheets())\n+            return true;\n+\n+        // Any frame that hasn't completed yet?\n+        return !allChildrenAreComplete();\n+    };\n+\n+    if (isBlockedFromCompleting())\n         return;\n \n     // OK, completed.\n-    m_isComplete = true;\n     m_requestedHistoryItem = nullptr;\n     document->setReadyState(Document::ReadyState::Complete);\n \n+    // The readystatechange dispatch above ran author script, so both of these can have changed\n+    // underneath us.\n+    if (m_isComplete)\n+        return;\n+\n+    if (isBlockedFromCompleting())\n+        return;\n+\n+    m_isComplete = true;\n+\n     checkCallImplicitClose(); // if we didn't do it before\n \n     protect(frame->navigationScheduler())->startTimer();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "last_outcome": "DISCARD",
+    "focus_used": [
       "initial pass (target-specific lens)"
     ],
     "times_reexamined": 0

@@ -59797,5 +59797,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T18:10:11.036078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "url": "https://github.com/WebKit/WebKit/commit/c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "message": "[JSC] Align JSC shell's main thread QoS to WebContent process' one\nhttps://bugs.webkit.org/show_bug.cgi?id=323207\nrdar://186449124\n\nReviewed by Keith Miller.\n\nTo make performance measurement in JSC shell more aligned to WebContent\nprocess, we call setCurrentThreadIsUserInteractive(-1) to adjust the\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T18:10:48.862564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "url": "https://github.com/WebKit/WebKit/commit/a4d8f6d0f464caa32a3970a23e2f9dd5475e8b21",
+    "message": "bankofamerica.com: cannot complete a wire transfer because the window load event is never dispatched\nhttps://bugs.webkit.org/show_bug.cgi?id=323179\nrdar://186373617\n\nReviewed by Chris Dumez.\n\nOn bankofamerica.com's wire transfer page the \"Continue Transfer\" button stays\ndisabled because the 2FA step",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T18:11:26.831742+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a70377af0564cae4749383349407e6e2c6be4b1e",
+    "url": "https://github.com/WebKit/WebKit/commit/a70377af0564cae4749383349407e6e2c6be4b1e",
+    "message": "LegacyWebArchive iframe wrapper for copied framesets emits literal \"98%%\" width/height\nhttps://bugs.webkit.org/show_bug.cgi?id=322902\nrdar://186161217\n\nReviewed by Chris Dumez.\n\nWhen a frameset document is copied, LegacyWebArchive::createFromSelection() wraps\nthe frameset in an <iframe> so it can be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T18:12:04.571802+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "url": "https://github.com/WebKit/WebKit/commit/c05b265132e42cfd6b406a32ab06a3ae3f89dff6",
+    "message": "[JSC] Align JSC shell's main thread QoS to WebContent process' one\nhttps://bugs.webkit.org/show_bug.cgi?id=323207\nrdar://186449124\n\nReviewed by Keith Miller.\n\nTo make performance measurement in JSC shell more aligned to WebContent\nprocess, we call setCurrentThreadIsUserInteractive(-1) to adjust the\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
