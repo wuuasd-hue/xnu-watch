@@ -59977,5 +59977,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T23:24:37.477923+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "url": "https://github.com/WebKit/WebKit/commit/5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "message": "[JSC] Enable global inlining planner\nhttps://bugs.webkit.org/show_bug.cgi?id=323126\nrdar://186389303\n\nReviewed by Yusuke Suzuki.\n\nThis patch enables the new inlining planner by default.\nThis will let us start searching for more optimal parameters.\n\nNo tests because there is no observable behavior di",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T23:25:18.623283+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "url": "https://github.com/WebKit/WebKit/commit/951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "message": "Fix testLibJSCTools's CorpseSnapshotTest and CorpseSymbolTest to run better for ASAN builds.\nhttps://bugs.webkit.org/show_bug.cgi?id=323232\nrdar://186484113\n\nReviewed by Dan Hecht.\n\nCorpseSymbolTest was previously looking up the symbol for `malloc`.  ASAN builds overrides `malloc`\nwith its own imple",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T23:25:59.947867+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60d939f1f90c5942d2219834e4de4b33a31e4505",
+    "url": "https://github.com/WebKit/WebKit/commit/60d939f1f90c5942d2219834e4de4b33a31e4505",
+    "message": "[JSC] Fix wrong instruction emission for Output::load\nhttps://bugs.webkit.org/show_bug.cgi?id=323238\nrdar://186489725\n\nReviewed by Yijia Huang.\n\nFix obviously wrong B3 value emission. But right now it is not used yet,\nso no issues in practice.\n\n* Source/JavaScriptCore/ftl/FTLOutput.cpp:\n(JSC::FTL::O",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T23:26:38.105596+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "url": "https://github.com/WebKit/WebKit/commit/afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "message": "Enhance testLibJSCTools to track test suite run time, and fix an intermittent hang.\nhttps://bugs.webkit.org/show_bug.cgi?id=323167\nrdar://186413086\n\nReviewed by Marcus Plutowski and Dan Hecht.\n\nNow introducing and using a SuiteTracer RAII class to track testLibJSCTools' test suite\nrun times.  We wil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T23:27:16.332491+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "url": "https://github.com/WebKit/WebKit/commit/162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "message": "Fire webRequest events for declarativeNetRequest-blocked loads\nhttps://bugs.webkit.org/show_bug.cgi?id=313971\nrdar://176177851\n\nReviewed by Timothy Hatcher.\n\nThis patch makes a Safari Web Extension fire webRequest.onBeforeRequest followed by\nwebRequest.onErrorOccurred when a load is blocked by the e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
