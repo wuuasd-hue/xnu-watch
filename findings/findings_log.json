@@ -59757,5 +59757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T14:35:14.997927+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "url": "https://github.com/WebKit/WebKit/commit/8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "message": "PolicyChecker.cpp has a dead #undef and leaks five macros into the unified build\nhttps://bugs.webkit.org/show_bug.cgi?id=322897\nrdar://186149389\n\nReviewed by Chris Dumez.\n\nThe #undef block at the end of PolicyChecker.cpp did not match the\nmacros defined at the top of the file: it undef'd IS_ALLOWED,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T14:35:52.352739+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "url": "https://github.com/WebKit/WebKit/commit/2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "message": "ResourceLoadNotifier::dispatchWillSendRequest re-reads m_frame instead of the cached frame local\nhttps://bugs.webkit.org/show_bug.cgi?id=322898\nrdar://186149573\n\nReviewed by Chris Dumez.\n\ndispatchWillSendRequest() already caches Ref frame = m_frame.get(), and\nthe ASSERT and every subsequent call go ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
