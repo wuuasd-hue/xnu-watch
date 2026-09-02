@@ -59677,5 +59677,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T10:24:13.737505+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "url": "https://github.com/WebKit/WebKit/commit/2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "message": "ResourceLoadNotifier::dispatchWillSendRequest re-reads m_frame instead of the cached frame local\nhttps://bugs.webkit.org/show_bug.cgi?id=322898\nrdar://186149573\n\nReviewed by Chris Dumez.\n\ndispatchWillSendRequest() already caches Ref frame = m_frame.get(), and\nthe ASSERT and every subsequent call go ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T10:24:50.593340+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a70377af0564cae4749383349407e6e2c6be4b1e",
+    "url": "https://github.com/WebKit/WebKit/commit/a70377af0564cae4749383349407e6e2c6be4b1e",
+    "message": "LegacyWebArchive iframe wrapper for copied framesets emits literal \"98%%\" width/height\nhttps://bugs.webkit.org/show_bug.cgi?id=322902\nrdar://186161217\n\nReviewed by Chris Dumez.\n\nWhen a frameset document is copied, LegacyWebArchive::createFromSelection() wraps\nthe frameset in an <iframe> so it can be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T10:25:27.871808+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e89e47239c6d427db0321fd13d487a463124607e",
+    "url": "https://github.com/WebKit/WebKit/commit/e89e47239c6d427db0321fd13d487a463124607e",
+    "message": "Capture storedCredentialsPolicy before moving ResourceLoaderOptions in CrossOriginAccessControl\nhttps://bugs.webkit.org/show_bug.cgi?id=322903\nrdar://186161100\n\nReviewed by Chris Dumez.\n\ncreatePotentialAccessControlRequest() read options.storedCredentialsPolicy\nafter WTF::move()'ing options into the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-02T10:26:05.195723+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "url": "https://github.com/WebKit/WebKit/commit/0be71db6a0fd7c8d70790518ec8ba38870e92aca",
+    "message": "Reduce sizeof(DocumentThreadableLoader) by grouping its one-byte members\nhttps://bugs.webkit.org/show_bug.cgi?id=322896\nrdar://186149141\n\nReviewed by Chris Dumez.\n\nDocumentThreadableLoader declared its six one-byte members\n(m_responsesCanBeOpaque, m_sameOriginRequest, m_simpleRequest, m_async,\nm_del",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

@@ -11829,9 +11829,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/e89e47239c6d427db0321fd13d487a463124607e",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11843,9 +11844,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/0be71db6a0fd7c8d70790518ec8ba38870e92aca",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11855,6 +11857,34 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/WebCore/loader/PolicyChecker.cpp ---\n@@ -420,7 +420,11 @@ void PolicyChecker::handleUnimplementablePolicy(const ResourceError& error)\n \n } // namespace WebCore\n \n-#undef IS_ALLOWED\n #undef PAGE_ID\n+#undef PAGE_ID_WITH_THIS\n #undef FRAME_ID\n+#undef FRAME_ID_WITH_THIS\n+#undef POLICYCHECKER_RELEASE_LOG_WITH_THIS\n #undef POLICYCHECKER_RELEASE_LOG\n+#undef POLICYCHECKER_RELEASE_LOG_FORWARDABLE\n+#undef POLICYCHECKER_RELEASE_LOG_FORWARDABLE_WITH_THIS\n",
     "url": "https://github.com/WebKit/WebKit/commit/8d2e7896295d7b73aaf7d2450ec35908326fbc55",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "message": "ResourceLoadNotifier::dispatchWillSendRequest re-reads m_frame instead of the cached frame local\nhttps://bugs.webkit.org/show_bug.cgi?id=322898\nrdar://186149573\n\nReviewed by Chris Dumez.\n\ndispatchWillSendRequest() already caches Ref frame = m_frame.get(), and\nthe ASSERT and every subsequent call go ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/ResourceLoadNotifier.cpp ---\n@@ -130,16 +130,16 @@ void ResourceLoadNotifier::dispatchWillSendRequest(DocumentLoader* loader, Resou\n \n     String oldRequestURL = request.url().string();\n \n-    Ref frame = m_frame.get();\n+    Ref frame = m_frame;\n     ASSERT(frame->loader().documentLoader());\n-    if (RefPtr documentLoader = m_frame->loader().documentLoader())\n+    if (RefPtr documentLoader = frame->loader().documentLoader())\n         documentLoader->didTellClientAboutLoad(request.url().string());\n \n     frame->loader().client().dispatchWillSendRequest(loader, identifier, request, redirectResponse);\n \n     // If the URL changed, then we want to put that new URL in the \"did tell client\" set too.\n     if (!request.isNull() && oldRequestURL != request.url().string()) {\n-        if (RefPtr documentLoader = m_frame->loader().documentLoader())\n+        if (RefPtr documentLoader = frame->loader().documentLoader())\n             documentLoader->didTellClientAboutLoad(request.url().string());\n     }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "a70377af0564cae4749383349407e6e2c6be4b1e",
+    "message": "LegacyWebArchive iframe wrapper for copied framesets emits literal \"98%%\" width/height\nhttps://bugs.webkit.org/show_bug.cgi?id=322902\nrdar://186161217\n\nReviewed by Chris Dumez.\n\nWhen a frameset document is copied, LegacyWebArchive::createFromSelection() wraps\nthe frameset in an <iframe> so it can be",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/archive/cf/LegacyWebArchive.cpp ---\n@@ -894,7 +894,7 @@ RefPtr<LegacyWebArchive> LegacyWebArchive::createFromSelection(LocalFrame* frame\n \n     // Wrap the frameset document in an iframe so it can be pasted into\n     // another document (which will have a body or frameset of its own). \n-    auto iframeMarkup = makeString(\"<iframe frameborder=\\\"no\\\" marginwidth=\\\"0\\\" marginheight=\\\"0\\\" width=\\\"98%%\\\" height=\\\"98%%\\\" src=\\\"\"_s, frame->loader().documentLoader()->response().url().string(), \"\\\"></iframe>\"_s);\n+    auto iframeMarkup = makeString(\"<iframe frameborder=\\\"no\\\" marginwidth=\\\"0\\\" marginheight=\\\"0\\\" width=\\\"98%\\\" height=\\\"98%\\\" src=\\\"\"_s, frame->loader().documentLoader()->response().url().string(), \"\\\"></iframe>\"_s);\n     auto iframeResource = ArchiveResource::create(utf8Buffer(iframeMarkup), aboutBlankURL(), textHTMLContentTypeAtom(), \"UTF-8\"_s, String());\n \n     return create(iframeResource.releaseNonNull(), { }, { archive.releaseNonNull() }, frame->frameID());\n\n--- Tools/TestWebKitAPI/Tests/WebKit/WKWebView/CopyHTML.mm ---\n@@ -82,6 +82,45 @@ @interface WKWebView () <NSServicesMenuRequestor>\n \n #endif\n \n+static RetainPtr<NSData> readWebArchiveDataFromPasteboard()\n+{\n+#if PLATFORM(MAC)\n+    return [NSPasteboard.generalPasteboard dataForType:UTTypeWebArchive.identifier];\n+#else\n+    return [UIPasteboard.generalPasteboard dataForPasteboardType:UTTypeWebArchive.identifier];\n+#endif\n+}\n+\n+// When a frameset document is copied, LegacyWebArchive::createFromSelection wraps the frameset in an\n+// <iframe> so it can be pasted into a document that has its own body/frameset. The wrapper markup must\n+// use a single-percent width/height (\"98%\"), not a printf-style escaped \"98%%\".\n+TEST(CopyHTML, FramesetSelectionIframeWrapperUsesSinglePercent)\n+{\n+    auto webView = createWebViewWithCustomPasteboardDataEnabled();\n+    [webView synchronouslyLoadHTMLString:@\"<frameset rows=\\\"50%,50%\\\">\"\n+        \"<frame src=\\\"about:blank\\\">\"\n+        \"<frame src=\\\"about:blank\\\">\"\n+        \"</frameset>\" baseURL:[NSURL URLWithString:@\"https://webkit.org/frameset.html\"]];\n+    [webView stringByEvaluatingJavaScript:@\"getSelection().selectAllChildren(document.documentElement)\"];\n+    [webView copy:nil];\n+    [webView waitForNextPresentationUpdate];\n+\n+    RetainPtr archiveData = readWebArchiveDataFromPasteboard();\n+    EXPECT_GT([archiveData length], 0U);\n+\n+    RetainPtr archive = dynamic_objc_cast<NSDictionary>([NSPropertyListSerialization propertyListWithData:archiveData.get() options:0 format:nullptr error:nullptr]);\n+    RetainPtr mainResourceData = dynamic_objc_cast<NSData>([[archive objectForKey:@\"WebMainResource\"] objectForKey:@\"WebResourceData\"]);\n+    RetainPtr mainMarkup = adoptNS([[NSString alloc] initWithData:mainResourceData.get() encoding:NSUTF8StringEncoding]);\n+\n+    EXPECT_TRUE([mainMarkup containsString:@\"<iframe\"]);\n+    EXPECT_TRUE([mainMarkup containsString:@\"width=\\\"98%\\\"\"]);\n+    EXPECT_TRUE([mainMarkup containsString:@\"height=\\\"98%\\\"\"]);\n+    EXPECT_FALSE([mainMarkup containsString:@\"98%%\"]);\n+\n+    // The frameset itself is preserved as a subframe archive of the iframe wrapper.\n+    EXPECT_NOT_NULL([archive objectForKey:@\"WebSubframeArchives\"]);\n+}\n+\n TEST(CopyHTML, Sanitizes)\n {\n     auto webView = createWebViewWithCustomPasteboardDataEnabled();\n",
+    "url": "https://github.com/WebKit/WebKit/commit/a70377af0564cae4749383349407e6e2c6be4b1e",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
