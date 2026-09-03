@@ -60317,5 +60317,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T10:23:11.467961+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "url": "https://github.com/WebKit/WebKit/commit/a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "message": "[JSC] Avoid atomizing import names twice\nhttps://bugs.webkit.org/show_bug.cgi?id=323281\nrdar://186533756\n\nReviewed by Mark Lam.\n\nThis patch avoids atomizing wasm import names twice by having\nFixedVector with Identifier pairs.\n\n* Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp:\n(JSC::JSWebAss",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T10:23:49.117749+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "url": "https://github.com/WebKit/WebKit/commit/2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "message": "[JSC] Support `BigInt` for `Intl.PluralRules.select` and `Intl.PluralRules.selectRange`\nhttps://bugs.webkit.org/show_bug.cgi?id=323092\n\nReviewed by Yusuke Suzuki.\n\nAccording to [1][2], the `Intl.PluralRules.select` and `Intl.PluralRules.selectRange` methods should support\n`BigInt` values as their ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T10:24:26.788424+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41776a35d9581136117d35408f907e6bbc869632",
+    "url": "https://github.com/WebKit/WebKit/commit/41776a35d9581136117d35408f907e6bbc869632",
+    "message": "[JSC] Deleting a property of a dictionary prototype in place does not invalidate the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=323254\n\nReviewed by Yusuke Suzuki.\n\nDeleting a property from an object whose Structure is an UncacheableDictionary\nremoves it in place, so the Structur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T10:25:04.169792+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "url": "https://github.com/WebKit/WebKit/commit/fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "message": "[JSC] Make FTL validation patchpoints a bit solid\nhttps://bugs.webkit.org/show_bug.cgi?id=323249\nrdar://problem/186501326\n\nReviewed by Dan Hecht.\n\nThis patch makes FTL validation related patchpoints a bit solid, but not\naffect on the actual execution much.\n\n1. AllowMacroScratchRegisterUsage is not n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
