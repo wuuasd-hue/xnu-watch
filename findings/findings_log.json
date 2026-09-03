@@ -60537,5 +60537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T21:10:26.571334+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "url": "https://github.com/WebKit/WebKit/commit/23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "message": "[JSC] Split validation and evaluation of wasm constant expression\nhttps://bugs.webkit.org/show_bug.cgi?id=323289\nrdar://186541346\n\nReviewed by Keith Miller.\n\nComplex wasm binaries include significant amount of constant\nexpressions. For example, Dart-flute-todomvc-wasm's binary includes\n4000~ constan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T21:11:05.108888+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "url": "https://github.com/WebKit/WebKit/commit/5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "message": "PrivateClickMeasurement token URL getters should return std::optional<URL> instead of const std::optional<const URL>\nhttps://bugs.webkit.org/show_bug.cgi?id=323252\nrdar://186503027\n\nReviewed by Chris Dumez.\n\ntokenPublicKeyURL() and tokenSignatureURL() on PrivateClickMeasurement and\nAttributionTrigge",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T21:11:43.358367+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "url": "https://github.com/WebKit/WebKit/commit/a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "message": "[JSC] Avoid atomizing import names twice\nhttps://bugs.webkit.org/show_bug.cgi?id=323281\nrdar://186533756\n\nReviewed by Mark Lam.\n\nThis patch avoids atomizing wasm import names twice by having\nFixedVector with Identifier pairs.\n\n* Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp:\n(JSC::JSWebAss",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
