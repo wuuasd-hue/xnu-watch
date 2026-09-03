@@ -60397,5 +60397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T14:39:33.343012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "url": "https://github.com/WebKit/WebKit/commit/cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "message": "[JSC] ObjectCreate folding should emit checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317570\nrdar://178248992\n\nReviewed by Yijia Huang.\n\nWhen folding ObjectCreate(with-edge-checks), we are not emitting these\nchecks and converting it to NewObject. As a result, we missed the edge\nfilters and the subse",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T14:40:10.276143+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbfab2693adfbccc72b683100dbf466e6640792",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbfab2693adfbccc72b683100dbf466e6640792",
+    "message": "[JSC] Do not copy const-expr byte sequence in wasm\nhttps://bugs.webkit.org/show_bug.cgi?id=323269\nrdar://186519182\n\nReviewed by Mark Lam.\n\n1. evaluateExtendedConstExpr was copying Vector<uint8_t> wasm const-expr\n   bytes. Stop doing so.\n2. We also clean up evaluateConstantExpression code so that was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
