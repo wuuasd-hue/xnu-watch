@@ -60437,5 +60437,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T18:09:17.004744+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "url": "https://github.com/WebKit/WebKit/commit/761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "message": "[JSC] Fold Shl into ARM64 WasmAddress index form\nhttps://bugs.webkit.org/show_bug.cgi?id=323211\n\nReviewed by Yusuke Suzuki.\n\nWasmAddress already folds ZExt32/SExt32 into ARM64 UXTW/SXTW via\nindexArg. This also absorbs a pointer-width Shl into the index scale\nso a load can be LDR Xt, [Xn, Wm, UXTW #s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T18:09:53.959170+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a359a00ccf8475c9eb9efc9bcae0dfa9daaad65",
+    "url": "https://github.com/WebKit/WebKit/commit/6a359a00ccf8475c9eb9efc9bcae0dfa9daaad65",
+    "message": "[JSC][Wasm] Inline table.get for funcref\nhttps://bugs.webkit.org/show_bug.cgi?id=322528\n\nReviewed by Yusuke Suzuki.\n\nBBQ and OMG bounds-check against Table length and load the cached\nwrapper. A miss still calls operationGetWasmTableElement to\nmaterialize a lazy wrapper or return null.\n\n* Source/Java",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T18:10:30.859460+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ab124eb02518a622a79a6a7c9476bd7d7c1e538",
+    "url": "https://github.com/WebKit/WebKit/commit/7ab124eb02518a622a79a6a7c9476bd7d7c1e538",
+    "message": "Rename WebCore::DestinationColorSpace to WebCore::ColorSpace\nhttps://bugs.webkit.org/show_bug.cgi?id=323315\nrdar://186561899\n\nReviewed by Sam Weinig and Mike Wyrzykowski.\n\nDestinationColorSpace started as a color space for ImageBuffers,\nwritable surfaces. Today, it is used for VideoFrames, PixelBuff",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T18:11:07.863012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "url": "https://github.com/WebKit/WebKit/commit/d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "message": "SpeculationRules::parseSingleRule rebuilds its allowed-keys HashSet on every call\nhttps://bugs.webkit.org/show_bug.cgi?id=323242\nrdar://186495063\n\nReviewed by Chris Dumez.\n\nparseSingleRule() constructed a 10-element HashSet<String> of the allowed\nrule keys as a function-local, so the set was allocat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T18:11:45.143927+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "url": "https://github.com/WebKit/WebKit/commit/e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "message": "Remove dead code in FrameLoader::SubframeLoader::loadSubframe()\nhttps://bugs.webkit.org/show_bug.cgi?id=323258\nrdar://186506734\n\nReviewed by Chris Dumez.\n\nTwo pieces of dead code in loadSubframe():\n\n- The page/subframeCount check is an exact duplicate of the check that\n  canCreateSubFrame() already ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
