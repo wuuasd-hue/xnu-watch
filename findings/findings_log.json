@@ -60197,5 +60197,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T05:57:15.490123+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbfab2693adfbccc72b683100dbf466e6640792",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbfab2693adfbccc72b683100dbf466e6640792",
+    "message": "[JSC] Do not copy const-expr byte sequence in wasm\nhttps://bugs.webkit.org/show_bug.cgi?id=323269\nrdar://186519182\n\nReviewed by Mark Lam.\n\n1. evaluateExtendedConstExpr was copying Vector<uint8_t> wasm const-expr\n   bytes. Stop doing so.\n2. We also clean up evaluateConstantExpression code so that was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T05:57:52.496407+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "url": "https://github.com/WebKit/WebKit/commit/d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "message": "SpeculationRules::parseSingleRule rebuilds its allowed-keys HashSet on every call\nhttps://bugs.webkit.org/show_bug.cgi?id=323242\nrdar://186495063\n\nReviewed by Chris Dumez.\n\nparseSingleRule() constructed a 10-element HashSet<String> of the allowed\nrule keys as a function-local, so the set was allocat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T05:58:29.743916+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "url": "https://github.com/WebKit/WebKit/commit/e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "message": "Remove dead code in FrameLoader::SubframeLoader::loadSubframe()\nhttps://bugs.webkit.org/show_bug.cgi?id=323258\nrdar://186506734\n\nReviewed by Chris Dumez.\n\nTwo pieces of dead code in loadSubframe():\n\n- The page/subframeCount check is an exact duplicate of the check that\n  canCreateSubFrame() already ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T05:59:06.798336+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "url": "https://github.com/WebKit/WebKit/commit/5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "message": "PrivateClickMeasurement token URL getters should return std::optional<URL> instead of const std::optional<const URL>\nhttps://bugs.webkit.org/show_bug.cgi?id=323252\nrdar://186503027\n\nReviewed by Chris Dumez.\n\ntokenPublicKeyURL() and tokenSignatureURL() on PrivateClickMeasurement and\nAttributionTrigge",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T05:59:44.008521+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60d939f1f90c5942d2219834e4de4b33a31e4505",
+    "url": "https://github.com/WebKit/WebKit/commit/60d939f1f90c5942d2219834e4de4b33a31e4505",
+    "message": "[JSC] Fix wrong instruction emission for Output::load\nhttps://bugs.webkit.org/show_bug.cgi?id=323238\nrdar://186489725\n\nReviewed by Yijia Huang.\n\nFix obviously wrong B3 value emission. But right now it is not used yet,\nso no issues in practice.\n\n* Source/JavaScriptCore/ftl/FTLOutput.cpp:\n(JSC::FTL::O",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T06:00:21.181642+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "url": "https://github.com/WebKit/WebKit/commit/0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "message": "[JSC] Declare m_notCellMask and m_numberTag as ValueRep::lateReg in cachedPutById\nhttps://bugs.webkit.org/show_bug.cgi?id=323248\nrdar://problem/186500258\n\nReviewed by Dan Hecht.\n\nThis is harmless, but this is wrong. Every other IC is declaring them as\nlateReg. So let's do it. It is fine for this cac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
