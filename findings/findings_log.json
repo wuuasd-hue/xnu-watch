@@ -60077,5 +60077,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:14:18.134809+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "url": "https://github.com/WebKit/WebKit/commit/0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "message": "[JSC] Declare m_notCellMask and m_numberTag as ValueRep::lateReg in cachedPutById\nhttps://bugs.webkit.org/show_bug.cgi?id=323248\nrdar://problem/186500258\n\nReviewed by Dan Hecht.\n\nThis is harmless, but this is wrong. Every other IC is declaring them as\nlateReg. So let's do it. It is fine for this cac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:14:54.996445+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41776a35d9581136117d35408f907e6bbc869632",
+    "url": "https://github.com/WebKit/WebKit/commit/41776a35d9581136117d35408f907e6bbc869632",
+    "message": "[JSC] Deleting a property of a dictionary prototype in place does not invalidate the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=323254\n\nReviewed by Yusuke Suzuki.\n\nDeleting a property from an object whose Structure is an UncacheableDictionary\nremoves it in place, so the Structur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:15:31.871968+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "url": "https://github.com/WebKit/WebKit/commit/fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "message": "[JSC] Make FTL validation patchpoints a bit solid\nhttps://bugs.webkit.org/show_bug.cgi?id=323249\nrdar://problem/186501326\n\nReviewed by Dan Hecht.\n\nThis patch makes FTL validation related patchpoints a bit solid, but not\naffect on the actual execution much.\n\n1. AllowMacroScratchRegisterUsage is not n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:16:08.811191+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "url": "https://github.com/WebKit/WebKit/commit/cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "message": "[JSC] ObjectCreate folding should emit checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317570\nrdar://178248992\n\nReviewed by Yijia Huang.\n\nWhen folding ObjectCreate(with-edge-checks), we are not emitting these\nchecks and converting it to NewObject. As a result, we missed the edge\nfilters and the subse",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:16:45.807182+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "url": "https://github.com/WebKit/WebKit/commit/5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "message": "[JSC] Enable global inlining planner\nhttps://bugs.webkit.org/show_bug.cgi?id=323126\nrdar://186389303\n\nReviewed by Yusuke Suzuki.\n\nThis patch enables the new inlining planner by default.\nThis will let us start searching for more optimal parameters.\n\nNo tests because there is no observable behavior di",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T01:17:22.656074+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "url": "https://github.com/WebKit/WebKit/commit/951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "message": "Fix testLibJSCTools's CorpseSnapshotTest and CorpseSymbolTest to run better for ASAN builds.\nhttps://bugs.webkit.org/show_bug.cgi?id=323232\nrdar://186484113\n\nReviewed by Dan Hecht.\n\nCorpseSymbolTest was previously looking up the symbol for `malloc`.  ASAN builds overrides `malloc`\nwith its own imple",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

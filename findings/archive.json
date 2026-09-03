@@ -11979,9 +11979,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/5bcd90bdee7964d8b14f39497e994d98cc2b5952",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -11993,9 +11994,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/951d88a0fe8bffd6a1d0e80c42a019a28c416720",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -12005,6 +12007,62 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/ftl/FTLOutput.cpp ---\n@@ -892,9 +892,9 @@ LValue Output::load(TypedPointer pointer, LoadType type)\n     case Load8ZeroExt32:\n         return load8ZeroExt32(pointer);\n     case Load16SignExt32:\n-        return load8SignExt32(pointer);\n+        return load16SignExt32(pointer);\n     case Load16ZeroExt32:\n-        return load8ZeroExt32(pointer);\n+        return load16ZeroExt32(pointer);\n     case Load32:\n         return load32(pointer);\n     case Load64:\n",
     "url": "https://github.com/WebKit/WebKit/commit/60d939f1f90c5942d2219834e4de4b33a31e4505",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "message": "[JSC] Declare m_notCellMask and m_numberTag as ValueRep::lateReg in cachedPutById\nhttps://bugs.webkit.org/show_bug.cgi?id=323248\nrdar://problem/186500258\n\nReviewed by Dan Hecht.\n\nThis is harmless, but this is wrong. Every other IC is declaring them as\nlateReg. So let's do it. It is fine for this cac",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/b3/B3LowerToAir.cpp ---\n@@ -1846,6 +1846,11 @@ class LowerToAir {\n                 break;\n             }\n             case ValueRep::LateRegister:\n+                // A LateRegister input becomes an Arg::LateUse, whose live range covers both the\n+                // early and the late point, so it interferes with either clobber set. Register\n+                // becomes an early Arg::Use, which only reaches the early one.\n+                stackmap->lateClobbered().remove(value.rep().reg());\n+                [[fallthrough]];\n             case ValueRep::Register: {\n                 stackmap->earlyClobbered().remove(value.rep().reg());\n                 Tmp dstTmp = Tmp(value.rep().reg());\n\n--- Source/JavaScriptCore/b3/B3PatchpointSpecial.cpp ---\n@@ -119,6 +119,8 @@ bool PatchpointSpecial::admitsStack(Inst& inst, unsigned argIndex)\n     if (argIndex <= returnCount) {\n         switch (inst.origin->as<PatchpointValue>()->resultConstraints[argIndex - 1].kind()) {\n         case ValueRep::WarmAny:\n+        case ValueRep::ColdAny:\n+        case ValueRep::LateColdAny:\n         case ValueRep::StackArgument:\n             return true;\n         case ValueRep::SomeRegister:\n\n--- Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp ---\n@@ -5678,8 +5678,8 @@ class LowerDFGToB3 {\n         PatchpointValue* patchpoint = m_out.patchpoint(Void);\n         patchpoint->appendSomeRegister(base);\n         patchpoint->appendSomeRegister(value);\n-        patchpoint->append(m_notCellMask, ValueRep::reg(GPRInfo::notCellMaskRegister));\n-        patchpoint->append(m_numberTag, ValueRep::reg(GPRInfo::numberTagRegister));\n+        patchpoint->append(m_notCellMask, ValueRep::lateReg(GPRInfo::notCellMaskRegister));\n+        patchpoint->append(m_numberTag, ValueRep::lateReg(GPRInfo::numberTagRegister));\n         patchpoint->clobber(RegisterSet::macroClobberedGPRs());\n         patchpoint->numGPScratchRegisters = Options::useHandlerICInFTL() ? 3 : 0;\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/0c96a8ad401581477c2714cf569ef3385a3ca08c",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "41776a35d9581136117d35408f907e6bbc869632",
+    "message": "[JSC] Deleting a property of a dictionary prototype in place does not invalidate the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=323254\n\nReviewed by Yusuke Suzuki.\n\nDeleting a property from an object whose Structure is an UncacheableDictionary\nremoves it in place, so the Structur",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/megamorphic-store-prototype-dictionary-delete.js ---\n@@ -0,0 +1,92 @@\n+\"use strict\";\n+\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(`bad value: ${actual}, expected ${expected}`);\n+}\n+\n+function shouldThrow(func, errorMessage) {\n+    var errorThrown = false;\n+    var error = null;\n+    try {\n+        func();\n+    } catch (e) {\n+        errorThrown = true;\n+        error = e;\n+    }\n+    if (!errorThrown)\n+        throw new Error('not thrown');\n+    if (String(error) !== errorMessage)\n+        throw new Error(`bad error: ${String(error)}`);\n+}\n+\n+const shapeCount = 64;\n+\n+function makeShape(proto, i) {\n+    const object = Object.create(proto);\n+    for (let j = 0; j <= (i % 8); ++j)\n+        object[\"k\" + ((i * 5 + j * 3) % 13)] = j;\n+    object[\"tag\" + i] = i;\n+    return object;\n+}\n+\n+// Builds P1 -> P2 where P1 shadows P2's \"x\" with a writable data property, and\n+// turns P1 into an uncacheable dictionary so that deleting P1.x later removes\n+// the property in place without a Structure transition.\n+function makeChain(P2) {\n+    const P1 = Object.create(P2);\n+    Object.defineProperty(P1, \"x\", { value: 0, writable: true, configurable: true, enumerable: true });\n+    for (let i = 0; i < 5000; ++i)\n+        P1[\"p\" + i] = i;\n+    for (let i = 0; i < testLoopCount; ++i)\n+        makeShape(P1, i % shapeCount);\n+    delete P1.p0;\n+    return P1;\n+}\n+\n+function put(object, value) {\n+    object.x = value;\n+}\n+noInline(put);\n+\n+const unrelated = { unrelated: 1 };\n+for (let i = 0; i < testLoopCount; ++i)\n+    put(makeShape(unrelated, i % shapeCount), i);\n+\n+{\n+    let setterCalls = 0;\n+    const P2 = { set x(value) { setterCalls++; } };\n+    const P1 = makeChain(P2);\n+    for (let i = 0; i < testLoopCount; ++i) {\n+        const object = makeShape(P1, i % shapeCount);\n+        put(object, i);\n+        shouldBe(Object.hasOwn(object, \"x\"), true);\n+    }\n+    shouldBe(setterCalls, 0);\n+\n+    delete P1.x;\n+    for (let i = 0; i < shapeCount; ++i) {\n+        const object = makeShape(P1, i);\n+        put(object, i);\n+        shouldBe(Object.hasOwn(object, \"x\"), false);\n+    }\n+    shouldBe(setterCalls, shapeCount);\n+}\n+\n+{\n+    const P2 = Object.defineProperty({}, \"x\", { value: 42, writable: false, configurable: true, enumerable: true });\n+    const P1 = makeChain(P2);\n+    for (let i = 0; i < testLoopCount; ++i) {\n+        const object = makeShape(P1, i % shapeCount);\n+        put(object, i);\n+        shouldBe(object.x, i);\n+    }\n+\n+    delete P1.x;\n+    for (let i = 0; i < shapeCount; ++i) {\n+        const object = makeShape(P1, i);\n+        shouldThrow(() => put(object, i), \"TypeError: Attempted to assign to readonly property.\");\n+        shouldBe(Object.hasOwn(object, \"x\"), false);\n+        shouldBe(object.x, 42);\n+    }\n+}\n\n--- Source/JavaScriptCore/runtime/JSObject.cpp ---\n@@ -2408,9 +2408,9 @@ bool JSObject::deleteProperty(JSCell* cell, JSGlobalObject* globalObject, Proper\n             ASSERT(!isValidOffset(structure->get(vm, propertyName, attributes)));\n             if (offset != invalidOffset)\n                 thisObject->locationForOffset(offset)->clear();\n-            if (thisObject->mayBePrototype()) [[unlikely]]\n-                vm.invalidateStructureChainIntegrity(VM::StructureChainIntegrityEvent::Remove);\n         }\n+        if (thisObject->mayBePrototype()) [[unlikely]]\n+            vm.invalidateStructureChainIntegrity(VM::StructureChainIntegrityEvent::Remove);\n     } else\n         slot.setConfigurableMiss();\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/41776a35d9581136117d35408f907e6bbc869632",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "message": "[JSC] Make FTL validation patchpoints a bit solid\nhttps://bugs.webkit.org/show_bug.cgi?id=323249\nrdar://problem/186501326\n\nReviewed by Dan Hecht.\n\nThis patch makes FTL validation related patchpoints a bit solid, but not\naffect on the actual execution much.\n\n1. AllowMacroScratchRegisterUsage is not n",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp ---\n@@ -4328,7 +4328,6 @@ class LowerDFGToB3 {\n         patchpoint->setGenerator(\n             [=] (CCallHelpers& jit, const StackmapGenerationParams& params) {\n                 JIT_COMMENT(jit, \"AssertNotEmpty\");\n-                AllowMacroScratchRegisterUsage allowScratch(jit);\n                 GPRReg input = params[0].gpr();\n                 CCallHelpers::Jump done = jit.branchIfNotEmpty(input);\n                 jit.breakpoint();\n@@ -27770,7 +27769,10 @@ IGNORE_CLANG_WARNINGS_END\n         unsigned nodeIndex = node ? node->index() : UINT_MAX;\n #if !ASSERT_ENABLED\n         auto nodeOp = node ? node->op() : LastNodeType;\n-        m_out.patchpoint(Void)->setGenerator(\n+        PatchpointValue* patchpoint = m_out.patchpoint(Void);\n+        patchpoint->clobber(RegisterSet::macroClobberedGPRs());\n+        patchpoint->clobber(RegisterSet { GPRInfo::regT0, GPRInfo::regT1, GPRInfo::regT2 });\n+        patchpoint->setGenerator(\n             [=] (CCallHelpers& jit, const StackmapGenerationParams&) {\n                 AllowMacroScratchRegisterUsage allowScratch(jit);\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/fc7bbf6086da9d43b0fc7f8dd49bc41fa4e3ff50",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "message": "[JSC] ObjectCreate folding should emit checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317570\nrdar://178248992\n\nReviewed by Yijia Huang.\n\nWhen folding ObjectCreate(with-edge-checks), we are not emitting these\nchecks and converting it to NewObject. As a result, we missed the edge\nfilters and the subse",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/object-create-check-insertion.js ---\n@@ -0,0 +1,152 @@\n+// Variant of rdar://178211104 for the ObjectCreate -> NewObject fold in\n+// DFGConstantFoldingPhase.cpp.\n+//\n+// FixupPhase:    ObjectCreate child1 prediction = SpecObject -> fixEdge<ObjectUse>(child1)\n+// CFA:           child1 proven = jsNull (heap watchpoint on G.k) -> ObjectUse ∩ {null} = ⊥\n+//                -> block tail dead, merges nothing into loop header valuesAtHead\n+// ConstantFold:  forNode(child1).m_value == null -> nullPrototypeObjectStructure()\n+//                -> convertToNewObject() -> children.reset()  (ObjectUse edge GONE,\n+//                no insertCheck) -> path resurrected after lower-index header was\n+//                already folded against stale {ArrayWithContiguous}-only state.\n+//\n+// Payload: structure-check-free Contiguous element load on an ArrayWithDouble\n+// butterfly -> raw bits 0x0000414141414141 returned as a JSCell*.\n+\n+// ---- knobs -------------------------------------------------------------\n+const N_PROTO = 4;\n+const N_HOLDER = 64;\n+const TRAIN_GETKEY = 3000;\n+const TRAIN_CALLER = 60;\n+const TRAIN_GETK2 = 3000;\n+const RAMP = 200000;\n+\n+// ---- helpers -----------------------------------------------------------\n+function bitsToDouble(hi, lo) {\n+    const buf = new ArrayBuffer(8);\n+    const u32 = new Uint32Array(buf);\n+    const f64 = new Float64Array(buf);\n+    u32[0] = lo >>> 0;\n+    u32[1] = hi >>> 0;\n+    return f64[0];\n+}\n+\n+function enforce(input)\n+{\n+    return String(input);\n+}\n+noInline(enforce);\n+\n+// Raw double whose bit pattern is 0x0000414141414141.\n+// As a JSValue (top 15 bits zero, OtherTag bit clear) this is a JSCell* to 0x414141414141.\n+const FAKE = bitsToDouble(0x00004141, 0x41414141);\n+enforce(\"FAKE double = \" + FAKE + \"  (bits 0x0000414141414141)\");\n+\n+// ---- the players -------------------------------------------------------\n+const PROTOS = [];\n+for (let i = 0; i < N_PROTO; i++) PROTOS.push({ [\"p\" + i]: i });\n+\n+const G = { k: PROTOS[0] };\n+\n+function getKey(holder) { return holder.k; }\n+\n+function getK2(x) { return x.k; }\n+noInline(getK2);\n+\n+const INNER = { y: 1, z: 2 };\n+\n+function caller(o, p, skip, n) {\n+    if (skip) return 0;\n+    let obj = [INNER, INNER];        // ArrayWithContiguous (S1)\n+    let result = 0;\n+    let v = false;\n+    for (let i = 0; i < n; i++) {\n+        // Two non-array uses of `obj` so TypeCheckHoisting's vote ratio for loc(obj)\n+        // drops below 1.0 (1 StructureCheck vote vs 2 Other votes) and the\n+        // CheckStructure({Contiguous}) is NOT hoisted to the SetLocal in the\n+        // else-branch (which would otherwise OSR-exit on the Double array).\n+        v = (obj === o);\n+        v = (obj === o) | v;\n+        result = obj[0];             // payload: GetByVal, ArrayMode=Contiguous, CheckStructure elided\n+        if (p) {\n+            obj = [INNER, INNER];    // S1 again\n+        } else {\n+            obj = [FAKE, 1.1];       // ArrayWithDouble (S2) — only on the CFA-dead path\n+            Object.create(getKey(G));// ObjectCreate(ObjectUse:getKey(G)); AI proto = null -> contradiction\n+        }\n+    }\n+    return v ? 0 : result;\n+}\n+noInline(caller);\n+\n+// ---- training ----------------------------------------------------------\n+\n+// 1. make getKey's `holder.k` IC give up (megamorphic) with an Object-only value profile\n+const holders = [];\n+for (let i = 0; i < N_HOLDER; i++) {\n+    const h = {};\n+    h[\"u\" + i] = i;\n+    h.k = PROTOS[i % N_PROTO];\n+    holders.push(h);\n+}\n+function trainGetKey() {\n+    let acc = 0;\n+    for (let i = 0; i < TRAIN_GETKEY; i++)\n+        if (typeof getKey(holders[i % N_HOLDER]) === \"object\") acc++;\n+    return acc;\n+}\n+noInline(trainGetKey);\n+trainGetKey();\n+\n+// 2. warm caller in baseline:\n+//    - p=true,  n=2 : payload sees only Contiguous arrays (both iterations)\n+//    - p=false, n=1 : payload sees only Contiguous (iteration 0), then else branch\n+//                     runs once (links getKey call IC so it's inlinable, runs\n+//                     Object.create on an ac\n\n--- Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp ---\n@@ -1097,6 +1097,9 @@ class ConstantFoldingPhase : public Phase {\n                     }\n                     \n                     if (structure) {\n+                        m_interpreter.execute(indexInBlock); // Push CFA over this node after we get the state before.\n+                        alreadyHandled = true; // Don't allow the default constant folder to do things to this.\n+                        m_insertionSet.insertCheck(indexInBlock, node->origin, node->children);\n                         node->convertToNewObject(m_graph.registerStructure(structure));\n                         changed = true;\n                         break;\n",
+    "url": "https://github.com/WebKit/WebKit/commit/cd30bb7e410f12481f5330a896e72cd569eb7ee2",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
