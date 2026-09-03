@@ -60597,5 +60597,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T23:21:50.051883+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "url": "https://github.com/WebKit/WebKit/commit/d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "message": "Remove dead declared-but-undefined member functions from ResourceMonitorThrottler\nhttps://bugs.webkit.org/show_bug.cgi?id=323288\nrdar://186540356\n\nReviewed by Abrar Rahman Protyasha.\n\nThese five members are declared in the header but never defined or\ncalled. Remove the stale declarations. No behavio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T23:22:28.633370+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "url": "https://github.com/WebKit/WebKit/commit/2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "message": "[JSC] Support `BigInt` for `Intl.PluralRules.select` and `Intl.PluralRules.selectRange`\nhttps://bugs.webkit.org/show_bug.cgi?id=323092\n\nReviewed by Yusuke Suzuki.\n\nAccording to [1][2], the `Intl.PluralRules.select` and `Intl.PluralRules.selectRange` methods should support\n`BigInt` values as their ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-03T23:23:06.795065+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "url": "https://github.com/WebKit/WebKit/commit/761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "message": "[JSC] Fold Shl into ARM64 WasmAddress index form\nhttps://bugs.webkit.org/show_bug.cgi?id=323211\n\nReviewed by Yusuke Suzuki.\n\nWasmAddress already folds ZExt32/SExt32 into ARM64 UXTW/SXTW via\nindexArg. This also absorbs a pointer-width Shl into the index scale\nso a load can be LDR Xt, [Xn, Wm, UXTW #s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
