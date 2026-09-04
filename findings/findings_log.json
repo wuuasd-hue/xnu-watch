@@ -60797,5 +60797,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:30:50.584720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "url": "https://github.com/WebKit/WebKit/commit/cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "message": "[JSC] Add Karatsuba multiplication to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323244\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt multiplies with O(n^2) schoolbook / Comba loops only, so the time per\nproduct grows quadratically with the operand size: 1000 x 1000 digits takes\n336 us and 4000 x 40",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:31:28.970334+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "956f6fb49678a6f6b0116325be5b5357df948970",
+    "url": "https://github.com/WebKit/WebKit/commit/956f6fb49678a6f6b0116325be5b5357df948970",
+    "message": "[YARR] Match lookbehinds in the interpreter from a copy of the disjunction in match order\nhttps://bugs.webkit.org/show_bug.cgi?id=322692\n\nReviewed by Daniel Liu.\n\nThis is the second step of the plan in 319067@main. The interpreter now\nmatches a lookbehind the way the JIT does: from a copy of its dis",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:32:07.293090+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "url": "https://github.com/WebKit/WebKit/commit/0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "message": "[JSC] Vectorize `Array#indexOf` and `Array#includes` on long Int32 and Double arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=323192\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL compile ArrayIndexOf / ArrayIncludes on Int32 and Double arrays\ninto a scalar loop, while the C++ paths for Int32 arrays alread",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:32:45.523232+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "34141654c7a5bedfa41619da1f9513b39a8dd694",
+    "url": "https://github.com/WebKit/WebKit/commit/34141654c7a5bedfa41619da1f9513b39a8dd694",
+    "message": "[JSC] `RegExp#test` should fast-fail on an input shorter than the pattern's minimum size\nhttps://bugs.webkit.org/show_bug.cgi?id=322689\n\nReviewed by Yusuke Suzuki.\n\nRegExp#test on a non-constant RegExp (routes held in an array, as\npath-to-regexp routers do) always goes through the operation, RegExp:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:33:23.608088+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "url": "https://github.com/WebKit/WebKit/commit/b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "message": "Refactor CachedCSSStyleSheet::sheetText to return std::expected\nrdar://186388202\nhttps://bugs.webkit.org/show_bug.cgi?id=323125\n\nReviewed by Alex Christensen.\n\nCachedCSSStyleSheet::sheetText signals error by setting the passed in\nboolean pointers, if they're set. This is inelegant, and particularly\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T11:34:01.478753+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0042af348458a9d9de2ec3f1636424c20163818",
+    "url": "https://github.com/WebKit/WebKit/commit/a0042af348458a9d9de2ec3f1636424c20163818",
+    "message": "[JSC] Add \"dc zva\" zero-fill loop for sanitizeStackForVM\nhttps://bugs.webkit.org/show_bug.cgi?id=323368\nrdar://186606262\n\nReviewed by Marcus Plutowski.\n\nThis patch adds \"dc zva\" zero-fill code for sanitizeStackForVM.\nClearing stack can be dramatically large, and \"dc zva\" loop can be\nfaster to zero-f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
