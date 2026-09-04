@@ -60917,5 +60917,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T15:03:36.636603+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "7c8bf4ec0b60ca6b0c29766044dfaa1543e8bdcd",
+    "url": "https://github.com/swiftlang/swift/commit/7c8bf4ec0b60ca6b0c29766044dfaa1543e8bdcd",
+    "message": "Merge pull request #91935 from mikeash/prespecialized-function-metadata\n\n[Runtime] Look up function type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T15:04:14.748041+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "url": "https://github.com/WebKit/WebKit/commit/0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "message": "Fix crash in MemoryCache::add after 315967@main\nhttps://bugs.webkit.org/show_bug.cgi?id=323053\nrdar://182493844\n\nReviewed by Chris Dumez.\n\n_WKUserStyleSheet can be used to load a font very early in the document creation process.\nIt was loading before the firstPartyForCookies was set, then later the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T15:04:52.993849+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "url": "https://github.com/WebKit/WebKit/commit/cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "message": "[JSC] Add Karatsuba multiplication to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323244\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt multiplies with O(n^2) schoolbook / Comba loops only, so the time per\nproduct grows quadratically with the operand size: 1000 x 1000 digits takes\n336 us and 4000 x 40",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
