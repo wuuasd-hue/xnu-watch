@@ -60977,5 +60977,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T18:30:27.937060+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2a07be9fb7478e9b44a6ed50a7b9f07b8c793b1",
+    "url": "https://github.com/WebKit/WebKit/commit/f2a07be9fb7478e9b44a6ed50a7b9f07b8c793b1",
+    "message": "WKWebView does not enforce CORS response header validation for apps' custom schemes after registerURLSchemeAsCORSEnabled()\nrdar://174287004\n\nReviewed by Chris Dumez.\n\nWe mean for app provided custom URL schemes to participate in CORS, but our implementation had a few holes.\n- The network process was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T18:31:05.024748+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6507c8f6aa83fb37b02d3c4ceaf7e4f4eb661d3",
+    "url": "https://github.com/WebKit/WebKit/commit/e6507c8f6aa83fb37b02d3c4ceaf7e4f4eb661d3",
+    "message": "Pre-invalidate captured-variable WatchpointSets in generator and async function bodies\nhttps://bugs.webkit.org/show_bug.cgi?id=313499\nrdar://173777534\n\nReviewed by Yusuke Suzuki.\n\nWhen deleteAllCode runs while an async generator is suspended, the generator\nbody's CodeBlock is cleared and later re-cr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T18:31:42.044009+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "url": "https://github.com/WebKit/WebKit/commit/0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "message": "[JSC][Wasm] Use ARM64 post-index in the restore-frame copy\nhttps://bugs.webkit.org/show_bug.cgi?id=323374\n\nReviewed by Yusuke Suzuki.\n\nThe wasm-to-wasm restore-frame copy loop does loadPair64, storePair64\nat base minus restoreFrameSize, then addPtr 16. ARM64 already has\nloadPair64(PostIndexAddress).",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T18:32:19.113846+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "956f6fb49678a6f6b0116325be5b5357df948970",
+    "url": "https://github.com/WebKit/WebKit/commit/956f6fb49678a6f6b0116325be5b5357df948970",
+    "message": "[YARR] Match lookbehinds in the interpreter from a copy of the disjunction in match order\nhttps://bugs.webkit.org/show_bug.cgi?id=322692\n\nReviewed by Daniel Liu.\n\nThis is the second step of the plan in 319067@main. The interpreter now\nmatches a lookbehind the way the JIT does: from a copy of its dis",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T18:32:57.539350+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "url": "https://github.com/WebKit/WebKit/commit/0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "message": "[JSC] Vectorize `Array#indexOf` and `Array#includes` on long Int32 and Double arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=323192\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL compile ArrayIndexOf / ArrayIncludes on Int32 and Double arrays\ninto a scalar loop, while the C++ paths for Int32 arrays alread",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
