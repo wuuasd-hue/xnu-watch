@@ -60697,5 +60697,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T06:04:00.198762+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "url": "https://github.com/WebKit/WebKit/commit/b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "message": "Refactor CachedCSSStyleSheet::sheetText to return std::expected\nrdar://186388202\nhttps://bugs.webkit.org/show_bug.cgi?id=323125\n\nReviewed by Alex Christensen.\n\nCachedCSSStyleSheet::sheetText signals error by setting the passed in\nboolean pointers, if they're set. This is inelegant, and particularly\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T06:04:37.889820+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0042af348458a9d9de2ec3f1636424c20163818",
+    "url": "https://github.com/WebKit/WebKit/commit/a0042af348458a9d9de2ec3f1636424c20163818",
+    "message": "[JSC] Add \"dc zva\" zero-fill loop for sanitizeStackForVM\nhttps://bugs.webkit.org/show_bug.cgi?id=323368\nrdar://186606262\n\nReviewed by Marcus Plutowski.\n\nThis patch adds \"dc zva\" zero-fill code for sanitizeStackForVM.\nClearing stack can be dramatically large, and \"dc zva\" loop can be\nfaster to zero-f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T06:05:15.458195+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "url": "https://github.com/WebKit/WebKit/commit/0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "message": "Fix crash in MemoryCache::add after 315967@main\nhttps://bugs.webkit.org/show_bug.cgi?id=323053\nrdar://182493844\n\nReviewed by Chris Dumez.\n\n_WKUserStyleSheet can be used to load a font very early in the document creation process.\nIt was loading before the firstPartyForCookies was set, then later the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T06:05:53.042209+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "url": "https://github.com/WebKit/WebKit/commit/23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "message": "[JSC] Split validation and evaluation of wasm constant expression\nhttps://bugs.webkit.org/show_bug.cgi?id=323289\nrdar://186541346\n\nReviewed by Keith Miller.\n\nComplex wasm binaries include significant amount of constant\nexpressions. For example, Dart-flute-todomvc-wasm's binary includes\n4000~ constan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T06:06:30.927536+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "url": "https://github.com/WebKit/WebKit/commit/d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "message": "Remove dead declared-but-undefined member functions from ResourceMonitorThrottler\nhttps://bugs.webkit.org/show_bug.cgi?id=323288\nrdar://186540356\n\nReviewed by Abrar Rahman Protyasha.\n\nThese five members are declared in the header but never defined or\ncalled. Remove the stale declarations. No behavio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
