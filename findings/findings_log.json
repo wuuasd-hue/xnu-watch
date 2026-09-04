@@ -61077,5 +61077,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T20:56:07.591660+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca158eb19b753004c61c9405265669ccfdd8557a",
+    "url": "https://github.com/WebKit/WebKit/commit/ca158eb19b753004c61c9405265669ccfdd8557a",
+    "message": "[JSC] Adopt the instance-scoped qWasmGlobal packet form\nhttps://bugs.webkit.org/show_bug.cgi?id=323123\n\nReviewed by Yijia Huang.\n\nA Wasm global belongs to a module instance, not to a frame. The global\nindex space is per instance, and DW_OP_WASM_location's global operand\nindexes the index space of th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T20:56:44.897931+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64168e4d90c4f106867471495b7842b5995990a6",
+    "url": "https://github.com/WebKit/WebKit/commit/64168e4d90c4f106867471495b7842b5995990a6",
+    "message": "[CSS Module Scripts] Verify if a module type is allowed before fetching\nrdar://186415342\nhttps://bugs.webkit.org/show_bug.cgi?id=323170\n\nReviewed by Yusuke Suzuki.\n\nAs defined in the HTML spec [1], when loading a module script, there's a check to\nensure the module script type is allowed (understood ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T20:57:22.237435+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "34141654c7a5bedfa41619da1f9513b39a8dd694",
+    "url": "https://github.com/WebKit/WebKit/commit/34141654c7a5bedfa41619da1f9513b39a8dd694",
+    "message": "[JSC] `RegExp#test` should fast-fail on an input shorter than the pattern's minimum size\nhttps://bugs.webkit.org/show_bug.cgi?id=322689\n\nReviewed by Yusuke Suzuki.\n\nRegExp#test on a non-constant RegExp (routes held in an array, as\npath-to-regexp routers do) always goes through the operation, RegExp:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-04T20:57:59.511791+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "7c8bf4ec0b60ca6b0c29766044dfaa1543e8bdcd",
+    "url": "https://github.com/swiftlang/swift/commit/7c8bf4ec0b60ca6b0c29766044dfaa1543e8bdcd",
+    "message": "Merge pull request #91935 from mikeash/prespecialized-function-metadata\n\n[Runtime] Look up function type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
