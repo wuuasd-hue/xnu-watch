@@ -11021,9 +11021,10 @@
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",
-      "memory safety (OOB, UAF, overflow, type confusion)"
+      "memory safety (OOB, UAF, overflow, type confusion)",
+      "authorization / trust / policy logic (bypass, default-allow, fast-path)"
     ],
-    "times_reexamined": 1
+    "times_reexamined": 2
   },
   {
     "repo": "WebKit/WebKit",
@@ -12578,6 +12579,21 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/assembler/ARM64Assembler.h ---\n@@ -170,7 +170,7 @@ inline uint16_t getHalfword(uint64_t value, int which)\n \n namespace RegisterNames {\n \n-typedef enum : int8_t {\n+enum RegisterID : int8_t {\n #define REGISTER_ID(id, name, r, cs) id,\n     FOR_EACH_GP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID\n@@ -180,22 +180,22 @@ typedef enum : int8_t {\n #undef REGISTER_ALIAS\n \n     InvalidGPRReg = -1,\n-} RegisterID;\n+};\n \n-typedef enum : int8_t {\n+enum SPRegisterID : int8_t {\n #define REGISTER_ID(id, name) id,\n     FOR_EACH_SP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID\n-} SPRegisterID;\n+};\n \n // ARM64 always has 32 FPU registers 128-bits each. See http://llvm.org/devmtg/2012-11/Northover-AArch64.pdf\n // and Section 5.1.2 in http://infocenter.arm.com/help/topic/com.arm.doc.ihi0055b/IHI0055B_aapcs64.pdf.\n-typedef enum : int8_t {\n+enum FPRegisterID : int8_t {\n #define REGISTER_ID(id, name, r, cs) id,\n     FOR_EACH_FP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID                       \n     InvalidFPRReg = -1,\n-} FPRegisterID;\n+};\n \n static constexpr bool isSp(RegisterID reg) { return reg == sp; }\n static constexpr bool isZr(RegisterID reg) { return reg == zr; }\n\n--- Source/JavaScriptCore/assembler/RISCV64Assembler.h ---\n@@ -38,7 +38,7 @@ namespace JSC {\n \n namespace RISCV64Registers {\n \n-typedef enum : int8_t {\n+enum RegisterID : int8_t {\n #define REGISTER_ID(id, name, r, cs) id,\n     FOR_EACH_GP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID\n@@ -48,23 +48,23 @@ typedef enum : int8_t {\n #undef REGISTER_ALIAS\n \n     InvalidGPRReg = -1,\n-} RegisterID;\n+};\n \n-typedef enum : int8_t {\n+enum SPRegisterID : int8_t {\n #define REGISTER_ID(id, name) id,\n     FOR_EACH_SP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID\n \n     InvalidSPReg = -1,\n-} SPRegisterID;\n+};\n \n-typedef enum : int8_t {\n+enum FPRegisterID : int8_t {\n #define REGISTER_ID(id, name, r, cs) id,\n     FOR_EACH_FP_REGISTER(REGISTER_ID)\n #undef REGISTER_ID\n \n     InvalidFPRReg = -1,\n-} FPRegisterID;\n+};\n \n } // namespace RISCV64Registers\n \n\n--- Source/JavaScriptCore/assembler/X86Assembler.h ---\n@@ -47,19 +47,19 @@ namespace RegisterNames {\n \n #define REGISTER_ID(id, name, res, cs) id,\n \n-typedef enum : int8_t {\n+enum RegisterID : int8_t {\n     FOR_EACH_GP_REGISTER(REGISTER_ID)\n     InvalidGPRReg = -1,\n-} RegisterID;\n+};\n \n-typedef enum : int8_t {\n+enum SPRegisterID : int8_t {\n     FOR_EACH_SP_REGISTER(REGISTER_ID)                                                     \n-} SPRegisterID;\n+};\n \n-typedef enum : int8_t {\n+enum XMMRegisterID : int8_t {\n     FOR_EACH_FP_REGISTER(REGISTER_ID)\n     InvalidFPRReg = -1,\n-} XMMRegisterID;\n+};\n \n #undef REGISTER_ID\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/b091600bcaa79c67577a8c0ea40d40dcda916d4a",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "366915db5c7abfdc45112691a573e2d656435586",
+    "message": "[JSC] m_numberOfWaitingParallelMarkers may be unbalanced\nhttps://bugs.webkit.org/show_bug.cgi?id=323491\nrdar://186725777\n\nReviewed by Sosuke Suzuki.\n\nThere are several return statement which missed updating\nm_numberOfWaitingParallelMarkers. This patch fixes it by using\nScopeExit.\n\n* Source/JavaScrip",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/heap/SlotVisitor.cpp ---\n@@ -42,6 +42,7 @@\n #include \"VM.h\"\n #include <wtf/ListDump.h>\n #include <wtf/Lock.h>\n+#include <wtf/Scope.h>\n #include <wtf/StdLibExtras.h>\n #include <wtf/TZoneMallocInlines.h>\n \n@@ -630,7 +631,10 @@ NEVER_INLINE SlotVisitor::SharedDrainResult SlotVisitor::drainFromShared(SharedD\n             if (isActive)\n                 m_heap.m_numberOfActiveParallelMarkers--;\n             m_heap.m_numberOfWaitingParallelMarkers++;\n-            \n+            auto stopWaiting = makeScopeExit([&] {\n+                m_heap.m_numberOfWaitingParallelMarkers--;\n+            });\n+\n             if (sharedDrainMode == MainDrain) {\n                 while (true) {\n                     if (hasElapsed(timeout))\n@@ -696,7 +700,6 @@ NEVER_INLINE SlotVisitor::SharedDrainResult SlotVisitor::drainFromShared(SharedD\n             }\n \n             m_heap.m_numberOfActiveParallelMarkers++;\n-            m_heap.m_numberOfWaitingParallelMarkers--;\n         }\n \n         if (bonusTask) {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/366915db5c7abfdc45112691a573e2d656435586",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)",

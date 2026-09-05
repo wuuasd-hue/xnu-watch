@@ -61677,5 +61677,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T21:24:20.985327+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "366915db5c7abfdc45112691a573e2d656435586",
+    "url": "https://github.com/WebKit/WebKit/commit/366915db5c7abfdc45112691a573e2d656435586",
+    "message": "[JSC] m_numberOfWaitingParallelMarkers may be unbalanced\nhttps://bugs.webkit.org/show_bug.cgi?id=323491\nrdar://186725777\n\nReviewed by Sosuke Suzuki.\n\nThere are several return statement which missed updating\nm_numberOfWaitingParallelMarkers. This patch fixes it by using\nScopeExit.\n\n* Source/JavaScrip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T21:24:58.674980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "366915db5c7abfdc45112691a573e2d656435586",
+    "url": "https://github.com/WebKit/WebKit/commit/366915db5c7abfdc45112691a573e2d656435586",
+    "message": "[JSC] m_numberOfWaitingParallelMarkers may be unbalanced\nhttps://bugs.webkit.org/show_bug.cgi?id=323491\nrdar://186725777\n\nReviewed by Sosuke Suzuki.\n\nThere are several return statement which missed updating\nm_numberOfWaitingParallelMarkers. This patch fixes it by using\nScopeExit.\n\n* Source/JavaScrip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T21:25:36.330272+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "url": "https://github.com/WebKit/WebKit/commit/82220a2f11379d6f8a9b39ffecf311a9472721f2",
+    "message": "[CMake] Stop rewriting arguments in swiftc-wrapper\nhttps://bugs.webkit.org/show_bug.cgi?id=322312\n\nReviewed by Adrian Taylor and Richard Robinson.\n\nRemove all [1] the custom argument rewriting done in `swiftc-wrapper.py`\nand change the build config to coherently pass them. Now, the compiler\nand link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
