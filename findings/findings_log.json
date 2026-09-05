@@ -61457,5 +61457,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T12:09:41.908885+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "83683abb036df547c679bd13ee7bca7ff64df9f9",
+    "url": "https://github.com/WebKit/WebKit/commit/83683abb036df547c679bd13ee7bca7ff64df9f9",
+    "message": "[JSC] Inline `RegExp#test` for unicode patterns and patterns with a Yarr frame\nhttps://bugs.webkit.org/show_bug.cgi?id=322949\n\nReviewed by Yusuke Suzuki.\n\nRegExpTestInline emits the Yarr matcher for 8-bit strings directly into\nDFG/FTL code, but it refuses any pattern whose terms need Yarr frame slot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T12:10:19.758954+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "549955d9979c99de1d9fa22a9d281629cedca59d",
+    "url": "https://github.com/WebKit/WebKit/commit/549955d9979c99de1d9fa22a9d281629cedca59d",
+    "message": "[YARR] Keep the terms of lookbehinds in match order in YarrPattern\nhttps://bugs.webkit.org/show_bug.cgi?id=323421\n\nReviewed by Daniel Liu.\n\nThis is the last step of the plan in 319067@main.\n\nSince 319067@main and 320492@main, the JIT and the interpreter match a\nlookbehind from a copy of its disjunct",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T12:10:57.340215+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b091600bcaa79c67577a8c0ea40d40dcda916d4a",
+    "url": "https://github.com/WebKit/WebKit/commit/b091600bcaa79c67577a8c0ea40d40dcda916d4a",
+    "message": "[JSC] Use named enums for register enums\nhttps://bugs.webkit.org/show_bug.cgi?id=323455\nrdar://186684831\n\nReviewed by Yusuke Suzuki.\n\n* Source/JavaScriptCore/assembler/ARM64Assembler.h:\n* Source/JavaScriptCore/assembler/RISCV64Assembler.h:\n* Source/JavaScriptCore/assembler/X86Assembler.h:\n\nCanonical",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T12:11:35.222602+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "url": "https://github.com/WebKit/WebKit/commit/d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "message": "[JSC] Validate RegExps in DFG strength reduction phase\nhttps://bugs.webkit.org/show_bug.cgi?id=316723\nrdar://178446883\n\nReviewed by Yusuke Suzuki.\n\nThis patch prevents conversion to NewRegExpUntyped if the regexp in question is invalid.\n\nTest: JSTests/stress/new-regexp-untyped-soft-invalid-stale-cap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T12:12:12.928787+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a87a6454b140fb7ab562bcc855818b554c675c74",
+    "url": "https://github.com/swiftlang/swift/commit/a87a6454b140fb7ab562bcc855818b554c675c74",
+    "message": "Merge pull request #91966 from compnerd/resources\n\nRuntime,stdlib: adjust installation of static linking resources",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
