@@ -61317,5 +61317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T04:42:31.190318+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a87a6454b140fb7ab562bcc855818b554c675c74",
+    "url": "https://github.com/swiftlang/swift/commit/a87a6454b140fb7ab562bcc855818b554c675c74",
+    "message": "Merge pull request #91966 from compnerd/resources\n\nRuntime,stdlib: adjust installation of static linking resources",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T04:43:08.158130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64168e4d90c4f106867471495b7842b5995990a6",
+    "url": "https://github.com/WebKit/WebKit/commit/64168e4d90c4f106867471495b7842b5995990a6",
+    "message": "[CSS Module Scripts] Verify if a module type is allowed before fetching\nrdar://186415342\nhttps://bugs.webkit.org/show_bug.cgi?id=323170\n\nReviewed by Yusuke Suzuki.\n\nAs defined in the HTML spec [1], when loading a module script, there's a check to\nensure the module script type is allowed (understood ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T04:43:45.087442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "66d43bea8153d9b8fd36876a06fcf2bd15e6f902",
+    "url": "https://github.com/WebKit/WebKit/commit/66d43bea8153d9b8fd36876a06fcf2bd15e6f902",
+    "message": "Revised Mixed Content rules to match LNA spec\nhttps://bugs.webkit.org/show_bug.cgi?id=297739\nrdar://154439054\n\nReviewed by Brent Fulgham.\n\nFeature work for Local Network Access (https://wicg.github.io/local-network-access/).\nSection 3.2 (https://wicg.github.io/local-network-access/#integration-with-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
