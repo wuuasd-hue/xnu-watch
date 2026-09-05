@@ -61377,5 +61377,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T08:40:41.023668+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2f1a867ae69cfe07c4fe23b51b24186b32ab991",
+    "url": "https://github.com/WebKit/WebKit/commit/e2f1a867ae69cfe07c4fe23b51b24186b32ab991",
+    "message": "[JSC] Move CodeOrigin instead of copying it when creating DFG nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=323490\nrdar://186725447\n\nReviewed by Yusuke Suzuki.\n\nCopying a CodeOrigin heap allocates an OutOfLineCodeOrigin when the bytecode index is too large to\npack into the spare top address bits. It",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T08:41:17.844770+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8c37314ee17807d8d77e157e983f54872b103ab",
+    "url": "https://github.com/WebKit/WebKit/commit/c8c37314ee17807d8d77e157e983f54872b103ab",
+    "message": "[JSC] Array.prototype.toSpliced incorrectly throws TypeError instead of RangeError when length is Infinity\nhttps://bugs.webkit.org/show_bug.cgi?id=320830\n\nReviewed by Yusuke Suzuki.\n\nArray.prototype.toSpliced should throw TypeError when the new array\nlength exceeds 2**53-1 (Step 12 of [1]), but it c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T08:41:54.708585+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "620e60a6f7e83a1cf67722366c83e29c4ebf3680",
+    "url": "https://github.com/swiftlang/swift/commit/620e60a6f7e83a1cf67722366c83e29c4ebf3680",
+    "message": "Merge pull request #91960 from mikeash/willthrow-accessors\n\n[Runtime] Add setters for the swift_willThrow hook slots.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T08:42:31.581137+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "url": "https://github.com/WebKit/WebKit/commit/1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "message": "[JSC] Optimize Wasm globals initialization related code\nhttps://bugs.webkit.org/show_bug.cgi?id=323465\nrdar://186697890\n\nReviewed by Yijia Huang.\n\nThis patch optimizes Wasm globals initialization related code,\n\n1. constant expression validator should collect maxStackHeight. So we\n   can use this whe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
