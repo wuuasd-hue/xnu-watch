@@ -61237,5 +61237,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T00:26:26.941283+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "url": "https://github.com/WebKit/WebKit/commit/1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "message": "[JSC] Optimize Wasm globals initialization related code\nhttps://bugs.webkit.org/show_bug.cgi?id=323465\nrdar://186697890\n\nReviewed by Yijia Huang.\n\nThis patch optimizes Wasm globals initialization related code,\n\n1. constant expression validator should collect maxStackHeight. So we\n   can use this whe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T00:27:04.523895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "url": "https://github.com/WebKit/WebKit/commit/d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "message": "[JSC] Validate RegExps in DFG strength reduction phase\nhttps://bugs.webkit.org/show_bug.cgi?id=316723\nrdar://178446883\n\nReviewed by Yusuke Suzuki.\n\nThis patch prevents conversion to NewRegExpUntyped if the regexp in question is invalid.\n\nTest: JSTests/stress/new-regexp-untyped-soft-invalid-stale-cap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T00:27:42.081652+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "url": "https://github.com/WebKit/WebKit/commit/0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "message": "[JSC][Wasm] Use ARM64 post-index in the restore-frame copy\nhttps://bugs.webkit.org/show_bug.cgi?id=323374\n\nReviewed by Yusuke Suzuki.\n\nThe wasm-to-wasm restore-frame copy loop does loadPair64, storePair64\nat base minus restoreFrameSize, then addPtr 16. ARM64 already has\nloadPair64(PostIndexAddress).",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-05T00:28:19.938011+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca158eb19b753004c61c9405265669ccfdd8557a",
+    "url": "https://github.com/WebKit/WebKit/commit/ca158eb19b753004c61c9405265669ccfdd8557a",
+    "message": "[JSC] Adopt the instance-scoped qWasmGlobal packet form\nhttps://bugs.webkit.org/show_bug.cgi?id=323123\n\nReviewed by Yijia Huang.\n\nA Wasm global belongs to a module instance, not to a frame. The global\nindex space is per instance, and DW_OP_WASM_location's global operand\nindexes the index space of th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
