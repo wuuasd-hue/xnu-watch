@@ -61897,5 +61897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T11:08:31.025180+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "075a8d041b63a6ae6a4cc690e2f96dd635914df9",
+    "url": "https://github.com/WebKit/WebKit/commit/075a8d041b63a6ae6a4cc690e2f96dd635914df9",
+    "message": "window.open() with noopener should not always return null\nhttps://bugs.webkit.org/show_bug.cgi?id=322591\n\nReviewed by Chris Dumez.\n\nThe name lookup in \"the rules for choosing a navigable\" ignores noopener, so\nwindow.open() can reuse an existing navigable when noopener is set. Two things\nwere wrong w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T11:09:09.284318+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57d983744d8291b14fccd688f04669011fe80254",
+    "url": "https://github.com/WebKit/WebKit/commit/57d983744d8291b14fccd688f04669011fe80254",
+    "message": "[JSC] Skip the global StructureCache when the prototype has never been a prototype\nhttps://bugs.webkit.org/show_bug.cgi?id=322703\nrdar://185969611\n\nReviewed by Keith Miller.\n\nWe optimize StructureCache lookup cases.\n\n1. When inserting a new entry, we set mayBePrototype bit and then insert\n   it into",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
