@@ -61997,5 +61997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T17:10:16.074030+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d9f8faf3642c18971c354d7a3d756d116b5fa9b",
+    "url": "https://github.com/WebKit/WebKit/commit/0d9f8faf3642c18971c354d7a3d756d116b5fa9b",
+    "message": "Drop RefCounted's adoption requirement assertion\nhttps://bugs.webkit.org/show_bug.cgi?id=322707\n\nReviewed by Ryosuke Niwa.\n\nThe point of this assertion was to make sure that we do not forget to\nadopt a RefCounted object after constructing it. However, it also\nprevents ref'ing the object while it is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T17:10:53.490437+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0fb9b2cf502b80dcf30a9387f4a49bc602d4d474",
+    "url": "https://github.com/WebKit/WebKit/commit/0fb9b2cf502b80dcf30a9387f4a49bc602d4d474",
+    "message": "[JSC] Update profile concurrently from GC marker threads\nhttps://bugs.webkit.org/show_bug.cgi?id=322755\nrdar://186016244\n\nReviewed by Yijia Huang.\n\nWe are updating profiles at GC end phase since it is also clearing cells\nwhich will be dead after this GC end phase. So this is necessary, but\nupdating ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
