@@ -62117,5 +62117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T22:57:57.458731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "565aa489f1f01a6f05274e682d17d9198410fa99",
+    "url": "https://github.com/WebKit/WebKit/commit/565aa489f1f01a6f05274e682d17d9198410fa99",
+    "message": "[JSC][Wasm] Fill wasm ref arrays without per-element set()\nhttps://bugs.webkit.org/show_bug.cgi?id=322524\n\nReviewed by Keith Miller.\n\nRef fill looped set() so each element took a write barrier. Store with\nsetWithoutWriteBarrier, then one writeBarrier.\n\n* Source/JavaScriptCore/wasm/js/JSWebAssemblyAr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T22:58:34.314067+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3e6e0f710a4f913cc4281834f9810ab07962797",
+    "url": "https://github.com/WebKit/WebKit/commit/d3e6e0f710a4f913cc4281834f9810ab07962797",
+    "message": "[JSC][Wasm] Fast-path i31ref in the JS-to-Wasm entry stub\nhttps://bugs.webkit.org/show_bug.cgi?id=322525\n\nReviewed by Yusuke Suzuki.\n\nThe JS-to-Wasm IC sent every non-externref to the slow path. Accept a JS\nint32 in the i31 range, and null if the type is nullable.\n\n* Source/JavaScriptCore/wasm/js/JS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
