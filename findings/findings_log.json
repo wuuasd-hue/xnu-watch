@@ -61937,5 +61937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T14:15:56.310049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fea77037ca1f856086ae677086b51233c27eb1e8",
+    "url": "https://github.com/WebKit/WebKit/commit/fea77037ca1f856086ae677086b51233c27eb1e8",
+    "message": "[JSC] `RegExp#test` minimum-length filter must not skip the `lastIndex` read\nhttps://bugs.webkit.org/show_bug.cgi?id=323501\n\nReviewed by Yusuke Suzuki.\n\nRegExpBuiltinExec reads lastIndex through ToLength(? Get(R, \"lastIndex\")) for\nevery RegExp, global or not, so a non-numeric lastIndex has observabl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T14:16:33.929140+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fea77037ca1f856086ae677086b51233c27eb1e8",
+    "url": "https://github.com/WebKit/WebKit/commit/fea77037ca1f856086ae677086b51233c27eb1e8",
+    "message": "[JSC] `RegExp#test` minimum-length filter must not skip the `lastIndex` read\nhttps://bugs.webkit.org/show_bug.cgi?id=323501\n\nReviewed by Yusuke Suzuki.\n\nRegExpBuiltinExec reads lastIndex through ToLength(? Get(R, \"lastIndex\")) for\nevery RegExp, global or not, so a non-numeric lastIndex has observabl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T14:17:11.394503+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f229fb72961093d2f552ecfef65a8f13afd402a",
+    "url": "https://github.com/WebKit/WebKit/commit/8f229fb72961093d2f552ecfef65a8f13afd402a",
+    "message": "[JSC] WebAssembly try/catch result-type confusion omits optimized reference checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317450\nrdar://179017779\n\nReviewed by Yusuke Suzuki.\n\nThis patch expands an expression stack check to force the signature\nin all cases, not just for if/else.\n\nTest: JSTests/wasm/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
