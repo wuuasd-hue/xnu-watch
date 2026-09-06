@@ -61817,5 +61817,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T06:05:36.028936+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "url": "https://github.com/WebKit/WebKit/commit/54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "message": "[JSC] Load ARM64 SIMD bitmask tower constants\nhttps://bugs.webkit.org/show_bug.cgi?id=323350\n\nReviewed by Yusuke Suzuki.\n\nARM64 i8x16/i16x8/i32x4.bitmask builds a {1,2,4,...} v128 mask\nand materializes it with two 64-bit GPR moves plus splat and\nreplace-lane. Those lane values are not a repeated imm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T06:06:12.967494+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "url": "https://github.com/WebKit/WebKit/commit/6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "message": "[JSC][Wasm] Accept bottom refs in i31.get_s and i31.get_u\nhttps://bugs.webkit.org/show_bug.cgi?id=322836\n\nReviewed by Yusuke Suzuki.\n\ni31.get_s and i31.get_u take (ref null i31). none is a subtype of\ni31 so (ref none) and (ref null none) must validate. They still trap\nif the value is null. The valid",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T06:06:50.184545+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "url": "https://github.com/WebKit/WebKit/commit/54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "message": "[JSC] Load ARM64 SIMD bitmask tower constants\nhttps://bugs.webkit.org/show_bug.cgi?id=323350\n\nReviewed by Yusuke Suzuki.\n\nARM64 i8x16/i16x8/i32x4.bitmask builds a {1,2,4,...} v128 mask\nand materializes it with two 64-bit GPR moves plus splat and\nreplace-lane. Those lane values are not a repeated imm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T06:07:27.119446+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "url": "https://github.com/WebKit/WebKit/commit/6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "message": "[JSC][Wasm] Accept bottom refs in i31.get_s and i31.get_u\nhttps://bugs.webkit.org/show_bug.cgi?id=322836\n\nReviewed by Yusuke Suzuki.\n\ni31.get_s and i31.get_u take (ref null i31). none is a subtype of\ni31 so (ref none) and (ref null none) must validate. They still trap\nif the value is null. The valid",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
