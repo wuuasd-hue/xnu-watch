@@ -62037,5 +62037,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T19:19:53.105663+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "48985e195c6fddb7395ad65e72a7614f12366ae2",
+    "url": "https://github.com/WebKit/WebKit/commit/48985e195c6fddb7395ad65e72a7614f12366ae2",
+    "message": "[JSC] Store the DFG `VariableEventStream` as a byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=322713\n\nReviewed by Yusuke Suzuki.\n\nDFG::VariableEventStream keeps one 14 byte VariableEvent per event for as long\nas the DFG code lives, and its only reader is reconstruct() on OSR exit, which\nseeks b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T19:20:31.387013+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "url": "https://github.com/WebKit/WebKit/commit/5bbcf5a4c9180f13ad9a7a6e4bdf834d91d81b1e",
+    "message": "[JSC][Wasm] Inline table.size\nhttps://bugs.webkit.org/show_bug.cgi?id=322520\n\nReviewed by Yusuke Suzuki.\n\nBBQ and OMG load Table length instead of calling operationGetWasmTableSize.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT.cpp:\n* Source/JavaScriptCore/wasm/WasmOMGIRGenerator.cpp:\n\nCanonical link: ht",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
