@@ -61777,5 +61777,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T01:07:04.349200+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "url": "https://github.com/WebKit/WebKit/commit/9f3eea6f466175106d4e9073964cd4bb000895dc",
+    "message": "[JSC] `DFGFixupPhase` should not clear `NodeMustGenerate` on checked arith nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=322371\n\nReviewed by Yusuke Suzuki.\n\nDFGFixupPhase cleared NodeMustGenerate on these nodes even when it had just\nselected Arith::CheckOverflow or Arith::CheckOverflowAndNegativeZer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T01:07:42.436283+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "580b6dade24924fbe758fc530211de0faf00fb43",
+    "url": "https://github.com/WebKit/WebKit/commit/580b6dade24924fbe758fc530211de0faf00fb43",
+    "message": "[JSC] Store `OSRExitDescriptor` exit values as a compact byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=322369\n\nReviewed by Yusuke Suzuki.\n\nFTL::OSRExitDescriptor::m_values is a FixedOperands<ExitValue> with one 9 byte\nentry per argument, local and tmp of the whole inline stack, and it is kept ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
