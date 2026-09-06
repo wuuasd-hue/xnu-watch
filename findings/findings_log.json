@@ -62077,5 +62077,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T21:28:54.701886+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6f7bb45088c88c051ca99c0c0afeb5baf9364f16",
+    "url": "https://github.com/WebKit/WebKit/commit/6f7bb45088c88c051ca99c0c0afeb5baf9364f16",
+    "message": "[JSC][Wasm] Reserved wasm: and wasm-js: names should LinkError in ESM\nhttps://bugs.webkit.org/show_bug.cgi?id=322118\n\nReviewed by Keith Miller.\n\nESM import of a Wasm module should reject reserved wasm: and wasm-js:\nimport names, export names, and wasm-js: module names with\nWebAssembly.LinkError inst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-06T21:29:32.055085+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81b5126daf2dac78574dc7c15bf64d88469ee206",
+    "url": "https://github.com/WebKit/WebKit/commit/81b5126daf2dac78574dc7c15bf64d88469ee206",
+    "message": "[JSC][Wasm] ESM mutable globals should be live unwrapped bindings\nhttps://bugs.webkit.org/show_bug.cgi?id=322116\n\nReviewed by Yusuke Suzuki.\n\nNamespace get of a mutable Wasm global returns the current value\ninstead of the WebAssembly.Global wrapper. Instance.exports stays\nwrapped. v128 / exnref stay",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
