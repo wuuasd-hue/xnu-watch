@@ -62197,5 +62197,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T05:19:50.063447+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "url": "https://github.com/WebKit/WebKit/commit/70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "message": "JSON displayed with wrong encoding when loaded in a frame (browser default instead of UTF-8)\nhttps://bugs.webkit.org/show_bug.cgi?id=197369\nrdar://71522231\n\nReviewed by Chris Dumez.\n\nThe patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\nWhen an \"application/json\" response with no chars",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T05:20:28.413716+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "url": "https://github.com/WebKit/WebKit/commit/70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "message": "JSON displayed with wrong encoding when loaded in a frame (browser default instead of UTF-8)\nhttps://bugs.webkit.org/show_bug.cgi?id=197369\nrdar://71522231\n\nReviewed by Chris Dumez.\n\nThe patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\nWhen an \"application/json\" response with no chars",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T05:21:06.877132+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "26aa84fcd527016df60838ccc19c722f39b6b68a",
+    "url": "https://github.com/WebKit/WebKit/commit/26aa84fcd527016df60838ccc19c722f39b6b68a",
+    "message": "OSR Availability Fails to Invalidate Local Recoveries Across LoadVarargs\nhttps://bugs.webkit.org/show_bug.cgi?id=318348\nrdar://178255543\n\nReviewed by Yusuke Suzuki.\n\nWhen a strict-mode `arguments` allocation produced by an inlined varargs call\nis eliminated to PhantomClonedArguments, OSR availabilit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
