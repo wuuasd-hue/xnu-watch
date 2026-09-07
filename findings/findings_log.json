@@ -62437,5 +62437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T22:53:53.291754+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "346c970f41f29c235693f5e1f0396fb279fa1f58",
+    "url": "https://github.com/swiftlang/swift/commit/346c970f41f29c235693f5e1f0396fb279fa1f58",
+    "message": "Merge pull request #91737 from mikeash/runtime-func-metadata-lookup-fixes\n\n[Runtime] Take a method's own type node when extracting its function type.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T22:54:30.161164+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "url": "https://github.com/WebKit/WebKit/commit/d545f589c8b77bfa599eed91f845687ed97c2e2b",
+    "message": "[JSC] DFG `StringReplace` constant folding steps into a surrogate pair after an empty match for unicode RegExps\nhttps://bugs.webkit.org/show_bug.cgi?id=322889\n\nReviewed by Yusuke Suzuki.\n\nDFGStrengthReductionPhase folds String.prototype.replace with a constant\nstring, RegExp and replacement by repla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
