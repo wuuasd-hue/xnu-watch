@@ -62257,5 +62257,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T10:31:26.419673+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f37e63364972e1422369384acae46239389122eb",
+    "url": "https://github.com/WebKit/WebKit/commit/f37e63364972e1422369384acae46239389122eb",
+    "message": "[JSC] Fill the result array of `Object.values` directly instead of via `MarkedArgumentBuffer`\nhttps://bugs.webkit.org/show_bug.cgi?id=323406\n\nReviewed by Yusuke Suzuki.\n\nObject.values on a plain object with N enumerable properties currently\ncollects the N values into a MarkedArgumentBuffer and then ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T10:32:05.219019+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "url": "https://github.com/WebKit/WebKit/commit/8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "message": "[JSC] Keep doubles outside the int32 range on the `ToInt32` fast path on x86_64\nhttps://bugs.webkit.org/show_bug.cgi?id=323498\n\nReviewed by Yusuke Suzuki.\n\nOn x86_64, the DFG and FTL convert a double to int32 with the 32-bit\ncvttsd2si, which fails for every value outside [-2^31, 2^31) and falls\nback",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T10:32:44.167412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f37e63364972e1422369384acae46239389122eb",
+    "url": "https://github.com/WebKit/WebKit/commit/f37e63364972e1422369384acae46239389122eb",
+    "message": "[JSC] Fill the result array of `Object.values` directly instead of via `MarkedArgumentBuffer`\nhttps://bugs.webkit.org/show_bug.cgi?id=323406\n\nReviewed by Yusuke Suzuki.\n\nObject.values on a plain object with N enumerable properties currently\ncollects the N values into a MarkedArgumentBuffer and then ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T10:33:23.212895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "url": "https://github.com/WebKit/WebKit/commit/8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "message": "[JSC] Keep doubles outside the int32 range on the `ToInt32` fast path on x86_64\nhttps://bugs.webkit.org/show_bug.cgi?id=323498\n\nReviewed by Yusuke Suzuki.\n\nOn x86_64, the DFG and FTL convert a double to int32 with the 32-bit\ncvttsd2si, which fails for every value outside [-2^31, 2^31) and falls\nback",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
