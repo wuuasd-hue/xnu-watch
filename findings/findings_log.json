@@ -62337,5 +62337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T16:07:50.879259+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "url": "https://github.com/WebKit/WebKit/commit/10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "message": "[JSC] Folding `Shl` into `WasmAddress` index form can use a locked value's `Tmp`\nhttps://bugs.webkit.org/show_bug.cgi?id=323582\n\nReviewed by Keith Miller.\n\nSince 320441@main the WasmAddress case of effectiveAddr() folds a\npointer-width Shl into the index scale, but unlike the sibling Add and Shl\ncas",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T16:08:29.094149+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "url": "https://github.com/WebKit/WebKit/commit/10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "message": "[JSC] Folding `Shl` into `WasmAddress` index form can use a locked value's `Tmp`\nhttps://bugs.webkit.org/show_bug.cgi?id=323582\n\nReviewed by Keith Miller.\n\nSince 320441@main the WasmAddress case of effectiveAddr() folds a\npointer-width Shl into the index scale, but unlike the sibling Add and Shl\ncas",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-07T16:09:07.389998+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dcbd254af217b64f37947d680ce0c6eae0ab7e3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dcbd254af217b64f37947d680ce0c6eae0ab7e3",
+    "message": "[Wasm] Argument and Result block types should always widen\nhttps://bugs.webkit.org/show_bug.cgi?id=318807\nrdar://181458746\n\nReviewed by Yusuke Suzuki.\n\nThe wasm spec says that any types passing through a block signature\nhave to widen to the signature. This is critical both for correctness\nand for se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
