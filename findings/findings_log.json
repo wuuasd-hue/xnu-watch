@@ -62797,5 +62797,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T22:47:04.068778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "67c93bbc4bcdca8b1b17ec0df73d1708b46deab8",
+    "url": "https://github.com/WebKit/WebKit/commit/67c93bbc4bcdca8b1b17ec0df73d1708b46deab8",
+    "message": "[WPE] REGRESSION(320333@main): 2048 new failures on JSC tests\nhttps://bugs.webkit.org/show_bug.cgi?id=323268\n\nReviewed by Carlos Alberto Lopez Perez and Adrian Perez de Castro.\n\nLet's revert this change on linux for now.\n\nCanonical link: https://commits.webkit.org/320677@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T22:47:41.018811+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03c6c950449526f3b8d8740bed1fb6a92083dade",
+    "url": "https://github.com/WebKit/WebKit/commit/03c6c950449526f3b8d8740bed1fb6a92083dade",
+    "message": "[JSC] Move BlockDirectory for-stealing list to AlignedMemoryAllocator\nhttps://bugs.webkit.org/show_bug.cgi?id=323680\nrdar://186935769\n\nReviewed by Marcus Plutowski.\n\nHolding BlockDirectory cursor for each subspace is meaningless. Let's\njust move it to AlignedMemoryAllocator and query to that to find",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T22:48:17.975531+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "67c93bbc4bcdca8b1b17ec0df73d1708b46deab8",
+    "url": "https://github.com/WebKit/WebKit/commit/67c93bbc4bcdca8b1b17ec0df73d1708b46deab8",
+    "message": "[WPE] REGRESSION(320333@main): 2048 new failures on JSC tests\nhttps://bugs.webkit.org/show_bug.cgi?id=323268\n\nReviewed by Carlos Alberto Lopez Perez and Adrian Perez de Castro.\n\nLet's revert this change on linux for now.\n\nCanonical link: https://commits.webkit.org/320677@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T22:48:54.952493+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "03c6c950449526f3b8d8740bed1fb6a92083dade",
+    "url": "https://github.com/WebKit/WebKit/commit/03c6c950449526f3b8d8740bed1fb6a92083dade",
+    "message": "[JSC] Move BlockDirectory for-stealing list to AlignedMemoryAllocator\nhttps://bugs.webkit.org/show_bug.cgi?id=323680\nrdar://186935769\n\nReviewed by Marcus Plutowski.\n\nHolding BlockDirectory cursor for each subspace is meaningless. Let's\njust move it to AlignedMemoryAllocator and query to that to find",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
