@@ -62557,5 +62557,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T09:52:17.594087+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2535d35a033d8a1d80b0ff0b1b713941dd98675",
+    "url": "https://github.com/WebKit/WebKit/commit/f2535d35a033d8a1d80b0ff0b1b713941dd98675",
+    "message": "Add missing thread-safety annotations and address potential issues they uncovered\nhttps://bugs.webkit.org/show_bug.cgi?id=323492\n\nReviewed by Keith Miller and Darin Adler.\n\nAudited data members of type Lock across Source/ and annotated the state\neach one actually protects with WTF_GUARDED_BY_LOCK, s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T09:52:54.422870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "566279d48d565d6de872cf4d624c759879c7ab74",
+    "url": "https://github.com/WebKit/WebKit/commit/566279d48d565d6de872cf4d624c759879c7ab74",
+    "message": "[JSC] C++ code should use truncateDoubleToInt64 for toInt32 too in x64\nhttps://bugs.webkit.org/show_bug.cgi?id=323591\nrdar://186836512\n\nReviewed by Sosuke Suzuki.\n\n320602@main applied optimization in JIT for x64. But the same\noptimization can be done in C++ as well. This patch applies it. Also we\ncl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T09:53:31.318222+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2535d35a033d8a1d80b0ff0b1b713941dd98675",
+    "url": "https://github.com/WebKit/WebKit/commit/f2535d35a033d8a1d80b0ff0b1b713941dd98675",
+    "message": "Add missing thread-safety annotations and address potential issues they uncovered\nhttps://bugs.webkit.org/show_bug.cgi?id=323492\n\nReviewed by Keith Miller and Darin Adler.\n\nAudited data members of type Lock across Source/ and annotated the state\neach one actually protects with WTF_GUARDED_BY_LOCK, s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T09:54:08.133947+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "566279d48d565d6de872cf4d624c759879c7ab74",
+    "url": "https://github.com/WebKit/WebKit/commit/566279d48d565d6de872cf4d624c759879c7ab74",
+    "message": "[JSC] C++ code should use truncateDoubleToInt64 for toInt32 too in x64\nhttps://bugs.webkit.org/show_bug.cgi?id=323591\nrdar://186836512\n\nReviewed by Sosuke Suzuki.\n\n320602@main applied optimization in JIT for x64. But the same\noptimization can be done in C++ as well. This patch applies it. Also we\ncl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
