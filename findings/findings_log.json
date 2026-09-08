@@ -62697,5 +62697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T17:38:56.507230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe81aba198368580bf72b0dbcb54dddfa28858c5",
+    "url": "https://github.com/WebKit/WebKit/commit/fe81aba198368580bf72b0dbcb54dddfa28858c5",
+    "message": "[JSC] Unify allocators\nhttps://bugs.webkit.org/show_bug.cgi?id=323629\nrdar://186860590\n\nReviewed by Marcus Plutowski.\n\nPreviously each Subspace is having its own allocator. But this is\nwasteful so this patch unifies them into one. So we can unlock\nexchanging MarkedBlock between them.\nBut we intentio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T17:39:33.833565+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe81aba198368580bf72b0dbcb54dddfa28858c5",
+    "url": "https://github.com/WebKit/WebKit/commit/fe81aba198368580bf72b0dbcb54dddfa28858c5",
+    "message": "[JSC] Unify allocators\nhttps://bugs.webkit.org/show_bug.cgi?id=323629\nrdar://186860590\n\nReviewed by Marcus Plutowski.\n\nPreviously each Subspace is having its own allocator. But this is\nwasteful so this patch unifies them into one. So we can unlock\nexchanging MarkedBlock between them.\nBut we intentio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T17:40:11.024157+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "00f03c1f906ff25f9536f528e81477c861c0325c",
+    "url": "https://github.com/WebKit/WebKit/commit/00f03c1f906ff25f9536f528e81477c861c0325c",
+    "message": "Drop remaining WTF::Expected alias usage\nhttps://bugs.webkit.org/show_bug.cgi?id=322894\nrdar://186147326\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed, in favor of\nusing <expected> directly.\n\nIn webkit.org/b/322893, we dropped the alias from the IPC and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
