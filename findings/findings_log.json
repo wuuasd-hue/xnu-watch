@@ -62637,5 +62637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T13:56:39.000629+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f14e32e576011c24bb941454bbd6463caf12533",
+    "url": "https://github.com/WebKit/WebKit/commit/5f14e32e576011c24bb941454bbd6463caf12533",
+    "message": "Introduce CStringWithEncoding so that a CString can remember its encoding\nhttps://bugs.webkit.org/show_bug.cgi?id=323408\n\nReviewed by Darin Adler.\n\nCString is a ref-counted, null-terminated, copy-on-write char buffer, and as its own\nheader comment says, it \"does not know its encoding\". In practice i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T13:57:17.019368+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f14e32e576011c24bb941454bbd6463caf12533",
+    "url": "https://github.com/WebKit/WebKit/commit/5f14e32e576011c24bb941454bbd6463caf12533",
+    "message": "Introduce CStringWithEncoding so that a CString can remember its encoding\nhttps://bugs.webkit.org/show_bug.cgi?id=323408\n\nReviewed by Darin Adler.\n\nCString is a ref-counted, null-terminated, copy-on-write char buffer, and as its own\nheader comment says, it \"does not know its encoding\". In practice i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-08T13:57:54.796661+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "url": "https://github.com/WebKit/WebKit/commit/2f57270fc7c5b9d381abd48913241460a0deed4c",
+    "message": "Drop WTF::Expected alias usage in IPC and inspector code generation\nhttps://bugs.webkit.org/show_bug.cgi?id=322893\nrdar://186146979\n\nReviewed by Richard Robinson.\n\nwtf/Expected.h is a thin alias header that is being removed. Three code\ngeneration methods reference the alias by name, so we update bot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
