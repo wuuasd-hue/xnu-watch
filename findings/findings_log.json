@@ -63337,5 +63337,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T22:07:47.463838+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "url": "https://github.com/WebKit/WebKit/commit/7af9d274a3345cdc2150e42cd34022fd6ca90888",
+    "message": "[CMake] Enable Thread/Unsafe Buffer Warnings on Cocoa Ports\nhttps://bugs.webkit.org/show_bug.cgi?id=322984\nrdar://186256294\n\nReviewed by Zak Ridouh.\n\nThe Cocoa CMake build didn't enable thread safety or unsafe buffer\nwarnings by default. This patch does so. It also applies unsafe buffer\nwarning CFla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T22:08:24.782132+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "url": "https://github.com/WebKit/WebKit/commit/8496050f97ee2ef07bd330b6a49220ed3b93d95c",
+    "message": "[JSC] TypedArray constructor needs to copy JSArray content when its copying may cause side-effect\nhttps://bugs.webkit.org/show_bug.cgi?id=322954\nrdar://186227333\n\nReviewed by Yijia Huang.\n\nWhen constructing a TypedArray from JSArray, we need to copy and convert\nthe content for the array, which invok",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
