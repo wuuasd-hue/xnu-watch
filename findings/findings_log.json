@@ -63157,5 +63157,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T13:59:18.322385+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "249ede976fcc5b1fe61e87eb10f64c00aabb1d76",
+    "url": "https://github.com/WebKit/WebKit/commit/249ede976fcc5b1fe61e87eb10f64c00aabb1d76",
+    "message": "Replace sched_yield with nanosleep and abstract away spin lock logic on all platforms\nhttps://bugs.webkit.org/show_bug.cgi?id=321012\n\nReviewed by Yusuke Suzuki.\n\nsched_yield is not so helpful, since it isn't guaranteed\nto actually yield (unlike the macOS thread_switch) and can\ncause deadlocks.\n\nDarw",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T13:59:55.885823+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "268a7c104514da6b0cffbe15b29677b01bb142d8",
+    "url": "https://github.com/WebKit/WebKit/commit/268a7c104514da6b0cffbe15b29677b01bb142d8",
+    "message": "Pass `TextCheckingResult` by const reference so `handleAcceptedCandidateWithSoftSpaces()` can be `NODELETE`\nhttps://bugs.webkit.org/show_bug.cgi?id=323655\nrdar://186903443\n\nReviewed by Chris Dumez.\n\nInitially, `TextCheckingResult` was passed by value to `EditorClient::handleAcceptedCandidateWithSoft",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T14:00:34.315601+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41294576aca94ffb4246dff6c82cadf4c2b58123",
+    "url": "https://github.com/WebKit/WebKit/commit/41294576aca94ffb4246dff6c82cadf4c2b58123",
+    "message": "[JSC] Atomics.isLockFree should use ToIntegerOrInfinity\nhttps://bugs.webkit.org/show_bug.cgi?id=323323\n\nReviewed by Yusuke Suzuki.\n\nAtomics.isLockFree used ToInt32. A size such as 4294967297 wrapped to 1\nand returned true. The spec compares the exact ToIntegerOrInfinity\nresult to 1, 2, 4, and 8.\n\n* ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
