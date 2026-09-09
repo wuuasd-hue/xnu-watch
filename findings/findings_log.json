@@ -62877,5 +62877,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:45:23.930453+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "url": "https://github.com/WebKit/WebKit/commit/4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "message": "[JSC] eval call should recognize tail-position\nhttps://bugs.webkit.org/show_bug.cgi?id=323597\nrdar://186840477\n\nReviewed by Sosuke Suzuki.\n\nThis patch fixes TCO for function call named \"eval\".\nWe follow to the pattern used in spread call case: performing CallDirectEval\nonly when the function is actu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:46:00.865802+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d04ea1c3b83737ffbc07af07944064f271ec3bb4",
+    "url": "https://github.com/WebKit/WebKit/commit/d04ea1c3b83737ffbc07af07944064f271ec3bb4",
+    "message": "(305413.959@safari-7624-branch) Embedded image is not load as image in mail app\nrdar://179999480\n\nReviewed by Ben Nham.\n\nThe addition of custom scheme CORS checks broke apps that load the main HTML via\nfile URL and then mix in custom schemes.\n\nIt's totally find to relax the checks for that case.\n\nTe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:46:37.757537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "111d7edcecd19a77402355eb24e46dc53866de55",
+    "url": "https://github.com/WebKit/WebKit/commit/111d7edcecd19a77402355eb24e46dc53866de55",
+    "message": "[JSC] `RegExpTestInline` crashes when `deleteAllCode()` runs during a DFG/FTL compilation\nhttps://bugs.webkit.org/show_bug.cgi?id=323583\n\nReviewed by Yusuke Suzuki.\n\nDFGStrengthReductionPhase converts RegExpTest to RegExpTestInline after\nchecking regExp->getRegExpJITCodeBlock() on the compiler threa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:47:14.681552+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a29b8cfcf8d065176502b18ca611443e3a1b615",
+    "url": "https://github.com/WebKit/WebKit/commit/1a29b8cfcf8d065176502b18ca611443e3a1b615",
+    "message": "[YARR] `\\-` following a class set operand in a `/v` class throws a SyntaxError\nhttps://bugs.webkit.org/show_bug.cgi?id=323496\n\nReviewed by Yusuke Suzuki.\n\nIn the AfterSetOperand state, atomPatternCharacter() rejected every\nhyphen, so /[[a]\\-]/v and /[\\q{ab}\\-]/v threw SyntaxError even though\n\\- is a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:47:51.809766+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "url": "https://github.com/WebKit/WebKit/commit/4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "message": "[JSC] eval call should recognize tail-position\nhttps://bugs.webkit.org/show_bug.cgi?id=323597\nrdar://186840477\n\nReviewed by Sosuke Suzuki.\n\nThis patch fixes TCO for function call named \"eval\".\nWe follow to the pattern used in spread call case: performing CallDirectEval\nonly when the function is actu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T00:48:30.616172+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d04ea1c3b83737ffbc07af07944064f271ec3bb4",
+    "url": "https://github.com/WebKit/WebKit/commit/d04ea1c3b83737ffbc07af07944064f271ec3bb4",
+    "message": "(305413.959@safari-7624-branch) Embedded image is not load as image in mail app\nrdar://179999480\n\nReviewed by Ben Nham.\n\nThe addition of custom scheme CORS checks broke apps that load the main HTML via\nfile URL and then mix in custom schemes.\n\nIt's totally find to relax the checks for that case.\n\nTe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
