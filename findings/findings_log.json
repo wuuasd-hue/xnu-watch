@@ -63217,5 +63217,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T17:30:51.509571+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db10a0f6167406c6b373b82f83a3bc245ed00e4b",
+    "url": "https://github.com/WebKit/WebKit/commit/db10a0f6167406c6b373b82f83a3bc245ed00e4b",
+    "message": "[JSC] Stale IC when a custom accessor on a previously flattened dictionary is shadowed\nhttps://bugs.webkit.org/show_bug.cgi?id=319303\nrdar://180048596\n\nReviewed by Yusuke Suzuki.\n\nThis patch prevents caching of custom accessors on previously flattened (i.e., ineligible\nfor future reflattening) dicti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T17:31:30.175799+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "249ede976fcc5b1fe61e87eb10f64c00aabb1d76",
+    "url": "https://github.com/WebKit/WebKit/commit/249ede976fcc5b1fe61e87eb10f64c00aabb1d76",
+    "message": "Replace sched_yield with nanosleep and abstract away spin lock logic on all platforms\nhttps://bugs.webkit.org/show_bug.cgi?id=321012\n\nReviewed by Yusuke Suzuki.\n\nsched_yield is not so helpful, since it isn't guaranteed\nto actually yield (unlike the macOS thread_switch) and can\ncause deadlocks.\n\nDarw",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T17:32:08.073026+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db10a0f6167406c6b373b82f83a3bc245ed00e4b",
+    "url": "https://github.com/WebKit/WebKit/commit/db10a0f6167406c6b373b82f83a3bc245ed00e4b",
+    "message": "[JSC] Stale IC when a custom accessor on a previously flattened dictionary is shadowed\nhttps://bugs.webkit.org/show_bug.cgi?id=319303\nrdar://180048596\n\nReviewed by Yusuke Suzuki.\n\nThis patch prevents caching of custom accessors on previously flattened (i.e., ineligible\nfor future reflattening) dicti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
