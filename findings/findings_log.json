@@ -63277,5 +63277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T19:57:46.287642+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f52d0e486a0e85e1f7f6bd41c5bb2a939a9da1c3",
+    "url": "https://github.com/WebKit/WebKit/commit/f52d0e486a0e85e1f7f6bd41c5bb2a939a9da1c3",
+    "message": "[JSC] Attempt to remove many bound-check assertions inside loop via RELEASE_ASSERT etc.\nhttps://bugs.webkit.org/show_bug.cgi?id=323699\nrdar://186956345\n\nReviewed by Yijia Huang.\n\nstd::span uses release-assert for bound-check. While clang is having\nanalysis to remove unnecessary bound-check, it is no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T19:58:23.303862+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f52d0e486a0e85e1f7f6bd41c5bb2a939a9da1c3",
+    "url": "https://github.com/WebKit/WebKit/commit/f52d0e486a0e85e1f7f6bd41c5bb2a939a9da1c3",
+    "message": "[JSC] Attempt to remove many bound-check assertions inside loop via RELEASE_ASSERT etc.\nhttps://bugs.webkit.org/show_bug.cgi?id=323699\nrdar://186956345\n\nReviewed by Yijia Huang.\n\nstd::span uses release-assert for bound-check. While clang is having\nanalysis to remove unnecessary bound-check, it is no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T19:59:00.511010+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "url": "https://github.com/WebKit/WebKit/commit/b90b184ba424183bfefa7869c29788d7ab391c9b",
+    "message": "[css-link-params] Render SVG resources with link parameters\nhttps://bugs.webkit.org/show_bug.cgi?id=322128\nrdar://185355738\n\nReviewed by Antti Koivisto.\n\n319240@main parses, computes and serializes the link-parameters property but does\nnot use the computed value, so it has no rendering effect. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
