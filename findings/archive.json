@@ -12897,9 +12897,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/3cd650b072c9dc10e2b8caf665d46ea3c7eefdea",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -12911,9 +12912,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/920227936f2c39c78f62fe0360bf4666d3cf4c86",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -12923,6 +12925,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/WebCore/SaferCPPExpectations/NoDeleteCheckerExpectations ---\n@@ -5,7 +5,6 @@ dom/UserGestureIndicator.cpp\n layout/formattingContexts/inline/InlineLineBuilder.cpp\n layout/integration/LayoutIntegrationFormattingContextLayout.cpp\n layout/integration/inline/LayoutIntegrationLineLayout.cpp\n-loader/EmptyClients.cpp\n loader/TextResourceDecoder.cpp\n page/EventHandler.cpp\n [ iOS ] page/Quirks.cpp\n\n--- Source/WebCore/loader/EmptyClients.cpp ---\n@@ -312,7 +312,7 @@ class EmptyEditorClient final : public EditorClient {\n     void NODELETE didWriteSelectionToPasteboard() final { }\n     void NODELETE getClientPasteboardData(const std::optional<SimpleRange>&, Vector<std::pair<String, RefPtr<SharedBuffer>>>&) final { }\n     void NODELETE requestCandidatesForSelection(const VisibleSelection&) final { }\n-    void NODELETE handleAcceptedCandidateWithSoftSpaces(TextCheckingResult) final { }\n+    void NODELETE handleAcceptedCandidateWithSoftSpaces(const TextCheckingResult&) final { }\n \n     void registerUndoStep(UndoStep&) final;\n     void registerRedoStep(UndoStep&) final;\n@@ -409,7 +409,7 @@ class EmptyEditorClient final : public EditorClient {\n         void NODELETE checkGrammarOfString(StringView, Vector<GrammarDetail>&, int*, int*) final { }\n \n #if USE(UNIFIED_TEXT_CHECKING)\n-        Vector<TextCheckingResult> NODELETE checkTextOfParagraph(StringView, OptionSet<TextCheckingType>, const VisibleSelection&) final { return Vector<TextCheckingResult>(); }\n+        Vector<TextCheckingResult> NODELETE checkTextOfParagraph(StringView, OptionSet<TextCheckingType>, const VisibleSelection&) final { return { }; }\n #endif\n \n         void NODELETE getGuessesForWord(const String&, const String&, const VisibleSelection&, Vector<String>&) final { }\n\n--- Source/WebCore/page/EditorClient.h ---\n@@ -122,7 +122,7 @@ class WEBCORE_EXPORT EditorClient : public CanMakeWeakPtr<EditorClient>, public\n     virtual HashMap<FrameIdentifier, AttributedString> collectAttributedStringsForRemoteFrames(FrameIdentifier rootFrameIdentifier, const Vector<FrameIdentifier>&) = 0;\n #endif\n     virtual void requestCandidatesForSelection(const VisibleSelection&) { }\n-    virtual void handleAcceptedCandidateWithSoftSpaces(TextCheckingResult) { }\n+    virtual void handleAcceptedCandidateWithSoftSpaces(const TextCheckingResult&) { }\n \n     virtual DOMPasteAccessResponse requestDOMPasteAccess(DOMPasteAccessCategory, FrameIdentifier, const String& originIdentifier) = 0;\n \n\n--- Source/WebKitLegacy/mac/WebCoreSupport/WebEditorClient.h ---\n@@ -187,7 +187,7 @@ class WebEditorClient final : public WebCore::EditorClient, public WebCore::Text\n #if PLATFORM(MAC)\n     void requestCandidatesForSelection(const WebCore::VisibleSelection&) final;\n     void handleRequestedCandidates(NSInteger, NSArray<NSTextCheckingResult *> *);\n-    void handleAcceptedCandidateWithSoftSpaces(WebCore::TextCheckingResult) final;\n+    void handleAcceptedCandidateWithSoftSpaces(const WebCore::TextCheckingResult&) final;\n #endif\n \n     void registerUndoOrRedoStep(WebCore::UndoStep&, bool isRedo);\n\n--- Source/WebKitLegacy/mac/WebCoreSupport/WebEditorClient.mm ---\n@@ -1198,7 +1198,7 @@ static NSUInteger insertionPointFromCurrentSelection(const WebCore::VisibleSelec\n     [m_webView showCandidates:candidates forString:m_paragraphContextForCandidateRequest.get() inRect:rectForSelectionCandidates forSelectedRange:m_rangeForCandidates view:m_webView completionHandler:nil];\n }\n \n-void WebEditorClient::handleAcceptedCandidateWithSoftSpaces(WebCore::TextCheckingResult acceptedCandidate)\n+void WebEditorClient::handleAcceptedCandidateWithSoftSpaces(const WebCore::TextCheckingResult& acceptedCandidate)\n {\n     auto* frame = core([m_webView _selectedOrMainFrame]);\n     if (!frame)\n",
     "url": "https://github.com/WebKit/WebKit/commit/268a7c104514da6b0cffbe15b29677b01bb142d8",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "41294576aca94ffb4246dff6c82cadf4c2b58123",
+    "message": "[JSC] Atomics.isLockFree should use ToIntegerOrInfinity\nhttps://bugs.webkit.org/show_bug.cgi?id=323323\n\nReviewed by Yusuke Suzuki.\n\nAtomics.isLockFree used ToInt32. A size such as 4294967297 wrapped to 1\nand returned true. The spec compares the exact ToIntegerOrInfinity\nresult to 1, 2, 4, and 8.\n\n* ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/atomics-is-lock-free-integer.js ---\n@@ -0,0 +1,48 @@\n+function toIntegerOrInfinity(value) {\n+    let number = Number(value);\n+    if (isNaN(number))\n+        return 0;\n+    return Math.trunc(number) + 0;\n+}\n+\n+function expected(size) {\n+    let n = toIntegerOrInfinity(size);\n+    return n === 1 || n === 2 || n === 4 || n === 8;\n+}\n+\n+function check(size) {\n+    let actual = Atomics.isLockFree(size);\n+    let want = expected(size);\n+    if (actual !== want)\n+        throw new Error(\"Atomics.isLockFree(\" + size + \") === \" + actual + \", expected \" + want);\n+}\n+\n+function foo(size) {\n+    return Atomics.isLockFree(size);\n+}\n+noInline(foo);\n+\n+let values = [\n+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12,\n+    1.9, 2.1, 4.9, 8.9,\n+    4294967296, 4294967297, 4294967298, 4294967300, 4294967304,\n+    -4294967295, -1, -0,\n+    NaN, Infinity, -Infinity,\n+    \"1\", \"4\", \"4294967297\",\n+    true, false,\n+    { valueOf() { return 4294967297; } },\n+    { valueOf() { return 1; } },\n+];\n+\n+for (let i = 0; i < testLoopCount; ++i) {\n+    for (let value of values)\n+        check(value);\n+    if (foo(4294967297) !== false)\n+        throw new Error(\"bad JIT result for 4294967297\");\n+    if (foo(1) !== true)\n+        throw new Error(\"bad JIT result for 1\");\n+    if (foo(4) !== true)\n+        throw new Error(\"bad JIT result for 4\");\n+    if (foo(8) !== true)\n+        throw new Error(\"bad JIT result for 8\");\n+}\n\n--- Source/JavaScriptCore/runtime/AtomicsObject.cpp ---\n@@ -309,21 +309,16 @@ EncodedJSValue isLockFree(JSGlobalObject* globalObject, JSValue arg)\n     VM& vm = globalObject->vm();\n     auto scope = DECLARE_THROW_SCOPE(vm);\n \n-    int32_t size = arg.toInt32(globalObject);\n-    RETURN_IF_EXCEPTION(scope, JSValue::encode(jsUndefined()));\n-    \n-    bool result;\n-    switch (size) {\n-    case 1:\n-    case 2:\n-    case 4:\n-    case 8:\n-        result = true;\n-        break;\n-    default:\n-        result = false;\n-        break;\n+    if (arg.isInt32()) [[likely]] {\n+        int32_t size = arg.asInt32();\n+        bool result = size == 1 || size == 2 || size == 4 || size == 8;\n+        return JSValue::encode(jsBoolean(result));\n     }\n+\n+    double size = arg.toIntegerOrInfinity(globalObject);\n+    RETURN_IF_EXCEPTION(scope, JSValue::encode(jsUndefined()));\n+\n+    bool result = size == 1 || size == 2 || size == 4 || size == 8;\n     return JSValue::encode(jsBoolean(result));\n }\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/41294576aca94ffb4246dff6c82cadf4c2b58123",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"

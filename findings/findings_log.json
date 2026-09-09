@@ -63097,5 +63097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T09:55:55.261326+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41294576aca94ffb4246dff6c82cadf4c2b58123",
+    "url": "https://github.com/WebKit/WebKit/commit/41294576aca94ffb4246dff6c82cadf4c2b58123",
+    "message": "[JSC] Atomics.isLockFree should use ToIntegerOrInfinity\nhttps://bugs.webkit.org/show_bug.cgi?id=323323\n\nReviewed by Yusuke Suzuki.\n\nAtomics.isLockFree used ToInt32. A size such as 4294967297 wrapped to 1\nand returned true. The spec compares the exact ToIntegerOrInfinity\nresult to 1, 2, 4, and 8.\n\n* ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T09:56:32.237389+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3cd650b072c9dc10e2b8caf665d46ea3c7eefdea",
+    "url": "https://github.com/WebKit/WebKit/commit/3cd650b072c9dc10e2b8caf665d46ea3c7eefdea",
+    "message": "PrivateClickMeasurement destination secret token errors are logged with the wrong \"source\" label\nhttps://bugs.webkit.org/show_bug.cgi?id=323286\nrdar://186539945\n\nReviewed by Alex Christensen.\n\ncalculateAndUpdateDestinationSecretToken() passed \"source\" as the\ncontextForLogMessage argument to calculat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T09:57:09.095692+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "920227936f2c39c78f62fe0360bf4666d3cf4c86",
+    "url": "https://github.com/WebKit/WebKit/commit/920227936f2c39c78f62fe0360bf4666d3cf4c86",
+    "message": "Move NetworkStorageSession from WebCore to WebKit\nhttps://bugs.webkit.org/show_bug.cgi?id=322552\nrdar://185843114\n\nReviewed by Alex Christensen.\n\nTracking prevention state, storage-access grants, third-party cookie blocking mode, opt-in cookie\npartitioning and client-side cookie age caps are all net",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
