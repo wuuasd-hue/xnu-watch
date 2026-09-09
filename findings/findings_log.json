@@ -62997,5 +62997,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T05:25:34.167680+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3cd650b072c9dc10e2b8caf665d46ea3c7eefdea",
+    "url": "https://github.com/WebKit/WebKit/commit/3cd650b072c9dc10e2b8caf665d46ea3c7eefdea",
+    "message": "PrivateClickMeasurement destination secret token errors are logged with the wrong \"source\" label\nhttps://bugs.webkit.org/show_bug.cgi?id=323286\nrdar://186539945\n\nReviewed by Alex Christensen.\n\ncalculateAndUpdateDestinationSecretToken() passed \"source\" as the\ncontextForLogMessage argument to calculat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T05:26:11.463155+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "920227936f2c39c78f62fe0360bf4666d3cf4c86",
+    "url": "https://github.com/WebKit/WebKit/commit/920227936f2c39c78f62fe0360bf4666d3cf4c86",
+    "message": "Move NetworkStorageSession from WebCore to WebKit\nhttps://bugs.webkit.org/show_bug.cgi?id=322552\nrdar://185843114\n\nReviewed by Alex Christensen.\n\nTracking prevention state, storage-access grants, third-party cookie blocking mode, opt-in cookie\npartitioning and client-side cookie age caps are all net",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T05:26:49.491448+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "268a7c104514da6b0cffbe15b29677b01bb142d8",
+    "url": "https://github.com/WebKit/WebKit/commit/268a7c104514da6b0cffbe15b29677b01bb142d8",
+    "message": "Pass `TextCheckingResult` by const reference so `handleAcceptedCandidateWithSoftSpaces()` can be `NODELETE`\nhttps://bugs.webkit.org/show_bug.cgi?id=323655\nrdar://186903443\n\nReviewed by Chris Dumez.\n\nInitially, `TextCheckingResult` was passed by value to `EditorClient::handleAcceptedCandidateWithSoft",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T05:27:26.987471+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "111d7edcecd19a77402355eb24e46dc53866de55",
+    "url": "https://github.com/WebKit/WebKit/commit/111d7edcecd19a77402355eb24e46dc53866de55",
+    "message": "[JSC] `RegExpTestInline` crashes when `deleteAllCode()` runs during a DFG/FTL compilation\nhttps://bugs.webkit.org/show_bug.cgi?id=323583\n\nReviewed by Yusuke Suzuki.\n\nDFGStrengthReductionPhase converts RegExpTest to RegExpTestInline after\nchecking regExp->getRegExpJITCodeBlock() on the compiler threa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-09T05:28:04.261608+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1a29b8cfcf8d065176502b18ca611443e3a1b615",
+    "url": "https://github.com/WebKit/WebKit/commit/1a29b8cfcf8d065176502b18ca611443e3a1b615",
+    "message": "[YARR] `\\-` following a class set operand in a `/v` class throws a SyntaxError\nhttps://bugs.webkit.org/show_bug.cgi?id=323496\n\nReviewed by Yusuke Suzuki.\n\nIn the AfterSetOperand state, atomPatternCharacter() rejected every\nhyphen, so /[[a]\\-]/v and /[\\q{ab}\\-]/v threw SyntaxError even though\n\\- is a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
