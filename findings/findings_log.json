@@ -63377,5 +63377,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:21:19.012340+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce4906cf9bdeab09d8fa71f70a1a23dcf2e31ce4",
+    "url": "https://github.com/WebKit/WebKit/commit/ce4906cf9bdeab09d8fa71f70a1a23dcf2e31ce4",
+    "message": "[JSC] Use B3 SIMD scalar types in B3Validate\nhttps://bugs.webkit.org/show_bug.cgi?id=314639\n\nReviewed by Yusuke Suzuki.\n\nB3Validate was converting SIMD lane types through Wasm helpers even though B3Type.h already exposes simdB3ScalarType(). Use the B3 helper directly when validating SIMD lane operan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:21:56.709439+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ae97aa471a12f25db388f1e95cc99f03a290d295",
+    "url": "https://github.com/WebKit/WebKit/commit/ae97aa471a12f25db388f1e95cc99f03a290d295",
+    "message": "[JSC] Use fast parh of `Array#copyWithIn` even if an array having a hole and indexed as `ArrayWithInt32`, `ArrayWithDouble`, and `ArrayWithContiguous`\nhttps://bugs.webkit.org/show_bug.cgi?id=323593\n\nReviewed by Yusuke Suzuki.\n\nThis change adds the support for array _having a hole_\nto the fast path f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:22:34.309026+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b6afe0d39e0af9268c13fae37454f093df55bd7a",
+    "url": "https://github.com/WebKit/WebKit/commit/b6afe0d39e0af9268c13fae37454f093df55bd7a",
+    "message": "Error.stack carries the whole script when the script came from a data: URL\nhttps://bugs.webkit.org/show_bug.cgi?id=323636\nrdar://186614179\n\nReviewed by Keith Miller, Abrar Rahman Protyasha, Yusuke Suzuki, and Darin Adler.\n\nReddit's startup script is a data: URL with the whole script inside it,\n~65K ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:23:11.579729+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eb64f293d84c819520b2c07b6971db8bdc55d8ff",
+    "url": "https://github.com/WebKit/WebKit/commit/eb64f293d84c819520b2c07b6971db8bdc55d8ff",
+    "message": "[JSC] Emit WTF::storeStoreFence before assigning to RegExp::m_regExpJITCode\nhttps://bugs.webkit.org/show_bug.cgi?id=323796\nrdar://187046069\n\nReviewed by Keith Miller.\n\nAs it is concurrently read, let's ensure that all fields are fully\ninitialized before it gets exposed via WTF::storeStoreFence.\n\n* S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:23:49.137008+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce4906cf9bdeab09d8fa71f70a1a23dcf2e31ce4",
+    "url": "https://github.com/WebKit/WebKit/commit/ce4906cf9bdeab09d8fa71f70a1a23dcf2e31ce4",
+    "message": "[JSC] Use B3 SIMD scalar types in B3Validate\nhttps://bugs.webkit.org/show_bug.cgi?id=314639\n\nReviewed by Yusuke Suzuki.\n\nB3Validate was converting SIMD lane types through Wasm helpers even though B3Type.h already exposes simdB3ScalarType(). Use the B3 helper directly when validating SIMD lane operan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T00:24:26.683522+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ae97aa471a12f25db388f1e95cc99f03a290d295",
+    "url": "https://github.com/WebKit/WebKit/commit/ae97aa471a12f25db388f1e95cc99f03a290d295",
+    "message": "[JSC] Use fast parh of `Array#copyWithIn` even if an array having a hole and indexed as `ArrayWithInt32`, `ArrayWithDouble`, and `ArrayWithContiguous`\nhttps://bugs.webkit.org/show_bug.cgi?id=323593\n\nReviewed by Yusuke Suzuki.\n\nThis change adds the support for array _having a hole_\nto the fast path f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
