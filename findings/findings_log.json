@@ -63797,5 +63797,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T17:20:43.363180+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e84b2439008e6b253a2e6facb2b2b9bf91157a2",
+    "url": "https://github.com/WebKit/WebKit/commit/0e84b2439008e6b253a2e6facb2b2b9bf91157a2",
+    "message": "Remove PingLoad\nhttps://bugs.webkit.org/show_bug.cgi?id=323795\nrdar://187045715\n\nReviewed by Youenn Fablet.\n\nPingLoad was already unused because of the existing call to usePingLoad,\nwhich turned it off for WebKit but kept PingHandle on for WebKitLegacy.\nThis PR uses PingHandle for WebKitLegacy to ke",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T17:21:20.836683+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74b519d7f92ed842b748964813f55153c3f17d1c",
+    "url": "https://github.com/WebKit/WebKit/commit/74b519d7f92ed842b748964813f55153c3f17d1c",
+    "message": "Make the String(std::span<const char>) constructor private as it is error-prone\nhttps://bugs.webkit.org/show_bug.cgi?id=323650\n\nReviewed by Yusuke Suzuki.\n\nMake the String(std::span<const char>) constructor private as it is error-prone.\nInstead, force callers to be explicit about the encoding of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T17:21:58.070668+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c194b75cde3a37ab48327ebd2259f673c5ffa89b",
+    "url": "https://github.com/WebKit/WebKit/commit/c194b75cde3a37ab48327ebd2259f673c5ffa89b",
+    "message": "Address Darin's review feedback on 320795@main\nhttps://bugs.webkit.org/show_bug.cgi?id=323841\n\nReviewed by Darin Adler.\n\n* Source/JavaScriptCore/bytecode/SpeculatedType.cpp:\n(JSC::speculationFromString):\n* Source/JavaScriptCore/bytecode/SpeculatedType.h:\n* Source/JavaScriptCore/bytecompiler/NodesCod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
