@@ -63977,5 +63977,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T23:44:40.362722+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92a274ec73ed0b046d5821b8a49c309e95becfea",
+    "url": "https://github.com/WebKit/WebKit/commit/92a274ec73ed0b046d5821b8a49c309e95becfea",
+    "message": "[JSC] Wasm BreakpointManager is returning Breakpoint* of HashMap and not guaranteeing it becomes stale\nhttps://bugs.webkit.org/show_bug.cgi?id=323910\nrdar://187146401\n\nReviewed by Yijia Huang.\n\nBreakpointManager is having UncheckedKeyHashMap<VirtualAddress, Breakpoint> and\nreturning Breakpoint*. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T23:45:17.276653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a37a6505759f8bb5f420ccc45828d1f62ae4b8c4",
+    "url": "https://github.com/WebKit/WebKit/commit/a37a6505759f8bb5f420ccc45828d1f62ae4b8c4",
+    "message": "Popunder bypass via overlappping transient activations\nhttps://bugs.webkit.org/show_bug.cgi?id=316816\nrdar://177442177\n\nReviewed by Charlie Wolfe and Abrar Rahman Protyasha.\n\nWe should require a transient activation before focusing an existing named\nwindow, to avoid popunders.\n\nThe original change c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T23:45:55.449682+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41ec81351b41fd60b018e9f6f399a602a4a1b496",
+    "url": "https://github.com/WebKit/WebKit/commit/41ec81351b41fd60b018e9f6f399a602a4a1b496",
+    "message": "[JSC] Lower Mul(Neg(n), m) to MNEG/FNMUL\nhttps://bugs.webkit.org/show_bug.cgi?id=323150\nrdar://186407016\n\nReviewed by Yusuke Suzuki.\n\nB3LowerToAir folds Neg(Mul(n, m)) in case Neg, but nothing matches the other\nshape, Mul(Neg(n), m), which is what \"-n * m\" parses to. B3ReduceStrength\nrewrites that s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T23:46:32.439404+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f15ea33043e6b1827fca861442465283fac2c109",
+    "url": "https://github.com/swiftlang/swift/commit/f15ea33043e6b1827fca861442465283fac2c109",
+    "message": "Merge pull request #92003 from egekaya1/task-registry-lldb-backtracer\n\nIntroduce CrashInfo and Swift-Inspect support for TaskRegistry",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
