@@ -63857,5 +63857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T19:51:50.195535+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "223bd0faeeb84888c1553f315d35408758143ba3",
+    "url": "https://github.com/WebKit/WebKit/commit/223bd0faeeb84888c1553f315d35408758143ba3",
+    "message": "[JSC] Check ArrayBuffer grow/resize length before converting to size_t\nhttps://bugs.webkit.org/show_bug.cgi?id=323440\nhttps://bugs.webkit.org/show_bug.cgi?id=323441\n\nReviewed by Yusuke Suzuki.\n\ngrow and resize used ToIntegerOrInfinity and then cast to size_t after\nonly checking finite and non-negati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T19:52:27.135459+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d81375a0f4ef33aeda284e2e941fd6e47613c19",
+    "url": "https://github.com/WebKit/WebKit/commit/0d81375a0f4ef33aeda284e2e941fd6e47613c19",
+    "message": "[JSC] Fill Wasm GC arrays of references with gcSafeMemfill\nhttps://bugs.webkit.org/show_bug.cgi?id=323628\n\nReviewed by Yusuke Suzuki.\n\nJSWebAssemblyArray::fill of ref elements stored encoded JSValues one\nat a time. Concurrent GC needs whole 8-byte writes. Add gcSafeMemfill\nnext to gcSafeZeroMemory a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
