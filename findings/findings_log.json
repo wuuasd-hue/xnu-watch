@@ -63617,5 +63617,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T09:16:38.257694+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74b519d7f92ed842b748964813f55153c3f17d1c",
+    "url": "https://github.com/WebKit/WebKit/commit/74b519d7f92ed842b748964813f55153c3f17d1c",
+    "message": "Make the String(std::span<const char>) constructor private as it is error-prone\nhttps://bugs.webkit.org/show_bug.cgi?id=323650\n\nReviewed by Yusuke Suzuki.\n\nMake the String(std::span<const char>) constructor private as it is error-prone.\nInstead, force callers to be explicit about the encoding of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T09:17:16.408181+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7bd7b6dfadc44a6e47f4d1851d63c76276f1a94c",
+    "url": "https://github.com/WebKit/WebKit/commit/7bd7b6dfadc44a6e47f4d1851d63c76276f1a94c",
+    "message": "Add CString::legacyCStringPointer() and adopt it at every utf8().data() call site\nhttps://bugs.webkit.org/show_bug.cgi?id=323722\n\nReviewed by Darin Adler.\n\n320652@main introduced CStringWithEncoding (UTF8CString / Latin1CString / ASCIICString) so\nthat a CString can remember its encoding, and migrate",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T09:17:54.158728+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ccdcb8a026c0cbb7edb053970add3df036bce380",
+    "url": "https://github.com/WebKit/WebKit/commit/ccdcb8a026c0cbb7edb053970add3df036bce380",
+    "message": "[JSC] Array element clearing goes through libc memset and races the concurrent marker\nhttps://bugs.webkit.org/show_bug.cgi?id=323639\n\nReviewed by Yusuke Suzuki.\n\nJSArray::setLength, JSArray::shiftCountWithAnyIndexingType and the in-place\npath of JSObject::increaseVectorLength clear vacated slots wit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
