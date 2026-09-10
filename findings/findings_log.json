@@ -63497,5 +63497,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:56:47.625976+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7bd7b6dfadc44a6e47f4d1851d63c76276f1a94c",
+    "url": "https://github.com/WebKit/WebKit/commit/7bd7b6dfadc44a6e47f4d1851d63c76276f1a94c",
+    "message": "Add CString::legacyCStringPointer() and adopt it at every utf8().data() call site\nhttps://bugs.webkit.org/show_bug.cgi?id=323722\n\nReviewed by Darin Adler.\n\n320652@main introduced CStringWithEncoding (UTF8CString / Latin1CString / ASCIICString) so\nthat a CString can remember its encoding, and migrate",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:57:25.480001+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ccdcb8a026c0cbb7edb053970add3df036bce380",
+    "url": "https://github.com/WebKit/WebKit/commit/ccdcb8a026c0cbb7edb053970add3df036bce380",
+    "message": "[JSC] Array element clearing goes through libc memset and races the concurrent marker\nhttps://bugs.webkit.org/show_bug.cgi?id=323639\n\nReviewed by Yusuke Suzuki.\n\nJSArray::setLength, JSArray::shiftCountWithAnyIndexingType and the in-place\npath of JSObject::increaseVectorLength clear vacated slots wit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:58:03.362678+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6279ebe3bd2d66f31d3321368980e5cc7d84aeb3",
+    "url": "https://github.com/WebKit/WebKit/commit/6279ebe3bd2d66f31d3321368980e5cc7d84aeb3",
+    "message": "[YARR] Share built-in character classes between all `YarrPattern`s\nhttps://bugs.webkit.org/show_bug.cgi?id=323731\n\nReviewed by Yusuke Suzuki.\n\nRegular expressions that contain a built-in character class such as \\d\nor \\w allocate a new CharacterClass instance on the heap for every\nYarrPattern. The co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:58:40.958981+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7e946663438851db54f93b938cf06d2c2b73ac16",
+    "url": "https://github.com/WebKit/WebKit/commit/7e946663438851db54f93b938cf06d2c2b73ac16",
+    "message": "Annotate CachedScript's decoded script state as owner-thread state\nhttps://bugs.webkit.org/show_bug.cgi?id=323735\n\nReviewed by Geoffrey Garen.\n\nm_script, m_decodingState and m_decoder are written on the main thread under m_lock and read\non compilation threads by codeBlockHashConcurrently(), which lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:59:18.957202+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b6afe0d39e0af9268c13fae37454f093df55bd7a",
+    "url": "https://github.com/WebKit/WebKit/commit/b6afe0d39e0af9268c13fae37454f093df55bd7a",
+    "message": "Error.stack carries the whole script when the script came from a data: URL\nhttps://bugs.webkit.org/show_bug.cgi?id=323636\nrdar://186614179\n\nReviewed by Keith Miller, Abrar Rahman Protyasha, Yusuke Suzuki, and Darin Adler.\n\nReddit's startup script is a data: URL with the whole script inside it,\n~65K ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T04:59:56.587178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eb64f293d84c819520b2c07b6971db8bdc55d8ff",
+    "url": "https://github.com/WebKit/WebKit/commit/eb64f293d84c819520b2c07b6971db8bdc55d8ff",
+    "message": "[JSC] Emit WTF::storeStoreFence before assigning to RegExp::m_regExpJITCode\nhttps://bugs.webkit.org/show_bug.cgi?id=323796\nrdar://187046069\n\nReviewed by Keith Miller.\n\nAs it is concurrently read, let's ensure that all fields are fully\ninitialized before it gets exposed via WTF::storeStoreFence.\n\n* S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
