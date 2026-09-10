@@ -63677,5 +63677,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:42:38.779370+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c194b75cde3a37ab48327ebd2259f673c5ffa89b",
+    "url": "https://github.com/WebKit/WebKit/commit/c194b75cde3a37ab48327ebd2259f673c5ffa89b",
+    "message": "Address Darin's review feedback on 320795@main\nhttps://bugs.webkit.org/show_bug.cgi?id=323841\n\nReviewed by Darin Adler.\n\n* Source/JavaScriptCore/bytecode/SpeculatedType.cpp:\n(JSC::speculationFromString):\n* Source/JavaScriptCore/bytecode/SpeculatedType.h:\n* Source/JavaScriptCore/bytecompiler/NodesCod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:43:15.765757+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "223bd0faeeb84888c1553f315d35408758143ba3",
+    "url": "https://github.com/WebKit/WebKit/commit/223bd0faeeb84888c1553f315d35408758143ba3",
+    "message": "[JSC] Check ArrayBuffer grow/resize length before converting to size_t\nhttps://bugs.webkit.org/show_bug.cgi?id=323440\nhttps://bugs.webkit.org/show_bug.cgi?id=323441\n\nReviewed by Yusuke Suzuki.\n\ngrow and resize used ToIntegerOrInfinity and then cast to size_t after\nonly checking finite and non-negati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:43:52.757123+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d81375a0f4ef33aeda284e2e941fd6e47613c19",
+    "url": "https://github.com/WebKit/WebKit/commit/0d81375a0f4ef33aeda284e2e941fd6e47613c19",
+    "message": "[JSC] Fill Wasm GC arrays of references with gcSafeMemfill\nhttps://bugs.webkit.org/show_bug.cgi?id=323628\n\nReviewed by Yusuke Suzuki.\n\nJSWebAssemblyArray::fill of ref elements stored encoded JSValues one\nat a time. Concurrent GC needs whole 8-byte writes. Add gcSafeMemfill\nnext to gcSafeZeroMemory a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:44:29.644455+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e19f57a779e161677336853feda3360b51802205",
+    "url": "https://github.com/WebKit/WebKit/commit/e19f57a779e161677336853feda3360b51802205",
+    "message": "[JSC] `RegExp::deleteCode()` should not clear the pattern's atom\nhttps://bugs.webkit.org/show_bug.cgi?id=323838\n\nReviewed by Yusuke Suzuki.\n\nm_atom and m_specificPattern depend only on the pattern, like\nm_numSubpatterns and m_rareData which deleteCode() already keeps, so stop\nclearing them.\n\nTest: J",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:45:06.729064+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6279ebe3bd2d66f31d3321368980e5cc7d84aeb3",
+    "url": "https://github.com/WebKit/WebKit/commit/6279ebe3bd2d66f31d3321368980e5cc7d84aeb3",
+    "message": "[YARR] Share built-in character classes between all `YarrPattern`s\nhttps://bugs.webkit.org/show_bug.cgi?id=323731\n\nReviewed by Yusuke Suzuki.\n\nRegular expressions that contain a built-in character class such as \\d\nor \\w allocate a new CharacterClass instance on the heap for every\nYarrPattern. The co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-10T13:45:43.740340+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7e946663438851db54f93b938cf06d2c2b73ac16",
+    "url": "https://github.com/WebKit/WebKit/commit/7e946663438851db54f93b938cf06d2c2b73ac16",
+    "message": "Annotate CachedScript's decoded script state as owner-thread state\nhttps://bugs.webkit.org/show_bug.cgi?id=323735\n\nReviewed by Geoffrey Garen.\n\nm_script, m_decodingState and m_decoder are written on the main thread under m_lock and read\non compilation threads by codeBlockHashConcurrently(), which lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
