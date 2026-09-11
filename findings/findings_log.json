@@ -64057,5 +64057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T01:34:21.861773+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92a274ec73ed0b046d5821b8a49c309e95becfea",
+    "url": "https://github.com/WebKit/WebKit/commit/92a274ec73ed0b046d5821b8a49c309e95becfea",
+    "message": "[JSC] Wasm BreakpointManager is returning Breakpoint* of HashMap and not guaranteeing it becomes stale\nhttps://bugs.webkit.org/show_bug.cgi?id=323910\nrdar://187146401\n\nReviewed by Yijia Huang.\n\nBreakpointManager is having UncheckedKeyHashMap<VirtualAddress, Breakpoint> and\nreturning Breakpoint*. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T01:34:59.277864+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a37a6505759f8bb5f420ccc45828d1f62ae4b8c4",
+    "url": "https://github.com/WebKit/WebKit/commit/a37a6505759f8bb5f420ccc45828d1f62ae4b8c4",
+    "message": "Popunder bypass via overlappping transient activations\nhttps://bugs.webkit.org/show_bug.cgi?id=316816\nrdar://177442177\n\nReviewed by Charlie Wolfe and Abrar Rahman Protyasha.\n\nWe should require a transient activation before focusing an existing named\nwindow, to avoid popunders.\n\nThe original change c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
