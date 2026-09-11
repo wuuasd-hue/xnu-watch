@@ -64437,5 +64437,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T21:22:57.280079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b00bc4536dcc4869b04349e2aff2bd77d28041a",
+    "url": "https://github.com/WebKit/WebKit/commit/1b00bc4536dcc4869b04349e2aff2bd77d28041a",
+    "message": "Seed a document's own IP address space\nhttps://bugs.webkit.org/show_bug.cgi?id=323138\nrdar://186398120\n\nReviewed by Youenn Fablet.\n\nFeature work for Local Network Access (https://wicg.github.io/local-network-access/).\n\nEvery publicness comparison the feature makes is against the requesting document'",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T21:23:34.761979+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a09c0224058e61ef812b47712ea651aa30fdbd3",
+    "url": "https://github.com/WebKit/WebKit/commit/0a09c0224058e61ef812b47712ea651aa30fdbd3",
+    "message": "[JSC][Wasm] Initialize ref arrays with gcSafeMemfill\nhttps://bugs.webkit.org/show_bug.cgi?id=323865\n\nReviewed by Yusuke Suzuki.\n\noperationWasmArrayFillRefs filled already-visible ref arrays with a\nvolatile store loop so the concurrent marker would not see a torn\nJSValue. Use gcSafeMemfill, the same ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T21:24:12.356726+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8ae0649a809b4eb3c69f1e9883d2c7717f4b12ae",
+    "url": "https://github.com/WebKit/WebKit/commit/8ae0649a809b4eb3c69f1e9883d2c7717f4b12ae",
+    "message": "[JSC] Rewrite WeakGCMap like JS WeakMap\nhttps://bugs.webkit.org/show_bug.cgi?id=323958\nrdar://187190421\n\nReviewed by Tadeu Zagallo.\n\nWeakGCMap / WeakGCSet were using Weak<> for values, but Weak is\ndouble-pointer and its management is costly. This patch changes them to\nsimilar to JS WeakMap design: w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T21:24:50.082027+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b00bc4536dcc4869b04349e2aff2bd77d28041a",
+    "url": "https://github.com/WebKit/WebKit/commit/1b00bc4536dcc4869b04349e2aff2bd77d28041a",
+    "message": "Seed a document's own IP address space\nhttps://bugs.webkit.org/show_bug.cgi?id=323138\nrdar://186398120\n\nReviewed by Youenn Fablet.\n\nFeature work for Local Network Access (https://wicg.github.io/local-network-access/).\n\nEvery publicness comparison the feature makes is against the requesting document'",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
