@@ -64297,5 +64297,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T15:18:18.536505+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "060913bf25f0f96cfb42c8eb516d163835ce4337",
+    "url": "https://github.com/swiftlang/swift/commit/060913bf25f0f96cfb42c8eb516d163835ce4337",
+    "message": "Merge pull request #92153 from mikeash/rr-adapter-no-fptr\n\n[Runtime] Call the swift_retain swizzle adapter directly instead of through a function pointer.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T15:18:55.902147+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e00002d2d87af12a8d1ab1fcc5c40802dd37c90f",
+    "url": "https://github.com/WebKit/WebKit/commit/e00002d2d87af12a8d1ab1fcc5c40802dd37c90f",
+    "message": "[JSC] Wasm debugger should resume breakpoints by dispatching the displaced opcode\nhttps://bugs.webkit.org/show_bug.cgi?id=323845\nrdar://187149541\n\nReviewed by Yijia Huang.\n\nA breakpoint patches the first byte of an instruction with `unreachable`\nso IPInt traps into the debugger. Resuming re-read the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T15:19:33.413209+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b092940764fcea49595d7fcc8ae1735cc4873d4",
+    "url": "https://github.com/WebKit/WebKit/commit/9b092940764fcea49595d7fcc8ae1735cc4873d4",
+    "message": "Reduce use of CString::legacyCStringPointer() in the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=323859\n\nReviewed by Yusuke Suzuki.\n\nThis brings the number of legacyCStringPointer() call sites down from 2507 to\n1657. In almost every case the destination already accepted a WTF string type,\nand t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
