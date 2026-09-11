@@ -64357,5 +64357,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T18:40:28.718026+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e03b0c541d3895e5a12a6b032185901e5e4d738",
+    "url": "https://github.com/WebKit/WebKit/commit/5e03b0c541d3895e5a12a6b032185901e5e4d738",
+    "message": "[JSC] Make Air stack slot liveness sparse in instructions\nhttps://bugs.webkit.org/show_bug.cgi?id=323526\nrdar://186767924\n\nReviewed by Yijia Huang.\n\nNormally Spill stack use is much limited even in very large program\ncompared to pure register / normal-stack / memory-location only instructions.\nEven ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T18:41:06.949721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8ae0649a809b4eb3c69f1e9883d2c7717f4b12ae",
+    "url": "https://github.com/WebKit/WebKit/commit/8ae0649a809b4eb3c69f1e9883d2c7717f4b12ae",
+    "message": "[JSC] Rewrite WeakGCMap like JS WeakMap\nhttps://bugs.webkit.org/show_bug.cgi?id=323958\nrdar://187190421\n\nReviewed by Tadeu Zagallo.\n\nWeakGCMap / WeakGCSet were using Weak<> for values, but Weak is\ndouble-pointer and its management is costly. This patch changes them to\nsimilar to JS WeakMap design: w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T18:41:44.761343+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "060913bf25f0f96cfb42c8eb516d163835ce4337",
+    "url": "https://github.com/swiftlang/swift/commit/060913bf25f0f96cfb42c8eb516d163835ce4337",
+    "message": "Merge pull request #92153 from mikeash/rr-adapter-no-fptr\n\n[Runtime] Call the swift_retain swizzle adapter directly instead of through a function pointer.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T18:42:22.852324+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e03b0c541d3895e5a12a6b032185901e5e4d738",
+    "url": "https://github.com/WebKit/WebKit/commit/5e03b0c541d3895e5a12a6b032185901e5e4d738",
+    "message": "[JSC] Make Air stack slot liveness sparse in instructions\nhttps://bugs.webkit.org/show_bug.cgi?id=323526\nrdar://186767924\n\nReviewed by Yijia Huang.\n\nNormally Spill stack use is much limited even in very large program\ncompared to pure register / normal-stack / memory-location only instructions.\nEven ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
