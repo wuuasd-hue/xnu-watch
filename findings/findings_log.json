@@ -64517,5 +64517,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T23:23:31.646357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9c0ed5b8c51f209410cbc18059d00add9fce06e",
+    "url": "https://github.com/WebKit/WebKit/commit/b9c0ed5b8c51f209410cbc18059d00add9fce06e",
+    "message": "[JSC] Throwing an exception causes a CPA2 failure in LLInt slow paths\nhttps://bugs.webkit.org/show_bug.cgi?id=323984\nrdar://185182086\n\nReviewed by Keith Miller.\n\nOn CPA2-supporting architectures, we need to bypass the reconstruction of PC\nin LLInt when an exception is thrown in a slow path. This pat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T23:24:08.896266+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3a249e70753f6bd2d4975fe6d96ea6612fb6a7d",
+    "url": "https://github.com/WebKit/WebKit/commit/c3a249e70753f6bd2d4975fe6d96ea6612fb6a7d",
+    "message": "[JSC] Use instance IDs for Wasm debugger virtual addresses\nhttps://bugs.webkit.org/show_bug.cgi?id=323479\nrdar://186722231\n\nReviewed by Yijia Huang.\n\nWasm scopes linear memory, globals, tables, and data segments to an\ninstance rather than a module. The debugger used the module ID to\nidentify the mod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T23:24:46.127066+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a09c0224058e61ef812b47712ea651aa30fdbd3",
+    "url": "https://github.com/WebKit/WebKit/commit/0a09c0224058e61ef812b47712ea651aa30fdbd3",
+    "message": "[JSC][Wasm] Initialize ref arrays with gcSafeMemfill\nhttps://bugs.webkit.org/show_bug.cgi?id=323865\n\nReviewed by Yusuke Suzuki.\n\noperationWasmArrayFillRefs filled already-visible ref arrays with a\nvolatile store loop so the concurrent marker would not see a torn\nJSValue. Use gcSafeMemfill, the same ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T23:25:23.498506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9c0ed5b8c51f209410cbc18059d00add9fce06e",
+    "url": "https://github.com/WebKit/WebKit/commit/b9c0ed5b8c51f209410cbc18059d00add9fce06e",
+    "message": "[JSC] Throwing an exception causes a CPA2 failure in LLInt slow paths\nhttps://bugs.webkit.org/show_bug.cgi?id=323984\nrdar://185182086\n\nReviewed by Keith Miller.\n\nOn CPA2-supporting architectures, we need to bypass the reconstruction of PC\nin LLInt when an exception is thrown in a slow path. This pat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
