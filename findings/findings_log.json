@@ -64217,5 +64217,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T11:52:37.968609+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e00002d2d87af12a8d1ab1fcc5c40802dd37c90f",
+    "url": "https://github.com/WebKit/WebKit/commit/e00002d2d87af12a8d1ab1fcc5c40802dd37c90f",
+    "message": "[JSC] Wasm debugger should resume breakpoints by dispatching the displaced opcode\nhttps://bugs.webkit.org/show_bug.cgi?id=323845\nrdar://187149541\n\nReviewed by Yijia Huang.\n\nA breakpoint patches the first byte of an instruction with `unreachable`\nso IPInt traps into the debugger. Resuming re-read the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T11:53:15.548231+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b092940764fcea49595d7fcc8ae1735cc4873d4",
+    "url": "https://github.com/WebKit/WebKit/commit/9b092940764fcea49595d7fcc8ae1735cc4873d4",
+    "message": "Reduce use of CString::legacyCStringPointer() in the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=323859\n\nReviewed by Yusuke Suzuki.\n\nThis brings the number of legacyCStringPointer() call sites down from 2507 to\n1657. In almost every case the destination already accepted a WTF string type,\nand t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T11:53:52.829134+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c4a7ebcc295f78d1ab83f219b92bda34163da68b",
+    "url": "https://github.com/WebKit/WebKit/commit/c4a7ebcc295f78d1ab83f219b92bda34163da68b",
+    "message": "Web Inspector: Support HTTP throttling or some Network Conditioner for the inspected web page\nhttps://bugs.webkit.org/show_bug.cgi?id=287737\n<rdar://problem/144892477>\n\nReviewed by Alex Christensen.\n\nReplace the legacy `-[NSURLSession _bytesPerSecondLimit:]` SPI with a custom throttling system.\n\n`ba",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-11T11:54:29.784482+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6b9f5b24d8fe547cd5141b79ccdaa9bbf28821f",
+    "url": "https://github.com/WebKit/WebKit/commit/f6b9f5b24d8fe547cd5141b79ccdaa9bbf28821f",
+    "message": "[JSC] Fix dead-lock in Structure::flattenDictionaryStructure\nhttps://bugs.webkit.org/show_bug.cgi?id=323913\nrdar://187149098\n\nReviewed by Keith Miller.\n\nIt is extremely rare, but\n\n1. Locker<JSCellLock> cellLocker is holding a cellLock()\n2. GCSafeConcurrentJSLocker takes m_lock\n3. GCSafeConcurrentJSL",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
