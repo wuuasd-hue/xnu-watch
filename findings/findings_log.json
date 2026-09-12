@@ -64597,5 +64597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T01:16:39.319018+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3a249e70753f6bd2d4975fe6d96ea6612fb6a7d",
+    "url": "https://github.com/WebKit/WebKit/commit/c3a249e70753f6bd2d4975fe6d96ea6612fb6a7d",
+    "message": "[JSC] Use instance IDs for Wasm debugger virtual addresses\nhttps://bugs.webkit.org/show_bug.cgi?id=323479\nrdar://186722231\n\nReviewed by Yijia Huang.\n\nWasm scopes linear memory, globals, tables, and data segments to an\ninstance rather than a module. The debugger used the module ID to\nidentify the mod",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T01:17:16.240225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70a75461959a91b29395c03ce7ba494745c37c0a",
+    "url": "https://github.com/WebKit/WebKit/commit/70a75461959a91b29395c03ce7ba494745c37c0a",
+    "message": "[JSC] [Intl.DurationFormat] Omit separator when minutes is hidden\nhttps://bugs.webkit.org/show_bug.cgi?id=317486\n\nReviewed by Yusuke Suzuki.\n\n`Intl.DurationFormat.prototype.format()` incorrectly appends a separator, such as \":\",\nwhen both `hoursDisplay` and `minutesDisplay` are set to `\"auto\"` and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
