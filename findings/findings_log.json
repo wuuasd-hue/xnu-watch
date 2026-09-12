@@ -64637,5 +64637,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T05:57:17.329874+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7189f73167efc53070a0a61736981d79fef5dfea",
+    "url": "https://github.com/WebKit/WebKit/commit/7189f73167efc53070a0a61736981d79fef5dfea",
+    "message": "Rename toCString() to toUTF8CString() and stop PrintStream from printing an untyped CString\nhttps://bugs.webkit.org/show_bug.cgi?id=323960\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main, which introduced CStringWithEncoding, and to 320795@main, 320803@main\nand 320905@main, which migrated the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T05:57:54.309731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9e61914f4c44e279bae69d437514c680be58a574",
+    "url": "https://github.com/WebKit/WebKit/commit/9e61914f4c44e279bae69d437514c680be58a574",
+    "message": "[JSC] Add more hint RELEASE_ASSERT etc. to remove assertion inside loop\nhttps://bugs.webkit.org/show_bug.cgi?id=323899\nrdar://187138408\n\nReviewed by Keith Miller.\n\nA bit additional 320745@main work. Attaching RELEASE_ASSERT or modifying\nspan range to ensure that we are not emitting brk inside loop.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T05:58:31.601248+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7189f73167efc53070a0a61736981d79fef5dfea",
+    "url": "https://github.com/WebKit/WebKit/commit/7189f73167efc53070a0a61736981d79fef5dfea",
+    "message": "Rename toCString() to toUTF8CString() and stop PrintStream from printing an untyped CString\nhttps://bugs.webkit.org/show_bug.cgi?id=323960\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main, which introduced CStringWithEncoding, and to 320795@main, 320803@main\nand 320905@main, which migrated the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T05:59:08.506120+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9e61914f4c44e279bae69d437514c680be58a574",
+    "url": "https://github.com/WebKit/WebKit/commit/9e61914f4c44e279bae69d437514c680be58a574",
+    "message": "[JSC] Add more hint RELEASE_ASSERT etc. to remove assertion inside loop\nhttps://bugs.webkit.org/show_bug.cgi?id=323899\nrdar://187138408\n\nReviewed by Keith Miller.\n\nA bit additional 320745@main work. Attaching RELEASE_ASSERT or modifying\nspan range to ensure that we are not emitting brk inside loop.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
