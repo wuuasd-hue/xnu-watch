@@ -64817,5 +64817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T16:23:39.606834+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "url": "https://github.com/WebKit/WebKit/commit/d4fbad5cfc5da35ff3d3f86834eb4f8089984585",
+    "message": "[Cocoa] Apply -Wthread-safety to all Xcode targets via CommonBase.xcconfig\n<https://bugs.webkit.org/show_bug.cgi?id=323013>\n<rdar://186279308>\n\nReviewed by Elliott Williams and Keith Miller.\n\nThe CMake build enables -Wthread-safety globally on Cocoa ports\n(320158@main), so third-party targets such a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T16:24:17.362314+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "url": "https://github.com/WebKit/WebKit/commit/a8e5a7cbc6ada06d0f1b685067cf9d335ccec74a",
+    "message": "[JSC][Wasm] Elide write barrier when storing a constant non-cell\nhttps://bugs.webkit.org/show_bug.cgi?id=322500\n\nReviewed by Yusuke Suzuki.\n\nA constant non-cell (jsNull) cannot be a remembered-set source. Skip the\nwrite barrier for that store on a ref field or array element in OMG and\nBBQ.\n\n* Source",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
