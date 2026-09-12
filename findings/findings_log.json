@@ -64857,5 +64857,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T18:31:16.426245+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "56241cc1137f1aa6923b80e59522406084e20637",
+    "url": "https://github.com/WebKit/WebKit/commit/56241cc1137f1aa6923b80e59522406084e20637",
+    "message": "[JSC] `Temporal.ZonedDateTime.prototype.round` resolves the rounded wall-clock time with a minute-rounded offset\nhttps://bugs.webkit.org/show_bug.cgi?id=322923\n\nReviewed by Yusuke Suzuki.\n\nround() re-interprets the rounded wall-clock time through\nInterpretISODateTimeOffset with the receiver's curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T18:31:54.209695+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38281d033aee844d56610d9e9b1ea23894f310be",
+    "url": "https://github.com/WebKit/WebKit/commit/38281d033aee844d56610d9e9b1ea23894f310be",
+    "message": "[YARR] A character following a class set operand in a `/v` class adds `U+0000`\nhttps://bugs.webkit.org/show_bug.cgi?id=322962\n\nReviewed by Yusuke Suzuki.\n\nClassSetParserDelegate holds back the previous character in m_character\nuntil it knows whether it starts a range; m_character is only meaningful\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
