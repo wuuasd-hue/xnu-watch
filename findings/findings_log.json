@@ -64957,5 +64957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T23:06:21.389691+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "url": "https://github.com/WebKit/WebKit/commit/5a8380c642d16ec8cc8d08de37aea2d62747cebe",
+    "message": "Safari and Swift Browser can't be built against WebKit built with CMake\nhttps://bugs.webkit.org/show_bug.cgi?id=322473\nrdar://185760184\n\nReviewed by Elliott Williams.\n\nThere were a few issues preventing to build Safari against WebKit built via cmake\nas well as problems preventing it to run. Related ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-12T23:06:58.895774+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "url": "https://github.com/WebKit/WebKit/commit/3b6fd3f42e2bcfd7f2107b036ab41ea55f2a4d94",
+    "message": "[JSC] One accessor on a prototype disables the megamorphic store cache\nhttps://bugs.webkit.org/show_bug.cgi?id=322708\n\nReviewed by Yusuke Suzuki.\n\ncanUseMegamorphicPutFastPath rejects a prototype chain if any Structure on\nit has hasReadOnlyOrGetterSetterPropertiesExcludingProto. That flag covers\neve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
