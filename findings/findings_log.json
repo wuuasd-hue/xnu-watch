@@ -64997,5 +64997,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T01:11:51.178030+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "url": "https://github.com/WebKit/WebKit/commit/f6a1d35c9ae3555b89ba2d3677b7366efedefcf1",
+    "message": "Replace references to a font's \"computedSize\" with \"usedSize\"\nhttps://bugs.webkit.org/show_bug.cgi?id=322908\n\nReviewed by Darin Adler.\n\nPart 1 of https://bugs.webkit.org/show_bug.cgi?id=319263\n\nFontDescription and Style::ComputedStyleBase reference a font's \"computed size\",\nbut the value they curren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T01:12:28.147432+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "url": "https://github.com/WebKit/WebKit/commit/ace190337c8540fda9e61a93c1b29d1a4e619037",
+    "message": "IPInt br_on_cast/br_on_cast_fail must handle overlong LEB128 opcode\nhttps://bugs.webkit.org/show_bug.cgi?id=317349\nrdar://178289134\n\nReviewed by Yusuke Suzuki.\n\nCurrently IPInt implementations of br_on_cast/br_on_cast_fail assume\nflags are at a fixed offset in the instruction but overlong opcodes\nar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
