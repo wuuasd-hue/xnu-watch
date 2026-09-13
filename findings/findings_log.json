@@ -65177,5 +65177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T18:52:17.378989+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba64b8f5131672964e445b50b589635a308feedb",
+    "url": "https://github.com/WebKit/WebKit/commit/ba64b8f5131672964e445b50b589635a308feedb",
+    "message": "NavigationAction::m_type is left uninitialized by the default constructor\nhttps://bugs.webkit.org/show_bug.cgi?id=322905\nrdar://186162338\n\nReviewed by Chris Dumez.\n\nNavigationAction's user-provided default constructor doesn't zero-fill\nmembers, and m_type is the only one without an in-class initiali",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T18:52:54.607250+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e89e47239c6d427db0321fd13d487a463124607e",
+    "url": "https://github.com/WebKit/WebKit/commit/e89e47239c6d427db0321fd13d487a463124607e",
+    "message": "Capture storedCredentialsPolicy before moving ResourceLoaderOptions in CrossOriginAccessControl\nhttps://bugs.webkit.org/show_bug.cgi?id=322903\nrdar://186161100\n\nReviewed by Chris Dumez.\n\ncreatePotentialAccessControlRequest() read options.storedCredentialsPolicy\nafter WTF::move()'ing options into the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
