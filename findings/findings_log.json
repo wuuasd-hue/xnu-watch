@@ -65037,5 +65037,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T06:20:45.237945+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25f7ce345ae8a6d20feb88f72db51f9757c26bb3",
+    "url": "https://github.com/WebKit/WebKit/commit/25f7ce345ae8a6d20feb88f72db51f9757c26bb3",
+    "message": "Make FileSystem::fileSystemRepresentation() return a UTF8CString and keep its consumers typed\nhttps://bugs.webkit.org/show_bug.cgi?id=324034\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main and 320980@main. JavaScriptCore has no bare-CString producers left;\nFileSystem.h has the largest remainin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T06:21:22.446032+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25f7ce345ae8a6d20feb88f72db51f9757c26bb3",
+    "url": "https://github.com/WebKit/WebKit/commit/25f7ce345ae8a6d20feb88f72db51f9757c26bb3",
+    "message": "Make FileSystem::fileSystemRepresentation() return a UTF8CString and keep its consumers typed\nhttps://bugs.webkit.org/show_bug.cgi?id=324034\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main and 320980@main. JavaScriptCore has no bare-CString producers left;\nFileSystem.h has the largest remainin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T06:21:59.312383+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "url": "https://github.com/WebKit/WebKit/commit/731652af64ff40f6fd4063d6e1969ed25b1df9c1",
+    "message": "[JSC] Fix Structure transition wrong checking issues\nhttps://bugs.webkit.org/show_bug.cgi?id=323085\nrdar://186339983\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nAdding MonoProto condition to isHandlerPrototypeChainCacheable.\nOtherwise we may get a structure which has differnt [[Prototype]] (due",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
