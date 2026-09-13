@@ -65257,5 +65257,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T23:15:03.595764+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95cec227dfcf9eaad9bda91f9c618f09881366d7",
+    "url": "https://github.com/WebKit/WebKit/commit/95cec227dfcf9eaad9bda91f9c618f09881366d7",
+    "message": "[JSC] Use Vector+InlineCapacity in LiveRange in AirAllocateRegistersByGreedy\nhttps://bugs.webkit.org/show_bug.cgi?id=324009\nrdar://187246753\n\nReviewed by Keith Miller.\n\nUse Vector with InlineCapacity in AirAllocateRegistersByGreedy's\nLiveRange construction.\n\n1. Use InlineCapacity to avoid repeated a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T23:15:41.706560+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95cec227dfcf9eaad9bda91f9c618f09881366d7",
+    "url": "https://github.com/WebKit/WebKit/commit/95cec227dfcf9eaad9bda91f9c618f09881366d7",
+    "message": "[JSC] Use Vector+InlineCapacity in LiveRange in AirAllocateRegistersByGreedy\nhttps://bugs.webkit.org/show_bug.cgi?id=324009\nrdar://187246753\n\nReviewed by Keith Miller.\n\nUse Vector with InlineCapacity in AirAllocateRegistersByGreedy's\nLiveRange construction.\n\n1. Use InlineCapacity to avoid repeated a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-13T23:16:19.736477+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "url": "https://github.com/WebKit/WebKit/commit/2507145cc7b12665dad36410b6031fdd1b3490ce",
+    "message": "ResourceLoadNotifier::dispatchWillSendRequest re-reads m_frame instead of the cached frame local\nhttps://bugs.webkit.org/show_bug.cgi?id=322898\nrdar://186149573\n\nReviewed by Chris Dumez.\n\ndispatchWillSendRequest() already caches Ref frame = m_frame.get(), and\nthe ASSERT and every subsequent call go ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
