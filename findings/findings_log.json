@@ -65677,5 +65677,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T22:09:57.214235+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2bd414de34774442eb86b4b84ed8e3263386822",
+    "url": "https://github.com/WebKit/WebKit/commit/f2bd414de34774442eb86b4b84ed8e3263386822",
+    "message": "[JSC] Don't self-deadlock the WASM debug server on an unknown thread id\nhttps://bugs.webkit.org/show_bug.cgi?id=324171\nrdar://187396893\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nhandleThreadStopInfo() holds ExecutionHandler::m_lock while calling\nsendStopReplyForThread(), whose miss path replied ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T22:10:34.807049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7692eececbfafe155706a21238377238c9dd3d35",
+    "url": "https://github.com/WebKit/WebKit/commit/7692eececbfafe155706a21238377238c9dd3d35",
+    "message": "[JSC] Implement WeakGCSet like new WeakGCMap\nhttps://bugs.webkit.org/show_bug.cgi?id=324122\nrdar://187340585\n\nReviewed by Dan Hecht.\n\nThis patch applies 320942@main change to WeakGCSet as well. Avoid using\nWeak<> and prune dead entries at GC end phase.\n\nTest: JSTests/stress/weak-gc-set-keeps-live-va",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T22:11:12.464036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbb362ca10c9eb88472713091ad742f73430112",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbb362ca10c9eb88472713091ad742f73430112",
+    "message": "[JSC] Add CodeBlock::updatePredictionsConcurrently\nhttps://bugs.webkit.org/show_bug.cgi?id=324016\nrdar://187249954\n\nReviewed by Yijia Huang.\n\nupdateAllArrayProfilePredictions no longer requires a lock. Let's call\nit from updatePredictionsConcurrently as well to offload periodic update\nof this to the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T22:11:50.334653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2cffa902fbaec6a7b4ef196aab9c7e9a4e61a2e",
+    "url": "https://github.com/WebKit/WebKit/commit/d2cffa902fbaec6a7b4ef196aab9c7e9a4e61a2e",
+    "message": "[JSC] StructuredCloning code should include ArrayBuffers\nhttps://bugs.webkit.org/show_bug.cgi?id=324104\nrdar://187319328\n\nReviewed by Yusuke Suzuki.\n\nMove the remaining, ArrayBuffer/WebAssembly.Memory serialization /\ndeserialization code into JSC. To do this JSC has to have a concept of\nSideChannels",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T22:12:28.137437+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "bcb2d62ca741c238bc1fe2d0e98865a9bf311ae4",
+    "url": "https://github.com/swiftlang/swift/commit/bcb2d62ca741c238bc1fe2d0e98865a9bf311ae4",
+    "message": "Merge pull request #91983 from mikeash/prespecialized-tuple-metadata\n\n[Runtime] Look up tuple type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
