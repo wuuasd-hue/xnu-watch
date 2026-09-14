@@ -65537,5 +65537,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T13:10:13.179959+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54277a51f596fb85427058a5df880af83de657f6",
+    "url": "https://github.com/WebKit/WebKit/commit/54277a51f596fb85427058a5df880af83de657f6",
+    "message": "[JSC] `by-val` accesses should not loop on `BadStringType` OSR exits\nhttps://bugs.webkit.org/show_bug.cgi?id=323839\n\nReviewed by Yusuke Suzuki.\n\nWhen the Baseline IC of get_by_val, put_by_val, in_by_val or del_by_val has\nseen exactly one identifier, DFG compiles the access as CheckIdent plus a\nby-id",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T13:10:51.252595+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b34b43aa827836030a944fd4dd6f14da333e5193",
+    "url": "https://github.com/WebKit/WebKit/commit/b34b43aa827836030a944fd4dd6f14da333e5193",
+    "message": "Remove some AX_CUSTOM_COLOR_MODE image adjustment code\nhttps://bugs.webkit.org/show_bug.cgi?id=324120\nrdar://187337133\n\nReviewed by Abrar Rahman Protyasha.\n\nRemove some code inside `ENABLE(AX_CUSTOM_COLOR_MODE)`, added in 318119@main, that we no longer need.\n\n* Source/WebCore/loader/cache/CachedImag",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
