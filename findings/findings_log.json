@@ -65317,5 +65317,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:15:50.636974+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa19dc61a03ee7712c6e3e11ec7c8d9410dbd70a",
+    "url": "https://github.com/WebKit/WebKit/commit/aa19dc61a03ee7712c6e3e11ec7c8d9410dbd70a",
+    "message": "[JSC] Unify JS Allocators\nhttps://bugs.webkit.org/show_bug.cgi?id=324020\nrdar://187253898\n\nReviewed by Dan Hecht.\n\nThis patch unifies JS allocators. Previously each IsoSubspace had its\nown allocator. But we no longer want to do it and we would like to unify\nthem into one. This unlocks making MarkedB",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:16:27.503023+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7aeed1e3bd69527b49cf85957c5d53d0044fbd7a",
+    "url": "https://github.com/WebKit/WebKit/commit/7aeed1e3bd69527b49cf85957c5d53d0044fbd7a",
+    "message": "[JSC] Non-global `RegExp#replace` with an empty string should return a substring\nhttps://bugs.webkit.org/show_bug.cgi?id=323409\n\nReviewed by Yusuke Suzuki.\n\n`url.replace(/^https?:\\/\\//, \"\")` and similar idioms that strip a prefix or\na suffix copied the rest of the subject into a new StringImpl, so t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:17:05.403836+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d1761dffb0059dae2de405ab872b7bbd2798576",
+    "url": "https://github.com/WebKit/WebKit/commit/5d1761dffb0059dae2de405ab872b7bbd2798576",
+    "message": "[JSC] Extract `CheckInBounds` from `StringAt` and `StringCodePointAt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323640\n\nReviewed by Yusuke Suzuki.\n\nStringAt and StringCodePointAt speculate that the index is in bounds, and\nthe abstract interpreter types their result on the strength of that check,\nso a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:17:42.425212+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df94b6ccbb5363ad11e6a61a6741ddda0c119bd3",
+    "url": "https://github.com/WebKit/WebKit/commit/df94b6ccbb5363ad11e6a61a6741ddda0c119bd3",
+    "message": "[JSC] Add Toom-3 multiplication to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323587\n\nReviewed by Yusuke Suzuki.\n\nSince 320495@main, JSBigInt multiplies large operands with Karatsuba, whose\nO(n^1.58) cost still dominates at a few thousand digits: 4000 x 4000 digits\ntakes 1.08 ms. Add Toom-3 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:18:19.504034+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa19dc61a03ee7712c6e3e11ec7c8d9410dbd70a",
+    "url": "https://github.com/WebKit/WebKit/commit/aa19dc61a03ee7712c6e3e11ec7c8d9410dbd70a",
+    "message": "[JSC] Unify JS Allocators\nhttps://bugs.webkit.org/show_bug.cgi?id=324020\nrdar://187253898\n\nReviewed by Dan Hecht.\n\nThis patch unifies JS allocators. Previously each IsoSubspace had its\nown allocator. But we no longer want to do it and we would like to unify\nthem into one. This unlocks making MarkedB",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T01:18:56.516001+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7aeed1e3bd69527b49cf85957c5d53d0044fbd7a",
+    "url": "https://github.com/WebKit/WebKit/commit/7aeed1e3bd69527b49cf85957c5d53d0044fbd7a",
+    "message": "[JSC] Non-global `RegExp#replace` with an empty string should return a substring\nhttps://bugs.webkit.org/show_bug.cgi?id=323409\n\nReviewed by Yusuke Suzuki.\n\n`url.replace(/^https?:\\/\\//, \"\")` and similar idioms that strip a prefix or\na suffix copied the rest of the subject into a new StringImpl, so t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
