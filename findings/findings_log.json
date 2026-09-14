@@ -65577,5 +65577,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T18:44:49.210829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6319f7420d93bd8a83975d2eacede16a8a8b0284",
+    "url": "https://github.com/WebKit/WebKit/commit/6319f7420d93bd8a83975d2eacede16a8a8b0284",
+    "message": "Try range in explicit resource management should include jump\nhttps://bugs.webkit.org/show_bug.cgi?id=324005\nrdar://185404431\n\nReviewed by Yusuke Suzuki and Yijia Huang.\n\nExplicit resource management is implemented in bytecode using a\ntry-construction. The bytecode range covered by a try block shoul",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T18:45:26.493966+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2cffa902fbaec6a7b4ef196aab9c7e9a4e61a2e",
+    "url": "https://github.com/WebKit/WebKit/commit/d2cffa902fbaec6a7b4ef196aab9c7e9a4e61a2e",
+    "message": "[JSC] StructuredCloning code should include ArrayBuffers\nhttps://bugs.webkit.org/show_bug.cgi?id=324104\nrdar://187319328\n\nReviewed by Yusuke Suzuki.\n\nMove the remaining, ArrayBuffer/WebAssembly.Memory serialization /\ndeserialization code into JSC. To do this JSC has to have a concept of\nSideChannels",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T18:46:03.882521+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "bcb2d62ca741c238bc1fe2d0e98865a9bf311ae4",
+    "url": "https://github.com/swiftlang/swift/commit/bcb2d62ca741c238bc1fe2d0e98865a9bf311ae4",
+    "message": "Merge pull request #91983 from mikeash/prespecialized-tuple-metadata\n\n[Runtime] Look up tuple type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T18:46:41.457519+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce646f1f8523b64188d1fb68520a44e43c035906",
+    "url": "https://github.com/WebKit/WebKit/commit/ce646f1f8523b64188d1fb68520a44e43c035906",
+    "message": "Use SAFE_WTFLOGALWAYS instead of WTFLogAlways at call sites that reach for a raw const char*\nhttps://bugs.webkit.org/show_bug.cgi?id=324090\n\nReviewed by Darin Adler and Mike Wyrzykowski.\n\nSAFE_WTFLOGALWAYS routes every argument through WTF::safeNSStringPrintfType(),\nwhich rejects char* while accepti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T18:47:18.883744+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6319f7420d93bd8a83975d2eacede16a8a8b0284",
+    "url": "https://github.com/WebKit/WebKit/commit/6319f7420d93bd8a83975d2eacede16a8a8b0284",
+    "message": "Try range in explicit resource management should include jump\nhttps://bugs.webkit.org/show_bug.cgi?id=324005\nrdar://185404431\n\nReviewed by Yusuke Suzuki and Yijia Huang.\n\nExplicit resource management is implemented in bytecode using a\ntry-construction. The bytecode range covered by a try block shoul",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
