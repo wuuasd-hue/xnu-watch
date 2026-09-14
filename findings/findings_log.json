@@ -65437,5 +65437,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T06:29:56.945089+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54277a51f596fb85427058a5df880af83de657f6",
+    "url": "https://github.com/WebKit/WebKit/commit/54277a51f596fb85427058a5df880af83de657f6",
+    "message": "[JSC] `by-val` accesses should not loop on `BadStringType` OSR exits\nhttps://bugs.webkit.org/show_bug.cgi?id=323839\n\nReviewed by Yusuke Suzuki.\n\nWhen the Baseline IC of get_by_val, put_by_val, in_by_val or del_by_val has\nseen exactly one identifier, DFG compiles the access as CheckIdent plus a\nby-id",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T06:30:34.962326+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b34b43aa827836030a944fd4dd6f14da333e5193",
+    "url": "https://github.com/WebKit/WebKit/commit/b34b43aa827836030a944fd4dd6f14da333e5193",
+    "message": "Remove some AX_CUSTOM_COLOR_MODE image adjustment code\nhttps://bugs.webkit.org/show_bug.cgi?id=324120\nrdar://187337133\n\nReviewed by Abrar Rahman Protyasha.\n\nRemove some code inside `ENABLE(AX_CUSTOM_COLOR_MODE)`, added in 318119@main, that we no longer need.\n\n* Source/WebCore/loader/cache/CachedImag",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T06:31:13.013542+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce646f1f8523b64188d1fb68520a44e43c035906",
+    "url": "https://github.com/WebKit/WebKit/commit/ce646f1f8523b64188d1fb68520a44e43c035906",
+    "message": "Use SAFE_WTFLOGALWAYS instead of WTFLogAlways at call sites that reach for a raw const char*\nhttps://bugs.webkit.org/show_bug.cgi?id=324090\n\nReviewed by Darin Adler and Mike Wyrzykowski.\n\nSAFE_WTFLOGALWAYS routes every argument through WTF::safeNSStringPrintfType(),\nwhich rejects char* while accepti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T06:31:51.138553+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d1761dffb0059dae2de405ab872b7bbd2798576",
+    "url": "https://github.com/WebKit/WebKit/commit/5d1761dffb0059dae2de405ab872b7bbd2798576",
+    "message": "[JSC] Extract `CheckInBounds` from `StringAt` and `StringCodePointAt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323640\n\nReviewed by Yusuke Suzuki.\n\nStringAt and StringCodePointAt speculate that the index is in bounds, and\nthe abstract interpreter types their result on the strength of that check,\nso a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-14T06:32:29.169604+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df94b6ccbb5363ad11e6a61a6741ddda0c119bd3",
+    "url": "https://github.com/WebKit/WebKit/commit/df94b6ccbb5363ad11e6a61a6741ddda0c119bd3",
+    "message": "[JSC] Add Toom-3 multiplication to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323587\n\nReviewed by Yusuke Suzuki.\n\nSince 320495@main, JSBigInt multiplies large operands with Karatsuba, whose\nO(n^1.58) cost still dominates at a few thousand digits: 4000 x 4000 digits\ntakes 1.08 ms. Add Toom-3 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
