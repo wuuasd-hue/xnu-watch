@@ -66137,5 +66137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T22:21:27.823965+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74efecb8e0d1e43dea71093f25a1aab4ec9383ff",
+    "url": "https://github.com/WebKit/WebKit/commit/74efecb8e0d1e43dea71093f25a1aab4ec9383ff",
+    "message": "[JSC] Don't leak every WASM module when the debugger is enabled\nhttps://bugs.webkit.org/show_bug.cgi?id=324214\nrdar://187437158\n\nReviewed by Yusuke Suzuki.\n\nModuleInformation owns ModuleDebugInfo through a unique_ptr and constructed it\nwith *this; ModuleDebugInfo held a Ref back. The refcount never ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T22:22:06.174958+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0df39e48d84ad31b9194f4bc10f4c44643d4aa2",
+    "url": "https://github.com/WebKit/WebKit/commit/a0df39e48d84ad31b9194f4bc10f4c44643d4aa2",
+    "message": "[GTK][WPE] Fix typos, errors and markup in API documentation\nhttps://bugs.webkit.org/show_bug.cgi?id=324229\n\nReviewed by Carlos Garcia Campos.\n\nProofread the WebKitGTK, WPE WebKit, JavaScriptCore GLib and WPEPlatform\nAPI documentation. Fix typos and grammar, references to functions,\nproperties and p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T22:22:44.611938+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74efecb8e0d1e43dea71093f25a1aab4ec9383ff",
+    "url": "https://github.com/WebKit/WebKit/commit/74efecb8e0d1e43dea71093f25a1aab4ec9383ff",
+    "message": "[JSC] Don't leak every WASM module when the debugger is enabled\nhttps://bugs.webkit.org/show_bug.cgi?id=324214\nrdar://187437158\n\nReviewed by Yusuke Suzuki.\n\nModuleInformation owns ModuleDebugInfo through a unique_ptr and constructed it\nwith *this; ModuleDebugInfo held a Ref back. The refcount never ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
