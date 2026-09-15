@@ -65937,5 +65937,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T10:18:44.992835+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d22fa241f19e4a2ab3565132df3bc7db82d0b684",
+    "url": "https://github.com/WebKit/WebKit/commit/d22fa241f19e4a2ab3565132df3bc7db82d0b684",
+    "message": "[JSC] DFG `RegExpTest` asserts when the RegExp is also the argument\nhttps://bugs.webkit.org/show_bug.cgi?id=324211\n\nReviewed by Yusuke Suzuki.\n\nIn `regExp.test(regExp)` both operands of RegExpTest are the same node, so\nbaseGPR and argumentGPR are the same register. Debug builds then hit\nASSERT(noOve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T10:19:23.183914+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ff034369d0db2dd47eb57dc932ab45547684f70",
+    "url": "https://github.com/WebKit/WebKit/commit/3ff034369d0db2dd47eb57dc932ab45547684f70",
+    "message": "Reduce use of CString::legacyCStringPointer() in logging macros\nhttps://bugs.webkit.org/show_bug.cgi?id=324142\n\nReviewed by Mike Wyrzykowski.\n\nThis brings the number of legacyCStringPointer() call sites down from 1748 to\n1163. The previous pass (320917@main) left os_log-based RELEASE_LOG as\nirreduci",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T10:20:01.009837+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "418114c05c3e178526ec293a4b1844796152160a",
+    "url": "https://github.com/WebKit/WebKit/commit/418114c05c3e178526ec293a4b1844796152160a",
+    "message": "[JSC] DFG folds a module variable to a stale value after an import cycle\nhttps://bugs.webkit.org/show_bug.cgi?id=324124\n\nReviewed by Yusuke Suzuki.\n\nWhen an import cycle lets another module call a module's exported\nfunction before that module's own code has been linked, DFG can fold a\nvariable of th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
