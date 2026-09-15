@@ -65777,5 +65777,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T00:43:09.487888+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2bd414de34774442eb86b4b84ed8e3263386822",
+    "url": "https://github.com/WebKit/WebKit/commit/f2bd414de34774442eb86b4b84ed8e3263386822",
+    "message": "[JSC] Don't self-deadlock the WASM debug server on an unknown thread id\nhttps://bugs.webkit.org/show_bug.cgi?id=324171\nrdar://187396893\n\nReviewed by Yusuke Suzuki and Keith Miller.\n\nhandleThreadStopInfo() holds ExecutionHandler::m_lock while calling\nsendStopReplyForThread(), whose miss path replied ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-15T00:43:47.974217+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7692eececbfafe155706a21238377238c9dd3d35",
+    "url": "https://github.com/WebKit/WebKit/commit/7692eececbfafe155706a21238377238c9dd3d35",
+    "message": "[JSC] Implement WeakGCSet like new WeakGCMap\nhttps://bugs.webkit.org/show_bug.cgi?id=324122\nrdar://187340585\n\nReviewed by Dan Hecht.\n\nThis patch applies 320942@main change to WeakGCSet as well. Avoid using\nWeak<> and prune dead entries at GC end phase.\n\nTest: JSTests/stress/weak-gc-set-keeps-live-va",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
