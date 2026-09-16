@@ -66777,5 +66777,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:55:43.069819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "14d632bf1ef3778578c75394b64363a43d1ccf5c",
+    "url": "https://github.com/WebKit/WebKit/commit/14d632bf1ef3778578c75394b64363a43d1ccf5c",
+    "message": "Add flags to generate and use PGO profiles for Swift code\nhttps://bugs.webkit.org/show_bug.cgi?id=324376\nrdar://187615767\n\nReviewed by Dewei Zhu.\n\nThe change:\n\n- renames `WK_{ENABLE_}_PGO_*` flags to `WK_{ENABLE}_CLANG_PGO_*`.\n\n- Adds new flags to generate an use PGO\n  profiles for Swift code. It mi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:56:21.571095+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95a960a3ae94afa466bba4932de879236a178c12",
+    "url": "https://github.com/WebKit/WebKit/commit/95a960a3ae94afa466bba4932de879236a178c12",
+    "message": "Reduce use of CString::legacyCStringPointer() in assertion and signpost macros\nhttps://bugs.webkit.org/show_bug.cgi?id=324236\n\nReviewed by Mike Wyrzykowski.\n\nContinues 321137@main, bringing legacyCStringPointer() call sites down from\n1169 to 1066 by applying LOG_PRINTF_TYPE() to the remaining printf",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:56:58.761162+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8217890851167c3b788be2bedf3d38a087c4e220",
+    "url": "https://github.com/WebKit/WebKit/commit/8217890851167c3b788be2bedf3d38a087c4e220",
+    "message": "Reduce use of untyped CString\nhttps://bugs.webkit.org/show_bug.cgi?id=324322\n\nReviewed by Mike Wyrzykowski.\n\nCString does not record the encoding of its bytes, so callers keep having to\nre-establish it with byteCast<> at every use. Move APIs that already know their\nencoding over to UTF8CString / Lat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:57:35.712456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b1d1e50831f4d0529ff51174268e974efd3b93d",
+    "url": "https://github.com/WebKit/WebKit/commit/1b1d1e50831f4d0529ff51174268e974efd3b93d",
+    "message": "imported/w3c/web-platform-tests/content-security-policy/inheritance/history.sub.html is a flaky failure\nhttps://bugs.webkit.org/show_bug.cgi?id=324092\nrdar://187312421\n\nReviewed by Rupin Mittal.\n\nloadDifferentDocumentItem() reuses the cached page's DocumentLoader when the target history item is\nin t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:58:12.715564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "49649b12d8cec74e338d3bbe7399001750c051e3",
+    "url": "https://github.com/WebKit/WebKit/commit/49649b12d8cec74e338d3bbe7399001750c051e3",
+    "message": "Allow WebKitAdditions to provide settings via WebPreferencesAdditions.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=324197\nrdar://187413914\n\nReviewed by Lily Spiniolas.\n\nWebKitAdditions has shipped an (empty) WebPreferencesAdditions.yaml, installed as a\nprivate header alongside WebKitDerivedSourcesAd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T23:58:49.692477+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6c6e928fdc34bb225b8bffebb3634bde15180708",
+    "url": "https://github.com/WebKit/WebKit/commit/6c6e928fdc34bb225b8bffebb3634bde15180708",
+    "message": "loadLoadFence should use dmb ishld\nhttps://bugs.webkit.org/show_bug.cgi?id=324352\nrdar://187582538\n\nReviewed by Yusuke Suzuki.\n\nUse the load-only variant of dmb where available i.e. ARM64. We only use\nloadLoadFence in our code today but the same barrier works for\nloadStoreFence.\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
