@@ -66597,5 +66597,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T18:57:11.253086+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "49649b12d8cec74e338d3bbe7399001750c051e3",
+    "url": "https://github.com/WebKit/WebKit/commit/49649b12d8cec74e338d3bbe7399001750c051e3",
+    "message": "Allow WebKitAdditions to provide settings via WebPreferencesAdditions.yaml\nhttps://bugs.webkit.org/show_bug.cgi?id=324197\nrdar://187413914\n\nReviewed by Lily Spiniolas.\n\nWebKitAdditions has shipped an (empty) WebPreferencesAdditions.yaml, installed as a\nprivate header alongside WebKitDerivedSourcesAd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T18:57:48.621823+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6c6e928fdc34bb225b8bffebb3634bde15180708",
+    "url": "https://github.com/WebKit/WebKit/commit/6c6e928fdc34bb225b8bffebb3634bde15180708",
+    "message": "loadLoadFence should use dmb ishld\nhttps://bugs.webkit.org/show_bug.cgi?id=324352\nrdar://187582538\n\nReviewed by Yusuke Suzuki.\n\nUse the load-only variant of dmb where available i.e. ARM64. We only use\nloadLoadFence in our code today but the same barrier works for\nloadStoreFence.\n\n* Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T18:58:26.702874+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5fe81278b136e6676a24509c71cadcd719c29d3",
+    "url": "https://github.com/WebKit/WebKit/commit/c5fe81278b136e6676a24509c71cadcd719c29d3",
+    "message": "[JSC] Refine JSObject::crashDueToEmptyValueAtValidOffset data\nhttps://bugs.webkit.org/show_bug.cgi?id=324194\nrdar://187412221\n\nReviewed by Mark Lam.\n\nThis patch replaces some of the debug data in\nJSObject::crashDueToEmptyValueAtValidOffset with new data about\nthe structure's dictionary status. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T18:59:04.292261+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "30ed970c8033fae956837c06fd634c1487862296",
+    "url": "https://github.com/swiftlang/swift/commit/30ed970c8033fae956837c06fd634c1487862296",
+    "message": "Merge pull request #92298 from mikeash/prespecialized-foreign-types\n\n[Runtime] Look up foreign type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T18:59:41.953451+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b27da2d753db638a6010b9240b1c15e6e7f3fbc",
+    "url": "https://github.com/WebKit/WebKit/commit/4b27da2d753db638a6010b9240b1c15e6e7f3fbc",
+    "message": "Cross-origin redirect should disable the quirks-mode CSS MIME type sniffing quirk even when the final URL is same-origin\nhttps://bugs.webkit.org/show_bug.cgi?id=323533\nrdar://186771732\n\nReviewed by Chris Dumez.\n\nThis patch aligns WebKit with Gecko / Firefox.\n\nThe quirks-mode quirk that assumes text/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T19:00:21.149019+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f81176c1d77176e607ac67d7f66d7717bf3baf2f",
+    "url": "https://github.com/swiftlang/swift/commit/f81176c1d77176e607ac67d7f66d7717bf3baf2f",
+    "message": "Merge pull request #92299 from compnerd/com-runtime-lifetime\n\nRuntime: use the COM calling convention in existential value witnesses",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
