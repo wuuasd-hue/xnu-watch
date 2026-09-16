@@ -66277,5 +66277,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:23:39.230079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a57cde3b593370e8543005175c58a67609c0caba",
+    "url": "https://github.com/WebKit/WebKit/commit/a57cde3b593370e8543005175c58a67609c0caba",
+    "message": "[JSC] Reject a WASM breakpoint that isn't at an instruction boundary\nhttps://bugs.webkit.org/show_bug.cgi?id=324283\nrdar://187510287\n\nReviewed by Yusuke Suzuki.\n\nA breakpoint patches byte 0 of an instruction, so Z0 at any other offset rewrites\nan operand instead: i32.const 42 becomes i32.const 0, an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:24:16.194811+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "08f5b5c35ece28a8bae48569a6ded550ae396449",
+    "url": "https://github.com/WebKit/WebKit/commit/08f5b5c35ece28a8bae48569a6ded550ae396449",
+    "message": "[JSC] WASM debugger: unencodable instance-id sentinel, clearer predicate names, and a loud failure when the server cannot start\nhttps://bugs.webkit.org/show_bug.cgi?id=324189\nrdar://187408850\n\nReviewed by Yusuke Suzuki.\n\nJSWebAssemblyInstance::m_debugId defaulted to 0, which is a valid instance id.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:24:53.163088+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ad2bece7631af71f4efe7bf084a40f6e5147651",
+    "url": "https://github.com/WebKit/WebKit/commit/5ad2bece7631af71f4efe7bf084a40f6e5147651",
+    "message": "[JSC] Tighten IPInt code\nhttps://bugs.webkit.org/show_bug.cgi?id=324059\nrdar://187291986\n\nReviewed by Yijia Huang.\n\nIPInt code is layout with 256B size for each handler. This patch applies\nmany effort to reduce the size of this handler to make it within 128B size.\nCurrently enabling this smaller siz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:25:30.125058+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0e2a50e76fc30f448bc87fa21c4cad392561697",
+    "url": "https://github.com/WebKit/WebKit/commit/a0e2a50e76fc30f448bc87fa21c4cad392561697",
+    "message": "[JSC] `sizeOfVarargs` truncates a strict arguments object's length to 32 bits\nhttps://bugs.webkit.org/show_bug.cgi?id=324226\n\nReviewed by Yusuke Suzuki.\n\nWhen the length of a strict arguments object has been overwritten with a\nvalue of 2^32 or more, passing it to a varargs call uses only the low 32 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:26:07.243581+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a57cde3b593370e8543005175c58a67609c0caba",
+    "url": "https://github.com/WebKit/WebKit/commit/a57cde3b593370e8543005175c58a67609c0caba",
+    "message": "[JSC] Reject a WASM breakpoint that isn't at an instruction boundary\nhttps://bugs.webkit.org/show_bug.cgi?id=324283\nrdar://187510287\n\nReviewed by Yusuke Suzuki.\n\nA breakpoint patches byte 0 of an instruction, so Z0 at any other offset rewrites\nan operand instead: i32.const 42 becomes i32.const 0, an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T05:26:44.207212+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "08f5b5c35ece28a8bae48569a6ded550ae396449",
+    "url": "https://github.com/WebKit/WebKit/commit/08f5b5c35ece28a8bae48569a6ded550ae396449",
+    "message": "[JSC] WASM debugger: unencodable instance-id sentinel, clearer predicate names, and a loud failure when the server cannot start\nhttps://bugs.webkit.org/show_bug.cgi?id=324189\nrdar://187408850\n\nReviewed by Yusuke Suzuki.\n\nJSWebAssemblyInstance::m_debugId defaulted to 0, which is a valid instance id.\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
