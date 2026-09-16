@@ -66197,5 +66197,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T00:33:04.378456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63846dd9cddbfeecbdba0d1e12608c0a944e36b5",
+    "url": "https://github.com/WebKit/WebKit/commit/63846dd9cddbfeecbdba0d1e12608c0a944e36b5",
+    "message": "Back/forward cache restore reports the outgoing document's identity in didCommitLoadForFrame\nhttps://bugs.webkit.org/show_bug.cgi?id=324164\nrdar://187390103\n\nReviewed by Per Arne Vollan.\n\n`WebLocalFrameLoaderClient::dispatchDidCommitLoad()` reports the frame's info (`WebFrame::info()`) to the UI pro",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T00:33:41.287262+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "125543708a962e7cae4ca21bf425787127bc9c1c",
+    "url": "https://github.com/WebKit/WebKit/commit/125543708a962e7cae4ca21bf425787127bc9c1c",
+    "message": "[JSC] Do not crash on a TypeProfiler query with no location\nhttps://bugs.webkit.org/show_bug.cgi?id=323314\nrdar://187192997\n\nReviewed by Yusuke Suzuki.\n\nfindLocation can return null when the expression is missing or\nnever executed. Return empty type info instead of dereferencing\nthat pointer. $vm.fi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T00:34:18.260742+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63846dd9cddbfeecbdba0d1e12608c0a944e36b5",
+    "url": "https://github.com/WebKit/WebKit/commit/63846dd9cddbfeecbdba0d1e12608c0a944e36b5",
+    "message": "Back/forward cache restore reports the outgoing document's identity in didCommitLoadForFrame\nhttps://bugs.webkit.org/show_bug.cgi?id=324164\nrdar://187390103\n\nReviewed by Per Arne Vollan.\n\n`WebLocalFrameLoaderClient::dispatchDidCommitLoad()` reports the frame's info (`WebFrame::info()`) to the UI pro",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T00:34:55.178721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "125543708a962e7cae4ca21bf425787127bc9c1c",
+    "url": "https://github.com/WebKit/WebKit/commit/125543708a962e7cae4ca21bf425787127bc9c1c",
+    "message": "[JSC] Do not crash on a TypeProfiler query with no location\nhttps://bugs.webkit.org/show_bug.cgi?id=323314\nrdar://187192997\n\nReviewed by Yusuke Suzuki.\n\nfindLocation can return null when the expression is missing or\nnever executed. Return empty type info instead of dereferencing\nthat pointer. $vm.fi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
