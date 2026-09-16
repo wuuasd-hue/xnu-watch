@@ -66397,5 +66397,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:06:14.548507+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "219167e2b464d7d9ab4233bcaaa7c78d2035747c",
+    "url": "https://github.com/WebKit/WebKit/commit/219167e2b464d7d9ab4233bcaaa7c78d2035747c",
+    "message": "[JSC] Shrink the DFG code that enters the OSR exit thunk\nhttps://bugs.webkit.org/show_bug.cgi?id=324137\n\nReviewed by Yusuke Suzuki.\n\nFor every OSR exit, DFG emits two instructions to enter the OSR exit\ngeneration thunk: a mov that puts the exit index in a register, and a jump\nto the thunk.\n\nThese en",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:06:51.569956+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e57b0d1670910d44edac8f6ad5aa267bdaa10b48",
+    "url": "https://github.com/WebKit/WebKit/commit/e57b0d1670910d44edac8f6ad5aa267bdaa10b48",
+    "message": "[JSC] Store DFG OSR exits as a byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=323407\n\nReviewed by Yusuke Suzuki.\n\nEvery DFG OSR exit keeps an 80-byte DFG::OSRExit in DFG::JITCode and a\n16-byte MacroAssemblerCodeRef in DFG::JITData for as long as the DFG code\nlives, although the exit is only rea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:07:28.509074+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b27da2d753db638a6010b9240b1c15e6e7f3fbc",
+    "url": "https://github.com/WebKit/WebKit/commit/4b27da2d753db638a6010b9240b1c15e6e7f3fbc",
+    "message": "Cross-origin redirect should disable the quirks-mode CSS MIME type sniffing quirk even when the final URL is same-origin\nhttps://bugs.webkit.org/show_bug.cgi?id=323533\nrdar://186771732\n\nReviewed by Chris Dumez.\n\nThis patch aligns WebKit with Gecko / Firefox.\n\nThe quirks-mode quirk that assumes text/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:08:05.433879+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f81176c1d77176e607ac67d7f66d7717bf3baf2f",
+    "url": "https://github.com/swiftlang/swift/commit/f81176c1d77176e607ac67d7f66d7717bf3baf2f",
+    "message": "Merge pull request #92299 from compnerd/com-runtime-lifetime\n\nRuntime: use the COM calling convention in existential value witnesses",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:08:42.454010+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ad2bece7631af71f4efe7bf084a40f6e5147651",
+    "url": "https://github.com/WebKit/WebKit/commit/5ad2bece7631af71f4efe7bf084a40f6e5147651",
+    "message": "[JSC] Tighten IPInt code\nhttps://bugs.webkit.org/show_bug.cgi?id=324059\nrdar://187291986\n\nReviewed by Yijia Huang.\n\nIPInt code is layout with 256B size for each handler. This patch applies\nmany effort to reduce the size of this handler to make it within 128B size.\nCurrently enabling this smaller siz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-16T10:09:19.404211+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0e2a50e76fc30f448bc87fa21c4cad392561697",
+    "url": "https://github.com/WebKit/WebKit/commit/a0e2a50e76fc30f448bc87fa21c4cad392561697",
+    "message": "[JSC] `sizeOfVarargs` truncates a strict arguments object's length to 32 bits\nhttps://bugs.webkit.org/show_bug.cgi?id=324226\n\nReviewed by Yusuke Suzuki.\n\nWhen the length of a strict arguments object has been overwritten with a\nvalue of 2^32 or more, passing it to a varargs call uses only the low 32 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
