@@ -66897,5 +66897,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T01:53:29.091778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ab1caf11703db99e13e31aae7406a3aa68909f9b",
+    "url": "https://github.com/WebKit/WebKit/commit/ab1caf11703db99e13e31aae7406a3aa68909f9b",
+    "message": "[JSC] `JSArray::setLength` should not count elements when the new length fits in the vector\nhttps://bugs.webkit.org/show_bug.cgi?id=324306\n\nReviewed by Yusuke Suzuki.\n\nFor Int32 / Double / Contiguous arrays, JSArray::setLength calls\ncountElements() whenever newLength >= MIN_SPARSE_ARRAY_INDEX (10000",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T01:54:06.758655+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a5bfdb3aaf30433058dc5b318d82f1dd7b9e4584",
+    "url": "https://github.com/WebKit/WebKit/commit/a5bfdb3aaf30433058dc5b318d82f1dd7b9e4584",
+    "message": "[JSC] Read `Error.stackTraceLimit` from the `Error` constructor when capturing a stack\nhttps://bugs.webkit.org/show_bug.cgi?id=324314\n\nReviewed by Keith Miller.\n\nIn current JSC, the limit used to truncate error.stack has lived in a\nC++ field that ErrorConstructor::put and deleteProperty copy from th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T01:54:44.445637+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5fe81278b136e6676a24509c71cadcd719c29d3",
+    "url": "https://github.com/WebKit/WebKit/commit/c5fe81278b136e6676a24509c71cadcd719c29d3",
+    "message": "[JSC] Refine JSObject::crashDueToEmptyValueAtValidOffset data\nhttps://bugs.webkit.org/show_bug.cgi?id=324194\nrdar://187412221\n\nReviewed by Mark Lam.\n\nThis patch replaces some of the debug data in\nJSObject::crashDueToEmptyValueAtValidOffset with new data about\nthe structure's dictionary status. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T01:55:22.183920+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "30ed970c8033fae956837c06fd634c1487862296",
+    "url": "https://github.com/swiftlang/swift/commit/30ed970c8033fae956837c06fd634c1487862296",
+    "message": "Merge pull request #92298 from mikeash/prespecialized-foreign-types\n\n[Runtime] Look up foreign type metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
