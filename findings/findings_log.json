@@ -67337,5 +67337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T22:56:04.549899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f5ab158824beeb9a5da5dd8b80086b23bbe5186",
+    "url": "https://github.com/WebKit/WebKit/commit/7f5ab158824beeb9a5da5dd8b80086b23bbe5186",
+    "message": "[JSC] Redesign WeakBlock\nhttps://bugs.webkit.org/show_bug.cgi?id=324140\nrdar://187358319\n\nReviewed by Keith Miller.\n\nThis patch redesigns WeakBlock implementation. Previously deallocation\nof Weak<> just marking WeakImpl as Deallocated. This is not desiable\nsince we end up scanning WeakBlock repeated",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T22:56:42.541158+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d533fd7f00a62a4a66968cbcaa46669d3ac87ec",
+    "url": "https://github.com/WebKit/WebKit/commit/0d533fd7f00a62a4a66968cbcaa46669d3ac87ec",
+    "message": "Unreviewed, reverting 321293@main (14d632bf1ef3)\nhttps://bugs.webkit.org/show_bug.cgi?id=324416\nrdar://187645297\n\nBroke x86 builds\n\nReverted change:\n\n    Add flags to generate and use PGO profiles for Swift code\n    https://bugs.webkit.org/show_bug.cgi?id=324376\n    rdar://187615767\n    321293@main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T22:57:21.818028+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0aac8dcd47b66ca9abb51812f6b848e63789034a",
+    "url": "https://github.com/WebKit/WebKit/commit/0aac8dcd47b66ca9abb51812f6b848e63789034a",
+    "message": "[JSC] WASM debugger: simplify one-time breakpoint bookkeeping\nhttps://bugs.webkit.org/show_bug.cgi?id=324390\nrdar://187623360\n\nReviewed by Yusuke Suzuki.\n\nBreakpoint::Type existed but no Breakpoint held one, and setBreakpointStopData\ntranslated it into DebugState::Reason through a switch that only r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
