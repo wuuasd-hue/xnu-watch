@@ -67177,5 +67177,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T17:10:09.321588+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9c43b4a10979deb1385bbf167da5f75113e1ce48",
+    "url": "https://github.com/WebKit/WebKit/commit/9c43b4a10979deb1385bbf167da5f75113e1ce48",
+    "message": "Web Inspector: CSS nesting + @media display incorrect within Styles inspector.\nhttps://bugs.webkit.org/show_bug.cgi?id=304635\nrdar://167326791\n\nReviewed by Qianlang Chen.\n\nhttps://commits.webkit.org/283188@main implemented the CSS Nesting spec's\ninterleaved declarations model via `StyleRuleNestedDec",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T17:10:46.850048+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a848db678203eb1563820cc1aae9ae0dd6cb3e0a",
+    "url": "https://github.com/WebKit/WebKit/commit/a848db678203eb1563820cc1aae9ae0dd6cb3e0a",
+    "message": "[JSC] Record expression is parenthesized or not\nhttps://bugs.webkit.org/show_bug.cgi?id=324430\nrdar://187662339\n\nReviewed by Sosuke Suzuki.\n\nWhen expression is parenthesized, ECMAScript SetName does not happen.\nThis means,\n\n    var fn;\n    (fn) = function() { }\n    fn.name !== \"fn\" // => true\n\nWe do",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T17:11:24.268714+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b1d1e50831f4d0529ff51174268e974efd3b93d",
+    "url": "https://github.com/WebKit/WebKit/commit/1b1d1e50831f4d0529ff51174268e974efd3b93d",
+    "message": "imported/w3c/web-platform-tests/content-security-policy/inheritance/history.sub.html is a flaky failure\nhttps://bugs.webkit.org/show_bug.cgi?id=324092\nrdar://187312421\n\nReviewed by Rupin Mittal.\n\nloadDifferentDocumentItem() reuses the cached page's DocumentLoader when the target history item is\nin t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T17:12:01.671668+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ab1caf11703db99e13e31aae7406a3aa68909f9b",
+    "url": "https://github.com/WebKit/WebKit/commit/ab1caf11703db99e13e31aae7406a3aa68909f9b",
+    "message": "[JSC] `JSArray::setLength` should not count elements when the new length fits in the vector\nhttps://bugs.webkit.org/show_bug.cgi?id=324306\n\nReviewed by Yusuke Suzuki.\n\nFor Int32 / Double / Contiguous arrays, JSArray::setLength calls\ncountElements() whenever newLength >= MIN_SPARSE_ARRAY_INDEX (10000",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
