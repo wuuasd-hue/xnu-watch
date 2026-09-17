@@ -66977,5 +66977,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T06:48:54.506599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a5cfe078bb3dc84193758100b90adf522947469",
+    "url": "https://github.com/WebKit/WebKit/commit/7a5cfe078bb3dc84193758100b90adf522947469",
+    "message": "[JSC] Shrink the FTL code that enters the OSR exit thunk\nhttps://bugs.webkit.org/show_bug.cgi?id=324407\n\nReviewed by Yusuke Suzuki.\n\nThis patch does for FTL what 321236@main did for DFG.\n\nThe basic idea is the same, but FTL differs from DFG in a few ways.\n\nFirst, since B3 can allocate any register, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T06:49:32.439489+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d533fd7f00a62a4a66968cbcaa46669d3ac87ec",
+    "url": "https://github.com/WebKit/WebKit/commit/0d533fd7f00a62a4a66968cbcaa46669d3ac87ec",
+    "message": "Unreviewed, reverting 321293@main (14d632bf1ef3)\nhttps://bugs.webkit.org/show_bug.cgi?id=324416\nrdar://187645297\n\nBroke x86 builds\n\nReverted change:\n\n    Add flags to generate and use PGO profiles for Swift code\n    https://bugs.webkit.org/show_bug.cgi?id=324376\n    rdar://187615767\n    321293@main ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T06:50:10.234881+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0aac8dcd47b66ca9abb51812f6b848e63789034a",
+    "url": "https://github.com/WebKit/WebKit/commit/0aac8dcd47b66ca9abb51812f6b848e63789034a",
+    "message": "[JSC] WASM debugger: simplify one-time breakpoint bookkeeping\nhttps://bugs.webkit.org/show_bug.cgi?id=324390\nrdar://187623360\n\nReviewed by Yusuke Suzuki.\n\nBreakpoint::Type existed but no Breakpoint held one, and setBreakpointStopData\ntranslated it into DebugState::Reason through a switch that only r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T06:50:47.841675+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6307d48da4ebcb6d022e060307abe96cc6a9dcb5",
+    "url": "https://github.com/WebKit/WebKit/commit/6307d48da4ebcb6d022e060307abe96cc6a9dcb5",
+    "message": "Add note to ConstraintConcurrency\nhttps://bugs.webkit.org/show_bug.cgi?id=324365\nrdar://187603447\n\nReviewed by Yusuke Suzuki.\n\nI and now seemingly AI models get confused that concurrency of our\nmarking constraints is w.r.t. other constraints and not the mutator.\n\n* Source/JavaScriptCore/heap/Constra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T06:51:25.685467+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "14d632bf1ef3778578c75394b64363a43d1ccf5c",
+    "url": "https://github.com/WebKit/WebKit/commit/14d632bf1ef3778578c75394b64363a43d1ccf5c",
+    "message": "Add flags to generate and use PGO profiles for Swift code\nhttps://bugs.webkit.org/show_bug.cgi?id=324376\nrdar://187615767\n\nReviewed by Dewei Zhu.\n\nThe change:\n\n- renames `WK_{ENABLE_}_PGO_*` flags to `WK_{ENABLE}_CLANG_PGO_*`.\n\n- Adds new flags to generate an use PGO\n  profiles for Swift code. It mi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
