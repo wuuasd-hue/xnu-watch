@@ -67257,5 +67257,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T20:24:56.535831+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea153e64fb93ac6f79589d257807d8c15f6f0c78",
+    "url": "https://github.com/WebKit/WebKit/commit/ea153e64fb93ac6f79589d257807d8c15f6f0c78",
+    "message": "[JSC] Make exception checks in CloneSerializer aligned to JSC\nhttps://bugs.webkit.org/show_bug.cgi?id=324423\nrdar://187658077\n\nReviewed by Sosuke Suzuki.\n\nAttach more exception checks to CloneSerializer, following to JSC's\nidiom.\n\nTest: JSTests/stress/structured-clone-exception-checks.js\n\n* JSTests/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T20:25:34.018316+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d7240f488f5e78c78c42f1b70497a3eccf69a624",
+    "url": "https://github.com/WebKit/WebKit/commit/d7240f488f5e78c78c42f1b70497a3eccf69a624",
+    "message": "[JSC] CloneDeserializerBase should follow to JSC style's exception check\nhttps://bugs.webkit.org/show_bug.cgi?id=324429\nrdar://187662183\n\nReviewed by Sosuke Suzuki and Keith Miller.\n\nAdopt scope-based rigorious exception checking style in JSC to\nCloneDeserializerBase. We also attach [[unlikely]] for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T20:26:11.639902+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a5bfdb3aaf30433058dc5b318d82f1dd7b9e4584",
+    "url": "https://github.com/WebKit/WebKit/commit/a5bfdb3aaf30433058dc5b318d82f1dd7b9e4584",
+    "message": "[JSC] Read `Error.stackTraceLimit` from the `Error` constructor when capturing a stack\nhttps://bugs.webkit.org/show_bug.cgi?id=324314\n\nReviewed by Keith Miller.\n\nIn current JSC, the limit used to truncate error.stack has lived in a\nC++ field that ErrorConstructor::put and deleteProperty copy from th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T20:26:49.172653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a5cfe078bb3dc84193758100b90adf522947469",
+    "url": "https://github.com/WebKit/WebKit/commit/7a5cfe078bb3dc84193758100b90adf522947469",
+    "message": "[JSC] Shrink the FTL code that enters the OSR exit thunk\nhttps://bugs.webkit.org/show_bug.cgi?id=324407\n\nReviewed by Yusuke Suzuki.\n\nThis patch does for FTL what 321236@main did for DFG.\n\nThe basic idea is the same, but FTL differs from DFG in a few ways.\n\nFirst, since B3 can allocate any register, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
