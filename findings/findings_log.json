@@ -67077,5 +67077,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T12:15:29.678478+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f5430ef75dd3ddb055aaedc365c64b33568b178e",
+    "url": "https://github.com/WebKit/WebKit/commit/f5430ef75dd3ddb055aaedc365c64b33568b178e",
+    "message": "Use encoding-carrying CString types in Intl\nhttps://bugs.webkit.org/show_bug.cgi?id=324324\n\nReviewed by Yusuke Suzuki and Darin Adler.\n\nThe locale identifiers threaded through Intl all have a known encoding where they are\nproduced, but were passed around as untyped CString, so the encoding had to be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T12:16:07.026327+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1aa6a33856f24134da217eb74d03e208d8885e67",
+    "url": "https://github.com/WebKit/WebKit/commit/1aa6a33856f24134da217eb74d03e208d8885e67",
+    "message": "Stop using deprecated CString in WebPrivacyHelpers.mm\nhttps://bugs.webkit.org/show_bug.cgi?id=324330\n\nReviewed by Wenson Hsieh.\n\nStop using deprecated CString in WebPrivacyHelpers.mm, use UTF8CString\ninstead since the strings are UTF8-encoded.\n\nAdd a UTF8CString constructor taking an NSString, the m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T12:16:44.029365+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "ca76b65cadd4f4fc1663b3586fc684d1d3e93185",
+    "url": "https://github.com/swiftlang/swift/commit/ca76b65cadd4f4fc1663b3586fc684d1d3e93185",
+    "message": "Merge pull request #92347 from mikeash/prespecialized-function-and-tuple-metadata\n\n[Runtime] Look up ObjC class wrapper metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T12:17:21.137691+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95a960a3ae94afa466bba4932de879236a178c12",
+    "url": "https://github.com/WebKit/WebKit/commit/95a960a3ae94afa466bba4932de879236a178c12",
+    "message": "Reduce use of CString::legacyCStringPointer() in assertion and signpost macros\nhttps://bugs.webkit.org/show_bug.cgi?id=324236\n\nReviewed by Mike Wyrzykowski.\n\nContinues 321137@main, bringing legacyCStringPointer() call sites down from\n1169 to 1066 by applying LOG_PRINTF_TYPE() to the remaining printf",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-17T12:17:58.174340+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8217890851167c3b788be2bedf3d38a087c4e220",
+    "url": "https://github.com/WebKit/WebKit/commit/8217890851167c3b788be2bedf3d38a087c4e220",
+    "message": "Reduce use of untyped CString\nhttps://bugs.webkit.org/show_bug.cgi?id=324322\n\nReviewed by Mike Wyrzykowski.\n\nCString does not record the encoding of its bytes, so callers keep having to\nre-establish it with byteCast<> at every use. Move APIs that already know their\nencoding over to UTF8CString / Lat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
