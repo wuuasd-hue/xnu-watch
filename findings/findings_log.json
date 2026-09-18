@@ -67757,5 +67757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T19:46:43.557516+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a2b7a1b2e3608786b09d743e36175feb65b455d4",
+    "url": "https://github.com/WebKit/WebKit/commit/a2b7a1b2e3608786b09d743e36175feb65b455d4",
+    "message": "[Image Redux] Use BitmapImage for members when all uses allow\nhttps://bugs.webkit.org/show_bug.cgi?id=324409\n\nReviewed by Said Abou-Hallawa.\n\nTo simplify upcoming work on the base WebCore::Image type, this replaces use of\nthe base WebCore::Image with WebCore::BitmapImage where all uses are explicitl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T19:47:21.024942+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8a2cff9580051b42872a75c826f1ef1b8ed6d6b",
+    "url": "https://github.com/WebKit/WebKit/commit/d8a2cff9580051b42872a75c826f1ef1b8ed6d6b",
+    "message": "[JSC] `RegExp#test` anchored first-character filter must not skip the `lastIndex` read\nhttps://bugs.webkit.org/show_bug.cgi?id=324307\n\nReviewed by Yusuke Suzuki.\n\nRegExpBuiltinExec reads lastIndex through ToLength(? Get(R, \"lastIndex\")) for\nevery RegExp, global or not, so a non-numeric lastIndex has",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T19:47:58.695077+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9c6d0178060ce865f17fbd08dc658a965d9d0c6e",
+    "url": "https://github.com/WebKit/WebKit/commit/9c6d0178060ce865f17fbd08dc658a965d9d0c6e",
+    "message": "[JSC] Remove `doneLocation` from `HandlerPropertyInlineCache`\nhttps://bugs.webkit.org/show_bug.cgi?id=324424\n\nReviewed by Yusuke Suzuki.\n\nOnly RepatchingPropertyInlineCache and BaselineUnlinkedPropertyInlineCache\nneed doneLocation, but the other inline cache structs had the field too.\nRemove it from",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
