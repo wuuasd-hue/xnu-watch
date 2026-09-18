@@ -67397,5 +67397,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T00:51:58.499479+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "34ccaa804ca9993edac87aa7631f26c73a018f39",
+    "url": "https://github.com/WebKit/WebKit/commit/34ccaa804ca9993edac87aa7631f26c73a018f39",
+    "message": "[JSC] Add structuredClone to jsc shell and add more tests\nhttps://bugs.webkit.org/show_bug.cgi?id=324474\nrdar://187713459\n\nReviewed by Tadeu Zagallo, Keith Miller, and Vassili Bykov.\n\nThis patch adds structuredClone[1] function to jsc shell. This\nimplements the spec[2]'s behavior. It allows us to te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T00:52:36.245884+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f5430ef75dd3ddb055aaedc365c64b33568b178e",
+    "url": "https://github.com/WebKit/WebKit/commit/f5430ef75dd3ddb055aaedc365c64b33568b178e",
+    "message": "Use encoding-carrying CString types in Intl\nhttps://bugs.webkit.org/show_bug.cgi?id=324324\n\nReviewed by Yusuke Suzuki and Darin Adler.\n\nThe locale identifiers threaded through Intl all have a known encoding where they are\nproduced, but were passed around as untyped CString, so the encoding had to be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T00:53:13.952293+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1aa6a33856f24134da217eb74d03e208d8885e67",
+    "url": "https://github.com/WebKit/WebKit/commit/1aa6a33856f24134da217eb74d03e208d8885e67",
+    "message": "Stop using deprecated CString in WebPrivacyHelpers.mm\nhttps://bugs.webkit.org/show_bug.cgi?id=324330\n\nReviewed by Wenson Hsieh.\n\nStop using deprecated CString in WebPrivacyHelpers.mm, use UTF8CString\ninstead since the strings are UTF8-encoded.\n\nAdd a UTF8CString constructor taking an NSString, the m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
