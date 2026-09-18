@@ -67577,5 +67577,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T09:55:25.716248+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a2c1aac0b390442693eded42a8f146675a70c1ce",
+    "url": "https://github.com/swiftlang/swift/commit/a2c1aac0b390442693eded42a8f146675a70c1ce",
+    "message": "Merge pull request #92399 from compnerd/com-query-interface\n\nRuntime: use QueryInterface for COM interface casts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T09:56:04.174385+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a848db678203eb1563820cc1aae9ae0dd6cb3e0a",
+    "url": "https://github.com/WebKit/WebKit/commit/a848db678203eb1563820cc1aae9ae0dd6cb3e0a",
+    "message": "[JSC] Record expression is parenthesized or not\nhttps://bugs.webkit.org/show_bug.cgi?id=324430\nrdar://187662339\n\nReviewed by Sosuke Suzuki.\n\nWhen expression is parenthesized, ECMAScript SetName does not happen.\nThis means,\n\n    var fn;\n    (fn) = function() { }\n    fn.name !== \"fn\" // => true\n\nWe do",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T09:56:42.647561+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea153e64fb93ac6f79589d257807d8c15f6f0c78",
+    "url": "https://github.com/WebKit/WebKit/commit/ea153e64fb93ac6f79589d257807d8c15f6f0c78",
+    "message": "[JSC] Make exception checks in CloneSerializer aligned to JSC\nhttps://bugs.webkit.org/show_bug.cgi?id=324423\nrdar://187658077\n\nReviewed by Sosuke Suzuki.\n\nAttach more exception checks to CloneSerializer, following to JSC's\nidiom.\n\nTest: JSTests/stress/structured-clone-exception-checks.js\n\n* JSTests/",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
