@@ -67457,5 +67457,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:20:16.159921+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "77e8645084e6324c165ae74a48fad431118b5af0",
+    "url": "https://github.com/WebKit/WebKit/commit/77e8645084e6324c165ae74a48fad431118b5af0",
+    "message": "[Safer CPP] Address most lambda capture warnings in WebCore\nhttps://bugs.webkit.org/show_bug.cgi?id=324320\nReviewed by David Kilzer.\n\n* Source/WTF/wtf/StdLibExtras.h:\n(WTF::switchOn):\n(WTF::switchOnTupleAtIndex):\n(WTF::apply):\n* Source/WebCore/Modules/WebGPU/Implementation/WebGPUDeviceImpl.cpp:\n(Web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:20:53.299765+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d8a2cff9580051b42872a75c826f1ef1b8ed6d6b",
+    "url": "https://github.com/WebKit/WebKit/commit/d8a2cff9580051b42872a75c826f1ef1b8ed6d6b",
+    "message": "[JSC] `RegExp#test` anchored first-character filter must not skip the `lastIndex` read\nhttps://bugs.webkit.org/show_bug.cgi?id=324307\n\nReviewed by Yusuke Suzuki.\n\nRegExpBuiltinExec reads lastIndex through ToLength(? Get(R, \"lastIndex\")) for\nevery RegExp, global or not, so a non-numeric lastIndex has",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:21:30.270920+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9c6d0178060ce865f17fbd08dc658a965d9d0c6e",
+    "url": "https://github.com/WebKit/WebKit/commit/9c6d0178060ce865f17fbd08dc658a965d9d0c6e",
+    "message": "[JSC] Remove `doneLocation` from `HandlerPropertyInlineCache`\nhttps://bugs.webkit.org/show_bug.cgi?id=324424\n\nReviewed by Yusuke Suzuki.\n\nOnly RepatchingPropertyInlineCache and BaselineUnlinkedPropertyInlineCache\nneed doneLocation, but the other inline cache structs had the field too.\nRemove it from",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:22:07.290600+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "872a0ddf5a180cb467546a9eacf7c875d3d767bb",
+    "url": "https://github.com/WebKit/WebKit/commit/872a0ddf5a180cb467546a9eacf7c875d3d767bb",
+    "message": "[Site Isolation] Stranded async back/forward state drops unrelated back/forward navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=324368\nrdar://187604112\n\nReviewed by Basuke Suzuki.\n\nUnder UseUIProcessForBackForwardItemLoading, FrameLoader kept a tri-state\nm_asyncBackForwardNavigationState { None,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:22:44.532647+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "ca76b65cadd4f4fc1663b3586fc684d1d3e93185",
+    "url": "https://github.com/swiftlang/swift/commit/ca76b65cadd4f4fc1663b3586fc684d1d3e93185",
+    "message": "Merge pull request #92347 from mikeash/prespecialized-function-and-tuple-metadata\n\n[Runtime] Look up ObjC class wrapper metadata in the prespecializations library.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T05:23:21.551723+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9c43b4a10979deb1385bbf167da5f75113e1ce48",
+    "url": "https://github.com/WebKit/WebKit/commit/9c43b4a10979deb1385bbf167da5f75113e1ce48",
+    "message": "Web Inspector: CSS nesting + @media display incorrect within Styles inspector.\nhttps://bugs.webkit.org/show_bug.cgi?id=304635\nrdar://167326791\n\nReviewed by Qianlang Chen.\n\nhttps://commits.webkit.org/283188@main implemented the CSS Nesting spec's\ninterleaved declarations model via `StyleRuleNestedDec",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
