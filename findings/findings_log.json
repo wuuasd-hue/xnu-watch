@@ -67637,5 +67637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T13:56:07.647565+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "18073b9f6cb83f09875084eaf968ab9b2382b8a4",
+    "url": "https://github.com/WebKit/WebKit/commit/18073b9f6cb83f09875084eaf968ab9b2382b8a4",
+    "message": "Fix the warnings for extern-template in JSGenericTypedArrayViewConstructor\nhttps://bugs.webkit.org/show_bug.cgi?id=324514\nrdar://187753091\n\nReviewed by Darin Adler.\n\nDeclare the explicit specializations next to the typed array constructor aliases.\n\n* Source/JavaScriptCore/runtime/JSGenericTypedArray",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T13:56:45.554582+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d7240f488f5e78c78c42f1b70497a3eccf69a624",
+    "url": "https://github.com/WebKit/WebKit/commit/d7240f488f5e78c78c42f1b70497a3eccf69a624",
+    "message": "[JSC] CloneDeserializerBase should follow to JSC style's exception check\nhttps://bugs.webkit.org/show_bug.cgi?id=324429\nrdar://187662183\n\nReviewed by Sosuke Suzuki and Keith Miller.\n\nAdopt scope-based rigorious exception checking style in JSC to\nCloneDeserializerBase. We also attach [[unlikely]] for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T13:57:22.816616+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7f5ab158824beeb9a5da5dd8b80086b23bbe5186",
+    "url": "https://github.com/WebKit/WebKit/commit/7f5ab158824beeb9a5da5dd8b80086b23bbe5186",
+    "message": "[JSC] Redesign WeakBlock\nhttps://bugs.webkit.org/show_bug.cgi?id=324140\nrdar://187358319\n\nReviewed by Keith Miller.\n\nThis patch redesigns WeakBlock implementation. Previously deallocation\nof Weak<> just marking WeakImpl as Deallocated. This is not desiable\nsince we end up scanning WeakBlock repeated",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
