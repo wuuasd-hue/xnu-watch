@@ -67817,5 +67817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T21:58:51.515813+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "872a0ddf5a180cb467546a9eacf7c875d3d767bb",
+    "url": "https://github.com/WebKit/WebKit/commit/872a0ddf5a180cb467546a9eacf7c875d3d767bb",
+    "message": "[Site Isolation] Stranded async back/forward state drops unrelated back/forward navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=324368\nrdar://187604112\n\nReviewed by Basuke Suzuki.\n\nUnder UseUIProcessForBackForwardItemLoading, FrameLoader kept a tri-state\nm_asyncBackForwardNavigationState { None,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T21:59:28.916819+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a2c1aac0b390442693eded42a8f146675a70c1ce",
+    "url": "https://github.com/swiftlang/swift/commit/a2c1aac0b390442693eded42a8f146675a70c1ce",
+    "message": "Merge pull request #92399 from compnerd/com-query-interface\n\nRuntime: use QueryInterface for COM interface casts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
