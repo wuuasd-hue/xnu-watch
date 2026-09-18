@@ -67857,5 +67857,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T23:48:53.987322+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2a24a9aa7c6be5d2d4a4058691c4a03b3701f6b3",
+    "url": "https://github.com/WebKit/WebKit/commit/2a24a9aa7c6be5d2d4a4058691c4a03b3701f6b3",
+    "message": "OpaqueJSClass should retain/release the parent JSClassRef when provided\nhttps://bugs.webkit.org/show_bug.cgi?id=319684\nrdar://182366602\n\nReviewed by Mark Lam.\n\nWe are retain/release-ing the prototype's JSClassRef but not the parent's\nclass. We should do so otherwise we could UAF the parent class for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T23:49:30.893407+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9d477930eddda119e2220c8db8f80658ce9a70b",
+    "url": "https://github.com/WebKit/WebKit/commit/b9d477930eddda119e2220c8db8f80658ce9a70b",
+    "message": "finalizeWasmCalleeCleanup should run a cross-modifying code fence\nhttps://bugs.webkit.org/show_bug.cgi?id=320401\nrdar://183357733\n\nReviewed by Marcus Plutowski.\n\nIn theory it's possible for finalizeWasmCalleeCleanup to remove the last\nreference to a BBQCallee while it's still reachable from the curr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T23:50:07.807903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbba08d80575c234514bab67ba0f4880a15b424",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbba08d80575c234514bab67ba0f4880a15b424",
+    "message": "Add flags to generate and use PGO profiles for Swift code\nhttps://bugs.webkit.org/show_bug.cgi?id=324376\nrdar://187615767\n\nReviewed by Dewei Zhu.\n\nThe change:\n\n- renames `WK_{ENABLE_}_PGO_*` flags to `WK_{ENABLE}_CLANG_PGO_*`.\n\n- Adds new flags to generate an use PGO\n  profiles for Swift code. It mi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T23:50:44.820612+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "18073b9f6cb83f09875084eaf968ab9b2382b8a4",
+    "url": "https://github.com/WebKit/WebKit/commit/18073b9f6cb83f09875084eaf968ab9b2382b8a4",
+    "message": "Fix the warnings for extern-template in JSGenericTypedArrayViewConstructor\nhttps://bugs.webkit.org/show_bug.cgi?id=324514\nrdar://187753091\n\nReviewed by Darin Adler.\n\nDeclare the explicit specializations next to the typed array constructor aliases.\n\n* Source/JavaScriptCore/runtime/JSGenericTypedArray",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-18T23:51:21.795671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f9aae3434d37674484277936178e57a9086eae0",
+    "url": "https://github.com/WebKit/WebKit/commit/9f9aae3434d37674484277936178e57a9086eae0",
+    "message": "[JSC] WASM debugger: report an interrupt at a wasm prologue as a real stop\nhttps://bugs.webkit.org/show_bug.cgi?id=324453\nrdar://187695269\n\nReviewed by Mark Lam.\n\nA prologue stop has no pc -- isStoppedAtPrologue() is stopData without one -- yet the\nreply advertises the function's first instruction, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
