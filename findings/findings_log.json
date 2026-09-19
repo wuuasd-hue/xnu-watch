@@ -68297,5 +68297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T21:35:34.634547+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "url": "https://github.com/WebKit/WebKit/commit/1edc620316f57c3c4539f58d5c9e00f33fcc29f6",
+    "message": "[JSC] Baseline JIT should not construct `GCOwnedDataScope` on the compiler thread\nhttps://bugs.webkit.org/show_bug.cgi?id=323102\n\nReviewed by Yusuke Suzuki.\n\nHeap::m_topGCOwnedDataScope is a debug-only, unsynchronized field that says\nwhether a GCOwnedDataScope is live on the mutator's stack, and\nHea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T21:36:11.634444+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "url": "https://github.com/WebKit/WebKit/commit/afbe314b93fc84ded1e57c21a32d955cd6197931",
+    "message": "Enhance testLibJSCTools to track test suite run time, and fix an intermittent hang.\nhttps://bugs.webkit.org/show_bug.cgi?id=323167\nrdar://186413086\n\nReviewed by Marcus Plutowski and Dan Hecht.\n\nNow introducing and using a SuiteTracer RAII class to track testLibJSCTools' test suite\nrun times.  We wil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
