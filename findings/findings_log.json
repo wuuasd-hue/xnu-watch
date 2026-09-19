@@ -67997,5 +67997,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T06:44:05.102072+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "efe952b254a449a763a169544a209501848d54f2",
+    "url": "https://github.com/WebKit/WebKit/commit/efe952b254a449a763a169544a209501848d54f2",
+    "message": "Remove unused AXCustomColorMode members from CachedImage\nhttps://bugs.webkit.org/show_bug.cgi?id=324609\nrdar://187843650\n\nReviewed by Richard Robinson.\n\nRemove unused AXCustomColorMode members from CachedImage.\n\n* Source/WebCore/loader/cache/CachedImage.h:\n\nCanonical link: https://commits.webkit.org",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T06:44:42.743402+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9d477930eddda119e2220c8db8f80658ce9a70b",
+    "url": "https://github.com/WebKit/WebKit/commit/b9d477930eddda119e2220c8db8f80658ce9a70b",
+    "message": "finalizeWasmCalleeCleanup should run a cross-modifying code fence\nhttps://bugs.webkit.org/show_bug.cgi?id=320401\nrdar://183357733\n\nReviewed by Marcus Plutowski.\n\nIn theory it's possible for finalizeWasmCalleeCleanup to remove the last\nreference to a BBQCallee while it's still reachable from the curr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T06:45:20.387992+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbba08d80575c234514bab67ba0f4880a15b424",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbba08d80575c234514bab67ba0f4880a15b424",
+    "message": "Add flags to generate and use PGO profiles for Swift code\nhttps://bugs.webkit.org/show_bug.cgi?id=324376\nrdar://187615767\n\nReviewed by Dewei Zhu.\n\nThe change:\n\n- renames `WK_{ENABLE_}_PGO_*` flags to `WK_{ENABLE}_CLANG_PGO_*`.\n\n- Adds new flags to generate an use PGO\n  profiles for Swift code. It mi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
