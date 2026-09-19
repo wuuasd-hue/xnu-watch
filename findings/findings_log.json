@@ -68157,5 +68157,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T14:52:27.299097+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5c46669ba3028504eabe3b704064817b6aa92af",
+    "url": "https://github.com/WebKit/WebKit/commit/c5c46669ba3028504eabe3b704064817b6aa92af",
+    "message": "[JSC] `Intl.DateTimeFormat` should not report dayPeriod for the AM/PM marker\nhttps://bugs.webkit.org/show_bug.cgi?id=324559\n\nReviewed by Yusuke Suzuki.\n\nsetFormatsFromPattern treated 'a' (the AM/PM marker) like 'b' and 'B' (the\nflexible day periods that the dayPeriod option requests). Any 12-hour\nfo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T14:53:05.255166+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8ca47457ed12c69a97e43acd70a3a2eb7bc2f462",
+    "url": "https://github.com/WebKit/WebKit/commit/8ca47457ed12c69a97e43acd70a3a2eb7bc2f462",
+    "message": "Reduce use of untyped CString and add encoding-aware JSStringRef conversions\nhttps://bugs.webkit.org/show_bug.cgi?id=324435\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main. Two kinds of untyped CString remain: sites that construct one\nfrom raw bytes, and declarations that slice an already-type",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
