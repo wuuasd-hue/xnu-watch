@@ -68337,5 +68337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T23:41:11.634252+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "073031147cf8669f7752968ab66e01a7c29e49cc",
+    "url": "https://github.com/WebKit/WebKit/commit/073031147cf8669f7752968ab66e01a7c29e49cc",
+    "message": "[JSC] WASM debugger: implement qWasmStackValue\nhttps://bugs.webkit.org/show_bug.cgi?id=324576\nrdar://187810072\n\nReviewed by Yusuke Suzuki.\n\nAn optimized build can leave a source variable on the wasm operand stack instead of in a\nlocal, and LLDB reads it with qWasmStackValue. The packet was unimpleme",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T23:41:49.728558+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "073031147cf8669f7752968ab66e01a7c29e49cc",
+    "url": "https://github.com/WebKit/WebKit/commit/073031147cf8669f7752968ab66e01a7c29e49cc",
+    "message": "[JSC] WASM debugger: implement qWasmStackValue\nhttps://bugs.webkit.org/show_bug.cgi?id=324576\nrdar://187810072\n\nReviewed by Yusuke Suzuki.\n\nAn optimized build can leave a source variable on the wasm operand stack instead of in a\nlocal, and LLDB reads it with qWasmStackValue. The packet was unimpleme",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T23:42:27.660633+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "url": "https://github.com/WebKit/WebKit/commit/162e02396fa26f8dc844bb5d5df12cefabdceca4",
+    "message": "Fire webRequest events for declarativeNetRequest-blocked loads\nhttps://bugs.webkit.org/show_bug.cgi?id=313971\nrdar://176177851\n\nReviewed by Timothy Hatcher.\n\nThis patch makes a Safari Web Extension fire webRequest.onBeforeRequest followed by\nwebRequest.onErrorOccurred when a load is blocked by the e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
