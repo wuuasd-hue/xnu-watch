@@ -67957,5 +67957,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T01:45:12.311740+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a2b7a1b2e3608786b09d743e36175feb65b455d4",
+    "url": "https://github.com/WebKit/WebKit/commit/a2b7a1b2e3608786b09d743e36175feb65b455d4",
+    "message": "[Image Redux] Use BitmapImage for members when all uses allow\nhttps://bugs.webkit.org/show_bug.cgi?id=324409\n\nReviewed by Said Abou-Hallawa.\n\nTo simplify upcoming work on the base WebCore::Image type, this replaces use of\nthe base WebCore::Image with WebCore::BitmapImage where all uses are explicitl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-19T01:45:49.527164+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2a24a9aa7c6be5d2d4a4058691c4a03b3701f6b3",
+    "url": "https://github.com/WebKit/WebKit/commit/2a24a9aa7c6be5d2d4a4058691c4a03b3701f6b3",
+    "message": "OpaqueJSClass should retain/release the parent JSClassRef when provided\nhttps://bugs.webkit.org/show_bug.cgi?id=319684\nrdar://182366602\n\nReviewed by Mark Lam.\n\nWe are retain/release-ing the prototype's JSClassRef but not the parent's\nclass. We should do so otherwise we could UAF the parent class for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
