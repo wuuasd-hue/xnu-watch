@@ -68457,5 +68457,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T07:08:38.735847+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "68516a66b91d57e35aa99cb1c91df195f5be44b4",
+    "url": "https://github.com/WebKit/WebKit/commit/68516a66b91d57e35aa99cb1c91df195f5be44b4",
+    "message": "[Safer CPP] Address more uncounted arg warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=324538\n\nReviewed by Anne van Kesteren.\n\n* Source/WebCore/accessibility/AXObjectCache.cpp:\n(WebCore::AXObjectCache::mapScreenPointToPagePoint const):\n(WebCore::AXObjectCache::setIsolatedTree):\n(WebCore::AXObjectCa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T07:09:16.491339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "68516a66b91d57e35aa99cb1c91df195f5be44b4",
+    "url": "https://github.com/WebKit/WebKit/commit/68516a66b91d57e35aa99cb1c91df195f5be44b4",
+    "message": "[Safer CPP] Address more uncounted arg warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=324538\n\nReviewed by Anne van Kesteren.\n\n* Source/WebCore/accessibility/AXObjectCache.cpp:\n(WebCore::AXObjectCache::mapScreenPointToPagePoint const):\n(WebCore::AXObjectCache::setIsolatedTree):\n(WebCore::AXObjectCa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T07:09:55.258070+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "url": "https://github.com/WebKit/WebKit/commit/951d88a0fe8bffd6a1d0e80c42a019a28c416720",
+    "message": "Fix testLibJSCTools's CorpseSnapshotTest and CorpseSymbolTest to run better for ASAN builds.\nhttps://bugs.webkit.org/show_bug.cgi?id=323232\nrdar://186484113\n\nReviewed by Dan Hecht.\n\nCorpseSymbolTest was previously looking up the symbol for `malloc`.  ASAN builds overrides `malloc`\nwith its own imple",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
