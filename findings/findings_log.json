@@ -68657,5 +68657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T21:06:30.368645+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dbfab2693adfbccc72b683100dbf466e6640792",
+    "url": "https://github.com/WebKit/WebKit/commit/4dbfab2693adfbccc72b683100dbf466e6640792",
+    "message": "[JSC] Do not copy const-expr byte sequence in wasm\nhttps://bugs.webkit.org/show_bug.cgi?id=323269\nrdar://186519182\n\nReviewed by Mark Lam.\n\n1. evaluateExtendedConstExpr was copying Vector<uint8_t> wasm const-expr\n   bytes. Stop doing so.\n2. We also clean up evaluateConstantExpression code so that was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T21:07:07.588252+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "url": "https://github.com/WebKit/WebKit/commit/d9136f7891344cfe1635fb97cda11d9163fef9cc",
+    "message": "SpeculationRules::parseSingleRule rebuilds its allowed-keys HashSet on every call\nhttps://bugs.webkit.org/show_bug.cgi?id=323242\nrdar://186495063\n\nReviewed by Chris Dumez.\n\nparseSingleRule() constructed a 10-element HashSet<String> of the allowed\nrule keys as a function-local, so the set was allocat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
