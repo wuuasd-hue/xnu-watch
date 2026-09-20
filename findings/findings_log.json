@@ -68397,5 +68397,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T01:47:23.408681+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6c0de596d5aae0af45bcdf7ddd0c61f185da9959",
+    "url": "https://github.com/WebKit/WebKit/commit/6c0de596d5aae0af45bcdf7ddd0c61f185da9959",
+    "message": "[JSC] Prefetch MarkedBlock when found for allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=324632\nrdar://187885349\n\nReviewed by Yusuke Suzuki.\n\nWe have to look at the MarkedBlock's Header to sweep the block anyway.\nIt seems to be beneficial to manually prefetch the MarkedBlock before\npreparing the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T01:48:00.890022+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6c0de596d5aae0af45bcdf7ddd0c61f185da9959",
+    "url": "https://github.com/WebKit/WebKit/commit/6c0de596d5aae0af45bcdf7ddd0c61f185da9959",
+    "message": "[JSC] Prefetch MarkedBlock when found for allocation\nhttps://bugs.webkit.org/show_bug.cgi?id=324632\nrdar://187885349\n\nReviewed by Yusuke Suzuki.\n\nWe have to look at the MarkedBlock's Header to sweep the block anyway.\nIt seems to be beneficial to manually prefetch the MarkedBlock before\npreparing the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T01:48:38.083108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "url": "https://github.com/WebKit/WebKit/commit/5bcd90bdee7964d8b14f39497e994d98cc2b5952",
+    "message": "[JSC] Enable global inlining planner\nhttps://bugs.webkit.org/show_bug.cgi?id=323126\nrdar://186389303\n\nReviewed by Yusuke Suzuki.\n\nThis patch enables the new inlining planner by default.\nThis will let us start searching for more optimal parameters.\n\nNo tests because there is no observable behavior di",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
