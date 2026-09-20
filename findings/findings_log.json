@@ -68597,5 +68597,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T18:55:32.113975+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2d61f8871a4dfacef8f0ba59b004834c2e9649d",
+    "url": "https://github.com/WebKit/WebKit/commit/d2d61f8871a4dfacef8f0ba59b004834c2e9649d",
+    "message": "[JSC] Use std::span in multiplication in JSBigInt while not increasing assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=324494\nrdar://187734341\n\nReviewed by Yijia Huang.\n\nThis patch changes JSBigInt multiplication to use std::span instead of\npointers. But super important thing is not regressing pe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T18:56:10.483472+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2d61f8871a4dfacef8f0ba59b004834c2e9649d",
+    "url": "https://github.com/WebKit/WebKit/commit/d2d61f8871a4dfacef8f0ba59b004834c2e9649d",
+    "message": "[JSC] Use std::span in multiplication in JSBigInt while not increasing assertions\nhttps://bugs.webkit.org/show_bug.cgi?id=324494\nrdar://187734341\n\nReviewed by Yijia Huang.\n\nThis patch changes JSBigInt multiplication to use std::span instead of\npointers. But super important thing is not regressing pe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T18:56:47.431895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "url": "https://github.com/WebKit/WebKit/commit/cd30bb7e410f12481f5330a896e72cd569eb7ee2",
+    "message": "[JSC] ObjectCreate folding should emit checks\nhttps://bugs.webkit.org/show_bug.cgi?id=317570\nrdar://178248992\n\nReviewed by Yijia Huang.\n\nWhen folding ObjectCreate(with-edge-checks), we are not emitting these\nchecks and converting it to NewObject. As a result, we missed the edge\nfilters and the subse",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
