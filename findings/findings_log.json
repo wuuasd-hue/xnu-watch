@@ -68697,5 +68697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T23:19:54.162912+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "url": "https://github.com/WebKit/WebKit/commit/e78ffc906984991f10444d7cd8f564789fd4eadf",
+    "message": "Remove dead code in FrameLoader::SubframeLoader::loadSubframe()\nhttps://bugs.webkit.org/show_bug.cgi?id=323258\nrdar://186506734\n\nReviewed by Chris Dumez.\n\nTwo pieces of dead code in loadSubframe():\n\n- The page/subframeCount check is an exact duplicate of the check that\n  canCreateSubFrame() already ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-20T23:20:31.255904+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "url": "https://github.com/WebKit/WebKit/commit/5b7329cf1b86e72332e68c5069db0b953cfab522",
+    "message": "PrivateClickMeasurement token URL getters should return std::optional<URL> instead of const std::optional<const URL>\nhttps://bugs.webkit.org/show_bug.cgi?id=323252\nrdar://186503027\n\nReviewed by Chris Dumez.\n\ntokenPublicKeyURL() and tokenSignatureURL() on PrivateClickMeasurement and\nAttributionTrigge",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
