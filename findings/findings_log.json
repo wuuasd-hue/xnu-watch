@@ -68797,5 +68797,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T06:35:01.563964+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2834de45efcd8e5982c7ce6a22240734a8732295",
+    "url": "https://github.com/WebKit/WebKit/commit/2834de45efcd8e5982c7ce6a22240734a8732295",
+    "message": "Unreviewed build fix after 321483@main\nhttps://bugs.webkit.org/show_bug.cgi?id=324680\n\n* Source/JavaScriptCore/heap/Heap.cpp:\n\nCanonical link: https://commits.webkit.org/321486@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T06:35:38.488670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "58e02c19b9aa1d72a3acf3ee1b2c725b407962d5",
+    "url": "https://github.com/WebKit/WebKit/commit/58e02c19b9aa1d72a3acf3ee1b2c725b407962d5",
+    "message": "Carry the encoding in the type for JSC's option strings and JIT-dump object strings\nhttps://bugs.webkit.org/show_bug.cgi?id=324652\n\nReviewed by Yusuke Suzuki.\n\nThe two kinds of name on the LinkBuffer -> GdbJIT/PerfLog path reach opposite conclusions,\nwhich is the point of typing them. Mach-O and ELF",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T06:36:15.408684+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b5592466bc12a1cd0f0ec9d9ea59e53d1b5c603",
+    "url": "https://github.com/WebKit/WebKit/commit/9b5592466bc12a1cd0f0ec9d9ea59e53d1b5c603",
+    "message": "Type the JSC heap names as ASCIICString and the profiler marker messages as UTF8CString\nhttps://bugs.webkit.org/show_bug.cgi?id=324651\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main, typing JSC's own diagnostic strings. The two halves reach opposite\nconclusions, which is the point of typing t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T06:36:52.386902+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2834de45efcd8e5982c7ce6a22240734a8732295",
+    "url": "https://github.com/WebKit/WebKit/commit/2834de45efcd8e5982c7ce6a22240734a8732295",
+    "message": "Unreviewed build fix after 321483@main\nhttps://bugs.webkit.org/show_bug.cgi?id=324680\n\n* Source/JavaScriptCore/heap/Heap.cpp:\n\nCanonical link: https://commits.webkit.org/321486@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T06:37:29.507303+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "58e02c19b9aa1d72a3acf3ee1b2c725b407962d5",
+    "url": "https://github.com/WebKit/WebKit/commit/58e02c19b9aa1d72a3acf3ee1b2c725b407962d5",
+    "message": "Carry the encoding in the type for JSC's option strings and JIT-dump object strings\nhttps://bugs.webkit.org/show_bug.cgi?id=324652\n\nReviewed by Yusuke Suzuki.\n\nThe two kinds of name on the LinkBuffer -> GdbJIT/PerfLog path reach opposite conclusions,\nwhich is the point of typing them. Mach-O and ELF",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
