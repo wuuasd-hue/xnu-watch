@@ -68737,5 +68737,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T01:16:52.829681+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7894e5b1e29a100d03a3aea74de283986c81bae0",
+    "url": "https://github.com/WebKit/WebKit/commit/7894e5b1e29a100d03a3aea74de283986c81bae0",
+    "message": "[Site Isolation] Cross-document view transition should not start after a cross-origin redirect\nhttps://bugs.webkit.org/show_bug.cgi?id=324578\nrdar://187812242\n\nReviewed by Matt Woodrow.\n\nWith Site Isolation enabled, cross-site redirects cause process swaps\nmid-navigation. After the process swap, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T01:17:30.075279+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7894e5b1e29a100d03a3aea74de283986c81bae0",
+    "url": "https://github.com/WebKit/WebKit/commit/7894e5b1e29a100d03a3aea74de283986c81bae0",
+    "message": "[Site Isolation] Cross-document view transition should not start after a cross-origin redirect\nhttps://bugs.webkit.org/show_bug.cgi?id=324578\nrdar://187812242\n\nReviewed by Matt Woodrow.\n\nWith Site Isolation enabled, cross-site redirects cause process swaps\nmid-navigation. After the process swap, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T01:18:07.063029+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "url": "https://github.com/WebKit/WebKit/commit/a4741842d2bb89f352763c390c55fe12dfa884a3",
+    "message": "[JSC] Avoid atomizing import names twice\nhttps://bugs.webkit.org/show_bug.cgi?id=323281\nrdar://186533756\n\nReviewed by Mark Lam.\n\nThis patch avoids atomizing wasm import names twice by having\nFixedVector with Identifier pairs.\n\n* Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp:\n(JSC::JSWebAss",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
