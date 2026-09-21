@@ -68897,5 +68897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T13:25:15.444658+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38cc1fbc76b839ab6cb0d3d58f1ffa3d1de1e3bf",
+    "url": "https://github.com/WebKit/WebKit/commit/38cc1fbc76b839ab6cb0d3d58f1ffa3d1de1e3bf",
+    "message": "[Safer CPP] Address UncountedCallArgsChecker warnings in WebCore/loader/\nhttps://bugs.webkit.org/show_bug.cgi?id=324684\n\nReviewed by Anne van Kesteren.\n\n* Source/WebCore/loader/ApplicationManifestLoader.cpp:\n(WebCore::ApplicationManifestLoader::startLoading):\n* Source/WebCore/loader/DocumentLoader.c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T13:25:53.578724+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b5592466bc12a1cd0f0ec9d9ea59e53d1b5c603",
+    "url": "https://github.com/WebKit/WebKit/commit/9b5592466bc12a1cd0f0ec9d9ea59e53d1b5c603",
+    "message": "Type the JSC heap names as ASCIICString and the profiler marker messages as UTF8CString\nhttps://bugs.webkit.org/show_bug.cgi?id=324651\n\nReviewed by Yusuke Suzuki.\n\nFollow-up to 320652@main, typing JSC's own diagnostic strings. The two halves reach opposite\nconclusions, which is the point of typing t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T13:26:32.176557+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "38cc1fbc76b839ab6cb0d3d58f1ffa3d1de1e3bf",
+    "url": "https://github.com/WebKit/WebKit/commit/38cc1fbc76b839ab6cb0d3d58f1ffa3d1de1e3bf",
+    "message": "[Safer CPP] Address UncountedCallArgsChecker warnings in WebCore/loader/\nhttps://bugs.webkit.org/show_bug.cgi?id=324684\n\nReviewed by Anne van Kesteren.\n\n* Source/WebCore/loader/ApplicationManifestLoader.cpp:\n(WebCore::ApplicationManifestLoader::startLoading):\n* Source/WebCore/loader/DocumentLoader.c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
