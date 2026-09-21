@@ -68957,5 +68957,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T18:49:25.213366+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fda68a8bb055d56008d965dedc091eaed2b2f7c6",
+    "url": "https://github.com/WebKit/WebKit/commit/fda68a8bb055d56008d965dedc091eaed2b2f7c6",
+    "message": "[JSC] Air FixObviousSpills state should track aliased regs\nhttps://bugs.webkit.org/show_bug.cgi?id=324695\nrdar://187965961\n\nReviewed by Dan Hecht.\n\nState::clobber(Reg) is very frequently called as it is called once per\ndef of regs in Air::Inst.\n\n1. For regConst case, one reg can only have one const.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T18:50:03.249833+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c17d3df6ec2301d5ca41b7d13e0eed6a9381ac1d",
+    "url": "https://github.com/WebKit/WebKit/commit/c17d3df6ec2301d5ca41b7d13e0eed6a9381ac1d",
+    "message": "[JSC] Use PlainGregorianDateTime and drop GregorianDateTime\nhttps://bugs.webkit.org/show_bug.cgi?id=324677\nrdar://187947054\n\nReviewed by Yijia Huang.\n\nThis patch moves PlainGregorianDateTime to WTF and drop\nWTF::GregorianDateTime. PlainGregorianDateTime is extremely optimized in\nsize etc., to be usa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T18:50:42.209189+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "20441c6ab488c14ea6ffe8d7023ffe2a45a53522",
+    "url": "https://github.com/swiftlang/swift/commit/20441c6ab488c14ea6ffe8d7023ffe2a45a53522",
+    "message": "Merge pull request #92459 from compnerd/com-instance-prefix\n\nRuntime: support instance prefixes for heap allocated instances",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T18:51:20.399765+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fda68a8bb055d56008d965dedc091eaed2b2f7c6",
+    "url": "https://github.com/WebKit/WebKit/commit/fda68a8bb055d56008d965dedc091eaed2b2f7c6",
+    "message": "[JSC] Air FixObviousSpills state should track aliased regs\nhttps://bugs.webkit.org/show_bug.cgi?id=324695\nrdar://187965961\n\nReviewed by Dan Hecht.\n\nState::clobber(Reg) is very frequently called as it is called once per\ndef of regs in Air::Inst.\n\n1. For regConst case, one reg can only have one const.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-21T18:51:58.376878+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c17d3df6ec2301d5ca41b7d13e0eed6a9381ac1d",
+    "url": "https://github.com/WebKit/WebKit/commit/c17d3df6ec2301d5ca41b7d13e0eed6a9381ac1d",
+    "message": "[JSC] Use PlainGregorianDateTime and drop GregorianDateTime\nhttps://bugs.webkit.org/show_bug.cgi?id=324677\nrdar://187947054\n\nReviewed by Yijia Huang.\n\nThis patch moves PlainGregorianDateTime to WTF and drop\nWTF::GregorianDateTime. PlainGregorianDateTime is extremely optimized in\nsize etc., to be usa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
