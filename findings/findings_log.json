@@ -69437,5 +69437,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T15:03:35.258103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06c8bf6974dc81193d34a7345edb688e31711357",
+    "url": "https://github.com/WebKit/WebKit/commit/06c8bf6974dc81193d34a7345edb688e31711357",
+    "message": "Unreviewed, address unexpected safer cpp issue on the bot\nhttps://bugs.webkit.org/show_bug.cgi?id=324793\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/rendering/RenderListOutsideMarker.cpp:\n(WebCore::adjustedStyleDifference):\n\nCanonical link: ht",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T15:04:13.670525+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ae08af38bbd7af281d7f4e04da84b09cc148f03",
+    "url": "https://github.com/WebKit/WebKit/commit/7ae08af38bbd7af281d7f4e04da84b09cc148f03",
+    "message": "[JSC] Add a fast bulk-building constructor to IntervalSet\nhttps://bugs.webkit.org/show_bug.cgi?id=324750\nrdar://188026211\n\nReviewed by Dan Hecht.\n\nGreedyRegAlloc is initially constructing IntervalSet from already\nsorted, non-overlapping sequence of Interval span. We can quickly\nconstruct IntervalSet",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T15:04:52.077236+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a749c7f8647398785b457ad0533ffcf5f2fb64e9",
+    "url": "https://github.com/WebKit/WebKit/commit/a749c7f8647398785b457ad0533ffcf5f2fb64e9",
+    "message": "[Safer CPP] Address more UncountedCallArgsChecker warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=324678\n\nReviewed by Geoffrey Garen.\n\n* Source/JavaScriptCore/runtime/ArrayBufferView.h:\n(JSC::ArrayBufferView::isDetached const):\n(JSC::ArrayBufferView::byteLength const):\n* Source/JavaScri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
