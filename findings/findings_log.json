@@ -69497,5 +69497,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T19:00:49.734978+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7825a32d2bf0b2cf0c0088f0386a052274d25c86",
+    "url": "https://github.com/WebKit/WebKit/commit/7825a32d2bf0b2cf0c0088f0386a052274d25c86",
+    "message": "[JSC] Add Streaming mode of Liveness adaptor\nhttps://bugs.webkit.org/show_bug.cgi?id=324795\nrdar://188059985\n\nReviewed by Yijia Huang.\n\nWTF::Liveness is collecting all gen and kill information by running\nadaptor's information, and using this collected information to construct\nliveness. As a result, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T19:01:27.532906+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8de66dfab583dd94beceb39726595d4fa890b337",
+    "url": "https://github.com/WebKit/WebKit/commit/8de66dfab583dd94beceb39726595d4fa890b337",
+    "message": "[Site Isolation] imported/w3c/web-platform-tests/html/browsers/browsing-the-web/history-traversal/pageswap/pageswap-replace-with-cross-origin-redirect.sub.html fails\nhttps://bugs.webkit.org/show_bug.cgi?id=324737\n\nReviewed by Basuke Suzuki.\n\nA location.replace() whose final URL is same-origin but wh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T19:02:05.217758+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "263f9383d189c980600d59b16e3df5a350a2f3d3",
+    "url": "https://github.com/WebKit/WebKit/commit/263f9383d189c980600d59b16e3df5a350a2f3d3",
+    "message": "Stop sending untyped CString over IPC\nhttps://bugs.webkit.org/show_bug.cgi?id=324690\n\nReviewed by Patrick Griffis.\n\nEvery IPC-visible CString becomes a UTF8CString and the WTF::CString\nargument coder is deleted, so an untyped CString can no longer cross a\nprocess boundary.\n\nNine fields are declared ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T19:02:42.872630+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78c1083fa2ebfcc408c017378e463c981e36615b",
+    "url": "https://github.com/WebKit/WebKit/commit/78c1083fa2ebfcc408c017378e463c981e36615b",
+    "message": "cmake build is broken with ENABLE_AX_CUSTOM_COLOR_MODE=1\nhttps://bugs.webkit.org/show_bug.cgi?id=324740\nrdar://188018475\n\nReviewed by Elliott Williams.\n\nFix three WebKitAdditions integration gaps in the CMake build.\n\n1. WebPreferencesAdditions.yaml was never passed to the preferences generators.\nThe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
