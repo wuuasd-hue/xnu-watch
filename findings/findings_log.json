@@ -69637,5 +69637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T23:53:30.667655+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8de66dfab583dd94beceb39726595d4fa890b337",
+    "url": "https://github.com/WebKit/WebKit/commit/8de66dfab583dd94beceb39726595d4fa890b337",
+    "message": "[Site Isolation] imported/w3c/web-platform-tests/html/browsers/browsing-the-web/history-traversal/pageswap/pageswap-replace-with-cross-origin-redirect.sub.html fails\nhttps://bugs.webkit.org/show_bug.cgi?id=324737\n\nReviewed by Basuke Suzuki.\n\nA location.replace() whose final URL is same-origin but wh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T23:54:08.745928+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c584246121e006a3bf3bbc39e3a9f9a3444bb0f3",
+    "url": "https://github.com/WebKit/WebKit/commit/c584246121e006a3bf3bbc39e3a9f9a3444bb0f3",
+    "message": "[Navigation API] preventDefault() must cancel a cross-site process-swapping navigation under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318357\nrdar://181141493\n\nReviewed by Alex Christensen.\n\nUnder Site Isolation the client approves a cross-site navigation as\nNavigationPolicyDecision::Lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
