@@ -69397,5 +69397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T10:24:41.642442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e87ea0e64ebffc16db63d899489458e775f3324a",
+    "url": "https://github.com/WebKit/WebKit/commit/e87ea0e64ebffc16db63d899489458e775f3324a",
+    "message": "[JSC] Extract specialize-select from B3::ReduceStrength\nhttps://bugs.webkit.org/show_bug.cgi?id=324673\nrdar://187939367\n\nReviewed by Dan Hecht.\n\nThis is one of series of patches in B3 changes. specialize-select\noperation in B3::ReduceStrength is very weird: this is not a value local\noperation and in",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T10:25:18.510218+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "6097c72720fc9dddf1431a6bf74f4dd68e2f09f0",
+    "url": "https://github.com/swiftlang/swift/commit/6097c72720fc9dddf1431a6bf74f4dd68e2f09f0",
+    "message": "Merge pull request #92479 from charles-zablit/cz/windows/runtime-path-getmodulefilename\n\n[Windows] use GetModuleFileNameW to find the Windows runtime path",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
