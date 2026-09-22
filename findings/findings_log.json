@@ -69577,5 +69577,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T21:48:03.998839+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c584246121e006a3bf3bbc39e3a9f9a3444bb0f3",
+    "url": "https://github.com/WebKit/WebKit/commit/c584246121e006a3bf3bbc39e3a9f9a3444bb0f3",
+    "message": "[Navigation API] preventDefault() must cancel a cross-site process-swapping navigation under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318357\nrdar://181141493\n\nReviewed by Alex Christensen.\n\nUnder Site Isolation the client approves a cross-site navigation as\nNavigationPolicyDecision::Lo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T21:48:41.867206+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06c8bf6974dc81193d34a7345edb688e31711357",
+    "url": "https://github.com/WebKit/WebKit/commit/06c8bf6974dc81193d34a7345edb688e31711357",
+    "message": "Unreviewed, address unexpected safer cpp issue on the bot\nhttps://bugs.webkit.org/show_bug.cgi?id=324793\n\n* Source/JavaScriptCore/SaferCPPExpectations/UncountedCallArgsCheckerExpectations:\n* Source/WebCore/rendering/RenderListOutsideMarker.cpp:\n(WebCore::adjustedStyleDifference):\n\nCanonical link: ht",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T21:49:19.886925+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7825a32d2bf0b2cf0c0088f0386a052274d25c86",
+    "url": "https://github.com/WebKit/WebKit/commit/7825a32d2bf0b2cf0c0088f0386a052274d25c86",
+    "message": "[JSC] Add Streaming mode of Liveness adaptor\nhttps://bugs.webkit.org/show_bug.cgi?id=324795\nrdar://188059985\n\nReviewed by Yijia Huang.\n\nWTF::Liveness is collecting all gen and kill information by running\nadaptor's information, and using this collected information to construct\nliveness. As a result, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
