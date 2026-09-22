@@ -69277,5 +69277,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:33:15.925074+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ae08af38bbd7af281d7f4e04da84b09cc148f03",
+    "url": "https://github.com/WebKit/WebKit/commit/7ae08af38bbd7af281d7f4e04da84b09cc148f03",
+    "message": "[JSC] Add a fast bulk-building constructor to IntervalSet\nhttps://bugs.webkit.org/show_bug.cgi?id=324750\nrdar://188026211\n\nReviewed by Dan Hecht.\n\nGreedyRegAlloc is initially constructing IntervalSet from already\nsorted, non-overlapping sequence of Interval span. We can quickly\nconstruct IntervalSet",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:33:53.950799+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a749c7f8647398785b457ad0533ffcf5f2fb64e9",
+    "url": "https://github.com/WebKit/WebKit/commit/a749c7f8647398785b457ad0533ffcf5f2fb64e9",
+    "message": "[Safer CPP] Address more UncountedCallArgsChecker warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=324678\n\nReviewed by Geoffrey Garen.\n\n* Source/JavaScriptCore/runtime/ArrayBufferView.h:\n(JSC::ArrayBufferView::isDetached const):\n(JSC::ArrayBufferView::byteLength const):\n* Source/JavaScri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:34:31.678870+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "263f9383d189c980600d59b16e3df5a350a2f3d3",
+    "url": "https://github.com/WebKit/WebKit/commit/263f9383d189c980600d59b16e3df5a350a2f3d3",
+    "message": "Stop sending untyped CString over IPC\nhttps://bugs.webkit.org/show_bug.cgi?id=324690\n\nReviewed by Patrick Griffis.\n\nEvery IPC-visible CString becomes a UTF8CString and the WTF::CString\nargument coder is deleted, so an untyped CString can no longer cross a\nprocess boundary.\n\nNine fields are declared ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:35:09.199466+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78c1083fa2ebfcc408c017378e463c981e36615b",
+    "url": "https://github.com/WebKit/WebKit/commit/78c1083fa2ebfcc408c017378e463c981e36615b",
+    "message": "cmake build is broken with ENABLE_AX_CUSTOM_COLOR_MODE=1\nhttps://bugs.webkit.org/show_bug.cgi?id=324740\nrdar://188018475\n\nReviewed by Elliott Williams.\n\nFix three WebKitAdditions integration gaps in the CMake build.\n\n1. WebPreferencesAdditions.yaml was never passed to the preferences generators.\nThe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:35:49.534801+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d6cc5eaa350c1881f094dd11b176b0688451c012",
+    "url": "https://github.com/WebKit/WebKit/commit/d6cc5eaa350c1881f094dd11b176b0688451c012",
+    "message": "[JSC] Avoid calling hasNonArgEffects when unnecessary\nhttps://bugs.webkit.org/show_bug.cgi?id=324716\nrdar://188002873\n\nReviewed by Dan Hecht.\n\nhasNonArgEffects is costly operation. So calling it only when necessary.\n\n* Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp:\n\nCanonical link",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-22T05:36:27.203749+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "61b575f0d0cdececf56b6ef312d5ed092b91e46c",
+    "url": "https://github.com/WebKit/WebKit/commit/61b575f0d0cdececf56b6ef312d5ed092b91e46c",
+    "message": "REGRESSION (321551@main) Linker failure when building with cmake\nhttps://bugs.webkit.org/show_bug.cgi?id=324757\nrdar://188031494\n\nUnreviewed build fix.\n\n* Source/JavaScriptCore/parser/LexerUnicodeProperties.h:\n\nCanonical link: https://commits.webkit.org/321552@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
