@@ -69937,5 +69937,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T23:15:30.993357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a0042af348458a9d9de2ec3f1636424c20163818",
+    "url": "https://github.com/WebKit/WebKit/commit/a0042af348458a9d9de2ec3f1636424c20163818",
+    "message": "[JSC] Add \"dc zva\" zero-fill loop for sanitizeStackForVM\nhttps://bugs.webkit.org/show_bug.cgi?id=323368\nrdar://186606262\n\nReviewed by Marcus Plutowski.\n\nThis patch adds \"dc zva\" zero-fill code for sanitizeStackForVM.\nClearing stack can be dramatically large, and \"dc zva\" loop can be\nfaster to zero-f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T23:16:08.638772+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "url": "https://github.com/WebKit/WebKit/commit/0d58b764f34b86ecf520ac7954b7aa1ded15cc5e",
+    "message": "Fix crash in MemoryCache::add after 315967@main\nhttps://bugs.webkit.org/show_bug.cgi?id=323053\nrdar://182493844\n\nReviewed by Chris Dumez.\n\n_WKUserStyleSheet can be used to load a font very early in the document creation process.\nIt was loading before the firstPartyForCookies was set, then later the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
