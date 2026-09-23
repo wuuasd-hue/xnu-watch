@@ -69897,5 +69897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T20:32:27.245436+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "url": "https://github.com/WebKit/WebKit/commit/d9f0af20a0d11b23f2b3a3c80c976be1751742a3",
+    "message": "Remove dead declared-but-undefined member functions from ResourceMonitorThrottler\nhttps://bugs.webkit.org/show_bug.cgi?id=323288\nrdar://186540356\n\nReviewed by Abrar Rahman Protyasha.\n\nThese five members are declared in the header but never defined or\ncalled. Remove the stale declarations. No behavio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T20:33:04.705187+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "url": "https://github.com/WebKit/WebKit/commit/b7794d481cec9bcf56e76492f68d4d44e0686cfd",
+    "message": "Refactor CachedCSSStyleSheet::sheetText to return std::expected\nrdar://186388202\nhttps://bugs.webkit.org/show_bug.cgi?id=323125\n\nReviewed by Alex Christensen.\n\nCachedCSSStyleSheet::sheetText signals error by setting the passed in\nboolean pointers, if they're set. This is inelegant, and particularly\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
