@@ -69677,5 +69677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T01:55:05.195860+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "url": "https://github.com/WebKit/WebKit/commit/2e5ec08882e660b34004f9b0d7825a579010d7c2",
+    "message": "[JSC] Support `BigInt` for `Intl.PluralRules.select` and `Intl.PluralRules.selectRange`\nhttps://bugs.webkit.org/show_bug.cgi?id=323092\n\nReviewed by Yusuke Suzuki.\n\nAccording to [1][2], the `Intl.PluralRules.select` and `Intl.PluralRules.selectRange` methods should support\n`BigInt` values as their ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T01:55:43.210403+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "url": "https://github.com/WebKit/WebKit/commit/761d9032a43cb57a16f71df3343b9d8cbd208746",
+    "message": "[JSC] Fold Shl into ARM64 WasmAddress index form\nhttps://bugs.webkit.org/show_bug.cgi?id=323211\n\nReviewed by Yusuke Suzuki.\n\nWasmAddress already folds ZExt32/SExt32 into ARM64 UXTW/SXTW via\nindexArg. This also absorbs a pointer-width Shl into the index scale\nso a load can be LDR Xt, [Xn, Wm, UXTW #s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
