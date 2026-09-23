@@ -69777,5 +69777,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T12:21:53.336940+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29a96fa5509b3d7930380617ab34b9837c90fb3a",
+    "url": "https://github.com/WebKit/WebKit/commit/29a96fa5509b3d7930380617ab34b9837c90fb3a",
+    "message": "Make CString's literal, buffer and mutable accessors reachable only through CStringWithEncoding\nhttps://bugs.webkit.org/show_bug.cgi?id=324791\n\nReviewed by Darin Adler.\n\nCString(ASCIILiteral), CString(CStringBuffer*), mutableSpan(),\nmutableSpanIncludingNullTerminator() and grow() each either put byt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T12:22:31.168259+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29a96fa5509b3d7930380617ab34b9837c90fb3a",
+    "url": "https://github.com/WebKit/WebKit/commit/29a96fa5509b3d7930380617ab34b9837c90fb3a",
+    "message": "Make CString's literal, buffer and mutable accessors reachable only through CStringWithEncoding\nhttps://bugs.webkit.org/show_bug.cgi?id=324791\n\nReviewed by Darin Adler.\n\nCString(ASCIILiteral), CString(CStringBuffer*), mutableSpan(),\nmutableSpanIncludingNullTerminator() and grow() each either put byt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T12:23:08.867908+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7ab124eb02518a622a79a6a7c9476bd7d7c1e538",
+    "url": "https://github.com/WebKit/WebKit/commit/7ab124eb02518a622a79a6a7c9476bd7d7c1e538",
+    "message": "Rename WebCore::DestinationColorSpace to WebCore::ColorSpace\nhttps://bugs.webkit.org/show_bug.cgi?id=323315\nrdar://186561899\n\nReviewed by Sam Weinig and Mike Wyrzykowski.\n\nDestinationColorSpace started as a color space for ImageBuffers,\nwritable surfaces. Today, it is used for VideoFrames, PixelBuff",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
