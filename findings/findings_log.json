@@ -69837,5 +69837,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T17:17:33.603425+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "79a8c3bac2de21e036c2d799fa1ee906147bf229",
+    "url": "https://github.com/WebKit/WebKit/commit/79a8c3bac2de21e036c2d799fa1ee906147bf229",
+    "message": "Revert 318501@main: AsyncImageDecoder was not used by WebCodecsImageDecoder\nhttps://bugs.webkit.org/show_bug.cgi?id=324927\nrdar://188152938\n\nUnreviewed: AsyncImageDecoder is not needed. 318501@main can be reverted.\n\nReverting this change will help fixing bug 324926.\n\n* Source/WebCore/Headers.cmake:\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T17:18:11.323062+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "79a8c3bac2de21e036c2d799fa1ee906147bf229",
+    "url": "https://github.com/WebKit/WebKit/commit/79a8c3bac2de21e036c2d799fa1ee906147bf229",
+    "message": "Revert 318501@main: AsyncImageDecoder was not used by WebCodecsImageDecoder\nhttps://bugs.webkit.org/show_bug.cgi?id=324927\nrdar://188152938\n\nUnreviewed: AsyncImageDecoder is not needed. 318501@main can be reverted.\n\nReverting this change will help fixing bug 324926.\n\n* Source/WebCore/Headers.cmake:\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T17:18:48.863317+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "url": "https://github.com/WebKit/WebKit/commit/23b9690343a3b05b81f169079c1a84d91c9eb08a",
+    "message": "[JSC] Split validation and evaluation of wasm constant expression\nhttps://bugs.webkit.org/show_bug.cgi?id=323289\nrdar://186541346\n\nReviewed by Keith Miller.\n\nComplex wasm binaries include significant amount of constant\nexpressions. For example, Dart-flute-todomvc-wasm's binary includes\n4000~ constan",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
