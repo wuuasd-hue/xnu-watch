@@ -69717,5 +69717,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T06:49:54.400004+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "778a559d303abfb1b980ef6b7503cb3d44d62487",
+    "url": "https://github.com/WebKit/WebKit/commit/778a559d303abfb1b980ef6b7503cb3d44d62487",
+    "message": "[JSC] WASM debugger: answer qWasmStackValue for caller frames\nhttps://bugs.webkit.org/show_bug.cgi?id=324832\nrdar://188104327\n\nReviewed by Vassili Bykov.\n\n321456@main answered frame 0, where StopData records a live operand stack pointer. A\nsuspended frame has none, so its depth has to be recovered f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T06:50:32.056648+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "778a559d303abfb1b980ef6b7503cb3d44d62487",
+    "url": "https://github.com/WebKit/WebKit/commit/778a559d303abfb1b980ef6b7503cb3d44d62487",
+    "message": "[JSC] WASM debugger: answer qWasmStackValue for caller frames\nhttps://bugs.webkit.org/show_bug.cgi?id=324832\nrdar://188104327\n\nReviewed by Vassili Bykov.\n\n321456@main answered frame 0, where StopData records a live operand stack pointer. A\nsuspended frame has none, so its depth has to be recovered f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-23T06:51:09.799976+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6a359a00ccf8475c9eb9efc9bcae0dfa9daaad65",
+    "url": "https://github.com/WebKit/WebKit/commit/6a359a00ccf8475c9eb9efc9bcae0dfa9daaad65",
+    "message": "[JSC][Wasm] Inline table.get for funcref\nhttps://bugs.webkit.org/show_bug.cgi?id=322528\n\nReviewed by Yusuke Suzuki.\n\nBBQ and OMG bounds-check against Table length and load the cached\nwrapper. A miss still calls operationGetWasmTableElement to\nmaterialize a lazy wrapper or return null.\n\n* Source/Java",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
