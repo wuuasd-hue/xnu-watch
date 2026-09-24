@@ -70417,5 +70417,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T23:36:07.734351+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "653b77d5bdddf7d4ee348ab54a51afd582884b85",
+    "url": "https://github.com/WebKit/WebKit/commit/653b77d5bdddf7d4ee348ab54a51afd582884b85",
+    "message": "Re-enable wasm fast memory on Windows and stop committing the guard region\nhttps://bugs.webkit.org/show_bug.cgi?id=304154\n\nReviewed by Ian Grunert.\n\nWe were committing the 4 GiB guard/redzone with\nPAGE_NOACCESS on Windows, exhausting commit space\nand forcing wasm fast memory off.\nThis change ensures",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T23:36:45.480631+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b718c65267c607f8086ddb4b0f51e254a3491c87",
+    "url": "https://github.com/WebKit/WebKit/commit/b718c65267c607f8086ddb4b0f51e254a3491c87",
+    "message": "[JSC] Using single-transition entry as a cache for the next identifier in JSON.parse\nhttps://bugs.webkit.org/show_bug.cgi?id=325179\nrdar://188311479\n\nReviewed by Keith Miller.\n\nJSON.parse may encounter many \"same-shaped\" object creations. This is\nvery common like this.\n\n    `[ { \"name\": \"hello\", \"va",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T23:37:23.260351+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "88c45b652c4b54d43862d7eeadb9d6a24f9b949d",
+    "url": "https://github.com/swiftlang/swift/commit/88c45b652c4b54d43862d7eeadb9d6a24f9b949d",
+    "message": "Merge pull request #92577 from compnerd/com-dynamic-type-runtime\n\nRuntime: recover dynamic types from COM interfaces",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T23:38:01.195305+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "790d0929059fa87c9b159eedefc7943d336cfd18",
+    "url": "https://github.com/WebKit/WebKit/commit/790d0929059fa87c9b159eedefc7943d336cfd18",
+    "message": "Speculation rules prefetch cancelling cross-origin redirects shouldn't cancel an actual navigation to the same URL\nhttps://bugs.webkit.org/show_bug.cgi?id=325069\nrdar://187701208\n\nReviewed by Chris Dumez.\n\nIn 314970@main I made it so that speculation rules prefetch was restricted to same-origin load",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T23:38:39.217720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2fa19276047500b65b8a582c68b0e6b1c928974",
+    "url": "https://github.com/WebKit/WebKit/commit/c2fa19276047500b65b8a582c68b0e6b1c928974",
+    "message": "[JSC] Split the GC's collection-cycle state and machinery into a Collector class\nhttps://bugs.webkit.org/show_bug.cgi?id=325056\nrdar://188225105\n\nReviewed by Yusuke Suzuki.\n\nHeap holds two kinds of state: state that describes a heap, and state that describes a\ncollection cycle. This separates the se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
