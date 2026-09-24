@@ -70377,5 +70377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T20:35:06.144448+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "165f9ed4d0130e2da6aa1b4a985b3cc7f7c616bf",
+    "url": "https://github.com/WebKit/WebKit/commit/165f9ed4d0130e2da6aa1b4a985b3cc7f7c616bf",
+    "message": "Make CString's raw-byte constructors reachable only through CStringWithEncoding on Cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=324955\n\nReviewed by Mike Wyrzykowski.\n\nCString(std::span<const char>) joins the protected constructors: a span of bytes says\nnothing about what encoding they are in, and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T20:35:43.551865+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9fb479bd09e63bd0659cacf0ad8df4431e592db",
+    "url": "https://github.com/WebKit/WebKit/commit/d9fb479bd09e63bd0659cacf0ad8df4431e592db",
+    "message": "[JSC] Ensure that we do not have Get / Set in B3->Air lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=325079\nrdar://188237002\n\nReviewed by Vassili Bykov.\n\nLet's make B3 pipeline simplified by always running fixSSA in any\nopt-levels, which ensures that we no longer have Get / Set when\nlowering B3 ->",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
