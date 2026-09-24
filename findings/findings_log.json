@@ -69977,5 +69977,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T01:30:32.292251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba0e7b402408ae38dc8c74d2f4981588cff9cb31",
+    "url": "https://github.com/WebKit/WebKit/commit/ba0e7b402408ae38dc8c74d2f4981588cff9cb31",
+    "message": "[JSC] Actually remove B3::Variable from B3::Procedure\nhttps://bugs.webkit.org/show_bug.cgi?id=325058\nrdar://188225905\n\nReviewed by Keith Miller.\n\nWe found two efficiency issues.\n\n1. Procedure::deleteVariable just clears and assigns `nullptr` to\n   SparseCollection. So it does not reduce size, thus, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T01:31:09.644994+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba0e7b402408ae38dc8c74d2f4981588cff9cb31",
+    "url": "https://github.com/WebKit/WebKit/commit/ba0e7b402408ae38dc8c74d2f4981588cff9cb31",
+    "message": "[JSC] Actually remove B3::Variable from B3::Procedure\nhttps://bugs.webkit.org/show_bug.cgi?id=325058\nrdar://188225905\n\nReviewed by Keith Miller.\n\nWe found two efficiency issues.\n\n1. Procedure::deleteVariable just clears and assigns `nullptr` to\n   SparseCollection. So it does not reduce size, thus, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T01:31:47.136075+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "url": "https://github.com/WebKit/WebKit/commit/cbd15fc88bdeffb4618a464681e03ef1f25bc5b6",
+    "message": "[JSC] Add Karatsuba multiplication to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=323244\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt multiplies with O(n^2) schoolbook / Comba loops only, so the time per\nproduct grows quadratically with the operand size: 1000 x 1000 digits takes\n336 us and 4000 x 40",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
