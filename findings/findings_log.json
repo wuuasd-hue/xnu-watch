@@ -70037,5 +70037,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:30:19.030967+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "35637c64339145f2920db0b6aee2dd8717109e63",
+    "url": "https://github.com/WebKit/WebKit/commit/35637c64339145f2920db0b6aee2dd8717109e63",
+    "message": "[JSC] Iterate Arrays without allocating a `JSArrayIterator`\nhttps://bugs.webkit.org/show_bug.cgi?id=324224\n\nReviewed by Yusuke Suzuki.\n\nCurrently, when op_iterator_open is in FastArray mode (for-of and destructuring\nover an Array, which are very common), it allocates a JSArrayIterator. FTL\nsinks it,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:30:55.911586+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b485a76e9cc4b0e8dd03e5e904967b7a621c2b2",
+    "url": "https://github.com/WebKit/WebKit/commit/7b485a76e9cc4b0e8dd03e5e904967b7a621c2b2",
+    "message": "[JSC] Emit `op_construct_varargs` directly for `Reflect.construct` call sites\nhttps://bugs.webkit.org/show_bug.cgi?id=324411\n\nReviewed by Yusuke Suzuki.\n\nReflect.construct is implemented as a C++ host function, and a call site\nreaches it through op_call.\n\nTranspilers such as Babel compile classes an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:31:32.795401+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81b89faa3dd4b64e1ab775f72993a1da3484036f",
+    "url": "https://github.com/WebKit/WebKit/commit/81b89faa3dd4b64e1ab775f72993a1da3484036f",
+    "message": "Consolidate lazy load observers\nhttps://bugs.webkit.org/show_bug.cgi?id=309078\n\nReviewed by Simon Fraser.\n\nConsolidates LazyLoadImageObserver, LazyLoadVideoObserver,\nLazyLoadFrameObserver, and LazyLoadModelObserver to a single\nLazyLoadElementObserver.\n\nThe test progressions assert that a lazy-loaded",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:32:09.763137+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9aea44e083d4c180796641f4a4e77d5e3e5b5bad",
+    "url": "https://github.com/WebKit/WebKit/commit/9aea44e083d4c180796641f4a4e77d5e3e5b5bad",
+    "message": "[JSC] `Intl.DurationFormat` drops zero minutes and seconds after a numeric unit\nhttps://bugs.webkit.org/show_bug.cgi?id=324561\n\nReviewed by Yusuke Suzuki.\n\nnew Intl.DurationFormat(\"en\", { hours: \"numeric\" }).format({ hours: 1 }) returns\n\"1\" instead of \"1:00:00\", and resolvedOptions() reports minutes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:32:46.908177+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "35637c64339145f2920db0b6aee2dd8717109e63",
+    "url": "https://github.com/WebKit/WebKit/commit/35637c64339145f2920db0b6aee2dd8717109e63",
+    "message": "[JSC] Iterate Arrays without allocating a `JSArrayIterator`\nhttps://bugs.webkit.org/show_bug.cgi?id=324224\n\nReviewed by Yusuke Suzuki.\n\nCurrently, when op_iterator_open is in FastArray mode (for-of and destructuring\nover an Array, which are very common), it allocates a JSArrayIterator. FTL\nsinks it,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T06:33:23.907424+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7b485a76e9cc4b0e8dd03e5e904967b7a621c2b2",
+    "url": "https://github.com/WebKit/WebKit/commit/7b485a76e9cc4b0e8dd03e5e904967b7a621c2b2",
+    "message": "[JSC] Emit `op_construct_varargs` directly for `Reflect.construct` call sites\nhttps://bugs.webkit.org/show_bug.cgi?id=324411\n\nReviewed by Yusuke Suzuki.\n\nReflect.construct is implemented as a C++ host function, and a call site\nreaches it through op_call.\n\nTranspilers such as Babel compile classes an",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
