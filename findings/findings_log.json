@@ -70277,5 +70277,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T17:22:54.296846+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "790d0929059fa87c9b159eedefc7943d336cfd18",
+    "url": "https://github.com/WebKit/WebKit/commit/790d0929059fa87c9b159eedefc7943d336cfd18",
+    "message": "Speculation rules prefetch cancelling cross-origin redirects shouldn't cancel an actual navigation to the same URL\nhttps://bugs.webkit.org/show_bug.cgi?id=325069\nrdar://187701208\n\nReviewed by Chris Dumez.\n\nIn 314970@main I made it so that speculation rules prefetch was restricted to same-origin load",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T17:23:31.967397+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c2fa19276047500b65b8a582c68b0e6b1c928974",
+    "url": "https://github.com/WebKit/WebKit/commit/c2fa19276047500b65b8a582c68b0e6b1c928974",
+    "message": "[JSC] Split the GC's collection-cycle state and machinery into a Collector class\nhttps://bugs.webkit.org/show_bug.cgi?id=325056\nrdar://188225105\n\nReviewed by Yusuke Suzuki.\n\nHeap holds two kinds of state: state that describes a heap, and state that describes a\ncollection cycle. This separates the se",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T17:24:09.598455+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "5c3f69d304d72759f32495ef07cbf7113a2b30e5",
+    "url": "https://github.com/swiftlang/swift/commit/5c3f69d304d72759f32495ef07cbf7113a2b30e5",
+    "message": "Merge pull request #92525 from compnerd/com-identity-recovery\n\nRuntime: support COM identity recovery via casting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T17:24:47.448639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e878ab17f770bfca631a48f4dbdc84d3667cb2f",
+    "url": "https://github.com/WebKit/WebKit/commit/0e878ab17f770bfca631a48f4dbdc84d3667cb2f",
+    "message": "Cherry-pick 305413.1118@safari-7624.5-branch (3fa88516dc20). rdar://188123167\n\n    Revert the app custom-scheme CORS enforcement on safari-7624.5-branch\n    rdar://182056880\n\n    Reviewed by Chris Dumez.\n\n    The CORS enforcement added for rdar://178748484 blocks no-cors subresource\n    loads whenev",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T17:25:25.113828+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3148b98af66fac9749148b3d02d350f9bc8d2c1",
+    "url": "https://github.com/WebKit/WebKit/commit/c3148b98af66fac9749148b3d02d350f9bc8d2c1",
+    "message": "[JSC] Quick simplification of B3 graph at frontend\nhttps://bugs.webkit.org/show_bug.cgi?id=325097\nrdar://188252497\n\nReviewed by Vassili Bykov.\n\nIt is actually quite common that we already have a constant when\ngenerating a branch.\n\n1. In FTL case, provenType can make condition true / false at compile",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
