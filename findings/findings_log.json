@@ -70157,5 +70157,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:04:42.796907+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e878ab17f770bfca631a48f4dbdc84d3667cb2f",
+    "url": "https://github.com/WebKit/WebKit/commit/0e878ab17f770bfca631a48f4dbdc84d3667cb2f",
+    "message": "Cherry-pick 305413.1118@safari-7624.5-branch (3fa88516dc20). rdar://188123167\n\n    Revert the app custom-scheme CORS enforcement on safari-7624.5-branch\n    rdar://182056880\n\n    Reviewed by Chris Dumez.\n\n    The CORS enforcement added for rdar://178748484 blocks no-cors subresource\n    loads whenev",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:05:20.182777+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3148b98af66fac9749148b3d02d350f9bc8d2c1",
+    "url": "https://github.com/WebKit/WebKit/commit/c3148b98af66fac9749148b3d02d350f9bc8d2c1",
+    "message": "[JSC] Quick simplification of B3 graph at frontend\nhttps://bugs.webkit.org/show_bug.cgi?id=325097\nrdar://188252497\n\nReviewed by Vassili Bykov.\n\nIt is actually quite common that we already have a constant when\ngenerating a branch.\n\n1. In FTL case, provenType can make condition true / false at compile",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:05:58.225341+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "165f9ed4d0130e2da6aa1b4a985b3cc7f7c616bf",
+    "url": "https://github.com/WebKit/WebKit/commit/165f9ed4d0130e2da6aa1b4a985b3cc7f7c616bf",
+    "message": "Make CString's raw-byte constructors reachable only through CStringWithEncoding on Cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=324955\n\nReviewed by Mike Wyrzykowski.\n\nCString(std::span<const char>) joins the protected constructors: a span of bytes says\nnothing about what encoding they are in, and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:06:35.658153+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d9fb479bd09e63bd0659cacf0ad8df4431e592db",
+    "url": "https://github.com/WebKit/WebKit/commit/d9fb479bd09e63bd0659cacf0ad8df4431e592db",
+    "message": "[JSC] Ensure that we do not have Get / Set in B3->Air lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=325079\nrdar://188237002\n\nReviewed by Vassili Bykov.\n\nLet's make B3 pipeline simplified by always running fixSSA in any\nopt-levels, which ensures that we no longer have Get / Set when\nlowering B3 ->",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:07:13.200330+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81b89faa3dd4b64e1ab775f72993a1da3484036f",
+    "url": "https://github.com/WebKit/WebKit/commit/81b89faa3dd4b64e1ab775f72993a1da3484036f",
+    "message": "Consolidate lazy load observers\nhttps://bugs.webkit.org/show_bug.cgi?id=309078\n\nReviewed by Simon Fraser.\n\nConsolidates LazyLoadImageObserver, LazyLoadVideoObserver,\nLazyLoadFrameObserver, and LazyLoadModelObserver to a single\nLazyLoadElementObserver.\n\nThe test progressions assert that a lazy-loaded",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-24T12:07:52.596130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9aea44e083d4c180796641f4a4e77d5e3e5b5bad",
+    "url": "https://github.com/WebKit/WebKit/commit/9aea44e083d4c180796641f4a4e77d5e3e5b5bad",
+    "message": "[JSC] `Intl.DurationFormat` drops zero minutes and seconds after a numeric unit\nhttps://bugs.webkit.org/show_bug.cgi?id=324561\n\nReviewed by Yusuke Suzuki.\n\nnew Intl.DurationFormat(\"en\", { hours: \"numeric\" }).format({ hours: 1 }) returns\n\"1\" instead of \"1:00:00\", and resolvedOptions() reports minutes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
