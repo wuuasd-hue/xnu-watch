@@ -70517,5 +70517,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T02:01:19.632075+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63b7d629dd1cac21611e16eb4d3e2ef80b7a86ca",
+    "url": "https://github.com/WebKit/WebKit/commit/63b7d629dd1cac21611e16eb4d3e2ef80b7a86ca",
+    "message": "[JSC] Keep the call in `(a?.b)(x)` outside the optional chain\nhttps://bugs.webkit.org/show_bug.cgi?id=325104\n\nReviewed by Keith Miller.\n\nJSC parses both `(a?.b)(x)` and `a?.b(x)` into\n\n    OptionalChain(Call(a.b, x))\n\nThe parentheses end the optional chain, so the call in `(a?.b)(x)` is not part\nof ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T02:01:57.259704+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1f47117433c89ce1346dac911b65494de2fb0295",
+    "url": "https://github.com/WebKit/WebKit/commit/1f47117433c89ce1346dac911b65494de2fb0295",
+    "message": "[JSC] Promise fast paths should not be taken across realms\nhttps://bugs.webkit.org/show_bug.cgi?id=325110\n\nReviewed by Yusuke Suzuki.\n\nFix two issues in the same way as 321451@main.\n\n1. Promise.prototype.then / catch / finally took the fast path for a promise\n   from another realm, and created the d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T02:02:34.736445+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "18e3f9366c7fc3401b01f60c8a259b431f44f81c",
+    "url": "https://github.com/WebKit/WebKit/commit/18e3f9366c7fc3401b01f60c8a259b431f44f81c",
+    "message": "[Safer CPP] Unreviewed, address unexpected warning on the post commit bot\nhttps://bugs.webkit.org/show_bug.cgi?id=325227\n\nUnreviewed.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n\nCanonical link: https://commits.webkit.org/321857@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T02:03:12.448085+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "5c3f69d304d72759f32495ef07cbf7113a2b30e5",
+    "url": "https://github.com/swiftlang/swift/commit/5c3f69d304d72759f32495ef07cbf7113a2b30e5",
+    "message": "Merge pull request #92525 from compnerd/com-identity-recovery\n\nRuntime: support COM identity recovery via casting",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T02:03:50.421464+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "653b77d5bdddf7d4ee348ab54a51afd582884b85",
+    "url": "https://github.com/WebKit/WebKit/commit/653b77d5bdddf7d4ee348ab54a51afd582884b85",
+    "message": "Re-enable wasm fast memory on Windows and stop committing the guard region\nhttps://bugs.webkit.org/show_bug.cgi?id=304154\n\nReviewed by Ian Grunert.\n\nWe were committing the 4 GiB guard/redzone with\nPAGE_NOACCESS on Windows, exhausting commit space\nand forcing wasm fast memory off.\nThis change ensures",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
