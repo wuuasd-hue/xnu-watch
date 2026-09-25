@@ -70737,5 +70737,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T13:14:31.844122+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63b7d629dd1cac21611e16eb4d3e2ef80b7a86ca",
+    "url": "https://github.com/WebKit/WebKit/commit/63b7d629dd1cac21611e16eb4d3e2ef80b7a86ca",
+    "message": "[JSC] Keep the call in `(a?.b)(x)` outside the optional chain\nhttps://bugs.webkit.org/show_bug.cgi?id=325104\n\nReviewed by Keith Miller.\n\nJSC parses both `(a?.b)(x)` and `a?.b(x)` into\n\n    OptionalChain(Call(a.b, x))\n\nThe parentheses end the optional chain, so the call in `(a?.b)(x)` is not part\nof ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T13:15:09.289703+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1f47117433c89ce1346dac911b65494de2fb0295",
+    "url": "https://github.com/WebKit/WebKit/commit/1f47117433c89ce1346dac911b65494de2fb0295",
+    "message": "[JSC] Promise fast paths should not be taken across realms\nhttps://bugs.webkit.org/show_bug.cgi?id=325110\n\nReviewed by Yusuke Suzuki.\n\nFix two issues in the same way as 321451@main.\n\n1. Promise.prototype.then / catch / finally took the fast path for a promise\n   from another realm, and created the d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
