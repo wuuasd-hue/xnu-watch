@@ -70777,5 +70777,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T17:59:56.808806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e80c1e3efb992a1ea34037a3b3a781ba32fb299",
+    "url": "https://github.com/WebKit/WebKit/commit/1e80c1e3efb992a1ea34037a3b3a781ba32fb299",
+    "message": "[JSC] Add JSONTransitionCache\nhttps://bugs.webkit.org/show_bug.cgi?id=325249\nrdar://188365530\n\nReviewed by Yijia Huang and Vassili Bykov.\n\n321841@main improved object baking by using single transition. But this\noptimization does not hit when starting from an empty object initially\nsince its Structur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T18:00:33.957745+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ae01ce5e5bc18dc665dc946a08afd35b767fdb0",
+    "url": "https://github.com/WebKit/WebKit/commit/0ae01ce5e5bc18dc665dc946a08afd35b767fdb0",
+    "message": "Add a frame ancestor range for walking the frame tree\nhttps://bugs.webkit.org/show_bug.cgi?id=325073\nrdar://188234861\n\nReviewed by Ryosuke Niwa.\n\nMany call sites walk the frame tree by hand:\n\n    for (RefPtr ancestor = frame->tree().parent(); ancestor; ancestor = ancestor->tree().parent()) {\n       ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T18:01:11.098811+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "59be6c12449db1522f33431395e5dcb021c0a815",
+    "url": "https://github.com/WebKit/WebKit/commit/59be6c12449db1522f33431395e5dcb021c0a815",
+    "message": "[JSC] Move the Collector implementation out of Heap.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=325167\nrdar://188297962\n\nReviewed by Yusuke Suzuki.\n\nFollow on to 321791@main, which left Collector's methods in Heap.cpp so the split would read\nas a diff. This moves them to Collector.cpp, and moves Col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T18:01:50.155671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "caa6708421806a2a168b87a2ac5e810397abb6e4",
+    "url": "https://github.com/WebKit/WebKit/commit/caa6708421806a2a168b87a2ac5e810397abb6e4",
+    "message": "[JSC][Wasm] ESM reserved-name checks should skip string constants and builtins\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325162\n\nReviewed by Yusuke Suzuki.\n\nThe ESM integration spec applies wasm: and wasm-js: LinkErrors only to\npublic imports. String-constant imports and recognized builtins are\nskipp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T18:02:35.081537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "18e3f9366c7fc3401b01f60c8a259b431f44f81c",
+    "url": "https://github.com/WebKit/WebKit/commit/18e3f9366c7fc3401b01f60c8a259b431f44f81c",
+    "message": "[Safer CPP] Unreviewed, address unexpected warning on the post commit bot\nhttps://bugs.webkit.org/show_bug.cgi?id=325227\n\nUnreviewed.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n\nCanonical link: https://commits.webkit.org/321857@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T18:03:12.299980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ceba48c3cdf3505c315c8c09eebaaae5fd3b34b2",
+    "url": "https://github.com/WebKit/WebKit/commit/ceba48c3cdf3505c315c8c09eebaaae5fd3b34b2",
+    "message": "wasm/WasmConstExprGenerator.cpp is unexpected pass for NoUncountedMemberChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=325253\n\nUnreviewed. Removed the file which is an unexpected pass.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n\nCanonical link: https://commi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
