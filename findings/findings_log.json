@@ -70617,5 +70617,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T07:59:47.177856+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ceba48c3cdf3505c315c8c09eebaaae5fd3b34b2",
+    "url": "https://github.com/WebKit/WebKit/commit/ceba48c3cdf3505c315c8c09eebaaae5fd3b34b2",
+    "message": "wasm/WasmConstExprGenerator.cpp is unexpected pass for NoUncountedMemberChecker\nhttps://bugs.webkit.org/show_bug.cgi?id=325253\n\nUnreviewed. Removed the file which is an unexpected pass.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoUncountedMemberCheckerExpectations:\n\nCanonical link: https://commi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T08:00:24.750403+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee8e5dbbcc2a0a97525d805ab19d46951bbec525",
+    "url": "https://github.com/WebKit/WebKit/commit/ee8e5dbbcc2a0a97525d805ab19d46951bbec525",
+    "message": "[JSC] `Intl.DurationFormat` drops the fraction folded into a zero unit\nhttps://bugs.webkit.org/show_bug.cgi?id=325238\n\nReviewed by Yusuke Suzuki.\n\nnew Intl.DurationFormat(\"en\", { milliseconds: \"numeric\" }).format({ milliseconds: 500 })\nreturns \"\" instead of \"0.5 sec\", and { hours: 1, milliseconds: 5",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T08:01:02.466365+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcf6fe0d7fff1c96791b1b3a8c30b21e082e47d7",
+    "url": "https://github.com/WebKit/WebKit/commit/fcf6fe0d7fff1c96791b1b3a8c30b21e082e47d7",
+    "message": "[Site Isolation] Suppress scroll position updates from main frame\nhttps://bugs.webkit.org/show_bug.cgi?id=324892\nrdar://problem/188122073\n\nReviewed by Mike Wyrzykowski.\n\nThis suppresses broadcasting the FrameViewportInfo update (which changes with the scroll position)\nfrom the main frame if all remo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T08:01:40.255228+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71d5b30126aac4d3993f18244ba512dc35df7c71",
+    "url": "https://github.com/WebKit/WebKit/commit/71d5b30126aac4d3993f18244ba512dc35df7c71",
+    "message": "[Safer CPP] Use RefPtr / adoptRef instead of JSRetainPtr / adopt() throughout the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=325138\n\nReviewed by Yusuke Suzuki and Timothy Hatcher.\n\nUse RefPtr / adoptRef instead of JSRetainPtr / adopt() throughout the\ncodebase, since Safer CPP static analysis d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T08:02:18.099079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b718c65267c607f8086ddb4b0f51e254a3491c87",
+    "url": "https://github.com/WebKit/WebKit/commit/b718c65267c607f8086ddb4b0f51e254a3491c87",
+    "message": "[JSC] Using single-transition entry as a cache for the next identifier in JSON.parse\nhttps://bugs.webkit.org/show_bug.cgi?id=325179\nrdar://188311479\n\nReviewed by Keith Miller.\n\nJSON.parse may encounter many \"same-shaped\" object creations. This is\nvery common like this.\n\n    `[ { \"name\": \"hello\", \"va",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T08:02:55.897773+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "88c45b652c4b54d43862d7eeadb9d6a24f9b949d",
+    "url": "https://github.com/swiftlang/swift/commit/88c45b652c4b54d43862d7eeadb9d6a24f9b949d",
+    "message": "Merge pull request #92577 from compnerd/com-dynamic-type-runtime\n\nRuntime: recover dynamic types from COM interfaces",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
