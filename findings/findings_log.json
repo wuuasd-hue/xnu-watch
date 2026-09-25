@@ -70897,5 +70897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T21:05:22.927747+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "172f52ace994d118941140e575139d76fcb06e14",
+    "url": "https://github.com/WebKit/WebKit/commit/172f52ace994d118941140e575139d76fcb06e14",
+    "message": "Block requests with a WebPrivacy provided content rule list instead of a network process check\nrdar://187822866\nhttps://bugs.webkit.org/show_bug.cgi?id=324589\n\nReviewed by Wenson Hsieh.\n\nThis patch replaces the static domain list in the network process with a content rule list that\nWebPrivacy provid",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T21:05:59.992960+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee8e5dbbcc2a0a97525d805ab19d46951bbec525",
+    "url": "https://github.com/WebKit/WebKit/commit/ee8e5dbbcc2a0a97525d805ab19d46951bbec525",
+    "message": "[JSC] `Intl.DurationFormat` drops the fraction folded into a zero unit\nhttps://bugs.webkit.org/show_bug.cgi?id=325238\n\nReviewed by Yusuke Suzuki.\n\nnew Intl.DurationFormat(\"en\", { milliseconds: \"numeric\" }).format({ milliseconds: 500 })\nreturns \"\" instead of \"0.5 sec\", and { hours: 1, milliseconds: 5",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T21:06:37.065110+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcf6fe0d7fff1c96791b1b3a8c30b21e082e47d7",
+    "url": "https://github.com/WebKit/WebKit/commit/fcf6fe0d7fff1c96791b1b3a8c30b21e082e47d7",
+    "message": "[Site Isolation] Suppress scroll position updates from main frame\nhttps://bugs.webkit.org/show_bug.cgi?id=324892\nrdar://problem/188122073\n\nReviewed by Mike Wyrzykowski.\n\nThis suppresses broadcasting the FrameViewportInfo update (which changes with the scroll position)\nfrom the main frame if all remo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
