@@ -71277,5 +71277,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:25:19.302672+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce1fa925b83a6d324929839277036aaa2e30a652",
+    "url": "https://github.com/WebKit/WebKit/commit/ce1fa925b83a6d324929839277036aaa2e30a652",
+    "message": "[Safer CPP] Mark more data members as `const` to help static analysis\nhttps://bugs.webkit.org/show_bug.cgi?id=325268\n\nReviewed by Anne van Kesteren.\n\nMark more data members as `const` to help static analysis determine\nsafety and reduce the use of protect().\n\n* Source/*:\n\nCanonical link: https://comm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:25:56.358103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a38069dceb9baa4ec8ebc58e55a4539f6880d96",
+    "url": "https://github.com/WebKit/WebKit/commit/8a38069dceb9baa4ec8ebc58e55a4539f6880d96",
+    "message": "Make CString's const char* constructor reachable only through CStringWithEncoding on all ports\nhttps://bugs.webkit.org/show_bug.cgi?id=325142\n\nReviewed by Adrian Perez de Castro and Mike Wyrzykowski.\n\nCString(const char*) was only protected on Cocoa. The GLib-based, curl and Windows producers and\nho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:26:33.371899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "701aa0c906ca74ce08e3d686a50e565a5b30b31d",
+    "url": "https://github.com/WebKit/WebKit/commit/701aa0c906ca74ce08e3d686a50e565a5b30b31d",
+    "message": "[Safer CPP] Address more warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=325234\n\nReviewed by Geoffrey Garen.\n\n* Source/WebCore/PAL/pal/spi/cocoa/LaunchServicesSPI.h:\n* Source/WebCore/html/HTMLCanvasElement.cpp:\n(WebCore::HTMLCanvasElement::createContext2d):\n(WebCore::HTMLCanvasElement::",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:27:10.410850+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3f208b767511e8954e014937f310c7be4b5cc422",
+    "url": "https://github.com/WebKit/WebKit/commit/3f208b767511e8954e014937f310c7be4b5cc422",
+    "message": "Add a frame descendant range for walking the frame tree\nhttps://bugs.webkit.org/show_bug.cgi?id=325310\nrdar://188423956\n\nReviewed by Ryosuke Niwa.\n\nThis is a continuation of https://commits.webkit.org/321915@main\n\nMany call sites walk the frame tree by hand:\n\n    for (RefPtr descendantFrame = frame.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:27:47.655966+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bd718a24ea05765aedc44753b3d2ab777bcb18b",
+    "url": "https://github.com/WebKit/WebKit/commit/5bd718a24ea05765aedc44753b3d2ab777bcb18b",
+    "message": "[CMake] Add GENERATE_DSYM option to produce dSYM bundles\nhttps://bugs.webkit.org/show_bug.cgi?id=323941\nrdar://187181320\n\nReviewed by Dan Glastonbury.\n\nAdd logic to the standard family of WEBKIT_FRAMEWORK macros to run\ndsymutil after linking. Teach `build-webkit --dsym` to enable the\noption.\n\ndSYM g",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T13:28:25.221232+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6730df1f8510e66b8bc744273178c52d72d99199",
+    "url": "https://github.com/WebKit/WebKit/commit/6730df1f8510e66b8bc744273178c52d72d99199",
+    "message": "[JSC] Prepare visitChildren and marking constraints for a SlotVisitor that marks more than one heap\nhttps://bugs.webkit.org/show_bug.cgi?id=325294\nrdar://188409763\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nEach Heap has its own Collector, and each Collector its own SlotVisitors, so today a visitor's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
