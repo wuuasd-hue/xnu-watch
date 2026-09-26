@@ -71197,5 +71197,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T08:43:53.743180+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7fb452f1a4b3dcf0d45f45ec8b783457a479bf65",
+    "url": "https://github.com/WebKit/WebKit/commit/7fb452f1a4b3dcf0d45f45ec8b783457a479bf65",
+    "message": "[JSC] Add long string cache for JSON\nhttps://bugs.webkit.org/show_bug.cgi?id=325344\nrdar://188447389\n\nReviewed by Vassili Bykov.\n\nJSON frequently ends up including same long strings repeatedly, like\nURL. So it is good to have a cache which dedups them. This patch extends\nJSONAtomStringCache to hold ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T08:44:30.682541+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b7598eddbf2479eb82c22b4efe1862a0a26c7f5",
+    "url": "https://github.com/WebKit/WebKit/commit/2b7598eddbf2479eb82c22b4efe1862a0a26c7f5",
+    "message": "[Navigation API] preventDefault() must cancel a cross-site process-swapping navigation under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=318357\nrdar://181141493\n\nReviewed by Alex Christensen.\n\nReland of 321637@main (c584246121e0), reverted in 321806@main because BrowsingContextGroup holds",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T08:45:07.790937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "caa6708421806a2a168b87a2ac5e810397abb6e4",
+    "url": "https://github.com/WebKit/WebKit/commit/caa6708421806a2a168b87a2ac5e810397abb6e4",
+    "message": "[JSC][Wasm] ESM reserved-name checks should skip string constants and builtins\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325162\n\nReviewed by Yusuke Suzuki.\n\nThe ESM integration spec applies wasm: and wasm-js: LinkErrors only to\npublic imports. String-constant imports and recognized builtins are\nskipp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T08:45:44.717568+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "172f52ace994d118941140e575139d76fcb06e14",
+    "url": "https://github.com/WebKit/WebKit/commit/172f52ace994d118941140e575139d76fcb06e14",
+    "message": "Block requests with a WebPrivacy provided content rule list instead of a network process check\nrdar://187822866\nhttps://bugs.webkit.org/show_bug.cgi?id=324589\n\nReviewed by Wenson Hsieh.\n\nThis patch replaces the static domain list in the network process with a content rule list that\nWebPrivacy provid",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
