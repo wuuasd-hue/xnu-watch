@@ -71077,5 +71077,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:11:33.246251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ec88ec5ecbe404b709c400e8441ae25c16f79f72",
+    "url": "https://github.com/WebKit/WebKit/commit/ec88ec5ecbe404b709c400e8441ae25c16f79f72",
+    "message": "[JSC] JSON.parse should leverage SIMD scan more\nhttps://bugs.webkit.org/show_bug.cgi?id=325319\nrdar://188428638\n\nReviewed by Yijia Huang.\n\nThis patch leverages SIMD scan more for property keys.\n\n1. We extract `findUnsafeStringCharacter` and leverage it in\n   lexStringSlow as well. Even after encount",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:12:10.286796+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f3178a96a155969213af4be032bd6b2b0bc6a3b",
+    "url": "https://github.com/WebKit/WebKit/commit/0f3178a96a155969213af4be032bd6b2b0bc6a3b",
+    "message": "Reduce use of legacyCStringPointer() throughout the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=325248\n\nReviewed by Mike Wyrzykowski.\n\nMany functions still take a bare const char*, so callers holding a CString,\nUTF8CString or ASCIILiteral have to unwrap it with legacyCStringPointer() and\nthe ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:12:47.304898+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5869341e6cc8595313eabb97e3d709f0f0abe88a",
+    "url": "https://github.com/WebKit/WebKit/commit/5869341e6cc8595313eabb97e3d709f0f0abe88a",
+    "message": "[CMake] Fix build\nrdar://188438876\nhttps://bugs.webkit.org/show_bug.cgi?id=325330\n\nReviewed by Keith Miller and Zak Ridouh.\n\nBuild was failing with:\n\nUndefined symbols for architecture arm64e:\n  \"JSC::PropertyTable::clone(JSC::VM&, JSC::PropertyTable const&)\", referenced from:\n      JSC::PropertyTab",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:13:24.323429+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6dd325c7d06792f0f623a820e643bfd3e3dcde2c",
+    "url": "https://github.com/WebKit/WebKit/commit/6dd325c7d06792f0f623a820e643bfd3e3dcde2c",
+    "message": "[JSC] B3 specializeSelect must not clone Phis\nhttps://bugs.webkit.org/show_bug.cgi?id=325312\nrdar://188290503\n\nReviewed by Dan Hecht.\n\nB3 specializeSelect's job is like this.\n\n    Turn this:\n\n        @a = Select(@p, @x, 42)\n        @b = Add(@a, 35)\n        Check(@b)\n\n    into this:\n\n        Branch(@",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:14:01.490211+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ae01ce5e5bc18dc665dc946a08afd35b767fdb0",
+    "url": "https://github.com/WebKit/WebKit/commit/0ae01ce5e5bc18dc665dc946a08afd35b767fdb0",
+    "message": "Add a frame ancestor range for walking the frame tree\nhttps://bugs.webkit.org/show_bug.cgi?id=325073\nrdar://188234861\n\nReviewed by Ryosuke Niwa.\n\nMany call sites walk the frame tree by hand:\n\n    for (RefPtr ancestor = frame->tree().parent(); ancestor; ancestor = ancestor->tree().parent()) {\n       ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T03:14:38.446196+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "59be6c12449db1522f33431395e5dcb021c0a815",
+    "url": "https://github.com/WebKit/WebKit/commit/59be6c12449db1522f33431395e5dcb021c0a815",
+    "message": "[JSC] Move the Collector implementation out of Heap.cpp\nhttps://bugs.webkit.org/show_bug.cgi?id=325167\nrdar://188297962\n\nReviewed by Yusuke Suzuki.\n\nFollow on to 321791@main, which left Collector's methods in Heap.cpp so the split would read\nas a diff. This moves them to Collector.cpp, and moves Col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
