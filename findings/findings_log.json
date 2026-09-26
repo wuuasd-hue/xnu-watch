@@ -71557,5 +71557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T22:20:06.701563+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5869341e6cc8595313eabb97e3d709f0f0abe88a",
+    "url": "https://github.com/WebKit/WebKit/commit/5869341e6cc8595313eabb97e3d709f0f0abe88a",
+    "message": "[CMake] Fix build\nrdar://188438876\nhttps://bugs.webkit.org/show_bug.cgi?id=325330\n\nReviewed by Keith Miller and Zak Ridouh.\n\nBuild was failing with:\n\nUndefined symbols for architecture arm64e:\n  \"JSC::PropertyTable::clone(JSC::VM&, JSC::PropertyTable const&)\", referenced from:\n      JSC::PropertyTab",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T22:20:44.110253+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6dd325c7d06792f0f623a820e643bfd3e3dcde2c",
+    "url": "https://github.com/WebKit/WebKit/commit/6dd325c7d06792f0f623a820e643bfd3e3dcde2c",
+    "message": "[JSC] B3 specializeSelect must not clone Phis\nhttps://bugs.webkit.org/show_bug.cgi?id=325312\nrdar://188290503\n\nReviewed by Dan Hecht.\n\nB3 specializeSelect's job is like this.\n\n    Turn this:\n\n        @a = Select(@p, @x, 42)\n        @b = Add(@a, 35)\n        Check(@b)\n\n    into this:\n\n        Branch(@",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
