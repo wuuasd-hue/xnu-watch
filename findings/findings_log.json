@@ -70957,5 +70957,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T23:59:09.322996+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5bd718a24ea05765aedc44753b3d2ab777bcb18b",
+    "url": "https://github.com/WebKit/WebKit/commit/5bd718a24ea05765aedc44753b3d2ab777bcb18b",
+    "message": "[CMake] Add GENERATE_DSYM option to produce dSYM bundles\nhttps://bugs.webkit.org/show_bug.cgi?id=323941\nrdar://187181320\n\nReviewed by Dan Glastonbury.\n\nAdd logic to the standard family of WEBKIT_FRAMEWORK macros to run\ndsymutil after linking. Teach `build-webkit --dsym` to enable the\noption.\n\ndSYM g",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-25T23:59:46.924259+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6730df1f8510e66b8bc744273178c52d72d99199",
+    "url": "https://github.com/WebKit/WebKit/commit/6730df1f8510e66b8bc744273178c52d72d99199",
+    "message": "[JSC] Prepare visitChildren and marking constraints for a SlotVisitor that marks more than one heap\nhttps://bugs.webkit.org/show_bug.cgi?id=325294\nrdar://188409763\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nEach Heap has its own Collector, and each Collector its own SlotVisitors, so today a visitor's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T00:00:24.687116+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0506f92aff189ff96f76f96a7666c62618feb89f",
+    "url": "https://github.com/WebKit/WebKit/commit/0506f92aff189ff96f76f96a7666c62618feb89f",
+    "message": "[JSC] Expand transition cache / single-transition cache for 16bit source\nhttps://bugs.webkit.org/show_bug.cgi?id=325304\nrdar://188416013\n\nReviewed by Yijia Huang.\n\nWe expand our single-transition / transition cache for 16bit source in\nJSON.parse. While source can be 16-bit, still it is likely that m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T00:01:02.678720+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c0df54a0620b167c0f028b36ee28563a9f7897f",
+    "url": "https://github.com/WebKit/WebKit/commit/7c0df54a0620b167c0f028b36ee28563a9f7897f",
+    "message": "[Site Isolation] Web Inspector: JavaScript profiling reports no execution events; timeline durations are wrong\nrdar://186702735\nhttps://bugs.webkit.org/show_bug.cgi?id=323477\n\nReviewed by BJ Burg.\n\nWith site isolation enabled, a ScriptProfiler tracking session produces\ntrackingStart and trackingComp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T00:01:41.280088+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71d5b30126aac4d3993f18244ba512dc35df7c71",
+    "url": "https://github.com/WebKit/WebKit/commit/71d5b30126aac4d3993f18244ba512dc35df7c71",
+    "message": "[Safer CPP] Use RefPtr / adoptRef instead of JSRetainPtr / adopt() throughout the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=325138\n\nReviewed by Yusuke Suzuki and Timothy Hatcher.\n\nUse RefPtr / adoptRef instead of JSRetainPtr / adopt() throughout the\ncodebase, since Safer CPP static analysis d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T00:02:19.005367+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e80c1e3efb992a1ea34037a3b3a781ba32fb299",
+    "url": "https://github.com/WebKit/WebKit/commit/1e80c1e3efb992a1ea34037a3b3a781ba32fb299",
+    "message": "[JSC] Add JSONTransitionCache\nhttps://bugs.webkit.org/show_bug.cgi?id=325249\nrdar://188365530\n\nReviewed by Yijia Huang and Vassili Bykov.\n\n321841@main improved object baking by using single transition. But this\noptimization does not hit when starting from an empty object initially\nsince its Structur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
