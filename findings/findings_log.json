@@ -71517,5 +71517,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T19:59:08.104860+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ec88ec5ecbe404b709c400e8441ae25c16f79f72",
+    "url": "https://github.com/WebKit/WebKit/commit/ec88ec5ecbe404b709c400e8441ae25c16f79f72",
+    "message": "[JSC] JSON.parse should leverage SIMD scan more\nhttps://bugs.webkit.org/show_bug.cgi?id=325319\nrdar://188428638\n\nReviewed by Yijia Huang.\n\nThis patch leverages SIMD scan more for property keys.\n\n1. We extract `findUnsafeStringCharacter` and leverage it in\n   lexStringSlow as well. Even after encount",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-26T19:59:45.725841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f3178a96a155969213af4be032bd6b2b0bc6a3b",
+    "url": "https://github.com/WebKit/WebKit/commit/0f3178a96a155969213af4be032bd6b2b0bc6a3b",
+    "message": "Reduce use of legacyCStringPointer() throughout the codebase\nhttps://bugs.webkit.org/show_bug.cgi?id=325248\n\nReviewed by Mike Wyrzykowski.\n\nMany functions still take a bare const char*, so callers holding a CString,\nUTF8CString or ASCIILiteral have to unwrap it with legacyCStringPointer() and\nthe ca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
