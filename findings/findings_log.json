@@ -71677,5 +71677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T10:53:10.410040+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "701aa0c906ca74ce08e3d686a50e565a5b30b31d",
+    "url": "https://github.com/WebKit/WebKit/commit/701aa0c906ca74ce08e3d686a50e565a5b30b31d",
+    "message": "[Safer CPP] Address more warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=325234\n\nReviewed by Geoffrey Garen.\n\n* Source/WebCore/PAL/pal/spi/cocoa/LaunchServicesSPI.h:\n* Source/WebCore/html/HTMLCanvasElement.cpp:\n(WebCore::HTMLCanvasElement::createContext2d):\n(WebCore::HTMLCanvasElement::",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T10:53:47.418721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3f208b767511e8954e014937f310c7be4b5cc422",
+    "url": "https://github.com/WebKit/WebKit/commit/3f208b767511e8954e014937f310c7be4b5cc422",
+    "message": "Add a frame descendant range for walking the frame tree\nhttps://bugs.webkit.org/show_bug.cgi?id=325310\nrdar://188423956\n\nReviewed by Ryosuke Niwa.\n\nThis is a continuation of https://commits.webkit.org/321915@main\n\nMany call sites walk the frame tree by hand:\n\n    for (RefPtr descendantFrame = frame.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
