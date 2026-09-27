@@ -71637,5 +71637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T05:55:03.051466+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce1fa925b83a6d324929839277036aaa2e30a652",
+    "url": "https://github.com/WebKit/WebKit/commit/ce1fa925b83a6d324929839277036aaa2e30a652",
+    "message": "[Safer CPP] Mark more data members as `const` to help static analysis\nhttps://bugs.webkit.org/show_bug.cgi?id=325268\n\nReviewed by Anne van Kesteren.\n\nMark more data members as `const` to help static analysis determine\nsafety and reduce the use of protect().\n\n* Source/*:\n\nCanonical link: https://comm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T05:55:40.713149+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8a38069dceb9baa4ec8ebc58e55a4539f6880d96",
+    "url": "https://github.com/WebKit/WebKit/commit/8a38069dceb9baa4ec8ebc58e55a4539f6880d96",
+    "message": "Make CString's const char* constructor reachable only through CStringWithEncoding on all ports\nhttps://bugs.webkit.org/show_bug.cgi?id=325142\n\nReviewed by Adrian Perez de Castro and Mike Wyrzykowski.\n\nCString(const char*) was only protected on Cocoa. The GLib-based, curl and Windows producers and\nho",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
