@@ -71797,5 +71797,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T19:05:56.239564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "868ef79407512ac3a0152a2c9c09565530c071e6",
+    "url": "https://github.com/WebKit/WebKit/commit/868ef79407512ac3a0152a2c9c09565530c071e6",
+    "message": "[JSC] Name the Wasm callee cleanup Heap functions for the marking they do\nhttps://bugs.webkit.org/show_bug.cgi?id=325327\nrdar://188435875\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nThese functions implement a mark phase for Wasm callees, but their names hid it: \"prepare\"\nand \"finalize\" a \"cleanup\" ob",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T19:06:33.951059+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dfdac830e36dc94a8d86be93e95bf73b6ab4e2cf",
+    "url": "https://github.com/WebKit/WebKit/commit/dfdac830e36dc94a8d86be93e95bf73b6ab4e2cf",
+    "message": "[JSC] Rename the conservative scan's \"current thread\" to the conductor, since the scan can run on a helper thread\nrdar://188434991\nhttps://bugs.webkit.org/show_bug.cgi?id=325325\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nThe conservative scan called the thread conducting the collection, and the state",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T19:07:11.766593+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "101392f63ca9966babdf9757a1a85793f2b38073",
+    "url": "https://github.com/WebKit/WebKit/commit/101392f63ca9966babdf9757a1a85793f2b38073",
+    "message": "[JSC] Remove SlotVisitor's Heap in preparation for a visitor that marks more than one heap\nhttps://bugs.webkit.org/show_bug.cgi?id=325317\nrdar://188428012\n\nReviewed by Yusuke Suzuki.\n\nCurrently, a SlotVisitor holds the Heap it marks, which AbstractSlotVisitor::vm() and heap() rely\non. We want one Co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T19:07:49.827326+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "501d1f661f978612df3435a8631f939465a82ab1",
+    "url": "https://github.com/WebKit/WebKit/commit/501d1f661f978612df3435a8631f939465a82ab1",
+    "message": "[JSC] `Intl.DurationFormat` drops the minus sign of a fraction between -1 and 0\nhttps://bugs.webkit.org/show_bug.cgi?id=325247\n\nReviewed by Yusuke Suzuki.\n\nnew Intl.DurationFormat(\"en\", { seconds: \"numeric\" }).format({ milliseconds: -500 })\nreturns \"0.5\" instead of \"-0.5\", and formatToParts() has no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T19:08:27.531030+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df3a6b749ba3173f558ad086576f3160bebd9ff5",
+    "url": "https://github.com/WebKit/WebKit/commit/df3a6b749ba3173f558ad086576f3160bebd9ff5",
+    "message": "Rename CStringView to UTF8CStringView\nhttps://bugs.webkit.org/show_bug.cgi?id=325362\n\nReviewed by Darin Adler.\n\nCStringView only holds UTF-8 (char8_t) data and can only be built from a UTF8CString.\nNow that CString has UTF8CString, Latin1CString and ASCIICString variants, rename it\nto UTF8CStringVie",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
