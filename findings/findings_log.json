@@ -71717,5 +71717,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T15:24:40.286135+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d620932d8ce37cf83f60d5c50dace2d50fed4f80",
+    "url": "https://github.com/WebKit/WebKit/commit/d620932d8ce37cf83f60d5c50dace2d50fed4f80",
+    "message": "[Image Redux] Size canvas image sources with the CSS object size negotiation\nhttps://bugs.webkit.org/show_bug.cgi?id=325314\n\nReviewed by Darin Adler.\n\nRefactors usage of `CanvasImageSource` (canvas drawImage()/createPattern(),\ncreateImageBitmap(), WebGL and VideoFrame) to use shared functionality\nin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T15:25:18.555310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9cf419e5c4ba87e6d0517ac2d3ee811b0ddb8475",
+    "url": "https://github.com/WebKit/WebKit/commit/9cf419e5c4ba87e6d0517ac2d3ee811b0ddb8475",
+    "message": "Introducing Corpse::Memory for managing read access to remote corpse memory.\nhttps://bugs.webkit.org/show_bug.cgi?id=325293\nrdar://188409391\n\nReviewed by Dan Hecht and Justin Michaud.\n\nMemory represents the memory map of the Snapshot, and is the manager through which the client can\nrequests views in",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T15:25:56.968457+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee4792cb07c7986456e697d040a9034a3bd6e280",
+    "url": "https://github.com/WebKit/WebKit/commit/ee4792cb07c7986456e697d040a9034a3bd6e280",
+    "message": "[JSC] Store FTL OSR exits as a byte stream\nhttps://bugs.webkit.org/show_bug.cgi?id=324517\n\nReviewed by Yusuke Suzuki.\n\nThis is the FTL counterpart of 321231@main. Every FTL OSR exit keeps a\n56-byte FTL::OSRExit for as long as the FTL code lives, although it is only\nread when the exit fires for the f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T15:26:35.232049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bffe36ec16ef0d6db5f2652a670cd2f16e446742",
+    "url": "https://github.com/WebKit/WebKit/commit/bffe36ec16ef0d6db5f2652a670cd2f16e446742",
+    "message": "[JSC] String and RegExp fast paths should not be taken across realms\nhttps://bugs.webkit.org/show_bug.cgi?id=325134\n\nReviewed by Yusuke Suzuki.\n\nFix two issues in the same way as 321451@main.\n\n1. String.prototype.match / matchAll / replace / replaceAll / search / split\n   and RegExp.prototype.test /",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
