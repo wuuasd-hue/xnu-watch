@@ -71897,5 +71897,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T22:23:36.410487+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d620932d8ce37cf83f60d5c50dace2d50fed4f80",
+    "url": "https://github.com/WebKit/WebKit/commit/d620932d8ce37cf83f60d5c50dace2d50fed4f80",
+    "message": "[Image Redux] Size canvas image sources with the CSS object size negotiation\nhttps://bugs.webkit.org/show_bug.cgi?id=325314\n\nReviewed by Darin Adler.\n\nRefactors usage of `CanvasImageSource` (canvas drawImage()/createPattern(),\ncreateImageBitmap(), WebGL and VideoFrame) to use shared functionality\nin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-27T22:24:13.683126+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9cf419e5c4ba87e6d0517ac2d3ee811b0ddb8475",
+    "url": "https://github.com/WebKit/WebKit/commit/9cf419e5c4ba87e6d0517ac2d3ee811b0ddb8475",
+    "message": "Introducing Corpse::Memory for managing read access to remote corpse memory.\nhttps://bugs.webkit.org/show_bug.cgi?id=325293\nrdar://188409391\n\nReviewed by Dan Hecht and Justin Michaud.\n\nMemory represents the memory map of the Snapshot, and is the manager through which the client can\nrequests views in",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
