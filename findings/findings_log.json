@@ -72257,5 +72257,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T20:37:43.317692+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "155da2799248ca670579e8abdf2030037caa1297",
+    "url": "https://github.com/WebKit/WebKit/commit/155da2799248ca670579e8abdf2030037caa1297",
+    "message": "[iOS] Custom URL scheme timeouts lead to crashes in mediaplaybackd\nrdar://184511202\nhttps://bugs.webkit.org/show_bug.cgi?id=324711\n\nReviewed by Jean-Yves Avenard.\n\nWebKit enables AVAssetResourceLoadingContentInformationRequest.isEntireLengthAvailableOnDemand when\nloading custom URL schemes because m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T20:38:20.839976+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41ffde255367141f07eae35a0da2f9c8bfc87c44",
+    "url": "https://github.com/WebKit/WebKit/commit/41ffde255367141f07eae35a0da2f9c8bfc87c44",
+    "message": "[Site Isolation] imported/w3c/web-platform-tests/fetch/api/basic/keepalive.any.html is a constant failure.\nhttps://bugs.webkit.org/show_bug.cgi?id=325316\nrdar://188427760\n\nReviewed by Alex Christensen.\n\nThis patch fixes 3 issues that prevent unload handlers from running when a cross-site iframe is r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T20:38:58.737892+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "600e3b2161e3e72b53e12ebff5355ee5cfffa5b1",
+    "url": "https://github.com/WebKit/WebKit/commit/600e3b2161e3e72b53e12ebff5355ee5cfffa5b1",
+    "message": "[GLib] Drop the extra String conversions around a few GLib-allocated strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325408\n\nReviewed by Adrian Perez de Castro.\n\nResourceLoaderSoup decoded the g_content_type_guess() result as Latin-1;\nGLib returns UTF-8. InputMethodFilter decoded the new preedit twi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T20:39:36.224068+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b7a33f24416e379f878767606d3ac43dd9dfcee",
+    "url": "https://github.com/WebKit/WebKit/commit/2b7a33f24416e379f878767606d3ac43dd9dfcee",
+    "message": "[Image Redux] CachedImage::brokenImage() should be a static function\nhttps://bugs.webkit.org/show_bug.cgi?id=325425\n\nReviewed by Simon Fraser.\n\nCachedImage::brokenImage() does not depend on instance state so can be a static function.\n\n* Source/WebCore/loader/cache/CachedImage.cpp:\n* Source/WebCore/l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
