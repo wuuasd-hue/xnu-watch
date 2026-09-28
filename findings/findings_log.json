@@ -71937,5 +71937,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T00:56:47.987901+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33ca66ce3ffefd121b93cc2dd8db81d16eb791aa",
+    "url": "https://github.com/WebKit/WebKit/commit/33ca66ce3ffefd121b93cc2dd8db81d16eb791aa",
+    "message": "[JSC] ValueNumbering-based WasmGC optimization in B3::ReduceStrength\nhttps://bugs.webkit.org/show_bug.cgi?id=324906\nrdar://188134232\n\nReviewed by Dan Hecht and Keith Miller.\n\nB3 CSE phase takes very long time to optimize WasmGC operations. This is\nbecause it is traversing back all reachable blocks t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T00:57:25.367502+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "987be10500c90a06758e13c85bb65416c297f70e",
+    "url": "https://github.com/WebKit/WebKit/commit/987be10500c90a06758e13c85bb65416c297f70e",
+    "message": "[Win] Wasm memory and resizable `ArrayBuffer` crash when the commit limit is reached\nhttps://bugs.webkit.org/show_bug.cgi?id=325406\n\nReviewed by Ian Grunert.\n\nSince 321850@main, Windows only reserves the address range of a Wasm memory\nor a growable buffer, and commits the bytes in use when the memor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T00:58:02.496501+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "45d9af505efd3b392b6208f7a1ebff0bbd5d125d",
+    "url": "https://github.com/WebKit/WebKit/commit/45d9af505efd3b392b6208f7a1ebff0bbd5d125d",
+    "message": "[JSC] DFG asserts on a for-of loop that sees both an Array and a generator\nhttps://bugs.webkit.org/show_bug.cgi?id=325416\n\nReviewed by Yusuke Suzuki.\n\nSince 321765@main, op_iterator_open puts a JSSentinel in iterator when it\niterates an Array. When the same loop has also seen a generic iterator, DFG",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T00:58:39.765814+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "868ef79407512ac3a0152a2c9c09565530c071e6",
+    "url": "https://github.com/WebKit/WebKit/commit/868ef79407512ac3a0152a2c9c09565530c071e6",
+    "message": "[JSC] Name the Wasm callee cleanup Heap functions for the marking they do\nhttps://bugs.webkit.org/show_bug.cgi?id=325327\nrdar://188435875\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nThese functions implement a mark phase for Wasm callees, but their names hid it: \"prepare\"\nand \"finalize\" a \"cleanup\" ob",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T00:59:17.175256+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dfdac830e36dc94a8d86be93e95bf73b6ab4e2cf",
+    "url": "https://github.com/WebKit/WebKit/commit/dfdac830e36dc94a8d86be93e95bf73b6ab4e2cf",
+    "message": "[JSC] Rename the conservative scan's \"current thread\" to the conductor, since the scan can run on a helper thread\nrdar://188434991\nhttps://bugs.webkit.org/show_bug.cgi?id=325325\n\nReviewed by Yusuke Suzuki and Mark Lam.\n\nThe conservative scan called the thread conducting the collection, and the state",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
