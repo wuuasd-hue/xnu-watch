@@ -72137,5 +72137,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:13:59.166900+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f62059d5478ef72d7664a23d03b86cea921c300a",
+    "url": "https://github.com/WebKit/WebKit/commit/f62059d5478ef72d7664a23d03b86cea921c300a",
+    "message": "[JSC] Unify and extract JSONCache\nhttps://bugs.webkit.org/show_bug.cgi?id=325483\nrdar://188575025\n\nReviewed by Keith Miller.\n\nExtract JSONAtomStringCache and JSONTransitionCache from VM to\nheap-allocated JSONCache. This is a preparation to extend this mechanism\nfurther to accelerate JSON operations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:14:36.994182+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1ffb8e9a9137ba14faf71970fe4d1d0873bc1a8d",
+    "url": "https://github.com/WebKit/WebKit/commit/1ffb8e9a9137ba14faf71970fe4d1d0873bc1a8d",
+    "message": "[JSC] Remove fix-point iteration debugging code in B3 ReduceStrength\nhttps://bugs.webkit.org/show_bug.cgi?id=325459\nrdar://188554798\n\nReviewed by Keith Miller.\n\nWe no longer want to keep fix-point iteration code in B3 ReduceStrength\nas it is only used for debugging and making code complicated. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:15:14.357305+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "73af864d11cf79d7640be78deb260e2533427e58",
+    "url": "https://github.com/WebKit/WebKit/commit/73af864d11cf79d7640be78deb260e2533427e58",
+    "message": "[JSC] Optimize BigInt comparison with 0n\nhttps://bugs.webkit.org/show_bug.cgi?id=325432\nrdar://188534959\n\nReviewed by Sosuke Suzuki.\n\n0n BigInt has several good characteristics.\n\n1. Only one instance exists per VM.\n2. signbit is always not set.\n3. length is always zero.\n\nThese characteristics make `",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:15:51.752723+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22e1cc5592edd852d8cfed8f55035cab459b18e7",
+    "url": "https://github.com/WebKit/WebKit/commit/22e1cc5592edd852d8cfed8f55035cab459b18e7",
+    "message": "Rename CStringWithEncoding to CString\nhttps://bugs.webkit.org/show_bug.cgi?id=325460\n\nReviewed by Yusuke Suzuki.\n\nRename CStringWithEncoding to CString now that the encoding-less CString\nwas renamed to CStringBase.\n\n* Source/JavaScriptCore/jit/GdbJIT.cpp:\n(JSC::ELFStringTable::add):\n(JSC::ELFStringT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:16:29.233772+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "987be10500c90a06758e13c85bb65416c297f70e",
+    "url": "https://github.com/WebKit/WebKit/commit/987be10500c90a06758e13c85bb65416c297f70e",
+    "message": "[Win] Wasm memory and resizable `ArrayBuffer` crash when the commit limit is reached\nhttps://bugs.webkit.org/show_bug.cgi?id=325406\n\nReviewed by Ian Grunert.\n\nSince 321850@main, Windows only reserves the address range of a Wasm memory\nor a growable buffer, and commits the bytes in use when the memor",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T14:17:06.532455+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "45d9af505efd3b392b6208f7a1ebff0bbd5d125d",
+    "url": "https://github.com/WebKit/WebKit/commit/45d9af505efd3b392b6208f7a1ebff0bbd5d125d",
+    "message": "[JSC] DFG asserts on a for-of loop that sees both an Array and a generator\nhttps://bugs.webkit.org/show_bug.cgi?id=325416\n\nReviewed by Yusuke Suzuki.\n\nSince 321765@main, op_iterator_open puts a JSSentinel in iterator when it\niterates an Array. When the same loop has also seen a generic iterator, DFG",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
