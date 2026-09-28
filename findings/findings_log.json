@@ -72037,5 +72037,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T06:04:56.212732+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "600e3b2161e3e72b53e12ebff5355ee5cfffa5b1",
+    "url": "https://github.com/WebKit/WebKit/commit/600e3b2161e3e72b53e12ebff5355ee5cfffa5b1",
+    "message": "[GLib] Drop the extra String conversions around a few GLib-allocated strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325408\n\nReviewed by Adrian Perez de Castro.\n\nResourceLoaderSoup decoded the g_content_type_guess() result as Latin-1;\nGLib returns UTF-8. InputMethodFilter decoded the new preedit twi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T06:05:33.623478+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b7a33f24416e379f878767606d3ac43dd9dfcee",
+    "url": "https://github.com/WebKit/WebKit/commit/2b7a33f24416e379f878767606d3ac43dd9dfcee",
+    "message": "[Image Redux] CachedImage::brokenImage() should be a static function\nhttps://bugs.webkit.org/show_bug.cgi?id=325425\n\nReviewed by Simon Fraser.\n\nCachedImage::brokenImage() does not depend on instance state so can be a static function.\n\n* Source/WebCore/loader/cache/CachedImage.cpp:\n* Source/WebCore/l",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T06:06:11.280185+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "93ebfacfd7a74429f97737a55af0814124b8ace7",
+    "url": "https://github.com/WebKit/WebKit/commit/93ebfacfd7a74429f97737a55af0814124b8ace7",
+    "message": "[JSC] Make line and column lookups safe off the main thread\nhttps://bugs.webkit.org/show_bug.cgi?id=324838\nrdar://188395337\n\nReviewed by Yusuke Suzuki.\n\nThe recent PR https://github.com/WebKit/WebKit/pull/74359 revised source location tracking to\nonly save source offsets, and to compute line and col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T06:06:48.942249+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "101392f63ca9966babdf9757a1a85793f2b38073",
+    "url": "https://github.com/WebKit/WebKit/commit/101392f63ca9966babdf9757a1a85793f2b38073",
+    "message": "[JSC] Remove SlotVisitor's Heap in preparation for a visitor that marks more than one heap\nhttps://bugs.webkit.org/show_bug.cgi?id=325317\nrdar://188428012\n\nReviewed by Yusuke Suzuki.\n\nCurrently, a SlotVisitor holds the Heap it marks, which AbstractSlotVisitor::vm() and heap() rely\non. We want one Co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-28T06:07:26.572098+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33ca66ce3ffefd121b93cc2dd8db81d16eb791aa",
+    "url": "https://github.com/WebKit/WebKit/commit/33ca66ce3ffefd121b93cc2dd8db81d16eb791aa",
+    "message": "[JSC] ValueNumbering-based WasmGC optimization in B3::ReduceStrength\nhttps://bugs.webkit.org/show_bug.cgi?id=324906\nrdar://188134232\n\nReviewed by Dan Hecht and Keith Miller.\n\nB3 CSE phase takes very long time to optimize WasmGC operations. This is\nbecause it is traversing back all reachable blocks t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
