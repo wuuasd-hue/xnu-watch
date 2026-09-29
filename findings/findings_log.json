@@ -72457,5 +72457,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:18:31.042356+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3941d977dc3a54b6c1af943ce46dd3210b345bdf",
+    "url": "https://github.com/WebKit/WebKit/commit/3941d977dc3a54b6c1af943ce46dd3210b345bdf",
+    "message": "[Safer CPP] Address more static analysis warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=325468\n\nReviewed by Anne van Kesteren.\n\nSVGPropertyOwnerRegistry stored its owner as a raw `OwnerType&` member (119 warnings). It cannot\nhold a WeakRef instead: the registry is created in the argume",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:19:08.001469+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "be0094718dcc8f7b99f46d6eda275e98db5d7c56",
+    "url": "https://github.com/WebKit/WebKit/commit/be0094718dcc8f7b99f46d6eda275e98db5d7c56",
+    "message": "[JSC] Optimize Int52 more\nhttps://bugs.webkit.org/show_bug.cgi?id=325457\nrdar://188553116\n\nReviewed by Vassili Bykov.\n\nThis patch optimizes Int52 pattern more used in the wild.\n\n1. tryConvertToInt52 should be optimized with architecture-specific\n   conversion instruction.\n2. ObservedResults was cons",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:19:45.173352+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d03118dfe73ca1bd635c2d66d049793d2b195a4",
+    "url": "https://github.com/WebKit/WebKit/commit/1d03118dfe73ca1bd635c2d66d049793d2b195a4",
+    "message": "[JSC] Separate the Heap's shutdown from its finalization\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325527\nrdar://188620913\n\nReviewed by Yusuke Suzuki.\n\nHeap::lastChanceToFinalize() did two jobs: it shut down the heap's collection, including bringing the\ncollector thread down, and then finalized what ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:20:22.185330+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b3653d2ed3c8e5b98dd3f752fd4a305d4756b20",
+    "url": "https://github.com/WebKit/WebKit/commit/4b3653d2ed3c8e5b98dd3f752fd4a305d4756b20",
+    "message": "Stop converting strings to lossy ASCII for logging\nhttps://bugs.webkit.org/show_bug.cgi?id=325477\n\nReviewed by Darin Adler.\n\nMany logging call sites pass String::ascii().data() because ASCIICString::data() is already a\nconst char*. ascii() replaces every non-ASCII character with '?', so URLs, origin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:20:59.376454+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1ffb8e9a9137ba14faf71970fe4d1d0873bc1a8d",
+    "url": "https://github.com/WebKit/WebKit/commit/1ffb8e9a9137ba14faf71970fe4d1d0873bc1a8d",
+    "message": "[JSC] Remove fix-point iteration debugging code in B3 ReduceStrength\nhttps://bugs.webkit.org/show_bug.cgi?id=325459\nrdar://188554798\n\nReviewed by Keith Miller.\n\nWe no longer want to keep fix-point iteration code in B3 ReduceStrength\nas it is only used for debugging and making code complicated. This ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T06:21:36.418512+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "73af864d11cf79d7640be78deb260e2533427e58",
+    "url": "https://github.com/WebKit/WebKit/commit/73af864d11cf79d7640be78deb260e2533427e58",
+    "message": "[JSC] Optimize BigInt comparison with 0n\nhttps://bugs.webkit.org/show_bug.cgi?id=325432\nrdar://188534959\n\nReviewed by Sosuke Suzuki.\n\n0n BigInt has several good characteristics.\n\n1. Only one instance exists per VM.\n2. signbit is always not set.\n3. length is always zero.\n\nThese characteristics make `",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
