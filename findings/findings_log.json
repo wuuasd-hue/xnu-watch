@@ -72577,5 +72577,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:09:09.947688+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7fbe85cfbfdc709c1d4c784a936905a78a2a2138",
+    "url": "https://github.com/WebKit/WebKit/commit/7fbe85cfbfdc709c1d4c784a936905a78a2a2138",
+    "message": "[JSC] Tagged template with a parenthesized optional chain tag should keep `this`\nhttps://bugs.webkit.org/show_bug.cgi?id=325401\n\nReviewed by Yusuke Suzuki.\n\n    const o = { b() { return this; } };\n    (o?.b)`x`; // undefined, should be o\n\n321867@main made `(a?.b)(x)` call the function with `a` as `t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:09:47.395381+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bef9d7e632940bd8daf7b74789be91a2a76c3023",
+    "url": "https://github.com/WebKit/WebKit/commit/bef9d7e632940bd8daf7b74789be91a2a76c3023",
+    "message": "[JSC] Quickly reject ToNumber(\"non-number-string\")\nhttps://bugs.webkit.org/show_bug.cgi?id=325591\nrdar://188664175\n\nReviewed by Vassili Bykov.\n\nAdd quick rejection path to ToNumber(\"non-number-string\") as it is\nfrequently happening.\n\nTest: JSTests/stress/to-number-string-first-character.js\n\n* JSTest",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:10:24.549384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb512fb75f60bca15b6106b73a55f4a60633fbd9",
+    "url": "https://github.com/WebKit/WebKit/commit/fb512fb75f60bca15b6106b73a55f4a60633fbd9",
+    "message": "[JSC] Store the `ValueReps` of FTL OSR exits in the exit stream\nhttps://bugs.webkit.org/show_bug.cgi?id=325463\n\nReviewed by Yusuke Suzuki.\n\n321991@main stored FTL OSR exits as an FTL::OSRExitStream, but where B3\nplaced the exit arguments of the exits stayed in another byte stream of the\nJITCode, and",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:11:01.781479+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b8945eb2957c8e6ff665384a53cd16cf0a4e7fcb",
+    "url": "https://github.com/swiftlang/swift/commit/b8945eb2957c8e6ff665384a53cd16cf0a4e7fcb",
+    "message": "Merge pull request #92626 from swiftlang/rebranch\n\nMerge rebranch into main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:11:39.708321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22e1cc5592edd852d8cfed8f55035cab459b18e7",
+    "url": "https://github.com/WebKit/WebKit/commit/22e1cc5592edd852d8cfed8f55035cab459b18e7",
+    "message": "Rename CStringWithEncoding to CString\nhttps://bugs.webkit.org/show_bug.cgi?id=325460\n\nReviewed by Yusuke Suzuki.\n\nRename CStringWithEncoding to CString now that the encoding-less CString\nwas renamed to CStringBase.\n\n* Source/JavaScriptCore/jit/GdbJIT.cpp:\n(JSC::ELFStringTable::add):\n(JSC::ELFStringT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T13:12:16.984337+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "155da2799248ca670579e8abdf2030037caa1297",
+    "url": "https://github.com/WebKit/WebKit/commit/155da2799248ca670579e8abdf2030037caa1297",
+    "message": "[iOS] Custom URL scheme timeouts lead to crashes in mediaplaybackd\nrdar://184511202\nhttps://bugs.webkit.org/show_bug.cgi?id=324711\n\nReviewed by Jean-Yves Avenard.\n\nWebKit enables AVAssetResourceLoadingContentInformationRequest.isEntireLengthAvailableOnDemand when\nloading custom URL schemes because m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
