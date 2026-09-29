@@ -72697,5 +72697,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:43:44.802060+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8cb35beacac025207d52d9cb86b058149e178b3",
+    "url": "https://github.com/WebKit/WebKit/commit/c8cb35beacac025207d52d9cb86b058149e178b3",
+    "message": "[libpas] Use tagged_bmalloc_heap for MTE allocations\nhttps://bugs.webkit.org/show_bug.cgi?id=317893\nrdar://180668556\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nPreviously, the tagged_bmalloc_heap was compiled in but unused. This\npatch enables it. In brief, this hoists the 'compactness' of objects\nou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:44:22.018607+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5330149c555921d5eefddaa34d3c8a6a1fbd55ce",
+    "url": "https://github.com/WebKit/WebKit/commit/5330149c555921d5eefddaa34d3c8a6a1fbd55ce",
+    "message": "[JSC] Iterate Strings without allocating a `JSStringIterator`\nhttps://bugs.webkit.org/show_bug.cgi?id=325452\n\nReviewed by Yusuke Suzuki.\n\n321765@main stopped allocating a JSArrayIterator in FastArray mode by keeping\nthe state of the iteration in registers. FastString mode (for-of and\ndestructuring o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:44:59.253169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01fd9b2e3a9135c8d42736380540cddf8ac56496",
+    "url": "https://github.com/WebKit/WebKit/commit/01fd9b2e3a9135c8d42736380540cddf8ac56496",
+    "message": "Fix new compiler warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=325590\nrdar://188664034\n\nUnreviewed build fix.\n\nFix -Wunused-template,  -Wunused-but-set-global and -Wobjc-property-no-attribute.\n\n* Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipCullDistanceVariable.cpp:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:45:36.411826+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ef3e2eb29bf68df3e3072ec6431fd6e7d61f99f",
+    "url": "https://github.com/WebKit/WebKit/commit/9ef3e2eb29bf68df3e3072ec6431fd6e7d61f99f",
+    "message": "Avoid `haveABadTime()` when a prototype's chain already intercepts indexed accesses\nhttps://bugs.webkit.org/show_bug.cgi?id=325587\nrdar://188662224\n\nReviewed by Yusuke Suzuki.\n\nJSObject::setPrototypeDirect() calls haveABadTime() whenever a prototype gets a chain that may\nintercept indexed accesses. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:46:13.833322+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41ffde255367141f07eae35a0da2f9c8bfc87c44",
+    "url": "https://github.com/WebKit/WebKit/commit/41ffde255367141f07eae35a0da2f9c8bfc87c44",
+    "message": "[Site Isolation] imported/w3c/web-platform-tests/fetch/api/basic/keepalive.any.html is a constant failure.\nhttps://bugs.webkit.org/show_bug.cgi?id=325316\nrdar://188427760\n\nReviewed by Alex Christensen.\n\nThis patch fixes 3 issues that prevent unload handlers from running when a cross-site iframe is r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T18:46:51.118957+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e53548c666f1c76cb8d47f34be68e7fc4a25f84",
+    "url": "https://github.com/WebKit/WebKit/commit/5e53548c666f1c76cb8d47f34be68e7fc4a25f84",
+    "message": "[JSC] Move the marking constraint set to the Collector\nhttps://bugs.webkit.org/show_bug.cgi?id=325513\nrdar://188601461\n\nReviewed by Vassili Bykov.\n\nThe constraint set is what a collection's fixpoint converges, and once a Collector marks more than one\nheap its constraints are no longer one heap's. Mo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
