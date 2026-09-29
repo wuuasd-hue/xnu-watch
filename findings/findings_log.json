@@ -72817,5 +72817,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T22:43:06.901160+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "edb44235bc74326f3b2305c001ec046824b0d383",
+    "url": "https://github.com/WebKit/WebKit/commit/edb44235bc74326f3b2305c001ec046824b0d383",
+    "message": "Unreviewed, reverting 322197@main (06d713139e10)\nhttps://bugs.webkit.org/show_bug.cgi?id=325503\nrdar://188592338\n\nAssemblerBuffer grows unbounded and is not freed for the process lifetime\n\nReverted change:\n\n    Unreviewed, reverting 322189@main (6e9eb5b8025f)\n    https://bugs.webkit.org/show_bug.cgi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T22:43:44.569234+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06d713139e10c0be239a569386ae5c163591f1f2",
+    "url": "https://github.com/WebKit/WebKit/commit/06d713139e10c0be239a569386ae5c163591f1f2",
+    "message": "Unreviewed, reverting 322189@main (6e9eb5b8025f)\nhttps://bugs.webkit.org/show_bug.cgi?id=325699\nrdar://188592338\n\nAssemblerBuffer should use a 4MB limit, not 1MB\n\nReverted change:\n\n    AssemblerBuffer grows unbounded and is not freed for the process lifetime\n    https://bugs.webkit.org/show_bug.cgi?",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T22:44:22.600459+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e9eb5b8025fae93f9ebea958767d05652559c8e",
+    "url": "https://github.com/WebKit/WebKit/commit/6e9eb5b8025fae93f9ebea958767d05652559c8e",
+    "message": "AssemblerBuffer grows unbounded and is not freed for the process lifetime\nhttps://bugs.webkit.org/show_bug.cgi?id=325503\nrdar://188592338\n\nReviewed by Mark Lam and Dan Hecht.\n\nPreviously, one large compile could lead to inflating the web content\nprocess's overall memory consumption, as AssemblerBuff",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T22:45:00.739156+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "840c8efcbd1083173932f84a7c7fb22c374f8284",
+    "url": "https://github.com/WebKit/WebKit/commit/840c8efcbd1083173932f84a7c7fb22c374f8284",
+    "message": "[JSC] WASM debugger: qMemoryRegionInfo must describe a region, never error\nhttps://bugs.webkit.org/show_bug.cgi?id=325534\nrdar://188622450\n\nReviewed by Marcus Plutowski.\n\nThree fixes to the region-info paths, ahead of the multi-memory re-layout.\n\nAn Invalid-type address replied InvalidAddress. LLDB ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T22:45:38.603116+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2077ff8b9089b2f216f4cba982428f35e1844ea1",
+    "url": "https://github.com/WebKit/WebKit/commit/2077ff8b9089b2f216f4cba982428f35e1844ea1",
+    "message": "REGRESSION(316344@main): [iOS] Wallet pass delivered via data: URL navigation no longer opens Wallet\nhttps://bugs.webkit.org/show_bug.cgi?id=325353\nrdar://184582548\n\nReviewed by Brady Eidson.\n\nRevert 316344@main. It refused Download policy decisions for script-initiated data: URL\nnavigations, which ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
