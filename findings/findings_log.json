@@ -72337,5 +72337,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:39:23.986771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e53548c666f1c76cb8d47f34be68e7fc4a25f84",
+    "url": "https://github.com/WebKit/WebKit/commit/5e53548c666f1c76cb8d47f34be68e7fc4a25f84",
+    "message": "[JSC] Move the marking constraint set to the Collector\nhttps://bugs.webkit.org/show_bug.cgi?id=325513\nrdar://188601461\n\nReviewed by Vassili Bykov.\n\nThe constraint set is what a collection's fixpoint converges, and once a Collector marks more than one\nheap its constraints are no longer one heap's. Mo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:40:02.226564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "840c8efcbd1083173932f84a7c7fb22c374f8284",
+    "url": "https://github.com/WebKit/WebKit/commit/840c8efcbd1083173932f84a7c7fb22c374f8284",
+    "message": "[JSC] WASM debugger: qMemoryRegionInfo must describe a region, never error\nhttps://bugs.webkit.org/show_bug.cgi?id=325534\nrdar://188622450\n\nReviewed by Marcus Plutowski.\n\nThree fixes to the region-info paths, ahead of the multi-memory re-layout.\n\nAn Invalid-type address replied InvalidAddress. LLDB ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:40:40.280125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2077ff8b9089b2f216f4cba982428f35e1844ea1",
+    "url": "https://github.com/WebKit/WebKit/commit/2077ff8b9089b2f216f4cba982428f35e1844ea1",
+    "message": "REGRESSION(316344@main): [iOS] Wallet pass delivered via data: URL navigation no longer opens Wallet\nhttps://bugs.webkit.org/show_bug.cgi?id=325353\nrdar://184582548\n\nReviewed by Brady Eidson.\n\nRevert 316344@main. It refused Download policy decisions for script-initiated data: URL\nnavigations, which ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:41:18.325077+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e9f2cf896959ec35ce49b0458b2b1bcfbd301e86",
+    "url": "https://github.com/WebKit/WebKit/commit/e9f2cf896959ec35ce49b0458b2b1bcfbd301e86",
+    "message": "Failed speculative prefetches should not fail actual navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=325519\nrdar://188119964\n\nReviewed by Abrar Rahman Protyasha.\n\nOtherwise we get weird behavior, like websites asking to download\nspeculated loads.\n\nTest: Tools/TestWebKitAPI/Tests/WebKit/WKWebView",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:41:57.396241+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "93ebfacfd7a74429f97737a55af0814124b8ace7",
+    "url": "https://github.com/WebKit/WebKit/commit/93ebfacfd7a74429f97737a55af0814124b8ace7",
+    "message": "[JSC] Make line and column lookups safe off the main thread\nhttps://bugs.webkit.org/show_bug.cgi?id=324838\nrdar://188395337\n\nReviewed by Yusuke Suzuki.\n\nThe recent PR https://github.com/WebKit/WebKit/pull/74359 revised source location tracking to\nonly save source offsets, and to compute line and col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-29T00:42:35.981820+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f62059d5478ef72d7664a23d03b86cea921c300a",
+    "url": "https://github.com/WebKit/WebKit/commit/f62059d5478ef72d7664a23d03b86cea921c300a",
+    "message": "[JSC] Unify and extract JSONCache\nhttps://bugs.webkit.org/show_bug.cgi?id=325483\nrdar://188575025\n\nReviewed by Keith Miller.\n\nExtract JSONAtomStringCache and JSONTransitionCache from VM to\nheap-allocated JSONCache. This is a preparation to extend this mechanism\nfurther to accelerate JSON operations.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
