@@ -73317,5 +73317,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T23:14:49.246067+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "523f2e2ae2618de1e4fcdf591f6ca48cda64bdd6",
+    "url": "https://github.com/WebKit/WebKit/commit/523f2e2ae2618de1e4fcdf591f6ca48cda64bdd6",
+    "message": "Unreviewed, build fix\nhttps://bugs.webkit.org/show_bug.cgi?id=325860\nrdar://188856851\n\nFix after 322314@main.\n\n* Source/JavaScriptCore/runtime/ParseInt.h:\n\nCanonical link: https://commits.webkit.org/322327@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T23:15:29.830745+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1df0dac22dfe8c98fb3be73994de88280f8be51e",
+    "url": "https://github.com/WebKit/WebKit/commit/1df0dac22dfe8c98fb3be73994de88280f8be51e",
+    "message": "[JSC] Heuristically avoid resolving ropes for parseInt\nhttps://bugs.webkit.org/show_bug.cgi?id=325765\nrdar://188779741\n\nReviewed by Yijia Huang.\n\nThe key is that parseInt will accept very short string, this indirectly\nmeans that probably resolved string for the input should be small enough\nthen we c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T23:16:14.521942+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "0fcad6fb60755587d39a758761b219bf433cf9dc",
+    "url": "https://github.com/swiftlang/swift/commit/0fcad6fb60755587d39a758761b219bf433cf9dc",
+    "message": "Merge pull request #92593 from mikeash/ptrauth-sign-conformance-cache\n\n[Runtime] Sign the pointers in the protocol conformance cache.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T23:16:55.456807+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b8945eb2957c8e6ff665384a53cd16cf0a4e7fcb",
+    "url": "https://github.com/swiftlang/swift/commit/b8945eb2957c8e6ff665384a53cd16cf0a4e7fcb",
+    "message": "Merge pull request #92626 from swiftlang/rebranch\n\nMerge rebranch into main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T23:17:34.262560+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8cb35beacac025207d52d9cb86b058149e178b3",
+    "url": "https://github.com/WebKit/WebKit/commit/c8cb35beacac025207d52d9cb86b058149e178b3",
+    "message": "[libpas] Use tagged_bmalloc_heap for MTE allocations\nhttps://bugs.webkit.org/show_bug.cgi?id=317893\nrdar://180668556\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nPreviously, the tagged_bmalloc_heap was compiled in but unused. This\npatch enables it. In brief, this hoists the 'compactness' of objects\nou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
