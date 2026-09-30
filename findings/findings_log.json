@@ -73117,5 +73117,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:17:36.544538+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce9608ae41dd60e2c2df8b6d7b2eb49eada96b30",
+    "url": "https://github.com/WebKit/WebKit/commit/ce9608ae41dd60e2c2df8b6d7b2eb49eada96b30",
+    "message": "Add UTF8CString::unsafeFromUTF8() and UTF8CString::fromUTF8()\nhttps://bugs.webkit.org/show_bug.cgi?id=325748\n\nReviewed by Yusuke Suzuki.\n\nConstructing a UTF8CString from the output of a C function, which is typed\nas char, required a byteCast<char8_t>() at the call site. Add named factory\nfunctions t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:18:17.394183+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71d329770b1579eaa652d2ae023f47001c1f9b4a",
+    "url": "https://github.com/WebKit/WebKit/commit/71d329770b1579eaa652d2ae023f47001c1f9b4a",
+    "message": "[JSC] Read length when constructing a TypedArray from a Proxy array-like\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325491\n\nReviewed by Keith Miller.\n\nA Proxy of a plain object has no @@iterator, so the TypedArray\nconstructor takes the array-like path. That path asked for \"length\"\nwith VMInquiry, whic",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:18:55.535202+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d29218b6deb2d15b064dd44d647bea4415cf2370",
+    "url": "https://github.com/WebKit/WebKit/commit/d29218b6deb2d15b064dd44d647bea4415cf2370",
+    "message": "[JSC] Add JSArray::fastSplice\nrdar://188758890\n\nReviewed by Sosuke Suzuki.\n\nThis patch implements JSArray::fastSplice, this is extremely fast path\nfor splice operation.\n\n1. Array is Int32, Contiguous, Double.\n2. holesMustForwardToPrototype is false.\n\nWe will attempt to take a fast path without copyi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:19:33.347093+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db86e0961a4d5223763ca966f305140b1aae273f",
+    "url": "https://github.com/WebKit/WebKit/commit/db86e0961a4d5223763ca966f305140b1aae273f",
+    "message": "[JSC] MakeRope should support StringOrOther when it is allowed\nhttps://bugs.webkit.org/show_bug.cgi?id=325751\nrdar://188770770\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends MakeRope conversion to support StringOrOther as we\ncan frequently see that the passed value is String|undefined when\nstring[i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:20:11.712373+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4b3653d2ed3c8e5b98dd3f752fd4a305d4756b20",
+    "url": "https://github.com/WebKit/WebKit/commit/4b3653d2ed3c8e5b98dd3f752fd4a305d4756b20",
+    "message": "Stop converting strings to lossy ASCII for logging\nhttps://bugs.webkit.org/show_bug.cgi?id=325477\n\nReviewed by Darin Adler.\n\nMany logging call sites pass String::ascii().data() because ASCIICString::data() is already a\nconst char*. ascii() replaces every non-ASCII character with '?', so URLs, origin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T14:20:49.528063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7fbe85cfbfdc709c1d4c784a936905a78a2a2138",
+    "url": "https://github.com/WebKit/WebKit/commit/7fbe85cfbfdc709c1d4c784a936905a78a2a2138",
+    "message": "[JSC] Tagged template with a parenthesized optional chain tag should keep `this`\nhttps://bugs.webkit.org/show_bug.cgi?id=325401\n\nReviewed by Yusuke Suzuki.\n\n    const o = { b() { return this; } };\n    (o?.b)`x`; // undefined, should be o\n\n321867@main made `(a?.b)(x)` call the function with `a` as `t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
