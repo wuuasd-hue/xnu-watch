@@ -73237,5 +73237,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T19:31:09.364756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "240fe1fc636cb10b9dc723bcc9f9b273b6038b70",
+    "url": "https://github.com/WebKit/WebKit/commit/240fe1fc636cb10b9dc723bcc9f9b273b6038b70",
+    "message": "[JSC] Don't use a module namespace length binding as a TypedArray length\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325491\n\nReviewed by Yusuke Suzuki.\n\nVMInquiry taints both a Proxy and a module namespace. The Proxy fix\nthen read \"length\" for every tainted object, so a namespace export\nnamed length be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T19:31:47.080922+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a51624926894020f4edb58d37cf9be69d8ae1aa6",
+    "url": "https://github.com/WebKit/WebKit/commit/a51624926894020f4edb58d37cf9be69d8ae1aa6",
+    "message": "[JSC] Remove GCRequest's unused didFinishEndPhase callback\nhttps://bugs.webkit.org/show_bug.cgi?id=325776\nrdar://188787440\n\nReviewed by Marcus Plutowski and Tadeu Zagallo.\n\nA Collector that marks more than one Heap will take collection requests from\neach of them, and a request will likely need to sa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T19:32:25.208844+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bef9d7e632940bd8daf7b74789be91a2a76c3023",
+    "url": "https://github.com/WebKit/WebKit/commit/bef9d7e632940bd8daf7b74789be91a2a76c3023",
+    "message": "[JSC] Quickly reject ToNumber(\"non-number-string\")\nhttps://bugs.webkit.org/show_bug.cgi?id=325591\nrdar://188664175\n\nReviewed by Vassili Bykov.\n\nAdd quick rejection path to ToNumber(\"non-number-string\") as it is\nfrequently happening.\n\nTest: JSTests/stress/to-number-string-first-character.js\n\n* JSTest",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T19:33:03.133125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb512fb75f60bca15b6106b73a55f4a60633fbd9",
+    "url": "https://github.com/WebKit/WebKit/commit/fb512fb75f60bca15b6106b73a55f4a60633fbd9",
+    "message": "[JSC] Store the `ValueReps` of FTL OSR exits in the exit stream\nhttps://bugs.webkit.org/show_bug.cgi?id=325463\n\nReviewed by Yusuke Suzuki.\n\n321991@main stored FTL OSR exits as an FTL::OSRExitStream, but where B3\nplaced the exit arguments of the exits stayed in another byte stream of the\nJITCode, and",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
