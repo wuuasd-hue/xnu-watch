@@ -72917,5 +72917,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T01:40:37.484620+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01e2533964dcca4708831d36eae6c7251dd41ec6",
+    "url": "https://github.com/WebKit/WebKit/commit/01e2533964dcca4708831d36eae6c7251dd41ec6",
+    "message": "[JSC] Mark non-escaping lambda parameters as NOESCAPE\nhttps://bugs.webkit.org/show_bug.cgi?id=325622\n\nReviewed by Yusuke Suzuki.\n\nAnnotate callable parameters that are only invoked synchronously and never\nstored with NOESCAPE, so that safer-cpp's UncountedLambdaCapturesChecker no\nlonger requires cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T01:41:15.247933+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e27303e85c71c62f0685dceecafea5c657a126e",
+    "url": "https://github.com/WebKit/WebKit/commit/3e27303e85c71c62f0685dceecafea5c657a126e",
+    "message": "[JSC] Intl.Segmenter containing() should stay on a supplementary boundary\nhttps://bugs.webkit.org/show_bug.cgi?id=324036\n\nReviewed by Yusuke Suzuki.\n\ncontaining(n) asked ICU for the boundary before n + 1. When n is the lead\nsurrogate of a segment, n + 1 is the trail, and ubrk_preceding steps back\nto",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T01:41:52.917308+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6448e98fedb78008de003391bf0a71922a39ba04",
+    "url": "https://github.com/WebKit/WebKit/commit/6448e98fedb78008de003391bf0a71922a39ba04",
+    "message": "Add C++ wrappers for GLib functions that take UTF-8 strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325576\n\nReviewed by Claudio Saavedra.\n\nGLib code unwrapped UTF8CStrings with legacyCStringPointer() at hundreds of call sites, mostly\nto pass them to a handful of GLib functions. Add wtf/glib/GLibExtr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T01:42:30.686007+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e9f2cf896959ec35ce49b0458b2b1bcfbd301e86",
+    "url": "https://github.com/WebKit/WebKit/commit/e9f2cf896959ec35ce49b0458b2b1bcfbd301e86",
+    "message": "Failed speculative prefetches should not fail actual navigations\nhttps://bugs.webkit.org/show_bug.cgi?id=325519\nrdar://188119964\n\nReviewed by Abrar Rahman Protyasha.\n\nOtherwise we get weird behavior, like websites asking to download\nspeculated loads.\n\nTest: Tools/TestWebKitAPI/Tests/WebKit/WKWebView",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-09-30T01:43:08.545885+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3941d977dc3a54b6c1af943ce46dd3210b345bdf",
+    "url": "https://github.com/WebKit/WebKit/commit/3941d977dc3a54b6c1af943ce46dd3210b345bdf",
+    "message": "[Safer CPP] Address more static analysis warnings in WebCore/\nhttps://bugs.webkit.org/show_bug.cgi?id=325468\n\nReviewed by Anne van Kesteren.\n\nSVGPropertyOwnerRegistry stored its owner as a raw `OwnerType&` member (119 warnings). It cannot\nhold a WeakRef instead: the registry is created in the argume",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
