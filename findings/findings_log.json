@@ -73417,5 +73417,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T02:14:35.273478+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a506af486d6b9133df03391980faf0629c7f47a8",
+    "url": "https://github.com/WebKit/WebKit/commit/a506af486d6b9133df03391980faf0629c7f47a8",
+    "message": "Add C++ wrappers for POSIX functions that take UTF-8 paths\nhttps://bugs.webkit.org/show_bug.cgi?id=325773\n\nReviewed by Mike Wyrzykowski.\n\nCode that passed a UTF8CString to a POSIX file function had to unwrap it with legacyCStringPointer().\nAdd wtf/posix/POSIXExtras.h with wrappers that take a UTF8CS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T02:15:12.427558+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64baa91531461afd210795068a7bff5b2ebf5dc4",
+    "url": "https://github.com/WebKit/WebKit/commit/64baa91531461afd210795068a7bff5b2ebf5dc4",
+    "message": "[JSC] Don't visit CFA-unreachable blocks in ConstantFoldingPhase\nhttps://bugs.webkit.org/show_bug.cgi?id=325835\nrdar://187976312\n\nReviewed by Yusuke Suzuki.\n\nA CFA-unreachable block will have all its AI values be bottom (None), which may\ntrip debug asserts like the array materialization indexing typ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T02:15:49.726357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5330149c555921d5eefddaa34d3c8a6a1fbd55ce",
+    "url": "https://github.com/WebKit/WebKit/commit/5330149c555921d5eefddaa34d3c8a6a1fbd55ce",
+    "message": "[JSC] Iterate Strings without allocating a `JSStringIterator`\nhttps://bugs.webkit.org/show_bug.cgi?id=325452\n\nReviewed by Yusuke Suzuki.\n\n321765@main stopped allocating a JSArrayIterator in FastArray mode by keeping\nthe state of the iteration in registers. FastString mode (for-of and\ndestructuring o",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T02:16:26.998900+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01fd9b2e3a9135c8d42736380540cddf8ac56496",
+    "url": "https://github.com/WebKit/WebKit/commit/01fd9b2e3a9135c8d42736380540cddf8ac56496",
+    "message": "Fix new compiler warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=325590\nrdar://188664034\n\nUnreviewed build fix.\n\nFix -Wunused-template,  -Wunused-but-set-global and -Wobjc-property-no-attribute.\n\n* Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipCullDistanceVariable.cpp:\n* Sour",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
