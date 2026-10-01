@@ -73657,5 +73657,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T21:26:45.653620+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "696c406fe52267891404c045028f727184c68cb2",
+    "url": "https://github.com/WebKit/WebKit/commit/696c406fe52267891404c045028f727184c68cb2",
+    "message": "[JSC] Build the stack string for Error.captureStackTrace() lazily\nhttps://bugs.webkit.org/show_bug.cgi?id=325578\nrdar://188656702\n\nReviewed by Yusuke Suzuki.\n\nError.captureStackTrace() stores the stack trace string in the argument object as the \"stack\"\nproperty. It is a common idiom for this functio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T21:27:25.910149+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c59d70e267eb709e91bfc70153c33fc2f7cd7a4f",
+    "url": "https://github.com/WebKit/WebKit/commit/c59d70e267eb709e91bfc70153c33fc2f7cd7a4f",
+    "message": "[JSC] Cache decoded ExpressionInfo entries, build line start tables in one pass\nhttps://bugs.webkit.org/show_bug.cgi?id=325559\nrdar://188641639\n\nReviewed by Yusuke Suzuki.\n\nEarlier PR https://github.com/WebKit/WebKit/pull/74359 stopped storing line and column numbers\nin ExpressionInfo and removed th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T21:28:06.492783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "01e2533964dcca4708831d36eae6c7251dd41ec6",
+    "url": "https://github.com/WebKit/WebKit/commit/01e2533964dcca4708831d36eae6c7251dd41ec6",
+    "message": "[JSC] Mark non-escaping lambda parameters as NOESCAPE\nhttps://bugs.webkit.org/show_bug.cgi?id=325622\n\nReviewed by Yusuke Suzuki.\n\nAnnotate callable parameters that are only invoked synchronously and never\nstored with NOESCAPE, so that safer-cpp's UncountedLambdaCapturesChecker no\nlonger requires cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T21:28:44.225861+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e27303e85c71c62f0685dceecafea5c657a126e",
+    "url": "https://github.com/WebKit/WebKit/commit/3e27303e85c71c62f0685dceecafea5c657a126e",
+    "message": "[JSC] Intl.Segmenter containing() should stay on a supplementary boundary\nhttps://bugs.webkit.org/show_bug.cgi?id=324036\n\nReviewed by Yusuke Suzuki.\n\ncontaining(n) asked ICU for the boundary before n + 1. When n is the lead\nsurrogate of a segment, n + 1 is the trail, and ubrk_preceding steps back\nto",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
