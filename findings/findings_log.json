@@ -73497,5 +73497,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T09:08:12.086915+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c95c0ba164f97fb789aa5db695cd7bec1791ad79",
+    "url": "https://github.com/WebKit/WebKit/commit/c95c0ba164f97fb789aa5db695cd7bec1791ad79",
+    "message": "[Safer CPP] Address more warnings in Source/WebKitLegacy\nhttps://bugs.webkit.org/show_bug.cgi?id=325790\n\nReviewed by Anne van Kesteren.\n\nAddress most static analysis warnings in mac/WebCoreSupport, ios/WebCoreSupport and mac/Misc.\n\nMake exported NSString globals `const` so the static analyzer trusts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T09:08:49.102178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b46c2cfc57bf2b603fccc05c6722f797c7aee080",
+    "url": "https://github.com/WebKit/WebKit/commit/b46c2cfc57bf2b603fccc05c6722f797c7aee080",
+    "message": "Add SAFE_G_* macros for printf-style GLib functions that take UTF-8 strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325742\n\nReviewed by Claudio Saavedra.\n\nGLib code still unwrapped UTF8CStrings with legacyCStringPointer() to pass them to printf-style\nGLib functions. Add SAFE_G_STRDUP_PRINTF(), SAFE_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T09:09:27.347080+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ef3e2eb29bf68df3e3072ec6431fd6e7d61f99f",
+    "url": "https://github.com/WebKit/WebKit/commit/9ef3e2eb29bf68df3e3072ec6431fd6e7d61f99f",
+    "message": "Avoid `haveABadTime()` when a prototype's chain already intercepts indexed accesses\nhttps://bugs.webkit.org/show_bug.cgi?id=325587\nrdar://188662224\n\nReviewed by Yusuke Suzuki.\n\nJSObject::setPrototypeDirect() calls haveABadTime() whenever a prototype gets a chain that may\nintercept indexed accesses. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T09:10:04.365536+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "edb44235bc74326f3b2305c001ec046824b0d383",
+    "url": "https://github.com/WebKit/WebKit/commit/edb44235bc74326f3b2305c001ec046824b0d383",
+    "message": "Unreviewed, reverting 322197@main (06d713139e10)\nhttps://bugs.webkit.org/show_bug.cgi?id=325503\nrdar://188592338\n\nAssemblerBuffer grows unbounded and is not freed for the process lifetime\n\nReverted change:\n\n    Unreviewed, reverting 322189@main (6e9eb5b8025f)\n    https://bugs.webkit.org/show_bug.cgi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
