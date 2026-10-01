@@ -73577,5 +73577,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T16:33:57.882162+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3c92619498dc6f6b26f09d8b84c895a2a66e611",
+    "url": "https://github.com/WebKit/WebKit/commit/d3c92619498dc6f6b26f09d8b84c895a2a66e611",
+    "message": "[JSC] Clean up the boundary between the Collector and the Heap at the end of a collection\nhttps://bugs.webkit.org/show_bug.cgi?id=325862\nrdar://188858563\n\nReviewed by Yusuke Suzuki.\n\nCollector::runEndPhase() did most of the heap's end-of-collection work itself,\nreaching into the Heap 45 times: its v",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T16:34:35.428635+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5297538c7daa8e3f87cced4bc68c9a261d1b657c",
+    "url": "https://github.com/WebKit/WebKit/commit/5297538c7daa8e3f87cced4bc68c9a261d1b657c",
+    "message": "[JSC] Move the request queue checks and the mutator's phase loop from the Heap into the Collector\nhttps://bugs.webkit.org/show_bug.cgi?id=325825\nrdar://188834063\n\nReviewed by Yijia Huang.\n\nHeap read the Collector's request queue directly: to skip a request that a\nqueued one already covers, to decide",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T16:35:13.024170+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06d713139e10c0be239a569386ae5c163591f1f2",
+    "url": "https://github.com/WebKit/WebKit/commit/06d713139e10c0be239a569386ae5c163591f1f2",
+    "message": "Unreviewed, reverting 322189@main (6e9eb5b8025f)\nhttps://bugs.webkit.org/show_bug.cgi?id=325699\nrdar://188592338\n\nAssemblerBuffer should use a 4MB limit, not 1MB\n\nReverted change:\n\n    AssemblerBuffer grows unbounded and is not freed for the process lifetime\n    https://bugs.webkit.org/show_bug.cgi?",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-01T16:35:52.180053+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e9eb5b8025fae93f9ebea958767d05652559c8e",
+    "url": "https://github.com/WebKit/WebKit/commit/6e9eb5b8025fae93f9ebea958767d05652559c8e",
+    "message": "AssemblerBuffer grows unbounded and is not freed for the process lifetime\nhttps://bugs.webkit.org/show_bug.cgi?id=325503\nrdar://188592338\n\nReviewed by Mark Lam and Dan Hecht.\n\nPreviously, one large compile could lead to inflating the web content\nprocess's overall memory consumption, as AssemblerBuff",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
