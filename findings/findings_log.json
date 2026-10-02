@@ -73837,5 +73837,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T12:58:33.068221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2dc02450f272ecf43f18c645171e31eba942f4f7",
+    "url": "https://github.com/WebKit/WebKit/commit/2dc02450f272ecf43f18c645171e31eba942f4f7",
+    "message": "RemoteInspector::setup: Ignore Setup for a target that already has a connection\nhttps://bugs.webkit.org/show_bug.cgi?id=326023\n\nReviewed by Devin Rousso.\n\nThe Cocoa implementation (RemoteInspector::receivedSetupMessage in\ncocoa/RemoteInspectorCocoa.mm) ignores a Setup message for a target that\nalrea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T12:59:10.867245+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ce9608ae41dd60e2c2df8b6d7b2eb49eada96b30",
+    "url": "https://github.com/WebKit/WebKit/commit/ce9608ae41dd60e2c2df8b6d7b2eb49eada96b30",
+    "message": "Add UTF8CString::unsafeFromUTF8() and UTF8CString::fromUTF8()\nhttps://bugs.webkit.org/show_bug.cgi?id=325748\n\nReviewed by Yusuke Suzuki.\n\nConstructing a UTF8CString from the output of a C function, which is typed\nas char, required a byteCast<char8_t>() at the call site. Add named factory\nfunctions t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T12:59:48.349194+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71d329770b1579eaa652d2ae023f47001c1f9b4a",
+    "url": "https://github.com/WebKit/WebKit/commit/71d329770b1579eaa652d2ae023f47001c1f9b4a",
+    "message": "[JSC] Read length when constructing a TypedArray from a Proxy array-like\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325491\n\nReviewed by Keith Miller.\n\nA Proxy of a plain object has no @@iterator, so the TypedArray\nconstructor takes the array-like path. That path asked for \"length\"\nwith VMInquiry, whic",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
