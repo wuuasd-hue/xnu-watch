@@ -73797,5 +73797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T06:29:04.497198+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b84d4156a5d2237ec4b49ae8d0eaf798e7229a8e",
+    "url": "https://github.com/WebKit/WebKit/commit/b84d4156a5d2237ec4b49ae8d0eaf798e7229a8e",
+    "message": "[Safer CPP] Address post-landing review feedback from David Kilzer after 322130@main\nhttps://bugs.webkit.org/show_bug.cgi?id=325609\n\nReviewed by David Kilzer.\n\nSVGPropertyOwnerRegistry is stateless, so each registry type now has one shared singleton()\ninstead of a heap allocation per SVG element. SV",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T06:29:41.561005+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4356bc5514b026ad702eabfad1e6b0441f1cb64c",
+    "url": "https://github.com/WebKit/WebKit/commit/4356bc5514b026ad702eabfad1e6b0441f1cb64c",
+    "message": "Use SAFE_* printf macros in more places that print strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325592\n\nReviewed by Darin Adler.\n\nSwitch printf, fprintf, snprintf and dataLogF call sites that unwrap a string\nto a raw pointer with characters(), data() or legacyCStringPointer() over to\nSAFE_PRINTF(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
