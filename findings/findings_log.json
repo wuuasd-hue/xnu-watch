@@ -73897,5 +73897,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T18:10:03.310410+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c4284a07df5588ca03abf283e1cf9152ca1666a",
+    "url": "https://github.com/WebKit/WebKit/commit/0c4284a07df5588ca03abf283e1cf9152ca1666a",
+    "message": "Going back to a POST page reports a spurious provisional load failure when the cache-only load misses\nhttps://bugs.webkit.org/show_bug.cgi?id=325937\n\nReviewed by Basuke Suzuki.\n\nWhen going back to a form submission, FrameLoader first attempts a cache-only load. If that\nmisses, retryAfterFailedCacheO",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T18:10:43.811138+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d29218b6deb2d15b064dd44d647bea4415cf2370",
+    "url": "https://github.com/WebKit/WebKit/commit/d29218b6deb2d15b064dd44d647bea4415cf2370",
+    "message": "[JSC] Add JSArray::fastSplice\nrdar://188758890\n\nReviewed by Sosuke Suzuki.\n\nThis patch implements JSArray::fastSplice, this is extremely fast path\nfor splice operation.\n\n1. Array is Int32, Contiguous, Double.\n2. holesMustForwardToPrototype is false.\n\nWe will attempt to take a fast path without copyi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T18:11:20.941443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db86e0961a4d5223763ca966f305140b1aae273f",
+    "url": "https://github.com/WebKit/WebKit/commit/db86e0961a4d5223763ca966f305140b1aae273f",
+    "message": "[JSC] MakeRope should support StringOrOther when it is allowed\nhttps://bugs.webkit.org/show_bug.cgi?id=325751\nrdar://188770770\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends MakeRope conversion to support StringOrOther as we\ncan frequently see that the passed value is String|undefined when\nstring[i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
