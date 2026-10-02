@@ -73957,5 +73957,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T22:23:30.664017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ea49531186e6aff38e635b7c043c325ed2a3fda",
+    "url": "https://github.com/WebKit/WebKit/commit/2ea49531186e6aff38e635b7c043c325ed2a3fda",
+    "message": "[CMake] Hide Objective-C and Objective-C++ symbols by default on Cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=325732\n\nReviewed by Zak Ridouh.\n\nXcode hides symbols by default in every language (GCC_SYMBOLS_PRIVATE_EXTERN),\nbut CMake did so only for C and C++, and hid inline functions only in C++. So",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T22:24:08.905382+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "5ade56509d0e50d822d42d2fcf7e3efe30b6ab5d",
+    "url": "https://github.com/swiftlang/swift/commit/5ade56509d0e50d822d42d2fcf7e3efe30b6ab5d",
+    "message": "Merge pull request #92611 from tbkka/tbkka-borrowing-is-runtime\n\n[any ~Copyable] Allow test-only `is` for many more cases",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T22:24:46.718884+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "240fe1fc636cb10b9dc723bcc9f9b273b6038b70",
+    "url": "https://github.com/WebKit/WebKit/commit/240fe1fc636cb10b9dc723bcc9f9b273b6038b70",
+    "message": "[JSC] Don't use a module namespace length binding as a TypedArray length\n\nhttps://bugs.webkit.org/show_bug.cgi?id=325491\n\nReviewed by Yusuke Suzuki.\n\nVMInquiry taints both a Proxy and a module namespace. The Proxy fix\nthen read \"length\" for every tainted object, so a namespace export\nnamed length be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-02T22:25:24.283770+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a51624926894020f4edb58d37cf9be69d8ae1aa6",
+    "url": "https://github.com/WebKit/WebKit/commit/a51624926894020f4edb58d37cf9be69d8ae1aa6",
+    "message": "[JSC] Remove GCRequest's unused didFinishEndPhase callback\nhttps://bugs.webkit.org/show_bug.cgi?id=325776\nrdar://188787440\n\nReviewed by Marcus Plutowski and Tadeu Zagallo.\n\nA Collector that marks more than one Heap will take collection requests from\neach of them, and a request will likely need to sa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
