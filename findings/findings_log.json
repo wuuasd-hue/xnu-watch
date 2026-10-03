@@ -74397,5 +74397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T22:30:19.983803+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c59d70e267eb709e91bfc70153c33fc2f7cd7a4f",
+    "url": "https://github.com/WebKit/WebKit/commit/c59d70e267eb709e91bfc70153c33fc2f7cd7a4f",
+    "message": "[JSC] Cache decoded ExpressionInfo entries, build line start tables in one pass\nhttps://bugs.webkit.org/show_bug.cgi?id=325559\nrdar://188641639\n\nReviewed by Yusuke Suzuki.\n\nEarlier PR https://github.com/WebKit/WebKit/pull/74359 stopped storing line and column numbers\nin ExpressionInfo and removed th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T22:30:58.385208+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b071cfab287ac1ec66a98171f1bad1d6845f3c77",
+    "url": "https://github.com/WebKit/WebKit/commit/b071cfab287ac1ec66a98171f1bad1d6845f3c77",
+    "message": "[JSC] Add Burnikel-Ziegler division to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=325444\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt divides with Knuth's Algorithm D, whose cost is the product of the\nlengths of the quotient and the divisor. Dividing 15999 digits by 8000 digits\ntakes 64.6 ms, while",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
