@@ -74297,5 +74297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T16:32:56.574905+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b46c2cfc57bf2b603fccc05c6722f797c7aee080",
+    "url": "https://github.com/WebKit/WebKit/commit/b46c2cfc57bf2b603fccc05c6722f797c7aee080",
+    "message": "Add SAFE_G_* macros for printf-style GLib functions that take UTF-8 strings\nhttps://bugs.webkit.org/show_bug.cgi?id=325742\n\nReviewed by Claudio Saavedra.\n\nGLib code still unwrapped UTF8CStrings with legacyCStringPointer() to pass them to printf-style\nGLib functions. Add SAFE_G_STRDUP_PRINTF(), SAFE_",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T16:33:34.194722+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3c92619498dc6f6b26f09d8b84c895a2a66e611",
+    "url": "https://github.com/WebKit/WebKit/commit/d3c92619498dc6f6b26f09d8b84c895a2a66e611",
+    "message": "[JSC] Clean up the boundary between the Collector and the Heap at the end of a collection\nhttps://bugs.webkit.org/show_bug.cgi?id=325862\nrdar://188858563\n\nReviewed by Yusuke Suzuki.\n\nCollector::runEndPhase() did most of the heap's end-of-collection work itself,\nreaching into the Heap 45 times: its v",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
