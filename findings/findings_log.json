@@ -74337,5 +74337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T19:33:54.567508+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7c1eda41a7628f9168d787b9735d4f008f64f96",
+    "url": "https://github.com/WebKit/WebKit/commit/a7c1eda41a7628f9168d787b9735d4f008f64f96",
+    "message": "REGRESSION(308608@main): [GLib] JSCCallbackFunction::construct() builds the arguments span with the wrong size\nhttps://bugs.webkit.org/show_bug.cgi?id=326077\n\nReviewed by Patrick Griffis.\n\nThe span over the JSValueRef array is sized by parameterCount, but the\narray has argumentCount elements. Every ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T19:34:32.102359+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5297538c7daa8e3f87cced4bc68c9a261d1b657c",
+    "url": "https://github.com/WebKit/WebKit/commit/5297538c7daa8e3f87cced4bc68c9a261d1b657c",
+    "message": "[JSC] Move the request queue checks and the mutator's phase loop from the Heap into the Collector\nhttps://bugs.webkit.org/show_bug.cgi?id=325825\nrdar://188834063\n\nReviewed by Yijia Huang.\n\nHeap read the Collector's request queue directly: to skip a request that a\nqueued one already covers, to decide",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T19:35:09.721031+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "696c406fe52267891404c045028f727184c68cb2",
+    "url": "https://github.com/WebKit/WebKit/commit/696c406fe52267891404c045028f727184c68cb2",
+    "message": "[JSC] Build the stack string for Error.captureStackTrace() lazily\nhttps://bugs.webkit.org/show_bug.cgi?id=325578\nrdar://188656702\n\nReviewed by Yusuke Suzuki.\n\nError.captureStackTrace() stores the stack trace string in the argument object as the \"stack\"\nproperty. It is a common idiom for this functio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
