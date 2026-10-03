@@ -74037,5 +74037,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:15:32.353499+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "491a3d387b66906bfbae9973d01f4061b187c623",
+    "url": "https://github.com/WebKit/WebKit/commit/491a3d387b66906bfbae9973d01f4061b187c623",
+    "message": "[Navigation API] Return the navigate event dispatch result through FrameLoader instead of a bool\nhttps://bugs.webkit.org/show_bug.cgi?id=326112\nrdar://189026250\n\nReviewed by Alex Christensen.\n\nNavigation::innerDispatchNavigateEvent() returns a DispatchResult enum, but\ndispatchPushReplaceReloadNaviga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:16:09.608599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94de22268a7e3bdb387acaa5f6de0130d027bdc3",
+    "url": "https://github.com/WebKit/WebKit/commit/94de22268a7e3bdb387acaa5f6de0130d027bdc3",
+    "message": "[JSC] Use the right realm in ArrayBuffer constructor in DFG\nhttps://bugs.webkit.org/show_bug.cgi?id=326133\nrdar://188994606\n\nReviewed by Dan Hecht.\n\nBuiltin constructors like ArrayBuffer need to run in the realm in which they\nwere created. DFG speculatively bakes in the right structure on the fast p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:16:46.898790+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b98997507b77ea23f2b43c04a25b350b1dec9463",
+    "url": "https://github.com/WebKit/WebKit/commit/b98997507b77ea23f2b43c04a25b350b1dec9463",
+    "message": "[CMake] Install JavaScriptCore's framework.sb on macOS\nhttps://bugs.webkit.org/show_bug.cgi?id=325724\n\nReviewed by Richard Robinson.\n\nXcode installs framework.sb in JavaScriptCore.framework's Resources on macOS\nand excludes it on iOS. CMake only copied it on iOS.\n\n* Source/JavaScriptCore/PlatformCoc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:17:24.294362+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71b89186dc040a09d220dffb9f370649dc20a8fc",
+    "url": "https://github.com/WebKit/WebKit/commit/71b89186dc040a09d220dffb9f370649dc20a8fc",
+    "message": "[CMake] Use Platform.h-derived definitions of some options flags\nhttps://bugs.webkit.org/show_bug.cgi?id=325717\n\nReviewed by Zak Ridouh.\n\nSome macOS tests are broken because\nENABLE_DEVICE_ORIENTATION, ENABLE_NAVIGATOR_STANDALONE and\nENABLE_WEBDRIVER_BIDI follow the CMake default (OFF) instead of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:18:01.715899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "523f2e2ae2618de1e4fcdf591f6ca48cda64bdd6",
+    "url": "https://github.com/WebKit/WebKit/commit/523f2e2ae2618de1e4fcdf591f6ca48cda64bdd6",
+    "message": "Unreviewed, build fix\nhttps://bugs.webkit.org/show_bug.cgi?id=325860\nrdar://188856851\n\nFix after 322314@main.\n\n* Source/JavaScriptCore/runtime/ParseInt.h:\n\nCanonical link: https://commits.webkit.org/322327@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T01:18:39.308061+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1df0dac22dfe8c98fb3be73994de88280f8be51e",
+    "url": "https://github.com/WebKit/WebKit/commit/1df0dac22dfe8c98fb3be73994de88280f8be51e",
+    "message": "[JSC] Heuristically avoid resolving ropes for parseInt\nhttps://bugs.webkit.org/show_bug.cgi?id=325765\nrdar://188779741\n\nReviewed by Yijia Huang.\n\nThe key is that parseInt will accept very short string, this indirectly\nmeans that probably resolved string for the input should be small enough\nthen we c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
