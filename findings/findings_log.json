@@ -74157,5 +74157,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T06:39:54.125210+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20cb0ee48f9726d64fddd00a3a2c753394872f76",
+    "url": "https://github.com/WebKit/WebKit/commit/20cb0ee48f9726d64fddd00a3a2c753394872f76",
+    "message": "[Navigation API] preventDefault() does not cancel a cross-site navigation.navigate() that swaps processes\nhttps://bugs.webkit.org/show_bug.cgi?id=325553\nrdar://188636761\n\nReviewed by Alex Christensen.\n\nnavigation.navigate() used a synchronous navigation policy check (288106@main), whose reply falls\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T06:40:32.414206+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "0fcad6fb60755587d39a758761b219bf433cf9dc",
+    "url": "https://github.com/swiftlang/swift/commit/0fcad6fb60755587d39a758761b219bf433cf9dc",
+    "message": "Merge pull request #92593 from mikeash/ptrauth-sign-conformance-cache\n\n[Runtime] Sign the pointers in the protocol conformance cache.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T06:41:10.251319+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a506af486d6b9133df03391980faf0629c7f47a8",
+    "url": "https://github.com/WebKit/WebKit/commit/a506af486d6b9133df03391980faf0629c7f47a8",
+    "message": "Add C++ wrappers for POSIX functions that take UTF-8 paths\nhttps://bugs.webkit.org/show_bug.cgi?id=325773\n\nReviewed by Mike Wyrzykowski.\n\nCode that passed a UTF8CString to a POSIX file function had to unwrap it with legacyCStringPointer().\nAdd wtf/posix/POSIXExtras.h with wrappers that take a UTF8CS",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
