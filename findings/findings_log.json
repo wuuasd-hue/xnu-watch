@@ -74217,5 +74217,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T12:06:43.156619+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13a1f2916933547024ee020d94031096a41eb7cb",
+    "url": "https://github.com/WebKit/WebKit/commit/13a1f2916933547024ee020d94031096a41eb7cb",
+    "message": "[JSC] `JSBigInt::divideSchoolbook` should not allocate for Burnikel-Ziegler leaves\nhttps://bugs.webkit.org/show_bug.cgi?id=326174\n\nReviewed by Yusuke Suzuki.\n\ndivideSchoolbook copies the dividend into a Vector<Digit, 16> that is one\ndigit longer than the dividend. Burnikel-Ziegler division, added in",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T12:07:20.408899+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "07a51e2433958d4995841ab2fc0cfbf4115be7b6",
+    "url": "https://github.com/WebKit/WebKit/commit/07a51e2433958d4995841ab2fc0cfbf4115be7b6",
+    "message": "[JSC] Match repeated short JSON string values against the source text\nhttps://bugs.webkit.org/show_bug.cgi?id=326165\nrdar://189052025\n\nReviewed by Vassili Bykov.\n\nShort string values repeat heavily in JSON. This patch adds a 64-entry\ntable to JSONCache that maps a string value's source text, quotes\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T12:07:57.747185+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "64baa91531461afd210795068a7bff5b2ebf5dc4",
+    "url": "https://github.com/WebKit/WebKit/commit/64baa91531461afd210795068a7bff5b2ebf5dc4",
+    "message": "[JSC] Don't visit CFA-unreachable blocks in ConstantFoldingPhase\nhttps://bugs.webkit.org/show_bug.cgi?id=325835\nrdar://187976312\n\nReviewed by Yusuke Suzuki.\n\nA CFA-unreachable block will have all its AI values be bottom (None), which may\ntrip debug asserts like the array materialization indexing typ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-03T12:08:35.404819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c95c0ba164f97fb789aa5db695cd7bec1791ad79",
+    "url": "https://github.com/WebKit/WebKit/commit/c95c0ba164f97fb789aa5db695cd7bec1791ad79",
+    "message": "[Safer CPP] Address more warnings in Source/WebKitLegacy\nhttps://bugs.webkit.org/show_bug.cgi?id=325790\n\nReviewed by Anne van Kesteren.\n\nAddress most static analysis warnings in mac/WebCoreSupport, ios/WebCoreSupport and mac/Misc.\n\nMake exported NSString globals `const` so the static analyzer trusts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
