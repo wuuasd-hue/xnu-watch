@@ -74557,5 +74557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T13:22:36.896150+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "491a3d387b66906bfbae9973d01f4061b187c623",
+    "url": "https://github.com/WebKit/WebKit/commit/491a3d387b66906bfbae9973d01f4061b187c623",
+    "message": "[Navigation API] Return the navigate event dispatch result through FrameLoader instead of a bool\nhttps://bugs.webkit.org/show_bug.cgi?id=326112\nrdar://189026250\n\nReviewed by Alex Christensen.\n\nNavigation::innerDispatchNavigateEvent() returns a DispatchResult enum, but\ndispatchPushReplaceReloadNaviga",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T13:23:14.439974+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94de22268a7e3bdb387acaa5f6de0130d027bdc3",
+    "url": "https://github.com/WebKit/WebKit/commit/94de22268a7e3bdb387acaa5f6de0130d027bdc3",
+    "message": "[JSC] Use the right realm in ArrayBuffer constructor in DFG\nhttps://bugs.webkit.org/show_bug.cgi?id=326133\nrdar://188994606\n\nReviewed by Dan Hecht.\n\nBuiltin constructors like ArrayBuffer need to run in the realm in which they\nwere created. DFG speculatively bakes in the right structure on the fast p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
