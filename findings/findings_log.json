@@ -74437,5 +74437,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T01:47:01.270800+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615e180ef2c89d2dbf51dbc5e6187f5c7a268868",
+    "url": "https://github.com/WebKit/WebKit/commit/615e180ef2c89d2dbf51dbc5e6187f5c7a268868",
+    "message": "[JSC] Apply JSONCache NameTable caching to 16-bit source\nhttps://bugs.webkit.org/show_bug.cgi?id=326193\nrdar://189076480\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends JSONCache NameTable to make it applicable to 16-bit source.\nWe still keep 8-bit strings as name tends to be latin-1, but we accept\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T01:47:38.659422+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2dc02450f272ecf43f18c645171e31eba942f4f7",
+    "url": "https://github.com/WebKit/WebKit/commit/2dc02450f272ecf43f18c645171e31eba942f4f7",
+    "message": "RemoteInspector::setup: Ignore Setup for a target that already has a connection\nhttps://bugs.webkit.org/show_bug.cgi?id=326023\n\nReviewed by Devin Rousso.\n\nThe Cocoa implementation (RemoteInspector::receivedSetupMessage in\ncocoa/RemoteInspectorCocoa.mm) ignores a Setup message for a target that\nalrea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T01:48:15.913388+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c4284a07df5588ca03abf283e1cf9152ca1666a",
+    "url": "https://github.com/WebKit/WebKit/commit/0c4284a07df5588ca03abf283e1cf9152ca1666a",
+    "message": "Going back to a POST page reports a spurious provisional load failure when the cache-only load misses\nhttps://bugs.webkit.org/show_bug.cgi?id=325937\n\nReviewed by Basuke Suzuki.\n\nWhen going back to a form submission, FrameLoader first attempts a cache-only load. If that\nmisses, retryAfterFailedCacheO",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
