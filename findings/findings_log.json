@@ -74597,5 +74597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T17:42:16.904985+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b98997507b77ea23f2b43c04a25b350b1dec9463",
+    "url": "https://github.com/WebKit/WebKit/commit/b98997507b77ea23f2b43c04a25b350b1dec9463",
+    "message": "[CMake] Install JavaScriptCore's framework.sb on macOS\nhttps://bugs.webkit.org/show_bug.cgi?id=325724\n\nReviewed by Richard Robinson.\n\nXcode installs framework.sb in JavaScriptCore.framework's Resources on macOS\nand excludes it on iOS. CMake only copied it on iOS.\n\n* Source/JavaScriptCore/PlatformCoc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T17:42:54.754483+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71b89186dc040a09d220dffb9f370649dc20a8fc",
+    "url": "https://github.com/WebKit/WebKit/commit/71b89186dc040a09d220dffb9f370649dc20a8fc",
+    "message": "[CMake] Use Platform.h-derived definitions of some options flags\nhttps://bugs.webkit.org/show_bug.cgi?id=325717\n\nReviewed by Zak Ridouh.\n\nSome macOS tests are broken because\nENABLE_DEVICE_ORIENTATION, ENABLE_NAVIGATOR_STANDALONE and\nENABLE_WEBDRIVER_BIDI follow the CMake default (OFF) instead of the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
