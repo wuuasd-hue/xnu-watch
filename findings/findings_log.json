@@ -74637,5 +74637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T20:31:41.644051+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "20cb0ee48f9726d64fddd00a3a2c753394872f76",
+    "url": "https://github.com/WebKit/WebKit/commit/20cb0ee48f9726d64fddd00a3a2c753394872f76",
+    "message": "[Navigation API] preventDefault() does not cancel a cross-site navigation.navigate() that swaps processes\nhttps://bugs.webkit.org/show_bug.cgi?id=325553\nrdar://188636761\n\nReviewed by Alex Christensen.\n\nnavigation.navigate() used a synchronous navigation policy check (288106@main), whose reply falls\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T20:32:19.073232+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13a1f2916933547024ee020d94031096a41eb7cb",
+    "url": "https://github.com/WebKit/WebKit/commit/13a1f2916933547024ee020d94031096a41eb7cb",
+    "message": "[JSC] `JSBigInt::divideSchoolbook` should not allocate for Burnikel-Ziegler leaves\nhttps://bugs.webkit.org/show_bug.cgi?id=326174\n\nReviewed by Yusuke Suzuki.\n\ndivideSchoolbook copies the dividend into a Vector<Digit, 16> that is one\ndigit longer than the dividend. Burnikel-Ziegler division, added in",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
