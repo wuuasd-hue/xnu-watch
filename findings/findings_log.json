@@ -74497,5 +74497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T07:29:34.573350+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "21862acf2c3fe3f948e78e94272d039337d61bfe",
+    "url": "https://github.com/WebKit/WebKit/commit/21862acf2c3fe3f948e78e94272d039337d61bfe",
+    "message": "Preserve QuotaExceededError when structured cloning\nhttps://bugs.webkit.org/show_bug.cgi?id=324176\n\nReviewed by Keith Miller.\n\nPreserve QuotaExceededError quota and requested attributes through structured\ncloning.\n\nUse a dedicated additive serialization tag instead of changing the existing\nDOMExcept",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T07:30:12.314443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ea49531186e6aff38e635b7c043c325ed2a3fda",
+    "url": "https://github.com/WebKit/WebKit/commit/2ea49531186e6aff38e635b7c043c325ed2a3fda",
+    "message": "[CMake] Hide Objective-C and Objective-C++ symbols by default on Cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=325732\n\nReviewed by Zak Ridouh.\n\nXcode hides symbols by default in every language (GCC_SYMBOLS_PRIVATE_EXTERN),\nbut CMake did so only for C and C++, and hid inline functions only in C++. So",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T07:30:50.024051+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "5ade56509d0e50d822d42d2fcf7e3efe30b6ab5d",
+    "url": "https://github.com/swiftlang/swift/commit/5ade56509d0e50d822d42d2fcf7e3efe30b6ab5d",
+    "message": "Merge pull request #92611 from tbkka/tbkka-borrowing-is-runtime\n\n[any ~Copyable] Allow test-only `is` for many more cases",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
