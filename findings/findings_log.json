@@ -74677,5 +74677,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T23:38:58.222564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ebb9bf5fa085961177fade5428ca6a2471ba7350",
+    "url": "https://github.com/WebKit/WebKit/commit/ebb9bf5fa085961177fade5428ca6a2471ba7350",
+    "message": "[JSC] Reorder CheckStructure targets\nhttps://bugs.webkit.org/show_bug.cgi?id=326249\nrdar://189120362\n\nReviewed by Yijia Huang.\n\nA CheckStructure with several structures compares the cell's\nstructure against each one in set order, which is usually the\norder the ICs observed them. Let's prioritize the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T23:39:39.307952+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "07a51e2433958d4995841ab2fc0cfbf4115be7b6",
+    "url": "https://github.com/WebKit/WebKit/commit/07a51e2433958d4995841ab2fc0cfbf4115be7b6",
+    "message": "[JSC] Match repeated short JSON string values against the source text\nhttps://bugs.webkit.org/show_bug.cgi?id=326165\nrdar://189052025\n\nReviewed by Vassili Bykov.\n\nShort string values repeat heavily in JSON. This patch adds a 64-entry\ntable to JSONCache that maps a string value's source text, quotes\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-04T23:40:16.430286+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a7c1eda41a7628f9168d787b9735d4f008f64f96",
+    "url": "https://github.com/WebKit/WebKit/commit/a7c1eda41a7628f9168d787b9735d4f008f64f96",
+    "message": "REGRESSION(308608@main): [GLib] JSCCallbackFunction::construct() builds the arguments span with the wrong size\nhttps://bugs.webkit.org/show_bug.cgi?id=326077\n\nReviewed by Patrick Griffis.\n\nThe span over the JSValueRef array is sized by parameterCount, but the\narray has argumentCount elements. Every ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
