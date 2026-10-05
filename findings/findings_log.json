@@ -74737,5 +74737,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T02:29:44.468482+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25d6b64b1948539f9e32efe5dc4fca874aa58e31",
+    "url": "https://github.com/WebKit/WebKit/commit/25d6b64b1948539f9e32efe5dc4fca874aa58e31",
+    "message": "[Image Redux] Remove unused size accessors on Style::Image, WebCore::CachedImage and WebCore::Image\nhttps://bugs.webkit.org/show_bug.cgi?id=326283\n\nReviewed by Darin Adler.\n\nRemoves the following unused functions:\n\n  - Style::Image::computeIntrinsicDimensions()\n  - Style::Image::imageHasRelativeWidt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T02:30:21.581348+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41302976307118c756b9cc468f82d6659a0941e5",
+    "url": "https://github.com/WebKit/WebKit/commit/41302976307118c756b9cc468f82d6659a0941e5",
+    "message": "[JSC] Add TypedArray put-by-val fast path in LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326248\nrdar://189120242\n\nReviewed by Yijia Huang.\n\nThis patch adds integer TypedArray put-by-val fast path in LLInt.\nWe have a fast path for get-by-val, but didn't have it in put-by-val, so\nthis patch adds it.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T02:30:58.948901+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "615e180ef2c89d2dbf51dbc5e6187f5c7a268868",
+    "url": "https://github.com/WebKit/WebKit/commit/615e180ef2c89d2dbf51dbc5e6187f5c7a268868",
+    "message": "[JSC] Apply JSONCache NameTable caching to 16-bit source\nhttps://bugs.webkit.org/show_bug.cgi?id=326193\nrdar://189076480\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends JSONCache NameTable to make it applicable to 16-bit source.\nWe still keep 8-bit strings as name tends to be latin-1, but we accept\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T02:31:37.758670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "21862acf2c3fe3f948e78e94272d039337d61bfe",
+    "url": "https://github.com/WebKit/WebKit/commit/21862acf2c3fe3f948e78e94272d039337d61bfe",
+    "message": "Preserve QuotaExceededError when structured cloning\nhttps://bugs.webkit.org/show_bug.cgi?id=324176\n\nReviewed by Keith Miller.\n\nPreserve QuotaExceededError quota and requested attributes through structured\ncloning.\n\nUse a dedicated additive serialization tag instead of changing the existing\nDOMExcept",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
