@@ -74877,5 +74877,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:37:21.081916+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b77e70c813eaa142d9ffe900d1a80bc7f07d88a8",
+    "url": "https://github.com/WebKit/WebKit/commit/b77e70c813eaa142d9ffe900d1a80bc7f07d88a8",
+    "message": "[Xcode] Run check-xcfilelists in EWS\nhttps://bugs.webkit.org/show_bug.cgi?id=326163\n\nReviewed by Richard Robinson.\n\nMake a few changes to the xcfilelist generator to support running it\nfrom public SDK builds. Remove the USE_INTERNAL_SDK guards from\nthroughout the Xcode build, and add missing entries",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:37:59.497520+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6164d9c66ecdd2da2fc3e3d65a657f58be5ddcd1",
+    "url": "https://github.com/WebKit/WebKit/commit/6164d9c66ecdd2da2fc3e3d65a657f58be5ddcd1",
+    "message": "Add Document-Isolation-Policy infrastructure\nhttps://bugs.webkit.org/show_bug.cgi?id=326321\nrdar://189165672\n\nReviewed by Alex Christensen.\n\nAs a first step, parse the header and apply the subresource checks of\nisolate-and-require-corp, behind the testable DocumentIsolationPolicyEnabled\npreference. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:38:37.922913+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c456b2841c0a641fcfd83ff4800f8c1a15743221",
+    "url": "https://github.com/WebKit/WebKit/commit/c456b2841c0a641fcfd83ff4800f8c1a15743221",
+    "message": "[CMake] Match Xcode's XPC service and framework Info.plists on macOS\nhttps://bugs.webkit.org/show_bug.cgi?id=325727\n\nReviewed by Zak Ridouh.\n\nThe XPC services lacked the RunningBoard keys Xcode's\nupdate-info-plist-for-runningboard.sh adds, so RunningBoard didn't manage\nWebContent, Networking or GPU ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:39:16.879679+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bedc6d6096e5c0d6537c5052b985f22ed8d96fb1",
+    "url": "https://github.com/WebKit/WebKit/commit/bedc6d6096e5c0d6537c5052b985f22ed8d96fb1",
+    "message": "[Image Redux] Remove the unnnecessary multiplier from Style::Image::canRender() and WebCore::CachedImage::canRender()\nhttps://bugs.webkit.org/show_bug.cgi?id=326352\n\nReviewed by Simon Fraser.\n\nThe multiplier had no effect in any of the implementations so can be removed.\n\n* Source/WebCore/loader/cach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:39:56.651023+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41302976307118c756b9cc468f82d6659a0941e5",
+    "url": "https://github.com/WebKit/WebKit/commit/41302976307118c756b9cc468f82d6659a0941e5",
+    "message": "[JSC] Add TypedArray put-by-val fast path in LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326248\nrdar://189120242\n\nReviewed by Yijia Huang.\n\nThis patch adds integer TypedArray put-by-val fast path in LLInt.\nWe have a fast path for get-by-val, but didn't have it in put-by-val, so\nthis patch adds it.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T18:40:36.515944+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2470b71e5cf6390c869223e9a34289f0adb0ddbf",
+    "url": "https://github.com/WebKit/WebKit/commit/2470b71e5cf6390c869223e9a34289f0adb0ddbf",
+    "message": "[Image Redux] Remove last use of CachedImage::computeIntrinsicDimensions()\nhttps://bugs.webkit.org/show_bug.cgi?id=326287\n\nReviewed by Darin Adler.\n\nThe last use of CachedImage::computeIntrinsicDimensions() can be trivially replaced by\nCachedImage::naturalDimensions(). Also replaces CachedImage::cla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
