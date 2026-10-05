@@ -74817,5 +74817,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T09:26:30.176335+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2470b71e5cf6390c869223e9a34289f0adb0ddbf",
+    "url": "https://github.com/WebKit/WebKit/commit/2470b71e5cf6390c869223e9a34289f0adb0ddbf",
+    "message": "[Image Redux] Remove last use of CachedImage::computeIntrinsicDimensions()\nhttps://bugs.webkit.org/show_bug.cgi?id=326287\n\nReviewed by Darin Adler.\n\nThe last use of CachedImage::computeIntrinsicDimensions() can be trivially replaced by\nCachedImage::naturalDimensions(). Also replaces CachedImage::cla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T09:27:07.411819+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ebb9bf5fa085961177fade5428ca6a2471ba7350",
+    "url": "https://github.com/WebKit/WebKit/commit/ebb9bf5fa085961177fade5428ca6a2471ba7350",
+    "message": "[JSC] Reorder CheckStructure targets\nhttps://bugs.webkit.org/show_bug.cgi?id=326249\nrdar://189120362\n\nReviewed by Yijia Huang.\n\nA CheckStructure with several structures compares the cell's\nstructure against each one in set order, which is usually the\norder the ICs observed them. Let's prioritize the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-05T09:27:44.591314+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25d6b64b1948539f9e32efe5dc4fca874aa58e31",
+    "url": "https://github.com/WebKit/WebKit/commit/25d6b64b1948539f9e32efe5dc4fca874aa58e31",
+    "message": "[Image Redux] Remove unused size accessors on Style::Image, WebCore::CachedImage and WebCore::Image\nhttps://bugs.webkit.org/show_bug.cgi?id=326283\n\nReviewed by Darin Adler.\n\nRemoves the following unused functions:\n\n  - Style::Image::computeIntrinsicDimensions()\n  - Style::Image::imageHasRelativeWidt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
