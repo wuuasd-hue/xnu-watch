@@ -75277,5 +75277,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:08:17.082653+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ed2bcd5bc82549634905af1d8fff425b990a936",
+    "url": "https://github.com/WebKit/WebKit/commit/9ed2bcd5bc82549634905af1d8fff425b990a936",
+    "message": "[JSC][Wasm] Report OMGOSREntryCallee pending with its BBQ owner\nhttps://bugs.webkit.org/show_bug.cgi?id=324077\nrdar://187899560\n\nReviewed by Yijia Huang.\n\nreleaseBBQCallee already reports the BBQCallee pending. The\nOMGOSREntryCallee is only owned by that BBQCallee, and\ncalleeIsReferenced treats it a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:08:55.219180+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dc953621842465041b5555bc353a84e0dbab4142",
+    "url": "https://github.com/WebKit/WebKit/commit/dc953621842465041b5555bc353a84e0dbab4142",
+    "message": "Remove most uses of ASCIILiteral::fromLiteralUnsafe()\nhttps://bugs.webkit.org/show_bug.cgi?id=326483\n\nReviewed by Darin Adler and Philippe Normand.\n\nASCIILiteral::fromLiteralUnsafe() builds an ASCIILiteral from a raw pointer, with no check that it\npoints to a null-terminated string with static stora",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:09:33.111221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78999621514d888b8c2632dafa44633a0fdb4b38",
+    "url": "https://github.com/WebKit/WebKit/commit/78999621514d888b8c2632dafa44633a0fdb4b38",
+    "message": "[Site Isolation] Web Inspector: Debugger::exception() is missing the guard for a pause blocked by another FrameDebugger\nhttps://bugs.webkit.org/show_bug.cgi?id=326571\nrdar://189339057\n\nReviewed by Qianlang Chen.\n\n322777@main made a FrameDebugger refuse to pause while another FrameDebugger in the sam",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:10:10.916091+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1913f6615d4becc73eba817d37004685721aa59",
+    "url": "https://github.com/WebKit/WebKit/commit/b1913f6615d4becc73eba817d37004685721aa59",
+    "message": "Implement CSS module scripts\nrdar://80917329\nhttps://bugs.webkit.org/show_bug.cgi?id=227967\n\nReviewed by Ryosuke Niwa and Yusuke Suzuki.\n\nThis patch implements importing CSS stylesheets as JavaScript modules, using the\n`import ... with { type: 'css' }` and `import(..., { with: { type: 'css' } })`\nsy",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:10:49.003456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d0aabe7a8b228b18ad5b8e2005e705e9db2302ca",
+    "url": "https://github.com/WebKit/WebKit/commit/d0aabe7a8b228b18ad5b8e2005e705e9db2302ca",
+    "message": "Cross-Origin-Embedder-Policy should be ignored in non-secure contexts\nhttps://bugs.webkit.org/show_bug.cgi?id=326351\nrdar://189193030\n\nReviewed by Chris Dumez.\n\nAn embedder policy is only obtained for a secure context, but we only checked\nthe response URL, so an HTTPS document in an HTTP page, and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T23:11:26.939930+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c3395d79582fe6e3754b5c536119f58adb73a0b",
+    "url": "https://github.com/WebKit/WebKit/commit/7c3395d79582fe6e3754b5c536119f58adb73a0b",
+    "message": "Add span-based C++ wrappers for GLib functions that take data with a length\nhttps://bugs.webkit.org/show_bug.cgi?id=326047\n\nReviewed by Fujii Hironori.\n\nMany callers unwrapped a UTF8CString with legacyCStringPointer() only to pass\nit along with its length, which does not need a null terminator. Pass",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
