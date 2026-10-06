@@ -75117,5 +75117,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:42:10.827085+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5cb0e0f45e4a389cc7074b23e036d4da6af7b39",
+    "url": "https://github.com/WebKit/WebKit/commit/c5cb0e0f45e4a389cc7074b23e036d4da6af7b39",
+    "message": "[JSC] Do some micro-optimization about bit-ops in MacroAssembler\nhttps://bugs.webkit.org/show_bug.cgi?id=326435\nrdar://189240776\n\nReviewed by Sosuke Suzuki.\n\nDo some micro-optimization about bit-ops in MacroAssembler, like\n`and64(0xffffffff, x, y)` => `zeroExtend32ToPtr(x, y)`.\n\nTest: Source/JavaScr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:42:48.052625+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2e0869eaaad6b5a15d8f858b38af7d34055c940",
+    "url": "https://github.com/WebKit/WebKit/commit/e2e0869eaaad6b5a15d8f858b38af7d34055c940",
+    "message": "Address Safer C++ warnings in WTF headers\nhttps://bugs.webkit.org/show_bug.cgi?id=326309\n\nReviewed by Anne van Kesteren.\n\nFix the WTF header warnings that account for most of the Safer C++\nwarning instances in the macOS and iOS static analysis logs. Use\nsuppressions, with a comment, only where there",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:43:25.326869+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d0aabe7a8b228b18ad5b8e2005e705e9db2302ca",
+    "url": "https://github.com/WebKit/WebKit/commit/d0aabe7a8b228b18ad5b8e2005e705e9db2302ca",
+    "message": "Cross-Origin-Embedder-Policy should be ignored in non-secure contexts\nhttps://bugs.webkit.org/show_bug.cgi?id=326351\nrdar://189193030\n\nReviewed by Chris Dumez.\n\nAn embedder policy is only obtained for a secure context, but we only checked\nthe response URL, so an HTTPS document in an HTTP page, and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:44:03.197615+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c3395d79582fe6e3754b5c536119f58adb73a0b",
+    "url": "https://github.com/WebKit/WebKit/commit/7c3395d79582fe6e3754b5c536119f58adb73a0b",
+    "message": "Add span-based C++ wrappers for GLib functions that take data with a length\nhttps://bugs.webkit.org/show_bug.cgi?id=326047\n\nReviewed by Fujii Hironori.\n\nMany callers unwrapped a UTF8CString with legacyCStringPointer() only to pass\nit along with its length, which does not need a null terminator. Pass",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:44:40.470204+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ba688904ad4b2c22635c035725db087f53c6489f",
+    "url": "https://github.com/WebKit/WebKit/commit/ba688904ad4b2c22635c035725db087f53c6489f",
+    "message": "Web Inspector: [SI] Multiple FrameDebuggers in one process can pause at the same time and nest run loops\nhttps://bugs.webkit.org/show_bug.cgi?id=325815\nrdar://188827623\n\nReviewed by Qianlang Chen.\n\nUnder site isolation, same-site frames share a process and each has its own FrameDebugger\nover the one",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-06T13:45:17.605733+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d2c95ee3bddc2a22eea90781f8d8d943741b4c2",
+    "url": "https://github.com/WebKit/WebKit/commit/8d2c95ee3bddc2a22eea90781f8d8d943741b4c2",
+    "message": "[YARR] EOL StringList can do better length checks\nhttps://bugs.webkit.org/show_bug.cgi?id=326323\nrdar://189167809\n\nReviewed by Yijia Huang.\n\nWhen YarrJIT uses EOL StringList (e.g.\n`/^(?:aaaa|bbbb|cccc|dd|ee|ff|g)$/`), we sort strings with length since\nthere is no remaining characters after this matc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
