@@ -75757,5 +75757,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T21:40:05.269355+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9804a95e09676c514912067b0b77f85c690b7dd5",
+    "url": "https://github.com/WebKit/WebKit/commit/9804a95e09676c514912067b0b77f85c690b7dd5",
+    "message": "[WebKit] Let the WebProcess mint the NavigationIdentifier of the navigations it starts\nhttps://bugs.webkit.org/show_bug.cgi?id=326415\nrdar://189226143\n\nReviewed by Alex Christensen.\n\nAPI::Navigation objects in WebNavigationState are released when the WebProcess DocumentLoader that\nowns them is detac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T21:40:44.139051+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9e61a8160a2345eddfa61dc4af41d4ac2f2c2842",
+    "url": "https://github.com/WebKit/WebKit/commit/9e61a8160a2345eddfa61dc4af41d4ac2f2c2842",
+    "message": "[Image Redux] Remove CachedImage image size functions\nhttps://bugs.webkit.org/show_bug.cgi?id=326675\n\nReviewed by Tim Nguyen.\n\nThe last uses of the CachedImage image size functions were RenderSVGImage and LegacyRenderSVGImage which used\nCachedImage::clampedImageSize() in their preserveAspectRatio=no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T21:41:22.112102+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "15fea1ee0fc8f23a5b065d4ce9b8e89e30d76be2",
+    "url": "https://github.com/WebKit/WebKit/commit/15fea1ee0fc8f23a5b065d4ce9b8e89e30d76be2",
+    "message": "Implement DOM highlight commands for FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=316139\nrdar://178562987\n\nReviewed by BJ Burg.\n\nImplements highlightNode, highlightNodeList, highlightRect, highlightQuad and\nhideHighlight for FrameDOMAgent, replacing the stubs that returned \"Not\nsupported fo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T21:42:00.992087+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29c530c9e3571a2774cdbcc378f64c22cb570150",
+    "url": "https://github.com/WebKit/WebKit/commit/29c530c9e3571a2774cdbcc378f64c22cb570150",
+    "message": "[Site-isolation] Implement proceedWithNavigationAfterViewTransitionCapture part of navigation.\nhttps://bugs.webkit.org/show_bug.cgi?id=326285\n<rdar://problem/189142190>\n\nReviewed by Tim Nguyen.\n\nhttps://html.spec.whatwg.org/multipage/browsing-the-web.html#deactivate-a-document-for-a-cross-document-n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T21:42:39.616965+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "189ec6756ab941243835c021d826469ccf9e97b4",
+    "url": "https://github.com/WebKit/WebKit/commit/189ec6756ab941243835c021d826469ccf9e97b4",
+    "message": "[Image Redux] Remove Image::hasRelativeWidth() and Image::hasRelativeHeight()\nhttps://bugs.webkit.org/show_bug.cgi?id=326572\n\nReviewed by Darin Adler.\n\nNo subclass of WebCore::Image overrides hasRelativeWidth() or hasRelativeHeight() any more so both always return\nfalse. Remove them and update the c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
