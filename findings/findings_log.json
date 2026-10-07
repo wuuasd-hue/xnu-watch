@@ -75397,5 +75397,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:30:42.850094+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23ff891340fad952180a214699d45d9cebf06829",
+    "url": "https://github.com/WebKit/WebKit/commit/23ff891340fad952180a214699d45d9cebf06829",
+    "message": "[JSC] Inline the `FastString` path of `op_iterator_next` in Baseline JIT and LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326444\n\nReviewed by Yusuke Suzuki.\n\nSince 322172@main, op_iterator_next in FastString mode keeps the string and the\nindex in registers, but Baseline JIT and LLInt still call int",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:31:22.148997+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a1f084b9c07eb3db60a3398ada31169f3e8127c",
+    "url": "https://github.com/WebKit/WebKit/commit/4a1f084b9c07eb3db60a3398ada31169f3e8127c",
+    "message": "[CMake] Fix the Mac Debug build after 322905@main\nhttps://bugs.webkit.org/show_bug.cgi?id=326619\nrdar://189361316\n\nReviewed by Kiet Ho.\n\n322905@main added JSCellInlines.h to WebCorePrefix.h. With PCH codegen, every inline\nfunction in that header and the headers it includes is now compiled into each ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:32:00.549098+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29c530c9e3571a2774cdbcc378f64c22cb570150",
+    "url": "https://github.com/WebKit/WebKit/commit/29c530c9e3571a2774cdbcc378f64c22cb570150",
+    "message": "[Site-isolation] Implement proceedWithNavigationAfterViewTransitionCapture part of navigation.\nhttps://bugs.webkit.org/show_bug.cgi?id=326285\n<rdar://problem/189142190>\n\nReviewed by Tim Nguyen.\n\nhttps://html.spec.whatwg.org/multipage/browsing-the-web.html#deactivate-a-document-for-a-cross-document-n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:32:38.542025+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "189ec6756ab941243835c021d826469ccf9e97b4",
+    "url": "https://github.com/WebKit/WebKit/commit/189ec6756ab941243835c021d826469ccf9e97b4",
+    "message": "[Image Redux] Remove Image::hasRelativeWidth() and Image::hasRelativeHeight()\nhttps://bugs.webkit.org/show_bug.cgi?id=326572\n\nReviewed by Darin Adler.\n\nNo subclass of WebCore::Image overrides hasRelativeWidth() or hasRelativeHeight() any more so both always return\nfalse. Remove them and update the c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:33:16.758887+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ed2bcd5bc82549634905af1d8fff425b990a936",
+    "url": "https://github.com/WebKit/WebKit/commit/9ed2bcd5bc82549634905af1d8fff425b990a936",
+    "message": "[JSC][Wasm] Report OMGOSREntryCallee pending with its BBQ owner\nhttps://bugs.webkit.org/show_bug.cgi?id=324077\nrdar://187899560\n\nReviewed by Yijia Huang.\n\nreleaseBBQCallee already reports the BBQCallee pending. The\nOMGOSREntryCallee is only owned by that BBQCallee, and\ncalleeIsReferenced treats it a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T02:33:55.172713+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dc953621842465041b5555bc353a84e0dbab4142",
+    "url": "https://github.com/WebKit/WebKit/commit/dc953621842465041b5555bc353a84e0dbab4142",
+    "message": "Remove most uses of ASCIILiteral::fromLiteralUnsafe()\nhttps://bugs.webkit.org/show_bug.cgi?id=326483\n\nReviewed by Darin Adler and Philippe Normand.\n\nASCIILiteral::fromLiteralUnsafe() builds an ASCIILiteral from a raw pointer, with no check that it\npoints to a null-terminated string with static stora",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
