@@ -75517,5 +75517,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:04:39.186138+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d02369b1dee563eb26b8f36ba243aedb63f0f531",
+    "url": "https://github.com/WebKit/WebKit/commit/d02369b1dee563eb26b8f36ba243aedb63f0f531",
+    "message": "[JSC] Don't read prototype for instanceof of a primitive through a bound function\nhttps://bugs.webkit.org/show_bug.cgi?id=326073\n\nReviewed by Yusuke Suzuki.\n\nOrdinaryHasInstance returns false for a non-object before it gets\n\"prototype\". A bound function forwards that check to its target through\nInst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:05:17.236225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eee373837616774d98f9d0129674084edb444e7a",
+    "url": "https://github.com/WebKit/WebKit/commit/eee373837616774d98f9d0129674084edb444e7a",
+    "message": "[JSC] Release exception scope in asyncFromSync iterator functions\nhttps://bugs.webkit.org/show_bug.cgi?id=326606\nrdar://189176359\n\nReviewed by Mark Lam.\n\nAdd missing scope releases from asyncFromSync iterator functions and\nasyncModuleResolveEvaluation to satisfy the validator, as the callers already",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:05:55.106439+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7161cda17aa5b36affb52e2b750bd115cd63d7f",
+    "url": "https://github.com/WebKit/WebKit/commit/b7161cda17aa5b36affb52e2b750bd115cd63d7f",
+    "message": "[JSC] Evaluate constant array literal elements once in ArrayNode::emitBytecode\nhttps://bugs.webkit.org/show_bug.cgi?id=326506\nrdar://189295197\n\nReviewed by Vassili Bykov.\n\nArrayNode::emitBytecode is iterating list of elements twice. If the\narray literal is huge, it becomes significantly costly as it",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:06:32.713319+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a39a3c616a346bbe57129787c3dfde7dfc457135",
+    "url": "https://github.com/WebKit/WebKit/commit/a39a3c616a346bbe57129787c3dfde7dfc457135",
+    "message": "Determine whether a document is a secure context when it is created\nhttps://bugs.webkit.org/show_bug.cgi?id=326476\nrdar://189268799\n\nReviewed by Chris Dumez.\n\nDocument::isSecureContext() walked the frame tree on every call. With site\nisolation it could only see the origin of a frame in another proce",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:07:10.375391+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78999621514d888b8c2632dafa44633a0fdb4b38",
+    "url": "https://github.com/WebKit/WebKit/commit/78999621514d888b8c2632dafa44633a0fdb4b38",
+    "message": "[Site Isolation] Web Inspector: Debugger::exception() is missing the guard for a pause blocked by another FrameDebugger\nhttps://bugs.webkit.org/show_bug.cgi?id=326571\nrdar://189339057\n\nReviewed by Qianlang Chen.\n\n322777@main made a FrameDebugger refuse to pause while another FrameDebugger in the sam",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T09:07:47.975577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b1913f6615d4becc73eba817d37004685721aa59",
+    "url": "https://github.com/WebKit/WebKit/commit/b1913f6615d4becc73eba817d37004685721aa59",
+    "message": "Implement CSS module scripts\nrdar://80917329\nhttps://bugs.webkit.org/show_bug.cgi?id=227967\n\nReviewed by Ryosuke Niwa and Yusuke Suzuki.\n\nThis patch implements importing CSS stylesheets as JavaScript modules, using the\n`import ... with { type: 'css' }` and `import(..., { with: { type: 'css' } })`\nsy",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
