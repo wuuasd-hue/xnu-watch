@@ -75637,5 +75637,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:42:00.164160+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f488eac0e00cee453b7ca9f24c42f585df236e97",
+    "url": "https://github.com/WebKit/WebKit/commit/f488eac0e00cee453b7ca9f24c42f585df236e97",
+    "message": "[JSC] Replace the Collector's Heap& with a vector of heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326517\nrdar://189309281\n\nReviewed by Yijia Huang.\n\nEventually, a Collector will run collections that cover several heaps.\nCurrently it holds a single Heap&, so replace it with the set of heaps the\nColl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:42:38.147273+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd96a2aa97362e9358ab3f10ff2adb80db21909c",
+    "url": "https://github.com/WebKit/WebKit/commit/fd96a2aa97362e9358ab3f10ff2adb80db21909c",
+    "message": "Back/forward cache restore reports didFailNavigation after a pagehide beacon\nhttps://bugs.webkit.org/show_bug.cgi?id=326594\nrdar://189350210\n\nReviewed by Per Arne Vollan.\n\nWhen investigating rdar://189061233, I found an issue that when clicking a link on a Google search result page and\nnavigating ba",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:43:16.309224+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dab012045bc4bc42306a382e561a70eade247e6",
+    "url": "https://github.com/WebKit/WebKit/commit/4dab012045bc4bc42306a382e561a70eade247e6",
+    "message": "[JSC] Read Object.defineProperty descriptor fields after ToPropertyKey\nhttps://bugs.webkit.org/show_bug.cgi?id=316774\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL lowered Object.defineProperty by loading descriptor fields\nbefore converting the key. An object key's toString could change those\nfields and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:43:54.424069+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4424ae9f33dea14bdbf4dad81b2fd729501b1437",
+    "url": "https://github.com/WebKit/WebKit/commit/4424ae9f33dea14bdbf4dad81b2fd729501b1437",
+    "message": "Web Inspector: [SI] emit DOMStorage events for cross-origin iframes\nhttps://bugs.webkit.org/show_bug.cgi?id=316801\nrdar://179249741\n\nReviewed by BJ Burg.\n\nWeb Inspector's Storage tab showed nothing for a cross-origin iframe's\nlocalStorage and sessionStorage, and never updated when that storage chang",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:44:32.686163+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "23ff891340fad952180a214699d45d9cebf06829",
+    "url": "https://github.com/WebKit/WebKit/commit/23ff891340fad952180a214699d45d9cebf06829",
+    "message": "[JSC] Inline the `FastString` path of `op_iterator_next` in Baseline JIT and LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326444\n\nReviewed by Yusuke Suzuki.\n\nSince 322172@main, op_iterator_next in FastString mode keeps the string and the\nindex in registers, but Baseline JIT and LLInt still call int",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-07T16:45:10.557697+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4a1f084b9c07eb3db60a3398ada31169f3e8127c",
+    "url": "https://github.com/WebKit/WebKit/commit/4a1f084b9c07eb3db60a3398ada31169f3e8127c",
+    "message": "[CMake] Fix the Mac Debug build after 322905@main\nhttps://bugs.webkit.org/show_bug.cgi?id=326619\nrdar://189361316\n\nReviewed by Kiet Ho.\n\n322905@main added JSCellInlines.h to WebCorePrefix.h. With PCH codegen, every inline\nfunction in that header and the headers it includes is now compiled into each ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
