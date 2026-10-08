@@ -75857,5 +75857,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:22:53.965964+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d3626899f2589fa4ef9c162d0c78abc84503cbb",
+    "url": "https://github.com/WebKit/WebKit/commit/0d3626899f2589fa4ef9c162d0c78abc84503cbb",
+    "message": "Add SAFE_* macros for logging functions that take printf-style arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=326656\n\nReviewed by Mike Wyrzykowski.\n\nCall sites unwrapped typed strings with legacyCStringPointer() to pass them to C variadic logging\nfunctions, which cannot convert them themselves wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:23:31.059771+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11a7ffdb0e19140e2f96fea5ae4c45e3cacddfac",
+    "url": "https://github.com/WebKit/WebKit/commit/11a7ffdb0e19140e2f96fea5ae4c45e3cacddfac",
+    "message": "Silence some chatty JSC tests.\nhttps://bugs.webkit.org/show_bug.cgi?id=326745\nrdar://189455718\n\nReviewed by Dan Hecht.\n\nUnnecessary chattiness hides real test error messages, making it hard to debug real errors.\n\nNo new tests because this is a test fix.\n\n* JSTests/stress/constant-folding-clip-skips-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:24:08.222750+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe7b1ac8b3e9a04206e3d6fcca7671e8ec627d6c",
+    "url": "https://github.com/WebKit/WebKit/commit/fe7b1ac8b3e9a04206e3d6fcca7671e8ec627d6c",
+    "message": "Implement DOM.setInspectModeEnabled for FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=316139\nrdar://179175840\n\nReviewed by BJ Burg.\n\nImplements setInspectModeEnabled for FrameDOMAgent, replacing the stub that\nreturned \"Not supported for frame targets\", so the element picker works inside a\ncr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:24:45.689187+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2fb1f240e251d103130fbba79ad202fbae0f6b4",
+    "url": "https://github.com/WebKit/WebKit/commit/b2fb1f240e251d103130fbba79ad202fbae0f6b4",
+    "message": "Give extension page subframes unpartitioned storage access\nhttps://bugs.webkit.org/show_bug.cgi?id=326512\nrdar://189301936\n\nReviewed by Sihui Liu.\n\nSubframes of extension pages with unpartitioned storage access get first-party cookies, but other\nstorage APIs stayed partitioned. Add ScriptExecutionCo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:25:23.475417+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d02369b1dee563eb26b8f36ba243aedb63f0f531",
+    "url": "https://github.com/WebKit/WebKit/commit/d02369b1dee563eb26b8f36ba243aedb63f0f531",
+    "message": "[JSC] Don't read prototype for instanceof of a primitive through a bound function\nhttps://bugs.webkit.org/show_bug.cgi?id=326073\n\nReviewed by Yusuke Suzuki.\n\nOrdinaryHasInstance returns false for a non-object before it gets\n\"prototype\". A bound function forwards that check to its target through\nInst",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T01:26:00.639738+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eee373837616774d98f9d0129674084edb444e7a",
+    "url": "https://github.com/WebKit/WebKit/commit/eee373837616774d98f9d0129674084edb444e7a",
+    "message": "[JSC] Release exception scope in asyncFromSync iterator functions\nhttps://bugs.webkit.org/show_bug.cgi?id=326606\nrdar://189176359\n\nReviewed by Mark Lam.\n\nAdd missing scope releases from asyncFromSync iterator functions and\nasyncModuleResolveEvaluation to satisfy the validator, as the callers already",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
