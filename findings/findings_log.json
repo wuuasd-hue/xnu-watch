@@ -75977,5 +75977,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:34:50.469049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "12c9964c288d8b300efadf31272995b492622022",
+    "url": "https://github.com/WebKit/WebKit/commit/12c9964c288d8b300efadf31272995b492622022",
+    "message": "Address Safer C++ static analysis warnings in WebCore bindings code\nhttps://bugs.webkit.org/show_bug.cgi?id=326601\n\nReviewed by Geoffrey Garen.\n\nFix all Safer C++ warnings in the generated JS bindings and in bindings/js,\nwithout adding ref counting churn to hot paths:\n\n- Interface conversion results",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:35:27.520130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81026ad58369938b8cb6313a913ffc5c3bfe9f8c",
+    "url": "https://github.com/WebKit/WebKit/commit/81026ad58369938b8cb6313a913ffc5c3bfe9f8c",
+    "message": "Unreviewed, relanding 322915@main\nhttps://bugs.webkit.org/show_bug.cgi?id=326749\nrdar://189458173\n\n* Source/JavaScriptCore/parser/Lexer.cpp:\n(JSC::Lexer<T>::lexWithoutClearingLineTerminator):\n* Source/JavaScriptCore/parser/Lexer.h:\n(JSC::Lexer<T>::scanSimpleArrayElementFollowedByComma):\n* Source/Jav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:36:04.735112+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "459880fdd40351501295040dd219ef965256dea9",
+    "url": "https://github.com/WebKit/WebKit/commit/459880fdd40351501295040dd219ef965256dea9",
+    "message": "[JSC] DFG / FTL `StringIteratorNext` should inline Latin-1 characters in 16-bit strings\nhttps://bugs.webkit.org/show_bug.cgi?id=326316\n\nReviewed by Yusuke Suzuki.\n\nStringIteratorNext called operationStringIteratorNext for every character of a\n16-bit string. A string is 16-bit as soon as it has one n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:36:41.995634+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e694d1c0c386f716059d728afbd2bcc6aaea2011",
+    "url": "https://github.com/WebKit/WebKit/commit/e694d1c0c386f716059d728afbd2bcc6aaea2011",
+    "message": "[JSC] `using` declaration should be allowed in a function nested in a switch clause\nhttps://bugs.webkit.org/show_bug.cgi?id=325952\n\nReviewed by Yusuke Suzuki.\n\nA `using` or `await using` declaration is a syntax error only when it is\ncontained directly in the StatementList of a CaseClause or DefaultC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:37:19.153776+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7161cda17aa5b36affb52e2b750bd115cd63d7f",
+    "url": "https://github.com/WebKit/WebKit/commit/b7161cda17aa5b36affb52e2b750bd115cd63d7f",
+    "message": "[JSC] Evaluate constant array literal elements once in ArrayNode::emitBytecode\nhttps://bugs.webkit.org/show_bug.cgi?id=326506\nrdar://189295197\n\nReviewed by Vassili Bykov.\n\nArrayNode::emitBytecode is iterating list of elements twice. If the\narray literal is huge, it becomes significantly costly as it",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T07:37:56.230878+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a39a3c616a346bbe57129787c3dfde7dfc457135",
+    "url": "https://github.com/WebKit/WebKit/commit/a39a3c616a346bbe57129787c3dfde7dfc457135",
+    "message": "Determine whether a document is a secure context when it is created\nhttps://bugs.webkit.org/show_bug.cgi?id=326476\nrdar://189268799\n\nReviewed by Chris Dumez.\n\nDocument::isSecureContext() walked the frame tree on every call. With site\nisolation it could only see the origin of a frame in another proce",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
