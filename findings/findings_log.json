@@ -76217,5 +76217,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T20:28:35.106868+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "427feb8178e451d07ce8ca84e89c73ce49465f80",
+    "url": "https://github.com/WebKit/WebKit/commit/427feb8178e451d07ce8ca84e89c73ce49465f80",
+    "message": "[Site Isolation] Web Inspector: Nodes in cross-origin iframes have no CSS layout flags\nhttps://bugs.webkit.org/show_bug.cgi?id=326615\nrdar://187418569\n\nReviewed by Qianlang Chen.\n\nFrame targets never reported CSS layout flags, and the frontend marked every frame-target element as\nrendered. So a disp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T20:29:13.102850+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "67125468afbb46b90155a3df013cdf648383834c",
+    "url": "https://github.com/swiftlang/swift/commit/67125468afbb46b90155a3df013cdf648383834c",
+    "message": "Merge pull request #74230 from tbkka/tbkka-remotemirror-no-more-mpe-metadata\n\n[RemoteMirror] Remove compiler code to emit spare bit info in reflection metadata",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T20:29:51.213108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4dab012045bc4bc42306a382e561a70eade247e6",
+    "url": "https://github.com/WebKit/WebKit/commit/4dab012045bc4bc42306a382e561a70eade247e6",
+    "message": "[JSC] Read Object.defineProperty descriptor fields after ToPropertyKey\nhttps://bugs.webkit.org/show_bug.cgi?id=316774\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL lowered Object.defineProperty by loading descriptor fields\nbefore converting the key. An object key's toString could change those\nfields and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T20:30:29.260441+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4424ae9f33dea14bdbf4dad81b2fd729501b1437",
+    "url": "https://github.com/WebKit/WebKit/commit/4424ae9f33dea14bdbf4dad81b2fd729501b1437",
+    "message": "Web Inspector: [SI] emit DOMStorage events for cross-origin iframes\nhttps://bugs.webkit.org/show_bug.cgi?id=316801\nrdar://179249741\n\nReviewed by BJ Burg.\n\nWeb Inspector's Storage tab showed nothing for a cross-origin iframe's\nlocalStorage and sessionStorage, and never updated when that storage chang",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
