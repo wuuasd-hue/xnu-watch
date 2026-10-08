@@ -76097,5 +76097,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T14:59:13.610943+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b68bb7b7c02bcdb97d5a2c4a20a0f69afc6c1497",
+    "url": "https://github.com/WebKit/WebKit/commit/b68bb7b7c02bcdb97d5a2c4a20a0f69afc6c1497",
+    "message": "[JSC] Sum the GC log and signpost values over all of the Collector's heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326693\nrdar://189425869\n\nReviewed by Marcus Plutowski.\n\nThe logGC lines and the GC signpost describe only heap(), the Collector's one\nheap: its pointer, capacity, barriers executed and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T14:59:51.672081+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9dcd0ee93e44247a8ff0fe63029c35dcc9a259a",
+    "url": "https://github.com/WebKit/WebKit/commit/f9dcd0ee93e44247a8ff0fe63029c35dcc9a259a",
+    "message": "[JSC] FTL CheckJSCast always OSR exits for classes with a JSType range\nhttps://bugs.webkit.org/show_bug.cgi?id=326765\nrdar://189477440\n\nReviewed by Keith Miller.\n\ncompileCheckJSCast negated the type check result with Output::bitNot, which is\nBitXor with -1. Applied to a 0/1 comparison result it yiel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T15:00:29.844321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f030129a85a48f48fdc21eff4343a99124e92de5",
+    "url": "https://github.com/WebKit/WebKit/commit/f030129a85a48f48fdc21eff4343a99124e92de5",
+    "message": "[linux] Do not set high priority for non-utility threads\nhttps://bugs.webkit.org/show_bug.cgi?id=324270\n\nReviewed by Carlos Alberto Lopez Perez.\n\nWhen we run a bunch of jsc instances during stress tests, we exhaust\nthe number of rtkit requests the daemon can handle. Morally, a high\npriority is a sca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T15:01:08.520960+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cb4a4edf352593c30f835b967a5b3699fefc898",
+    "url": "https://github.com/WebKit/WebKit/commit/2cb4a4edf352593c30f835b967a5b3699fefc898",
+    "message": "Web Inspector: the error of an async command is sent with the id of the command being dispatched\nhttps://bugs.webkit.org/show_bug.cgi?id=326703\n\nReviewed by Devin Rousso.\n\nAsync commands send their errors with reportProtocolError() followed by\nsendPendingErrors(). reportProtocolError() only uses the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T15:01:47.700351+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f488eac0e00cee453b7ca9f24c42f585df236e97",
+    "url": "https://github.com/WebKit/WebKit/commit/f488eac0e00cee453b7ca9f24c42f585df236e97",
+    "message": "[JSC] Replace the Collector's Heap& with a vector of heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326517\nrdar://189309281\n\nReviewed by Yijia Huang.\n\nEventually, a Collector will run collections that cover several heaps.\nCurrently it holds a single Heap&, so replace it with the set of heaps the\nColl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-08T15:02:26.062920+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd96a2aa97362e9358ab3f10ff2adb80db21909c",
+    "url": "https://github.com/WebKit/WebKit/commit/fd96a2aa97362e9358ab3f10ff2adb80db21909c",
+    "message": "Back/forward cache restore reports didFailNavigation after a pagehide beacon\nhttps://bugs.webkit.org/show_bug.cgi?id=326594\nrdar://189350210\n\nReviewed by Per Arne Vollan.\n\nWhen investigating rdar://189061233, I found an issue that when clicking a link on a Google search result page and\nnavigating ba",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
