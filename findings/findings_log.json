@@ -76657,5 +76657,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T23:21:04.181893+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "81026ad58369938b8cb6313a913ffc5c3bfe9f8c",
+    "url": "https://github.com/WebKit/WebKit/commit/81026ad58369938b8cb6313a913ffc5c3bfe9f8c",
+    "message": "Unreviewed, relanding 322915@main\nhttps://bugs.webkit.org/show_bug.cgi?id=326749\nrdar://189458173\n\n* Source/JavaScriptCore/parser/Lexer.cpp:\n(JSC::Lexer<T>::lexWithoutClearingLineTerminator):\n* Source/JavaScriptCore/parser/Lexer.h:\n(JSC::Lexer<T>::scanSimpleArrayElementFollowedByComma):\n* Source/Jav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T23:21:41.332647+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "459880fdd40351501295040dd219ef965256dea9",
+    "url": "https://github.com/WebKit/WebKit/commit/459880fdd40351501295040dd219ef965256dea9",
+    "message": "[JSC] DFG / FTL `StringIteratorNext` should inline Latin-1 characters in 16-bit strings\nhttps://bugs.webkit.org/show_bug.cgi?id=326316\n\nReviewed by Yusuke Suzuki.\n\nStringIteratorNext called operationStringIteratorNext for every character of a\n16-bit string. A string is 16-bit as soon as it has one n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
