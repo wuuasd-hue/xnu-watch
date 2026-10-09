@@ -76537,5 +76537,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:05:40.705503+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "192fd94f17a5e23ac3a41491eff0f7a50fcf87bf",
+    "url": "https://github.com/WebKit/WebKit/commit/192fd94f17a5e23ac3a41491eff0f7a50fcf87bf",
+    "message": "[JSC] Make the GC's mutator scheduler work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326875\nrdar://189554727\n\nReviewed by Yusuke Suzuki.\n\nThe mutator scheduler decides when concurrent marking stops and resumes the\nmutator, by comparing the bytes allocated since the col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:06:18.248829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0b23dd248f27fab8732ff1b9fff423cbd13b39b1",
+    "url": "https://github.com/WebKit/WebKit/commit/0b23dd248f27fab8732ff1b9fff423cbd13b39b1",
+    "message": "Deploy 2026-10-06 snapshot on macOS safer C++ bots\nhttps://bugs.webkit.org/show_bug.cgi?id=326846\nrdar://189574019\n\nReviewed by Chris Dumez.\n\nDeploy swift-DEVELOPMENT-SNAPSHOT-2026-10-06-a on macOS safer C++ bots.\n\nUpdate the expectations accordingly.\n\n* Source/JavaScriptCore/SaferCPPExpectations/Me",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:06:55.712271+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2ffc55c56bd78ac2243d1e26c7844ef731df53c",
+    "url": "https://github.com/WebKit/WebKit/commit/e2ffc55c56bd78ac2243d1e26c7844ef731df53c",
+    "message": "[JSC] Add divide-and-conquer `toString` to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=326633\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt::toStringGeneric divides the whole value by a one-digit divisor once\nper digit of the value, so its cost is quadratic in the length. A value of\n16384 digits, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:07:35.054630+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "31dac8387e410a55ff884b840882997b115f3ce5",
+    "url": "https://github.com/swiftlang/swift/commit/31dac8387e410a55ff884b840882997b115f3ce5",
+    "message": "Merge pull request #93092 from mikeash/restore-metadata-sections-mpenum-padding\n\n[Runtime] Keep a placeholder where swift5_mpenum was in MetadataSections.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:08:12.805046+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2fb1f240e251d103130fbba79ad202fbae0f6b4",
+    "url": "https://github.com/WebKit/WebKit/commit/b2fb1f240e251d103130fbba79ad202fbae0f6b4",
+    "message": "Give extension page subframes unpartitioned storage access\nhttps://bugs.webkit.org/show_bug.cgi?id=326512\nrdar://189301936\n\nReviewed by Sihui Liu.\n\nSubframes of extension pages with unpartitioned storage access get first-party cookies, but other\nstorage APIs stayed partitioned. Add ScriptExecutionCo",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T19:08:51.428353+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "12c9964c288d8b300efadf31272995b492622022",
+    "url": "https://github.com/WebKit/WebKit/commit/12c9964c288d8b300efadf31272995b492622022",
+    "message": "Address Safer C++ static analysis warnings in WebCore bindings code\nhttps://bugs.webkit.org/show_bug.cgi?id=326601\n\nReviewed by Geoffrey Garen.\n\nFix all Safer C++ warnings in the generated JS bindings and in bindings/js,\nwithout adding ref counting churn to hot paths:\n\n- Interface conversion results",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
