@@ -76417,5 +76417,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:53:34.865829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2edaa071178a43a44dfaa4c37716247c43642c66",
+    "url": "https://github.com/WebKit/WebKit/commit/2edaa071178a43a44dfaa4c37716247c43642c66",
+    "message": "Ref and RefPtr casts should return a smart pointer only for an rvalue\nhttps://bugs.webkit.org/show_bug.cgi?id=326795\nrdar://189503108\n\nReviewed by Ryosuke Niwa and Chris Dumez.\n\nSince 267923@main, downcast(), dynamicDowncast() and uncheckedDowncast() take a Ref or RefPtr by\nvalue, so casting an lval",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:54:25.965806+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e286ac0a33414e20bd7e41926a3bb7d6b9ee73b",
+    "url": "https://github.com/WebKit/WebKit/commit/3e286ac0a33414e20bd7e41926a3bb7d6b9ee73b",
+    "message": "[JSC] Remove redundant work from FTL string lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=326766\nrdar://189477675\n\nReviewed by Yijia Huang.\n\nThis patch cleans up some FTL code generation.\n\n1. compileStringCharAtImpl and compileStringCodePointAt loaded StringImpl::m_data\n   separately in the 8-bit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:55:04.402053+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ed1ea245850f9bfe39534edb6a0db7d7cf714ec6",
+    "url": "https://github.com/WebKit/WebKit/commit/ed1ea245850f9bfe39534edb6a0db7d7cf714ec6",
+    "message": "[JSC] MovHint removal should apply the block-terminal liveness rule only to phantom allocations\nhttps://bugs.webkit.org/show_bug.cgi?id=326643\nrdar://189380801\n\nReviewed by Yijia Huang.\n\nMovHint removal phase treats the bytecode-live locals at every block\nterminal as uses even when the terminal does",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:55:42.072274+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cce27133ecf45fa3abcba95ae4d8e1631be8b1c",
+    "url": "https://github.com/WebKit/WebKit/commit/4cce27133ecf45fa3abcba95ae4d8e1631be8b1c",
+    "message": "[JSC] Inline the double case of Number.isNaN, Number.isFinite, and Number.isSafeInteger\nhttps://bugs.webkit.org/show_bug.cgi?id=326780\nrdar://189490653\n\nReviewed by Sosuke Suzuki.\n\nThese functions are super simple, they only handle Numbers, so fully\ninlined implementation is better than calling oper",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:56:20.302310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "11a7ffdb0e19140e2f96fea5ae4c45e3cacddfac",
+    "url": "https://github.com/WebKit/WebKit/commit/11a7ffdb0e19140e2f96fea5ae4c45e3cacddfac",
+    "message": "Silence some chatty JSC tests.\nhttps://bugs.webkit.org/show_bug.cgi?id=326745\nrdar://189455718\n\nReviewed by Dan Hecht.\n\nUnnecessary chattiness hides real test error messages, making it hard to debug real errors.\n\nNo new tests because this is a test fix.\n\n* JSTests/stress/constant-folding-clip-skips-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T13:56:58.720493+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fe7b1ac8b3e9a04206e3d6fcca7671e8ec627d6c",
+    "url": "https://github.com/WebKit/WebKit/commit/fe7b1ac8b3e9a04206e3d6fcca7671e8ec627d6c",
+    "message": "Implement DOM.setInspectModeEnabled for FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=316139\nrdar://179175840\n\nReviewed by BJ Burg.\n\nImplements setInspectModeEnabled for FrameDOMAgent, replacing the stub that\nreturned \"Not supported for frame targets\", so the element picker works inside a\ncr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
