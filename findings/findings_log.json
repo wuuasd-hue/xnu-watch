@@ -76297,5 +76297,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T00:32:07.094502+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac57a2af8c0e77f9ce5528d6ddb457a12a462bd3",
+    "url": "https://github.com/WebKit/WebKit/commit/ac57a2af8c0e77f9ce5528d6ddb457a12a462bd3",
+    "message": "Add a prevalent domain taint kind to JSC source taintedness\nhttps://bugs.webkit.org/show_bug.cgi?id=326466\nrdar://189264144\n\nReviewed by Keith Miller.\n\nJSC tracks a single SourceTaintedOrigin per SourceProvider, which is only used for script tracking\nprivacy. This adds a second, independent kind of ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T00:32:45.896518+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41d4de49d3c684c9f01bdb67262c08d46852f8f5",
+    "url": "https://github.com/WebKit/WebKit/commit/41d4de49d3c684c9f01bdb67262c08d46852f8f5",
+    "message": "[Site Isolation] Web Inspector: Add Canvas support for frame targets\nhttps://bugs.webkit.org/show_bug.cgi?id=325761\nrdar://188777092\n\nReviewed by Qianlang Chen.\n\nUnder site isolation, the frontend has two targets for the top-level\ndocument: the page target and the main frame's frame target. Because\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T00:33:23.861368+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9804a95e09676c514912067b0b77f85c690b7dd5",
+    "url": "https://github.com/WebKit/WebKit/commit/9804a95e09676c514912067b0b77f85c690b7dd5",
+    "message": "[WebKit] Let the WebProcess mint the NavigationIdentifier of the navigations it starts\nhttps://bugs.webkit.org/show_bug.cgi?id=326415\nrdar://189226143\n\nReviewed by Alex Christensen.\n\nAPI::Navigation objects in WebNavigationState are released when the WebProcess DocumentLoader that\nowns them is detac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-09T00:34:01.931821+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9e61a8160a2345eddfa61dc4af41d4ac2f2c2842",
+    "url": "https://github.com/WebKit/WebKit/commit/9e61a8160a2345eddfa61dc4af41d4ac2f2c2842",
+    "message": "[Image Redux] Remove CachedImage image size functions\nhttps://bugs.webkit.org/show_bug.cgi?id=326675\n\nReviewed by Tim Nguyen.\n\nThe last uses of the CachedImage image size functions were RenderSVGImage and LegacyRenderSVGImage which used\nCachedImage::clampedImageSize() in their preserveAspectRatio=no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
