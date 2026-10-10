@@ -76937,5 +76937,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T18:59:08.616066+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e36036d0ef7f2fe4f8167c519679fc7497b46696",
+    "url": "https://github.com/WebKit/WebKit/commit/e36036d0ef7f2fe4f8167c519679fc7497b46696",
+    "message": "[JSC] Proactively merge back used-variable sets in Parser\nhttps://bugs.webkit.org/show_bug.cgi?id=327006\nrdar://188814992\n\nReviewed by Yijia Huang.\n\nEvery time a parenthesized expression begins, the parser adds a new used-variable set to the\nlist of such sets in Scope. If the expression turns out to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T18:59:47.217847+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c3fb01227f09c49ccbbc661e12cd2c106a69e0d",
+    "url": "https://github.com/WebKit/WebKit/commit/7c3fb01227f09c49ccbbc661e12cd2c106a69e0d",
+    "message": "[JSC] WebAssembly debugger: a continue after `Hc<thread>` resumes the wrong VM\nhttps://bugs.webkit.org/show_bug.cgi?id=326148\nrdar://189044221\n\nReviewed by Mark Lam.\n\nLLDB picks the thread to run with one Hc<thread> packet (e.g. `thread continue\n<N>`) then sends bare c/s, but JSC's stop-the-world ov",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T19:00:25.873266+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "67125468afbb46b90155a3df013cdf648383834c",
+    "url": "https://github.com/swiftlang/swift/commit/67125468afbb46b90155a3df013cdf648383834c",
+    "message": "Merge pull request #74230 from tbkka/tbkka-remotemirror-no-more-mpe-metadata\n\n[RemoteMirror] Remove compiler code to emit spare bit info in reflection metadata",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T19:01:04.908666+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac57a2af8c0e77f9ce5528d6ddb457a12a462bd3",
+    "url": "https://github.com/WebKit/WebKit/commit/ac57a2af8c0e77f9ce5528d6ddb457a12a462bd3",
+    "message": "Add a prevalent domain taint kind to JSC source taintedness\nhttps://bugs.webkit.org/show_bug.cgi?id=326466\nrdar://189264144\n\nReviewed by Keith Miller.\n\nJSC tracks a single SourceTaintedOrigin per SourceProvider, which is only used for script tracking\nprivacy. This adds a second, independent kind of ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
