@@ -76757,5 +76757,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T08:44:26.967079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ab081a2baf5481dd649e7213fba08e5c366dd16d",
+    "url": "https://github.com/WebKit/WebKit/commit/ab081a2baf5481dd649e7213fba08e5c366dd16d",
+    "message": "[JSC] Allocate registers for locals in BBQ\nhttps://bugs.webkit.org/show_bug.cgi?id=326017\nrdar://188956724\n\nReviewed by Dan Hecht.\n\ngetLocal() copied a local into a fresh temp and setLocal() stored one back, so a\nlocal was loaded at every read and stored at every write.\n\nLet an expression stack entr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T08:45:04.641918+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db89016bcf994511e112e3a12c158b6d5b47ebc7",
+    "url": "https://github.com/WebKit/WebKit/commit/db89016bcf994511e112e3a12c158b6d5b47ebc7",
+    "message": "Separate same-origin documents with a different Document-Isolation-Policy into different agent clusters\nhttps://bugs.webkit.org/show_bug.cgi?id=326665\nrdar://189400241\n\nReviewed by Alex Christensen.\n\nSame-origin documents can now be in different agent clusters, so an origin\ncheck no longer tells whe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T08:45:42.059248+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e5f751c78bd0c12d362e6cf4a8ff075af7b13021",
+    "url": "https://github.com/WebKit/WebKit/commit/e5f751c78bd0c12d362e6cf4a8ff075af7b13021",
+    "message": "[JSC] Use Vector<JSValue> in Parser as GC is deferred\nhttps://bugs.webkit.org/show_bug.cgi?id=326985\nrdar://189608129\n\nReviewed by Dan Hecht.\n\nLet's use Vector<JSValue> as Parser is under DeferGC scope, so it is\nsafe. We added ASSERT to confirm this. Also we dropped m_numConstants as\nit is no longer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T08:46:19.500988+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f9dcd0ee93e44247a8ff0fe63029c35dcc9a259a",
+    "url": "https://github.com/WebKit/WebKit/commit/f9dcd0ee93e44247a8ff0fe63029c35dcc9a259a",
+    "message": "[JSC] FTL CheckJSCast always OSR exits for classes with a JSType range\nhttps://bugs.webkit.org/show_bug.cgi?id=326765\nrdar://189477440\n\nReviewed by Keith Miller.\n\ncompileCheckJSCast negated the type check result with Output::bitNot, which is\nBitXor with -1. Applied to a 0/1 comparison result it yiel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T08:46:56.907336+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f030129a85a48f48fdc21eff4343a99124e92de5",
+    "url": "https://github.com/WebKit/WebKit/commit/f030129a85a48f48fdc21eff4343a99124e92de5",
+    "message": "[linux] Do not set high priority for non-utility threads\nhttps://bugs.webkit.org/show_bug.cgi?id=324270\n\nReviewed by Carlos Alberto Lopez Perez.\n\nWhen we run a bunch of jsc instances during stress tests, we exhaust\nthe number of rtkit requests the daemon can handle. Morally, a high\npriority is a sca",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
