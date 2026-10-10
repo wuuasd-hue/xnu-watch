@@ -76857,5 +76857,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T14:50:59.525551+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ee637ac017724a626b7a6899db0e31ab305483b",
+    "url": "https://github.com/WebKit/WebKit/commit/2ee637ac017724a626b7a6899db0e31ab305483b",
+    "message": "[JSC] Tighten FTL lowering of Map and Set lookup and iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=326779\nrdar://problem/189487375\n\nReviewed by Sosuke Suzuki.\n\ncompileMapGetImpl compared every probed key against the deleted-entry marker.\nThe marker is a VM-private Symbol that is never a key and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T14:51:37.732564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e726acd0ec15ba739f634987e08639f60085a61",
+    "url": "https://github.com/WebKit/WebKit/commit/1e726acd0ec15ba739f634987e08639f60085a61",
+    "message": "Retry failed modulepreload resources\nhttps://bugs.webkit.org/show_bug.cgi?id=270357\n\nReviewed by Chris Dumez.\n\nA failed modulepreload remains marked as preloaded in the memory cache.\ndetermineRevalidationPolicy() then returns Use from its preload shortcuts before\nreaching the generic error-state rel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T14:52:16.369902+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2cb4a4edf352593c30f835b967a5b3699fefc898",
+    "url": "https://github.com/WebKit/WebKit/commit/2cb4a4edf352593c30f835b967a5b3699fefc898",
+    "message": "Web Inspector: the error of an async command is sent with the id of the command being dispatched\nhttps://bugs.webkit.org/show_bug.cgi?id=326703\n\nReviewed by Devin Rousso.\n\nAsync commands send their errors with reportProtocolError() followed by\nsendPendingErrors(). reportProtocolError() only uses the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T14:52:54.725804+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "427feb8178e451d07ce8ca84e89c73ce49465f80",
+    "url": "https://github.com/WebKit/WebKit/commit/427feb8178e451d07ce8ca84e89c73ce49465f80",
+    "message": "[Site Isolation] Web Inspector: Nodes in cross-origin iframes have no CSS layout flags\nhttps://bugs.webkit.org/show_bug.cgi?id=326615\nrdar://187418569\n\nReviewed by Qianlang Chen.\n\nFrame targets never reported CSS layout flags, and the frontend marked every frame-target element as\nrendered. So a disp",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
