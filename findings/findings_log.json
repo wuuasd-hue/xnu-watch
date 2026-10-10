@@ -77017,5 +77017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T22:11:04.931317+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41d4de49d3c684c9f01bdb67262c08d46852f8f5",
+    "url": "https://github.com/WebKit/WebKit/commit/41d4de49d3c684c9f01bdb67262c08d46852f8f5",
+    "message": "[Site Isolation] Web Inspector: Add Canvas support for frame targets\nhttps://bugs.webkit.org/show_bug.cgi?id=325761\nrdar://188777092\n\nReviewed by Qianlang Chen.\n\nUnder site isolation, the frontend has two targets for the top-level\ndocument: the page target and the main frame's frame target. Because\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T22:11:42.359413+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2edaa071178a43a44dfaa4c37716247c43642c66",
+    "url": "https://github.com/WebKit/WebKit/commit/2edaa071178a43a44dfaa4c37716247c43642c66",
+    "message": "Ref and RefPtr casts should return a smart pointer only for an rvalue\nhttps://bugs.webkit.org/show_bug.cgi?id=326795\nrdar://189503108\n\nReviewed by Ryosuke Niwa and Chris Dumez.\n\nSince 267923@main, downcast(), dynamicDowncast() and uncheckedDowncast() take a Ref or RefPtr by\nvalue, so casting an lval",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
