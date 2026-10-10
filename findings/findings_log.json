@@ -76697,5 +76697,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T02:27:49.402661+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b0bb30bdd41d8dc58b6d988d26f3141cc0446651",
+    "url": "https://github.com/WebKit/WebKit/commit/b0bb30bdd41d8dc58b6d988d26f3141cc0446651",
+    "message": "Web Inspector: don't automatically invoke native getters on functions and prototype objects\nhttps://bugs.webkit.org/show_bug.cgi?id=320626\n\nReviewed by Timothy Hatcher.\n\n`Runtime.getDisplayableProperties` automatically invokes native getters so object previews can show their values.\n\nKeep this behav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T02:28:26.796590+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e694d1c0c386f716059d728afbd2bcc6aaea2011",
+    "url": "https://github.com/WebKit/WebKit/commit/e694d1c0c386f716059d728afbd2bcc6aaea2011",
+    "message": "[JSC] `using` declaration should be allowed in a function nested in a switch clause\nhttps://bugs.webkit.org/show_bug.cgi?id=325952\n\nReviewed by Yusuke Suzuki.\n\nA `using` or `await using` declaration is a syntax error only when it is\ncontained directly in the StatementList of a CaseClause or DefaultC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-10T02:29:05.526732+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b68bb7b7c02bcdb97d5a2c4a20a0f69afc6c1497",
+    "url": "https://github.com/WebKit/WebKit/commit/b68bb7b7c02bcdb97d5a2c4a20a0f69afc6c1497",
+    "message": "[JSC] Sum the GC log and signpost values over all of the Collector's heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326693\nrdar://189425869\n\nReviewed by Marcus Plutowski.\n\nThe logGC lines and the GC signpost describe only heap(), the Collector's one\nheap: its pointer, capacity, barriers executed and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
