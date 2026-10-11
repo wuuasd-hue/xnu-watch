@@ -77057,5 +77057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T01:04:26.130840+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3e286ac0a33414e20bd7e41926a3bb7d6b9ee73b",
+    "url": "https://github.com/WebKit/WebKit/commit/3e286ac0a33414e20bd7e41926a3bb7d6b9ee73b",
+    "message": "[JSC] Remove redundant work from FTL string lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=326766\nrdar://189477675\n\nReviewed by Yijia Huang.\n\nThis patch cleans up some FTL code generation.\n\n1. compileStringCharAtImpl and compileStringCodePointAt loaded StringImpl::m_data\n   separately in the 8-bit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T01:05:04.498145+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ed1ea245850f9bfe39534edb6a0db7d7cf714ec6",
+    "url": "https://github.com/WebKit/WebKit/commit/ed1ea245850f9bfe39534edb6a0db7d7cf714ec6",
+    "message": "[JSC] MovHint removal should apply the block-terminal liveness rule only to phantom allocations\nhttps://bugs.webkit.org/show_bug.cgi?id=326643\nrdar://189380801\n\nReviewed by Yijia Huang.\n\nMovHint removal phase treats the bytecode-live locals at every block\nterminal as uses even when the terminal does",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
