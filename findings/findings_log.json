@@ -77097,5 +77097,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:22:01.413718+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1ded72f138508451e7d054b546ed82e237e040c7",
+    "url": "https://github.com/WebKit/WebKit/commit/1ded72f138508451e7d054b546ed82e237e040c7",
+    "message": "Fix uncounted local variable warnings in Source/WebCore after 2026-10-06 rollout\nhttps://bugs.webkit.org/show_bug.cgi?id=327125\n\nReviewed by Anne van Kesteren.\n\nDeployed more smart pointers to fix safer C++ counted local variable warnings.\n\nNo new tests since there should be no observable behavior c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:22:40.733875+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7fbbbd1f450b34c85e0ad90024af44dcf1ef2802",
+    "url": "https://github.com/WebKit/WebKit/commit/7fbbbd1f450b34c85e0ad90024af44dcf1ef2802",
+    "message": "[JSC] Remove redundant work from FTL object and array access lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=327078\nrdar://189684727\n\nReviewed by Sosuke Suzuki.\n\nDo several optimizations in FTL lowering in object and array access.\n\n1. compileMultiGetByOffset and compileMultiPutByOffset load the but",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:23:18.438577+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57c638004510c6530ad0f19332f5f707185cd601",
+    "url": "https://github.com/WebKit/WebKit/commit/57c638004510c6530ad0f19332f5f707185cd601",
+    "message": "[JSC] TypeCheckHoisting should not hoist a monomorphic CheckStructure over a polymorphic access\nhttps://bugs.webkit.org/show_bug.cgi?id=327063\nrdar://189678698\n\nReviewed by Sosuke Suzuki.\n\nTypeCheckHoistingPhase moves CheckStructure from GetLocal side to\nSetLocal side when all CheckStructure against",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:23:56.073292+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "316c1ac309447e7aaa2423992487ec008f603abd",
+    "url": "https://github.com/WebKit/WebKit/commit/316c1ac309447e7aaa2423992487ec008f603abd",
+    "message": "[JSC] `op_iterator_next` should inline Latin-1 characters in 16-bit strings in Baseline JIT and LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326952\n\nReviewed by Yusuke Suzuki.\n\nThe FastString path of op_iterator_next in Baseline JIT and LLInt, inlined in\n322928@main, only handles 8-bit strings. A s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:24:34.153425+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cce27133ecf45fa3abcba95ae4d8e1631be8b1c",
+    "url": "https://github.com/WebKit/WebKit/commit/4cce27133ecf45fa3abcba95ae4d8e1631be8b1c",
+    "message": "[JSC] Inline the double case of Number.isNaN, Number.isFinite, and Number.isSafeInteger\nhttps://bugs.webkit.org/show_bug.cgi?id=326780\nrdar://189490653\n\nReviewed by Sosuke Suzuki.\n\nThese functions are super simple, they only handle Numbers, so fully\ninlined implementation is better than calling oper",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T07:25:12.066793+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "192fd94f17a5e23ac3a41491eff0f7a50fcf87bf",
+    "url": "https://github.com/WebKit/WebKit/commit/192fd94f17a5e23ac3a41491eff0f7a50fcf87bf",
+    "message": "[JSC] Make the GC's mutator scheduler work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=326875\nrdar://189554727\n\nReviewed by Yusuke Suzuki.\n\nThe mutator scheduler decides when concurrent marking stops and resumes the\nmutator, by comparing the bytes allocated since the col",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
