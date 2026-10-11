@@ -77337,5 +77337,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T19:01:59.616279+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22a2306fb72994403a9910071fff0284a132292b",
+    "url": "https://github.com/WebKit/WebKit/commit/22a2306fb72994403a9910071fff0284a132292b",
+    "message": "Blob documents created by a document with an opaque origin lose its Document-Isolation-Policy\nhttps://bugs.webkit.org/show_bug.cgi?id=327090\nrdar://189704994\n\nReviewed by Ryosuke Niwa.\n\nA blob: document inherits the policy container of the document that created\nit, which BlobResourceHandleBase refle",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T19:02:37.941109+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "31dac8387e410a55ff884b840882997b115f3ce5",
+    "url": "https://github.com/swiftlang/swift/commit/31dac8387e410a55ff884b840882997b115f3ce5",
+    "message": "Merge pull request #93092 from mikeash/restore-metadata-sections-mpenum-padding\n\n[Runtime] Keep a placeholder where swift5_mpenum was in MetadataSections.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T19:03:15.746096+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b0bb30bdd41d8dc58b6d988d26f3141cc0446651",
+    "url": "https://github.com/WebKit/WebKit/commit/b0bb30bdd41d8dc58b6d988d26f3141cc0446651",
+    "message": "Web Inspector: don't automatically invoke native getters on functions and prototype objects\nhttps://bugs.webkit.org/show_bug.cgi?id=320626\n\nReviewed by Timothy Hatcher.\n\n`Runtime.getDisplayableProperties` automatically invokes native getters so object previews can show their values.\n\nKeep this behav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
