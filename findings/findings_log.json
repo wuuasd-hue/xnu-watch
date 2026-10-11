@@ -77217,5 +77217,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:13:14.000096+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91e8fd1b2f0cec329c19c738cf90d470ac51be40",
+    "url": "https://github.com/WebKit/WebKit/commit/91e8fd1b2f0cec329c19c738cf90d470ac51be40",
+    "message": "[JSC] Eden GC should sweep only new and dirty ArrayBuffers\nhttps://bugs.webkit.org/show_bug.cgi?id=326981\n\nReviewed by Yusuke Suzuki.\n\nGCIncomingRefCountedSet::sweep() filters the incoming references of every\nArrayBuffer in each collection. With many live ArrayBuffers, each Eden\ncollection pays for ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:13:51.630924+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13714a5887a573158451081539e20d5521bc3357",
+    "url": "https://github.com/WebKit/WebKit/commit/13714a5887a573158451081539e20d5521bc3357",
+    "message": "[JSC] DFG backwards propagation should not treat non-integer constants as within power of two\nhttps://bugs.webkit.org/show_bug.cgi?id=326632\n\nReviewed by Yusuke Suzuki.\n\nWhen one operand of an addition is a constant whose absolute value is less\nthan 2^32, BackwardsPropagationPhase does not propagate",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:14:30.503017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b61fb4887c1382b9f7918b6bed67d2a5e241ea2",
+    "url": "https://github.com/WebKit/WebKit/commit/9b61fb4887c1382b9f7918b6bed67d2a5e241ea2",
+    "message": "[JSC] `putByValMegamorphic` and `inByValMegamorphic` should not create `Identifier`\nhttps://bugs.webkit.org/show_bug.cgi?id=327083\n\nReviewed by Yusuke Suzuki.\n\nputByValMegamorphic and inByValMegamorphic call toPropertyKey() to get\nthe uid of the subscript. This creates an Identifier, which refs and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:15:07.662637+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54a3720b4ec1ddcf0207d5f3507e0608149c0ad1",
+    "url": "https://github.com/WebKit/WebKit/commit/54a3720b4ec1ddcf0207d5f3507e0608149c0ad1",
+    "message": "[JSC] JSWeakMap / JSWeakSet should have inline buffer\nhttps://bugs.webkit.org/show_bug.cgi?id=327087\nrdar://189703653\n\nReviewed by Sosuke Suzuki.\n\nWhen JSWeakSet / JSWeakMap are created, it is having some elements, but\nit rarely exceeds the initialCapacity = 4. This patch adds inline buffer\nfor them",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:15:45.966063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0b23dd248f27fab8732ff1b9fff423cbd13b39b1",
+    "url": "https://github.com/WebKit/WebKit/commit/0b23dd248f27fab8732ff1b9fff423cbd13b39b1",
+    "message": "Deploy 2026-10-06 snapshot on macOS safer C++ bots\nhttps://bugs.webkit.org/show_bug.cgi?id=326846\nrdar://189574019\n\nReviewed by Chris Dumez.\n\nDeploy swift-DEVELOPMENT-SNAPSHOT-2026-10-06-a on macOS safer C++ bots.\n\nUpdate the expectations accordingly.\n\n* Source/JavaScriptCore/SaferCPPExpectations/Me",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-11T14:16:23.160892+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2ffc55c56bd78ac2243d1e26c7844ef731df53c",
+    "url": "https://github.com/WebKit/WebKit/commit/e2ffc55c56bd78ac2243d1e26c7844ef731df53c",
+    "message": "[JSC] Add divide-and-conquer `toString` to `JSBigInt`\nhttps://bugs.webkit.org/show_bug.cgi?id=326633\n\nReviewed by Yusuke Suzuki.\n\nJSBigInt::toStringGeneric divides the whole value by a one-digit divisor once\nper digit of the value, so its cost is quadratic in the length. A value of\n16384 digits, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
