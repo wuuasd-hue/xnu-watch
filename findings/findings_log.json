@@ -77437,5 +77437,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T02:03:30.252168+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fba1aeeb7239da58cbc5777e346052d9374b8f2",
+    "url": "https://github.com/WebKit/WebKit/commit/6fba1aeeb7239da58cbc5777e346052d9374b8f2",
+    "message": "[JSC] `GetPrototypeFromConstructor` should read `prototype` before calling `GetFunctionRealm`\nhttps://bugs.webkit.org/show_bug.cgi?id=327141\n\nReviewed by Yusuke Suzuki.\n\nGetPrototypeFromConstructor [1] reads newTarget.prototype first and calls\nGetFunctionRealm only when the result is not an object. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T02:04:09.358732+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e5f751c78bd0c12d362e6cf4a8ff075af7b13021",
+    "url": "https://github.com/WebKit/WebKit/commit/e5f751c78bd0c12d362e6cf4a8ff075af7b13021",
+    "message": "[JSC] Use Vector<JSValue> in Parser as GC is deferred\nhttps://bugs.webkit.org/show_bug.cgi?id=326985\nrdar://189608129\n\nReviewed by Dan Hecht.\n\nLet's use Vector<JSValue> as Parser is under DeferGC scope, so it is\nsafe. We added ASSERT to confirm this. Also we dropped m_numConstants as\nit is no longer",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T02:04:47.403579+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ee637ac017724a626b7a6899db0e31ab305483b",
+    "url": "https://github.com/WebKit/WebKit/commit/2ee637ac017724a626b7a6899db0e31ab305483b",
+    "message": "[JSC] Tighten FTL lowering of Map and Set lookup and iteration\nhttps://bugs.webkit.org/show_bug.cgi?id=326779\nrdar://problem/189487375\n\nReviewed by Sosuke Suzuki.\n\ncompileMapGetImpl compared every probed key against the deleted-entry marker.\nThe marker is a VM-private Symbol that is never a key and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
