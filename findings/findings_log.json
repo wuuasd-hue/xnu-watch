@@ -77497,5 +77497,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T09:27:52.524742+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e06f886b4d0df4ba70d64c5d3e3ea388d05b73a1",
+    "url": "https://github.com/swiftlang/swift/commit/e06f886b4d0df4ba70d64c5d3e3ea388d05b73a1",
+    "message": "Merge pull request #93163 from tbkka/tbkka-is-array-speedup\n\nSpeed up `is [T]` in the most general case",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T09:28:30.194335+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1e726acd0ec15ba739f634987e08639f60085a61",
+    "url": "https://github.com/WebKit/WebKit/commit/1e726acd0ec15ba739f634987e08639f60085a61",
+    "message": "Retry failed modulepreload resources\nhttps://bugs.webkit.org/show_bug.cgi?id=270357\n\nReviewed by Chris Dumez.\n\nA failed modulepreload remains marked as preloaded in the memory cache.\ndetermineRevalidationPolicy() then returns Use from its preload shortcuts before\nreaching the generic error-state rel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T09:29:07.321412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e36036d0ef7f2fe4f8167c519679fc7497b46696",
+    "url": "https://github.com/WebKit/WebKit/commit/e36036d0ef7f2fe4f8167c519679fc7497b46696",
+    "message": "[JSC] Proactively merge back used-variable sets in Parser\nhttps://bugs.webkit.org/show_bug.cgi?id=327006\nrdar://188814992\n\nReviewed by Yijia Huang.\n\nEvery time a parenthesized expression begins, the parser adds a new used-variable set to the\nlist of such sets in Scope. If the expression turns out to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
