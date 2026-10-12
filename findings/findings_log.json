@@ -77557,5 +77557,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:11:33.196434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47697fd0eb3e4279d3065166875c68b7194c341e",
+    "url": "https://github.com/WebKit/WebKit/commit/47697fd0eb3e4279d3065166875c68b7194c341e",
+    "message": "[JSC] Make the GC's scope decision and visitor checks work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=327171\nrdar://189763499\n\nReviewed by Yusuke Suzuki.\n\nEvery heap in a collection is collected with the same scope. When a request\ndoesn't specify one, decideCollectionSc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:12:11.228515+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e4ff7aa732e8f62d5536aa65527564b7b70cc63",
+    "url": "https://github.com/WebKit/WebKit/commit/5e4ff7aa732e8f62d5536aa65527564b7b70cc63",
+    "message": "[JSC] Support heaps joining and leaving a Collector, for global collections\nhttps://bugs.webkit.org/show_bug.cgi?id=327055\nrdar://189661773\n\nReviewed by Yusuke Suzuki.\n\nBy default, each Heap owns its own Collector, which collects only that heap.\nThat Collector now lives in m_localCollector. With use",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:12:48.893143+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ddc9c7fbc6801a0bfd1bc773da29a75fc1a3a17b",
+    "url": "https://github.com/WebKit/WebKit/commit/ddc9c7fbc6801a0bfd1bc773da29a75fc1a3a17b",
+    "message": "[JSC] Make heap analysis work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=327206\nrdar://189780433\n\nReviewed by Yusuke Suzuki.\n\nA heap analyzer, such as a heap snapshot or the inspector's holder finder,\nbelongs to one VM and describes that VM's heap. Currently, the visito",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:13:26.778615+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "15945c380700511bbf34bca426440f0aa0075a8e",
+    "url": "https://github.com/swiftlang/swift/commit/15945c380700511bbf34bca426440f0aa0075a8e",
+    "message": "Merge pull request #93164 from tshortli/called-once-function-metadata\n\nRuntime metadata for at-most-once and exactly-once function types",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:14:04.694636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c3fb01227f09c49ccbbc661e12cd2c106a69e0d",
+    "url": "https://github.com/WebKit/WebKit/commit/7c3fb01227f09c49ccbbc661e12cd2c106a69e0d",
+    "message": "[JSC] WebAssembly debugger: a continue after `Hc<thread>` resumes the wrong VM\nhttps://bugs.webkit.org/show_bug.cgi?id=326148\nrdar://189044221\n\nReviewed by Mark Lam.\n\nLLDB picks the thread to run with one Hc<thread> packet (e.g. `thread continue\n<N>`) then sends bare c/s, but JSC's stop-the-world ov",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-12T19:14:42.364704+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1ded72f138508451e7d054b546ed82e237e040c7",
+    "url": "https://github.com/WebKit/WebKit/commit/1ded72f138508451e7d054b546ed82e237e040c7",
+    "message": "Fix uncounted local variable warnings in Source/WebCore after 2026-10-06 rollout\nhttps://bugs.webkit.org/show_bug.cgi?id=327125\n\nReviewed by Anne van Kesteren.\n\nDeployed more smart pointers to fix safer C++ counted local variable warnings.\n\nNo new tests since there should be no observable behavior c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
