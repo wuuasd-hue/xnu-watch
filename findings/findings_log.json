@@ -77677,5 +77677,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:28:45.014044+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "691f57b972ae3b96639412eccc5049b7a81e73b6",
+    "url": "https://github.com/WebKit/WebKit/commit/691f57b972ae3b96639412eccc5049b7a81e73b6",
+    "message": "[JSC] `and64`, `or64` and `xor64` with a blinded `Imm64` should read `src`\nhttps://bugs.webkit.org/show_bug.cgi?id=327246\n\nReviewed by Yusuke Suzuki.\n\nWhen the constant is blinded, MacroAssembler::and64(Imm64, src, dest), or64\nand xor64 load it into the scratch register and emit op64(scratchRegister",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:29:23.004652+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "917c91dde1d939e980066d74abe48314da8f9f7a",
+    "url": "https://github.com/WebKit/WebKit/commit/917c91dde1d939e980066d74abe48314da8f9f7a",
+    "message": "[Safer CPP] Address new NODELETE warnings after the safer cpp static analysis upgrade\nhttps://bugs.webkit.org/show_bug.cgi?id=327233\n\nReviewed by Rupin Mittal.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/bytecode/CallLinkInfo.h:\n* Source/JavaScr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:30:00.448676+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3acfa863de11ae9b71742457da0f012bf67f3539",
+    "url": "https://github.com/WebKit/WebKit/commit/3acfa863de11ae9b71742457da0f012bf67f3539",
+    "message": "[JSC] FTL splat-words use two-store per loop\nhttps://bugs.webkit.org/show_bug.cgi?id=327273\nrdar://189828329\n\nReviewed by Dan Hecht.\n\nEmit two stores per loop in FTL splat-words, which can be converted to\nstp in B3/Air.\n\nTest: JSTests/stress/new-array-with-size-hole-fill-lengths.js\n\n* JSTests/stress",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:30:37.987719+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47b1bf884eb5adb28e9f3316c4930f5367bac470",
+    "url": "https://github.com/WebKit/WebKit/commit/47b1bf884eb5adb28e9f3316c4930f5367bac470",
+    "message": "A module worker should evaluate its entry script once\nhttps://bugs.webkit.org/show_bug.cgi?id=324459\n\nReviewed by Yusuke Suzuki.\n\nThe worker's top-level module is fetched before the worker starts, then\nhanded to the module loader as source. That path registered the source\nunder a private entrypoint ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:31:18.188578+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7fbbbd1f450b34c85e0ad90024af44dcf1ef2802",
+    "url": "https://github.com/WebKit/WebKit/commit/7fbbbd1f450b34c85e0ad90024af44dcf1ef2802",
+    "message": "[JSC] Remove redundant work from FTL object and array access lowering\nhttps://bugs.webkit.org/show_bug.cgi?id=327078\nrdar://189684727\n\nReviewed by Sosuke Suzuki.\n\nDo several optimizations in FTL lowering in object and array access.\n\n1. compileMultiGetByOffset and compileMultiPutByOffset load the but",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T01:31:55.779485+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57c638004510c6530ad0f19332f5f707185cd601",
+    "url": "https://github.com/WebKit/WebKit/commit/57c638004510c6530ad0f19332f5f707185cd601",
+    "message": "[JSC] TypeCheckHoisting should not hoist a monomorphic CheckStructure over a polymorphic access\nhttps://bugs.webkit.org/show_bug.cgi?id=327063\nrdar://189678698\n\nReviewed by Sosuke Suzuki.\n\nTypeCheckHoistingPhase moves CheckStructure from GetLocal side to\nSetLocal side when all CheckStructure against",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
