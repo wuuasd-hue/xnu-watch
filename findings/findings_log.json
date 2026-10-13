@@ -78037,5 +78037,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T20:51:28.948471+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbac7ef4d823a99f85a45476e64cefae4a6f4fa4",
+    "url": "https://github.com/WebKit/WebKit/commit/fbac7ef4d823a99f85a45476e64cefae4a6f4fa4",
+    "message": "[GLib] Add API for accessing web application manifests\nhttps://bugs.webkit.org/show_bug.cgi?id=319834\n\nReviewed by Michael Catanzaro and Justin Michaud.\n\nThis was already exposed on Apple ports, behind the ENABLE_APPLICATION_MANIFEST\nbuild option, so adding API for it here.\n\nTest: Tools/TestWebKitAP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T20:52:06.570821+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e08d48004c0da63b53f54ef8752ccdd97b0ca92",
+    "url": "https://github.com/WebKit/WebKit/commit/0e08d48004c0da63b53f54ef8752ccdd97b0ca92",
+    "message": "[JSC] Fix FTL ToIntegerOrInfinity\nhttps://bugs.webkit.org/show_bug.cgi?id=327357\nrdar://189876905\n\nReviewed by Dan Hecht.\n\nFor double input (-1, 0), FTL ToIntegerOrInfinity returns -0 since\n\n1. They are not 0\n2. m_out.doubleTrunc(doubleValue) generates -0\n\nFix it by comparing the truncated result wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T20:52:44.460984+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54a3720b4ec1ddcf0207d5f3507e0608149c0ad1",
+    "url": "https://github.com/WebKit/WebKit/commit/54a3720b4ec1ddcf0207d5f3507e0608149c0ad1",
+    "message": "[JSC] JSWeakMap / JSWeakSet should have inline buffer\nhttps://bugs.webkit.org/show_bug.cgi?id=327087\nrdar://189703653\n\nReviewed by Sosuke Suzuki.\n\nWhen JSWeakSet / JSWeakMap are created, it is having some elements, but\nit rarely exceeds the initialCapacity = 4. This patch adds inline buffer\nfor them",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T20:53:22.097651+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22a2306fb72994403a9910071fff0284a132292b",
+    "url": "https://github.com/WebKit/WebKit/commit/22a2306fb72994403a9910071fff0284a132292b",
+    "message": "Blob documents created by a document with an opaque origin lose its Document-Isolation-Policy\nhttps://bugs.webkit.org/show_bug.cgi?id=327090\nrdar://189704994\n\nReviewed by Ryosuke Niwa.\n\nA blob: document inherits the policy container of the document that created\nit, which BlobResourceHandleBase refle",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
