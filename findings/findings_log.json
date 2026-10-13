@@ -77797,5 +77797,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T07:59:18.935765+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "50a617392b54665ab539ee98ddb8c3ddef47b90e",
+    "url": "https://github.com/WebKit/WebKit/commit/50a617392b54665ab539ee98ddb8c3ddef47b90e",
+    "message": "Make Latin1Character a distinct type from uint8_t so it can imply character encoding as char8/16/32_t do\nhttps://bugs.webkit.org/show_bug.cgi?id=296539\nrdar://156856072\n\nReviewed by Sam Weinig.\n\nReland of Darin Adler's 300282@main (774c0dc407ae), rebased onto current trunk. The original\nchange was r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T07:59:56.566042+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ca1f041c34a41f09ce222106852ee411a67e77a",
+    "url": "https://github.com/WebKit/WebKit/commit/5ca1f041c34a41f09ce222106852ee411a67e77a",
+    "message": "[JSC] RegExp `String#replace` and `JSON.stringify` should not resolve substring ropes\nhttps://bugs.webkit.org/show_bug.cgi?id=327129\n\nReviewed by Yusuke Suzuki.\n\n`String#replace` with a RegExp and the fast path of `JSON.stringify` resolved a\nsubstring rope before reading it. That allocates a StringI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T08:00:34.939266+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a8cc2f8bf6e9dac9da96686bb2bb23d60684de7",
+    "url": "https://github.com/WebKit/WebKit/commit/7a8cc2f8bf6e9dac9da96686bb2bb23d60684de7",
+    "message": "[YARR] Use bit tables instead of inlined cmp for unicode property escapes\nhttps://bugs.webkit.org/show_bug.cgi?id=325109\n\nReviewed by Yusuke Suzuki.\n\nYARR JIT generates an inline compare for every range of a character\nclass. This is fine for classes with few ranges, but \\p{L} has 685\nranges and sing",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T08:01:12.701058+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "819db6a41c384e0b26782fa3b702617a17d4dc73",
+    "url": "https://github.com/WebKit/WebKit/commit/819db6a41c384e0b26782fa3b702617a17d4dc73",
+    "message": "[JSC] PutStackSinkingPhase should compute reaching defs with a single dominator tree walk\nhttps://bugs.webkit.org/show_bug.cgi?id=327153\nrdar://189742151\n\nReviewed by Dan Hecht.\n\nWe found that DFGPutStackSinkingPhase's SSACalculator::reachingDefAtHead\nis taking very long time. Each query walks up th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T08:01:50.658652+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "316c1ac309447e7aaa2423992487ec008f603abd",
+    "url": "https://github.com/WebKit/WebKit/commit/316c1ac309447e7aaa2423992487ec008f603abd",
+    "message": "[JSC] `op_iterator_next` should inline Latin-1 characters in 16-bit strings in Baseline JIT and LLInt\nhttps://bugs.webkit.org/show_bug.cgi?id=326952\n\nReviewed by Yusuke Suzuki.\n\nThe FastString path of op_iterator_next in Baseline JIT and LLInt, inlined in\n322928@main, only handles 8-bit strings. A s",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T08:02:28.703493+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91e8fd1b2f0cec329c19c738cf90d470ac51be40",
+    "url": "https://github.com/WebKit/WebKit/commit/91e8fd1b2f0cec329c19c738cf90d470ac51be40",
+    "message": "[JSC] Eden GC should sweep only new and dirty ArrayBuffers\nhttps://bugs.webkit.org/show_bug.cgi?id=326981\n\nReviewed by Yusuke Suzuki.\n\nGCIncomingRefCountedSet::sweep() filters the incoming references of every\nArrayBuffer in each collection. With many live ArrayBuffers, each Eden\ncollection pays for ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
