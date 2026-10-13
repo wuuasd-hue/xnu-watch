@@ -77917,5 +77917,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:32:21.449960+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5f13fa851de3e8d6fe06ac475f1893e4347e3d2",
+    "url": "https://github.com/WebKit/WebKit/commit/d5f13fa851de3e8d6fe06ac475f1893e4347e3d2",
+    "message": "Remove ShadowRealm\nhttps://bugs.webkit.org/show_bug.cgi?id=327263\nrdar://189822326\n\nReviewed by Yusuke Suzuki.\n\nIt never shipped and keeping it carries ongoing cost well beyond the code\nitself, so remove it along with the JSRemoteFunction marshalling machinery\nit depends on.\n\nRemoving it:\n\n- Stops b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:32:59.517464+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b247ff792c091217c95233a3404bb0c3039cb9af",
+    "url": "https://github.com/swiftlang/swift/commit/b247ff792c091217c95233a3404bb0c3039cb9af",
+    "message": "Merge pull request #93216 from eeckstein/fix-stdlib-build-error\n\nstdlib: fix a \"variable 'classObject' may be uninitialized\" build error",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:33:38.290417+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "6267e2941558822ab1bb17c24fa70c7b0bab1ce1",
+    "url": "https://github.com/swiftlang/swift/commit/6267e2941558822ab1bb17c24fa70c7b0bab1ce1",
+    "message": "stdlib: fix a \"variable 'classObject' may be uninitialized\" build error",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:34:16.455011+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "bbd19310046a39cd1e821f499e9b1532c072a543",
+    "url": "https://github.com/swiftlang/swift/commit/bbd19310046a39cd1e821f499e9b1532c072a543",
+    "message": "Merge pull request #93085 from swiftlang/jepa-main2\n\nEnable `conditional-uninitialized` errors in pedantic diagnostics mode",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:34:54.453245+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13714a5887a573158451081539e20d5521bc3357",
+    "url": "https://github.com/WebKit/WebKit/commit/13714a5887a573158451081539e20d5521bc3357",
+    "message": "[JSC] DFG backwards propagation should not treat non-integer constants as within power of two\nhttps://bugs.webkit.org/show_bug.cgi?id=326632\n\nReviewed by Yusuke Suzuki.\n\nWhen one operand of an addition is a constant whose absolute value is less\nthan 2^32, BackwardsPropagationPhase does not propagate",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T15:35:32.483126+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9b61fb4887c1382b9f7918b6bed67d2a5e241ea2",
+    "url": "https://github.com/WebKit/WebKit/commit/9b61fb4887c1382b9f7918b6bed67d2a5e241ea2",
+    "message": "[JSC] `putByValMegamorphic` and `inByValMegamorphic` should not create `Identifier`\nhttps://bugs.webkit.org/show_bug.cgi?id=327083\n\nReviewed by Yusuke Suzuki.\n\nputByValMegamorphic and inByValMegamorphic call toPropertyKey() to get\nthe uid of the subscript. This creates an Identifier, which refs and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
