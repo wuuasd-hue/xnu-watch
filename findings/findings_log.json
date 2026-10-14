@@ -78357,5 +78357,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T08:54:19.963222+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fcb0d2aeca59425ec2e617d1edce9ebc4de25d6",
+    "url": "https://github.com/WebKit/WebKit/commit/3fcb0d2aeca59425ec2e617d1edce9ebc4de25d6",
+    "message": "ScriptModuleLoader should hold its ScriptExecutionContext in a CheckedRef\nhttps://bugs.webkit.org/show_bug.cgi?id=327401\nrdar://189908965\n\nReviewed by Ryosuke Niwa.\n\nm_context was weakened from a CheckedRef to a WeakPtr in 263662@main to\naccommodate ShadowRealmGlobalScope::moduleLoader(), which buil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T08:54:57.798119+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a4b241e416da100203360b1e0fe34300206c7d12",
+    "url": "https://github.com/swiftlang/swift/commit/a4b241e416da100203360b1e0fe34300206c7d12",
+    "message": "Merge pull request #93206 from tshortli/function-execution-semantics-metadata\n\nABI: Record execution semantics directly in function metadata",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T08:55:35.761424+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ddc9c7fbc6801a0bfd1bc773da29a75fc1a3a17b",
+    "url": "https://github.com/WebKit/WebKit/commit/ddc9c7fbc6801a0bfd1bc773da29a75fc1a3a17b",
+    "message": "[JSC] Make heap analysis work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=327206\nrdar://189780433\n\nReviewed by Yusuke Suzuki.\n\nA heap analyzer, such as a heap snapshot or the inspector's holder finder,\nbelongs to one VM and describes that VM's heap. Currently, the visito",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T08:56:14.938450+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "15945c380700511bbf34bca426440f0aa0075a8e",
+    "url": "https://github.com/swiftlang/swift/commit/15945c380700511bbf34bca426440f0aa0075a8e",
+    "message": "Merge pull request #93164 from tshortli/called-once-function-metadata\n\nRuntime metadata for at-most-once and exactly-once function types",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
