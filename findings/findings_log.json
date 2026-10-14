@@ -78617,5 +78617,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T21:58:46.893705+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecf6e18b1144f31f080845dc5951a72f2f7def72",
+    "url": "https://github.com/WebKit/WebKit/commit/ecf6e18b1144f31f080845dc5951a72f2f7def72",
+    "message": "[CMake] Bake DYLD_FRAMEWORK_PATH into Cocoa executables in dev presets\nhttps://bugs.webkit.org/show_bug.cgi?id=327488\nrdar://189973646\n\nReviewed by Elliott Williams, Zak Ridouh, and Justin Michaud.\n\nIn DEVELOPER_MODE, WEBKIT_EXECUTABLE now links each executable that sits next to the built frameworks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T21:59:24.918616+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d90a67d5c74ab74e8d58bd5bca7abe776c00e480",
+    "url": "https://github.com/WebKit/WebKit/commit/d90a67d5c74ab74e8d58bd5bca7abe776c00e480",
+    "message": "Add URL::protocolIsInHTTPFamilyOrBlob()\nhttps://bugs.webkit.org/show_bug.cgi?id=327509\nrdar://189988531\n\nReviewed by Alex Christensen.\n\nSeveral places check whether a URL scheme is http(s) or blob, for example to\ndecide whether a document's policies come from its response headers.\n\nReview of the fix",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T22:00:03.319384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "50a617392b54665ab539ee98ddb8c3ddef47b90e",
+    "url": "https://github.com/WebKit/WebKit/commit/50a617392b54665ab539ee98ddb8c3ddef47b90e",
+    "message": "Make Latin1Character a distinct type from uint8_t so it can imply character encoding as char8/16/32_t do\nhttps://bugs.webkit.org/show_bug.cgi?id=296539\nrdar://156856072\n\nReviewed by Sam Weinig.\n\nReland of Darin Adler's 300282@main (774c0dc407ae), rebased onto current trunk. The original\nchange was r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T22:00:47.711499+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5ca1f041c34a41f09ce222106852ee411a67e77a",
+    "url": "https://github.com/WebKit/WebKit/commit/5ca1f041c34a41f09ce222106852ee411a67e77a",
+    "message": "[JSC] RegExp `String#replace` and `JSON.stringify` should not resolve substring ropes\nhttps://bugs.webkit.org/show_bug.cgi?id=327129\n\nReviewed by Yusuke Suzuki.\n\n`String#replace` with a RegExp and the fast path of `JSON.stringify` resolved a\nsubstring rope before reading it. That allocates a StringI",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
