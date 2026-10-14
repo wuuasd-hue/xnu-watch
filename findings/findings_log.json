@@ -78497,5 +78497,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:45:28.615731+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ad70712c671d699c9a3e205b5af030671a8fa340",
+    "url": "https://github.com/WebKit/WebKit/commit/ad70712c671d699c9a3e205b5af030671a8fa340",
+    "message": "Remove use of JSGlobalObjectAdditions.h\nhttps://bugs.webkit.org/show_bug.cgi?id=327566\nrdar://190038614\n\nReviewed by Mark Lam.\n\nIt is no longer needed.  See the radar for the reason.\n\n* Source/JavaScriptCore/runtime/JSGlobalObject.cpp:\n(JSC::JSGlobalObject::init):\n(JSC::JSGlobalObject::visitChildren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:46:09.216131+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37413df14c7d3664b678fc94ae2b30b1c1fd5d80",
+    "url": "https://github.com/WebKit/WebKit/commit/37413df14c7d3664b678fc94ae2b30b1c1fd5d80",
+    "message": "[JSC] FTL ArithPow should have a fast path for Math.pow(1, x)\nhttps://bugs.webkit.org/show_bug.cgi?id=327466\nrdar://189960465\n\nReviewed by Sosuke Suzuki.\n\nWhen Math.pow(1, x) is executed, if x is not NaN and not\nInfinity/-Infinity, then the result is 1. We are already checking NaN\nand +-Infinity for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:46:49.959162+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d86f8086971d835b9b42331532d647839b2b17a",
+    "url": "https://github.com/WebKit/WebKit/commit/1d86f8086971d835b9b42331532d647839b2b17a",
+    "message": "[JSC] Remove optimizeParallelSlotVisitorsForStoppedMutator and its protocol\nhttps://bugs.webkit.org/show_bug.cgi?id=327462\nrdar://189959191\n\nReviewed by Yusuke Suzuki.\n\nWhen the mutators are stopped, visiting a JSObject can read its structure and\nbutterfly directly. Otherwise it has to use a slower ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:47:33.021603+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea0feabee85bd5479846750f8d09055029905fb3",
+    "url": "https://github.com/WebKit/WebKit/commit/ea0feabee85bd5479846750f8d09055029905fb3",
+    "message": "[JSC] Install approximate FTL bytecode cost sooner\nhttps://bugs.webkit.org/show_bug.cgi?id=327210\nrdar://189782048\n\nReviewed by Tadeu Zagallo.\n\nFTL's B3 compilation takes enough long time, but approximate FTL\nbytecode cost only requires its compiled FTL node counts. So let's\nrecord it early in Basel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:48:13.632931+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3acfa863de11ae9b71742457da0f012bf67f3539",
+    "url": "https://github.com/WebKit/WebKit/commit/3acfa863de11ae9b71742457da0f012bf67f3539",
+    "message": "[JSC] FTL splat-words use two-store per loop\nhttps://bugs.webkit.org/show_bug.cgi?id=327273\nrdar://189828329\n\nReviewed by Dan Hecht.\n\nEmit two stores per loop in FTL splat-words, which can be converted to\nstp in B3/Air.\n\nTest: JSTests/stress/new-array-with-size-hole-fill-lengths.js\n\n* JSTests/stress",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T18:48:55.348788+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47b1bf884eb5adb28e9f3316c4930f5367bac470",
+    "url": "https://github.com/WebKit/WebKit/commit/47b1bf884eb5adb28e9f3316c4930f5367bac470",
+    "message": "A module worker should evaluate its entry script once\nhttps://bugs.webkit.org/show_bug.cgi?id=324459\n\nReviewed by Yusuke Suzuki.\n\nThe worker's top-level module is fetched before the worker starts, then\nhanded to the module loader as source. That path registered the source\nunder a private entrypoint ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
