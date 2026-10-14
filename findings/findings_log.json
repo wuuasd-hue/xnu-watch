@@ -78237,5 +78237,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:27:33.516017+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4681ea866adfe6ae9731ebb2ff0fe0b706446a1b",
+    "url": "https://github.com/WebKit/WebKit/commit/4681ea866adfe6ae9731ebb2ff0fe0b706446a1b",
+    "message": "[JSC] DFG should not turn a call to RegExp into NewRegExpUntyped\nhttps://bugs.webkit.org/show_bug.cgi?id=327458\nrdar://189954203\n\nReviewed by Dan Hecht.\n\nByteCodeParser::handleConstantFunction lowered RegExp to NewRegExpUntyped without\nchecking whether the site is a construct. For a call, argument 0",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:28:11.431829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f543645c49ec94a977a41cfdbadc4ce4298ea2f",
+    "url": "https://github.com/WebKit/WebKit/commit/9f543645c49ec94a977a41cfdbadc4ce4298ea2f",
+    "message": "[JSC] Strict mode reserved words should be rejected as parameter and function names by `\"use strict\"` directive\nhttps://bugs.webkit.org/show_bug.cgi?id=327337\n\nReviewed by Yusuke Suzuki.\n\nWhen a function body has a \"use strict\" directive, its parameters and its\nname are strict mode code too. So the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:28:49.582183+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92e99db5ad76231de89f98ae73fbd3f0b6c0c49f",
+    "url": "https://github.com/WebKit/WebKit/commit/92e99db5ad76231de89f98ae73fbd3f0b6c0c49f",
+    "message": "[JSC] Keep SourceCodeCache if it was touched in the last full GC-cycle\nhttps://bugs.webkit.org/show_bug.cgi?id=327460\nrdar://189957103\n\nReviewed by Dan Hecht.\n\nWe are clearing SourceCodeCache too aggressively even while we are\nparsing a new code from the same SourceCodeProvider still. This patch\nkee",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:29:27.704108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29e6343215e955fd6b3b2556789c6ae4172485f1",
+    "url": "https://github.com/WebKit/WebKit/commit/29e6343215e955fd6b3b2556789c6ae4172485f1",
+    "message": "[JSC] Labelled function declarations should be declared in the enclosing scope\nhttps://bugs.webkit.org/show_bug.cgi?id=327346\n\nReviewed by Yusuke Suzuki.\n\nIn sloppy mode, a labelled function declaration in a statement list declares\nits name in the enclosing scope, just like an unlabelled one [1][2].",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:30:07.480031+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "47697fd0eb3e4279d3065166875c68b7194c341e",
+    "url": "https://github.com/WebKit/WebKit/commit/47697fd0eb3e4279d3065166875c68b7194c341e",
+    "message": "[JSC] Make the GC's scope decision and visitor checks work for collections of several heaps\nhttps://bugs.webkit.org/show_bug.cgi?id=327171\nrdar://189763499\n\nReviewed by Yusuke Suzuki.\n\nEvery heap in a collection is collected with the same scope. When a request\ndoesn't specify one, decideCollectionSc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T03:30:45.547735+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5e4ff7aa732e8f62d5536aa65527564b7b70cc63",
+    "url": "https://github.com/WebKit/WebKit/commit/5e4ff7aa732e8f62d5536aa65527564b7b70cc63",
+    "message": "[JSC] Support heaps joining and leaving a Collector, for global collections\nhttps://bugs.webkit.org/show_bug.cgi?id=327055\nrdar://189661773\n\nReviewed by Yusuke Suzuki.\n\nBy default, each Heap owns its own Collector, which collects only that heap.\nThat Collector now lives in m_localCollector. With use",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
