@@ -78437,5 +78437,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T14:06:20.491061+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "214d23390e8a5b692641fd390e24c9e503bf7c33",
+    "url": "https://github.com/WebKit/WebKit/commit/214d23390e8a5b692641fd390e24c9e503bf7c33",
+    "message": "[Safer CPP] Address remaining unsafe cast warnings in Source/WebCore\nhttps://bugs.webkit.org/show_bug.cgi?id=327519\n\nReviewed by Anne van Kesteren.\n\nThe 2026-10-06 static analyzer snapshot reports many casts in WebCore as\n\"Unsafe cast from type 'X' to an unrelated type 'X'\", where both types are\nthe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T14:07:01.581592+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "691f57b972ae3b96639412eccc5049b7a81e73b6",
+    "url": "https://github.com/WebKit/WebKit/commit/691f57b972ae3b96639412eccc5049b7a81e73b6",
+    "message": "[JSC] `and64`, `or64` and `xor64` with a blinded `Imm64` should read `src`\nhttps://bugs.webkit.org/show_bug.cgi?id=327246\n\nReviewed by Yusuke Suzuki.\n\nWhen the constant is blinded, MacroAssembler::and64(Imm64, src, dest), or64\nand xor64 load it into the scratch register and emit op64(scratchRegister",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T14:07:40.850450+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "917c91dde1d939e980066d74abe48314da8f9f7a",
+    "url": "https://github.com/WebKit/WebKit/commit/917c91dde1d939e980066d74abe48314da8f9f7a",
+    "message": "[Safer CPP] Address new NODELETE warnings after the safer cpp static analysis upgrade\nhttps://bugs.webkit.org/show_bug.cgi?id=327233\n\nReviewed by Rupin Mittal.\n\n* Source/JavaScriptCore/SaferCPPExpectations/NoDeleteCheckerExpectations:\n* Source/JavaScriptCore/bytecode/CallLinkInfo.h:\n* Source/JavaScr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
