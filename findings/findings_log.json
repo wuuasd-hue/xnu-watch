@@ -78117,5 +78117,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-13T23:59:45.180486+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "614cfd229da5f48d97efd86932539e4a523fa5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/614cfd229da5f48d97efd86932539e4a523fa5a7",
+    "message": "Web Inspector: input::placeholder styles not showing up in Styles sidebar\nhttps://bugs.webkit.org/show_bug.cgi?id=203269\n<rdar://problem/56514581>\n\nReviewed by Timothy Hatcher.\n\n* Source/JavaScriptCore/inspector/protocol/CSS.json:\n* Source/WebCore/inspector/agents/InspectorCSSAgent.cpp:\n(WebCore::pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T00:00:23.215078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "432718f7014504b7c47a2be346f8f015fa36488e",
+    "url": "https://github.com/WebKit/WebKit/commit/432718f7014504b7c47a2be346f8f015fa36488e",
+    "message": "Web Inspector: toString is called twice by console log\nhttps://bugs.webkit.org/show_bug.cgi?id=306712\n\nReviewed by Timothy Hatcher.\n\nWeb Inspector attempts to stringify the first argument passed to `console` methods as the primary \"message\".\nIf the first argument is an object, however, this happens ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T00:01:01.306034+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5009fc211624770cea06a9a0e592c10ba12e2597",
+    "url": "https://github.com/WebKit/WebKit/commit/5009fc211624770cea06a9a0e592c10ba12e2597",
+    "message": "[JSC] DFG should branch on op_instanceof result in each arm when jtrue / jfalse follows\nhttps://bugs.webkit.org/show_bug.cgi?id=327327\nrdar://189865582\n\nReviewed by Keith Miller and Tadeu Zagallo.\n\nCurrently, when we have a code like,\n\n    function notInstance(term) {\n        if (!(term instanceof P",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T00:01:39.681279+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e33864764ecc8c93c646bf941722e9188ad6a3e6",
+    "url": "https://github.com/WebKit/WebKit/commit/e33864764ecc8c93c646bf941722e9188ad6a3e6",
+    "message": "[JSC] `await a ** b` and `await` as an identifier in a module should be SyntaxErrors\nhttps://bugs.webkit.org/show_bug.cgi?id=327331\n\nReviewed by Yusuke Suzuki.\n\nThis patch fixes two early errors of `await`.\n\nAwaitExpression is a UnaryExpression, so it cannot be the left side of `**`\nwithout parenthe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T00:02:21.641701+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6fba1aeeb7239da58cbc5777e346052d9374b8f2",
+    "url": "https://github.com/WebKit/WebKit/commit/6fba1aeeb7239da58cbc5777e346052d9374b8f2",
+    "message": "[JSC] `GetPrototypeFromConstructor` should read `prototype` before calling `GetFunctionRealm`\nhttps://bugs.webkit.org/show_bug.cgi?id=327141\n\nReviewed by Yusuke Suzuki.\n\nGetPrototypeFromConstructor [1] reads newTarget.prototype first and calls\nGetFunctionRealm only when the result is not an object. ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-14T00:02:59.571297+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "e06f886b4d0df4ba70d64c5d3e3ea388d05b73a1",
+    "url": "https://github.com/swiftlang/swift/commit/e06f886b4d0df4ba70d64c5d3e3ea388d05b73a1",
+    "message": "Merge pull request #93163 from tbkka/tbkka-is-array-speedup\n\nSpeed up `is [T]` in the most general case",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
