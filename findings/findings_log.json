@@ -79197,5 +79197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T23:57:01.974109+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4681ea866adfe6ae9731ebb2ff0fe0b706446a1b",
+    "url": "https://github.com/WebKit/WebKit/commit/4681ea866adfe6ae9731ebb2ff0fe0b706446a1b",
+    "message": "[JSC] DFG should not turn a call to RegExp into NewRegExpUntyped\nhttps://bugs.webkit.org/show_bug.cgi?id=327458\nrdar://189954203\n\nReviewed by Dan Hecht.\n\nByteCodeParser::handleConstantFunction lowered RegExp to NewRegExpUntyped without\nchecking whether the site is a construct. For a call, argument 0",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T23:57:40.348595+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f543645c49ec94a977a41cfdbadc4ce4298ea2f",
+    "url": "https://github.com/WebKit/WebKit/commit/9f543645c49ec94a977a41cfdbadc4ce4298ea2f",
+    "message": "[JSC] Strict mode reserved words should be rejected as parameter and function names by `\"use strict\"` directive\nhttps://bugs.webkit.org/show_bug.cgi?id=327337\n\nReviewed by Yusuke Suzuki.\n\nWhen a function body has a \"use strict\" directive, its parameters and its\nname are strict mode code too. So the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
