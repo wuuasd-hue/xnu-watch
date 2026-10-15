@@ -79077,5 +79077,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:33:20.166572+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecfe19f477e24db35a46767ec0f2366ecc4c1ac0",
+    "url": "https://github.com/WebKit/WebKit/commit/ecfe19f477e24db35a46767ec0f2366ecc4c1ac0",
+    "message": "Only apply an extensions own content rule lists to its extension pages\nhttps://bugs.webkit.org/show_bug.cgi?id=327583\nrdar://190036270\n\nReviewed by Timothy Hatcher.\n\nThis patch makes an extension's pages apply only its own content rule lists. Previously, background\npages, service workers, offscreen ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:33:57.648110+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ad96437625a0ae62be4d30724b7aa925b245c331",
+    "url": "https://github.com/WebKit/WebKit/commit/ad96437625a0ae62be4d30724b7aa925b245c331",
+    "message": "[JSC] LLInt should not poll the JIT worklist on every execution while a baseline compile is in flight\nhttps://bugs.webkit.org/show_bug.cgi?id=327603\nrdar://190060754\n\nReviewed by Vassili Bykov.\n\nWhen LLInt execution counter crossed the threshold and enqueueing\nBaseline JIT compilation, we keep this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:34:34.911679+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a54d5f756c519edf10388c8e1e798e17c1e36d5f",
+    "url": "https://github.com/WebKit/WebKit/commit/a54d5f756c519edf10388c8e1e798e17c1e36d5f",
+    "message": "[JSC] B3 foldPathConstants should treat a boolean branch condition as 1 on the taken edge\nhttps://bugs.webkit.org/show_bug.cgi?id=327633\nrdar://190084203\n\nReviewed by Keith Miller.\n\nWhen you have a code like this,\n\n    x === 32 || x === 9 || ..\n\nthe graph likes this is generated.\n\n    BB#0: (root)\n ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:35:12.282277+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "54ca4235352884f41441a877c0250c2d4b123671",
+    "url": "https://github.com/swiftlang/swift/commit/54ca4235352884f41441a877c0250c2d4b123671",
+    "message": "[Windows] [Runtime] Read SWIFT_ environment variables directly using Win32 API",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:35:50.255369+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5009fc211624770cea06a9a0e592c10ba12e2597",
+    "url": "https://github.com/WebKit/WebKit/commit/5009fc211624770cea06a9a0e592c10ba12e2597",
+    "message": "[JSC] DFG should branch on op_instanceof result in each arm when jtrue / jfalse follows\nhttps://bugs.webkit.org/show_bug.cgi?id=327327\nrdar://189865582\n\nReviewed by Keith Miller and Tadeu Zagallo.\n\nCurrently, when we have a code like,\n\n    function notInstance(term) {\n        if (!(term instanceof P",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T21:36:27.632923+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e33864764ecc8c93c646bf941722e9188ad6a3e6",
+    "url": "https://github.com/WebKit/WebKit/commit/e33864764ecc8c93c646bf941722e9188ad6a3e6",
+    "message": "[JSC] `await a ** b` and `await` as an identifier in a module should be SyntaxErrors\nhttps://bugs.webkit.org/show_bug.cgi?id=327331\n\nReviewed by Yusuke Suzuki.\n\nThis patch fixes two early errors of `await`.\n\nAwaitExpression is a UnaryExpression, so it cannot be the left side of `**`\nwithout parenthe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
