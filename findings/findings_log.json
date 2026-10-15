@@ -78737,5 +78737,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T04:55:10.784229+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "733b18f696db58c67250673de025e075533a7fb5",
+    "url": "https://github.com/WebKit/WebKit/commit/733b18f696db58c67250673de025e075533a7fb5",
+    "message": "[JSC] `Number#toLocaleString` and `BigInt#toLocaleString` should reuse `IntlNumberFormat` when only a locale string is given\nhttps://bugs.webkit.org/show_bug.cgi?id=327503\n\nReviewed by Yusuke Suzuki.\n\n`n.toLocaleString(\"en-US\")` created an IntlNumberFormat on every call, and\na new ICU number formatt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T04:55:49.495503+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8c79b44381278952d7895000ce7b4313c8476a1",
+    "url": "https://github.com/WebKit/WebKit/commit/b8c79b44381278952d7895000ce7b4313c8476a1",
+    "message": "[JSC] Clarify what MarkedBlock's versioned mark and newly-allocated bits record\nhttps://bugs.webkit.org/show_bug.cgi?id=327567\nrdar://190039791\n\nReviewed by Yusuke Suzuki.\n\nCollecting several heaps together means deciding how their marking versions\nrelate. That needs a clear picture of what a block'",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T04:56:28.165384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5f13fa851de3e8d6fe06ac475f1893e4347e3d2",
+    "url": "https://github.com/WebKit/WebKit/commit/d5f13fa851de3e8d6fe06ac475f1893e4347e3d2",
+    "message": "Remove ShadowRealm\nhttps://bugs.webkit.org/show_bug.cgi?id=327263\nrdar://189822326\n\nReviewed by Yusuke Suzuki.\n\nIt never shipped and keeping it carries ongoing cost well beyond the code\nitself, so remove it along with the JSRemoteFunction marshalling machinery\nit depends on.\n\nRemoving it:\n\n- Stops b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T04:57:06.322067+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "b247ff792c091217c95233a3404bb0c3039cb9af",
+    "url": "https://github.com/swiftlang/swift/commit/b247ff792c091217c95233a3404bb0c3039cb9af",
+    "message": "Merge pull request #93216 from eeckstein/fix-stdlib-build-error\n\nstdlib: fix a \"variable 'classObject' may be uninitialized\" build error",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
