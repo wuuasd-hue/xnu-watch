@@ -78897,5 +78897,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:17:49.708251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a1e5cdc19b2dc611ba3e55de801c5d54b859dd68",
+    "url": "https://github.com/WebKit/WebKit/commit/a1e5cdc19b2dc611ba3e55de801c5d54b859dd68",
+    "message": "[JSC] Add DFG / FTL intrinsic for `%TypedArray%.prototype.set`\nhttps://bugs.webkit.org/show_bug.cgi?id=326994\n\nReviewed by Yusuke Suzuki.\n\n%TypedArray%.prototype.set is always a host function call. For a small source,\nthe call and the argument validation cost more than the copy.\n\nThis patch adds a T",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:18:28.160580+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "847b1d1f5e7f89b6e750e1190bd3e4daa4027018",
+    "url": "https://github.com/WebKit/WebKit/commit/847b1d1f5e7f89b6e750e1190bd3e4daa4027018",
+    "message": "[JSC] BlockDirectory's bits should be guarded by a mutate-grow lock\nhttps://bugs.webkit.org/show_bug.cgi?id=325474\nrdar://188567814\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nBlockDirectory's bits have relied on the mutator being the only thread that allocates from or\nsweeps a directory's blocks, so",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:19:06.497812+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e7acf9bf3a6ae415055712cb92c482fea713a863",
+    "url": "https://github.com/WebKit/WebKit/commit/e7acf9bf3a6ae415055712cb92c482fea713a863",
+    "message": "[JSC] DFG iterator open fast paths should pass `JSTypeRange` to `IsCellWithType`\nhttps://bugs.webkit.org/show_bug.cgi?id=327661\n\nReviewed by Yusuke Suzuki.\n\nSince 317660@main, IsCellWithType takes a JSTypeRange. Five callers in\nhandleIteratorOpen and handleAsyncIteratorOpen still pass a bare JSType.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:19:44.721601+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5f66f3853e95d0451861daf7b2f9887b109ad6b",
+    "url": "https://github.com/WebKit/WebKit/commit/c5f66f3853e95d0451861daf7b2f9887b109ad6b",
+    "message": "[JSC] Load each private name once in straight-line bytecode\nhttps://bugs.webkit.org/show_bug.cgi?id=326801\n\nReviewed by Yusuke Suzuki.\n\nEvery private field access loads the private name symbol from the class\nscope with resolve_scope and get_from_scope, so `this.#x * other.#x`\nloads the same symbol t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:20:23.612121+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbac7ef4d823a99f85a45476e64cefae4a6f4fa4",
+    "url": "https://github.com/WebKit/WebKit/commit/fbac7ef4d823a99f85a45476e64cefae4a6f4fa4",
+    "message": "[GLib] Add API for accessing web application manifests\nhttps://bugs.webkit.org/show_bug.cgi?id=319834\n\nReviewed by Michael Catanzaro and Justin Michaud.\n\nThis was already exposed on Apple ports, behind the ENABLE_APPLICATION_MANIFEST\nbuild option, so adding API for it here.\n\nTest: Tools/TestWebKitAP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T14:21:01.988836+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e08d48004c0da63b53f54ef8752ccdd97b0ca92",
+    "url": "https://github.com/WebKit/WebKit/commit/0e08d48004c0da63b53f54ef8752ccdd97b0ca92",
+    "message": "[JSC] Fix FTL ToIntegerOrInfinity\nhttps://bugs.webkit.org/show_bug.cgi?id=327357\nrdar://189876905\n\nReviewed by Dan Hecht.\n\nFor double input (-1, 0), FTL ToIntegerOrInfinity returns -0 since\n\n1. They are not 0\n2. m_out.doubleTrunc(doubleValue) generates -0\n\nFix it by comparing the truncated result wi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
