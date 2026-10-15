@@ -78697,5 +78697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T00:15:42.939259+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a8cc2f8bf6e9dac9da96686bb2bb23d60684de7",
+    "url": "https://github.com/WebKit/WebKit/commit/7a8cc2f8bf6e9dac9da96686bb2bb23d60684de7",
+    "message": "[YARR] Use bit tables instead of inlined cmp for unicode property escapes\nhttps://bugs.webkit.org/show_bug.cgi?id=325109\n\nReviewed by Yusuke Suzuki.\n\nYARR JIT generates an inline compare for every range of a character\nclass. This is fine for classes with few ranges, but \\p{L} has 685\nranges and sing",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T00:16:20.791609+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "819db6a41c384e0b26782fa3b702617a17d4dc73",
+    "url": "https://github.com/WebKit/WebKit/commit/819db6a41c384e0b26782fa3b702617a17d4dc73",
+    "message": "[JSC] PutStackSinkingPhase should compute reaching defs with a single dominator tree walk\nhttps://bugs.webkit.org/show_bug.cgi?id=327153\nrdar://189742151\n\nReviewed by Dan Hecht.\n\nWe found that DFGPutStackSinkingPhase's SSACalculator::reachingDefAtHead\nis taking very long time. Each query walks up th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
