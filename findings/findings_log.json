@@ -78817,5 +78817,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T09:29:30.408212+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c4af2a37e7525e33230dbb8a3df10c3b2a3838a",
+    "url": "https://github.com/WebKit/WebKit/commit/8c4af2a37e7525e33230dbb8a3df10c3b2a3838a",
+    "message": "[Site Isolation] Navigations that a document in another process starts don't fire navigate\nhttps://bugs.webkit.org/show_bug.cgi?id=327515\nrdar://189991882\n\nReviewed by Basuke Suzuki.\n\nWhen a document navigates a frame in another process, for example through a\nlink that targets the frame by name, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T09:30:08.785530+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d6638408f1678e26ebbb0a665b1dd6c9a1d6ed8",
+    "url": "https://github.com/WebKit/WebKit/commit/5d6638408f1678e26ebbb0a665b1dd6c9a1d6ed8",
+    "message": "[JSC] Improve B3 FixSSA by tracking reachable defs\nhttps://bugs.webkit.org/show_bug.cgi?id=327547\nrdar://190031307\n\nReviewed by Keith Miller.\n\nFixSSA is taking very long time for SSACalculator::reachingDefAtHead,\nbut we can do exact same optimization to 323542@main to reduce the cost.\nLet's visit th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T09:30:46.988043+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "6267e2941558822ab1bb17c24fa70c7b0bab1ce1",
+    "url": "https://github.com/swiftlang/swift/commit/6267e2941558822ab1bb17c24fa70c7b0bab1ce1",
+    "message": "stdlib: fix a \"variable 'classObject' may be uninitialized\" build error",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T09:31:27.131946+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "bbd19310046a39cd1e821f499e9b1532c072a543",
+    "url": "https://github.com/swiftlang/swift/commit/bbd19310046a39cd1e821f499e9b1532c072a543",
+    "message": "Merge pull request #93085 from swiftlang/jepa-main2\n\nEnable `conditional-uninitialized` errors in pedantic diagnostics mode",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
