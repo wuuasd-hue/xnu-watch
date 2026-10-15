@@ -79017,5 +79017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T18:25:28.281547+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b66326b335e75d9db640fe21c8f9f94b2f55bbe",
+    "url": "https://github.com/WebKit/WebKit/commit/2b66326b335e75d9db640fe21c8f9f94b2f55bbe",
+    "message": "[Site Isolation] amazon.com ads show up as blank on session restore\nhttps://bugs.webkit.org/show_bug.cgi?id=327568\nrdar://185544542\n\nReviewed by Sihui Liu and Basuke Suzuki.\n\nWhen an amazon.com product page is restored from session state with site\nisolation enabled, some ad iframes are blank. Reload",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T18:26:08.472316+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "614cfd229da5f48d97efd86932539e4a523fa5a7",
+    "url": "https://github.com/WebKit/WebKit/commit/614cfd229da5f48d97efd86932539e4a523fa5a7",
+    "message": "Web Inspector: input::placeholder styles not showing up in Styles sidebar\nhttps://bugs.webkit.org/show_bug.cgi?id=203269\n<rdar://problem/56514581>\n\nReviewed by Timothy Hatcher.\n\n* Source/JavaScriptCore/inspector/protocol/CSS.json:\n* Source/WebCore/inspector/agents/InspectorCSSAgent.cpp:\n(WebCore::pr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-15T18:26:46.712842+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "432718f7014504b7c47a2be346f8f015fa36488e",
+    "url": "https://github.com/WebKit/WebKit/commit/432718f7014504b7c47a2be346f8f015fa36488e",
+    "message": "Web Inspector: toString is called twice by console log\nhttps://bugs.webkit.org/show_bug.cgi?id=306712\n\nReviewed by Timothy Hatcher.\n\nWeb Inspector attempts to stringify the first argument passed to `console` methods as the primary \"message\".\nIf the first argument is an object, however, this happens ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
