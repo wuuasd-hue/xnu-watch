@@ -79597,5 +79597,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T17:01:57.914987+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78ae5427c473fb2d05db856f355034b0753815a1",
+    "url": "https://github.com/WebKit/WebKit/commit/78ae5427c473fb2d05db856f355034b0753815a1",
+    "message": "[Site Isolation] Web Inspector: Match frame documents to their owner iframe by frameId instead of URL\nhttps://bugs.webkit.org/show_bug.cgi?id=320933\nrdar://problem/183966415\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation, the Elements tab splices each frame target's document under its owner\n<ifra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T17:02:36.120196+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37413df14c7d3664b678fc94ae2b30b1c1fd5d80",
+    "url": "https://github.com/WebKit/WebKit/commit/37413df14c7d3664b678fc94ae2b30b1c1fd5d80",
+    "message": "[JSC] FTL ArithPow should have a fast path for Math.pow(1, x)\nhttps://bugs.webkit.org/show_bug.cgi?id=327466\nrdar://189960465\n\nReviewed by Sosuke Suzuki.\n\nWhen Math.pow(1, x) is executed, if x is not NaN and not\nInfinity/-Infinity, then the result is 1. We are already checking NaN\nand +-Infinity for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T17:03:13.874457+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1d86f8086971d835b9b42331532d647839b2b17a",
+    "url": "https://github.com/WebKit/WebKit/commit/1d86f8086971d835b9b42331532d647839b2b17a",
+    "message": "[JSC] Remove optimizeParallelSlotVisitorsForStoppedMutator and its protocol\nhttps://bugs.webkit.org/show_bug.cgi?id=327462\nrdar://189959191\n\nReviewed by Yusuke Suzuki.\n\nWhen the mutators are stopped, visiting a JSObject can read its structure and\nbutterfly directly. Otherwise it has to use a slower ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
