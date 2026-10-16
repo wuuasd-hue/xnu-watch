@@ -79357,5 +79357,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:22:02.010063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e120f362fbaf47ba0da848295b81557f415aca21",
+    "url": "https://github.com/WebKit/WebKit/commit/e120f362fbaf47ba0da848295b81557f415aca21",
+    "message": "[JSC] FTL direct calls should not link to the arity-checking entrypoint when they pass enough arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=327759\nrdar://190174711\n\nReviewed by Sosuke Suzuki.\n\nsetMaxArgumentCountIncludingThis is set in FTL only when\n`numAllocatedArgs > numPassedArgs` is true, bu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:22:39.275099+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6eff649c3396d0b154fc5393b226e1a5ea241b39",
+    "url": "https://github.com/WebKit/WebKit/commit/6eff649c3396d0b154fc5393b226e1a5ea241b39",
+    "message": "[JSC] Add fast path for `String#split` with `/\\r?\\n/`\nhttps://bugs.webkit.org/show_bug.cgi?id=327627\n\nReviewed by Yusuke Suzuki.\n\n/\\r?\\n/ is the most common way to split text into lines. It is used by\npopular libraries such as terser, UglifyJS, PostCSS, @vue/compiler-sfc\nand globby. But only /\\r\\n?|",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:23:16.436903+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87e378eb197f4d3252975d87eca03f8bcfe06557",
+    "url": "https://github.com/WebKit/WebKit/commit/87e378eb197f4d3252975d87eca03f8bcfe06557",
+    "message": "Fix likely/unlikely attribute placement\nhttps://bugs.webkit.org/show_bug.cgi?id=327728\nrdar://190152289\n\nReviewed by Yusuke Suzuki.\n\nIt looks like Clang only processes `[[likely]]` and `[[unlikely]]` attributes if they precede the\nbrace in an if statement. Fix the places where we used the attribute ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:23:55.442895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8bd3c1b6e0645e0367772f75616a48d32a4f0db4",
+    "url": "https://github.com/WebKit/WebKit/commit/8bd3c1b6e0645e0367772f75616a48d32a4f0db4",
+    "message": "[JSC] Inline string === \"constant\"\nhttps://bugs.webkit.org/show_bug.cgi?id=327641\nrdar://190087771\n\nReviewed by Sosuke Suzuki.\n\nThis patch optimizes string === \"constant\" in FTL. When \"constant\" is <=\n16 length and it is 8bit, we extract string's data, checking length and\ndo inlined comparison as th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:24:35.504125+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fcb0d2aeca59425ec2e617d1edce9ebc4de25d6",
+    "url": "https://github.com/WebKit/WebKit/commit/3fcb0d2aeca59425ec2e617d1edce9ebc4de25d6",
+    "message": "ScriptModuleLoader should hold its ScriptExecutionContext in a CheckedRef\nhttps://bugs.webkit.org/show_bug.cgi?id=327401\nrdar://189908965\n\nReviewed by Ryosuke Niwa.\n\nm_context was weakened from a CheckedRef to a WeakPtr in 263662@main to\naccommodate ShadowRealmGlobalScope::moduleLoader(), which buil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T07:25:13.363302+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a4b241e416da100203360b1e0fe34300206c7d12",
+    "url": "https://github.com/swiftlang/swift/commit/a4b241e416da100203360b1e0fe34300206c7d12",
+    "message": "Merge pull request #93206 from tshortli/function-execution-semantics-metadata\n\nABI: Record execution semantics directly in function metadata",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
