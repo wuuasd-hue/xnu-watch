@@ -79657,5 +79657,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T20:00:23.684014+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29c41f19e779202c187f092a839cead29d799bd2",
+    "url": "https://github.com/WebKit/WebKit/commit/29c41f19e779202c187f092a839cead29d799bd2",
+    "message": "[JSC] Use BulkMemoryValue MemoryMove for FTL TypedArraySet\nhttps://bugs.webkit.org/show_bug.cgi?id=327809\nrdar://190198931\n\nReviewed by Sosuke Suzuki.\n\nWe extended BulkMemoryValue to accept non wasm memory.copy / memory.fill\nopcodes by generalizing them. Thus we apply it to TypedArraySet since\nits C",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T20:01:01.312616+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a76e975a330b0754322f49827de7fb8a7844e85",
+    "url": "https://github.com/WebKit/WebKit/commit/7a76e975a330b0754322f49827de7fb8a7844e85",
+    "message": "[JSC] Extract CheckArray from TypedArraySet\nhttps://bugs.webkit.org/show_bug.cgi?id=327802\nrdar://190197037\n\nReviewed by Sosuke Suzuki.\n\n323823@main introduced TypedArraySet in DFG / FTL. It is using\nCheckArray for base, but array type checking for source is done in\nTypedArraySet. But that check is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T20:01:39.001113+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0da18ae0608fcd85f7bdb939c8f87126282a0623",
+    "url": "https://github.com/WebKit/WebKit/commit/0da18ae0608fcd85f7bdb939c8f87126282a0623",
+    "message": "Enable JITCage Relaxation on iOS\nhttps://bugs.webkit.org/show_bug.cgi?id=325962\nrdar://183646426\n\nReviewed by Yusuke Suzuki.\n\nJIT Cage can only be supported on macOS in its Relaxed configuration.\nSince this does not compromise any of the goals of the feature, it's\nbetter to use the same configuratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T20:02:18.193375+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea0feabee85bd5479846750f8d09055029905fb3",
+    "url": "https://github.com/WebKit/WebKit/commit/ea0feabee85bd5479846750f8d09055029905fb3",
+    "message": "[JSC] Install approximate FTL bytecode cost sooner\nhttps://bugs.webkit.org/show_bug.cgi?id=327210\nrdar://189782048\n\nReviewed by Tadeu Zagallo.\n\nFTL's B3 compilation takes enough long time, but approximate FTL\nbytecode cost only requires its compiled FTL node counts. So let's\nrecord it early in Basel",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T20:02:56.705229+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecf6e18b1144f31f080845dc5951a72f2f7def72",
+    "url": "https://github.com/WebKit/WebKit/commit/ecf6e18b1144f31f080845dc5951a72f2f7def72",
+    "message": "[CMake] Bake DYLD_FRAMEWORK_PATH into Cocoa executables in dev presets\nhttps://bugs.webkit.org/show_bug.cgi?id=327488\nrdar://189973646\n\nReviewed by Elliott Williams, Zak Ridouh, and Justin Michaud.\n\nIn DEVELOPER_MODE, WEBKIT_EXECUTABLE now links each executable that sits next to the built frameworks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
