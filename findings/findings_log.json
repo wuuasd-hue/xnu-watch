@@ -79477,5 +79477,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:34:55.570721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d1523b31f82c41a6842193e6f10e4cc1f101e345",
+    "url": "https://github.com/WebKit/WebKit/commit/d1523b31f82c41a6842193e6f10e4cc1f101e345",
+    "message": "[soup] Non-redirect 3xx responses with a Location header assert in SubresourceLoader::didReceiveResponse()\nhttps://bugs.webkit.org/show_bug.cgi?id=327722\n\nReviewed by Carlos Garcia Campos.\n\nSubresourceLoader::didReceiveResponse() asserts that a response reaching it\nis not a redirect the network laye",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:35:32.941488+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d158e058d1430884873b3b995dbb93c75d169d93",
+    "url": "https://github.com/WebKit/WebKit/commit/d158e058d1430884873b3b995dbb93c75d169d93",
+    "message": "[JSC] Add fast path for spreading `TypedArray`\nhttps://bugs.webkit.org/show_bug.cgi?id=327804\n\nReviewed by Yusuke Suzuki.\n\n`[...typedArray]` and `f(...typedArray)` run the iterator protocol for each\nelement, because trySpreadFast only handles JSArray, String, arguments objects\nand Set.\n\nThis patch m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:36:10.272841+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "290ba2619acf04201fd6ae9f32cd8800dbc42569",
+    "url": "https://github.com/WebKit/WebKit/commit/290ba2619acf04201fd6ae9f32cd8800dbc42569",
+    "message": "[JSC] DFG backwards propagation should not request negative zero for the operand of `Branch`\nhttps://bugs.webkit.org/show_bug.cgi?id=327815\n\nReviewed by Yusuke Suzuki.\n\nBranch only converts its operand to a boolean, so it cannot observe -0, same as LogicalNot\n(323639@main). This patch applies Logica",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:36:47.686518+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a082bfd8095491595e3fb68beb85b5448c146ed",
+    "url": "https://github.com/WebKit/WebKit/commit/3a082bfd8095491595e3fb68beb85b5448c146ed",
+    "message": "A response-time process swap aborts the page's Navigation API navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=327514\nrdar://189990530\n\nReviewed by Basuke Suzuki.\n\nWhen a navigation's response needs another process, as for COOP and Enhanced\nSecurity, and no provisional page is loading it, the UI p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:37:25.514375+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "214d23390e8a5b692641fd390e24c9e503bf7c33",
+    "url": "https://github.com/WebKit/WebKit/commit/214d23390e8a5b692641fd390e24c9e503bf7c33",
+    "message": "[Safer CPP] Address remaining unsafe cast warnings in Source/WebCore\nhttps://bugs.webkit.org/show_bug.cgi?id=327519\n\nReviewed by Anne van Kesteren.\n\nThe 2026-10-06 static analyzer snapshot reports many casts in WebCore as\n\"Unsafe cast from type 'X' to an unrelated type 'X'\", where both types are\nthe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T12:38:04.712997+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ad70712c671d699c9a3e205b5af030671a8fa340",
+    "url": "https://github.com/WebKit/WebKit/commit/ad70712c671d699c9a3e205b5af030671a8fa340",
+    "message": "Remove use of JSGlobalObjectAdditions.h\nhttps://bugs.webkit.org/show_bug.cgi?id=327566\nrdar://190038614\n\nReviewed by Mark Lam.\n\nIt is no longer needed.  See the radar for the reason.\n\n* Source/JavaScriptCore/runtime/JSGlobalObject.cpp:\n(JSC::JSGlobalObject::init):\n(JSC::JSGlobalObject::visitChildren",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
