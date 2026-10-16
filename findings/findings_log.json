@@ -79237,5 +79237,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:09:04.921502+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3cc4f8be50c56d89f4703caae725db95ab2dafc1",
+    "url": "https://github.com/WebKit/WebKit/commit/3cc4f8be50c56d89f4703caae725db95ab2dafc1",
+    "message": "[JSC] LLInt and Baseline JIT `op_to_this` should have a fast path for non-final objects\nhttps://bugs.webkit.org/show_bug.cgi?id=327644\n\nReviewed by Yusuke Suzuki.\n\nIn LLInt and Baseline JIT, op_to_this took the slow path on every call\nunless |this| was a final object with the cached structure. So a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:09:42.179153+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c3c079f7334674eb6deabcf7ca919dec09e2571",
+    "url": "https://github.com/WebKit/WebKit/commit/0c3c079f7334674eb6deabcf7ca919dec09e2571",
+    "message": "Address Safer C++ static analysis warnings in WebCore, PAL and WebGPU after 2026-10-06 rollout\nhttps://bugs.webkit.org/show_bug.cgi?id=327639\n\nReviewed by Ryosuke Niwa and Mike Wyrzykowski.\n\nFix the warnings behind expectations added by the 2026-10-06 snapshot rollout in\nWebCore's editing, fileapi, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:10:20.957189+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ad5047803f6a49761202edc98fcbdf951a401f1",
+    "url": "https://github.com/WebKit/WebKit/commit/3ad5047803f6a49761202edc98fcbdf951a401f1",
+    "message": "[JSC] Add isGCSafe flag to BulkMemoryValue and rename MemoryCopy to MemoryMove\nhttps://bugs.webkit.org/show_bug.cgi?id=327659\nrdar://190096554\n\nReviewed by Keith Miller.\n\nThis patch is preparation for wider use of BulkMemoryValue B3 Value.\n\n1. Rename MemoryCopy to MemoryMove. It was originally align",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:10:59.750741+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fa3737d9c17c59d3d9c0b98652105048d75d5dd8",
+    "url": "https://github.com/WebKit/WebKit/commit/fa3737d9c17c59d3d9c0b98652105048d75d5dd8",
+    "message": "[JSC] Allocate property storage of arrays without C++ operation call\nhttps://bugs.webkit.org/show_bug.cgi?id=327336\n\nReviewed by Yusuke Suzuki.\n\nWhen a put adds a named property to an array and the out-of-line property\nstorage has to grow, the butterfly is reallocated together with the indexing\nhead",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:11:37.392563+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "92e99db5ad76231de89f98ae73fbd3f0b6c0c49f",
+    "url": "https://github.com/WebKit/WebKit/commit/92e99db5ad76231de89f98ae73fbd3f0b6c0c49f",
+    "message": "[JSC] Keep SourceCodeCache if it was touched in the last full GC-cycle\nhttps://bugs.webkit.org/show_bug.cgi?id=327460\nrdar://189957103\n\nReviewed by Dan Hecht.\n\nWe are clearing SourceCodeCache too aggressively even while we are\nparsing a new code from the same SourceCodeProvider still. This patch\nkee",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T02:12:14.809324+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29e6343215e955fd6b3b2556789c6ae4172485f1",
+    "url": "https://github.com/WebKit/WebKit/commit/29e6343215e955fd6b3b2556789c6ae4172485f1",
+    "message": "[JSC] Labelled function declarations should be declared in the enclosing scope\nhttps://bugs.webkit.org/show_bug.cgi?id=327346\n\nReviewed by Yusuke Suzuki.\n\nIn sloppy mode, a labelled function declaration in a statement list declares\nits name in the enclosing scope, just like an unlabelled one [1][2].",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
