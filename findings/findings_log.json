@@ -79757,5 +79757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T22:32:30.410108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "69028f045a7eb0cc322839e0cae3179d50e98434",
+    "url": "https://github.com/WebKit/WebKit/commit/69028f045a7eb0cc322839e0cae3179d50e98434",
+    "message": "Remove remaining reference to JSGlobalObjectAdditions.h\nhttps://bugs.webkit.org/show_bug.cgi?id=327878\nrdar://190257409\n\nReviewed by Mark Lam.\n\nThis was missed in 323755@main.\nIt's unused and going to be removed.\n\n* Source/JavaScriptCore/assembler/FastJITPermissions.h:\n\nCanonical link: https://commi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T22:33:08.288801+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d90a67d5c74ab74e8d58bd5bca7abe776c00e480",
+    "url": "https://github.com/WebKit/WebKit/commit/d90a67d5c74ab74e8d58bd5bca7abe776c00e480",
+    "message": "Add URL::protocolIsInHTTPFamilyOrBlob()\nhttps://bugs.webkit.org/show_bug.cgi?id=327509\nrdar://189988531\n\nReviewed by Alex Christensen.\n\nSeveral places check whether a URL scheme is http(s) or blob, for example to\ndecide whether a document's policies come from its response headers.\n\nReview of the fix",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-16T22:33:46.060522+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "733b18f696db58c67250673de025e075533a7fb5",
+    "url": "https://github.com/WebKit/WebKit/commit/733b18f696db58c67250673de025e075533a7fb5",
+    "message": "[JSC] `Number#toLocaleString` and `BigInt#toLocaleString` should reuse `IntlNumberFormat` when only a locale string is given\nhttps://bugs.webkit.org/show_bug.cgi?id=327503\n\nReviewed by Yusuke Suzuki.\n\n`n.toLocaleString(\"en-US\")` created an IntlNumberFormat on every call, and\na new ICU number formatt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

@@ -18591,9 +18591,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/d90a67d5c74ab74e8d58bd5bca7abe776c00e480",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -18605,9 +18606,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/733b18f696db58c67250673de025e075533a7fb5",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -18995,6 +18997,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/Scripts/process-entitlements.sh ---\n@@ -184,6 +184,7 @@ function ios_family_process_jsc_entitlements()\n     # ensure that `Options::crashIfCantAllocateJITMemory` is disabled on non-JIT platforms\n     if [[ \"${PLATFORM_NAME}\" != watchos && \"${PLATFORM_NAME}\" != appletvos ]]; then\n         plistbuddy Add :com.apple.private.verified-jit bool YES\n+        plistbuddy Add :com.apple.private.verified-jit-mode integer 1\n         if [[ \"${PLATFORM_NAME}\" == iphoneos ]]; then\n             if (( $(( ${SDK_VERSION_ACTUAL} )) >= 170400 )); then\n                 plistbuddy Add :com.apple.developer.cs.allow-jit bool YES\n\n--- Source/WTF/wtf/PlatformEnable.h ---\n@@ -968,8 +968,7 @@\n #if OS(DARWIN) && ENABLE(JIT) && USE(APPLE_INTERNAL_SDK) && CPU(ARM64E) && HAVE(JIT_CAGE)\n #if    HAVE(JIT_CAGE_RELAXATION) && !(PLATFORM(MAC) || PLATFORM(MACCATALYST))\n #define ENABLE_JIT_CAGE 1\n-// FIXME: rdar://183646426\n-#define ENABLE_JIT_CAGE_RELAXATION 0\n+#define ENABLE_JIT_CAGE_RELAXATION 1\n #elif  HAVE(JIT_CAGE_RELAXATION) &&  (PLATFORM(MAC) || PLATFORM(MACCATALYST))\n #define ENABLE_JIT_CAGE 0\n // FIXME: rdar://183649352\n\n--- Source/WebKit/Scripts/process-entitlements.sh ---\n@@ -471,6 +471,7 @@ function ios_family_process_webcontent_entitlements()\n {\n     if [[ \"${PLATFORM_NAME}\" != watchos && \"${PLATFORM_NAME}\" != appletvos ]]; then\n         plistbuddy Add :com.apple.private.verified-jit bool YES\n+        plistbuddy Add :com.apple.private.verified-jit-mode integer 1\n         if [[ \"${PLATFORM_NAME}\" == iphoneos ]]; then\n             if (( $(( ${SDK_VERSION_ACTUAL} )) >= 170400 )); then\n                 plistbuddy Add :com.apple.developer.cs.allow-jit bool YES\n",
     "url": "https://github.com/WebKit/WebKit/commit/0da18ae0608fcd85f7bdb939c8f87126282a0623",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "69028f045a7eb0cc322839e0cae3179d50e98434",
+    "message": "Remove remaining reference to JSGlobalObjectAdditions.h\nhttps://bugs.webkit.org/show_bug.cgi?id=327878\nrdar://190257409\n\nReviewed by Mark Lam.\n\nThis was missed in 323755@main.\nIt's unused and going to be removed.\n\n* Source/JavaScriptCore/assembler/FastJITPermissions.h:\n\nCanonical link: https://commi",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/assembler/FastJITPermissions.h ---\n@@ -40,7 +40,6 @@ enum class MemoryRestriction {\n #pragma clang diagnostic push\n #pragma clang diagnostic ignored \"-Wnon-modular-include-in-module\"\n #include <WebKitAdditions/FastJITPermissionsAdditions.h>\n-#include <WebKitAdditions/JSGlobalObjectAdditions.h>\n #pragma clang diagnostic pop\n #endif\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/69028f045a7eb0cc322839e0cae3179d50e98434",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
