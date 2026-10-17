@@ -79817,5 +79817,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T00:50:52.847434+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fea39c698fa7254b19d1c1bf34d71cad5a48f95b",
+    "url": "https://github.com/swiftlang/swift/commit/fea39c698fa7254b19d1c1bf34d71cad5a48f95b",
+    "message": "Merge pull request #93347 from tshortli/called-once-irgen\n\nShare a trapping destructor between exactly-once closures",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T00:51:30.503724+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8c79b44381278952d7895000ce7b4313c8476a1",
+    "url": "https://github.com/WebKit/WebKit/commit/b8c79b44381278952d7895000ce7b4313c8476a1",
+    "message": "[JSC] Clarify what MarkedBlock's versioned mark and newly-allocated bits record\nhttps://bugs.webkit.org/show_bug.cgi?id=327567\nrdar://190039791\n\nReviewed by Yusuke Suzuki.\n\nCollecting several heaps together means deciding how their marking versions\nrelate. That needs a clear picture of what a block'",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T00:52:08.173848+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c4af2a37e7525e33230dbb8a3df10c3b2a3838a",
+    "url": "https://github.com/WebKit/WebKit/commit/8c4af2a37e7525e33230dbb8a3df10c3b2a3838a",
+    "message": "[Site Isolation] Navigations that a document in another process starts don't fire navigate\nhttps://bugs.webkit.org/show_bug.cgi?id=327515\nrdar://189991882\n\nReviewed by Basuke Suzuki.\n\nWhen a document navigates a frame in another process, for example through a\nlink that targets the frame by name, the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
