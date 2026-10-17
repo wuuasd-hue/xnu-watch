@@ -80157,5 +80157,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T21:04:58.192783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3cc4f8be50c56d89f4703caae725db95ab2dafc1",
+    "url": "https://github.com/WebKit/WebKit/commit/3cc4f8be50c56d89f4703caae725db95ab2dafc1",
+    "message": "[JSC] LLInt and Baseline JIT `op_to_this` should have a fast path for non-final objects\nhttps://bugs.webkit.org/show_bug.cgi?id=327644\n\nReviewed by Yusuke Suzuki.\n\nIn LLInt and Baseline JIT, op_to_this took the slow path on every call\nunless |this| was a final object with the cached structure. So a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T21:05:35.543981+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0c3c079f7334674eb6deabcf7ca919dec09e2571",
+    "url": "https://github.com/WebKit/WebKit/commit/0c3c079f7334674eb6deabcf7ca919dec09e2571",
+    "message": "Address Safer C++ static analysis warnings in WebCore, PAL and WebGPU after 2026-10-06 rollout\nhttps://bugs.webkit.org/show_bug.cgi?id=327639\n\nReviewed by Ryosuke Niwa and Mike Wyrzykowski.\n\nFix the warnings behind expectations added by the 2026-10-06 snapshot rollout in\nWebCore's editing, fileapi, ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
