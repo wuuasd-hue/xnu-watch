@@ -80017,5 +80017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T13:18:01.920049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c5f66f3853e95d0451861daf7b2f9887b109ad6b",
+    "url": "https://github.com/WebKit/WebKit/commit/c5f66f3853e95d0451861daf7b2f9887b109ad6b",
+    "message": "[JSC] Load each private name once in straight-line bytecode\nhttps://bugs.webkit.org/show_bug.cgi?id=326801\n\nReviewed by Yusuke Suzuki.\n\nEvery private field access loads the private name symbol from the class\nscope with resolve_scope and get_from_scope, so `this.#x * other.#x`\nloads the same symbol t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T13:18:40.342185+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b66326b335e75d9db640fe21c8f9f94b2f55bbe",
+    "url": "https://github.com/WebKit/WebKit/commit/2b66326b335e75d9db640fe21c8f9f94b2f55bbe",
+    "message": "[Site Isolation] amazon.com ads show up as blank on session restore\nhttps://bugs.webkit.org/show_bug.cgi?id=327568\nrdar://185544542\n\nReviewed by Sihui Liu and Basuke Suzuki.\n\nWhen an amazon.com product page is restored from session state with site\nisolation enabled, some ad iframes are blank. Reload",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
