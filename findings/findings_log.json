@@ -80117,5 +80117,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T18:54:37.303404+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a54d5f756c519edf10388c8e1e798e17c1e36d5f",
+    "url": "https://github.com/WebKit/WebKit/commit/a54d5f756c519edf10388c8e1e798e17c1e36d5f",
+    "message": "[JSC] B3 foldPathConstants should treat a boolean branch condition as 1 on the taken edge\nhttps://bugs.webkit.org/show_bug.cgi?id=327633\nrdar://190084203\n\nReviewed by Keith Miller.\n\nWhen you have a code like this,\n\n    x === 32 || x === 9 || ..\n\nthe graph likes this is generated.\n\n    BB#0: (root)\n ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T18:55:14.690815+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "54ca4235352884f41441a877c0250c2d4b123671",
+    "url": "https://github.com/swiftlang/swift/commit/54ca4235352884f41441a877c0250c2d4b123671",
+    "message": "[Windows] [Runtime] Read SWIFT_ environment variables directly using Win32 API",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
