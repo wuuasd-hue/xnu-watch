@@ -80057,5 +80057,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T16:32:10.726935+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bded892d33f919ea7493308842808bae2ed1724f",
+    "url": "https://github.com/WebKit/WebKit/commit/bded892d33f919ea7493308842808bae2ed1724f",
+    "message": "Move remaining shared WebCore mac files to ../cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=327831\nrdar://190224649\n\nReviewed by Ryosuke Niwa.\n\nMake it more self-evident which files are actually shared across ports.\n\nAll of these are compiled into the iOS build with code of their own, which\n309708@m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T16:32:49.768310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ecfe19f477e24db35a46767ec0f2366ecc4c1ac0",
+    "url": "https://github.com/WebKit/WebKit/commit/ecfe19f477e24db35a46767ec0f2366ecc4c1ac0",
+    "message": "Only apply an extensions own content rule lists to its extension pages\nhttps://bugs.webkit.org/show_bug.cgi?id=327583\nrdar://190036270\n\nReviewed by Timothy Hatcher.\n\nThis patch makes an extension's pages apply only its own content rule lists. Previously, background\npages, service workers, offscreen ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T16:33:28.040962+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ad96437625a0ae62be4d30724b7aa925b245c331",
+    "url": "https://github.com/WebKit/WebKit/commit/ad96437625a0ae62be4d30724b7aa925b245c331",
+    "message": "[JSC] LLInt should not poll the JIT worklist on every execution while a baseline compile is in flight\nhttps://bugs.webkit.org/show_bug.cgi?id=327603\nrdar://190060754\n\nReviewed by Vassili Bykov.\n\nWhen LLInt execution counter crossed the threshold and enqueueing\nBaseline JIT compilation, we keep this ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
