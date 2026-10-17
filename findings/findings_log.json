@@ -79877,5 +79877,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T05:06:30.810043+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9d236ecf922ec5d79d7bdb77989a8b0b01253a3c",
+    "url": "https://github.com/WebKit/WebKit/commit/9d236ecf922ec5d79d7bdb77989a8b0b01253a3c",
+    "message": "[JSC] Heaps that join global collections late adopt the others' marking version\nhttps://bugs.webkit.org/show_bug.cgi?id=327777\nrdar://190185283\n\nReviewed by Keith Miller.\n\nSlotVisitor caches one marking version for every heap it marks, but a heap that\njoins the global Collector after the others have",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T05:07:08.562859+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d6638408f1678e26ebbb0a665b1dd6c9a1d6ed8",
+    "url": "https://github.com/WebKit/WebKit/commit/5d6638408f1678e26ebbb0a665b1dd6c9a1d6ed8",
+    "message": "[JSC] Improve B3 FixSSA by tracking reachable defs\nhttps://bugs.webkit.org/show_bug.cgi?id=327547\nrdar://190031307\n\nReviewed by Keith Miller.\n\nFixSSA is taking very long time for SSACalculator::reachingDefAtHead,\nbut we can do exact same optimization to 323542@main to reduce the cost.\nLet's visit th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T05:07:46.665339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a1e5cdc19b2dc611ba3e55de801c5d54b859dd68",
+    "url": "https://github.com/WebKit/WebKit/commit/a1e5cdc19b2dc611ba3e55de801c5d54b859dd68",
+    "message": "[JSC] Add DFG / FTL intrinsic for `%TypedArray%.prototype.set`\nhttps://bugs.webkit.org/show_bug.cgi?id=326994\n\nReviewed by Yusuke Suzuki.\n\n%TypedArray%.prototype.set is always a host function call. For a small source,\nthe call and the argument validation cost more than the copy.\n\nThis patch adds a T",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
