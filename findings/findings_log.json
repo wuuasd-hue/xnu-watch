@@ -80197,5 +80197,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T23:13:43.246343+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ad5047803f6a49761202edc98fcbdf951a401f1",
+    "url": "https://github.com/WebKit/WebKit/commit/3ad5047803f6a49761202edc98fcbdf951a401f1",
+    "message": "[JSC] Add isGCSafe flag to BulkMemoryValue and rename MemoryCopy to MemoryMove\nhttps://bugs.webkit.org/show_bug.cgi?id=327659\nrdar://190096554\n\nReviewed by Keith Miller.\n\nThis patch is preparation for wider use of BulkMemoryValue B3 Value.\n\n1. Rename MemoryCopy to MemoryMove. It was originally align",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T23:14:21.233176+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fa3737d9c17c59d3d9c0b98652105048d75d5dd8",
+    "url": "https://github.com/WebKit/WebKit/commit/fa3737d9c17c59d3d9c0b98652105048d75d5dd8",
+    "message": "[JSC] Allocate property storage of arrays without C++ operation call\nhttps://bugs.webkit.org/show_bug.cgi?id=327336\n\nReviewed by Yusuke Suzuki.\n\nWhen a put adds a named property to an array and the out-of-line property\nstorage has to grow, the butterfly is reallocated together with the indexing\nhead",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
