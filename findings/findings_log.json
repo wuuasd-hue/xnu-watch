@@ -79937,5 +79937,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T09:31:00.821299+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9826f001dedc208b87f4ecc48aa3939035507044",
+    "url": "https://github.com/WebKit/WebKit/commit/9826f001dedc208b87f4ecc48aa3939035507044",
+    "message": "Put documents with a Document-Isolation-Policy in cross-origin isolated processes\nhttps://bugs.webkit.org/show_bug.cgi?id=327253\nrdar://189824020\n\nReviewed by Alex Christensen.\n\nWith site isolation, a document with a Document-Isolation-Policy now goes in a\ncross-origin isolated process that its brow",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T09:31:37.935410+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "cc78b919a78d078675843a02c0fb2d534f4dc5c4",
+    "url": "https://github.com/swiftlang/swift/commit/cc78b919a78d078675843a02c0fb2d534f4dc5c4",
+    "message": "Merge pull request #93394 from tbkka/tbkka-0035-add-runtime-null-checks\n\n[Casting runtime] Improve debugging of null type errors",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T09:32:15.391504+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "847b1d1f5e7f89b6e750e1190bd3e4daa4027018",
+    "url": "https://github.com/WebKit/WebKit/commit/847b1d1f5e7f89b6e750e1190bd3e4daa4027018",
+    "message": "[JSC] BlockDirectory's bits should be guarded by a mutate-grow lock\nhttps://bugs.webkit.org/show_bug.cgi?id=325474\nrdar://188567814\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nBlockDirectory's bits have relied on the mutator being the only thread that allocates from or\nsweeps a directory's blocks, so",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-17T09:32:52.538448+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e7acf9bf3a6ae415055712cb92c482fea713a863",
+    "url": "https://github.com/WebKit/WebKit/commit/e7acf9bf3a6ae415055712cb92c482fea713a863",
+    "message": "[JSC] DFG iterator open fast paths should pass `JSTypeRange` to `IsCellWithType`\nhttps://bugs.webkit.org/show_bug.cgi?id=327661\n\nReviewed by Yusuke Suzuki.\n\nSince 317660@main, IsCellWithType takes a JSTypeRange. Five callers in\nhandleIteratorOpen and handleAsyncIteratorOpen still pass a bare JSType.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
