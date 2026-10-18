@@ -80497,5 +80497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T21:57:36.860228+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "69028f045a7eb0cc322839e0cae3179d50e98434",
+    "url": "https://github.com/WebKit/WebKit/commit/69028f045a7eb0cc322839e0cae3179d50e98434",
+    "message": "Remove remaining reference to JSGlobalObjectAdditions.h\nhttps://bugs.webkit.org/show_bug.cgi?id=327878\nrdar://190257409\n\nReviewed by Mark Lam.\n\nThis was missed in 323755@main.\nIt's unused and going to be removed.\n\n* Source/JavaScriptCore/assembler/FastJITPermissions.h:\n\nCanonical link: https://commi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T21:58:14.390355+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fea39c698fa7254b19d1c1bf34d71cad5a48f95b",
+    "url": "https://github.com/swiftlang/swift/commit/fea39c698fa7254b19d1c1bf34d71cad5a48f95b",
+    "message": "Merge pull request #93347 from tshortli/called-once-irgen\n\nShare a trapping destructor between exactly-once closures",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
