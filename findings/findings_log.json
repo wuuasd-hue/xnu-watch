@@ -80277,5 +80277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T06:06:20.597873+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "539e0189f6bf89abf438b82196857d9405df4cf7",
+    "url": "https://github.com/WebKit/WebKit/commit/539e0189f6bf89abf438b82196857d9405df4cf7",
+    "message": "Annotate functions in Source/WebCore/loader as NODELETE\nhttps://bugs.webkit.org/show_bug.cgi?id=327962\n\nReviewed by Rupin Mittal.\n\nAdded LEGACY_NODELETE annotation to various functions in Source/WebCore/loader.\n\nNo new tests since there should be no behavioral changes.\n\n* Source/WebCore/loader/Appli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T06:06:58.534445+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "87e378eb197f4d3252975d87eca03f8bcfe06557",
+    "url": "https://github.com/WebKit/WebKit/commit/87e378eb197f4d3252975d87eca03f8bcfe06557",
+    "message": "Fix likely/unlikely attribute placement\nhttps://bugs.webkit.org/show_bug.cgi?id=327728\nrdar://190152289\n\nReviewed by Yusuke Suzuki.\n\nIt looks like Clang only processes `[[likely]]` and `[[unlikely]]` attributes if they precede the\nbrace in an if statement. Fix the places where we used the attribute ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T06:07:37.260939+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8bd3c1b6e0645e0367772f75616a48d32a4f0db4",
+    "url": "https://github.com/WebKit/WebKit/commit/8bd3c1b6e0645e0367772f75616a48d32a4f0db4",
+    "message": "[JSC] Inline string === \"constant\"\nhttps://bugs.webkit.org/show_bug.cgi?id=327641\nrdar://190087771\n\nReviewed by Sosuke Suzuki.\n\nThis patch optimizes string === \"constant\" in FTL. When \"constant\" is <=\n16 length and it is 8bit, we extract string's data, checking length and\ndo inlined comparison as th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
