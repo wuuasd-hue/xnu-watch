@@ -80237,5 +80237,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T01:15:09.795835+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e120f362fbaf47ba0da848295b81557f415aca21",
+    "url": "https://github.com/WebKit/WebKit/commit/e120f362fbaf47ba0da848295b81557f415aca21",
+    "message": "[JSC] FTL direct calls should not link to the arity-checking entrypoint when they pass enough arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=327759\nrdar://190174711\n\nReviewed by Sosuke Suzuki.\n\nsetMaxArgumentCountIncludingThis is set in FTL only when\n`numAllocatedArgs > numPassedArgs` is true, bu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T01:15:47.102894+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6eff649c3396d0b154fc5393b226e1a5ea241b39",
+    "url": "https://github.com/WebKit/WebKit/commit/6eff649c3396d0b154fc5393b226e1a5ea241b39",
+    "message": "[JSC] Add fast path for `String#split` with `/\\r?\\n/`\nhttps://bugs.webkit.org/show_bug.cgi?id=327627\n\nReviewed by Yusuke Suzuki.\n\n/\\r?\\n/ is the most common way to split text into lines. It is used by\npopular libraries such as terser, UglifyJS, PostCSS, @vue/compiler-sfc\nand globby. But only /\\r\\n?|",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
