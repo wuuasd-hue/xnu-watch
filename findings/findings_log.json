@@ -80377,5 +80377,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T14:42:08.001194+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "290ba2619acf04201fd6ae9f32cd8800dbc42569",
+    "url": "https://github.com/WebKit/WebKit/commit/290ba2619acf04201fd6ae9f32cd8800dbc42569",
+    "message": "[JSC] DFG backwards propagation should not request negative zero for the operand of `Branch`\nhttps://bugs.webkit.org/show_bug.cgi?id=327815\n\nReviewed by Yusuke Suzuki.\n\nBranch only converts its operand to a boolean, so it cannot observe -0, same as LogicalNot\n(323639@main). This patch applies Logica",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T14:42:45.208186+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a082bfd8095491595e3fb68beb85b5448c146ed",
+    "url": "https://github.com/WebKit/WebKit/commit/3a082bfd8095491595e3fb68beb85b5448c146ed",
+    "message": "A response-time process swap aborts the page's Navigation API navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=327514\nrdar://189990530\n\nReviewed by Basuke Suzuki.\n\nWhen a navigation's response needs another process, as for COOP and Enhanced\nSecurity, and no provisional page is loading it, the UI p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
