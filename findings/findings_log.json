@@ -80417,5 +80417,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T17:37:12.771872+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78ae5427c473fb2d05db856f355034b0753815a1",
+    "url": "https://github.com/WebKit/WebKit/commit/78ae5427c473fb2d05db856f355034b0753815a1",
+    "message": "[Site Isolation] Web Inspector: Match frame documents to their owner iframe by frameId instead of URL\nhttps://bugs.webkit.org/show_bug.cgi?id=320933\nrdar://problem/183966415\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation, the Elements tab splices each frame target's document under its owner\n<ifra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T17:37:50.473978+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "29c41f19e779202c187f092a839cead29d799bd2",
+    "url": "https://github.com/WebKit/WebKit/commit/29c41f19e779202c187f092a839cead29d799bd2",
+    "message": "[JSC] Use BulkMemoryValue MemoryMove for FTL TypedArraySet\nhttps://bugs.webkit.org/show_bug.cgi?id=327809\nrdar://190198931\n\nReviewed by Sosuke Suzuki.\n\nWe extended BulkMemoryValue to accept non wasm memory.copy / memory.fill\nopcodes by generalizing them. Thus we apply it to TypedArraySet since\nits C",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
