@@ -80537,5 +80537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T23:49:22.115636+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "450812ba4abc8163ded72ee4fd1debc1ebffdb12",
+    "url": "https://github.com/WebKit/WebKit/commit/450812ba4abc8163ded72ee4fd1debc1ebffdb12",
+    "message": "Update macOS safer C++ bots with swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a\nhttps://bugs.webkit.org/show_bug.cgi?id=327998\n\nReviewed by Zak Ridouh.\n\nRollout swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a to macOS safer C++ bots.\n\nThis will address a lot of false negatives we had to suppress after rolling out\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T23:50:00.559434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9d236ecf922ec5d79d7bdb77989a8b0b01253a3c",
+    "url": "https://github.com/WebKit/WebKit/commit/9d236ecf922ec5d79d7bdb77989a8b0b01253a3c",
+    "message": "[JSC] Heaps that join global collections late adopt the others' marking version\nhttps://bugs.webkit.org/show_bug.cgi?id=327777\nrdar://190185283\n\nReviewed by Keith Miller.\n\nSlotVisitor caches one marking version for every heap it marks, but a heap that\njoins the global Collector after the others have",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T23:50:38.856752+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9826f001dedc208b87f4ecc48aa3939035507044",
+    "url": "https://github.com/WebKit/WebKit/commit/9826f001dedc208b87f4ecc48aa3939035507044",
+    "message": "Put documents with a Document-Isolation-Policy in cross-origin isolated processes\nhttps://bugs.webkit.org/show_bug.cgi?id=327253\nrdar://189824020\n\nReviewed by Alex Christensen.\n\nWith site isolation, a document with a Document-Isolation-Policy now goes in a\ncross-origin isolated process that its brow",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
