@@ -80457,5 +80457,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T19:43:48.531901+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7a76e975a330b0754322f49827de7fb8a7844e85",
+    "url": "https://github.com/WebKit/WebKit/commit/7a76e975a330b0754322f49827de7fb8a7844e85",
+    "message": "[JSC] Extract CheckArray from TypedArraySet\nhttps://bugs.webkit.org/show_bug.cgi?id=327802\nrdar://190197037\n\nReviewed by Sosuke Suzuki.\n\n323823@main introduced TypedArraySet in DFG / FTL. It is using\nCheckArray for base, but array type checking for source is done in\nTypedArraySet. But that check is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-18T19:44:28.520060+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0da18ae0608fcd85f7bdb939c8f87126282a0623",
+    "url": "https://github.com/WebKit/WebKit/commit/0da18ae0608fcd85f7bdb939c8f87126282a0623",
+    "message": "Enable JITCage Relaxation on iOS\nhttps://bugs.webkit.org/show_bug.cgi?id=325962\nrdar://183646426\n\nReviewed by Yusuke Suzuki.\n\nJIT Cage can only be supported on macOS in its Relaxed configuration.\nSince this does not compromise any of the goals of the feature, it's\nbetter to use the same configuratio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
