@@ -80857,5 +80857,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T23:49:37.785474+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "996f6599b527943e64f6db52b50ee86e55d60194",
+    "url": "https://github.com/WebKit/WebKit/commit/996f6599b527943e64f6db52b50ee86e55d60194",
+    "message": "Web Inspector: use zero-based `Debugger.Location` for `InjectedScript.CallFrameProxy`\nhttps://bugs.webkit.org/show_bug.cgi?id=327972\n\nReviewed by Timothy Hatcher.\n\n`SymbolTable` keeps one-based locations which are later used for `Debugger.Location` which expects zero-based coordinates.\nLook at uses ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T23:50:15.130773+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "004e01c34435249ef9bc54e0856cadb3ebc13856",
+    "url": "https://github.com/WebKit/WebKit/commit/004e01c34435249ef9bc54e0856cadb3ebc13856",
+    "message": "A cross-document navigation from another agent cluster fires navigate\nhttps://bugs.webkit.org/show_bug.cgi?id=328054\nrdar://190417737\n\nReviewed by Basuke Suzuki.\n\nHTML only fires navigate for a cross-document navigation when the initiator is same origin-domain\nwith the navigated document, so a docum",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T23:50:54.696814+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "456aadb99cdc483a156583396c60e7e819d73ac4",
+    "url": "https://github.com/WebKit/WebKit/commit/456aadb99cdc483a156583396c60e7e819d73ac4",
+    "message": "[JSC] FTL short constant string comparison should handle 16-bit strings inline\nhttps://bugs.webkit.org/show_bug.cgi?id=327996\nrdar://190346785\n\nReviewed by Sosuke Suzuki.\n\nWe extend stringEqualsShortConstant to support 16bit characters for\nboth input and constant string.\n\nTest: JSTests/stress/ftl-st",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T23:51:31.996443+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "996f6599b527943e64f6db52b50ee86e55d60194",
+    "url": "https://github.com/WebKit/WebKit/commit/996f6599b527943e64f6db52b50ee86e55d60194",
+    "message": "Web Inspector: use zero-based `Debugger.Location` for `InjectedScript.CallFrameProxy`\nhttps://bugs.webkit.org/show_bug.cgi?id=327972\n\nReviewed by Timothy Hatcher.\n\n`SymbolTable` keeps one-based locations which are later used for `Debugger.Location` which expects zero-based coordinates.\nLook at uses ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
