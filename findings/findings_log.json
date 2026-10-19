@@ -80757,5 +80757,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T20:16:21.305307+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b7b986157cb8a92745f011f818241dc9ea3fd6e",
+    "url": "https://github.com/WebKit/WebKit/commit/2b7b986157cb8a92745f011f818241dc9ea3fd6e",
+    "message": "[JSC] Allocate poly proto objects in create_this fast paths\nhttps://bugs.webkit.org/show_bug.cgi?id=328035\nrdar://190392057\n\nReviewed by Keith Miller.\n\nPoly proto means \"this structure may be shared by multiple closures so\nthat prototype object is not determined as a singleton\". This means that\neach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T20:17:00.522728+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb82b333f0069776bc74b10dac06a7ee4902053",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb82b333f0069776bc74b10dac06a7ee4902053",
+    "message": "[JSC] Truncate int32 multiplications by narrow integer typed array loads\nhttps://bugs.webkit.org/show_bug.cgi?id=327584\nrdar://190051724\n\nReviewed by Marcus Plutowski.\n\nWhen we have a code like `(i * data[i]) | 0` (the result is represented\nas int32), it can be computed with a wrapping 32-bit multip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T20:17:40.751013+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "456aadb99cdc483a156583396c60e7e819d73ac4",
+    "url": "https://github.com/WebKit/WebKit/commit/456aadb99cdc483a156583396c60e7e819d73ac4",
+    "message": "[JSC] FTL short constant string comparison should handle 16-bit strings inline\nhttps://bugs.webkit.org/show_bug.cgi?id=327996\nrdar://190346785\n\nReviewed by Sosuke Suzuki.\n\nWe extend stringEqualsShortConstant to support 16bit characters for\nboth input and constant string.\n\nTest: JSTests/stress/ftl-st",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T20:18:21.026526+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2b7b986157cb8a92745f011f818241dc9ea3fd6e",
+    "url": "https://github.com/WebKit/WebKit/commit/2b7b986157cb8a92745f011f818241dc9ea3fd6e",
+    "message": "[JSC] Allocate poly proto objects in create_this fast paths\nhttps://bugs.webkit.org/show_bug.cgi?id=328035\nrdar://190392057\n\nReviewed by Keith Miller.\n\nPoly proto means \"this structure may be shared by multiple closures so\nthat prototype object is not determined as a singleton\". This means that\neach",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T20:19:00.595270+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2eb82b333f0069776bc74b10dac06a7ee4902053",
+    "url": "https://github.com/WebKit/WebKit/commit/2eb82b333f0069776bc74b10dac06a7ee4902053",
+    "message": "[JSC] Truncate int32 multiplications by narrow integer typed array loads\nhttps://bugs.webkit.org/show_bug.cgi?id=327584\nrdar://190051724\n\nReviewed by Marcus Plutowski.\n\nWhen we have a code like `(i * data[i]) | 0` (the result is represented\nas int32), it can be computed with a wrapping 32-bit multip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
