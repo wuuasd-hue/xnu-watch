@@ -80637,5 +80637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T07:01:04.882918+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "539e0189f6bf89abf438b82196857d9405df4cf7",
+    "url": "https://github.com/WebKit/WebKit/commit/539e0189f6bf89abf438b82196857d9405df4cf7",
+    "message": "Annotate functions in Source/WebCore/loader as NODELETE\nhttps://bugs.webkit.org/show_bug.cgi?id=327962\n\nReviewed by Rupin Mittal.\n\nAdded LEGACY_NODELETE annotation to various functions in Source/WebCore/loader.\n\nNo new tests since there should be no behavioral changes.\n\n* Source/WebCore/loader/Appli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T07:01:42.604268+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "450812ba4abc8163ded72ee4fd1debc1ebffdb12",
+    "url": "https://github.com/WebKit/WebKit/commit/450812ba4abc8163ded72ee4fd1debc1ebffdb12",
+    "message": "Update macOS safer C++ bots with swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a\nhttps://bugs.webkit.org/show_bug.cgi?id=327998\n\nReviewed by Zak Ridouh.\n\nRollout swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a to macOS safer C++ bots.\n\nThis will address a lot of false negatives we had to suppress after rolling out\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
