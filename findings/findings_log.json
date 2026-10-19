@@ -80597,5 +80597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T01:55:45.231464+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "cc78b919a78d078675843a02c0fb2d534f4dc5c4",
+    "url": "https://github.com/swiftlang/swift/commit/cc78b919a78d078675843a02c0fb2d534f4dc5c4",
+    "message": "Merge pull request #93394 from tbkka/tbkka-0035-add-runtime-null-checks\n\n[Casting runtime] Improve debugging of null type errors",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T01:56:24.349360+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bded892d33f919ea7493308842808bae2ed1724f",
+    "url": "https://github.com/WebKit/WebKit/commit/bded892d33f919ea7493308842808bae2ed1724f",
+    "message": "Move remaining shared WebCore mac files to ../cocoa\nhttps://bugs.webkit.org/show_bug.cgi?id=327831\nrdar://190224649\n\nReviewed by Ryosuke Niwa.\n\nMake it more self-evident which files are actually shared across ports.\n\nAll of these are compiled into the iOS build with code of their own, which\n309708@m",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

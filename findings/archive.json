@@ -19101,9 +19101,10 @@
     "url": "https://github.com/swiftlang/swift/commit/cc78b919a78d078675843a02c0fb2d534f4dc5c4",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -19115,9 +19116,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/bded892d33f919ea7493308842808bae2ed1724f",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
