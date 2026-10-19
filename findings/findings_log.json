@@ -80677,5 +80677,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T14:47:48.549573+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e15083a997c3efa84f12dbba18d3fa440c22505",
+    "url": "https://github.com/WebKit/WebKit/commit/6e15083a997c3efa84f12dbba18d3fa440c22505",
+    "message": "Update iOS safer C++ bots to use swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a\nhttps://bugs.webkit.org/show_bug.cgi?id=328039\n\nReviewed by Richard Robinson.\n\nRollout swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a of swift/clang toolchain to iOS safer C++ bots.\n\n* Source/JavaScriptCore/SaferCPPExpectations/Memory",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T14:48:26.516932+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c762ad05bf71b3ba2af50b2f7dfbb42c1f970cfd",
+    "url": "https://github.com/swiftlang/swift/commit/c762ad05bf71b3ba2af50b2f7dfbb42c1f970cfd",
+    "message": "Merge pull request #93343 from mikeash/duplicate-descriptor-diagnostics\n\n[Runtime] Report duplicate type and protocol descriptors when a type lookup fails.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T14:49:04.591860+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e15083a997c3efa84f12dbba18d3fa440c22505",
+    "url": "https://github.com/WebKit/WebKit/commit/6e15083a997c3efa84f12dbba18d3fa440c22505",
+    "message": "Update iOS safer C++ bots to use swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a\nhttps://bugs.webkit.org/show_bug.cgi?id=328039\n\nReviewed by Richard Robinson.\n\nRollout swift-DEVELOPMENT-SNAPSHOT-2026-10-17-a of swift/clang toolchain to iOS safer C++ bots.\n\n* Source/JavaScriptCore/SaferCPPExpectations/Memory",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-19T14:49:42.966581+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c762ad05bf71b3ba2af50b2f7dfbb42c1f970cfd",
+    "url": "https://github.com/swiftlang/swift/commit/c762ad05bf71b3ba2af50b2f7dfbb42c1f970cfd",
+    "message": "Merge pull request #93343 from mikeash/duplicate-descriptor-diagnostics\n\n[Runtime] Report duplicate type and protocol descriptors when a type lookup fails.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
