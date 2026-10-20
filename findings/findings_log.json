@@ -80937,5 +80937,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:13:45.729985+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd506b1d33fd325a90c214d9d96e692f652daf78",
+    "url": "https://github.com/WebKit/WebKit/commit/cd506b1d33fd325a90c214d9d96e692f652daf78",
+    "message": "[JSC] Object allocation sinking should escape allocations without recursion\nhttps://bugs.webkit.org/show_bug.cgi?id=328024\n\nReviewed by Yusuke Suzuki.\n\nLocalHeap::escapeAllocation called itself for each field of the escaping\nallocation, so the recursion was as deep as the chain of allocations. A fun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:14:23.036936+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9f224feda2abdc709adb3d57c1f74a76202b6ca0",
+    "url": "https://github.com/WebKit/WebKit/commit/9f224feda2abdc709adb3d57c1f74a76202b6ca0",
+    "message": "[JSC] Avoid String ref count churn in `RegExp` constructor, `padStart`, and `replace`\nhttps://bugs.webkit.org/show_bug.cgi?id=327933\n\nReviewed by Yusuke Suzuki.\n\nThese functions copied a String argument only to read it, which costs an\natomic ref and deref. Read the JSString via view() or value() ins",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:15:00.302130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1bfd5529466807bcbb4374071984fa03aeac89c",
+    "url": "https://github.com/WebKit/WebKit/commit/e1bfd5529466807bcbb4374071984fa03aeac89c",
+    "message": "[Wasm] BBQ and OMG should compile atomic loads and stores in the same way as IPInt\nhttps://bugs.webkit.org/show_bug.cgi?id=327931\n\nReviewed by Yusuke Suzuki.\n\nOn x86_64, sequentially consistent loads and stores can be compiled either to\n(mov, xchg) or to (lock xadd, mov), but all tiers have to agree",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:15:37.709477+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6f2e2c2013206342af0b9deeb91642bb0bd54aa",
+    "url": "https://github.com/WebKit/WebKit/commit/e6f2e2c2013206342af0b9deeb91642bb0bd54aa",
+    "message": "[JSC] DFG strength reduction should not crash when a folded string is too long\nhttps://bugs.webkit.org/show_bug.cgi?id=328022\n\nReviewed by Yusuke Suzuki.\n\nDFG strength reduction folds MakeRope, StrCat, MakeAtomString and StringReplace\nof constant strings with a StringBuilder, and gives up when hasOv",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:16:15.259277+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "004e01c34435249ef9bc54e0856cadb3ebc13856",
+    "url": "https://github.com/WebKit/WebKit/commit/004e01c34435249ef9bc54e0856cadb3ebc13856",
+    "message": "A cross-document navigation from another agent cluster fires navigate\nhttps://bugs.webkit.org/show_bug.cgi?id=328054\nrdar://190417737\n\nReviewed by Basuke Suzuki.\n\nHTML only fires navigate for a cross-document navigation when the initiator is same origin-domain\nwith the navigated document, so a docum",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T02:16:52.572526+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cd506b1d33fd325a90c214d9d96e692f652daf78",
+    "url": "https://github.com/WebKit/WebKit/commit/cd506b1d33fd325a90c214d9d96e692f652daf78",
+    "message": "[JSC] Object allocation sinking should escape allocations without recursion\nhttps://bugs.webkit.org/show_bug.cgi?id=328024\n\nReviewed by Yusuke Suzuki.\n\nLocalHeap::escapeAllocation called itself for each field of the escaping\nallocation, so the recursion was as deep as the chain of allocations. A fun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
