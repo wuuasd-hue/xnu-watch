@@ -81397,5 +81397,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:44:57.509850+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0cffadd3044e6ff0bee502696bba97c4ed8a935",
+    "url": "https://github.com/WebKit/WebKit/commit/e0cffadd3044e6ff0bee502696bba97c4ed8a935",
+    "message": "Unreviewed, reverting 324148@main (2eb82b333f00)\nhttps://bugs.webkit.org/show_bug.cgi?id=328258\n\nPotential MotionMark regression\n\nReverted change:\n\n    [JSC] Truncate int32 multiplications by narrow integer typed array loads\n    https://bugs.webkit.org/show_bug.cgi?id=327584\n    324148@main (2eb82b3",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:45:35.375405+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "17339860e69d2a0f78d0dabfcfc782be32fbf7f4",
+    "url": "https://github.com/WebKit/WebKit/commit/17339860e69d2a0f78d0dabfcfc782be32fbf7f4",
+    "message": "Storage access should not be inherited by SharedWorkers and ServiceWorkers\nhttps://bugs.webkit.org/show_bug.cgi?id=327908\nrdar://181528832\n\nReviewed by Charlie Wolfe.\n\nrdar://158814068 stopped DedicatedWorker requests from using the storage access\ngrant of the page that created them. It only covered",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:46:14.581537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f97164ba5c491f4cf4eeebeec9d706b91247026",
+    "url": "https://github.com/WebKit/WebKit/commit/4f97164ba5c491f4cf4eeebeec9d706b91247026",
+    "message": "[JSC] Remove friend declarations Heap and Collector no longer need\nhttps://bugs.webkit.org/show_bug.cgi?id=328127\nrdar://190469351\n\nReviewed by Vassili Bykov.\n\nMany of Heap's friends reach nothing private, or reach one member that a public\naccessor can provide. Unneeded friendships hide which parts ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:46:52.106680+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89f96182aae017eee22f275b56d138e3c95aeb00",
+    "url": "https://github.com/WebKit/WebKit/commit/89f96182aae017eee22f275b56d138e3c95aeb00",
+    "message": "Use `std::atomic_ref` in Atomics.h's free standing functions\nrdar://190462472\n\nReviewed by Yusuke Suzuki.\n\nThe current code is technically UB, std::atomic_ref covers the same\nuse case without any UB. It seems like memcpyAtomic didn't verify the\ndestination was aligned, which, in general, can make th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:47:30.118741+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fb901e69aebefc18f814a3809291d1be27fc8ff8",
+    "url": "https://github.com/WebKit/WebKit/commit/fb901e69aebefc18f814a3809291d1be27fc8ff8",
+    "message": "[Site Isolation] Focused element in another process is blurred too late or not at all when focus changes\nhttps://bugs.webkit.org/show_bug.cgi?id=327645\nrdar://190089567\n\nReviewed by Abrar Rahman Protyasha and Ryosuke Niwa.\n\nWith site isolation, a focus change into a frame in another process was broa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-20T21:48:08.063214+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a3c8dbf35b742a6d307f5ba623fa43f36653ce2d",
+    "url": "https://github.com/WebKit/WebKit/commit/a3c8dbf35b742a6d307f5ba623fa43f36653ce2d",
+    "message": "[JSC] Avoid accessing missing indexing headers in Butterfly helpers.\nhttps://bugs.webkit.org/show_bug.cgi?id=324343\n\nReviewed by Yusuke Suzuki.\n\nAn object whose properties all have names, and which has no indexed elements,\nkeeps them in a butterfly with no IndexingHeader, since that header only\ndesc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
