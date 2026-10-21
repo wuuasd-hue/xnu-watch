@@ -81637,5 +81637,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:03:05.145796+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5596b3e3b58c0ebe651de6ff17c3f5cfe2c92cb1",
+    "url": "https://github.com/WebKit/WebKit/commit/5596b3e3b58c0ebe651de6ff17c3f5cfe2c92cb1",
+    "message": "Web Inspector: isolate native debugger hooks from shared JIT code\nhttps://bugs.webkit.org/show_bug.cgi?id=327974\n\nReviewed by Yusuke Suzuki.\n\nAdding a broad Symbolic Breakpoint can crash when swapping a `JITCode` shared by multiple `NativeExecutable`.\n\nCreate and replace the entire `JITCode` instead",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:03:42.926419+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "926bafc4e251166a414ef6eee5663bc6b1e44e67",
+    "url": "https://github.com/WebKit/WebKit/commit/926bafc4e251166a414ef6eee5663bc6b1e44e67",
+    "message": "[JSC] Fix `let`, `async of` and destructuring declarations in `for` heads\nhttps://bugs.webkit.org/show_bug.cgi?id=327243\n\nReviewed by Yusuke Suzuki.\n\nThis patch fixes three bugs in parseForStatement().\n\n1. In sloppy mode, `let` is an identifier unless it starts a declaration,\n   so `for (let in obj)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:04:20.769479+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33ce3bf11a71d3e2933b000d245664ce9a599c47",
+    "url": "https://github.com/WebKit/WebKit/commit/33ce3bf11a71d3e2933b000d245664ce9a599c47",
+    "message": "[WTF] Replace dragonbox with zmij\nhttps://bugs.webkit.org/show_bug.cgi?id=328124\nrdar://190466337\n\nReviewed by Devin Rousso.\n\nThis patch replaces dragonbox with zmij, which is state-of-the-art\ndouble-to-string conversion. We import zmij as-is, and wrap it for\nfollowing edge cases in dtoa.cpp.\n\n1. ze",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:04:58.723717+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "825e9634eeadc457db7669fea4aae1e8bcc1e08b",
+    "url": "https://github.com/WebKit/WebKit/commit/825e9634eeadc457db7669fea4aae1e8bcc1e08b",
+    "message": "[JSC] Array literals with only holes should use `new_array_with_size`\nhttps://bugs.webkit.org/show_bug.cgi?id=328184\n\nReviewed by Yusuke Suzuki.\n\n`[,,]` was compiled to `new_array` with no elements followed by `put_by_id` to\n`length`. Growing `length` always takes the slow path, so it was much slowe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:05:36.843768+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fad9c3932fe89a6fba984dc32211afe82020e427",
+    "url": "https://github.com/WebKit/WebKit/commit/fad9c3932fe89a6fba984dc32211afe82020e427",
+    "message": "[JSC] B3 LowerToAir's xor-and-rotate match should require a logical right shift and mask shift amounts\nhttps://bugs.webkit.org/show_bug.cgi?id=328171\nrdar://190502335\n\nReviewed by Tadeu Zagallo.\n\nWe are returning int8_t without masking the constant shift amount with\n63. As a result, large number exc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T05:06:14.795931+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "053f87228f09be2846a4e9639ae06b4a5ce59a06",
+    "url": "https://github.com/WebKit/WebKit/commit/053f87228f09be2846a4e9639ae06b4a5ce59a06",
+    "message": "[Site Isolation] http/tests/resourceLoadStatistics/do-not-remove-blocking-in-redirect.https.html is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=327713\nrdar://188416564\n\nReviewed by Charlie Wolfe.\n\nCookie blocking latches for the whole redirect chain: every hop gets the tightest cookie restrictio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
