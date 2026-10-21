@@ -81517,5 +81517,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:12:26.438330+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b40ec02b7cf8f3f083041f3316fd903b713e09d9",
+    "url": "https://github.com/WebKit/WebKit/commit/b40ec02b7cf8f3f083041f3316fd903b713e09d9",
+    "message": "[JSC] Proxy should directly call a function when it does not have apply handler\nhttps://bugs.webkit.org/show_bug.cgi?id=328101\nrdar://190449810\n\nReviewed by Sosuke Suzuki.\n\nSimilar to the other ProxyObject cache mechanism, we cache `apply`\nhandler and skip calling Proxy's apply operation when this i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:13:04.485932+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "675aae044d07ebf27307b4bcf07e0cbc4e8a1d70",
+    "url": "https://github.com/WebKit/WebKit/commit/675aae044d07ebf27307b4bcf07e0cbc4e8a1d70",
+    "message": "Remove some no longer needed code.\nhttps://bugs.webkit.org/show_bug.cgi?id=328262\nrdar://190557249\n\nReviewed by Marcus Plutowski.\n\nNo new tests because this is just removal of unused code.  There is no behavior change.\n\n* Source/JavaScriptCore/assembler/JITOperationValidation.h:\n* Source/JavaScriptC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:13:42.186793+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89dcb36841baad69a952b68b1c7dbf659e9f8f10",
+    "url": "https://github.com/WebKit/WebKit/commit/89dcb36841baad69a952b68b1c7dbf659e9f8f10",
+    "message": "[JSC] Quickly scan whether we have OAS target nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=328245\nrdar://190550681\n\nReviewed by Mark Lam and Keith Miller.\n\nMany JS code does not have candidates for OAS. So quickly scan and stop\ndoing further when we do not have candidates for OAS.\n\n* Source/JavaScr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:14:21.223281+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e8cccb14c4321a4f6aa3b9e86dd3e7bbe028e3e",
+    "url": "https://github.com/WebKit/WebKit/commit/8e8cccb14c4321a4f6aa3b9e86dd3e7bbe028e3e",
+    "message": "[JSC] PutStackSinking should run only when ArgumentsElimination did some job\nhttps://bugs.webkit.org/show_bug.cgi?id=328249\nrdar://190551802\n\nReviewed by Keith Miller.\n\nPutStackSinking is running twice just to catch ArgumentsElimination's\nnew PutStacks. First one makes ArgumentsElimination encourage",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:14:59.379998+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f88678d334a79ca75257c708a188c9280eecde3a",
+    "url": "https://github.com/WebKit/WebKit/commit/f88678d334a79ca75257c708a188c9280eecde3a",
+    "message": "[JSC] Import and export declarations should not redeclare a var in module code\nhttps://bugs.webkit.org/show_bug.cgi?id=327927\n\nReviewed by Yusuke Suzuki.\n\nIt is a Syntax Error if a LexicallyDeclaredName of a module also occurs in its\nVarDeclaredNames [1], but JSC accepted the following when the var ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T00:15:37.243553+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d5248a69a1eb934da6df8d9262b7bd5bdd1ebc3",
+    "url": "https://github.com/WebKit/WebKit/commit/5d5248a69a1eb934da6df8d9262b7bd5bdd1ebc3",
+    "message": "[JSC] Install the private class brand before evaluating class elements\nhttps://bugs.webkit.org/show_bug.cgi?id=327984\n\nReviewed by Yusuke Suzuki.\n\nThe brand of static private methods and accessors was stored in the class scope\nafter the class elements were evaluated, so a closure created in a comput",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
