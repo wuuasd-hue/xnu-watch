@@ -81797,5 +81797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T15:24:19.254781+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e0cffadd3044e6ff0bee502696bba97c4ed8a935",
+    "url": "https://github.com/WebKit/WebKit/commit/e0cffadd3044e6ff0bee502696bba97c4ed8a935",
+    "message": "Unreviewed, reverting 324148@main (2eb82b333f00)\nhttps://bugs.webkit.org/show_bug.cgi?id=328258\n\nPotential MotionMark regression\n\nReverted change:\n\n    [JSC] Truncate int32 multiplications by narrow integer typed array loads\n    https://bugs.webkit.org/show_bug.cgi?id=327584\n    324148@main (2eb82b3",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T15:24:56.705556+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "17339860e69d2a0f78d0dabfcfc782be32fbf7f4",
+    "url": "https://github.com/WebKit/WebKit/commit/17339860e69d2a0f78d0dabfcfc782be32fbf7f4",
+    "message": "Storage access should not be inherited by SharedWorkers and ServiceWorkers\nhttps://bugs.webkit.org/show_bug.cgi?id=327908\nrdar://181528832\n\nReviewed by Charlie Wolfe.\n\nrdar://158814068 stopped DedicatedWorker requests from using the storage access\ngrant of the page that created them. It only covered",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
