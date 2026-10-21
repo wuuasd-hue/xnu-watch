@@ -81757,5 +81757,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T10:21:29.846063+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a56bafe68d4d62d4325745651e60206262e5f009",
+    "url": "https://github.com/WebKit/WebKit/commit/a56bafe68d4d62d4325745651e60206262e5f009",
+    "message": "[Navigation API] navigation.traverseTo() from a navigate event can apply before the current traversal's hashchange under Site Isolation\nhttps://bugs.webkit.org/show_bug.cgi?id=326453\nrdar://189250830\n\nReviewed by Sihui Liu and Charlie Wolfe.\n\nWith UseUIProcessForBackForwardItemLoading, which Site Is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T10:22:07.594531+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "858b529cbaffa996862603fa2cfa85273e38bfa4",
+    "url": "https://github.com/WebKit/WebKit/commit/858b529cbaffa996862603fa2cfa85273e38bfa4",
+    "message": "[JSC] B3 ReduceStrength should check the zip lane before turning a vector shift of a zip into an extend\nhttps://bugs.webkit.org/show_bug.cgi?id=328172\nrdar://190503732\n\nReviewed by Keith Miller.\n\nWe have a comment.\n\n    // Supported combinations:\n    //   shr i16x8 by 8  + zip i8x16  -> i8->i16 sign",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
