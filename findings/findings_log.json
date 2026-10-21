@@ -81837,5 +81837,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:23:57.654444+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9960cb034c0902199b120a5437e73c23667981ec",
+    "url": "https://github.com/WebKit/WebKit/commit/9960cb034c0902199b120a5437e73c23667981ec",
+    "message": "[JSC] Move immutableButterflyToStringCache from Heap to VM\nhttps://bugs.webkit.org/show_bug.cgi?id=328156\nrdar://190482985\n\nReviewed by Yusuke Suzuki.\n\nThis cache remembers the result of joining a copy-on-write array, so the same\narray can be turned into a string again without redoing the work. It b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:24:35.151171+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf08eff75338363ffb4956c6eeb2e510741565e1",
+    "url": "https://github.com/WebKit/WebKit/commit/cf08eff75338363ffb4956c6eeb2e510741565e1",
+    "message": "[JSC] Limit the live number of threads $.agent can start when fuzzing\nhttps://bugs.webkit.org/show_bug.cgi?id=328276\n\nReviewed by Mark Lam.\n\nTo reduce fuzzing crashes, when useFuzzerMode is set, $.agent.start now throws\nan Error once 64 agents are live. The count covers the agent thread's whole\nlife",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:25:13.150405+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6b57897dec6ad7dd1c526b6eb42124ca8fa728f7",
+    "url": "https://github.com/WebKit/WebKit/commit/6b57897dec6ad7dd1c526b6eb42124ca8fa728f7",
+    "message": "Web Inspector: report rendered font character ranges\nhttps://bugs.webkit.org/show_bug.cgi?id=286608\n\nReviewed by Vitor Roriz.\n\n`CSS.getFontDataForNode` only reports the computed primary font, not any fallback fonts, missing glyphs, or which characters each font renders.\nMore often than not, resolvin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:25:51.463777+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "935eb898b463116bb29d0a0499d93267e124545b",
+    "url": "https://github.com/WebKit/WebKit/commit/935eb898b463116bb29d0a0499d93267e124545b",
+    "message": "Unreviewed, relanding 324148@main with nit\nhttps://bugs.webkit.org/show_bug.cgi?id=328263\nrdar://190558532\n\nWe reland 324148@main with a fix, which propagate newly added wrappers\n(Int52Rep etc.) from FixupPhase in BackwardsPropagationPhase.\n\nTests: JSTests/stress/arith-add-truncated-constant-under-i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:26:29.244756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f97164ba5c491f4cf4eeebeec9d706b91247026",
+    "url": "https://github.com/WebKit/WebKit/commit/4f97164ba5c491f4cf4eeebeec9d706b91247026",
+    "message": "[JSC] Remove friend declarations Heap and Collector no longer need\nhttps://bugs.webkit.org/show_bug.cgi?id=328127\nrdar://190469351\n\nReviewed by Vassili Bykov.\n\nMany of Heap's friends reach nothing private, or reach one member that a public\naccessor can provide. Unneeded friendships hide which parts ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-21T19:27:07.110355+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89f96182aae017eee22f275b56d138e3c95aeb00",
+    "url": "https://github.com/WebKit/WebKit/commit/89f96182aae017eee22f275b56d138e3c95aeb00",
+    "message": "Use `std::atomic_ref` in Atomics.h's free standing functions\nrdar://190462472\n\nReviewed by Yusuke Suzuki.\n\nThe current code is technically UB, std::atomic_ref covers the same\nuse case without any UB. It seems like memcpyAtomic didn't verify the\ndestination was aligned, which, in general, can make th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
