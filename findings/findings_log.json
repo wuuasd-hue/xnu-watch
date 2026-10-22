@@ -82097,5 +82097,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:31:52.023479+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f0b158f774b3a7257850e6b570ff2fb689f47f7",
+    "url": "https://github.com/WebKit/WebKit/commit/8f0b158f774b3a7257850e6b570ff2fb689f47f7",
+    "message": "[JSC] Fixup Int32Use/Int52RepUse/DoubleRepUse for ToPropertyKey\nhttps://bugs.webkit.org/show_bug.cgi?id=328397\nrdar://190659071\n\nReviewed by Keith Miller.\n\nToPropertyKey is basically ToString if input is number. We should have\nfixup which converts them to ToString.\n\nTest: JSTests/stress/proxy-get-by",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:32:29.205278+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f78079c4adec1c5b7a985f0c9f7f7f4b4faa0438",
+    "url": "https://github.com/WebKit/WebKit/commit/f78079c4adec1c5b7a985f0c9f7f7f4b4faa0438",
+    "message": "[JSC] Add additional array creation fast path after getting \"constructor\"\nhttps://bugs.webkit.org/show_bug.cgi?id=328409\nrdar://190666387\n\nReviewed by Keith Miller.\n\nArray creation ends up getting \"constructor\" property when |this| is not\nan array, like Proxy, but still it would be possible to get A",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:33:07.700976+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "26155726e4e9499c9c03aa2f67a5e29f0ed8d2b5",
+    "url": "https://github.com/WebKit/WebKit/commit/26155726e4e9499c9c03aa2f67a5e29f0ed8d2b5",
+    "message": "Location-object navigations check the wrong document to decide whether they replace\nhttps://bugs.webkit.org/show_bug.cgi?id=328334\nrdar://190627454\n\nReviewed by Brady Eidson.\n\nSome of HTML's rules for turning \"auto\" history handling into \"replace\" depend\non the navigated document: it is the initial ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:33:44.921448+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1597c8f396a3b5e7f98bd0dd80a6bd9beacadc0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1597c8f396a3b5e7f98bd0dd80a6bd9beacadc0",
+    "message": "[JSC] Map/Set/WeakMap/WeakSet should accept undefined/null as iterable (but not producing anything) in DFG\nhttps://bugs.webkit.org/show_bug.cgi?id=328393\nrdar://190657930\n\nReviewed by Keith Miller.\n\n`new Map(undefined)` / `new Map(null)` is fine. So we relax DFG to\naccept undefined/null constant wit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:34:22.462793+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5596b3e3b58c0ebe651de6ff17c3f5cfe2c92cb1",
+    "url": "https://github.com/WebKit/WebKit/commit/5596b3e3b58c0ebe651de6ff17c3f5cfe2c92cb1",
+    "message": "Web Inspector: isolate native debugger hooks from shared JIT code\nhttps://bugs.webkit.org/show_bug.cgi?id=327974\n\nReviewed by Yusuke Suzuki.\n\nAdding a broad Symbolic Breakpoint can crash when swapping a `JITCode` shared by multiple `NativeExecutable`.\n\nCreate and replace the entire `JITCode` instead",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T05:34:59.662774+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "926bafc4e251166a414ef6eee5663bc6b1e44e67",
+    "url": "https://github.com/WebKit/WebKit/commit/926bafc4e251166a414ef6eee5663bc6b1e44e67",
+    "message": "[JSC] Fix `let`, `async of` and destructuring declarations in `for` heads\nhttps://bugs.webkit.org/show_bug.cgi?id=327243\n\nReviewed by Yusuke Suzuki.\n\nThis patch fixes three bugs in parseForStatement().\n\n1. In sloppy mode, `let` is an identifier unless it starts a declaration,\n   so `for (let in obj)",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
