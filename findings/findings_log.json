@@ -82337,5 +82337,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T19:35:13.885728+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eaf0efa57b264dcc42c66aa9e67ed1de8cacd9e7",
+    "url": "https://github.com/WebKit/WebKit/commit/eaf0efa57b264dcc42c66aa9e67ed1de8cacd9e7",
+    "message": "[JSC] Stop a heap's local Collector threads when the heap shuts down\nhttps://bugs.webkit.org/show_bug.cgi?id=328418\nrdar://190202961\n\nReviewed by Marcus Plutowski.\n\nHeap::shutDown() waits for the Heap's Leave request to be processed by the Collector.\nHowever, this can happen before the collector thr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T19:35:52.410354+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1a28d3cf42d67c957987e5dd1616df974335bf5",
+    "url": "https://github.com/WebKit/WebKit/commit/e1a28d3cf42d67c957987e5dd1616df974335bf5",
+    "message": "[JSC] Fix leftover marks after the marking version wraps, and test the wrap\nhttps://bugs.webkit.org/show_bug.cgi?id=328420\nrdar://190682109\n\nReviewed by Keith Miller.\n\nWhen a heap's marking version wraps, every block is reset to nullVersion, and a\nblock whose marks were current keeps them as the sur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T19:36:30.863325+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6b57897dec6ad7dd1c526b6eb42124ca8fa728f7",
+    "url": "https://github.com/WebKit/WebKit/commit/6b57897dec6ad7dd1c526b6eb42124ca8fa728f7",
+    "message": "Web Inspector: report rendered font character ranges\nhttps://bugs.webkit.org/show_bug.cgi?id=286608\n\nReviewed by Vitor Roriz.\n\n`CSS.getFontDataForNode` only reports the computed primary font, not any fallback fonts, missing glyphs, or which characters each font renders.\nMore often than not, resolvin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T19:37:09.620407+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "935eb898b463116bb29d0a0499d93267e124545b",
+    "url": "https://github.com/WebKit/WebKit/commit/935eb898b463116bb29d0a0499d93267e124545b",
+    "message": "Unreviewed, relanding 324148@main with nit\nhttps://bugs.webkit.org/show_bug.cgi?id=328263\nrdar://190558532\n\nWe reland 324148@main with a fix, which propagate newly added wrappers\n(Int52Rep etc.) from FixupPhase in BackwardsPropagationPhase.\n\nTests: JSTests/stress/arith-add-truncated-constant-under-i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
