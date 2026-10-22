@@ -82277,5 +82277,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T15:42:50.111371+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f3094507e56c6d3a76831fac18703cb9a33f98e",
+    "url": "https://github.com/WebKit/WebKit/commit/0f3094507e56c6d3a76831fac18703cb9a33f98e",
+    "message": "Parse Document-Isolation-Policy-Report-Only and report-to\nhttps://bugs.webkit.org/show_bug.cgi?id=328383\nrdar://190649845\n\nReviewed by Ryosuke Niwa.\n\nA document isolation policy is now a struct, like CrossOriginEmbedderPolicy: a\nvalue, a report-only value, and a reporting endpoint for each. The UI p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T15:43:31.267148+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9960cb034c0902199b120a5437e73c23667981ec",
+    "url": "https://github.com/WebKit/WebKit/commit/9960cb034c0902199b120a5437e73c23667981ec",
+    "message": "[JSC] Move immutableButterflyToStringCache from Heap to VM\nhttps://bugs.webkit.org/show_bug.cgi?id=328156\nrdar://190482985\n\nReviewed by Yusuke Suzuki.\n\nThis cache remembers the result of joining a copy-on-write array, so the same\narray can be turned into a string again without redoing the work. It b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T15:44:10.377600+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf08eff75338363ffb4956c6eeb2e510741565e1",
+    "url": "https://github.com/WebKit/WebKit/commit/cf08eff75338363ffb4956c6eeb2e510741565e1",
+    "message": "[JSC] Limit the live number of threads $.agent can start when fuzzing\nhttps://bugs.webkit.org/show_bug.cgi?id=328276\n\nReviewed by Mark Lam.\n\nTo reduce fuzzing crashes, when useFuzzerMode is set, $.agent.start now throws\nan Error once 64 agents are live. The count covers the agent thread's whole\nlife",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
