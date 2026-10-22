@@ -82217,5 +82217,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T10:43:09.831228+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd4b30934ff5d6828af285aafc9c6058af49057b",
+    "url": "https://github.com/WebKit/WebKit/commit/fd4b30934ff5d6828af285aafc9c6058af49057b",
+    "message": "Add console logging when COOP or COEP isolation is expected but not achieved\nhttps://bugs.webkit.org/show_bug.cgi?id=328272\nrdar://190563075\n\nReviewed by Anne van Kesteren.\n\nA page becomes cross-origin isolated (window.crossOriginIsolated, SharedArrayBuffer)\nonly when it is served with Cross-Origin-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T10:43:48.008435+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "33ce3bf11a71d3e2933b000d245664ce9a599c47",
+    "url": "https://github.com/WebKit/WebKit/commit/33ce3bf11a71d3e2933b000d245664ce9a599c47",
+    "message": "[WTF] Replace dragonbox with zmij\nhttps://bugs.webkit.org/show_bug.cgi?id=328124\nrdar://190466337\n\nReviewed by Devin Rousso.\n\nThis patch replaces dragonbox with zmij, which is state-of-the-art\ndouble-to-string conversion. We import zmij as-is, and wrap it for\nfollowing edge cases in dtoa.cpp.\n\n1. ze",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T10:44:25.921132+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "825e9634eeadc457db7669fea4aae1e8bcc1e08b",
+    "url": "https://github.com/WebKit/WebKit/commit/825e9634eeadc457db7669fea4aae1e8bcc1e08b",
+    "message": "[JSC] Array literals with only holes should use `new_array_with_size`\nhttps://bugs.webkit.org/show_bug.cgi?id=328184\n\nReviewed by Yusuke Suzuki.\n\n`[,,]` was compiled to `new_array` with no elements followed by `put_by_id` to\n`length`. Growing `length` always takes the slow path, so it was much slowe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
