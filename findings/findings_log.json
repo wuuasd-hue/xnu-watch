@@ -82017,5 +82017,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T00:48:58.488023+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd24421c844be24e85baca64b928a1a45645035d",
+    "url": "https://github.com/WebKit/WebKit/commit/dd24421c844be24e85baca64b928a1a45645035d",
+    "message": "[JSC] DFG should not compile `op_has_private_name` as `InById`\nhttps://bugs.webkit.org/show_bug.cgi?id=328284\n\nReviewed by Yusuke Suzuki.\n\n`#x in o` only looks at `o` itself. However, the DFG bytecode parser passes\n`op_has_private_name` to `handleInById`, which emits `InById` when it cannot emit\n`Ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T00:49:35.793144+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b45f2446d8ea50027dd05c4d07d85a232a9f331d",
+    "url": "https://github.com/WebKit/WebKit/commit/b45f2446d8ea50027dd05c4d07d85a232a9f331d",
+    "message": "[JSC] DFG should not fold ResolvePromiseFirstResolving into a fulfill when the value can be the promise\nhttps://bugs.webkit.org/show_bug.cgi?id=328330\nrdar://190624765\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nEven if the object is not having `then` method, if it is Promise, then\nresolving a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T00:50:13.407354+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "89dcb36841baad69a952b68b1c7dbf659e9f8f10",
+    "url": "https://github.com/WebKit/WebKit/commit/89dcb36841baad69a952b68b1c7dbf659e9f8f10",
+    "message": "[JSC] Quickly scan whether we have OAS target nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=328245\nrdar://190550681\n\nReviewed by Mark Lam and Keith Miller.\n\nMany JS code does not have candidates for OAS. So quickly scan and stop\ndoing further when we do not have candidates for OAS.\n\n* Source/JavaScr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T00:50:50.819675+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e8cccb14c4321a4f6aa3b9e86dd3e7bbe028e3e",
+    "url": "https://github.com/WebKit/WebKit/commit/8e8cccb14c4321a4f6aa3b9e86dd3e7bbe028e3e",
+    "message": "[JSC] PutStackSinking should run only when ArgumentsElimination did some job\nhttps://bugs.webkit.org/show_bug.cgi?id=328249\nrdar://190551802\n\nReviewed by Keith Miller.\n\nPutStackSinking is running twice just to catch ArgumentsElimination's\nnew PutStacks. First one makes ArgumentsElimination encourage",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

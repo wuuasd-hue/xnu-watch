@@ -19581,9 +19581,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/89dcb36841baad69a952b68b1c7dbf659e9f8f10",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -19595,9 +19596,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/8e8cccb14c4321a4f6aa3b9e86dd3e7bbe028e3e",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -19719,6 +19721,34 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/WebCore/loader/TextResourceDecoder.cpp ---\n@@ -288,11 +288,8 @@ TextResourceDecoder::~TextResourceDecoder() = default;\n // https://encoding.spec.whatwg.org/#utf-8-decode\n String TextResourceDecoder::textFromUTF8(std::span<const uint8_t> data)\n {\n-    constexpr std::array<uint8_t, 3> byteOrderMarkUTF8 = { 0xEF, 0xBB, 0xBF };\n-\n     auto decoder = TextResourceDecoder::create(\"text/plain\"_s, \"UTF-8\"_s);\n-    if (!spanHasPrefix(data, std::span { byteOrderMarkUTF8 }))\n-        decoder->decode(byteOrderMarkUTF8);\n+    decoder->setAlwaysUseUTF8();\n     return decoder->decodeAndFlush(data);\n }\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/70f4e7bce3abbfae5294590f2c7738454ac9a5c0",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "dd24421c844be24e85baca64b928a1a45645035d",
+    "message": "[JSC] DFG should not compile `op_has_private_name` as `InById`\nhttps://bugs.webkit.org/show_bug.cgi?id=328284\n\nReviewed by Yusuke Suzuki.\n\n`#x in o` only looks at `o` itself. However, the DFG bytecode parser passes\n`op_has_private_name` to `handleInById`, which emits `InById` when it cannot emit\n`Ma",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/has-private-name-without-access-inlining.js ---\n@@ -0,0 +1,31 @@\n+//@ requireOptions(\"--useAccessInlining=false\")\n+\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(\"bad value: \" + String(actual) + \", expected: \" + String(expected));\n+}\n+\n+class Base {\n+    constructor(object) {\n+        return object;\n+    }\n+}\n+\n+class Stamper extends Base {\n+    #field;\n+    static has(object) {\n+        return #field in object;\n+    }\n+}\n+noInline(Stamper.has);\n+\n+let prototype = { };\n+let child = Object.create(prototype);\n+for (let i = 0; i < testLoopCount; ++i)\n+    shouldBe(Stamper.has(child), false);\n+\n+new Stamper(prototype);\n+for (let i = 0; i < testLoopCount; ++i) {\n+    shouldBe(Stamper.has(child), false);\n+    shouldBe(Stamper.has(prototype), true);\n+}\n\n--- Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp ---\n@@ -11189,7 +11189,7 @@ void ByteCodeParser::parseBlock(unsigned limit)\n             auto bytecode = currentInstruction->as<OpHasPrivateName>();\n             Node* base = get(bytecode.m_base);\n             Node* property = get(bytecode.m_property);\n-            bool compiledAsInById = false;\n+            bool compiledAsMatchStructure = false;\n \n             if (!m_inlineStackTop->m_exitProfile.hasExitSite(m_currentIndex, BadIdent)\n                 && !m_inlineStackTop->m_exitProfile.hasExitSite(m_currentIndex, BadType)\n@@ -11204,12 +11204,11 @@ void ByteCodeParser::parseBlock(unsigned limit)\n                     ASSERT(identifier.isSymbolCell());\n                     FrozenValue* frozen = m_graph.freezeStrong(identifier.cell());\n                     addToGraph(CheckIsConstant, OpInfo(frozen), property);\n-                    handleInById(bytecode.m_dst, base, identifier, status, nextOpcodeIndex());\n-                    compiledAsInById = true;\n+                    compiledAsMatchStructure = handleInByAsMatchStructure(bytecode.m_dst, base, status);\n                 }\n             }\n \n-            if (!compiledAsInById)\n+            if (!compiledAsMatchStructure)\n                 set(bytecode.m_dst, addToGraph(HasPrivateName, base, property));\n             NEXT_OPCODE(op_has_private_name);\n         }\n",
+    "url": "https://github.com/WebKit/WebKit/commit/dd24421c844be24e85baca64b928a1a45645035d",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "b45f2446d8ea50027dd05c4d07d85a232a9f331d",
+    "message": "[JSC] DFG should not fold ResolvePromiseFirstResolving into a fulfill when the value can be the promise\nhttps://bugs.webkit.org/show_bug.cgi?id=328330\nrdar://190624765\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nEven if the object is not having `then` method, if it is Promise, then\nresolving a ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- JSTests/stress/promise-resolved-with-itself-rejects-in-jit.js ---\n@@ -0,0 +1,22 @@\n+function resolveWithItself(i) {\n+    let resolve;\n+    let promise = new Promise((r) => { resolve = r; });\n+    Object.setPrototypeOf(promise, null);\n+    promise.foo = i;\n+    resolve(promise);\n+    return promise;\n+}\n+noInline(resolveWithItself);\n+\n+let fulfilled = 0;\n+let rejectedWithTypeError = 0;\n+for (let i = 0; i < testLoopCount; ++i) {\n+    Promise.prototype.then.call(resolveWithItself(i), () => { fulfilled++; }, (error) => {\n+        if (error instanceof TypeError)\n+            rejectedWithTypeError++;\n+    });\n+}\n+drainMicrotasks();\n+\n+if (fulfilled || rejectedWithTypeError !== testLoopCount)\n+    throw new Error(\"fulfilled \" + fulfilled + \" times, rejected with TypeError \" + rejectedWithTypeError + \" times\");\n\n--- Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp ---\n@@ -2025,9 +2025,10 @@ class ConstantFoldingPhase : public Phase {\n                 }\n \n                 // SpecObject | something.\n-                // Only for types having structures, we check \"then\" existence.\n+                // Only for types having structures, we check \"then\" existence. A promise resolved with\n+                // itself must reject, so the argument must not be a promise.\n                 auto& structureSet = argument.m_structure;\n-                if (structureSet.isFinite() && structureSet.size() == 1) {\n+                if (argument.isType(~SpecPromiseObject) && structureSet.isFinite() && structureSet.size() == 1) {\n                     JSGlobalObject* globalObject = m_graph.globalObjectFor(node->origin.semantic);\n                     auto conditionSet = m_graph.tryEnsureAbsence(globalObject, structureSet.toStructureSet(), CacheableIdentifier::createFromImmortalIdentifier(m_graph.m_vm.propertyNames->then.impl()));\n                     if (conditionSet.isValid()) {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/b45f2446d8ea50027dd05c4d07d85a232a9f331d",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
