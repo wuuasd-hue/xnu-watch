@@ -82417,5 +82417,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:49:16.680220+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c593699f442b055a5001ee63c299b3671a343c04",
+    "url": "https://github.com/WebKit/WebKit/commit/c593699f442b055a5001ee63c299b3671a343c04",
+    "message": "[Site Isolation] Web Inspector: Download Web Archive drops cross-origin iframes\nhttps://bugs.webkit.org/show_bug.cgi?id=309223\nrdar://171782016\n\nReviewed by Qianlang Chen.\n\nPage.archive ran in the page target's process and serialized only local frames, so every cross-origin\niframe was silently missi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:49:54.502708+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b6c9842055fa9b76ca7f3a06d8eb6443eb5e31ac",
+    "url": "https://github.com/WebKit/WebKit/commit/b6c9842055fa9b76ca7f3a06d8eb6443eb5e31ac",
+    "message": "SamplingProfiler::StackTrace's move constructor drops stopwatchTimestamp\nrdar://190749432\nhttps://bugs.webkit.org/show_bug.cgi?id=328525\n\nReviewed by Devin Rousso.\n\n267527@main added SamplingProfiler::StackTrace::stopwatchTimestamp,\nwhich InspectorScriptProfilerAgent sends to Web Inspector as the\nti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:50:33.431506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95de66c16589e6590cd48900429b05646c43cf4b",
+    "url": "https://github.com/WebKit/WebKit/commit/95de66c16589e6590cd48900429b05646c43cf4b",
+    "message": "XMLHttpRequest JSON responses should always be decoded as UTF-8\nhttps://bugs.webkit.org/show_bug.cgi?id=328468\nrdar://190717643\n\nReviewed by Brent Fulgham.\n\nXMLHttpRequest parses a JSON response with parse JSON from bytes, which decodes the bytes as UTF-8\nwhatever charset the response or overrideMim",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:51:11.328109+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "267d357e415df25512b668a7e15bbcaba271ab3d",
+    "url": "https://github.com/swiftlang/swift/commit/267d357e415df25512b668a7e15bbcaba271ab3d",
+    "message": "Merge pull request #93537 from drexin/layout-string-vw-perf\n\n[Runtime] Compact value witnesses performance improvements",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:51:49.532829+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70f4e7bce3abbfae5294590f2c7738454ac9a5c0",
+    "url": "https://github.com/WebKit/WebKit/commit/70f4e7bce3abbfae5294590f2c7738454ac9a5c0",
+    "message": "Simplify TextResourceDecoder::textFromUTF8()\nhttps://bugs.webkit.org/show_bug.cgi?id=328342\nrdar://190631447\n\nReviewed by Youenn Fablet.\n\ntextFromUTF8() implements UTF-8 decode, which strips one UTF-8 BOM and does not\nswitch to UTF-16 on a UTF-16 BOM. It got there by decoding a UTF-8 BOM first\nwhene",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-22T22:52:27.741079+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dd24421c844be24e85baca64b928a1a45645035d",
+    "url": "https://github.com/WebKit/WebKit/commit/dd24421c844be24e85baca64b928a1a45645035d",
+    "message": "[JSC] DFG should not compile `op_has_private_name` as `InById`\nhttps://bugs.webkit.org/show_bug.cgi?id=328284\n\nReviewed by Yusuke Suzuki.\n\n`#x in o` only looks at `o` itself. However, the DFG bytecode parser passes\n`op_has_private_name` to `handleInById`, which emits `InById` when it cannot emit\n`Ma",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
