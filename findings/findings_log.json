@@ -82537,5 +82537,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T01:03:32.930867+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e50f0255bce9c624673c72f6513ca054eb7715b7",
+    "url": "https://github.com/WebKit/WebKit/commit/e50f0255bce9c624673c72f6513ca054eb7715b7",
+    "message": "[JSC] Avoid creating fresh Source for each JSBoundFunction\nhttps://bugs.webkit.org/show_bug.cgi?id=328541\nrdar://190759581\n\nReviewed by Keith Miller.\n\nWe are creating SourceCode just to read taintedness. Avoid creating it.\n\n* Source/JavaScriptCore/dfg/DFGOperations.cpp:\n(JSC::DFG::JSC_DEFINE_JIT_OPE",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T01:04:11.547918+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "057d7e0e3260b51a9e2402cf5c5d04ca88b892fe",
+    "url": "https://github.com/WebKit/WebKit/commit/057d7e0e3260b51a9e2402cf5c5d04ca88b892fe",
+    "message": "Queue Document-Isolation-Policy CORP violation reports for network loads\nhttps://bugs.webkit.org/show_bug.cgi?id=328490\nrdar://190730064\n\nReviewed by Ryosuke Niwa.\n\nA cross-origin no-cors response from the network that Document-Isolation-Policy\nor Document-Isolation-Policy-Report-Only blocks now que",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T01:04:50.053107+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2a655b1965ee67c5b50b503b3ca39b041d16b6f",
+    "url": "https://github.com/WebKit/WebKit/commit/d2a655b1965ee67c5b50b503b3ca39b041d16b6f",
+    "message": "[JSC] Start all of a heap's versions near the wrap in tests, not just marking\nhttps://bugs.webkit.org/show_bug.cgi?id=328522\nrdar://190750936\n\nReviewed by Yusuke Suzuki.\n\ninitialMarkingVersion, added in 324475@main, starts only the marking version\nnear its wrap, so the newly allocated version's wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T01:05:30.073033+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b45f2446d8ea50027dd05c4d07d85a232a9f331d",
+    "url": "https://github.com/WebKit/WebKit/commit/b45f2446d8ea50027dd05c4d07d85a232a9f331d",
+    "message": "[JSC] DFG should not fold ResolvePromiseFirstResolving into a fulfill when the value can be the promise\nhttps://bugs.webkit.org/show_bug.cgi?id=328330\nrdar://190624765\n\nReviewed by Marcus Plutowski and Keith Miller.\n\nEven if the object is not having `then` method, if it is Promise, then\nresolving a ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T01:06:08.259542+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8f0b158f774b3a7257850e6b570ff2fb689f47f7",
+    "url": "https://github.com/WebKit/WebKit/commit/8f0b158f774b3a7257850e6b570ff2fb689f47f7",
+    "message": "[JSC] Fixup Int32Use/Int52RepUse/DoubleRepUse for ToPropertyKey\nhttps://bugs.webkit.org/show_bug.cgi?id=328397\nrdar://190659071\n\nReviewed by Keith Miller.\n\nToPropertyKey is basically ToString if input is number. We should have\nfixup which converts them to ToString.\n\nTest: JSTests/stress/proxy-get-by",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
