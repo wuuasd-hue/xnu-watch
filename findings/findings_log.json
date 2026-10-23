@@ -82637,5 +82637,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:06:58.436522+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e04a6f9faecf0c7ea2deabb8f068c4ff4ebb96f6",
+    "url": "https://github.com/WebKit/WebKit/commit/e04a6f9faecf0c7ea2deabb8f068c4ff4ebb96f6",
+    "message": "[JSC] Object spread and rest should have a fast path for functions\nhttps://bugs.webkit.org/show_bug.cgi?id=328286\n\nReviewed by Yusuke Suzuki.\n\n`{ ...fn }` and `let { a, ...rest } = fn` always took the generic path because\nJSFunction overrides getOwnPropertySlot and getOwnSpecialPropertyNames for its",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:07:36.203678+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "549e7aa065f16a94b9ac57935a28efa5e04084ec",
+    "url": "https://github.com/WebKit/WebKit/commit/549e7aa065f16a94b9ac57935a28efa5e04084ec",
+    "message": "Remove unsafe cast suppressions for rdar://189998365\nhttps://bugs.webkit.org/show_bug.cgi?id=328430\n\nReviewed by Anne van Kesteren.\n\nRemoved the unnecessary suppressions now that clang has been updated.\n\nNo new tests since there should be no behavioral changes.\n\n* Source/WebCore/Modules/indexeddb/sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:08:14.021369+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f274ef4c03ebace644c46f8ec55746b391acdcc8",
+    "url": "https://github.com/WebKit/WebKit/commit/f274ef4c03ebace644c46f8ec55746b391acdcc8",
+    "message": "[JSC] Inlined `Array#sort` should keep the comparator call kind for bound functions\nhttps://bugs.webkit.org/show_bug.cgi?id=327983\n\nReviewed by Yusuke Suzuki.\n\nWhen the comparator is a bound function, BoundFunctionCallIntrinsic inlined its target as\nBoundFunctionCall and dropped ArraySortComparatorC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:08:51.929299+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "071ce01fcb2a59b62a5a0dc49e102ff4f0349a6e",
+    "url": "https://github.com/WebKit/WebKit/commit/071ce01fcb2a59b62a5a0dc49e102ff4f0349a6e",
+    "message": "[JSC] Async stack trace collection should stop at a cycle of awaits\nhttps://bugs.webkit.org/show_bug.cgi?id=328147\n\nReviewed by Yusuke Suzuki.\n\nAn async function can wait on its own promise through Promise.all, allSettled, any\nor race. getAsyncStackTrace then walked the same generators forever: it n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:09:29.745880+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f78079c4adec1c5b7a985f0c9f7f7f4b4faa0438",
+    "url": "https://github.com/WebKit/WebKit/commit/f78079c4adec1c5b7a985f0c9f7f7f4b4faa0438",
+    "message": "[JSC] Add additional array creation fast path after getting \"constructor\"\nhttps://bugs.webkit.org/show_bug.cgi?id=328409\nrdar://190666387\n\nReviewed by Keith Miller.\n\nArray creation ends up getting \"constructor\" property when |this| is not\nan array, like Proxy, but still it would be possible to get A",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T06:10:07.501179+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "26155726e4e9499c9c03aa2f67a5e29f0ed8d2b5",
+    "url": "https://github.com/WebKit/WebKit/commit/26155726e4e9499c9c03aa2f67a5e29f0ed8d2b5",
+    "message": "Location-object navigations check the wrong document to decide whether they replace\nhttps://bugs.webkit.org/show_bug.cgi?id=328334\nrdar://190627454\n\nReviewed by Brady Eidson.\n\nSome of HTML's rules for turning \"auto\" history handling into \"replace\" depend\non the navigated document: it is the initial ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
