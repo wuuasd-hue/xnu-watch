@@ -82757,5 +82757,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T11:52:23.155959+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "191803bb23047cbcb58bdeb211945cb3971eec61",
+    "url": "https://github.com/WebKit/WebKit/commit/191803bb23047cbcb58bdeb211945cb3971eec61",
+    "message": "[JSC] RegExp legacy static properties should not crash when the lazy re-match fails\nhttps://bugs.webkit.org/show_bug.cgi?id=328417\n\nReviewed by Yusuke Suzuki.\n\n`RegExp.prototype.test` only records the position of the match, and `RegExp.lastMatch`, `RegExp.$1`\netc. run the match again to get the capt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T11:53:00.448009+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37aa2b5bd94dc9ce8ebac88cd9c4f6ce652db9ef",
+    "url": "https://github.com/WebKit/WebKit/commit/37aa2b5bd94dc9ce8ebac88cd9c4f6ce652db9ef",
+    "message": "[JSC] Avoid using wrapper iterator in builtins\nhttps://bugs.webkit.org/show_bug.cgi?id=328563\nrdar://190769590\n\nReviewed by Sosuke Suzuki.\n\nSince for-of calls @@iterator unconditionally, we end up having iterator\nwrappers in builtins to align to the spec behavior. But this does not\nhelp at all in te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T11:53:38.406366+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e1597c8f396a3b5e7f98bd0dd80a6bd9beacadc0",
+    "url": "https://github.com/WebKit/WebKit/commit/e1597c8f396a3b5e7f98bd0dd80a6bd9beacadc0",
+    "message": "[JSC] Map/Set/WeakMap/WeakSet should accept undefined/null as iterable (but not producing anything) in DFG\nhttps://bugs.webkit.org/show_bug.cgi?id=328393\nrdar://190657930\n\nReviewed by Keith Miller.\n\n`new Map(undefined)` / `new Map(null)` is fine. So we relax DFG to\naccept undefined/null constant wit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T11:54:17.895052+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fd4b30934ff5d6828af285aafc9c6058af49057b",
+    "url": "https://github.com/WebKit/WebKit/commit/fd4b30934ff5d6828af285aafc9c6058af49057b",
+    "message": "Add console logging when COOP or COEP isolation is expected but not achieved\nhttps://bugs.webkit.org/show_bug.cgi?id=328272\nrdar://190563075\n\nReviewed by Anne van Kesteren.\n\nA page becomes cross-origin isolated (window.crossOriginIsolated, SharedArrayBuffer)\nonly when it is served with Cross-Origin-",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
