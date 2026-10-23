@@ -82837,5 +82837,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T15:58:06.081065+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0f3094507e56c6d3a76831fac18703cb9a33f98e",
+    "url": "https://github.com/WebKit/WebKit/commit/0f3094507e56c6d3a76831fac18703cb9a33f98e",
+    "message": "Parse Document-Isolation-Policy-Report-Only and report-to\nhttps://bugs.webkit.org/show_bug.cgi?id=328383\nrdar://190649845\n\nReviewed by Ryosuke Niwa.\n\nA document isolation policy is now a struct, like CrossOriginEmbedderPolicy: a\nvalue, a report-only value, and a reporting endpoint for each. The UI p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T15:58:45.166300+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eaf0efa57b264dcc42c66aa9e67ed1de8cacd9e7",
+    "url": "https://github.com/WebKit/WebKit/commit/eaf0efa57b264dcc42c66aa9e67ed1de8cacd9e7",
+    "message": "[JSC] Stop a heap's local Collector threads when the heap shuts down\nhttps://bugs.webkit.org/show_bug.cgi?id=328418\nrdar://190202961\n\nReviewed by Marcus Plutowski.\n\nHeap::shutDown() waits for the Heap's Leave request to be processed by the Collector.\nHowever, this can happen before the collector thr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
