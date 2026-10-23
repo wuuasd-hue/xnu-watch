@@ -82917,5 +82917,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T22:41:48.243170+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2e52405eb43d4c95d19baa9dbfce78c1d871c34",
+    "url": "https://github.com/WebKit/WebKit/commit/e2e52405eb43d4c95d19baa9dbfce78c1d871c34",
+    "message": "[Site Isolation] Tag ScrollView::exposedContentRect() with its coordinate space\nhttps://bugs.webkit.org/show_bug.cgi?id=327587\nrdar://190052740\n\nReviewed by Sammy Gill.\n\nScrollView::exposedContentRect() is named as a contents-space rect, but for a root frame the value\nit is built from is the rect th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T22:42:25.472251+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "649bd1607736c8079ddc13ffc1d371e7228deac9",
+    "url": "https://github.com/WebKit/WebKit/commit/649bd1607736c8079ddc13ffc1d371e7228deac9",
+    "message": "A navigated-to about:blank loses its history entry to the next navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=327847\nrdar://190237322\n\nReviewed by Basuke Suzuki.\n\nIn content-security-policy/inheritance/history-iframe.sub.html the expected file has FAIL for the\nsubtest \"History navigation in ifra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T22:43:02.708053+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d24a1fec640edc8d0026312b6b6c16ad88015df4",
+    "url": "https://github.com/WebKit/WebKit/commit/d24a1fec640edc8d0026312b6b6c16ad88015df4",
+    "message": "Navigating an iframe away from its initial about:blank document by clicking a link adds a history entry\nhttps://bugs.webkit.org/show_bug.cgi?id=328427\nrdar://190687356\n\nReviewed by Per Arne Vollan.\n\nPer https://html.spec.whatwg.org/multipage/browsing-the-web.html#beginning-navigation (step 14) and\nh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T22:43:40.561639+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b6c9842055fa9b76ca7f3a06d8eb6443eb5e31ac",
+    "url": "https://github.com/WebKit/WebKit/commit/b6c9842055fa9b76ca7f3a06d8eb6443eb5e31ac",
+    "message": "SamplingProfiler::StackTrace's move constructor drops stopwatchTimestamp\nrdar://190749432\nhttps://bugs.webkit.org/show_bug.cgi?id=328525\n\nReviewed by Devin Rousso.\n\n267527@main added SamplingProfiler::StackTrace::stopwatchTimestamp,\nwhich InspectorScriptProfilerAgent sends to Web Inspector as the\nti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-23T22:44:17.926310+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "95de66c16589e6590cd48900429b05646c43cf4b",
+    "url": "https://github.com/WebKit/WebKit/commit/95de66c16589e6590cd48900429b05646c43cf4b",
+    "message": "XMLHttpRequest JSON responses should always be decoded as UTF-8\nhttps://bugs.webkit.org/show_bug.cgi?id=328468\nrdar://190717643\n\nReviewed by Brent Fulgham.\n\nXMLHttpRequest parses a JSON response with parse JSON from bytes, which decodes the bytes as UTF-8\nwhatever charset the response or overrideMim",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
