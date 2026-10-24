@@ -83317,5 +83317,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T19:52:55.637456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2e52405eb43d4c95d19baa9dbfce78c1d871c34",
+    "url": "https://github.com/WebKit/WebKit/commit/e2e52405eb43d4c95d19baa9dbfce78c1d871c34",
+    "message": "[Site Isolation] Tag ScrollView::exposedContentRect() with its coordinate space\nhttps://bugs.webkit.org/show_bug.cgi?id=327587\nrdar://190052740\n\nReviewed by Sammy Gill.\n\nScrollView::exposedContentRect() is named as a contents-space rect, but for a root frame the value\nit is built from is the rect th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T19:53:35.413231+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "649bd1607736c8079ddc13ffc1d371e7228deac9",
+    "url": "https://github.com/WebKit/WebKit/commit/649bd1607736c8079ddc13ffc1d371e7228deac9",
+    "message": "A navigated-to about:blank loses its history entry to the next navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=327847\nrdar://190237322\n\nReviewed by Basuke Suzuki.\n\nIn content-security-policy/inheritance/history-iframe.sub.html the expected file has FAIL for the\nsubtest \"History navigation in ifra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
