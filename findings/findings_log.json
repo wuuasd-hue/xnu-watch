@@ -83177,5 +83177,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T11:19:32.679645+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fc2160fc359299d002c83fa76aae94a1633d0d5e",
+    "url": "https://github.com/swiftlang/swift/commit/fc2160fc359299d002c83fa76aae94a1633d0d5e",
+    "message": "[Runtime] Restrict custom memcpy in BytecodeLayouts.cpp to Apple plat… (#93591)\n\n…forms\n\nFor now we can only guarantee that this improves performance on Apple\nplatforms. It also currently does not link on arm64 Linux and Windows\nbecause of symbol differences.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T11:20:10.955981+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e04a6f9faecf0c7ea2deabb8f068c4ff4ebb96f6",
+    "url": "https://github.com/WebKit/WebKit/commit/e04a6f9faecf0c7ea2deabb8f068c4ff4ebb96f6",
+    "message": "[JSC] Object spread and rest should have a fast path for functions\nhttps://bugs.webkit.org/show_bug.cgi?id=328286\n\nReviewed by Yusuke Suzuki.\n\n`{ ...fn }` and `let { a, ...rest } = fn` always took the generic path because\nJSFunction overrides getOwnPropertySlot and getOwnSpecialPropertyNames for its",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T11:20:48.744655+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "549e7aa065f16a94b9ac57935a28efa5e04084ec",
+    "url": "https://github.com/WebKit/WebKit/commit/549e7aa065f16a94b9ac57935a28efa5e04084ec",
+    "message": "Remove unsafe cast suppressions for rdar://189998365\nhttps://bugs.webkit.org/show_bug.cgi?id=328430\n\nReviewed by Anne van Kesteren.\n\nRemoved the unnecessary suppressions now that clang has been updated.\n\nNo new tests since there should be no behavioral changes.\n\n* Source/WebCore/Modules/indexeddb/sh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
