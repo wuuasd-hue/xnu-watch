@@ -83357,5 +83357,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T22:01:01.606882+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d24a1fec640edc8d0026312b6b6c16ad88015df4",
+    "url": "https://github.com/WebKit/WebKit/commit/d24a1fec640edc8d0026312b6b6c16ad88015df4",
+    "message": "Navigating an iframe away from its initial about:blank document by clicking a link adds a history entry\nhttps://bugs.webkit.org/show_bug.cgi?id=328427\nrdar://190687356\n\nReviewed by Per Arne Vollan.\n\nPer https://html.spec.whatwg.org/multipage/browsing-the-web.html#beginning-navigation (step 14) and\nh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T22:01:39.698376+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8655634bf348ba9c939a67f909320263bc7b7fca",
+    "url": "https://github.com/WebKit/WebKit/commit/8655634bf348ba9c939a67f909320263bc7b7fca",
+    "message": "Remove \"Unlock keychain\" script phases from the Xcode build\nhttps://bugs.webkit.org/show_bug.cgi?id=328663\nrdar://190737464\n\nReviewed by Alexey Proskuryakov.\n\nThe internal script is being removed in favor of a wrapper for\n`codesign` which unlocks the keychain as part of signing. Because the\nscripts ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
