@@ -83097,5 +83097,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T06:02:17.805908+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d45c1c64aeaf79408808f5a7097aa6198c73fa37",
+    "url": "https://github.com/WebKit/WebKit/commit/d45c1c64aeaf79408808f5a7097aa6198c73fa37",
+    "message": "[Navigation API] Main-frame navigation.back()/traverseTo() lands on the wrong joint session history entry when a subframe navigated\nhttps://bugs.webkit.org/show_bug.cgi?id=324686\nrdar://187959384\n\nReviewed by Basuke Suzuki.\n\nWhen a subframe does a same-document navigation while the main frame stays\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T06:02:55.502396+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bd5016636210aa0f6ef6ae6621f8959d1b46974d",
+    "url": "https://github.com/WebKit/WebKit/commit/bd5016636210aa0f6ef6ae6621f8959d1b46974d",
+    "message": "[JSC] Fuse null tests into backward conditional jumps\nhttps://bugs.webkit.org/show_bug.cgi?id=328623\nrdar://190806461\n\nReviewed by Dan Hecht.\n\nThere is no reason not to fuse backward conditional jumps with null tests.\nThis patch fixes it.\n\nTest: JSTests/stress/loop-latch-null-test-fused-into-jump.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T06:03:33.416440+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "057d7e0e3260b51a9e2402cf5c5d04ca88b892fe",
+    "url": "https://github.com/WebKit/WebKit/commit/057d7e0e3260b51a9e2402cf5c5d04ca88b892fe",
+    "message": "Queue Document-Isolation-Policy CORP violation reports for network loads\nhttps://bugs.webkit.org/show_bug.cgi?id=328490\nrdar://190730064\n\nReviewed by Ryosuke Niwa.\n\nA cross-origin no-cors response from the network that Document-Isolation-Policy\nor Document-Isolation-Policy-Report-Only blocks now que",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T06:04:10.837573+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2a655b1965ee67c5b50b503b3ca39b041d16b6f",
+    "url": "https://github.com/WebKit/WebKit/commit/d2a655b1965ee67c5b50b503b3ca39b041d16b6f",
+    "message": "[JSC] Start all of a heap's versions near the wrap in tests, not just marking\nhttps://bugs.webkit.org/show_bug.cgi?id=328522\nrdar://190750936\n\nReviewed by Yusuke Suzuki.\n\ninitialMarkingVersion, added in 324475@main, starts only the marking version\nnear its wrap, so the newly allocated version's wrap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
