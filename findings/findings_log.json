@@ -83237,5 +83237,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T14:41:08.883230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f274ef4c03ebace644c46f8ec55746b391acdcc8",
+    "url": "https://github.com/WebKit/WebKit/commit/f274ef4c03ebace644c46f8ec55746b391acdcc8",
+    "message": "[JSC] Inlined `Array#sort` should keep the comparator call kind for bound functions\nhttps://bugs.webkit.org/show_bug.cgi?id=327983\n\nReviewed by Yusuke Suzuki.\n\nWhen the comparator is a bound function, BoundFunctionCallIntrinsic inlined its target as\nBoundFunctionCall and dropped ArraySortComparatorC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T14:41:46.376724+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "071ce01fcb2a59b62a5a0dc49e102ff4f0349a6e",
+    "url": "https://github.com/WebKit/WebKit/commit/071ce01fcb2a59b62a5a0dc49e102ff4f0349a6e",
+    "message": "[JSC] Async stack trace collection should stop at a cycle of awaits\nhttps://bugs.webkit.org/show_bug.cgi?id=328147\n\nReviewed by Yusuke Suzuki.\n\nAn async function can wait on its own promise through Promise.all, allSettled, any\nor race. getAsyncStackTrace then walked the same generators forever: it n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
