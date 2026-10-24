@@ -83017,5 +83017,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T01:12:33.997877+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8655634bf348ba9c939a67f909320263bc7b7fca",
+    "url": "https://github.com/WebKit/WebKit/commit/8655634bf348ba9c939a67f909320263bc7b7fca",
+    "message": "Remove \"Unlock keychain\" script phases from the Xcode build\nhttps://bugs.webkit.org/show_bug.cgi?id=328663\nrdar://190737464\n\nReviewed by Alexey Proskuryakov.\n\nThe internal script is being removed in favor of a wrapper for\n`codesign` which unlocks the keychain as part of signing. Because the\nscripts ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T01:13:12.223567+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac825642647274c4bd789adaff5fc8cbaf1aa809",
+    "url": "https://github.com/WebKit/WebKit/commit/ac825642647274c4bd789adaff5fc8cbaf1aa809",
+    "message": "Queue Document-Isolation-Policy CORP violation reports for cached and service worker responses\nhttps://bugs.webkit.org/show_bug.cgi?id=328637\nrdar://190821721\n\nReviewed by Ryosuke Niwa.\n\nThe cross-origin resource policy check of a memory cache hit and of a service\nworker's response now queues report",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T01:13:50.904936+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "267d357e415df25512b668a7e15bbcaba271ab3d",
+    "url": "https://github.com/swiftlang/swift/commit/267d357e415df25512b668a7e15bbcaba271ab3d",
+    "message": "Merge pull request #93537 from drexin/layout-string-vw-perf\n\n[Runtime] Compact value witnesses performance improvements",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T01:14:29.080663+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e50f0255bce9c624673c72f6513ca054eb7715b7",
+    "url": "https://github.com/WebKit/WebKit/commit/e50f0255bce9c624673c72f6513ca054eb7715b7",
+    "message": "[JSC] Avoid creating fresh Source for each JSBoundFunction\nhttps://bugs.webkit.org/show_bug.cgi?id=328541\nrdar://190759581\n\nReviewed by Keith Miller.\n\nWe are creating SourceCode just to read taintedness. Avoid creating it.\n\n* Source/JavaScriptCore/dfg/DFGOperations.cpp:\n(JSC::DFG::JSC_DEFINE_JIT_OPE",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
