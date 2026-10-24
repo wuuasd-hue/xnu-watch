@@ -83277,5 +83277,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T17:41:09.278127+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "191803bb23047cbcb58bdeb211945cb3971eec61",
+    "url": "https://github.com/WebKit/WebKit/commit/191803bb23047cbcb58bdeb211945cb3971eec61",
+    "message": "[JSC] RegExp legacy static properties should not crash when the lazy re-match fails\nhttps://bugs.webkit.org/show_bug.cgi?id=328417\n\nReviewed by Yusuke Suzuki.\n\n`RegExp.prototype.test` only records the position of the match, and `RegExp.lastMatch`, `RegExp.$1`\netc. run the match again to get the capt",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-24T17:41:46.720089+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37aa2b5bd94dc9ce8ebac88cd9c4f6ce652db9ef",
+    "url": "https://github.com/WebKit/WebKit/commit/37aa2b5bd94dc9ce8ebac88cd9c4f6ce652db9ef",
+    "message": "[JSC] Avoid using wrapper iterator in builtins\nhttps://bugs.webkit.org/show_bug.cgi?id=328563\nrdar://190769590\n\nReviewed by Sosuke Suzuki.\n\nSince for-of calls @@iterator unconditionally, we end up having iterator\nwrappers in builtins to align to the spec behavior. But this does not\nhelp at all in te",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
