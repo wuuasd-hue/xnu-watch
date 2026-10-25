@@ -83477,5 +83477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T09:32:33.893163+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "956f6fb49678a6f6b0116325be5b5357df948970",
+    "url": "https://github.com/WebKit/WebKit/commit/956f6fb49678a6f6b0116325be5b5357df948970",
+    "message": "[YARR] Match lookbehinds in the interpreter from a copy of the disjunction in match order\nhttps://bugs.webkit.org/show_bug.cgi?id=322692\n\nReviewed by Daniel Liu.\n\nThis is the second step of the plan in 319067@main. The interpreter now\nmatches a lookbehind the way the JIT does: from a copy of its dis",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T09:33:12.465377+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "url": "https://github.com/WebKit/WebKit/commit/0d6cf47c3b1211a20135cc74ae54768dbeb1aa93",
+    "message": "[JSC] Vectorize `Array#indexOf` and `Array#includes` on long Int32 and Double arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=323192\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL compile ArrayIndexOf / ArrayIncludes on Int32 and Double arrays\ninto a scalar loop, while the C++ paths for Int32 arrays alread",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
