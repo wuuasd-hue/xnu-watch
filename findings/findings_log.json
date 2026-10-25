@@ -83397,5 +83397,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T00:24:05.429417+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ac825642647274c4bd789adaff5fc8cbaf1aa809",
+    "url": "https://github.com/WebKit/WebKit/commit/ac825642647274c4bd789adaff5fc8cbaf1aa809",
+    "message": "Queue Document-Isolation-Policy CORP violation reports for cached and service worker responses\nhttps://bugs.webkit.org/show_bug.cgi?id=328637\nrdar://190821721\n\nReviewed by Ryosuke Niwa.\n\nThe cross-origin resource policy check of a memory cache hit and of a service\nworker's response now queues report",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T00:24:42.997959+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d45c1c64aeaf79408808f5a7097aa6198c73fa37",
+    "url": "https://github.com/WebKit/WebKit/commit/d45c1c64aeaf79408808f5a7097aa6198c73fa37",
+    "message": "[Navigation API] Main-frame navigation.back()/traverseTo() lands on the wrong joint session history entry when a subframe navigated\nhttps://bugs.webkit.org/show_bug.cgi?id=324686\nrdar://187959384\n\nReviewed by Basuke Suzuki.\n\nWhen a subframe does a same-document navigation while the main frame stays\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
