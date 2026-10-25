@@ -83597,5 +83597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T19:47:30.389339+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "url": "https://github.com/WebKit/WebKit/commit/0ddad2a1c101e319e5a7fcc89f59855438a3e646",
+    "message": "[JSC][Wasm] Use ARM64 post-index in the restore-frame copy\nhttps://bugs.webkit.org/show_bug.cgi?id=323374\n\nReviewed by Yusuke Suzuki.\n\nThe wasm-to-wasm restore-frame copy loop does loadPair64, storePair64\nat base minus restoreFrameSize, then addPtr 16. ARM64 already has\nloadPair64(PostIndexAddress).",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T19:48:08.252537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ca158eb19b753004c61c9405265669ccfdd8557a",
+    "url": "https://github.com/WebKit/WebKit/commit/ca158eb19b753004c61c9405265669ccfdd8557a",
+    "message": "[JSC] Adopt the instance-scoped qWasmGlobal packet form\nhttps://bugs.webkit.org/show_bug.cgi?id=323123\n\nReviewed by Yijia Huang.\n\nA Wasm global belongs to a module instance, not to a frame. The global\nindex space is per instance, and DW_OP_WASM_location's global operand\nindexes the index space of th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
