@@ -83437,5 +83437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T04:58:53.039662+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bd5016636210aa0f6ef6ae6621f8959d1b46974d",
+    "url": "https://github.com/WebKit/WebKit/commit/bd5016636210aa0f6ef6ae6621f8959d1b46974d",
+    "message": "[JSC] Fuse null tests into backward conditional jumps\nhttps://bugs.webkit.org/show_bug.cgi?id=328623\nrdar://190806461\n\nReviewed by Dan Hecht.\n\nThere is no reason not to fuse backward conditional jumps with null tests.\nThis patch fixes it.\n\nTest: JSTests/stress/loop-latch-null-test-fused-into-jump.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T04:59:36.952816+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "fc2160fc359299d002c83fa76aae94a1633d0d5e",
+    "url": "https://github.com/swiftlang/swift/commit/fc2160fc359299d002c83fa76aae94a1633d0d5e",
+    "message": "[Runtime] Restrict custom memcpy in BytecodeLayouts.cpp to Apple plat… (#93591)\n\n…forms\n\nFor now we can only guarantee that this improves performance on Apple\nplatforms. It also currently does not link on arm64 Linux and Windows\nbecause of symbol differences.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
