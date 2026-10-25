@@ -83557,5 +83557,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T17:23:31.955528+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2a07be9fb7478e9b44a6ed50a7b9f07b8c793b1",
+    "url": "https://github.com/WebKit/WebKit/commit/f2a07be9fb7478e9b44a6ed50a7b9f07b8c793b1",
+    "message": "WKWebView does not enforce CORS response header validation for apps' custom schemes after registerURLSchemeAsCORSEnabled()\nrdar://174287004\n\nReviewed by Chris Dumez.\n\nWe mean for app provided custom URL schemes to participate in CORS, but our implementation had a few holes.\n- The network process was",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-25T17:24:10.135538+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e6507c8f6aa83fb37b02d3c4ceaf7e4f4eb661d3",
+    "url": "https://github.com/WebKit/WebKit/commit/e6507c8f6aa83fb37b02d3c4ceaf7e4f4eb661d3",
+    "message": "Pre-invalidate captured-variable WatchpointSets in generator and async function bodies\nhttps://bugs.webkit.org/show_bug.cgi?id=313499\nrdar://173777534\n\nReviewed by Yusuke Suzuki.\n\nWhen deleteAllCode runs while an async generator is suspended, the generator\nbody's CodeBlock is cleared and later re-cr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
