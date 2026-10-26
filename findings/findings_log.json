@@ -83677,5 +83677,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T00:30:06.019490+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "620e60a6f7e83a1cf67722366c83e29c4ebf3680",
+    "url": "https://github.com/swiftlang/swift/commit/620e60a6f7e83a1cf67722366c83e29c4ebf3680",
+    "message": "Merge pull request #91960 from mikeash/willthrow-accessors\n\n[Runtime] Add setters for the swift_willThrow hook slots.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T00:30:43.947080+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "url": "https://github.com/WebKit/WebKit/commit/1b46b208061c4dbf3f8514b88d68d53bf124eb90",
+    "message": "[JSC] Optimize Wasm globals initialization related code\nhttps://bugs.webkit.org/show_bug.cgi?id=323465\nrdar://186697890\n\nReviewed by Yijia Huang.\n\nThis patch optimizes Wasm globals initialization related code,\n\n1. constant expression validator should collect maxStackHeight. So we\n   can use this whe",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
