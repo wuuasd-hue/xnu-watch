@@ -83817,5 +83817,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T17:29:10.757347+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8c37314ee17807d8d77e157e983f54872b103ab",
+    "url": "https://github.com/WebKit/WebKit/commit/c8c37314ee17807d8d77e157e983f54872b103ab",
+    "message": "[JSC] Array.prototype.toSpliced incorrectly throws TypeError instead of RangeError when length is Infinity\nhttps://bugs.webkit.org/show_bug.cgi?id=320830\n\nReviewed by Yusuke Suzuki.\n\nArray.prototype.toSpliced should throw TypeError when the new array\nlength exceeds 2**53-1 (Step 12 of [1]), but it c",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T17:29:50.728191+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "83683abb036df547c679bd13ee7bca7ff64df9f9",
+    "url": "https://github.com/WebKit/WebKit/commit/83683abb036df547c679bd13ee7bca7ff64df9f9",
+    "message": "[JSC] Inline `RegExp#test` for unicode patterns and patterns with a Yarr frame\nhttps://bugs.webkit.org/show_bug.cgi?id=322949\n\nReviewed by Yusuke Suzuki.\n\nRegExpTestInline emits the Yarr matcher for 8-bit strings directly into\nDFG/FTL code, but it refuses any pattern whose terms need Yarr frame slot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
