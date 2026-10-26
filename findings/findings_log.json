@@ -83717,5 +83717,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T05:08:34.634575+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "url": "https://github.com/WebKit/WebKit/commit/d5531cc083bc63a525b1d442f3c102173ae9b17b",
+    "message": "[JSC] Validate RegExps in DFG strength reduction phase\nhttps://bugs.webkit.org/show_bug.cgi?id=316723\nrdar://178446883\n\nReviewed by Yusuke Suzuki.\n\nThis patch prevents conversion to NewRegExpUntyped if the regexp in question is invalid.\n\nTest: JSTests/stress/new-regexp-untyped-soft-invalid-stale-cap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T05:09:12.628914+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "a87a6454b140fb7ab562bcc855818b554c675c74",
+    "url": "https://github.com/swiftlang/swift/commit/a87a6454b140fb7ab562bcc855818b554c675c74",
+    "message": "Merge pull request #91966 from compnerd/resources\n\nRuntime,stdlib: adjust installation of static linking resources",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
