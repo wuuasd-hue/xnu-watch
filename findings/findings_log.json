@@ -83857,5 +83857,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T21:45:15.314364+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78dd38eaa6bd5f7318dd1e4b708c810a4a44a5db",
+    "url": "https://github.com/WebKit/WebKit/commit/78dd38eaa6bd5f7318dd1e4b708c810a4a44a5db",
+    "message": "[Site Isolation] Canceling a back/forward navigation resets the back/forward list cursor to a stale entry\nhttps://bugs.webkit.org/show_bug.cgi?id=328426\nrdar://190935993\n\nReviewed by Basuke Suzuki.\n\nHistoryController::goToItem() moves the back/forward cursor to the target item before any frame\ncommi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T21:45:53.962534+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78dd38eaa6bd5f7318dd1e4b708c810a4a44a5db",
+    "url": "https://github.com/WebKit/WebKit/commit/78dd38eaa6bd5f7318dd1e4b708c810a4a44a5db",
+    "message": "[Site Isolation] Canceling a back/forward navigation resets the back/forward list cursor to a stale entry\nhttps://bugs.webkit.org/show_bug.cgi?id=328426\nrdar://190935993\n\nReviewed by Basuke Suzuki.\n\nHistoryController::goToItem() moves the back/forward cursor to the target item before any frame\ncommi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T21:46:33.507241+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "549955d9979c99de1d9fa22a9d281629cedca59d",
+    "url": "https://github.com/WebKit/WebKit/commit/549955d9979c99de1d9fa22a9d281629cedca59d",
+    "message": "[YARR] Keep the terms of lookbehinds in match order in YarrPattern\nhttps://bugs.webkit.org/show_bug.cgi?id=323421\n\nReviewed by Daniel Liu.\n\nThis is the last step of the plan in 319067@main.\n\nSince 319067@main and 320492@main, the JIT and the interpreter match a\nlookbehind from a copy of its disjunct",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
