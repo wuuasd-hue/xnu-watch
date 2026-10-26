@@ -83757,5 +83757,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T11:19:33.788637+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3757158274463e1705225dfdf04a5908a69aefd4",
+    "url": "https://github.com/WebKit/WebKit/commit/3757158274463e1705225dfdf04a5908a69aefd4",
+    "message": "GCC 16 warns about the IsTypeComplete check in allowCompactPointers()\nhttps://bugs.webkit.org/show_bug.cgi?id=328861\n\nReviewed by Keith Miller.\n\nallowCompactPointers() checks IsTypeComplete<T> before the\nAllowCompactPointers<T*> specialization declared by\nWTF_ALLOW_COMPACT_POINTERS_TO_INCOMPLETE_TYP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T11:20:11.828943+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3757158274463e1705225dfdf04a5908a69aefd4",
+    "url": "https://github.com/WebKit/WebKit/commit/3757158274463e1705225dfdf04a5908a69aefd4",
+    "message": "GCC 16 warns about the IsTypeComplete check in allowCompactPointers()\nhttps://bugs.webkit.org/show_bug.cgi?id=328861\n\nReviewed by Keith Miller.\n\nallowCompactPointers() checks IsTypeComplete<T> before the\nAllowCompactPointers<T*> specialization declared by\nWTF_ALLOW_COMPACT_POINTERS_TO_INCOMPLETE_TYP",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-26T11:20:49.270762+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2f1a867ae69cfe07c4fe23b51b24186b32ab991",
+    "url": "https://github.com/WebKit/WebKit/commit/e2f1a867ae69cfe07c4fe23b51b24186b32ab991",
+    "message": "[JSC] Move CodeOrigin instead of copying it when creating DFG nodes\nhttps://bugs.webkit.org/show_bug.cgi?id=323490\nrdar://186725447\n\nReviewed by Yusuke Suzuki.\n\nCopying a CodeOrigin heap allocates an OutOfLineCodeOrigin when the bytecode index is too large to\npack into the spare top address bits. It",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
