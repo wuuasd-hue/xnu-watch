@@ -83917,5 +83917,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T00:57:33.270843+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b091600bcaa79c67577a8c0ea40d40dcda916d4a",
+    "url": "https://github.com/WebKit/WebKit/commit/b091600bcaa79c67577a8c0ea40d40dcda916d4a",
+    "message": "[JSC] Use named enums for register enums\nhttps://bugs.webkit.org/show_bug.cgi?id=323455\nrdar://186684831\n\nReviewed by Yusuke Suzuki.\n\n* Source/JavaScriptCore/assembler/ARM64Assembler.h:\n* Source/JavaScriptCore/assembler/RISCV64Assembler.h:\n* Source/JavaScriptCore/assembler/X86Assembler.h:\n\nCanonical",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T00:58:13.618965+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "366915db5c7abfdc45112691a573e2d656435586",
+    "url": "https://github.com/WebKit/WebKit/commit/366915db5c7abfdc45112691a573e2d656435586",
+    "message": "[JSC] m_numberOfWaitingParallelMarkers may be unbalanced\nhttps://bugs.webkit.org/show_bug.cgi?id=323491\nrdar://186725777\n\nReviewed by Sosuke Suzuki.\n\nThere are several return statement which missed updating\nm_numberOfWaitingParallelMarkers. This patch fixes it by using\nScopeExit.\n\n* Source/JavaScrip",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
