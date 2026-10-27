@@ -84077,5 +84077,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T11:07:13.821192+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3656bc05d4be93811d800949d5f8ffcc133c9640",
+    "url": "https://github.com/WebKit/WebKit/commit/3656bc05d4be93811d800949d5f8ffcc133c9640",
+    "message": "WorkerThreadableLoader can start a resource load after its owning Document enters the back/forward cache\nhttps://bugs.webkit.org/show_bug.cgi?id=323432\n\nReviewed by Chris Dumez.\n\nThe WPE layout-test bots sometimes hit the assertion in\nWebCore::DocumentLoader::addSubresourceLoader(). It is reported i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T11:07:51.277138+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "58ebe7bde382f8eb6d2b8b57b1463e48f18e2547",
+    "url": "https://github.com/WebKit/WebKit/commit/58ebe7bde382f8eb6d2b8b57b1463e48f18e2547",
+    "message": "[CMake][GTK][WPE] Remove NO_IMPLICIT_SOURCES from GI_INTROSPECT()\nhttps://bugs.webkit.org/show_bug.cgi?id=328915\n\nReviewed by Fujii Hironori.\n\nPass a SOURCES parameter to the GI_INTROSPECT() use in JSC's\nPlatformGTK.cmake file, which is the only instance that did not\npass NO_IMPLICIT_SOURCES.\n\nWith ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T11:08:29.052188+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0927910cf9851eee9f65cf998b9f76ab1ce313d1",
+    "url": "https://github.com/WebKit/WebKit/commit/0927910cf9851eee9f65cf998b9f76ab1ce313d1",
+    "message": "[JSC] Tail-call restore frame copy starts one restoreFrameSize too low\nhttps://bugs.webkit.org/show_bug.cgi?id=329002\nrdar://191056110\n\nReviewed by Dan Hecht.\n\nWe already moved sp with restoreFrameSize, so we do not need to start\nfrom sp to move. We change the starting cursor to sp + restoreFrameSiz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T11:09:06.511573+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0bf94cf0c1c16ede4c04e2cb3f50d776eae8b70e",
+    "url": "https://github.com/WebKit/WebKit/commit/0bf94cf0c1c16ede4c04e2cb3f50d776eae8b70e",
+    "message": "[JSC] Replace an unreachable branch in Heap::stopTheMutator with an assert\nhttps://bugs.webkit.org/show_bug.cgi?id=328987\nrdar://191050629\n\nReviewed by Yusuke Suzuki.\n\nHeap::stopTheMutator returned false when the mutator already held the conn,\nafter asserting that the mutator had no heap access. Tha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
