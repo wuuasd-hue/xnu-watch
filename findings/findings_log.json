@@ -83957,5 +83957,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:49:21.906764+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bc9ad4d7fb4b066b56b95399a267a3bca230b15",
+    "url": "https://github.com/WebKit/WebKit/commit/4bc9ad4d7fb4b066b56b95399a267a3bca230b15",
+    "message": "[JSC] Assert that Heap::resumeTheMutator finds the mutator stopped\nhttps://bugs.webkit.org/show_bug.cgi?id=329005\nrdar://191056975\n\nReviewed by Vassili Bykov.\n\nHeap::resumeTheMutator returned early when the mutator was not stopped, and\nits asserts allowed a mutator that has heap access and is not st",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:49:59.939412+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e81441a5ec9c9ab1f7d02d2e49f9d1f86018ff85",
+    "url": "https://github.com/WebKit/WebKit/commit/e81441a5ec9c9ab1f7d02d2e49f9d1f86018ff85",
+    "message": "[JSC] Add boolean/undefined/null handling to string join functions\nhttps://bugs.webkit.org/show_bug.cgi?id=328769\nrdar://190893702\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends string join functions with fast\nboolean/undefined/null handlings. We also rename\nJSOnlyStringsAndInt32sJoiner to JSExactL",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:50:38.148018+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0927910cf9851eee9f65cf998b9f76ab1ce313d1",
+    "url": "https://github.com/WebKit/WebKit/commit/0927910cf9851eee9f65cf998b9f76ab1ce313d1",
+    "message": "[JSC] Tail-call restore frame copy starts one restoreFrameSize too low\nhttps://bugs.webkit.org/show_bug.cgi?id=329002\nrdar://191056110\n\nReviewed by Dan Hecht.\n\nWe already moved sp with restoreFrameSize, so we do not need to start\nfrom sp to move. We change the starting cursor to sp + restoreFrameSiz",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:51:16.074085+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0bf94cf0c1c16ede4c04e2cb3f50d776eae8b70e",
+    "url": "https://github.com/WebKit/WebKit/commit/0bf94cf0c1c16ede4c04e2cb3f50d776eae8b70e",
+    "message": "[JSC] Replace an unreachable branch in Heap::stopTheMutator with an assert\nhttps://bugs.webkit.org/show_bug.cgi?id=328987\nrdar://191050629\n\nReviewed by Yusuke Suzuki.\n\nHeap::stopTheMutator returned false when the mutator already held the conn,\nafter asserting that the mutator had no heap access. Tha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:51:54.495301+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4bc9ad4d7fb4b066b56b95399a267a3bca230b15",
+    "url": "https://github.com/WebKit/WebKit/commit/4bc9ad4d7fb4b066b56b95399a267a3bca230b15",
+    "message": "[JSC] Assert that Heap::resumeTheMutator finds the mutator stopped\nhttps://bugs.webkit.org/show_bug.cgi?id=329005\nrdar://191056975\n\nReviewed by Vassili Bykov.\n\nHeap::resumeTheMutator returned early when the mutator was not stopped, and\nits asserts allowed a mutator that has heap access and is not st",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T05:52:33.744655+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e81441a5ec9c9ab1f7d02d2e49f9d1f86018ff85",
+    "url": "https://github.com/WebKit/WebKit/commit/e81441a5ec9c9ab1f7d02d2e49f9d1f86018ff85",
+    "message": "[JSC] Add boolean/undefined/null handling to string join functions\nhttps://bugs.webkit.org/show_bug.cgi?id=328769\nrdar://190893702\n\nReviewed by Sosuke Suzuki.\n\nThis patch extends string join functions with fast\nboolean/undefined/null handlings. We also rename\nJSOnlyStringsAndInt32sJoiner to JSExactL",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
