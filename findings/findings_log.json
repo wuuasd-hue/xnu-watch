@@ -84277,5 +84277,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T21:02:12.406875+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0380616fb6b6f8cfeed6c7cee17809d1b5714f63",
+    "url": "https://github.com/WebKit/WebKit/commit/0380616fb6b6f8cfeed6c7cee17809d1b5714f63",
+    "message": "[JSC] verboseOSR shouldn't crash on poisoned dead values\nhttps://bugs.webkit.org/show_bug.cgi?id=329098\nrdar://191110742\n\nReviewed by Dan Hecht.\n\nWe shouldn't try to dereference the poison value when printing. Instead\nprint something reasonable: <DeadOSRExitValue>\n\nTest: JSTests/stress/verbose-osr-p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T21:02:52.343894+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d0e6148f681ecd8336fec2d3a64c98802dc37b1",
+    "url": "https://github.com/WebKit/WebKit/commit/5d0e6148f681ecd8336fec2d3a64c98802dc37b1",
+    "message": "Unreviewed, avoid resolving string\nhttps://bugs.webkit.org/show_bug.cgi?id=329140\nrdar://191132487\n\n* Source/JavaScriptCore/runtime/JSStringJoiner.cpp:\n(JSC::joinStrings):\n\nCanonical link: https://commits.webkit.org/324886@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T21:03:34.896344+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e52363d99dade1a0641f073ecbab3a1cc19b596",
+    "url": "https://github.com/WebKit/WebKit/commit/6e52363d99dade1a0641f073ecbab3a1cc19b596",
+    "message": "[Site Isolation] Web Inspector: Timestamps from different processes and targets should share a timebase\nrdar://191057040\nhttps://bugs.webkit.org/show_bug.cgi?id=329006\n\nReviewed by Basuke Suzuki.\n\nUnder Site Isolation, one inspected page spans several processes and\nseveral kinds of inspector targets",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T21:04:22.175083+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "48fd938fe4e50132010cd5237d9119b6e290a163",
+    "url": "https://github.com/WebKit/WebKit/commit/48fd938fe4e50132010cd5237d9119b6e290a163",
+    "message": "[Swift Testing] Make it possible to write tests that use WebCore in Swift Testing\nhttps://bugs.webkit.org/show_bug.cgi?id=329053\nrdar://191114588\n\nReviewed by Abrar Rahman Protyasha and Adrian Taylor.\n\nThis involves fixing two issues:\n\n(1) In a Swift module that imports WebCore_Private, any use of `",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-27T21:05:04.513753+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa43a0e03f04777944967c9bbcfb21977a8c0af2",
+    "url": "https://github.com/WebKit/WebKit/commit/aa43a0e03f04777944967c9bbcfb21977a8c0af2",
+    "message": "[Site Isolation] AdvancedPrivacyProtections.DoNotHideReferrerInPopupWindow is failing\nhttps://bugs.webkit.org/show_bug.cgi?id=328896\nrdar://190984806\n\nReviewed by Wenson Hsieh.\n\nDocument::referrerForBindings() lets the popup see the referrer when\npage->openedByScriptDomain() matches the popup docume",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
