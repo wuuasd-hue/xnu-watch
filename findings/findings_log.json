@@ -84817,5 +84817,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:55:51.416108+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bfe1a9f508636ced330cd7242c291cd33aca551",
+    "url": "https://github.com/WebKit/WebKit/commit/2bfe1a9f508636ced330cd7242c291cd33aca551",
+    "message": "[JSC] Fuse sums of i16x8 dot products into widening multiply-accumulates on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=329041\nrdar://problem/191117050\n\nReviewed by Keith Miller and Marcus Plutowski.\n\nARM64 does not have direct instruction for wasm i32x4.dot_i16x8_s. So it\nis compiled to SMULL + S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:56:30.056741+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "061f50b88ae1209fabf6256b40e190e635984a2c",
+    "url": "https://github.com/WebKit/WebKit/commit/061f50b88ae1209fabf6256b40e190e635984a2c",
+    "message": "[JSC] Rope substring view can be 16bit even if Rope itself says 8bit\nhttps://bugs.webkit.org/show_bug.cgi?id=329306\nrdar://191237908\n\nReviewed by Sosuke Suzuki.\n\nEven if JSRopeString is having 8bit flag, it can have 16bit StringImpl\nas a base of substring. This happens when atomization happens in th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:57:08.175944+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2e925d16f71ed23e400c6a3c1c924beb52d6d44",
+    "url": "https://github.com/WebKit/WebKit/commit/d2e925d16f71ed23e400c6a3c1c924beb52d6d44",
+    "message": "Disallow preloading based on a link header from a subresource load\nhttps://bugs.webkit.org/show_bug.cgi?id=329218\nrdar://191196085\n\nReviewed by Anne van Kesteren.\n\nThis was added in 198979@main but other browsers do not support it.\nIt is currently being discussed in a break out session in TPAC, and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:57:46.460461+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "61b3aecb0c94362d51da1b4ad02aec6f12d5e8fb",
+    "url": "https://github.com/WebKit/WebKit/commit/61b3aecb0c94362d51da1b4ad02aec6f12d5e8fb",
+    "message": "[JSC] Cached `String#replace` should not assume a replacement stays 8-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=328449\n\nReviewed by Yusuke Suzuki.\n\nreplaceAllWithCacheUsingRegExpSearchThreeArguments keeps the replacements as\nJSString* and records whether all of them are 8-bit while it is still cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:58:24.830187+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a03aa26054a397da70c22d89c8f28e1d8143dad",
+    "url": "https://github.com/WebKit/WebKit/commit/0a03aa26054a397da70c22d89c8f28e1d8143dad",
+    "message": "[JSC] BBQ should use BaseIndex form in x64 too\nhttps://bugs.webkit.org/show_bug.cgi?id=329035\nrdar://191076551\n\nReviewed by Sosuke Suzuki.\n\nExtend the coverage of BaseIndex use in BBQJIT to x64 as we can just use\nscratch register.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T22:59:02.938709+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d39ac42a0f7fa0e02ee9fc593286afcbe1be57c6",
+    "url": "https://github.com/WebKit/WebKit/commit/d39ac42a0f7fa0e02ee9fc593286afcbe1be57c6",
+    "message": "[JSC] Replace three unreachable collection epilogue calls with asserts\nhttps://bugs.webkit.org/show_bug.cgi?id=329110\nrdar://191115102\n\nReviewed by Keith Miller.\n\nEnd sets the epilogue bit while the mutator is either stopped or running the\ncollection itself:\n\n- If the mutator is stopped, it has no h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
