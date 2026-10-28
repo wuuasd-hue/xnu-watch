@@ -84377,5 +84377,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:35:48.509190+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "341b1475d882ead8050cf3e556ca9621dc106d13",
+    "url": "https://github.com/WebKit/WebKit/commit/341b1475d882ead8050cf3e556ca9621dc106d13",
+    "message": "[Image Redux] Refactor platform image resource loading to allow more use of NativeImages\nhttps://bugs.webkit.org/show_bug.cgi?id=328962\n\nReviewed by Darin Adler.\n\nFactor platform resource loading out into PlatformResource, which returns a SharedBuffer,\nto allow implementations of loading that data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:36:26.844013+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e9612175a7192d0f530ffd8a3991e394db05b435",
+    "url": "https://github.com/WebKit/WebKit/commit/e9612175a7192d0f530ffd8a3991e394db05b435",
+    "message": "[Swift in WebKit] Enable Swift in JSC in Production builds\nhttps://bugs.webkit.org/show_bug.cgi?id=329162\nrdar://191146801\n\nReviewed by Adrian Taylor.\n\n* Source/JavaScriptCore/Configurations/JavaScriptCore.xcconfig:\n\nCanonical link: https://commits.webkit.org/324921@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:37:05.303795+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c4943e6ffd1590657807cf0b5527d432af9b531b",
+    "url": "https://github.com/WebKit/WebKit/commit/c4943e6ffd1590657807cf0b5527d432af9b531b",
+    "message": "[JSC] Compare atom string keys inline in FTL MapGet\nhttps://bugs.webkit.org/show_bug.cgi?id=329033\nrdar://191076152\n\nReviewed by Sosuke Suzuki.\n\nThis patch adds MapGet's String comparison in FTL inline.\nWhen both are resolved Strings, then compare impl pointers, and if they\nare the same, hit as matc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:37:43.535306+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0a03aa26054a397da70c22d89c8f28e1d8143dad",
+    "url": "https://github.com/WebKit/WebKit/commit/0a03aa26054a397da70c22d89c8f28e1d8143dad",
+    "message": "[JSC] BBQ should use BaseIndex form in x64 too\nhttps://bugs.webkit.org/show_bug.cgi?id=329035\nrdar://191076551\n\nReviewed by Sosuke Suzuki.\n\nExtend the coverage of BaseIndex use in BBQJIT to x64 as we can just use\nscratch register.\n\n* Source/JavaScriptCore/wasm/WasmBBQJIT64.h:\n(JSC::Wasm::BBQJITImpl:",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:38:22.141442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8bd119f86fc7d5686ef0c7b5db87f9c0dc3ec1cc",
+    "url": "https://github.com/WebKit/WebKit/commit/8bd119f86fc7d5686ef0c7b5db87f9c0dc3ec1cc",
+    "message": "Make JSC::ArrayBuffer usable from Swift\nhttps://bugs.webkit.org/show_bug.cgi?id=327844\nrdar://190234900\n\nReviewed by Richard Robinson.\n\nAnnotate ArrayBuffer as a Swift shared reference, for compilers that don't\napply base class annotations.\n\nAdd ArrayBuffer::createFromSpan(), a Swift-only wrapper ar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T00:39:00.542323+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf89f1571e48d4b15d99cf2c0ac715d5b304970d",
+    "url": "https://github.com/WebKit/WebKit/commit/cf89f1571e48d4b15d99cf2c0ac715d5b304970d",
+    "message": "[JSC] Assert the invariants of Heap::m_worldState where the protocol relies on them\nhttps://bugs.webkit.org/show_bug.cgi?id=329038\nrdar://191078586\n\nReviewed by Keith Miller.\n\nThe mutator-collector protocol relies on rules about each heap's world state,\nonly some of which are asserted. Assert the re",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
