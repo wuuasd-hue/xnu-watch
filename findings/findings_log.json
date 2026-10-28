@@ -84597,5 +84597,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T13:16:29.007901+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cc81805e2201de2064b3b73fbc96da6994c2f19b",
+    "url": "https://github.com/WebKit/WebKit/commit/cc81805e2201de2064b3b73fbc96da6994c2f19b",
+    "message": "A navigation that joins a prefetch whose response has a Document-Isolation-Policy isn't cross-origin isolated\nhttps://bugs.webkit.org/show_bug.cgi?id=328899\nrdar://190989002\n\nReviewed by Alex Christensen.\n\nWhen a navigation from a document without a Document-Isolation-Policy joins a\nspeculation rule",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T13:17:07.423175+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "838aedbe797500a6ad544a2c4a791ccb8e7a124e",
+    "url": "https://github.com/WebKit/WebKit/commit/838aedbe797500a6ad544a2c4a791ccb8e7a124e",
+    "message": "[JSC] FinalizationRegistry keeps a dangling unregister-token key after the token is collected\nhttps://bugs.webkit.org/show_bug.cgi?id=323478\nrdar://180297597\n\nReviewed by Yusuke Suzuki.\n\nm_deadRegistrations is keyed by unregister token, and those keys are weakly held.\nfinalizeUnconditionally() prune",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T13:17:45.437058+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f98073015c8bf3c4d484aa6c01ab9476c3563b0d",
+    "url": "https://github.com/WebKit/WebKit/commit/f98073015c8bf3c4d484aa6c01ab9476c3563b0d",
+    "message": "[JSC] BBQ emitShuffle must split v128 stack moves that lie under two destinations\nhttps://bugs.webkit.org/show_bug.cgi?id=328992\nrdar://191050549\n\nReviewed by Vassili Bykov.\n\nBBQ emitShuffle does parallel move. It uses wasmScratchFPR /\nwasmScratchGPR to break cycles. But this is correct only when ea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T13:18:26.707129+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e52363d99dade1a0641f073ecbab3a1cc19b596",
+    "url": "https://github.com/WebKit/WebKit/commit/6e52363d99dade1a0641f073ecbab3a1cc19b596",
+    "message": "[Site Isolation] Web Inspector: Timestamps from different processes and targets should share a timebase\nrdar://191057040\nhttps://bugs.webkit.org/show_bug.cgi?id=329006\n\nReviewed by Basuke Suzuki.\n\nUnder Site Isolation, one inspected page spans several processes and\nseveral kinds of inspector targets",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T13:19:07.271778+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "341b1475d882ead8050cf3e556ca9621dc106d13",
+    "url": "https://github.com/WebKit/WebKit/commit/341b1475d882ead8050cf3e556ca9621dc106d13",
+    "message": "[Image Redux] Refactor platform image resource loading to allow more use of NativeImages\nhttps://bugs.webkit.org/show_bug.cgi?id=328962\n\nReviewed by Darin Adler.\n\nFactor platform resource loading out into PlatformResource, which returns a SharedBuffer,\nto allow implementations of loading that data i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
