@@ -84497,5 +84497,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T06:24:11.593340+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d39ac42a0f7fa0e02ee9fc593286afcbe1be57c6",
+    "url": "https://github.com/WebKit/WebKit/commit/d39ac42a0f7fa0e02ee9fc593286afcbe1be57c6",
+    "message": "[JSC] Replace three unreachable collection epilogue calls with asserts\nhttps://bugs.webkit.org/show_bug.cgi?id=329110\nrdar://191115102\n\nReviewed by Keith Miller.\n\nEnd sets the epilogue bit while the mutator is either stopped or running the\ncollection itself:\n\n- If the mutator is stopped, it has no h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T06:24:49.429451+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "923a80cbd56d3e8e82276d346334d594d1dd0a6f",
+    "url": "https://github.com/WebKit/WebKit/commit/923a80cbd56d3e8e82276d346334d594d1dd0a6f",
+    "message": "[JSC] DFG should not speculate `HeapBigInt` for undefined `this` in strict functions\nhttps://bugs.webkit.org/show_bug.cgi?id=329030\n\nReviewed by Yusuke Suzuki.\n\nunaryArithShouldSpeculateHeapBigInt returns true even when the prediction is Other alone. So to_this\nof a strict function called with undef",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T06:25:27.693217+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2dcf2a39031c4d038bae9960ef26fc2dee56d375",
+    "url": "https://github.com/WebKit/WebKit/commit/2dcf2a39031c4d038bae9960ef26fc2dee56d375",
+    "message": "[JSC] Add a fast path for creating array pair in C++\nhttps://bugs.webkit.org/show_bug.cgi?id=329123\n\nReviewed by Yusuke Suzuki.\n\n`constructArrayPair` creates the `[key, value]` arrays for Map, Set and Array iterators.\nIt uses `JSArray::tryCreateUninitializedRestricted` and `initializeIndex`, which h",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T06:26:05.904897+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0380616fb6b6f8cfeed6c7cee17809d1b5714f63",
+    "url": "https://github.com/WebKit/WebKit/commit/0380616fb6b6f8cfeed6c7cee17809d1b5714f63",
+    "message": "[JSC] verboseOSR shouldn't crash on poisoned dead values\nhttps://bugs.webkit.org/show_bug.cgi?id=329098\nrdar://191110742\n\nReviewed by Dan Hecht.\n\nWe shouldn't try to dereference the poison value when printing. Instead\nprint something reasonable: <DeadOSRExitValue>\n\nTest: JSTests/stress/verbose-osr-p",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T06:26:43.888659+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5d0e6148f681ecd8336fec2d3a64c98802dc37b1",
+    "url": "https://github.com/WebKit/WebKit/commit/5d0e6148f681ecd8336fec2d3a64c98802dc37b1",
+    "message": "Unreviewed, avoid resolving string\nhttps://bugs.webkit.org/show_bug.cgi?id=329140\nrdar://191132487\n\n* Source/JavaScriptCore/runtime/JSStringJoiner.cpp:\n(JSC::joinStrings):\n\nCanonical link: https://commits.webkit.org/324886@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
