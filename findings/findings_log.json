@@ -84697,5 +84697,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T18:57:42.281995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "260278048486c215332b692eca77fae86bfee5c8",
+    "url": "https://github.com/WebKit/WebKit/commit/260278048486c215332b692eca77fae86bfee5c8",
+    "message": "[JSC] JSStringJoiner's length collection should just use uint64_t for array\nhttps://bugs.webkit.org/show_bug.cgi?id=329190\nrdar://191159316\n\nReviewed by Sosuke Suzuki.\n\nFor element we can accept here, each element size is <= String's max\nsize. Thus, accumulated length does not exceed uint64_t max. U",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T18:58:20.494559+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "da4d88f94a06e713938e0aa76943578d00626772",
+    "url": "https://github.com/WebKit/WebKit/commit/da4d88f94a06e713938e0aa76943578d00626772",
+    "message": "[JSC] DFG should inline bound functions used as getters and setters\nhttps://bugs.webkit.org/show_bug.cgi?id=329028\n\nReviewed by Yusuke Suzuki.\n\nhandleIntrinsicCall bails out unless the current instruction is a call, so a bound\nfunction used as a getter or a setter was never inlined. BoundFunctionCal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T18:58:59.090817+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7dea23baa26469c5f525bacd805bd7470765550f",
+    "url": "https://github.com/WebKit/WebKit/commit/7dea23baa26469c5f525bacd805bd7470765550f",
+    "message": "[JSC] `Object.entries` should have a fast path for objects with indexed properties\nhttps://bugs.webkit.org/show_bug.cgi?id=328448\n\nReviewed by Yusuke Suzuki.\n\nThe fast path of `Object.entries` was skipped when the object has indexed properties.\nThis patch collects them with `forEachOwnIndexedPropert",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T18:59:37.228885+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cc99211239c298296f4d6c2904ad7a29f895410",
+    "url": "https://github.com/WebKit/WebKit/commit/4cc99211239c298296f4d6c2904ad7a29f895410",
+    "message": "Add a CMake target `jsc-all` to build all JSC binaries including mya, libJavaScriptCoreTools, and testLibJSCTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=328724\nrdar://190872879\n\nReviewed by Keith Miller.\n\nAlso lay the ground work so that other ports can build these (if they choose to later) by\ndef",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T19:00:16.356041+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e9612175a7192d0f530ffd8a3991e394db05b435",
+    "url": "https://github.com/WebKit/WebKit/commit/e9612175a7192d0f530ffd8a3991e394db05b435",
+    "message": "[Swift in WebKit] Enable Swift in JSC in Production builds\nhttps://bugs.webkit.org/show_bug.cgi?id=329162\nrdar://191146801\n\nReviewed by Adrian Taylor.\n\n* Source/JavaScriptCore/Configurations/JavaScriptCore.xcconfig:\n\nCanonical link: https://commits.webkit.org/324921@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-28T19:00:55.722382+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c4943e6ffd1590657807cf0b5527d432af9b531b",
+    "url": "https://github.com/WebKit/WebKit/commit/c4943e6ffd1590657807cf0b5527d432af9b531b",
+    "message": "[JSC] Compare atom string keys inline in FTL MapGet\nhttps://bugs.webkit.org/show_bug.cgi?id=329033\nrdar://191076152\n\nReviewed by Sosuke Suzuki.\n\nThis patch adds MapGet's String comparison in FTL inline.\nWhen both are resolved Strings, then compare impl pointers, and if they\nare the same, hit as matc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
