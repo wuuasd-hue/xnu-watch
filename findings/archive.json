@@ -20531,9 +20531,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/923a80cbd56d3e8e82276d346334d594d1dd0a6f",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -20545,9 +20546,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/2dcf2a39031c4d038bae9960ef26fc2dee56d375",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -20697,6 +20699,34 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- JSTests/stress/string-replace-cached-replacement-changes-width.js ---\n@@ -0,0 +1,39 @@\n+function shouldBe(actual, expected) {\n+    if (actual !== expected)\n+        throw new Error(\"bad value: \" + JSON.stringify(actual).slice(0, 80));\n+}\n+\n+function flat8Bit(content) {\n+    return content.split(\"\").join(\"\");\n+}\n+\n+function flat16Bit(content) {\n+    let flat = String.fromCharCode(0x3042) + content;\n+    Symbol(flat);\n+    let wide = flat.slice(1);\n+    Symbol(wide);\n+    return wide;\n+}\n+\n+let table = {};\n+let filler = \".\".repeat(2048);\n+\n+function test(regExp, name, makeAtom, makeReplacement) {\n+    table[makeAtom(name)] = 1;\n+    let replacement = makeReplacement(name);\n+    let count = 0;\n+    let result = flat8Bit(\"x\" + filler + \"x\" + filler + \"x\").replace(regExp, function () {\n+        if (++count === 1)\n+            return replacement;\n+        table[replacement] = 2;\n+        return count;\n+    });\n+    shouldBe(count, 3);\n+    shouldBe(result, name + filler + \"2\" + filler + \"3\");\n+}\n+\n+let index = 0;\n+for (let regExp of [/x/g, /(x)/g]) {\n+    test(regExp, \"property-name-\" + index++, flat16Bit, flat8Bit);\n+    test(regExp, \"property-name-\" + index++, flat8Bit, flat16Bit);\n+}\n\n--- Source/JavaScriptCore/runtime/StringPrototypeInlines.h ---\n@@ -954,7 +954,7 @@ static ALWAYS_INLINE JSString* replaceAllWithCacheUsingRegExpSearchThreeArgument\n             bufferPos += substring.length();\n \n             auto replacement = asString(slot)->value(globalObject);\n-            StringView { replacement }.getCharacters8(buffer.subspan(bufferPos));\n+            StringView { replacement }.getCharacters(buffer.subspan(bufferPos));\n             bufferPos += replacement->length();\n \n             ++index;\n",
     "url": "https://github.com/WebKit/WebKit/commit/61b3aecb0c94362d51da1b4ad02aec6f12d5e8fb",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "76ec268ed08050785136b127f9c9f1a8cbe48ed8",
+    "message": "[JSC] Collector should decide whether its thread marks during the concurrent phase\nhttps://bugs.webkit.org/show_bug.cgi?id=329209\nrdar://191179872\n\nReviewed by Keith Miller.\n\nSlotVisitor::drainInParallelPassively chose whether to mark on the collector\nthread or to leave the marking to the helpers, b",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/heap/Collector.cpp ---\n@@ -604,9 +604,18 @@ NEVER_INLINE bool Collector::runConcurrentPhase(GCConductor conn)\n         return false;\n     }\n     case GCConductor::Collector: {\n+        unsigned worldState = heap().m_worldState.load();\n+        // FIXME: Heap access is only a proxy for whether the mutator's thread wants a core: a JSC API client drops\n+        // access with the JSLock and may then run native code. And the choice below holds until this drain returns,\n+        // even if the mutator takes or releases access meanwhile.\n+        bool mutatorIsRunningWithHeapAccess = (worldState & Heap::hasAccessBit) && !(worldState & Heap::mutatorWaitingBit);\n         {\n             ParallelModeEnabler enabler(visitor);\n-            visitor.drainInParallelPassively(m_scheduler->timeToStop());\n+            // If the mutator is running, don't compete for a core.\n+            if (Options::numberOfGCMarkers() > 1 && mutatorIsRunningWithHeapAccess)\n+                visitor.drainInParallelPassively(m_scheduler->timeToStop());\n+            else\n+                visitor.drainInParallel(m_scheduler->timeToStop());\n         }\n         return changePhase(conn, CollectorPhase::Reloop);\n     } }\n\n--- Source/JavaScriptCore/heap/SlotVisitor.cpp ---\n@@ -724,18 +724,8 @@ SlotVisitor::SharedDrainResult SlotVisitor::drainInParallel(MonotonicTime timeou\n SlotVisitor::SharedDrainResult SlotVisitor::drainInParallelPassively(MonotonicTime timeout)\n {\n     ASSERT(m_isInParallelMode);\n-    \n-    ASSERT(Options::numberOfGCMarkers());\n-    \n-    JSC::Heap& heap = m_collector.heap();\n-    if (Options::numberOfGCMarkers() == 1\n-        || (heap.m_worldState.load() & Heap::mutatorWaitingBit)\n-        || !heap.hasHeapAccess()\n-        || heap.worldIsStopped()) {\n-        // This is an optimization over drainInParallel() when we have a concurrent mutator but\n-        // otherwise it is not profitable.\n-        return drainInParallel(timeout);\n-    }\n+    // This thread counts as one of the markers but does not mark here, so there must be at least one other.\n+    ASSERT(Options::numberOfGCMarkers() > 1);\n \n     Locker locker { collector().m_markingMutex };\n     donateAll(locker);\n",
+    "url": "https://github.com/WebKit/WebKit/commit/76ec268ed08050785136b127f9c9f1a8cbe48ed8",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "7baa4a6a6e080754464a28bb176ca0d3e8c62bd8",
+    "message": "[JSC] Add loop_hint to spread binding\nhttps://bugs.webkit.org/show_bug.cgi?id=329270\nrdar://191219037\n\nReviewed by Mark Lam.\n\nThis seems to be the only place in our bytecode graphs that generate a\nnon-structural control flow graph with the exception of async/generator\nfunctions and try/catch.\n\n* Sou",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp ---\n@@ -6050,6 +6050,7 @@ void ArrayPatternNode::bindValue(BytecodeGenerator& generator, RegisterID* rhs)\n                 generator.emitLoad(index.get(), jsNumber(0));\n                 Ref<Label> loopStart = generator.newLabel();\n                 generator.emitLabel(loopStart.get());\n+                generator.emitLoopHint();\n \n                 RefPtr<RegisterID> value = generator.newTemporary();\n                 {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/7baa4a6a6e080754464a28bb176ca0d3e8c62bd8",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
