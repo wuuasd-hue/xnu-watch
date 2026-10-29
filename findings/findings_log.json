@@ -85157,5 +85157,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:56:10.612083+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d16574bdf6f9d5ddb997b2d421f2550a94583bbb",
+    "url": "https://github.com/WebKit/WebKit/commit/d16574bdf6f9d5ddb997b2d421f2550a94583bbb",
+    "message": "[JSC] Do not fold callee of generators into a singleton\nhttps://bugs.webkit.org/show_bug.cgi?id=329386\nrdar://191272159\n\nReviewed by Mark Lam.\n\nGenerators are using body function as a closure and each generator\ninstance will have its own instance of this body function. Thus we can\nknow that this is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:56:49.449756+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6900561111430a2078f8a3ddc6fc382439855ed2",
+    "url": "https://github.com/WebKit/WebKit/commit/6900561111430a2078f8a3ddc6fc382439855ed2",
+    "message": "A request's didFilterLinkDecoration may be cleared during navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=328532\nrdar://190754824\n\nReviewed by Charlie Wolfe.\n\nSome types of navigations will clear the request's flag that tracks when link\ndecorations were filtered. This resulted in successfully fil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:57:29.802050+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "275c086c4c5027092fea1e1ef930fb3c5ad8cf32",
+    "url": "https://github.com/WebKit/WebKit/commit/275c086c4c5027092fea1e1ef930fb3c5ad8cf32",
+    "message": "[JSC] Manually adding SpecOther to @generatorFrame parameter\nhttps://bugs.webkit.org/show_bug.cgi?id=329387\nrdar://191273430\n\nReviewed by Mark Lam.\n\nWhile it is only happening at the start up of generator, but\ngeneratorFrame parameter is initially undefined and it gets lexical\nenvironment later. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:58:08.733221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d0f5aa9d1bf2ac36df81d07e50ee9b77d1fda4d0",
+    "url": "https://github.com/WebKit/WebKit/commit/d0f5aa9d1bf2ac36df81d07e50ee9b77d1fda4d0",
+    "message": "[JSC] Decouple Heap's world state from the Collector's thread lock\nhttps://bugs.webkit.org/show_bug.cgi?id=329379\nrdar://191261786\n\nReviewed by Mark Lam.\n\nHeap used the Collector's thread lock and condition variable directly. Both\nshould be implementation details of the Collector, so that how the Co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:58:47.468707+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "da4d88f94a06e713938e0aa76943578d00626772",
+    "url": "https://github.com/WebKit/WebKit/commit/da4d88f94a06e713938e0aa76943578d00626772",
+    "message": "[JSC] DFG should inline bound functions used as getters and setters\nhttps://bugs.webkit.org/show_bug.cgi?id=329028\n\nReviewed by Yusuke Suzuki.\n\nhandleIntrinsicCall bails out unless the current instruction is a call, so a bound\nfunction used as a getter or a setter was never inlined. BoundFunctionCal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T19:59:25.815972+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7dea23baa26469c5f525bacd805bd7470765550f",
+    "url": "https://github.com/WebKit/WebKit/commit/7dea23baa26469c5f525bacd805bd7470765550f",
+    "message": "[JSC] `Object.entries` should have a fast path for objects with indexed properties\nhttps://bugs.webkit.org/show_bug.cgi?id=328448\n\nReviewed by Yusuke Suzuki.\n\nThe fast path of `Object.entries` was skipped when the object has indexed properties.\nThis patch collects them with `forEachOwnIndexedPropert",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
