@@ -85017,5 +85017,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T07:57:40.948172+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af106c1baa4c1465aec1970343fe90a5a2eebbf1",
+    "url": "https://github.com/WebKit/WebKit/commit/af106c1baa4c1465aec1970343fe90a5a2eebbf1",
+    "message": "[JSC] Result of `Object.assign` intrinsic should have a prediction\nhttps://bugs.webkit.org/show_bug.cgi?id=329264\n\nReviewed by Yusuke Suzuki.\n\nThe DFG lowers `Object.assign(target, source)` to ToObject + ObjectAssign, and the\nToObject, which is the result of the call, had SpecNone as its heap predic",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T07:58:18.882483+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "617368efc7128066ddcb0d4d1ac23a8b266fb423",
+    "url": "https://github.com/WebKit/WebKit/commit/617368efc7128066ddcb0d4d1ac23a8b266fb423",
+    "message": "[JSC] Use SIMD analysis in BBQ too\nhttps://bugs.webkit.org/show_bug.cgi?id=329189\nrdar://191159122\n\nReviewed by Keith Miller and Marcus Plutowski.\n\nThis patch uses ARM64 SIMD pattern analysis in BBQ too. This is not so\ncostly while it is effective.\n\nTest: JSTests/wasm/stress/simd-shuffle-one-side.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T07:58:56.877957+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cc81805e2201de2064b3b73fbc96da6994c2f19b",
+    "url": "https://github.com/WebKit/WebKit/commit/cc81805e2201de2064b3b73fbc96da6994c2f19b",
+    "message": "A navigation that joins a prefetch whose response has a Document-Isolation-Policy isn't cross-origin isolated\nhttps://bugs.webkit.org/show_bug.cgi?id=328899\nrdar://190989002\n\nReviewed by Alex Christensen.\n\nWhen a navigation from a document without a Document-Isolation-Policy joins a\nspeculation rule",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T07:59:34.519082+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "838aedbe797500a6ad544a2c4a791ccb8e7a124e",
+    "url": "https://github.com/WebKit/WebKit/commit/838aedbe797500a6ad544a2c4a791ccb8e7a124e",
+    "message": "[JSC] FinalizationRegistry keeps a dangling unregister-token key after the token is collected\nhttps://bugs.webkit.org/show_bug.cgi?id=323478\nrdar://180297597\n\nReviewed by Yusuke Suzuki.\n\nm_deadRegistrations is keyed by unregister token, and those keys are weakly held.\nfinalizeUnconditionally() prune",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
