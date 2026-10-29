@@ -85097,5 +85097,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T14:48:47.987514+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4321d9b5104fc78662511d3b482342fd0cfe0804",
+    "url": "https://github.com/WebKit/WebKit/commit/4321d9b5104fc78662511d3b482342fd0cfe0804",
+    "message": "[JSC] Manually hoist loop-invariant loads out of GC loops\nhttps://bugs.webkit.org/show_bug.cgi?id=329347\nrdar://191164395\n\nReviewed by Yusuke Suzuki.\n\nClang can't hoist loading cell size in stopAllocating because cell\nzapping writes through uint32_t* which can alias `unsigned m_cellSize`.\nSimilarly,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T14:49:26.288796+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f98073015c8bf3c4d484aa6c01ab9476c3563b0d",
+    "url": "https://github.com/WebKit/WebKit/commit/f98073015c8bf3c4d484aa6c01ab9476c3563b0d",
+    "message": "[JSC] BBQ emitShuffle must split v128 stack moves that lie under two destinations\nhttps://bugs.webkit.org/show_bug.cgi?id=328992\nrdar://191050549\n\nReviewed by Vassili Bykov.\n\nBBQ emitShuffle does parallel move. It uses wasmScratchFPR /\nwasmScratchGPR to break cycles. But this is correct only when ea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T14:50:04.093850+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "260278048486c215332b692eca77fae86bfee5c8",
+    "url": "https://github.com/WebKit/WebKit/commit/260278048486c215332b692eca77fae86bfee5c8",
+    "message": "[JSC] JSStringJoiner's length collection should just use uint64_t for array\nhttps://bugs.webkit.org/show_bug.cgi?id=329190\nrdar://191159316\n\nReviewed by Sosuke Suzuki.\n\nFor element we can accept here, each element size is <= String's max\nsize. Thus, accumulated length does not exceed uint64_t max. U",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
