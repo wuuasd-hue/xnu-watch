@@ -85277,5 +85277,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T23:40:57.036541+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78e3d090ca756bbf66724823f7509e81515650e1",
+    "url": "https://github.com/WebKit/WebKit/commit/78e3d090ca756bbf66724823f7509e81515650e1",
+    "message": "Web Inspector: Pausing at the next statement is dropped when a blackboxed script finishes at the top level\nhttps://bugs.webkit.org/show_bug.cgi?id=329267\nrdar://191215871\n\nReviewed by Sihui Liu.\n\nA pause at the next statement should move on to the next statement outside of a script that the\ndebugger",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T23:41:34.712230+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "afbd43f3395bbf009ffba92aa5fc5cd06a13c5d4",
+    "url": "https://github.com/WebKit/WebKit/commit/afbd43f3395bbf009ffba92aa5fc5cd06a13c5d4",
+    "message": "[JSC] Stale property inline cache watchpoints can outlive their referenced cells after CodeBlock::jettison()\nhttps://bugs.webkit.org/show_bug.cgi?id=321608\nrdar://183329798\n\nReviewed by Yijia Huang.\n\nCodeBlock::jettison() releases each PropertyInlineCache's PolymorphicAccess list\nvia PropertyInlineC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T23:42:12.769974+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4cc99211239c298296f4d6c2904ad7a29f895410",
+    "url": "https://github.com/WebKit/WebKit/commit/4cc99211239c298296f4d6c2904ad7a29f895410",
+    "message": "Add a CMake target `jsc-all` to build all JSC binaries including mya, libJavaScriptCoreTools, and testLibJSCTools.\nhttps://bugs.webkit.org/show_bug.cgi?id=328724\nrdar://190872879\n\nReviewed by Keith Miller.\n\nAlso lay the ground work so that other ports can build these (if they choose to later) by\ndef",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-29T23:42:50.366629+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2bfe1a9f508636ced330cd7242c291cd33aca551",
+    "url": "https://github.com/WebKit/WebKit/commit/2bfe1a9f508636ced330cd7242c291cd33aca551",
+    "message": "[JSC] Fuse sums of i16x8 dot products into widening multiply-accumulates on ARM64\nhttps://bugs.webkit.org/show_bug.cgi?id=329041\nrdar://problem/191117050\n\nReviewed by Keith Miller and Marcus Plutowski.\n\nARM64 does not have direct instruction for wasm i32x4.dot_i16x8_s. So it\nis compiled to SMULL + S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
