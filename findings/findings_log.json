@@ -85617,5 +85617,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:10:23.670253+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "74ab79c0828d619a18310aee5e13ad15a0ec8f2f",
+    "url": "https://github.com/WebKit/WebKit/commit/74ab79c0828d619a18310aee5e13ad15a0ec8f2f",
+    "message": "[Image Redux] Move ImageDrawingOptions to loader/images/ and add a new RasterDrawingOptions for platform image drawing\nhttps://bugs.webkit.org/show_bug.cgi?id=329590\n\nReviewed by Darin Adler.\n\nImageDrawingOptions held both options that only an Image understands (decoding mode, subsampling,\ndebug bac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:11:02.372099+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a906134775d802c9a8096db545ad5b7f2c3bd38e",
+    "url": "https://github.com/WebKit/WebKit/commit/a906134775d802c9a8096db545ad5b7f2c3bd38e",
+    "message": "[WebVTT] WPT tests embedded_style_cascade_priority.html and embedded_style_multiple_tracks.html are image failures\nrdar://191130060\nhttps://bugs.webkit.org/show_bug.cgi?id=329135\n\nReviewed by Antti Koivisto.\n\nCurrently, WebCore will take STYLE blocks parsed out of the WebVTT file and create a <style",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:11:40.297080+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d05eb32f6fc000907483128650e715b82b9629cc",
+    "url": "https://github.com/WebKit/WebKit/commit/d05eb32f6fc000907483128650e715b82b9629cc",
+    "message": "Web Inspector: Sources: SVG preview is blank when it references <symbol> from <defs>\nrdar://151300634\nhttps://bugs.webkit.org/show_bug.cgi?id=292984\n\nReviewed by Devin Rousso.\n\nThe SVG only draws the group matched by :target, so it needs the URL fragment.\nThe preview and http(s) views dropped the fr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:12:18.209958+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6543b0c4dc51384938986be90b1e2fbd4991de65",
+    "url": "https://github.com/WebKit/WebKit/commit/6543b0c4dc51384938986be90b1e2fbd4991de65",
+    "message": "[JSC] Object allocation sinking's InlineCallFrame guard must consider the whole inline stack\nhttps://bugs.webkit.org/show_bug.cgi?id=322466\nrdar://183653137\n\nReviewed by Keith Miller.\n\nshouldDemote() only inspected the allocation's immediate InlineCallFrame, so an\nallocation in a plain inlined frame",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:12:56.981413+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "617368efc7128066ddcb0d4d1ac23a8b266fb423",
+    "url": "https://github.com/WebKit/WebKit/commit/617368efc7128066ddcb0d4d1ac23a8b266fb423",
+    "message": "[JSC] Use SIMD analysis in BBQ too\nhttps://bugs.webkit.org/show_bug.cgi?id=329189\nrdar://191159122\n\nReviewed by Keith Miller and Marcus Plutowski.\n\nThis patch uses ARM64 SIMD pattern analysis in BBQ too. This is not so\ncostly while it is effective.\n\nTest: JSTests/wasm/stress/simd-shuffle-one-side.js",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T21:13:35.004109+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4321d9b5104fc78662511d3b482342fd0cfe0804",
+    "url": "https://github.com/WebKit/WebKit/commit/4321d9b5104fc78662511d3b482342fd0cfe0804",
+    "message": "[JSC] Manually hoist loop-invariant loads out of GC loops\nhttps://bugs.webkit.org/show_bug.cgi?id=329347\nrdar://191164395\n\nReviewed by Yusuke Suzuki.\n\nClang can't hoist loading cell size in stopAllocating because cell\nzapping writes through uint32_t* which can alias `unsigned m_cellSize`.\nSimilarly,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
