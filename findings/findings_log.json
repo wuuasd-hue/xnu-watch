@@ -85357,5 +85357,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T03:03:52.750425+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71072595e18493243b7d1c04e906713fce6902fd",
+    "url": "https://github.com/WebKit/WebKit/commit/71072595e18493243b7d1c04e906713fce6902fd",
+    "message": "[Image Redux] Resolve image-orientation for pattern tiles in Style::CachedImage\nhttps://bugs.webkit.org/show_bug.cgi?id=329450\n\nReviewed by Darin Adler.\n\nPreviously, BitmapImage::currentPatternTile() (and BitmapImage::drawPattern() before it) forced FromImage\nfor image orientation, ignoring the imag",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T03:04:30.881549+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6725217f71d12afe31e50a5341922151bd6234be",
+    "url": "https://github.com/WebKit/WebKit/commit/6725217f71d12afe31e50a5341922151bd6234be",
+    "message": "[Image Redux] Move the Image family of classes out of platform\nhttps://bugs.webkit.org/show_bug.cgi?id=329364\n\nReviewed by Darin Adler.\n\nWebCore::Image and its subclasses were never really platform types. They don't map to any existing platform\nAPIs and instead adhere to web platform requirements li",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T03:05:08.983142+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "061f50b88ae1209fabf6256b40e190e635984a2c",
+    "url": "https://github.com/WebKit/WebKit/commit/061f50b88ae1209fabf6256b40e190e635984a2c",
+    "message": "[JSC] Rope substring view can be 16bit even if Rope itself says 8bit\nhttps://bugs.webkit.org/show_bug.cgi?id=329306\nrdar://191237908\n\nReviewed by Sosuke Suzuki.\n\nEven if JSRopeString is having 8bit flag, it can have 16bit StringImpl\nas a base of substring. This happens when atomization happens in th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T03:05:46.637169+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d2e925d16f71ed23e400c6a3c1c924beb52d6d44",
+    "url": "https://github.com/WebKit/WebKit/commit/d2e925d16f71ed23e400c6a3c1c924beb52d6d44",
+    "message": "Disallow preloading based on a link header from a subresource load\nhttps://bugs.webkit.org/show_bug.cgi?id=329218\nrdar://191196085\n\nReviewed by Anne van Kesteren.\n\nThis was added in 198979@main but other browsers do not support it.\nIt is currently being discussed in a break out session in TPAC, and\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
