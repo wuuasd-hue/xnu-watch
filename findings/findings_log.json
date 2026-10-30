@@ -85537,5 +85537,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T16:45:17.117879+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "031aa9af2d3a19c588abe6e9d77fe9e44e12f949",
+    "url": "https://github.com/WebKit/WebKit/commit/031aa9af2d3a19c588abe6e9d77fe9e44e12f949",
+    "message": "[Image Redux] Merge Style::ImageDrawingExtras into ImageDrawingExtras\nhttps://bugs.webkit.org/show_bug.cgi?id=329462\n\nReviewed by Darin Adler.\n\nNow that Image is no longer in platform, there is no longer any reason for ImageDrawingExtras to be\nan abstract base class. Instead, we can merge Style::Ima",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T16:45:55.981171+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "375cae0f01b6f5196106eb4906100591292e5d28",
+    "url": "https://github.com/WebKit/WebKit/commit/375cae0f01b6f5196106eb4906100591292e5d28",
+    "message": "Web Inspector: Pausing at the next statement stops in scripts of internal worlds\nhttps://bugs.webkit.org/show_bug.cgi?id=329024\nrdar://187630174\n\nReviewed by Devin Rousso.\n\nA content world whose configuration is not inspectable is an internal world, which Web Inspector\nis not meant to show, but the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T16:46:35.070671+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7baa4a6a6e080754464a28bb176ca0d3e8c62bd8",
+    "url": "https://github.com/WebKit/WebKit/commit/7baa4a6a6e080754464a28bb176ca0d3e8c62bd8",
+    "message": "[JSC] Add loop_hint to spread binding\nhttps://bugs.webkit.org/show_bug.cgi?id=329270\nrdar://191219037\n\nReviewed by Mark Lam.\n\nThis seems to be the only place in our bytecode graphs that generate a\nnon-structural control flow graph with the exception of async/generator\nfunctions and try/catch.\n\n* Sou",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T16:47:13.244309+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "af106c1baa4c1465aec1970343fe90a5a2eebbf1",
+    "url": "https://github.com/WebKit/WebKit/commit/af106c1baa4c1465aec1970343fe90a5a2eebbf1",
+    "message": "[JSC] Result of `Object.assign` intrinsic should have a prediction\nhttps://bugs.webkit.org/show_bug.cgi?id=329264\n\nReviewed by Yusuke Suzuki.\n\nThe DFG lowers `Object.assign(target, source)` to ToObject + ObjectAssign, and the\nToObject, which is the result of the call, had SpecNone as its heap predic",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
