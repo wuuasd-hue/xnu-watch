@@ -85437,5 +85437,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T10:16:07.689507+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3b920b4875c78148313d2d2b4676b2f21f6889c",
+    "url": "https://github.com/WebKit/WebKit/commit/c3b920b4875c78148313d2d2b4676b2f21f6889c",
+    "message": "[JSC] Introduce op_call_varargs_with_spread\nhttps://bugs.webkit.org/show_bug.cgi?id=319336\nrdar://182151036\n\nReviewed by Yusuke Suzuki.\n\nSpread calls currently emit op_new_array_with_spread and hand the result to\nop_call_varargs, so we allocate an array that is dead as soon as the callee frame\nis bu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T10:16:45.515427+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4f16e9eb385db3ca1460ca1ed97cc16823e190fc",
+    "url": "https://github.com/WebKit/WebKit/commit/4f16e9eb385db3ca1460ca1ed97cc16823e190fc",
+    "message": "[Wasm] BBQ should use the one-side shuffle path on x86_64 too\nhttps://bugs.webkit.org/show_bug.cgi?id=329443\n\nReviewed by Yusuke Suzuki.\n\n325076@main made BBQ emit a single DUP or TBL for an i8x16.shuffle that reads\nonly one of its inputs, but only on ARM64. x86_64 still emitted two constants,\ntwo V",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T10:17:23.901480+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "53f75912d6f63737c588d44669e4813cdecb7d0d",
+    "url": "https://github.com/swiftlang/swift/commit/53f75912d6f63737c588d44669e4813cdecb7d0d",
+    "message": "Merge pull request #93721 from swiftlang/wip-ktoso-stack-send-01-sync-operation-task-minimal\n\n[Concurrency][oneway] Synchronous discarding tasks",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T10:18:02.761123+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "61b3aecb0c94362d51da1b4ad02aec6f12d5e8fb",
+    "url": "https://github.com/WebKit/WebKit/commit/61b3aecb0c94362d51da1b4ad02aec6f12d5e8fb",
+    "message": "[JSC] Cached `String#replace` should not assume a replacement stays 8-bit\nhttps://bugs.webkit.org/show_bug.cgi?id=328449\n\nReviewed by Yusuke Suzuki.\n\nreplaceAllWithCacheUsingRegExpSearchThreeArguments keeps the replacements as\nJSString* and records whether all of them are 8-bit while it is still cal",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-30T10:18:40.914573+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "76ec268ed08050785136b127f9c9f1a8cbe48ed8",
+    "url": "https://github.com/WebKit/WebKit/commit/76ec268ed08050785136b127f9c9f1a8cbe48ed8",
+    "message": "[JSC] Collector should decide whether its thread marks during the concurrent phase\nhttps://bugs.webkit.org/show_bug.cgi?id=329209\nrdar://191179872\n\nReviewed by Keith Miller.\n\nSlotVisitor::drainInParallelPassively chose whether to mark on the collector\nthread or to leave the marking to the helpers, b",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
