@@ -86077,5 +86077,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T17:24:30.044478+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bee80115a0c1a24d5879861a233e2215ed7bfb9a",
+    "url": "https://github.com/WebKit/WebKit/commit/bee80115a0c1a24d5879861a233e2215ed7bfb9a",
+    "message": "[JSC] Defer GC while operationNewArrayBuffer switches to slow-put array storage\nhttps://bugs.webkit.org/show_bug.cgi?id=323227\nrdar://185223609\n\nReviewed by Mark Lam.\n\nThe DFG barrier insertion phase tracks an \"epoch\" serial number that is bumped\nevery time it encounters a node that can GC. Allocati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T17:25:08.023293+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5edecbf3e9462efdf327ebc8183b2da3e02d0ceb",
+    "url": "https://github.com/WebKit/WebKit/commit/5edecbf3e9462efdf327ebc8183b2da3e02d0ceb",
+    "message": "[JSC] Make WeakSet safe for concurrent sweeping\nhttps://bugs.webkit.org/show_bug.cgi?id=329377\nrdar://191259964\n\nReviewed by Dan Hecht.\n\nLets a WeakSet's dead handles be finalized off the mutator, one sweeper at a time, while the mutator\nkeeps allocating and clearing Weak<> handles without a lock.\n\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T17:25:46.163741+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb413b838b9c6266af9a1804d93f128f57cb3b32",
+    "url": "https://github.com/WebKit/WebKit/commit/bb413b838b9c6266af9a1804d93f128f57cb3b32",
+    "message": "Web Inspector: SVG preview is blank when the SVG was preloaded without the fragment it is later used with\nhttps://bugs.webkit.org/show_bug.cgi?id=329622\nrdar://191434510\n\nReviewed by Devin Rousso.\n\nIf Web Inspector is already open when a page preloads an SVG without a fragment and later uses it with",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T17:26:24.447582+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71072595e18493243b7d1c04e906713fce6902fd",
+    "url": "https://github.com/WebKit/WebKit/commit/71072595e18493243b7d1c04e906713fce6902fd",
+    "message": "[Image Redux] Resolve image-orientation for pattern tiles in Style::CachedImage\nhttps://bugs.webkit.org/show_bug.cgi?id=329450\n\nReviewed by Darin Adler.\n\nPreviously, BitmapImage::currentPatternTile() (and BitmapImage::drawPattern() before it) forced FromImage\nfor image orientation, ignoring the imag",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T17:27:02.886194+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6725217f71d12afe31e50a5341922151bd6234be",
+    "url": "https://github.com/WebKit/WebKit/commit/6725217f71d12afe31e50a5341922151bd6234be",
+    "message": "[Image Redux] Move the Image family of classes out of platform\nhttps://bugs.webkit.org/show_bug.cgi?id=329364\n\nReviewed by Darin Adler.\n\nWebCore::Image and its subclasses were never really platform types. They don't map to any existing platform\nAPIs and instead adhere to web platform requirements li",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
