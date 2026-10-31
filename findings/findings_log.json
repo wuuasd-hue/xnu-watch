@@ -85977,5 +85977,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T12:51:35.017517+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "f5a2f7d3ee8b6aef8cc6eb5d9ee2805d2d290c83",
+    "url": "https://github.com/swiftlang/swift/commit/f5a2f7d3ee8b6aef8cc6eb5d9ee2805d2d290c83",
+    "message": "[Windows] [Backtracing] Add Windows UI app improvements for crash logs\n\nFixes #93126\n\nIf the crashing program has no console (e.g. it's a UI program), launch `swift-backtrace.exe` with `CREATE_NO_WINDOW` so that UI apps don't get a console window flashing up on the desktop when a crash is trapped by",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T12:52:12.926530+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "80f62a55ffee440fee06bcfaaf15b008051587ab",
+    "url": "https://github.com/swiftlang/swift/commit/80f62a55ffee440fee06bcfaaf15b008051587ab",
+    "message": "this is why I should check Claudes homework more carefully :(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T12:52:50.281510+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "dc4816e30b03aab5f44a484cacffe3c4c069a3c7",
+    "url": "https://github.com/swiftlang/swift/commit/dc4816e30b03aab5f44a484cacffe3c4c069a3c7",
+    "message": "attempt to fix broken unit tests",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T12:53:28.405227+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "78e3d090ca756bbf66724823f7509e81515650e1",
+    "url": "https://github.com/WebKit/WebKit/commit/78e3d090ca756bbf66724823f7509e81515650e1",
+    "message": "Web Inspector: Pausing at the next statement is dropped when a blackboxed script finishes at the top level\nhttps://bugs.webkit.org/show_bug.cgi?id=329267\nrdar://191215871\n\nReviewed by Sihui Liu.\n\nA pause at the next statement should move on to the next statement outside of a script that the\ndebugger",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T12:54:05.991977+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "afbd43f3395bbf009ffba92aa5fc5cd06a13c5d4",
+    "url": "https://github.com/WebKit/WebKit/commit/afbd43f3395bbf009ffba92aa5fc5cd06a13c5d4",
+    "message": "[JSC] Stale property inline cache watchpoints can outlive their referenced cells after CodeBlock::jettison()\nhttps://bugs.webkit.org/show_bug.cgi?id=321608\nrdar://183329798\n\nReviewed by Yijia Huang.\n\nCodeBlock::jettison() releases each PropertyInlineCache's PolymorphicAccess list\nvia PropertyInlineC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
