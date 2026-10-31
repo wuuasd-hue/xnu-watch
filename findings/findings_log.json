@@ -85737,5 +85737,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:54:13.628134+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c1c0965989e6702cf1bcb2d72b2930defbdaf8cb",
+    "url": "https://github.com/WebKit/WebKit/commit/c1c0965989e6702cf1bcb2d72b2930defbdaf8cb",
+    "message": "[JSC] ConstantFoldingPhase's by-val to by-id conversions should preserve the property edge's check\nhttps://bugs.webkit.org/show_bug.cgi?id=321515\nrdar://178211669\n\nReviewed by Yusuke Suzuki.\n\nNode::convertTo{Get,Put,In}ByIdMaybeMegamorphic clears every edge of the\nby-val node it converts, but the by",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:54:52.000687+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41a3299b7049efef1b2c5c639575979649595d9a",
+    "url": "https://github.com/WebKit/WebKit/commit/41a3299b7049efef1b2c5c639575979649595d9a",
+    "message": "[JSC] IRO's ArithAbs transform can pin freed range bound proofs\nhttps://bugs.webkit.org/show_bug.cgi?id=322839\nrdar://186081881\n\nReviewed by Yijia Huang.\n\nSince 319726@main, rangeFor() returns RangeBounds whose proof field is a\nraw pointer into the queried node's relationship Vector. The ArithAbs\ntr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:55:30.715842+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a751f585a20e06348776784962c7811267318542",
+    "url": "https://github.com/WebKit/WebKit/commit/a751f585a20e06348776784962c7811267318542",
+    "message": "[Site Isolation] Web Inspector: DOM breakpoints on nodes in cross-origin iframes never pause\nhttps://bugs.webkit.org/show_bug.cgi?id=298981\nrdar://188833088\n\nReviewed by Basuke Suzuki.\n\nA DOM breakpoint on a node in a cross-origin iframe was listed but never paused (also rdar://188015223): the front",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:56:09.090854+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "345b9e5d854b0a69f9b7506aec5123fdf0a612e3",
+    "url": "https://github.com/WebKit/WebKit/commit/345b9e5d854b0a69f9b7506aec5123fdf0a612e3",
+    "message": "Refactoring: replace WK_LIB_JSC_TOOLS_UNSUPPORTED with WK_JAVASCRIPTCORE_TOOLS_SUPPORTED.\nhttps://bugs.webkit.org/show_bug.cgi?id=329625\nrdar://191434209\n\nReviewed by Vassili Bykov.\n\nWK_LIB_JSC_TOOLS_UNSUPPORTED asserted a negative condition (\"unsupported\").  This is more\ndifficult to reason with, a",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:56:48.052692+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d16574bdf6f9d5ddb997b2d421f2550a94583bbb",
+    "url": "https://github.com/WebKit/WebKit/commit/d16574bdf6f9d5ddb997b2d421f2550a94583bbb",
+    "message": "[JSC] Do not fold callee of generators into a singleton\nhttps://bugs.webkit.org/show_bug.cgi?id=329386\nrdar://191272159\n\nReviewed by Mark Lam.\n\nGenerators are using body function as a closure and each generator\ninstance will have its own instance of this body function. Thus we can\nknow that this is ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T00:57:26.855933+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6900561111430a2078f8a3ddc6fc382439855ed2",
+    "url": "https://github.com/WebKit/WebKit/commit/6900561111430a2078f8a3ddc6fc382439855ed2",
+    "message": "A request's didFilterLinkDecoration may be cleared during navigation\nhttps://bugs.webkit.org/show_bug.cgi?id=328532\nrdar://190754824\n\nReviewed by Charlie Wolfe.\n\nSome types of navigations will clear the request's flag that tracks when link\ndecorations were filtered. This resulted in successfully fil",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
