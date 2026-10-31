@@ -85857,5 +85857,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:23:15.950321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e1e9be41815083e321c6a18e62954ff6521c331",
+    "url": "https://github.com/WebKit/WebKit/commit/0e1e9be41815083e321c6a18e62954ff6521c331",
+    "message": "Fix cross-site info leak via CSP blockedURI for object and embed navigations with redirects\nhttps://bugs.webkit.org/show_bug.cgi?id=311521\nrdar://174027380\n\nReviewed by Anne van Kesteren.\n\nSecurityPolicyViolationEvent's blockedURI exposes the post-redirect destination\nURL when object-src blocks redi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:23:53.442408+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "609fc1ce23df800d73c1daa800f719aeb691928a",
+    "url": "https://github.com/WebKit/WebKit/commit/609fc1ce23df800d73c1daa800f719aeb691928a",
+    "message": "[JSC] JSON.parse should match more repeated string values against the source text\nhttps://bugs.webkit.org/show_bug.cgi?id=329490\nrdar://191351073\n\nReviewed by Keith Miller.\n\nJSONCache matched a repeated string value against the source text only when its\nquoted text fit in the short value table's 32 ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:24:30.859783+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e41ec233401e43c1a11caea78fe17e41c0353c06",
+    "url": "https://github.com/WebKit/WebKit/commit/e41ec233401e43c1a11caea78fe17e41c0353c06",
+    "message": "Web Inspector: A pause requested for the next statement is forgotten by the debugger agent when the global object is cleared\nhttps://bugs.webkit.org/show_bug.cgi?id=329134\nrdar://189444035\n\nReviewed by Zak Ridouh.\n\nInspectorDebuggerAgent::didClearGlobalObject() ran clearDebuggerBreakpointState(), wh",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:25:08.337444+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "df6994b59c7e9bf3aeace54c8c42274c49bd7a3e",
+    "url": "https://github.com/WebKit/WebKit/commit/df6994b59c7e9bf3aeace54c8c42274c49bd7a3e",
+    "message": "Safari 27 Back navigation skips a valid session history entry that remains traversable via Navigation API\nrdar://186603812\nhttps://bugs.webkit.org/show_bug.cgi?id=323364\n\nReviewed by Chris Dumez.\n\nA cross-document navigation started by script without a user gesture used to flag its new back/forward ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:25:46.231254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "275c086c4c5027092fea1e1ef930fb3c5ad8cf32",
+    "url": "https://github.com/WebKit/WebKit/commit/275c086c4c5027092fea1e1ef930fb3c5ad8cf32",
+    "message": "[JSC] Manually adding SpecOther to @generatorFrame parameter\nhttps://bugs.webkit.org/show_bug.cgi?id=329387\nrdar://191273430\n\nReviewed by Mark Lam.\n\nWhile it is only happening at the start up of generator, but\ngeneratorFrame parameter is initially undefined and it gets lexical\nenvironment later. But",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-10-31T06:26:23.710527+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d0f5aa9d1bf2ac36df81d07e50ee9b77d1fda4d0",
+    "url": "https://github.com/WebKit/WebKit/commit/d0f5aa9d1bf2ac36df81d07e50ee9b77d1fda4d0",
+    "message": "[JSC] Decouple Heap's world state from the Collector's thread lock\nhttps://bugs.webkit.org/show_bug.cgi?id=329379\nrdar://191261786\n\nReviewed by Mark Lam.\n\nHeap used the Collector's thread lock and condition variable directly. Both\nshould be implementation details of the Collector, so that how the Co",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
