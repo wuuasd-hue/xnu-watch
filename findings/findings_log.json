@@ -87857,5 +87857,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T00:59:39.966288+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d336a98ee3cb3346cb10df4f9423265e80fe025d",
+    "url": "https://github.com/WebKit/WebKit/commit/d336a98ee3cb3346cb10df4f9423265e80fe025d",
+    "message": "[JSC] Make %TypedArray%.prototype.join fast\nhttps://bugs.webkit.org/show_bug.cgi?id=330279\nrdar://178158917\n\nReviewed by Tadeu Zagallo.\n\nThis patch makes %TypedArray%.prototype.join faster.\n\n1. For non shared integer TypedArray, we have extreme fast path\n   \"joinIntegerTypedArray\". We only apply thi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T01:00:17.743296+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb7fdb1ac1c4ad4c32a5e99a1f24415f3d765453",
+    "url": "https://github.com/WebKit/WebKit/commit/bb7fdb1ac1c4ad4c32a5e99a1f24415f3d765453",
+    "message": "[Image Redux] Make RenderView deal in Style::Image\nhttps://bugs.webkit.org/show_bug.cgi?id=330157\n\nReviewed by Darin Adler.\n\nReplace the map of renderer to CacheImage that RenderView keeps for image animation pausing with a\nset of just the renderers. This allows accurately pausing/unpausing all the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T01:00:55.938177+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b31098b98f7b512ba14c3aa57e1f56ce42d5b08c",
+    "url": "https://github.com/WebKit/WebKit/commit/b31098b98f7b512ba14c3aa57e1f56ce42d5b08c",
+    "message": "JSPI stack scan throws on RestoreFrameMode frames\nhttps://bugs.webkit.org/show_bug.cgi?id=329633\n\nReviewed by Keith Miller.\n\nAdds the missing `RestoreFrameMode` cases to the corresponding `switch`s,\nand makes the `switch`s exhaustive so that future cases aren't missed.\n\nTest: JSTests/wasm/regress/32",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T01:01:33.569389+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40aa4a427250b479edcab0c08b3690b886731a12",
+    "url": "https://github.com/WebKit/WebKit/commit/40aa4a427250b479edcab0c08b3690b886731a12",
+    "message": "[JSC] Fix operand semantics of some ARM64 and x86_64 integer operations\nhttps://bugs.webkit.org/show_bug.cgi?id=329725\nrdar://191514638\n\nReviewed by Vassili Bykov.\n\n64-bit operations must sign-extend a TrustedImm32 operand. On ARM64, branch64,\nmoveConditionally64, moveDoubleConditionally64, branchAd",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
