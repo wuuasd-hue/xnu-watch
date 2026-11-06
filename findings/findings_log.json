@@ -88017,5 +88017,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T15:26:17.955049+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91c995960a74faeb8691b85c8915137fec325882",
+    "url": "https://github.com/WebKit/WebKit/commit/91c995960a74faeb8691b85c8915137fec325882",
+    "message": "[GLib] RemoteInspectorServer should not replace an attached inspector client\nhttps://bugs.webkit.org/show_bug.cgi?id=330426\n\nReviewed by Carlos Garcia Campos.\n\nA second SetupInspectorClient silently replaced the attached client,\nand a second StartAutomationSession still requested a session for the\ne",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T15:26:56.958075+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60af4b364c9ff7d97561d9d3255e323a89400415",
+    "url": "https://github.com/WebKit/WebKit/commit/60af4b364c9ff7d97561d9d3255e323a89400415",
+    "message": "[JSC] Implement Float16 ops in x64 via F16C\nhttps://bugs.webkit.org/show_bug.cgi?id=329697\nrdar://191501110\n\nReviewed by Tadeu Zagallo.\n\nx64 F16C supports Float16 operations natively. This patch implements JIT\nsupport for Float16Array in x64 when F16C is enabled. F16C instructions\nare, VCVTPH2PS (Fl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T15:27:38.745282+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "72e8b46b3320769b979c7c93947a78759f241ac8",
+    "url": "https://github.com/WebKit/WebKit/commit/72e8b46b3320769b979c7c93947a78759f241ac8",
+    "message": "[JSC] B3 `resetReachability` should look for Phis only in dead blocks\nhttps://bugs.webkit.org/show_bug.cgi?id=329884\n\nReviewed by Yusuke Suzuki.\n\nWhen Procedure::resetReachability() finds a dead block, it resets the owner of\nevery value and then walks every value to remove the Upsilons that feed a P",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T15:28:17.476523+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d6d67d920361871d6d93e4c7b186bf77aac344c7",
+    "url": "https://github.com/WebKit/WebKit/commit/d6d67d920361871d6d93e4c7b186bf77aac344c7",
+    "message": "[Image Redux] Support multiple instance documents per SVGImage\nhttps://bugs.webkit.org/show_bug.cgi?id=329764\n\nReviewed by Darin Adler.\n\nAdds support for a single SVGImage managing multiple instance documents. Currently, this is limited to one\nfor each unique combination of the settings that must be",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
