@@ -88097,5 +88097,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T20:57:57.181579+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4294ae2562a070902db383b96c00ddff5b438193",
+    "url": "https://github.com/WebKit/WebKit/commit/4294ae2562a070902db383b96c00ddff5b438193",
+    "message": "[JSC] Rebuild assertIsMutatorOrMutatorIsStopped on the GC protocol's roles\nhttps://bugs.webkit.org/show_bug.cgi?id=330335\nrdar://191952601\n\nReviewed by Keith Miller.\n\nBlockDirectory's bit vectors are guarded by m_bitvectorLock, a reader-writer\nlock. Reading or writing a single bit takes only its sha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T20:58:35.050224+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a91a43c004b88f93cdd4a4c0b35a9ee0ab9726cc",
+    "url": "https://github.com/WebKit/WebKit/commit/a91a43c004b88f93cdd4a4c0b35a9ee0ab9726cc",
+    "message": "[JSC] Append stack frames directly to `StringBuilder` in `Interpreter::stackTraceAsString`\nhttps://bugs.webkit.org/show_bug.cgi?id=330372\n\nReviewed by Yusuke Suzuki.\n\nInterpreter::stackTraceAsString creates a temporary String for each frame with\nStackFrame::toString, and then copies it into the Stri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T20:59:13.196564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "434d44d4ea2efe03dae498c8b515ea25c5ab4c35",
+    "url": "https://github.com/WebKit/WebKit/commit/434d44d4ea2efe03dae498c8b515ea25c5ab4c35",
+    "message": "Unreviewed, speculative build fix\nhttps://bugs.webkit.org/show_bug.cgi?id=330038\nrdar://191730689\n\n* Source/JavaScriptCore/Configurations/TestExecutable.xcconfig:\n\nCanonical link: https://commits.webkit.org/325663@main",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T20:59:51.860272+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3f62e675c443934f6739b81d5bd6c6091f8e9c0a",
+    "url": "https://github.com/WebKit/WebKit/commit/3f62e675c443934f6739b81d5bd6c6091f8e9c0a",
+    "message": "[JSC] `stress/regress-174463162.js` is flaky with `collectContinuously`\nhttps://bugs.webkit.org/show_bug.cgi?id=329993\n\nReviewed by Yusuke Suzuki.\n\n$vm.installPropertyInlineCacheClearingWatchpointWithDeadOwner scribbles the header of proto\nand returns to JS while proto is still live, so any later GC",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
