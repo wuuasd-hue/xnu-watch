@@ -87937,5 +87937,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T07:38:31.899515+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65bd2be726561045c08a54bead690e39163fc2b1",
+    "url": "https://github.com/WebKit/WebKit/commit/65bd2be726561045c08a54bead690e39163fc2b1",
+    "message": "[GLib] Validate client messages in RemoteInspectorServer\nhttps://bugs.webkit.org/show_bug.cgi?id=330342\n\nReviewed by Alejandro G. Castro.\n\nSetup, FrontendDidClose and SendMessageToBackend relied on ASSERTs to\ncheck that they came from the inspector client and referred to a\nknown connection. Return e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T07:39:09.708646+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8221e381b1b1fc83765ec50e158176224d128b63",
+    "url": "https://github.com/WebKit/WebKit/commit/8221e381b1b1fc83765ec50e158176224d128b63",
+    "message": "[Site Isolation] Web Inspector: Add a Target event for debugger pause sessions\nhttps://bugs.webkit.org/show_bug.cgi?id=328700\nrdar://190864328\n\nReviewed by Qianlang Chen.\n\nWith SiteIsolationGlobalDebuggerPauseEnabled, the UI process holds every page of the browsing\ncontext group, in every process, w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T07:39:47.750221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8e6298f1ac9044e027a3f1873f4927cdb1870fb",
+    "url": "https://github.com/WebKit/WebKit/commit/c8e6298f1ac9044e027a3f1873f4927cdb1870fb",
+    "message": "[JSC] JSON.parse should parse the objects in an array without a recursive call each\nhttps://bugs.webkit.org/show_bug.cgi?id=329716\nrdar://191509011\n\nReviewed by Vassili Bykov.\n\nWhen parsing a json like,\n\n    [ { ... }, { ... }, { ... }, { ... }, ... ]\n\nWe need to invoke parseRecursively for each obj",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-06T07:40:25.807601+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "419e6e42046f3c7c2ba817144ba567ac4649753c",
+    "url": "https://github.com/WebKit/WebKit/commit/419e6e42046f3c7c2ba817144ba567ac4649753c",
+    "message": "[JSC] Parameter expressions should be detected as uses of enclosing variables even if redeclared in the function body\nhttps://bugs.webkit.org/show_bug.cgi?id=329883\nrdar://191640349\n\nReviewed by Yusuke Suzuki.\n\nGiven the following example:\n\n    function outer() {\n        var x = 1;\n        return (f",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
