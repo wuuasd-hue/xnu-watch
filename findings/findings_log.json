@@ -88377,5 +88377,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T18:22:20.264395+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db2d79f4413193cbfa65b50ebddcec39eaba5809",
+    "url": "https://github.com/WebKit/WebKit/commit/db2d79f4413193cbfa65b50ebddcec39eaba5809",
+    "message": "[Site Isolation] http/tests/misc/frame-default-enc-different-domain.html asserts in FrameLoadState::didFailProvisionalLoad\nhttps://bugs.webkit.org/show_bug.cgi?id=330357\nrdar://191970216\n\nReviewed by Sihui Liu.\n\nThe root cause here is that two WebContent processes are starting a provisional load for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T18:22:58.714062+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8747e6861209c1a5a75b57b52c27bf1b8a8702fb",
+    "url": "https://github.com/WebKit/WebKit/commit/8747e6861209c1a5a75b57b52c27bf1b8a8702fb",
+    "message": "[AXCustomColorMode] Add ability to quirk elements to add or remove filter\nhttps://bugs.webkit.org/show_bug.cgi?id=329567\nrdar://191392900\n\nReviewed by Alan Baradlay and Aditya Keerthi.\n\nLoad quirks for AX Custom Color Mode.\nAX custom color mode uses these to force filters on/off for specific\nelement",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T18:23:36.658341+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "dbcd525613d75199b2f58d988dfc1903b33da92b",
+    "url": "https://github.com/WebKit/WebKit/commit/dbcd525613d75199b2f58d988dfc1903b33da92b",
+    "message": "Rename LocalDOMWindow::finishedLoading() to runPrintWhenLoadedSteps()\nhttps://bugs.webkit.org/show_bug.cgi?id=330170\nrdar://191840705\n\nReviewed by Abrar Rahman Protyasha.\n\nLocalDOMWindow::finishedLoading() only runs a print that window.print() deferred while the\ndocument was loading. Name it, and th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
