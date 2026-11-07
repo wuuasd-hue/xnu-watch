@@ -88437,5 +88437,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T22:05:12.451025+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "41e0652fac6f0fb947d04f6fc13bc548cfebf418",
+    "url": "https://github.com/WebKit/WebKit/commit/41e0652fac6f0fb947d04f6fc13bc548cfebf418",
+    "message": "[JSC] Handle substring ropes in constant `String#startsWith` / `endsWith` fast path\nhttps://bugs.webkit.org/show_bug.cgi?id=329261\n\nReviewed by Yusuke Suzuki.\n\nDFG and FTL compare the string inline when the search string is a short\n8-bit constant, but every rope still calls the C++ operation. As 324",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T22:05:50.635198+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eeb3fa9988912b02f7e20e1d2a9ae3ac0072378d",
+    "url": "https://github.com/WebKit/WebKit/commit/eeb3fa9988912b02f7e20e1d2a9ae3ac0072378d",
+    "message": "[JSC] Probe::Page::set must dirty every chunk that a straddling write touches\nhttps://bugs.webkit.org/show_bug.cgi?id=330079\nrdar://191782447\n\nReviewed by Mark Lam.\n\nroundUpToMultipleOf use is incorrect in Probe::Page::set (wrong order of\nparameters). This patch fixes the code. We also fix static_as",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
