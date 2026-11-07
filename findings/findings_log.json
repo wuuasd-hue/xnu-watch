@@ -88317,5 +88317,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T13:37:46.620364+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d7b569a0c205c0b0346ce3c268cec676b712f466",
+    "url": "https://github.com/WebKit/WebKit/commit/d7b569a0c205c0b0346ce3c268cec676b712f466",
+    "message": "Implement Report and ReportBody as dictionaries\nhttps://bugs.webkit.org/show_bug.cgi?id=330301\nrdar://191919096\n\nReviewed by Ryan Reno and Brent Fulgham.\n\nReportingObserver now gives its callback and takeRecords() reports as plain\nobjects, as the Reporting API has required since\nhttps://github.com/w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T13:38:24.918183+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "890b90dce392ff65154a69b8e84bb199107e55a4",
+    "url": "https://github.com/WebKit/WebKit/commit/890b90dce392ff65154a69b8e84bb199107e55a4",
+    "message": "[JSC] TypedArrays should be marked MayHaveIndexedAccessors\nhttps://bugs.webkit.org/show_bug.cgi?id=327930\nrdar://190305903\n\nReviewed by Yusuke Suzuki.\n\nA TypedArray on the prototype chain intercepts every canonical numeric index.\nIts [[Get]] returns TypedArrayGetElement without consulting its protot",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T13:39:02.450858+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf0f69b454045daf67459b3c2dbfbabae0c1e53b",
+    "url": "https://github.com/WebKit/WebKit/commit/cf0f69b454045daf67459b3c2dbfbabae0c1e53b",
+    "message": "[JSC] Do not patch the invalidation points of optimized code the GC found dead\nhttps://bugs.webkit.org/show_bug.cgi?id=330065\nrdar://191756092\n\nReviewed by Keith Miller.\n\nGC keeps executing CodeBlocks (in the callstack). So when jettisoning\na CodeBlock because it is now dead, there is no way to exec",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
