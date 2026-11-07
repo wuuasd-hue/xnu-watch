@@ -21671,9 +21671,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/ef75f9b54b1267b1fca6cd04d10847caf7e9e21d",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -21685,9 +21686,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/d24e80edb596e23daef9491a9272e967691bb358",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -21977,6 +21979,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/interpreter/Interpreter.cpp ---\n@@ -805,10 +805,9 @@ void Interpreter::getStackTrace(JSCell* owner, Vector<StackFrame>& results, size\n \n String Interpreter::stackTraceAsString(VM& vm, const Vector<StackFrame>& stackTrace)\n {\n-    // FIXME: JSStringJoiner could be more efficient than StringBuilder here.\n     StringBuilder builder;\n     for (unsigned i = 0; i < stackTrace.size(); i++) {\n-        builder.append(String(stackTrace[i].toString(vm)));\n+        stackTrace[i].appendTo(vm, builder);\n         if (i != stackTrace.size() - 1)\n             builder.append('\\n');\n     }\n\n--- Source/JavaScriptCore/runtime/StackFrame.cpp ---\n@@ -32,6 +32,7 @@\n #include \"JSCellInlines.h\"\n #include \"JSFunctionInlines.h\"\n #include <wtf/text/MakeString.h>\n+#include <wtf/text/StringBuilder.h>\n \n namespace JSC {\n \n@@ -281,18 +282,20 @@ static StringView truncateLongDataURL(StringView sourceURL)\n     return sourceURL.left(length);\n }\n \n-String StackFrame::toString(VM& vm) const\n+void StackFrame::appendTo(VM& vm, StringBuilder& builder) const\n {\n     String functionName = this->functionName(vm);\n     // sourceURL points into fullSourceURL, so keep fullSourceURL around.\n     String fullSourceURL = this->sourceURLStripped(vm);\n     auto sourceURL = truncateLongDataURL(fullSourceURL);\n \n-    if (sourceURL.isEmpty() || !hasLineAndColumnInfo())\n-        return makeString(functionName, '@', sourceURL);\n+    if (sourceURL.isEmpty() || !hasLineAndColumnInfo()) {\n+        builder.append(functionName, '@', sourceURL);\n+        return;\n+    }\n \n     auto lineColumn = computeLineAndColumn();\n-    return makeString(functionName, '@', sourceURL, ':', lineColumn.line, ':', lineColumn.column);\n+    builder.append(functionName, '@', sourceURL, ':', lineColumn.line, ':', lineColumn.column);\n }\n \n } // namespace JSC\n\n--- Source/JavaScriptCore/runtime/StackFrame.h ---\n@@ -100,7 +100,7 @@ class StackFrame {\n     SourceID sourceID() const;\n     JS_EXPORT_PRIVATE String sourceURL(VM&, AllowURLOverride = AllowURLOverride::Yes) const;\n     String sourceURLStripped(VM&) const;\n-    String toString(VM&) const;\n+    void appendTo(VM&, StringBuilder&) const;\n \n     bool hasBytecodeIndex() const;\n     BytecodeIndex bytecodeIndex() const;\n",
     "url": "https://github.com/WebKit/WebKit/commit/a91a43c004b88f93cdd4a4c0b35a9ee0ab9726cc",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
+    "message": "[CMake] testmasm fails to link on Cocoa after 325543@main\nhttps://bugs.webkit.org/show_bug.cgi?id=330515\nrdar://192103114\n\nReviewed by Zak Ridouh.\n\nThe tests added in 325543@main make testmasm depend on symbols in BrowserEngineCore. Weak link\ntestmasm against BrowserEngineCore for the CMake build to",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/shell/PlatformCocoa.cmake ---\n@@ -27,6 +27,8 @@ if (DEVELOPER_MODE)\n     if (ENABLE_JAVASCRIPTCORE_TOOLS)\n         WEBKIT_GENERATE_ENTITLEMENTS(testLibJSCTools USING ../Scripts/process-entitlements.sh)\n     endif ()\n+\n+    target_link_options(testmasm PRIVATE \"LINKER:-weak_framework,BrowserEngineCore\")\n endif ()\n \n # jsc can also be placed in JavaScriptCore.framework's Helpers directory.\n",
+    "url": "https://github.com/WebKit/WebKit/commit/3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"

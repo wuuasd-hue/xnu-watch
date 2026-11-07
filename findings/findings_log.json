@@ -88177,5 +88177,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T00:32:09.425670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
+    "url": "https://github.com/WebKit/WebKit/commit/3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
+    "message": "[CMake] testmasm fails to link on Cocoa after 325543@main\nhttps://bugs.webkit.org/show_bug.cgi?id=330515\nrdar://192103114\n\nReviewed by Zak Ridouh.\n\nThe tests added in 325543@main make testmasm depend on symbols in BrowserEngineCore. Weak link\ntestmasm against BrowserEngineCore for the CMake build to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T00:32:47.886966+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ef75f9b54b1267b1fca6cd04d10847caf7e9e21d",
+    "url": "https://github.com/WebKit/WebKit/commit/ef75f9b54b1267b1fca6cd04d10847caf7e9e21d",
+    "message": "Web Inspector: Pausing at the next statement stops in default class constructors and at the end of blackboxed scripts\nhttps://bugs.webkit.org/show_bug.cgi?id=329852\nrdar://187630174\n\nReviewed by Devin Rousso.\n\n\"Pause on next statement\" followed by a reload stopped in a place that Web Inspector could",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-07T00:33:26.079264+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d24e80edb596e23daef9491a9272e967691bb358",
+    "url": "https://github.com/WebKit/WebKit/commit/d24e80edb596e23daef9491a9272e967691bb358",
+    "message": "[JSC] JSON.parse should convert doubles without scanning them twice\nhttps://bugs.webkit.org/show_bug.cgi?id=329545\nrdar://191382963\n\nReviewed by Keith Miller.\n\nlexNumber scanned the integer part of a number, then handed anything with a fraction, an exponent, or\nmore than nine digits to WTF::parseJSO",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
