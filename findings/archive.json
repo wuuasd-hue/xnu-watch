@@ -21851,9 +21851,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/c5e929d60ff9a586525e05b8cadd52d28f2b3621",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -21865,9 +21866,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/1aa812de0ec4fe199bb4abbc830b5477b3a0cbc1",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -22059,6 +22061,20 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/WebCore/loader/PolicyChecker.cpp ---\n@@ -63,6 +63,7 @@\n #include \"Page.h\"\n #include \"PlatformStrategies.h\"\n #include \"ResourceLoadInfo.h\"\n+#include \"SecurityPolicy.h\"\n #include \"Settings.h\"\n #include \"ThreadableBlobRegistry.h\"\n #include \"URLKeepingBlobAlive.h\"\n@@ -237,7 +238,7 @@ void PolicyChecker::checkNavigationPolicy(ResourceRequest&& request, const Resou\n     RefPtr formState = formSubmission ? protect(formSubmission->state()): nullptr;\n     auto blobURLLifetimeExtension = extendBlobURLLifetimeIfNecessary(request, *protect(frame->document()), policyDecisionMode);\n     bool requestIsJavaScriptURL = request.url().protocolIsJavaScript();\n-    bool isInitialEmptyDocumentLoad = !frameLoader->stateMachine().committedFirstRealDocumentLoad() && request.url().protocolIsAbout() && !substituteData.isValid();\n+    bool isInitialEmptyDocumentLoad = !frameLoader->stateMachine().committedFirstRealDocumentLoad() && SecurityPolicy::shouldInheritSecurityOriginFromOwner(request.url()) && !substituteData.isValid();\n     m_delegateIsDecidingNavigationPolicy = true;\n     String suggestedFilename = action.downloadAttribute().isEmpty() ? nullAtom() : action.downloadAttribute();\n     FromDownloadAttribute fromDownloadAttribute = action.downloadAttribute().isNull() ? FromDownloadAttribute::No : FromDownloadAttribute::Yes;\n",
     "url": "https://github.com/WebKit/WebKit/commit/db2d79f4413193cbfa65b50ebddcec39eaba5809",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "634b3c9713775000a3981f2292f127fdb0193844",
+    "message": "[JSC] Skip thread-safety analysis in IPInt::initialize() to speed up compilation\nrdar://192131943\nhttps://bugs.webkit.org/show_bug.cgi?id=330550\n\nReviewed by Keith Miller.\n\nJSC::IPInt::initialize() checks the dispatch table layout of every IPInt opcode, about 725 checks.\nEach VALIDATE_IPINT_*_FROM_B",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/llint/InPlaceInterpreter.cpp ---\n@@ -75,7 +75,8 @@ do { \\\n     v(ipint_atomic_dispatch_base, ipint_memory_atomic_notify_atomic_validate) \\\n \n \n-void initialize()\n+// FIXME: Remove once Clang fixes Thread Safety scaling (rdar://192171252).\n+void initialize() WTF_IGNORES_THREAD_SAFETY_ANALYSIS\n {\n #if !ENABLE(C_LOOP) && (CPU(ADDRESS64) && (CPU(ARM64) || CPU(X86_64)))\n \n",
+    "url": "https://github.com/WebKit/WebKit/commit/634b3c9713775000a3981f2292f127fdb0193844",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
