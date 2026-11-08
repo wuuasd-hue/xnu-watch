@@ -88577,5 +88577,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T15:24:39.323838+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "974011404e16882815418fb6231b420734d8335b",
+    "url": "https://github.com/WebKit/WebKit/commit/974011404e16882815418fb6231b420734d8335b",
+    "message": "[GLib] JSCException should not use g_return macros to early return when context was destroyed\nhttps://bugs.webkit.org/show_bug.cgi?id=330621\n\nReviewed by Claudio Saavedra.\n\nThe g_return macros can be disabled at build time and are not meant to\nbe used for expected cases like this one.\n\nTest: Tools/T",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T15:25:18.310835+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c07f21e435d0b9b0969768d6a31c415a8ea066b",
+    "url": "https://github.com/WebKit/WebKit/commit/8c07f21e435d0b9b0969768d6a31c415a8ea066b",
+    "message": "[GLib] JSCException must keep its virtual machine alive\nhttps://bugs.webkit.org/show_bug.cgi?id=330582\n\nReviewed by Carlos Garcia Campos.\n\nJSCException holds a JSC::Strong into the VM of the context it was\nraised in, but only a weak pointer to that context. The context drops\nits JSGlobalContext and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T15:25:57.060181+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "94b9e31c9dd8643bb91525368326b54f22b95424",
+    "url": "https://github.com/WebKit/WebKit/commit/94b9e31c9dd8643bb91525368326b54f22b95424",
+    "message": "[JSC] Spread call should not call operations when the callee is inlined\nhttps://bugs.webkit.org/show_bug.cgi?id=329634\n\nReviewed by Yusuke Suzuki.\n\n325231@main made `f(...array)` build the callee frame without calling C++ operations,\nbut only when the callee is not inlined. When it is inlined, Varar",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T15:26:35.141900+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d336a98ee3cb3346cb10df4f9423265e80fe025d",
+    "url": "https://github.com/WebKit/WebKit/commit/d336a98ee3cb3346cb10df4f9423265e80fe025d",
+    "message": "[JSC] Make %TypedArray%.prototype.join fast\nhttps://bugs.webkit.org/show_bug.cgi?id=330279\nrdar://178158917\n\nReviewed by Tadeu Zagallo.\n\nThis patch makes %TypedArray%.prototype.join faster.\n\n1. For non shared integer TypedArray, we have extreme fast path\n   \"joinIntegerTypedArray\". We only apply thi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]

@@ -21881,9 +21881,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/94b9e31c9dd8643bb91525368326b54f22b95424",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -21895,9 +21896,10 @@
     "url": "https://github.com/WebKit/WebKit/commit/d336a98ee3cb3346cb10df4f9423265e80fe025d",
     "last_outcome": "DISCARD",
     "focus_used": [
-      "initial pass (target-specific lens)"
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
     ],
-    "times_reexamined": 0
+    "times_reexamined": 1
   },
   {
     "repo": "WebKit/WebKit",
@@ -22075,6 +22077,34 @@
     "lens_key": "webkit_swift",
     "diff": "\n--- Source/JavaScriptCore/llint/InPlaceInterpreter.cpp ---\n@@ -75,7 +75,8 @@ do { \\\n     v(ipint_atomic_dispatch_base, ipint_memory_atomic_notify_atomic_validate) \\\n \n \n-void initialize()\n+// FIXME: Remove once Clang fixes Thread Safety scaling (rdar://192171252).\n+void initialize() WTF_IGNORES_THREAD_SAFETY_ANALYSIS\n {\n #if !ENABLE(C_LOOP) && (CPU(ADDRESS64) && (CPU(ARM64) || CPU(X86_64)))\n \n",
     "url": "https://github.com/WebKit/WebKit/commit/634b3c9713775000a3981f2292f127fdb0193844",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "974011404e16882815418fb6231b420734d8335b",
+    "message": "[GLib] JSCException should not use g_return macros to early return when context was destroyed\nhttps://bugs.webkit.org/show_bug.cgi?id=330621\n\nReviewed by Claudio Saavedra.\n\nThe g_return macros can be disabled at build time and are not meant to\nbe used for expected cases like this one.\n\nTest: Tools/T",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/API/glib/JSCException.cpp ---\n@@ -81,14 +81,15 @@ JSValueRef jscExceptionGetJSValue(JSCException* exception)\n     return toRef(exception->priv->jsException.get());\n }\n \n-void jscExceptionEnsureProperties(JSCException* exception)\n+static void jscExceptionEnsureProperties(JSCException* exception)\n {\n     JSCExceptionPrivate* priv = exception->priv;\n     if (priv->cached)\n         return;\n \n     priv->cached = true;\n \n+    ASSERT(priv->context);\n     auto value = jscContextGetOrCreateValue(priv->context.get(), toRef(priv->jsException.get()));\n     auto propertyValue = adoptGRef(jsc_value_object_get_property(value.get(), \"name\"));\n     if (!jsc_value_is_undefined(propertyValue.get()))\n@@ -254,7 +255,8 @@ const char* jsc_exception_get_name(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return nullptr;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->errorName.utf8();\n@@ -273,7 +275,8 @@ const char* jsc_exception_get_message(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return nullptr;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->message.utf8();\n@@ -292,7 +295,8 @@ guint jsc_exception_get_line_number(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), 0);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, 0);\n+    if (!priv->context)\n+        return 0;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->lineNumber;\n@@ -311,7 +315,8 @@ guint jsc_exception_get_column_number(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), 0);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, 0);\n+    if (!priv->context)\n+        return 0;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->columnNumber;\n@@ -330,7 +335,8 @@ const char* jsc_exception_get_source_uri(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return nullptr;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->sourceURI.utf8();\n@@ -349,7 +355,8 @@ const char* jsc_exception_get_backtrace_string(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return nullptr;\n \n     jscExceptionEnsureProperties(exception);\n     return priv->backtrace.utf8();\n@@ -368,7 +375,8 @@ char* jsc_exception_to_string(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return g_strdup(\"\");\n \n     auto value = jscContextGetOrCreateValue(priv->context.get(), toRef(priv->jsException.get()));\n     return jsc_value_to_string(value.get());\n@@ -388,7 +396,8 @@ char* jsc_exception_report(JSCException* exception)\n     g_return_val_if_fail(JSC_IS_EXCEPTION(exception), nullptr);\n \n     JSCExceptionPrivate* priv = exception->priv;\n-    g_return_val_if_fail(priv->context, nullptr);\n+    if (!priv->context)\n+        return g_strdup(\"\");\n \n     jscExceptionEnsureProperties(exception);\n     auto report = StringBuilder();\n\n--- Tools/TestWebKitAPI/Tests/JavaScriptCore/glib/TestJSC.cpp ---\n@@ -3932,6 +3932,36 @@ static void testJSCExceptions()\n         jsc_context_clear_exception(context.get());\n         g_assert_null(jsc_context_get_exception(context.get()));\n     }\n+\n+    {\n+        LeakChecker checker;\n+        GRefPtr<JSCContext> context = adoptGRef(jsc_context_new());\n+        checker.watch(context.get());\n+\n+        GRefPtr<JSCValue> result = adoptGRef(jsc_context_evaluate(context.get(), \"foo\", -1));\n+        checker.watch(result.get());\n+        g_assert_true(jsc_value_is_undefined(result.get()));\n+\n+        GRefPtr<JSCException> exception = jsc_context_get_exception(context.get());\n+        g_assert_true(JSC_IS_EXCEPTION(exception.get()));\n+        checker.watch(exception.get());\n+\n+        // Release the context before properties are cached.\n+        result = nullptr;\n+        g_assert_cmpuint(G_OBJECT(context.get())->ref_count, ==, 1);\n+        context = nullptr;\n+\n+        g_assert_null(jsc_exception_get_name(exception.get()));\n+        g_assert_null(jsc_exception_get_message(exception.get()));\n+        g_assert_cmpuint(jsc_exception_get_line_number(exception.get()), ==, 0);\n+        g_assert_cmpuint(jsc_exception_get_column_number(exception.get()), ==, 0);\n+        g_assert_null(jsc_exception_get_source_uri(exception.get()));\n+        g_assert_null(jsc_exception_get_backtrace_string(exception.get()));\n+        GUniquePtr<char> errorString(jsc_exception_to_string(exception.get()));\n+        g_assert_cmpstr(errorString.get(), ==, \"\");\n+        GUniquePtr<char> reportString(jsc_exception_report(exception.get()));\n+        g_assert_cmpstr(reportString.get(), ==, \"\");\n+    }\n }\n \n struct AsyncPromiseTestData {\n",
+    "url": "https://github.com/WebKit/WebKit/commit/974011404e16882815418fb6231b420734d8335b",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)"
+    ],
+    "times_reexamined": 0
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "8c07f21e435d0b9b0969768d6a31c415a8ea066b",
+    "message": "[GLib] JSCException must keep its virtual machine alive\nhttps://bugs.webkit.org/show_bug.cgi?id=330582\n\nReviewed by Carlos Garcia Campos.\n\nJSCException holds a JSC::Strong into the VM of the context it was\nraised in, but only a weak pointer to that context. The context drops\nits JSGlobalContext and ",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/API/glib/JSCException.cpp ---\n@@ -42,6 +42,8 @@\n  */\n \n struct _JSCExceptionPrivate {\n+    // Never read: keeps the VM of jsException alive, since context is a weak pointer.\n+    GRefPtr<JSCVirtualMachine> vm;\n     GWeakPtr<JSCContext> context;\n     JSC::Strong<JSC::JSObject> jsException;\n     bool cached;\n@@ -66,6 +68,7 @@ GRefPtr<JSCException> jscExceptionCreate(JSCContext* context, JSValueRef jsExcep\n     JSC::JSGlobalObject* globalObject = toJS(jsContext);\n     Ref vm = globalObject->vm();\n     JSC::JSLockHolder locker(vm);\n+    exception->priv->vm = jsc_context_get_virtual_machine(context);\n     exception->priv->jsException.set(vm, toJS(JSValueToObject(jsContext, jsException, nullptr)));\n     // The context has a strong reference to the exception, so we can't ref the context. We use a weak\n     // pointer instead to invalidate the exception if the context is destroyed before.\n",
+    "url": "https://github.com/WebKit/WebKit/commit/8c07f21e435d0b9b0969768d6a31c415a8ea066b",
     "last_outcome": "DISCARD",
     "focus_used": [
       "initial pass (target-specific lens)"
