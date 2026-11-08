@@ -88717,5 +88717,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T23:13:59.718312+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2409dc0bcd663302d17bb22385f0b7033959706",
+    "url": "https://github.com/WebKit/WebKit/commit/b2409dc0bcd663302d17bb22385f0b7033959706",
+    "message": "[JSC] Allow a concurrent sweep's finalizers to clear other Weak handles\nhttps://bugs.webkit.org/show_bug.cgi?id=330250\nrdar://191870495\n\nReviewed by Dan Hecht.\n\nAdds Weak<T>::clearConcurrently() and WeakImpl::clearConcurrently() so a finalizer running in a\nconcurrent sweep can clear handles other th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T23:14:37.111564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7e4f1ae76f66dd30c14c27d46770d7e3f2795f5",
+    "url": "https://github.com/WebKit/WebKit/commit/b7e4f1ae76f66dd30c14c27d46770d7e3f2795f5",
+    "message": "Replace MouseButton sentinel values with std::expected<MouseButton, MouseButtonState>\nhttps://bugs.webkit.org/show_bug.cgi?id=329651\nrdar://191457726\n\nReviewed by Ryosuke Niwa.\n\nMouseButton held two internal sentinels alongside the values the DOM can expose: None (-2) for \"no button\"\nand PointerHasN",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T23:15:14.783243+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8221e381b1b1fc83765ec50e158176224d128b63",
+    "url": "https://github.com/WebKit/WebKit/commit/8221e381b1b1fc83765ec50e158176224d128b63",
+    "message": "[Site Isolation] Web Inspector: Add a Target event for debugger pause sessions\nhttps://bugs.webkit.org/show_bug.cgi?id=328700\nrdar://190864328\n\nReviewed by Qianlang Chen.\n\nWith SiteIsolationGlobalDebuggerPauseEnabled, the UI process holds every page of the browsing\ncontext group, in every process, w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T23:15:52.591373+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91c995960a74faeb8691b85c8915137fec325882",
+    "url": "https://github.com/WebKit/WebKit/commit/91c995960a74faeb8691b85c8915137fec325882",
+    "message": "[GLib] RemoteInspectorServer should not replace an attached inspector client\nhttps://bugs.webkit.org/show_bug.cgi?id=330426\n\nReviewed by Carlos Garcia Campos.\n\nA second SetupInspectorClient silently replaced the attached client,\nand a second StartAutomationSession still requested a session for the\ne",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
