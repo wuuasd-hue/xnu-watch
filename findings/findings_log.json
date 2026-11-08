@@ -88657,5 +88657,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T19:48:20.051786+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5494cb4d4c0418a823554a36e7766038e9a90083",
+    "url": "https://github.com/WebKit/WebKit/commit/5494cb4d4c0418a823554a36e7766038e9a90083",
+    "message": "[Image Redux] Pass image animation state in via the draw descriptor\nhttps://bugs.webkit.org/show_bug.cgi?id=330536\n\nReviewed by Said Abou-Hallawa.\n\nA first step toward supporting the CSS Image Animation, https://drafts.csswg.org/css-image-animation-1/ spec\nand having more control over the play state",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T19:48:58.426221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bb7fdb1ac1c4ad4c32a5e99a1f24415f3d765453",
+    "url": "https://github.com/WebKit/WebKit/commit/bb7fdb1ac1c4ad4c32a5e99a1f24415f3d765453",
+    "message": "[Image Redux] Make RenderView deal in Style::Image\nhttps://bugs.webkit.org/show_bug.cgi?id=330157\n\nReviewed by Darin Adler.\n\nReplace the map of renderer to CacheImage that RenderView keeps for image animation pausing with a\nset of just the renderers. This allows accurately pausing/unpausing all the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T19:49:37.049225+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65bd2be726561045c08a54bead690e39163fc2b1",
+    "url": "https://github.com/WebKit/WebKit/commit/65bd2be726561045c08a54bead690e39163fc2b1",
+    "message": "[GLib] Validate client messages in RemoteInspectorServer\nhttps://bugs.webkit.org/show_bug.cgi?id=330342\n\nReviewed by Alejandro G. Castro.\n\nSetup, FrontendDidClose and SendMessageToBackend relied on ASSERTs to\ncheck that they came from the inspector client and referred to a\nknown connection. Return e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
