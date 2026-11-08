@@ -88477,5 +88477,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T01:34:13.367193+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b46acf46272de7040b601839fbbcdea5910ee25c",
+    "url": "https://github.com/WebKit/WebKit/commit/b46acf46272de7040b601839fbbcdea5910ee25c",
+    "message": "[JSC] Add cache for Intl.Locale\nhttps://bugs.webkit.org/show_bug.cgi?id=330024\nrdar://191722110\n\nReviewed by Sosuke Suzuki.\n\nThis patch adds Intl.Locale caching mechanism into IntlCache when option\nis not specified. Intl.Locale constructor just computes m_localeID and\nm_nonUnicodeExtensions, thus we",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-08T01:34:51.114995+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "53bedf6450aff054dccc25b79485e7e313398adf",
+    "url": "https://github.com/WebKit/WebKit/commit/53bedf6450aff054dccc25b79485e7e313398adf",
+    "message": "Store one status byte per bucket in WTF::HashTable\nhttps://bugs.webkit.org/show_bug.cgi?id=330025\nrdar://191722665\n\nReviewed by Yusuke Suzuki.\n\nThe status byte stores empty, deleted, or 7 bits of the key's hash. (And we use\nadditional hash bits, scaled with table size, to index into the status byte\n",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
