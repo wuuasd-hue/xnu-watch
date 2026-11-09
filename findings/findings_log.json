@@ -88797,5 +88797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T02:46:35.404630+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60af4b364c9ff7d97561d9d3255e323a89400415",
+    "url": "https://github.com/WebKit/WebKit/commit/60af4b364c9ff7d97561d9d3255e323a89400415",
+    "message": "[JSC] Implement Float16 ops in x64 via F16C\nhttps://bugs.webkit.org/show_bug.cgi?id=329697\nrdar://191501110\n\nReviewed by Tadeu Zagallo.\n\nx64 F16C supports Float16 operations natively. This patch implements JIT\nsupport for Float16Array in x64 when F16C is enabled. F16C instructions\nare, VCVTPH2PS (Fl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T02:47:13.496483+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4294ae2562a070902db383b96c00ddff5b438193",
+    "url": "https://github.com/WebKit/WebKit/commit/4294ae2562a070902db383b96c00ddff5b438193",
+    "message": "[JSC] Rebuild assertIsMutatorOrMutatorIsStopped on the GC protocol's roles\nhttps://bugs.webkit.org/show_bug.cgi?id=330335\nrdar://191952601\n\nReviewed by Keith Miller.\n\nBlockDirectory's bit vectors are guarded by m_bitvectorLock, a reader-writer\nlock. Reading or writing a single bit takes only its sha",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
