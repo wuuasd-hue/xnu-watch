@@ -88837,5 +88837,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T10:28:24.128442+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91b0497ddfdba8c3ba2a28abf9a97bd37d04fab3",
+    "url": "https://github.com/WebKit/WebKit/commit/91b0497ddfdba8c3ba2a28abf9a97bd37d04fab3",
+    "message": "Going back can fail to restore a child frame that loads in another process\nhttps://bugs.webkit.org/show_bug.cgi?id=330469\nrdar://192079240\n\nReviewed by Sihui Liu.\n\nhistory-traversal-frames.tentative.https.html, added in 325854@main, timed\nout with site isolation after 325869@main, and 326010@main ad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T10:29:02.009447+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a91a43c004b88f93cdd4a4c0b35a9ee0ab9726cc",
+    "url": "https://github.com/WebKit/WebKit/commit/a91a43c004b88f93cdd4a4c0b35a9ee0ab9726cc",
+    "message": "[JSC] Append stack frames directly to `StringBuilder` in `Interpreter::stackTraceAsString`\nhttps://bugs.webkit.org/show_bug.cgi?id=330372\n\nReviewed by Yusuke Suzuki.\n\nInterpreter::stackTraceAsString creates a temporary String for each frame with\nStackFrame::toString, and then copies it into the Stri",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T10:29:40.103557+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
+    "url": "https://github.com/WebKit/WebKit/commit/3ccc0d86221a55e55f9eeb2d6febb749cca2d6cd",
+    "message": "[CMake] testmasm fails to link on Cocoa after 325543@main\nhttps://bugs.webkit.org/show_bug.cgi?id=330515\nrdar://192103114\n\nReviewed by Zak Ridouh.\n\nThe tests added in 325543@main make testmasm depend on symbols in BrowserEngineCore. Weak link\ntestmasm against BrowserEngineCore for the CMake build to",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
