@@ -88897,5 +88897,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:54:57.651096+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9956df9c2bc471210b77cd0dc000e796f810e931",
+    "url": "https://github.com/WebKit/WebKit/commit/9956df9c2bc471210b77cd0dc000e796f810e931",
+    "message": "Use Vector constructor with initial capacity when code separates declaration and reservation\nhttps://bugs.webkit.org/show_bug.cgi?id=330225\n\nReviewed by Richard Robinson.\n\nFollow-up to bug 329771 and bug 330165. Convert\n\n    Vector<T> v;\n    <code that does not touch v>\n    v.reserveInitialCapacity(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:55:35.351890+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3fc6f50ea0c6074d1173fe36569d220091fce521",
+    "url": "https://github.com/WebKit/WebKit/commit/3fc6f50ea0c6074d1173fe36569d220091fce521",
+    "message": "[JSC] Replace world-is-stopped and GC-thread asserts with role checks\nhttps://bugs.webkit.org/show_bug.cgi?id=330493\nrdar://192095619\n\nReviewed by Keith Miller.\n\nSeveral places that run in a collection's stopped phases asserted only that the\nworld is stopped, which says nothing about which thread is",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:56:13.031043+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "465472d1a232ad77928658a0f7b68f6316f8945c",
+    "url": "https://github.com/WebKit/WebKit/commit/465472d1a232ad77928658a0f7b68f6316f8945c",
+    "message": "[JSC] Require the stopped-world conductor in the GC's Begin and End helpers\nhttps://bugs.webkit.org/show_bug.cgi?id=330500\nrdar://192098259\n\nReviewed by Keith Miller.\n\nThese functions do the GC's Begin and End work outside Heap. They rely on the\nworld being stopped, and in End on the collection's fi",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:56:50.953538+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "d7be7f6c59f1aff8a336fdb12587b63d4d2f92b9",
+    "url": "https://github.com/swiftlang/swift/commit/d7be7f6c59f1aff8a336fdb12587b63d4d2f92b9",
+    "message": "Merge pull request #93550 from carlpeto/eng/PR-93526\n\n[Windows] [Backtracing] Add hook for failfast",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:57:29.268684+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff29931b0c9cd2db17ca61e807cd0b22256eb80d",
+    "url": "https://github.com/WebKit/WebKit/commit/ff29931b0c9cd2db17ca61e807cd0b22256eb80d",
+    "message": "[JSC] Fix Array.prototype.flat() error message to say 2^53 - 1\nhttps://bugs.webkit.org/show_bug.cgi?id=330290\nrdar://191983165\n\nReviewed by Keith Miller.\n\nFlattenIntoArray throws a TypeError when targetIndex >= 2^53 - 1. The error\nmessage is currently incorrect.\n\nNo new tests: reaching the check tak",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-09T20:58:07.381539+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a02b1252bf0f775a9e5e2d14fe6b274a25c0f502",
+    "url": "https://github.com/WebKit/WebKit/commit/a02b1252bf0f775a9e5e2d14fe6b274a25c0f502",
+    "message": "[Site Isolation] Web Inspector: Introduce a Timeline agent for frame targets\nrdar://191252635\nhttps://bugs.webkit.org/show_bug.cgi?id=329362\n\nReviewed by Basuke Suzuki.\n\nIntroduce FrameTimelineAgent to report each frame's Timeline records\non its own frame target under Site Isolation. Before this, Ti",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
