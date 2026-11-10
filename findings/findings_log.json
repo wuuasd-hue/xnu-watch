@@ -89017,5 +89017,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T03:00:46.717713+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65b433b57c8dfa91665f5ab34c558df7bbb3af59",
+    "url": "https://github.com/WebKit/WebKit/commit/65b433b57c8dfa91665f5ab34c558df7bbb3af59",
+    "message": "[CMake] Replace file(GLOB ...) with depfile directory copies\nhttps://bugs.webkit.org/show_bug.cgi?id=330601\nrdar://188725492\n\nReviewed by Zak Ridouh and David Kilzer.\n\nGlobbing at configure time is harmful to the incremental build, because\nthe build will not respond to changes in the globbed paths u",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T03:01:24.906358+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d7b569a0c205c0b0346ce3c268cec676b712f466",
+    "url": "https://github.com/WebKit/WebKit/commit/d7b569a0c205c0b0346ce3c268cec676b712f466",
+    "message": "Implement Report and ReportBody as dictionaries\nhttps://bugs.webkit.org/show_bug.cgi?id=330301\nrdar://191919096\n\nReviewed by Ryan Reno and Brent Fulgham.\n\nReportingObserver now gives its callback and takeRecords() reports as plain\nobjects, as the Reporting API has required since\nhttps://github.com/w",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T03:02:02.706854+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "db2d79f4413193cbfa65b50ebddcec39eaba5809",
+    "url": "https://github.com/WebKit/WebKit/commit/db2d79f4413193cbfa65b50ebddcec39eaba5809",
+    "message": "[Site Isolation] http/tests/misc/frame-default-enc-different-domain.html asserts in FrameLoadState::didFailProvisionalLoad\nhttps://bugs.webkit.org/show_bug.cgi?id=330357\nrdar://191970216\n\nReviewed by Sihui Liu.\n\nThe root cause here is that two WebContent processes are starting a provisional load for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
