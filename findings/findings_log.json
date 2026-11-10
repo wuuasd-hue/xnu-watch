@@ -89257,5 +89257,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T23:35:25.937274+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b2409dc0bcd663302d17bb22385f0b7033959706",
+    "url": "https://github.com/WebKit/WebKit/commit/b2409dc0bcd663302d17bb22385f0b7033959706",
+    "message": "[JSC] Allow a concurrent sweep's finalizers to clear other Weak handles\nhttps://bugs.webkit.org/show_bug.cgi?id=330250\nrdar://191870495\n\nReviewed by Dan Hecht.\n\nAdds Weak<T>::clearConcurrently() and WeakImpl::clearConcurrently() so a finalizer running in a\nconcurrent sweep can clear handles other th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T23:36:04.588338+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b7e4f1ae76f66dd30c14c27d46770d7e3f2795f5",
+    "url": "https://github.com/WebKit/WebKit/commit/b7e4f1ae76f66dd30c14c27d46770d7e3f2795f5",
+    "message": "Replace MouseButton sentinel values with std::expected<MouseButton, MouseButtonState>\nhttps://bugs.webkit.org/show_bug.cgi?id=329651\nrdar://191457726\n\nReviewed by Ryosuke Niwa.\n\nMouseButton held two internal sentinels alongside the values the DOM can expose: None (-2) for \"no button\"\nand PointerHasN",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
