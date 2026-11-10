@@ -89077,5 +89077,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T10:48:46.929197+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d38f697f3d8a38705a5060ff83d7c5ad8e14b5ac",
+    "url": "https://github.com/WebKit/WebKit/commit/d38f697f3d8a38705a5060ff83d7c5ad8e14b5ac",
+    "message": "Fix unused-but-set-global warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=330799\n\nReviewed by Ross Kirsling.\n\nClang 23 turns on unused-but-set-global warnings by default. Run a non-unified build to pick up instances of the warning and fix them.\n\nOne case was a false positive so the warning was disa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T10:49:27.688886+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60e7492cd3b71621665c1ce261f8c0a95aefa84c",
+    "url": "https://github.com/WebKit/WebKit/commit/60e7492cd3b71621665c1ce261f8c0a95aefa84c",
+    "message": "WebSocket started in a worker thread doesn't receive new messages when main thread is blocked\nhttps://bugs.webkit.org/show_bug.cgi?id=325495\n\nReviewed by Alex Christensen.\n\nWebSockets created in a worker thread use a bridge to handle the channel\nfrom the main thread. In WebKit2, where networking hap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T10:50:12.029906+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "968725f5dc9edf2fa769612893a53af127a95691",
+    "url": "https://github.com/WebKit/WebKit/commit/968725f5dc9edf2fa769612893a53af127a95691",
+    "message": "Update safer C++ expectations after enabling borrow checkers\nhttps://bugs.webkit.org/show_bug.cgi?id=330866\n\nUnreviewed. Updated safer C++ expectations for borrow checkers.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UnborrowedCallArgsCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectatio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T10:50:50.492691+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "634b3c9713775000a3981f2292f127fdb0193844",
+    "url": "https://github.com/WebKit/WebKit/commit/634b3c9713775000a3981f2292f127fdb0193844",
+    "message": "[JSC] Skip thread-safety analysis in IPInt::initialize() to speed up compilation\nrdar://192131943\nhttps://bugs.webkit.org/show_bug.cgi?id=330550\n\nReviewed by Keith Miller.\n\nJSC::IPInt::initialize() checks the dispatch table layout of every IPInt opcode, about 725 checks.\nEach VALIDATE_IPINT_*_FROM_B",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T10:51:28.655486+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "974011404e16882815418fb6231b420734d8335b",
+    "url": "https://github.com/WebKit/WebKit/commit/974011404e16882815418fb6231b420734d8335b",
+    "message": "[GLib] JSCException should not use g_return macros to early return when context was destroyed\nhttps://bugs.webkit.org/show_bug.cgi?id=330621\n\nReviewed by Claudio Saavedra.\n\nThe g_return macros can be disabled at build time and are not meant to\nbe used for expected cases like this one.\n\nTest: Tools/T",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
