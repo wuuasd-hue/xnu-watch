@@ -89177,5 +89177,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T18:20:18.442757+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "51a6a5d5d7c1704f0ccc457f41a6be5dca502d92",
+    "url": "https://github.com/WebKit/WebKit/commit/51a6a5d5d7c1704f0ccc457f41a6be5dca502d92",
+    "message": "Many animated images in the web page can freeze its rendering\nhttps://bugs.webkit.org/show_bug.cgi?id=308730\nrdar://183950348\n\nReviewed by Matt Woodrow.\n\nEach async image decode currently creates its own WorkQueue. For large images,\nthat queue is closed once decoding finishes. For animated images, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T18:20:56.980329+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40451019d9acbfd86f308041811ab38c9f03bae2",
+    "url": "https://github.com/WebKit/WebKit/commit/40451019d9acbfd86f308041811ab38c9f03bae2",
+    "message": "Fixed SourceProfiler regression after module loader rewrite.\nhttps://bugs.webkit.org/show_bug.cgi?id=330874\nrdar://192257376\n\nReviewed by Keith Miller.\n\nThe change https://commits.webkit.org/311236@main left out the code to service the SourceProfiler.\nRe-instating that code.\n\nTest: Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T18:21:35.492382+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8c07f21e435d0b9b0969768d6a31c415a8ea066b",
+    "url": "https://github.com/WebKit/WebKit/commit/8c07f21e435d0b9b0969768d6a31c415a8ea066b",
+    "message": "[GLib] JSCException must keep its virtual machine alive\nhttps://bugs.webkit.org/show_bug.cgi?id=330582\n\nReviewed by Carlos Garcia Campos.\n\nJSCException holds a JSC::Strong into the VM of the context it was\nraised in, but only a weak pointer to that context. The context drops\nits JSGlobalContext and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-10T18:22:13.942813+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5494cb4d4c0418a823554a36e7766038e9a90083",
+    "url": "https://github.com/WebKit/WebKit/commit/5494cb4d4c0418a823554a36e7766038e9a90083",
+    "message": "[Image Redux] Pass image animation state in via the draw descriptor\nhttps://bugs.webkit.org/show_bug.cgi?id=330536\n\nReviewed by Said Abou-Hallawa.\n\nA first step toward supporting the CSS Image Animation, https://drafts.csswg.org/css-image-animation-1/ spec\nand having more control over the play state",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
