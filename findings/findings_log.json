@@ -89297,5 +89297,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T03:15:54.473794+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "91b0497ddfdba8c3ba2a28abf9a97bd37d04fab3",
+    "url": "https://github.com/WebKit/WebKit/commit/91b0497ddfdba8c3ba2a28abf9a97bd37d04fab3",
+    "message": "Going back can fail to restore a child frame that loads in another process\nhttps://bugs.webkit.org/show_bug.cgi?id=330469\nrdar://192079240\n\nReviewed by Sihui Liu.\n\nhistory-traversal-frames.tentative.https.html, added in 325854@main, timed\nout with site isolation after 325869@main, and 326010@main ad",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T03:16:32.805586+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9956df9c2bc471210b77cd0dc000e796f810e931",
+    "url": "https://github.com/WebKit/WebKit/commit/9956df9c2bc471210b77cd0dc000e796f810e931",
+    "message": "Use Vector constructor with initial capacity when code separates declaration and reservation\nhttps://bugs.webkit.org/show_bug.cgi?id=330225\n\nReviewed by Richard Robinson.\n\nFollow-up to bug 329771 and bug 330165. Convert\n\n    Vector<T> v;\n    <code that does not touch v>\n    v.reserveInitialCapacity(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
