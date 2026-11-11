@@ -89437,5 +89437,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T18:47:08.148506+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "22a68947f7cae5dd45e805a1b7212174053deb7f",
+    "url": "https://github.com/swiftlang/swift/commit/22a68947f7cae5dd45e805a1b7212174053deb7f",
+    "message": "[TSan] Teach TSan about ARC releases, and synchronization for CoWed objects (#94050)\n\nCurrently TSan will falsely report data races between accesses on one\nthread, and accesses on another thread for an object that passed the\nisUniquelyReferenced check. These accesses must be ordered by the ARC\nrelea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T18:47:45.964902+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "90b6bca59136363e71a4b90c4f3d1e3ed4727b1d",
+    "url": "https://github.com/swiftlang/swift/commit/90b6bca59136363e71a4b90c4f3d1e3ed4727b1d",
+    "message": "Merge pull request #94176 from mikeash/deallocated-nonzero-retain-count-message-improvement\n\n[Runtime] Reword \"deallocated with non-zero retain count\" error message to call out unsafe concurrent access.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T18:48:24.112321+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "d7be7f6c59f1aff8a336fdb12587b63d4d2f92b9",
+    "url": "https://github.com/swiftlang/swift/commit/d7be7f6c59f1aff8a336fdb12587b63d4d2f92b9",
+    "message": "Merge pull request #93550 from carlpeto/eng/PR-93526\n\n[Windows] [Backtracing] Add hook for failfast",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-11T18:49:01.954322+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "65b433b57c8dfa91665f5ab34c558df7bbb3af59",
+    "url": "https://github.com/WebKit/WebKit/commit/65b433b57c8dfa91665f5ab34c558df7bbb3af59",
+    "message": "[CMake] Replace file(GLOB ...) with depfile directory copies\nhttps://bugs.webkit.org/show_bug.cgi?id=330601\nrdar://188725492\n\nReviewed by Zak Ridouh and David Kilzer.\n\nGlobbing at configure time is harmful to the incremental build, because\nthe build will not respond to changes in the globbed paths u",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
