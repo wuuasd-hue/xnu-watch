@@ -89517,5 +89517,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T01:06:08.864117+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b7fd559da8689c4cf929452a9e598423614e592",
+    "url": "https://github.com/WebKit/WebKit/commit/3b7fd559da8689c4cf929452a9e598423614e592",
+    "message": "Make ContentSecurityPolicy heap allocated\nhttps://bugs.webkit.org/show_bug.cgi?id=331056\n\nReviewed by Anne van Kesteren.\n\nDrop CheckedPtrDeleteCheckException::Yes from ContentSecurityPolicy so that\nCheckedPtr hardening applies, and heap allocate the remaining stack instances.\n\n* Source/WebCore/loade",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T01:06:46.927103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b99bcf839a50b6a841e75b46771706180e00def0",
+    "url": "https://github.com/WebKit/WebKit/commit/b99bcf839a50b6a841e75b46771706180e00def0",
+    "message": "[Site Isolation] Fix imported/w3c/web-platform-tests/resource-timing/iframe-sequence-of-events.html\nhttps://bugs.webkit.org/show_bug.cgi?id=330781\nrdar://192280067\n\nReviewed by Ryosuke Niwa.\n\nThere are a few places we need to get the parent frame or owner element through the frame being replaced\nif ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T01:07:24.984254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d38f697f3d8a38705a5060ff83d7c5ad8e14b5ac",
+    "url": "https://github.com/WebKit/WebKit/commit/d38f697f3d8a38705a5060ff83d7c5ad8e14b5ac",
+    "message": "Fix unused-but-set-global warnings\nhttps://bugs.webkit.org/show_bug.cgi?id=330799\n\nReviewed by Ross Kirsling.\n\nClang 23 turns on unused-but-set-global warnings by default. Run a non-unified build to pick up instances of the warning and fix them.\n\nOne case was a false positive so the warning was disa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T01:08:02.898782+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "60e7492cd3b71621665c1ce261f8c0a95aefa84c",
+    "url": "https://github.com/WebKit/WebKit/commit/60e7492cd3b71621665c1ce261f8c0a95aefa84c",
+    "message": "WebSocket started in a worker thread doesn't receive new messages when main thread is blocked\nhttps://bugs.webkit.org/show_bug.cgi?id=325495\n\nReviewed by Alex Christensen.\n\nWebSockets created in a worker thread use a bridge to handle the channel\nfrom the main thread. In WebKit2, where networking hap",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
