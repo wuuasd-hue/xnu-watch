@@ -89677,5 +89677,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T22:29:54.089979+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c66c886796e6b738f451185dc7eaa205655b41d",
+    "url": "https://github.com/WebKit/WebKit/commit/7c66c886796e6b738f451185dc7eaa205655b41d",
+    "message": "[JSC] branchTest16 with an ExtendedAddress does not scale its index by the element size\nhttps://bugs.webkit.org/show_bug.cgi?id=330078\nrdar://191514903\n\nReviewed by Mark Lam.\n\nbranchTest16(ResultCondition, ExtendedAddress, mask) read the halfword from\ntable + index instead of table + index * 2. Curr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T22:30:32.254537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "993537d7ce48908d219c1a82862c9802ba58523c",
+    "url": "https://github.com/WebKit/WebKit/commit/993537d7ce48908d219c1a82862c9802ba58523c",
+    "message": "Support referrerpolicy on SVG <image> and <script>\nhttps://bugs.webkit.org/show_bug.cgi?id=327370\nrdar://190494033\n\nReviewed by Anne van Kesteren.\n\nSVG 2 gives <image> and <script> a referrerpolicy attribute, with the\nprocessing rules of HTML <img> and <script>, and a referrerPolicy IDL\nattribute th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T22:31:10.127933+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "37b44867702bc0db6a2f152638f278f2d93e4636",
+    "url": "https://github.com/WebKit/WebKit/commit/37b44867702bc0db6a2f152638f278f2d93e4636",
+    "message": "[Site Isolation] A COOP: same-origin page navigated to about:blank by a cross-origin iframe keeps its opener and popups\nhttps://bugs.webkit.org/show_bug.cgi?id=330197\nrdar://191848144\n\nReviewed by Alex Christensen.\n\nA response for about:blank has the origin of the navigation's initiator, and the ope",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
