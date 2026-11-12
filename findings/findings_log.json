@@ -89597,5 +89597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T08:27:42.480107+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "968725f5dc9edf2fa769612893a53af127a95691",
+    "url": "https://github.com/WebKit/WebKit/commit/968725f5dc9edf2fa769612893a53af127a95691",
+    "message": "Update safer C++ expectations after enabling borrow checkers\nhttps://bugs.webkit.org/show_bug.cgi?id=330866\n\nUnreviewed. Updated safer C++ expectations for borrow checkers.\n\n* Source/JavaScriptCore/SaferCPPExpectations/UnborrowedCallArgsCheckerExpectations:\n* Source/JavaScriptCore/SaferCPPExpectatio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T08:28:20.313123+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "51a6a5d5d7c1704f0ccc457f41a6be5dca502d92",
+    "url": "https://github.com/WebKit/WebKit/commit/51a6a5d5d7c1704f0ccc457f41a6be5dca502d92",
+    "message": "Many animated images in the web page can freeze its rendering\nhttps://bugs.webkit.org/show_bug.cgi?id=308730\nrdar://183950348\n\nReviewed by Matt Woodrow.\n\nEach async image decode currently creates its own WorkQueue. For large images,\nthat queue is closed once decoding finishes. For animated images, i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
