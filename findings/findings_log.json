@@ -89637,5 +89637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T16:57:07.535602+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40451019d9acbfd86f308041811ab38c9f03bae2",
+    "url": "https://github.com/WebKit/WebKit/commit/40451019d9acbfd86f308041811ab38c9f03bae2",
+    "message": "Fixed SourceProfiler regression after module loader rewrite.\nhttps://bugs.webkit.org/show_bug.cgi?id=330874\nrdar://192257376\n\nReviewed by Keith Miller.\n\nThe change https://commits.webkit.org/311236@main left out the code to service the SourceProfiler.\nRe-instating that code.\n\nTest: Source/JavaScript",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-12T16:57:45.951038+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "198105984bcfe629ed60f9911a8a78b64892134d",
+    "url": "https://github.com/WebKit/WebKit/commit/198105984bcfe629ed60f9911a8a78b64892134d",
+    "message": "[Site Isolation] A navigation served from the WebContent MemoryCache leaves a parked loader behind\nhttps://bugs.webkit.org/show_bug.cgi?id=327380\nrdar://problem/189970148\n\nReviewed by Alex Christensen.\n\nAfter a process swap, the network process aborts the navigation's parked loader after 30 seconds ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
