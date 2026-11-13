@@ -89857,5 +89857,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T10:08:43.368761+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fad5025a9d63a99b541ef6fbf87942ebe8a9fb7",
+    "url": "https://github.com/WebKit/WebKit/commit/9fad5025a9d63a99b541ef6fbf87942ebe8a9fb7",
+    "message": "[WTF] We no longer need to check validity of HashTable keys\nhttps://bugs.webkit.org/show_bug.cgi?id=331333\nrdar://192603989\n\nReviewed by Geoffrey Garen.\n\nAfter 325806@main, HashTable stores empty / deleted in separate bytes,\nso any hash keys become valid. As a result, ShouldValidateKey\nconfiguration",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T10:09:21.272277+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d8fd0bb8cebfa7b2c58c5ebff14702eca91a4a3",
+    "url": "https://github.com/WebKit/WebKit/commit/8d8fd0bb8cebfa7b2c58c5ebff14702eca91a4a3",
+    "message": "[JSC] Add B3 MemoryFill8, MemoryFill16, MemoryFill32, MemoryFill64, and MemoryFill128\nhttps://bugs.webkit.org/show_bug.cgi?id=329051\nrdar://problem/191118560\n\nReviewed by Dan Hecht.\n\nThis patch adds B3 MemoryFill8, MemoryFill16, MemoryFill32, MemoryFill64,\nand MemoryFill128. They are corresponding t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T10:09:59.188896+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8dd7991380207583aabb9cf2c86d48bdde54d3f",
+    "url": "https://github.com/WebKit/WebKit/commit/c8dd7991380207583aabb9cf2c86d48bdde54d3f",
+    "message": "[JSC] Add IC/DFG/FTL intrinsic for `%TypedArray%.prototype.buffer` getter\nhttps://bugs.webkit.org/show_bug.cgi?id=327976\n\nReviewed by Yusuke Suzuki.\n\n`typedArray.buffer` always called the C++ getter, even when the typed array\nalready has an ArrayBuffer and its JSArrayBuffer wrapper exists, as in\n\n  ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T10:10:37.448314+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3b7fd559da8689c4cf929452a9e598423614e592",
+    "url": "https://github.com/WebKit/WebKit/commit/3b7fd559da8689c4cf929452a9e598423614e592",
+    "message": "Make ContentSecurityPolicy heap allocated\nhttps://bugs.webkit.org/show_bug.cgi?id=331056\n\nReviewed by Anne van Kesteren.\n\nDrop CheckedPtrDeleteCheckException::Yes from ContentSecurityPolicy so that\nCheckedPtr hardening applies, and heap allocate the remaining stack instances.\n\n* Source/WebCore/loade",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T10:11:15.520078+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b99bcf839a50b6a841e75b46771706180e00def0",
+    "url": "https://github.com/WebKit/WebKit/commit/b99bcf839a50b6a841e75b46771706180e00def0",
+    "message": "[Site Isolation] Fix imported/w3c/web-platform-tests/resource-timing/iframe-sequence-of-events.html\nhttps://bugs.webkit.org/show_bug.cgi?id=330781\nrdar://192280067\n\nReviewed by Ryosuke Niwa.\n\nThere are a few places we need to get the parent frame or owner element through the frame being replaced\nif ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
