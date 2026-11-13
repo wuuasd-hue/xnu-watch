@@ -89737,5 +89737,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:46:52.710667+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40c45dfc9ca2023e09ce2964fee4297194e7207d",
+    "url": "https://github.com/WebKit/WebKit/commit/40c45dfc9ca2023e09ce2964fee4297194e7207d",
+    "message": "[JSC] `VarargsLength` and `LoadVarargs` on `Spread` should not clobber the world\nhttps://bugs.webkit.org/show_bug.cgi?id=330526\n\nReviewed by Yusuke Suzuki.\n\nWhen the argument is the result of Spread (KnownCellUse), VarargsLength and LoadVarargs\ndo not call operations since 325863@main. They only loa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:47:31.741293+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b0be2f45a9b8f5b591b9d6dc0edd24c97ebdd6cd",
+    "url": "https://github.com/WebKit/WebKit/commit/b0be2f45a9b8f5b591b9d6dc0edd24c97ebdd6cd",
+    "message": "[JSC] Implement nonextensible-applies-to-private\nhttps://bugs.webkit.org/show_bug.cgi?id=321410\nrdar://184474484\n\nReviewed by Keith Miller.\n\nImplement nonextensible-applies-to-private[1] proposal. This is already\nstage-3. While it is the proposal, the change is minimum: we reject\nadding private meth",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:48:09.085193+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2aa56db622c2b2730caddcb0f0e33736cd99f4d",
+    "url": "https://github.com/WebKit/WebKit/commit/e2aa56db622c2b2730caddcb0f0e33736cd99f4d",
+    "message": "[JSC] Carry after branchSub and branchNeg means borrow on ARM64 too\nhttps://bugs.webkit.org/show_bug.cgi?id=330220\nrdar://191854731\n\nReviewed by Keith Miller.\n\nARM64 sets C flag when subtraction *didn't have* a borrow. On the other\nhand, x64 *sets* Carry flag when x64 *have* a borrow. This is also\no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:48:46.413036+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44751c805963261767984bf6b433e54686bf273c",
+    "url": "https://github.com/WebKit/WebKit/commit/44751c805963261767984bf6b433e54686bf273c",
+    "message": "[JSC] TypedArray indexOf, includes, and lastIndexOf can match an out-of-range double\nhttps://bugs.webkit.org/show_bug.cgi?id=331238\n\nReviewed by Sosuke Suzuki.\n\nFor a double search value, indexOf, includes, and lastIndexOf convert the\nvalue with toNativeFromDoubleWithoutCoercion. This function casts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:49:23.979371+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "22a68947f7cae5dd45e805a1b7212174053deb7f",
+    "url": "https://github.com/swiftlang/swift/commit/22a68947f7cae5dd45e805a1b7212174053deb7f",
+    "message": "[TSan] Teach TSan about ARC releases, and synchronization for CoWed objects (#94050)\n\nCurrently TSan will falsely report data races between accesses on one\nthread, and accesses on another thread for an object that passed the\nisUniquelyReferenced check. These accesses must be ordered by the ARC\nrelea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T02:50:01.691533+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "90b6bca59136363e71a4b90c4f3d1e3ed4727b1d",
+    "url": "https://github.com/swiftlang/swift/commit/90b6bca59136363e71a4b90c4f3d1e3ed4727b1d",
+    "message": "Merge pull request #94176 from mikeash/deallocated-nonzero-retain-count-message-improvement\n\n[Runtime] Reword \"deallocated with non-zero retain count\" error message to call out unsafe concurrent access.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
