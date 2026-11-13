@@ -89957,5 +89957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T17:55:16.746435+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "638590a8d0c8ac8fe3eb7f9c5b6f2620b297effb",
+    "url": "https://github.com/WebKit/WebKit/commit/638590a8d0c8ac8fe3eb7f9c5b6f2620b297effb",
+    "message": "[JSC] Fix x86 unsigned relaxed trunc\nhttps://bugs.webkit.org/show_bug.cgi?id=330875\n\nReviewed by Yusuke Suzuki.\n\ni32x4.relaxed_trunc_f32x4_u must match trunc toward zero for every\nlane in (-1, 2^32). On x86 a signed convert turns values in\n[2^31, 2^32) into 0x80000000. IPInt, BBQ, and OMG now add\ntr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T17:55:55.730788+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7c66c886796e6b738f451185dc7eaa205655b41d",
+    "url": "https://github.com/WebKit/WebKit/commit/7c66c886796e6b738f451185dc7eaa205655b41d",
+    "message": "[JSC] branchTest16 with an ExtendedAddress does not scale its index by the element size\nhttps://bugs.webkit.org/show_bug.cgi?id=330078\nrdar://191514903\n\nReviewed by Mark Lam.\n\nbranchTest16(ResultCondition, ExtendedAddress, mask) read the halfword from\ntable + index instead of table + index * 2. Curr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T17:56:33.584550+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "40c45dfc9ca2023e09ce2964fee4297194e7207d",
+    "url": "https://github.com/WebKit/WebKit/commit/40c45dfc9ca2023e09ce2964fee4297194e7207d",
+    "message": "[JSC] `VarargsLength` and `LoadVarargs` on `Spread` should not clobber the world\nhttps://bugs.webkit.org/show_bug.cgi?id=330526\n\nReviewed by Yusuke Suzuki.\n\nWhen the argument is the result of Spread (KnownCellUse), VarargsLength and LoadVarargs\ndo not call operations since 325863@main. They only loa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
