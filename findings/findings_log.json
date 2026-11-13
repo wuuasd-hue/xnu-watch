@@ -90017,5 +90017,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T22:57:00.166300+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "438fbe6e2aed346c25af3dddcd388b8e733aa750",
+    "url": "https://github.com/WebKit/WebKit/commit/438fbe6e2aed346c25af3dddcd388b8e733aa750",
+    "message": "Remove ProcessSwapDisposition, which only marks COOP swaps for processForSite()\nhttps://bugs.webkit.org/show_bug.cgi?id=330185\nrdar://191848029\n\nReviewed by Roberto Rodriguez.\n\nSince 307187@main removed its last reader in the web process, the ProcessSwapDisposition that\nGoToBackForwardItemParameters",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T22:57:38.763452+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eca504a13200a60780f20429109d0b6f72cbb76d",
+    "url": "https://github.com/WebKit/WebKit/commit/eca504a13200a60780f20429109d0b6f72cbb76d",
+    "message": "[JSC] Add assertions to make ARM64 assembler more hardened (and making requirement explicit)\nhttps://bugs.webkit.org/show_bug.cgi?id=331419\nrdar://192670114\n\nReviewed by Tadeu Zagallo.\n\n- ADDS and SUBS with an immediate and ADDS / SUBS with an extended register, did not reject\n  SP for the destinati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T22:58:18.854491+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ec251300444b91907fb310e069066aa05379475",
+    "url": "https://github.com/WebKit/WebKit/commit/2ec251300444b91907fb310e069066aa05379475",
+    "message": "[WTF] Remove many use of UnsignedWithZeroKeyHashTraits etc.\nhttps://bugs.webkit.org/show_bug.cgi?id=331427\nrdar://192674393\n\nReviewed by Timothy Hatcher and Tadeu Zagallo.\n\nUnsignedWithZeroKeyHashTraits etc. exists because we need to pick\nparticular empty and deleted values. But since HashMap / Hash",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T22:58:57.804343+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b0be2f45a9b8f5b591b9d6dc0edd24c97ebdd6cd",
+    "url": "https://github.com/WebKit/WebKit/commit/b0be2f45a9b8f5b591b9d6dc0edd24c97ebdd6cd",
+    "message": "[JSC] Implement nonextensible-applies-to-private\nhttps://bugs.webkit.org/show_bug.cgi?id=321410\nrdar://184474484\n\nReviewed by Keith Miller.\n\nImplement nonextensible-applies-to-private[1] proposal. This is already\nstage-3. While it is the proposal, the change is minimum: we reject\nadding private meth",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-13T22:59:36.994376+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e2aa56db622c2b2730caddcb0f0e33736cd99f4d",
+    "url": "https://github.com/WebKit/WebKit/commit/e2aa56db622c2b2730caddcb0f0e33736cd99f4d",
+    "message": "[JSC] Carry after branchSub and branchNeg means borrow on ARM64 too\nhttps://bugs.webkit.org/show_bug.cgi?id=330220\nrdar://191854731\n\nReviewed by Keith Miller.\n\nARM64 sets C flag when subtraction *didn't have* a borrow. On the other\nhand, x64 *sets* Carry flag when x64 *have* a borrow. This is also\no",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
