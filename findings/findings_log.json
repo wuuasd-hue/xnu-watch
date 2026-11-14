@@ -90217,5 +90217,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T09:33:15.807721+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "528abc784856feaa517185459780deb0d33c21ff",
+    "url": "https://github.com/WebKit/WebKit/commit/528abc784856feaa517185459780deb0d33c21ff",
+    "message": "[JSC] Accelerate ARM64Assembler::jumpsToLink via radix-sort\nhttps://bugs.webkit.org/show_bug.cgi?id=331424\nrdar://192673861\n\nReviewed by Tadeu Zagallo.\n\nFor very large sized array, using radix-sort with packed keys from\nLinkRecord is faster than sorting LinkRecord directly. This patch adds a\nfast pa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T09:33:53.757111+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75c8186b476483998653759e3ecf40905a474130",
+    "url": "https://github.com/WebKit/WebKit/commit/75c8186b476483998653759e3ecf40905a474130",
+    "message": "Enforce Subresource Integrity for <link rel=preload>\nhttps://bugs.webkit.org/show_bug.cgi?id=238206\n\nReviewed by Anne van Kesteren.\n\nLinkLoader never looked at the integrity attribute, so a preload whose\ncontents did not match its integrity metadata reported success and fired\nthe load event. The met",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T09:34:31.708303+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8d8fd0bb8cebfa7b2c58c5ebff14702eca91a4a3",
+    "url": "https://github.com/WebKit/WebKit/commit/8d8fd0bb8cebfa7b2c58c5ebff14702eca91a4a3",
+    "message": "[JSC] Add B3 MemoryFill8, MemoryFill16, MemoryFill32, MemoryFill64, and MemoryFill128\nhttps://bugs.webkit.org/show_bug.cgi?id=329051\nrdar://problem/191118560\n\nReviewed by Dan Hecht.\n\nThis patch adds B3 MemoryFill8, MemoryFill16, MemoryFill32, MemoryFill64,\nand MemoryFill128. They are corresponding t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T09:35:09.432751+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c8dd7991380207583aabb9cf2c86d48bdde54d3f",
+    "url": "https://github.com/WebKit/WebKit/commit/c8dd7991380207583aabb9cf2c86d48bdde54d3f",
+    "message": "[JSC] Add IC/DFG/FTL intrinsic for `%TypedArray%.prototype.buffer` getter\nhttps://bugs.webkit.org/show_bug.cgi?id=327976\n\nReviewed by Yusuke Suzuki.\n\n`typedArray.buffer` always called the C++ getter, even when the typed array\nalready has an ArrayBuffer and its JSArrayBuffer wrapper exists, as in\n\n  ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
