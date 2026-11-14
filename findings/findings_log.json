@@ -90417,5 +90417,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T20:49:27.449959+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6e6e3c0776f0ed9cc5256c796c205fb773c01dc6",
+    "url": "https://github.com/WebKit/WebKit/commit/6e6e3c0776f0ed9cc5256c796c205fb773c01dc6",
+    "message": "SVGImage should use the device scale factor of the document drawing it\nhttps://bugs.webkit.org/show_bug.cgi?id=304016\nrdar://166320988\n\nReviewed by Sam Weinig and Simon Fraser.\n\nAn SVGImage lays out and paints in its own Page, whose device scale factor is\nalways 1. On a 2x display, resolution media ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T20:50:05.249024+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa0d9480a5164405376786d35f28990866c9d7e2",
+    "url": "https://github.com/WebKit/WebKit/commit/aa0d9480a5164405376786d35f28990866c9d7e2",
+    "message": "Weak hash table operations that purge null entries should be non-const\nhttps://bugs.webkit.org/show_bug.cgi?id=331385\nrdar://192640895\n\nReviewed by Ryosuke Niwa.\n\nThis is to aid borrow checking / ergonomics: Borrow checking assumes that a\nconst lvalue does not invalidate iterators, which means you d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T20:50:43.431797+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eca504a13200a60780f20429109d0b6f72cbb76d",
+    "url": "https://github.com/WebKit/WebKit/commit/eca504a13200a60780f20429109d0b6f72cbb76d",
+    "message": "[JSC] Add assertions to make ARM64 assembler more hardened (and making requirement explicit)\nhttps://bugs.webkit.org/show_bug.cgi?id=331419\nrdar://192670114\n\nReviewed by Tadeu Zagallo.\n\n- ADDS and SUBS with an immediate and ADDS / SUBS with an extended register, did not reject\n  SP for the destinati",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T20:51:21.510666+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ec251300444b91907fb310e069066aa05379475",
+    "url": "https://github.com/WebKit/WebKit/commit/2ec251300444b91907fb310e069066aa05379475",
+    "message": "[WTF] Remove many use of UnsignedWithZeroKeyHashTraits etc.\nhttps://bugs.webkit.org/show_bug.cgi?id=331427\nrdar://192674393\n\nReviewed by Timothy Hatcher and Tadeu Zagallo.\n\nUnsignedWithZeroKeyHashTraits etc. exists because we need to pick\nparticular empty and deleted values. But since HashMap / Hash",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
