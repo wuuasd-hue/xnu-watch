@@ -90297,5 +90297,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:11:27.235103+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3bd6b0fb3caa48f0f82c8e7c52f4c991313921f",
+    "url": "https://github.com/WebKit/WebKit/commit/d3bd6b0fb3caa48f0f82c8e7c52f4c991313921f",
+    "message": "Implement the fetchLater API\nhttps://bugs.webkit.org/show_bug.cgi?id=324179\n\nReviewed by Alex Christensen.\n\nImplement Window.fetchLater() behind a preview setting. Deferred requests\nsupport activation timers, abort signals, document teardown, back/forward\ncache transitions, CSP, referrer policy, and",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:12:05.457564+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "43b3c23cd66fa93578ab17737ae7f7f0dc4756cc",
+    "url": "https://github.com/WebKit/WebKit/commit/43b3c23cd66fa93578ab17737ae7f7f0dc4756cc",
+    "message": "[CSS URL Request Modifiers] Support URL Request Modifiers for SVG filter URLs\nhttps://bugs.webkit.org/show_bug.cgi?id=331399\n\nReviewed by Tim Nguyen.\n\nSupport cross-origin(), integrity() and referrer-policy() URL request modifiers for filter URLs.\n\n* LayoutTests/TestExpectations:\n* Source/WebCore/cs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:12:42.976637+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a8b23da4dab73e06e1223a33df2494c4fe7f1b2",
+    "url": "https://github.com/WebKit/WebKit/commit/9a8b23da4dab73e06e1223a33df2494c4fe7f1b2",
+    "message": "[JSC] Reduce cost of parsing / lexing RegExp\nhttps://bugs.webkit.org/show_bug.cgi?id=331573\nrdar://192751273\n\nReviewed by Sosuke Suzuki.\n\n1. RegExp literal scanning code is in fact just copying characters from\n   the source with some validation. We should avoid using buffer and\n   just use the sourc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:13:20.636221+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2155d06848d29942fe7bb8c2a5f766039d6c85fb",
+    "url": "https://github.com/WebKit/WebKit/commit/2155d06848d29942fe7bb8c2a5f766039d6c85fb",
+    "message": "[JSC] Do not register literal-coming RegExp into strong cache\nhttps://bugs.webkit.org/show_bug.cgi?id=331576\nrdar://192753027\n\nReviewed by Sosuke Suzuki.\n\nWhile literal's RegExp can be already kept by the UnlinkedCodeBlock's\nconstant pool, runtime-generated RegExp can be floating. So they have\nvastl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:13:58.535416+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "638590a8d0c8ac8fe3eb7f9c5b6f2620b297effb",
+    "url": "https://github.com/WebKit/WebKit/commit/638590a8d0c8ac8fe3eb7f9c5b6f2620b297effb",
+    "message": "[JSC] Fix x86 unsigned relaxed trunc\nhttps://bugs.webkit.org/show_bug.cgi?id=330875\n\nReviewed by Yusuke Suzuki.\n\ni32x4.relaxed_trunc_f32x4_u must match trunc toward zero for every\nlane in (-1, 2^32). On x86 a signed convert turns values in\n[2^31, 2^32) into 0x80000000. IPInt, BBQ, and OMG now add\ntr",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T16:14:36.035300+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "438fbe6e2aed346c25af3dddcd388b8e733aa750",
+    "url": "https://github.com/WebKit/WebKit/commit/438fbe6e2aed346c25af3dddcd388b8e733aa750",
+    "message": "Remove ProcessSwapDisposition, which only marks COOP swaps for processForSite()\nhttps://bugs.webkit.org/show_bug.cgi?id=330185\nrdar://191848029\n\nReviewed by Roberto Rodriguez.\n\nSince 307187@main removed its last reader in the web process, the ProcessSwapDisposition that\nGoToBackForwardItemParameters",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
