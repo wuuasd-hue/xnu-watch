@@ -90117,5 +90117,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T02:47:58.440773+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "277c3c0d558cab60554c7215ac7f82077b2caca1",
+    "url": "https://github.com/WebKit/WebKit/commit/277c3c0d558cab60554c7215ac7f82077b2caca1",
+    "message": "Web Inspector: Tell the frontend which process each target runs in\nhttps://bugs.webkit.org/show_bug.cgi?id=331362\nrdar://192629510\n\nReviewed by Basuke Suzuki.\n\nUnder Site Isolation, the targets of one page run in several WebContent processes, and some targets\nshare a process. A later change picks on",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T02:48:36.265467+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6507667ef6d0b06cb69cbcafd5f368088520358d",
+    "url": "https://github.com/WebKit/WebKit/commit/6507667ef6d0b06cb69cbcafd5f368088520358d",
+    "message": "[Site Isolation] Web Inspector: Page.snapshotRect leaves cross-origin iframes blank\nhttps://bugs.webkit.org/show_bug.cgi?id=330211\nrdar://191853399\n\nReviewed by Basuke Suzuki.\n\nPage.snapshotRect ran in the main frame's process. That process cannot paint frames that other\nprocesses host, so cross-ori",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T02:49:14.012253+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "30819fd139490a79270cd04bdb98ff3eeb215f3f",
+    "url": "https://github.com/WebKit/WebKit/commit/30819fd139490a79270cd04bdb98ff3eeb215f3f",
+    "message": "[Site Isolation] Web Inspector: Report animations from frame targets in the Animation domain\nhttps://bugs.webkit.org/show_bug.cgi?id=330057\nrdar://191748932\nrdar://191748189\nrdar://191748687\n\nAlso fixes https://bugs.webkit.org/show_bug.cgi?id=330055\nAlso fixes https://bugs.webkit.org/show_bug.cgi?id",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T02:49:51.817839+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "44751c805963261767984bf6b433e54686bf273c",
+    "url": "https://github.com/WebKit/WebKit/commit/44751c805963261767984bf6b433e54686bf273c",
+    "message": "[JSC] TypedArray indexOf, includes, and lastIndexOf can match an out-of-range double\nhttps://bugs.webkit.org/show_bug.cgi?id=331238\n\nReviewed by Sosuke Suzuki.\n\nFor a double search value, indexOf, includes, and lastIndexOf convert the\nvalue with toNativeFromDoubleWithoutCoercion. This function casts",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-14T02:50:29.669317+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9fad5025a9d63a99b541ef6fbf87942ebe8a9fb7",
+    "url": "https://github.com/WebKit/WebKit/commit/9fad5025a9d63a99b541ef6fbf87942ebe8a9fb7",
+    "message": "[WTF] We no longer need to check validity of HashTable keys\nhttps://bugs.webkit.org/show_bug.cgi?id=331333\nrdar://192603989\n\nReviewed by Geoffrey Garen.\n\nAfter 325806@main, HashTable stores empty / deleted in separate bytes,\nso any hash keys become valid. As a result, ShouldValidateKey\nconfiguration",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
