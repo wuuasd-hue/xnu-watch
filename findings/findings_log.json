@@ -90537,5 +90537,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T06:54:20.415386+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0aac99b167f2101dbf763fe8a8e4b4fe7e00c35e",
+    "url": "https://github.com/WebKit/WebKit/commit/0aac99b167f2101dbf763fe8a8e4b4fe7e00c35e",
+    "message": "[JSC] `HasPrivateName` ICs should fold to megamorphic cache\nhttps://bugs.webkit.org/show_bug.cgi?id=331403\n\nReviewed by Yusuke Suzuki.\n\nInlineCacheCompiler::tryFoldToMegamorphic has no case for HasPrivateName. Once\n`#x in o` sees maxAccessVariantListSize structures, the IC gives up and every\ncheck g",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T06:54:58.467905+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "30819fd139490a79270cd04bdb98ff3eeb215f3f",
+    "url": "https://github.com/WebKit/WebKit/commit/30819fd139490a79270cd04bdb98ff3eeb215f3f",
+    "message": "[Site Isolation] Web Inspector: Report animations from frame targets in the Animation domain\nhttps://bugs.webkit.org/show_bug.cgi?id=330057\nrdar://191748932\nrdar://191748189\nrdar://191748687\n\nAlso fixes https://bugs.webkit.org/show_bug.cgi?id=330055\nAlso fixes https://bugs.webkit.org/show_bug.cgi?id",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T06:55:36.160794+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "528abc784856feaa517185459780deb0d33c21ff",
+    "url": "https://github.com/WebKit/WebKit/commit/528abc784856feaa517185459780deb0d33c21ff",
+    "message": "[JSC] Accelerate ARM64Assembler::jumpsToLink via radix-sort\nhttps://bugs.webkit.org/show_bug.cgi?id=331424\nrdar://192673861\n\nReviewed by Tadeu Zagallo.\n\nFor very large sized array, using radix-sort with packed keys from\nLinkRecord is faster than sorting LinkRecord directly. This patch adds a\nfast pa",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
