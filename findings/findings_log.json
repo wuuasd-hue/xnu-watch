@@ -90497,5 +90497,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T00:27:52.429121+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "277c3c0d558cab60554c7215ac7f82077b2caca1",
+    "url": "https://github.com/WebKit/WebKit/commit/277c3c0d558cab60554c7215ac7f82077b2caca1",
+    "message": "Web Inspector: Tell the frontend which process each target runs in\nhttps://bugs.webkit.org/show_bug.cgi?id=331362\nrdar://192629510\n\nReviewed by Basuke Suzuki.\n\nUnder Site Isolation, the targets of one page run in several WebContent processes, and some targets\nshare a process. A later change picks on",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T00:28:30.915802+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6507667ef6d0b06cb69cbcafd5f368088520358d",
+    "url": "https://github.com/WebKit/WebKit/commit/6507667ef6d0b06cb69cbcafd5f368088520358d",
+    "message": "[Site Isolation] Web Inspector: Page.snapshotRect leaves cross-origin iframes blank\nhttps://bugs.webkit.org/show_bug.cgi?id=330211\nrdar://191853399\n\nReviewed by Basuke Suzuki.\n\nPage.snapshotRect ran in the main frame's process. That process cannot paint frames that other\nprocesses host, so cross-ori",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
