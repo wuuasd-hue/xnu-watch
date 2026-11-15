@@ -90637,5 +90637,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T19:52:03.006822+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "43b3c23cd66fa93578ab17737ae7f7f0dc4756cc",
+    "url": "https://github.com/WebKit/WebKit/commit/43b3c23cd66fa93578ab17737ae7f7f0dc4756cc",
+    "message": "[CSS URL Request Modifiers] Support URL Request Modifiers for SVG filter URLs\nhttps://bugs.webkit.org/show_bug.cgi?id=331399\n\nReviewed by Tim Nguyen.\n\nSupport cross-origin(), integrity() and referrer-policy() URL request modifiers for filter URLs.\n\n* LayoutTests/TestExpectations:\n* Source/WebCore/cs",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T19:52:41.139352+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9a8b23da4dab73e06e1223a33df2494c4fe7f1b2",
+    "url": "https://github.com/WebKit/WebKit/commit/9a8b23da4dab73e06e1223a33df2494c4fe7f1b2",
+    "message": "[JSC] Reduce cost of parsing / lexing RegExp\nhttps://bugs.webkit.org/show_bug.cgi?id=331573\nrdar://192751273\n\nReviewed by Sosuke Suzuki.\n\n1. RegExp literal scanning code is in fact just copying characters from\n   the source with some validation. We should avoid using buffer and\n   just use the sourc",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
