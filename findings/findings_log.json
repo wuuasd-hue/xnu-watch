@@ -90597,5 +90597,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T14:23:28.795434+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "75c8186b476483998653759e3ecf40905a474130",
+    "url": "https://github.com/WebKit/WebKit/commit/75c8186b476483998653759e3ecf40905a474130",
+    "message": "Enforce Subresource Integrity for <link rel=preload>\nhttps://bugs.webkit.org/show_bug.cgi?id=238206\n\nReviewed by Anne van Kesteren.\n\nLinkLoader never looked at the integrity attribute, so a preload whose\ncontents did not match its integrity metadata reported success and fired\nthe load event. The met",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-15T14:24:06.141937+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d3bd6b0fb3caa48f0f82c8e7c52f4c991313921f",
+    "url": "https://github.com/WebKit/WebKit/commit/d3bd6b0fb3caa48f0f82c8e7c52f4c991313921f",
+    "message": "Implement the fetchLater API\nhttps://bugs.webkit.org/show_bug.cgi?id=324179\n\nReviewed by Alex Christensen.\n\nImplement Window.fetchLater() behind a preview setting. Deferred requests\nsupport activation timers, abort signals, document teardown, back/forward\ncache transitions, CSP, referrer policy, and",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
