@@ -90797,5 +90797,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T11:48:54.996315+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "2ea5b33be7f0ffde238363fa949ca0eb33aa3565",
+    "url": "https://github.com/WebKit/WebKit/commit/2ea5b33be7f0ffde238363fa949ca0eb33aa3565",
+    "message": "Give documents their context document, origin, and agent cluster at creation\nhttps://bugs.webkit.org/show_bug.cgi?id=331731\nrdar://192823664\n\nReviewed by Ryosuke Niwa.\n\nA document's event loop is chosen from its context document and origin when\nit's first needed, so setting either after the document",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T11:49:32.717768+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff1c34ea3842b20668eefb7e3422ef7e9a686075",
+    "url": "https://github.com/WebKit/WebKit/commit/ff1c34ea3842b20668eefb7e3422ef7e9a686075",
+    "message": "[JSC] Optimize DFG `String#indexOf` with dynamic one-character search string\nhttps://bugs.webkit.org/show_bug.cgi?id=331036\n\nReviewed by Yusuke Suzuki.\n\noperationStringIndexOf and operationStringIndexOfWithIndex are used when the search string is not a\nconstant. They build an AdaptiveStringSearcher ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
