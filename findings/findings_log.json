@@ -90737,5 +90737,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T03:19:12.042130+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ff1c34ea3842b20668eefb7e3422ef7e9a686075",
+    "url": "https://github.com/WebKit/WebKit/commit/ff1c34ea3842b20668eefb7e3422ef7e9a686075",
+    "message": "[JSC] Optimize DFG `String#indexOf` with dynamic one-character search string\nhttps://bugs.webkit.org/show_bug.cgi?id=331036\n\nReviewed by Yusuke Suzuki.\n\noperationStringIndexOf and operationStringIndexOfWithIndex are used when the search string is not a\nconstant. They build an AdaptiveStringSearcher ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T03:19:50.196533+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "aa0d9480a5164405376786d35f28990866c9d7e2",
+    "url": "https://github.com/WebKit/WebKit/commit/aa0d9480a5164405376786d35f28990866c9d7e2",
+    "message": "Weak hash table operations that purge null entries should be non-const\nhttps://bugs.webkit.org/show_bug.cgi?id=331385\nrdar://192640895\n\nReviewed by Ryosuke Niwa.\n\nThis is to aid borrow checking / ergonomics: Borrow checking assumes that a\nconst lvalue does not invalidate iterators, which means you d",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T03:20:30.258432+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0aac99b167f2101dbf763fe8a8e4b4fe7e00c35e",
+    "url": "https://github.com/WebKit/WebKit/commit/0aac99b167f2101dbf763fe8a8e4b4fe7e00c35e",
+    "message": "[JSC] `HasPrivateName` ICs should fold to megamorphic cache\nhttps://bugs.webkit.org/show_bug.cgi?id=331403\n\nReviewed by Yusuke Suzuki.\n\nInlineCacheCompiler::tryFoldToMegamorphic has no case for HasPrivateName. Once\n`#x in o` sees maxAccessVariantListSize structures, the IC gives up and every\ncheck g",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
