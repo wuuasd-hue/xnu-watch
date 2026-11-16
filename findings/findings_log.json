@@ -90837,5 +90837,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T21:17:49.516956+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63ca9ee914b968e61478c079ee97ba4249c9ee2f",
+    "url": "https://github.com/WebKit/WebKit/commit/63ca9ee914b968e61478c079ee97ba4249c9ee2f",
+    "message": "[Reland] Web Inspector: [SI] Media events from cross-origin iframes never reach Web Inspector\nhttps://bugs.webkit.org/show_bug.cgi?id=331344\nrdar://191980167\n\nReviewed by Qianlang Chen.\n\nRelanding 326437@main, which was reverted in 762b5fef94af. The original held\nInspectorMediaEventTracker, a CanMak",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T21:18:28.807139+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8ac5606a9bf790a9a20e613564edaa1f2334011",
+    "url": "https://github.com/WebKit/WebKit/commit/b8ac5606a9bf790a9a20e613564edaa1f2334011",
+    "message": "Omit credentials for cross-origin no-cors requests of credentialless documents\nhttps://bugs.webkit.org/show_bug.cgi?id=331595\nrdar://192764281\n\nReviewed by Youenn Fablet.\n\nFor each hop of a no-cors request whose client has a credentialless embedder or\ndocument isolation policy, NetworkLoadChecker om",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T21:19:08.688019+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "946f4b23e67bfc959f8917dfec42ffcacc370da1",
+    "url": "https://github.com/WebKit/WebKit/commit/946f4b23e67bfc959f8917dfec42ffcacc370da1",
+    "message": "Web Inspector: [SI] implement DOM.focus and DOM.highlightFrame on FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=330351\nrdar://191966022\n\nReviewed by BJ Burg.\n\nImplement DOM.focus and DOM.highlightFrame on FrameDOMAgent, add \"frame\" to their targetTypes, and\nremove their stubs. Nothing in Web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T21:19:48.981263+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "63ca9ee914b968e61478c079ee97ba4249c9ee2f",
+    "url": "https://github.com/WebKit/WebKit/commit/63ca9ee914b968e61478c079ee97ba4249c9ee2f",
+    "message": "[Reland] Web Inspector: [SI] Media events from cross-origin iframes never reach Web Inspector\nhttps://bugs.webkit.org/show_bug.cgi?id=331344\nrdar://191980167\n\nReviewed by Qianlang Chen.\n\nRelanding 326437@main, which was reverted in 762b5fef94af. The original held\nInspectorMediaEventTracker, a CanMak",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-16T21:20:31.504218+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b8ac5606a9bf790a9a20e613564edaa1f2334011",
+    "url": "https://github.com/WebKit/WebKit/commit/b8ac5606a9bf790a9a20e613564edaa1f2334011",
+    "message": "Omit credentials for cross-origin no-cors requests of credentialless documents\nhttps://bugs.webkit.org/show_bug.cgi?id=331595\nrdar://192764281\n\nReviewed by Youenn Fablet.\n\nFor each hop of a no-cors request whose client has a credentialless embedder or\ndocument isolation policy, NetworkLoadChecker om",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
