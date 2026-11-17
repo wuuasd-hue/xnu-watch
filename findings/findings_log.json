@@ -90937,5 +90937,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:01:09.419480+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6bdf50049cb4b33ac2d41234c173a26133277362",
+    "url": "https://github.com/WebKit/WebKit/commit/6bdf50049cb4b33ac2d41234c173a26133277362",
+    "message": "[CSS URL Request Modifiers] cross-origin(anonymous) sends cookies in WebKitLegacy\nhttps://bugs.webkit.org/show_bug.cgi?id=331398\n\nReviewed by Alex Christensen.\n\nIn WebKitLegacy a request sends cookies based on its stored credentials policy, which callers set\nseparately from the credentials mode and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:01:49.348565+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "401b6a23654e5043803092d8e2557cbb77bff876",
+    "url": "https://github.com/WebKit/WebKit/commit/401b6a23654e5043803092d8e2557cbb77bff876",
+    "message": "[WTF] Write integer digits two at a time in writeIntegerToBuffer\nhttps://bugs.webkit.org/show_bug.cgi?id=331645\nrdar://192772010\n\nReviewed by Dan Hecht.\n\nThis patch makes integer writing code faster. The old one is dividing\nper digit, which is really costly.\n\n1. writeIntegerToBuffer writes directly ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:02:27.039353+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f4f1b79e7328d2c8ef54a082e7bfa900946aaf0c",
+    "url": "https://github.com/WebKit/WebKit/commit/f4f1b79e7328d2c8ef54a082e7bfa900946aaf0c",
+    "message": "[JSC] Fix ARM64/ARM64E assembler encodings, LinkBuffer, disassembler, and narrow-int predicates\nhttps://bugs.webkit.org/show_bug.cgi?id=331639\nrdar://192765262\n\nReviewed by Dan Hecht.\n\nThis patch sweeps bugs around ARM64 / ARM64E assembler.\n\n- ARM64EAssembler PAC instructions now encode zr and sp th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:03:04.856690+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99f6cccd92de4709f574e039c559e1b065bb8ef8",
+    "url": "https://github.com/WebKit/WebKit/commit/99f6cccd92de4709f574e039c559e1b065bb8ef8",
+    "message": "[JSC][Wasm] Throw TypeError from toResizableBuffer without a maximum\n\nhttps://bugs.webkit.org/show_bug.cgi?id=331109\n\nReviewed by Yusuke Suzuki.\n\ntoResizableBuffer throws TypeError when the memory has no maximum.\nA declared maximum still returns a buffer, clamped to what this\nplatform can reserve. S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:03:43.038810+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "946f4b23e67bfc959f8917dfec42ffcacc370da1",
+    "url": "https://github.com/WebKit/WebKit/commit/946f4b23e67bfc959f8917dfec42ffcacc370da1",
+    "message": "Web Inspector: [SI] implement DOM.focus and DOM.highlightFrame on FrameDOMAgent\nhttps://bugs.webkit.org/show_bug.cgi?id=330351\nrdar://191966022\n\nReviewed by BJ Burg.\n\nImplement DOM.focus and DOM.highlightFrame on FrameDOMAgent, add \"frame\" to their targetTypes, and\nremove their stubs. Nothing in Web",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T04:04:20.988440+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6bdf50049cb4b33ac2d41234c173a26133277362",
+    "url": "https://github.com/WebKit/WebKit/commit/6bdf50049cb4b33ac2d41234c173a26133277362",
+    "message": "[CSS URL Request Modifiers] cross-origin(anonymous) sends cookies in WebKitLegacy\nhttps://bugs.webkit.org/show_bug.cgi?id=331398\n\nReviewed by Alex Christensen.\n\nIn WebKitLegacy a request sends cookies based on its stored credentials policy, which callers set\nseparately from the credentials mode and ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
