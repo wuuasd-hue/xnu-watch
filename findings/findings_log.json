@@ -91177,5 +91177,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T21:56:46.952105+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99f6cccd92de4709f574e039c559e1b065bb8ef8",
+    "url": "https://github.com/WebKit/WebKit/commit/99f6cccd92de4709f574e039c559e1b065bb8ef8",
+    "message": "[JSC][Wasm] Throw TypeError from toResizableBuffer without a maximum\n\nhttps://bugs.webkit.org/show_bug.cgi?id=331109\n\nReviewed by Yusuke Suzuki.\n\ntoResizableBuffer throws TypeError when the memory has no maximum.\nA declared maximum still returns a buffer, clamped to what this\nplatform can reserve. S",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T21:57:24.972666+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5dec6bc3952fa45ae2380b3756ee1bcfd6595172",
+    "url": "https://github.com/WebKit/WebKit/commit/5dec6bc3952fa45ae2380b3756ee1bcfd6595172",
+    "message": "[JSC] Enable the shared helper thread pool by default\nhttps://bugs.webkit.org/show_bug.cgi?id=331880\nrdar://192941562\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nThe shared helper thread pool was introduced in 326499@main, but started as off\nby default. Turn on useSharedHelperThreadPool, so GC markin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
