@@ -91057,5 +91057,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:40:45.895852+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5dec6bc3952fa45ae2380b3756ee1bcfd6595172",
+    "url": "https://github.com/WebKit/WebKit/commit/5dec6bc3952fa45ae2380b3756ee1bcfd6595172",
+    "message": "[JSC] Enable the shared helper thread pool by default\nhttps://bugs.webkit.org/show_bug.cgi?id=331880\nrdar://192941562\n\nReviewed by Yusuke Suzuki and Dan Hecht.\n\nThe shared helper thread pool was introduced in 326499@main, but started as off\nby default. Turn on useSharedHelperThreadPool, so GC markin",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:41:23.780698+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a81d6e82720e484f8856c55477a3dd6ab565035d",
+    "url": "https://github.com/WebKit/WebKit/commit/a81d6e82720e484f8856c55477a3dd6ab565035d",
+    "message": "[CMake] Regenerate a header when a framework's private header list changes\nhttps://bugs.webkit.org/show_bug.cgi?id=331951\n\nReviewed by Adrian Taylor.\n\nWhen a header is removed from a directory that a module map names with `umbrella`, the Swift driver's\nexplicit module build keeps reusing the old Cla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:42:01.382504+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee926d463f4de736e2c89eb220da942f83ef2ef8",
+    "url": "https://github.com/WebKit/WebKit/commit/ee926d463f4de736e2c89eb220da942f83ef2ef8",
+    "message": "[JSC] JSON.stringify should cache already spread strings\nhttps://bugs.webkit.org/show_bug.cgi?id=331647\nrdar://192773989\n\nReviewed by Mark Lam and Vassili Bykov.\n\nobject graph may have same string content repeatedly (it can be common\nlike, type in string \"user\"). This patch caches already spread str",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:42:39.103041+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c435b111350015713f1d5bb978196795d1eb9007",
+    "url": "https://github.com/swiftlang/swift/commit/c435b111350015713f1d5bb978196795d1eb9007",
+    "message": "Merge pull request #94388 from ktoso/ktoso/fix-remote-proxy-alloc-reflection-rdar188894010\n\n[Distributed] Don't reflect user fields of remote proxies",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:43:17.068357+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "401b6a23654e5043803092d8e2557cbb77bff876",
+    "url": "https://github.com/WebKit/WebKit/commit/401b6a23654e5043803092d8e2557cbb77bff876",
+    "message": "[WTF] Write integer digits two at a time in writeIntegerToBuffer\nhttps://bugs.webkit.org/show_bug.cgi?id=331645\nrdar://192772010\n\nReviewed by Dan Hecht.\n\nThis patch makes integer writing code faster. The old one is dividing\nper digit, which is really costly.\n\n1. writeIntegerToBuffer writes directly ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-17T13:43:54.990540+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f4f1b79e7328d2c8ef54a082e7bfa900946aaf0c",
+    "url": "https://github.com/WebKit/WebKit/commit/f4f1b79e7328d2c8ef54a082e7bfa900946aaf0c",
+    "message": "[JSC] Fix ARM64/ARM64E assembler encodings, LinkBuffer, disassembler, and narrow-int predicates\nhttps://bugs.webkit.org/show_bug.cgi?id=331639\nrdar://192765262\n\nReviewed by Dan Hecht.\n\nThis patch sweeps bugs around ARM64 / ARM64E assembler.\n\n- ARM64EAssembler PAC instructions now encode zr and sp th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
