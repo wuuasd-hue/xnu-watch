@@ -91217,5 +91217,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T03:12:49.866775+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a81d6e82720e484f8856c55477a3dd6ab565035d",
+    "url": "https://github.com/WebKit/WebKit/commit/a81d6e82720e484f8856c55477a3dd6ab565035d",
+    "message": "[CMake] Regenerate a header when a framework's private header list changes\nhttps://bugs.webkit.org/show_bug.cgi?id=331951\n\nReviewed by Adrian Taylor.\n\nWhen a header is removed from a directory that a module map names with `umbrella`, the Swift driver's\nexplicit module build keeps reusing the old Cla",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T03:13:28.193920+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ee926d463f4de736e2c89eb220da942f83ef2ef8",
+    "url": "https://github.com/WebKit/WebKit/commit/ee926d463f4de736e2c89eb220da942f83ef2ef8",
+    "message": "[JSC] JSON.stringify should cache already spread strings\nhttps://bugs.webkit.org/show_bug.cgi?id=331647\nrdar://192773989\n\nReviewed by Mark Lam and Vassili Bykov.\n\nobject graph may have same string content repeatedly (it can be common\nlike, type in string \"user\"). This patch caches already spread str",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
