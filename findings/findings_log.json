@@ -91257,5 +91257,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T11:58:44.765190+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7891c6794d2138e41362d57f02b720956b0fba4d",
+    "url": "https://github.com/WebKit/WebKit/commit/7891c6794d2138e41362d57f02b720956b0fba4d",
+    "message": "[JSC][Wasm] Reject compile and instantiate when options conversion throws\nhttps://bugs.webkit.org/show_bug.cgi?id=331105\n\nReviewed by Yusuke Suzuki.\n\nWebAssembly.compile and WebAssembly.instantiate return promises, so a\nthrow while converting the options argument must reject that promise.\nBoth calls",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T11:59:22.464935+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d015da6e16af5d4088899669d875f0ac6fc71f4d",
+    "url": "https://github.com/WebKit/WebKit/commit/d015da6e16af5d4088899669d875f0ac6fc71f4d",
+    "message": "[JSC][Wasm] Fix the WebAssembly.Memory maximum/initial RangeError wording\nhttps://bugs.webkit.org/show_bug.cgi?id=332007\n\nReviewed by Yusuke Suzuki.\n\nThe RangeError said \"must be than greater than or equal to\". Drop the\nextra \"than\". The message still says \"page count\".\n\n* Source/JavaScriptCore/wasm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T12:00:00.005059+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3e473f7cf39b01ceed0e3c17584ef1a55cff540",
+    "url": "https://github.com/WebKit/WebKit/commit/c3e473f7cf39b01ceed0e3c17584ef1a55cff540",
+    "message": "Address BorrowChecker warnings in WebCore/loader\nhttps://bugs.webkit.org/show_bug.cgi?id=332038\n\nReviewed by Anne van Kesteren.\n\nGuard loans on CanBorrow containers in Source/WebCore/loader with WTF::Borrow, using borrow() in\nrange-based for loops and for single accesses, or a named Borrow where a r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T12:00:38.516898+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22233bc166c98ea2190b19b693b53c631d2ce125",
+    "url": "https://github.com/WebKit/WebKit/commit/22233bc166c98ea2190b19b693b53c631d2ce125",
+    "message": "[JSC] Apply fast double scan in JS lexer too\nhttps://bugs.webkit.org/show_bug.cgi?id=331701\nrdar://192803109\n\nReviewed by Shu-yu Guo.\n\nExtracting the fast parsing of double from JSON parser and share it with\nJS lexer too. We also apply this fast path to large double-array literal\nin JS parsing.\n\nTes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T12:01:16.644024+00:00",
+    "repo": "swiftlang/swift",
+    "sha": "c435b111350015713f1d5bb978196795d1eb9007",
+    "url": "https://github.com/swiftlang/swift/commit/c435b111350015713f1d5bb978196795d1eb9007",
+    "message": "Merge pull request #94388 from ktoso/ktoso/fix-remote-proxy-alloc-reflection-rdar188894010\n\n[Distributed] Don't reflect user fields of remote proxies",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T12:01:54.070010+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7891c6794d2138e41362d57f02b720956b0fba4d",
+    "url": "https://github.com/WebKit/WebKit/commit/7891c6794d2138e41362d57f02b720956b0fba4d",
+    "message": "[JSC][Wasm] Reject compile and instantiate when options conversion throws\nhttps://bugs.webkit.org/show_bug.cgi?id=331105\n\nReviewed by Yusuke Suzuki.\n\nWebAssembly.compile and WebAssembly.instantiate return promises, so a\nthrow while converting the options argument must reject that promise.\nBoth calls",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
