@@ -91377,5 +91377,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T19:51:33.084033+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5c5c8da53676f5920cab2593638e31ca4229bb7",
+    "url": "https://github.com/WebKit/WebKit/commit/d5c5c8da53676f5920cab2593638e31ca4229bb7",
+    "message": "[Site Isolation] Web Inspector: Support cross-origin iframes in the ScriptProfiler domain\nrdar://143597815\nhttps://bugs.webkit.org/show_bug.cgi?id=329360\n\nReviewed by Zak Ridouh.\n\nUnder Site Isolation, Timeline script records come from frame targets,\nbut ScriptProfiler is only on the page target. Th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T19:52:11.708329+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d015da6e16af5d4088899669d875f0ac6fc71f4d",
+    "url": "https://github.com/WebKit/WebKit/commit/d015da6e16af5d4088899669d875f0ac6fc71f4d",
+    "message": "[JSC][Wasm] Fix the WebAssembly.Memory maximum/initial RangeError wording\nhttps://bugs.webkit.org/show_bug.cgi?id=332007\n\nReviewed by Yusuke Suzuki.\n\nThe RangeError said \"must be than greater than or equal to\". Drop the\nextra \"than\". The message still says \"page count\".\n\n* Source/JavaScriptCore/wasm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-18T19:52:50.244785+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3e473f7cf39b01ceed0e3c17584ef1a55cff540",
+    "url": "https://github.com/WebKit/WebKit/commit/c3e473f7cf39b01ceed0e3c17584ef1a55cff540",
+    "message": "Address BorrowChecker warnings in WebCore/loader\nhttps://bugs.webkit.org/show_bug.cgi?id=332038\n\nReviewed by Anne van Kesteren.\n\nGuard loans on CanBorrow containers in Source/WebCore/loader with WTF::Borrow, using borrow() in\nrange-based for loops and for single accesses, or a named Borrow where a r",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
