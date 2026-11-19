@@ -91437,5 +91437,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T01:32:30.397993+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3dd73bf9b530d9af244c55d824e7008c83032678",
+    "url": "https://github.com/WebKit/WebKit/commit/3dd73bf9b530d9af244c55d824e7008c83032678",
+    "message": "Web Inspector: fix some incorrect `MessageSource`\nhttps://bugs.webkit.org/show_bug.cgi?id=332239\n\nReviewed by Marcos Caceres and Timothy Hatcher.\n\nA wide variety of Web Inspector Console messages are incorrectly reported as JavaScript errors or some other unrelated `MessageSource`.\n\nUse a more accur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T01:33:11.489804+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25d03d20ccc069daec59122c498f0d5d9dc51650",
+    "url": "https://github.com/WebKit/WebKit/commit/25d03d20ccc069daec59122c498f0d5d9dc51650",
+    "message": "[JSC] Make JSON.parse escaped string decoding faster\nhttps://bugs.webkit.org/show_bug.cgi?id=332064\nrdar://193064715\n\nReviewed by Marcus Plutowski.\n\nThis patch redesigns JSON.parse's escaped string decoding code.\nPreviously we were doing slow ops like iterating each character and\naccumulating them i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T01:33:50.490014+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57908bba84c0ac9c0e9a5a96ac2da6902fc6b189",
+    "url": "https://github.com/WebKit/WebKit/commit/57908bba84c0ac9c0e9a5a96ac2da6902fc6b189",
+    "message": "[Site Isolation] Web Inspector: Support cross-origin iframes in the CPUProfiler domain\nhttps://bugs.webkit.org/show_bug.cgi?id=331664\nrdar://192786660\n\nReviewed by Qianlang Chen and Anuj Panta.\n\nUnder Site Isolation, only the page target has the CPUProfiler domain, and it samples only the process of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T01:34:30.098745+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22233bc166c98ea2190b19b693b53c631d2ce125",
+    "url": "https://github.com/WebKit/WebKit/commit/22233bc166c98ea2190b19b693b53c631d2ce125",
+    "message": "[JSC] Apply fast double scan in JS lexer too\nhttps://bugs.webkit.org/show_bug.cgi?id=331701\nrdar://192803109\n\nReviewed by Shu-yu Guo.\n\nExtracting the fast parsing of double from JSON parser and share it with\nJS lexer too. We also apply this fast path to large double-array literal\nin JS parsing.\n\nTes",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T01:35:08.563619+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d5c5c8da53676f5920cab2593638e31ca4229bb7",
+    "url": "https://github.com/WebKit/WebKit/commit/d5c5c8da53676f5920cab2593638e31ca4229bb7",
+    "message": "[Site Isolation] Web Inspector: Support cross-origin iframes in the ScriptProfiler domain\nrdar://143597815\nhttps://bugs.webkit.org/show_bug.cgi?id=329360\n\nReviewed by Zak Ridouh.\n\nUnder Site Isolation, Timeline script records come from frame targets,\nbut ScriptProfiler is only on the page target. Th",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
