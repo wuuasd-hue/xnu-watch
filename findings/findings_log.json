@@ -91537,5 +91537,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T09:33:52.842492+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7174a439274c086890fdcdb6f5893b61d0f9d6b6",
+    "url": "https://github.com/WebKit/WebKit/commit/7174a439274c086890fdcdb6f5893b61d0f9d6b6",
+    "message": "Rename FrameLoader::clear() to detachCurrentDocument()\nhttps://bugs.webkit.org/show_bug.cgi?id=332187\nrdar://193127904\n\nReviewed by Ryosuke Niwa.\n\nFrameLoader::clear() detaches the frame's current document, either for a new\ndocument or, from LocalFrame's destructor, for none. The name didn't say so,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T09:34:30.700280+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06fac9b933a10bc5f7164cf34b1a965b11d2a38b",
+    "url": "https://github.com/WebKit/WebKit/commit/06fac9b933a10bc5f7164cf34b1a965b11d2a38b",
+    "message": "Encode strings as UTF-8 at their exact size\nhttps://bugs.webkit.org/show_bug.cgi?id=332159\nrdar://193108808\n\nReviewed by Geoffrey Garen.\n\nTextCodecUTF8::encodeUTF8(), which XMLHttpRequest, fetch, and Blob use for\nstring bodies, allocated for the worst case: two bytes per Latin-1 character\nand three ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T09:35:08.573012+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c65e294a18e237fcbbb0ff9410159b144ef8ff3",
+    "url": "https://github.com/WebKit/WebKit/commit/1c65e294a18e237fcbbb0ff9410159b144ef8ff3",
+    "message": "[JSC] Write the objects and arrays nested in prepared objects without the generic append() in FastStringifier\nhttps://bugs.webkit.org/show_bug.cgi?id=332004\nrdar://problem/193034167\n\nReviewed by Dan Hecht.\n\nFastStringifier::appendPreparedObject writes string, int32 and double property\nvalues inline,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T09:35:46.664388+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3dd73bf9b530d9af244c55d824e7008c83032678",
+    "url": "https://github.com/WebKit/WebKit/commit/3dd73bf9b530d9af244c55d824e7008c83032678",
+    "message": "Web Inspector: fix some incorrect `MessageSource`\nhttps://bugs.webkit.org/show_bug.cgi?id=332239\n\nReviewed by Marcos Caceres and Timothy Hatcher.\n\nA wide variety of Web Inspector Console messages are incorrectly reported as JavaScript errors or some other unrelated `MessageSource`.\n\nUse a more accur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T09:36:24.293257+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "25d03d20ccc069daec59122c498f0d5d9dc51650",
+    "url": "https://github.com/WebKit/WebKit/commit/25d03d20ccc069daec59122c498f0d5d9dc51650",
+    "message": "[JSC] Make JSON.parse escaped string decoding faster\nhttps://bugs.webkit.org/show_bug.cgi?id=332064\nrdar://193064715\n\nReviewed by Marcus Plutowski.\n\nThis patch redesigns JSON.parse's escaped string decoding code.\nPreviously we were doing slow ops like iterating each character and\naccumulating them i",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
