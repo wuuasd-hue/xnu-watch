@@ -91637,5 +91637,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T18:42:59.523090+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "885200628663c5c7e8dd5410b3ca9fdf083e4a0c",
+    "url": "https://github.com/WebKit/WebKit/commit/885200628663c5c7e8dd5410b3ca9fdf083e4a0c",
+    "message": "[JavaScriptCore] BytecodeDumper uses signed printf specifiers for unsigned values https://bugs.webkit.org/show_bug.cgi?id=331818\n\nReviewed by Yusuke Suzuki.\n\nThe exception handler indices and offsets, the switch jump table indices, and the\nparameter, callee register and variable counts are all unsig",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T18:43:38.118972+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "57908bba84c0ac9c0e9a5a96ac2da6902fc6b189",
+    "url": "https://github.com/WebKit/WebKit/commit/57908bba84c0ac9c0e9a5a96ac2da6902fc6b189",
+    "message": "[Site Isolation] Web Inspector: Support cross-origin iframes in the CPUProfiler domain\nhttps://bugs.webkit.org/show_bug.cgi?id=331664\nrdar://192786660\n\nReviewed by Qianlang Chen and Anuj Panta.\n\nUnder Site Isolation, only the page target has the CPUProfiler domain, and it samples only the process of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-19T18:44:16.682504+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7174a439274c086890fdcdb6f5893b61d0f9d6b6",
+    "url": "https://github.com/WebKit/WebKit/commit/7174a439274c086890fdcdb6f5893b61d0f9d6b6",
+    "message": "Rename FrameLoader::clear() to detachCurrentDocument()\nhttps://bugs.webkit.org/show_bug.cgi?id=332187\nrdar://193127904\n\nReviewed by Ryosuke Niwa.\n\nFrameLoader::clear() detaches the frame's current document, either for a new\ndocument or, from LocalFrame's destructor, for none. The name didn't say so,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
