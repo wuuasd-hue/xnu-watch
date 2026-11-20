@@ -91857,5 +91857,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T16:27:27.238893+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f4d858d049ac1b2f1844eea3c04fd0721bc7c23",
+    "url": "https://github.com/WebKit/WebKit/commit/5f4d858d049ac1b2f1844eea3c04fd0721bc7c23",
+    "message": "Promote ASSERT_WITH_SECURITY_IMPLICATION to RELEASE_ASSERT outside of hot code paths\nhttps://bugs.webkit.org/show_bug.cgi?id=332328\n\nReviewed by Geoffrey Garen.\n\nASSERT_WITH_SECURITY_IMPLICATION() is only enabled in debug and ASAN builds, so the\nsecurity invariants it checks are not enforced in rele",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T16:28:05.347488+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9cef4f44bb4089b1654777804b3f395943dde9cc",
+    "url": "https://github.com/WebKit/WebKit/commit/9cef4f44bb4089b1654777804b3f395943dde9cc",
+    "message": "[JSC] `Function#apply` with undefined or null arguments should not call operations when the callee is inlined\nhttps://bugs.webkit.org/show_bug.cgi?id=331696\n\nReviewed by Yusuke Suzuki.\n\nWhen `args` of `f.apply(thisArg, args)` is undefined or null and `f` is inlined, the only thing which\nLoadVarargs(",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T16:28:43.016110+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "71d515aa2f758228e15232f364c41941e389e823",
+    "url": "https://github.com/WebKit/WebKit/commit/71d515aa2f758228e15232f364c41941e389e823",
+    "message": "[JSC] `VarargsLengthWithSpread` and `LoadVarargsWithSpread` should not clobber the world\nhttps://bugs.webkit.org/show_bug.cgi?id=331699\n\nReviewed by Yusuke Suzuki.\n\nAfter 326594@main, VarargsLengthWithSpread and LoadVarargsWithSpread do not call operations. They only\nadd up the lengths and copy the ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
