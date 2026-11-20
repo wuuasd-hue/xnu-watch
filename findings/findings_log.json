@@ -91697,5 +91697,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T00:57:45.428321+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "06fac9b933a10bc5f7164cf34b1a965b11d2a38b",
+    "url": "https://github.com/WebKit/WebKit/commit/06fac9b933a10bc5f7164cf34b1a965b11d2a38b",
+    "message": "Encode strings as UTF-8 at their exact size\nhttps://bugs.webkit.org/show_bug.cgi?id=332159\nrdar://193108808\n\nReviewed by Geoffrey Garen.\n\nTextCodecUTF8::encodeUTF8(), which XMLHttpRequest, fetch, and Blob use for\nstring bodies, allocated for the worst case: two bytes per Latin-1 character\nand three ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T00:58:23.315153+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1c65e294a18e237fcbbb0ff9410159b144ef8ff3",
+    "url": "https://github.com/WebKit/WebKit/commit/1c65e294a18e237fcbbb0ff9410159b144ef8ff3",
+    "message": "[JSC] Write the objects and arrays nested in prepared objects without the generic append() in FastStringifier\nhttps://bugs.webkit.org/show_bug.cgi?id=332004\nrdar://problem/193034167\n\nReviewed by Dan Hecht.\n\nFastStringifier::appendPreparedObject writes string, int32 and double property\nvalues inline,",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
