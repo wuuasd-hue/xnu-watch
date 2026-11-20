@@ -91917,5 +91917,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T22:43:49.871394+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "176863d51e406d73589c8fdff3e8974160681126",
+    "url": "https://github.com/WebKit/WebKit/commit/176863d51e406d73589c8fdff3e8974160681126",
+    "message": "Web Inspector: Heap snapshot object ids are reused when another target's Heap domain is disabled\nrdar://192635771\nhttps://bugs.webkit.org/show_bug.cgi?id=331314\n\nReviewed by Anuj Panta.\n\nHeapSnapshotBuilder numbers snapshot nodes from one static counter\nshared by every VM in the process, which worke",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-20T22:44:28.069545+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "5f4d858d049ac1b2f1844eea3c04fd0721bc7c23",
+    "url": "https://github.com/WebKit/WebKit/commit/5f4d858d049ac1b2f1844eea3c04fd0721bc7c23",
+    "message": "Promote ASSERT_WITH_SECURITY_IMPLICATION to RELEASE_ASSERT outside of hot code paths\nhttps://bugs.webkit.org/show_bug.cgi?id=332328\n\nReviewed by Geoffrey Garen.\n\nASSERT_WITH_SECURITY_IMPLICATION() is only enabled in debug and ASAN builds, so the\nsecurity invariants it checks are not enforced in rele",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
