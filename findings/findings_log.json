@@ -92017,5 +92017,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T11:51:33.705591+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "url": "https://github.com/WebKit/WebKit/commit/6ae2e2fec95a69df465f85e1a85925e20b6897e3",
+    "message": "[JSC][Wasm] Accept bottom refs in i31.get_s and i31.get_u\nhttps://bugs.webkit.org/show_bug.cgi?id=322836\n\nReviewed by Yusuke Suzuki.\n\ni31.get_s and i31.get_u take (ref null i31). none is a subtype of\ni31 so (ref none) and (ref null none) must validate. They still trap\nif the value is null. The valid",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T11:52:11.233714+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fea77037ca1f856086ae677086b51233c27eb1e8",
+    "url": "https://github.com/WebKit/WebKit/commit/fea77037ca1f856086ae677086b51233c27eb1e8",
+    "message": "[JSC] `RegExp#test` minimum-length filter must not skip the `lastIndex` read\nhttps://bugs.webkit.org/show_bug.cgi?id=323501\n\nReviewed by Yusuke Suzuki.\n\nRegExpBuiltinExec reads lastIndex through ToLength(? Get(R, \"lastIndex\")) for\nevery RegExp, global or not, so a non-numeric lastIndex has observabl",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
