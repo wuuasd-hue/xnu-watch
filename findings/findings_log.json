@@ -92057,5 +92057,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T18:19:05.845631+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "url": "https://github.com/WebKit/WebKit/commit/70cd4be688bb80e05c128e6de6a7bcad7d62183a",
+    "message": "JSON displayed with wrong encoding when loaded in a frame (browser default instead of UTF-8)\nhttps://bugs.webkit.org/show_bug.cgi?id=197369\nrdar://71522231\n\nReviewed by Chris Dumez.\n\nThe patch aligns WebKit with Gecko / Firefox and Blink / Chromium.\n\nWhen an \"application/json\" response with no chars",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T18:19:44.706475+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f37e63364972e1422369384acae46239389122eb",
+    "url": "https://github.com/WebKit/WebKit/commit/f37e63364972e1422369384acae46239389122eb",
+    "message": "[JSC] Fill the result array of `Object.values` directly instead of via `MarkedArgumentBuffer`\nhttps://bugs.webkit.org/show_bug.cgi?id=323406\n\nReviewed by Yusuke Suzuki.\n\nObject.values on a plain object with N enumerable properties currently\ncollects the N values into a MarkedArgumentBuffer and then ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
