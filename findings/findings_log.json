@@ -92097,5 +92097,45 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T23:29:49.305973+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "url": "https://github.com/WebKit/WebKit/commit/8e7f96f9a5dbad82750e21e61a99177085d518c3",
+    "message": "[JSC] Keep doubles outside the int32 range on the `ToInt32` fast path on x86_64\nhttps://bugs.webkit.org/show_bug.cgi?id=323498\n\nReviewed by Yusuke Suzuki.\n\nOn x86_64, the DFG and FTL convert a double to int32 with the 32-bit\ncvttsd2si, which fails for every value outside [-2^31, 2^31) and falls\nback",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T23:30:26.841247+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "url": "https://github.com/WebKit/WebKit/commit/10d4d20f5b6c1db2127d5fb7fd0fae533a092b57",
+    "message": "[JSC] Folding `Shl` into `WasmAddress` index form can use a locked value's `Tmp`\nhttps://bugs.webkit.org/show_bug.cgi?id=323582\n\nReviewed by Keith Miller.\n\nSince 320441@main the WasmAddress case of effectiveAddr() folds a\npointer-width Shl into the index scale, but unlike the sibling Add and Shl\ncas",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
