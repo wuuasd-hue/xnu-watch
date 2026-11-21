@@ -91957,5 +91957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T03:35:14.679359+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f20599e332d06b788a9db5871374ebe557de4793",
+    "url": "https://github.com/WebKit/WebKit/commit/f20599e332d06b788a9db5871374ebe557de4793",
+    "message": "[Site Isolation] UI process crashes in WebPageProxy::postMessageToRemote after restoring a tab whose page now redirects\nhttps://bugs.webkit.org/show_bug.cgi?id=332047\nrdar://192621813\n\nReviewed by Ryosuke Niwa.\n\nSuppose a tab shows a page on news.a.com and the session is saved. When the tab is resto",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T03:35:53.690278+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f20599e332d06b788a9db5871374ebe557de4793",
+    "url": "https://github.com/WebKit/WebKit/commit/f20599e332d06b788a9db5871374ebe557de4793",
+    "message": "[Site Isolation] UI process crashes in WebPageProxy::postMessageToRemote after restoring a tab whose page now redirects\nhttps://bugs.webkit.org/show_bug.cgi?id=332047\nrdar://192621813\n\nReviewed by Ryosuke Niwa.\n\nSuppose a tab shows a page on news.a.com and the session is saved. When the tab is resto",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-21T03:36:31.453382+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "url": "https://github.com/WebKit/WebKit/commit/54c30c45bed4cb4c6232cdd08d44ac783725430b",
+    "message": "[JSC] Load ARM64 SIMD bitmask tower constants\nhttps://bugs.webkit.org/show_bug.cgi?id=323350\n\nReviewed by Yusuke Suzuki.\n\nARM64 i8x16/i16x8/i32x4.bitmask builds a {1,2,4,...} v128 mask\nand materializes it with two 64-bit GPR moves plus splat and\nreplace-lane. Those lane values are not a repeated imm",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
