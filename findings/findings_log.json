@@ -92297,5 +92297,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T23:55:04.693360+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "50750c526abd4e866d28cd46c2e4245f1f8c7c4a",
+    "url": "https://github.com/WebKit/WebKit/commit/50750c526abd4e866d28cd46c2e4245f1f8c7c4a",
+    "message": "[JSC] Do not call the jsc shell's memory pressure hook on every microtask\nhttps://bugs.webkit.org/show_bug.cgi?id=332726\nrdar://193439568\n\nReviewed by Justin Michaud.\n\nCall the `jsc` shell's memory pressure hook from `drainMicrotasks()` only\nafter a memory pressure event requests it.  The hook retur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T23:55:42.400384+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a8e99be9b3b73f85560b3acbb58d0c3a44bb8097",
+    "url": "https://github.com/WebKit/WebKit/commit/a8e99be9b3b73f85560b3acbb58d0c3a44bb8097",
+    "message": "[Site Isolation] Web Inspector: Pause and resolve intercepted requests and responses of cross-origin iframes\nhttps://bugs.webkit.org/show_bug.cgi?id=327494\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation the Network domain lives in the UI process (ProxyingNetworkAgent) and\nWeb Inspector's intercep",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T23:56:20.665084+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "50750c526abd4e866d28cd46c2e4245f1f8c7c4a",
+    "url": "https://github.com/WebKit/WebKit/commit/50750c526abd4e866d28cd46c2e4245f1f8c7c4a",
+    "message": "[JSC] Do not call the jsc shell's memory pressure hook on every microtask\nhttps://bugs.webkit.org/show_bug.cgi?id=332726\nrdar://193439568\n\nReviewed by Justin Michaud.\n\nCall the `jsc` shell's memory pressure hook from `drainMicrotasks()` only\nafter a memory pressure event requests it.  The hook retur",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T23:56:58.318200+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a8e99be9b3b73f85560b3acbb58d0c3a44bb8097",
+    "url": "https://github.com/WebKit/WebKit/commit/a8e99be9b3b73f85560b3acbb58d0c3a44bb8097",
+    "message": "[Site Isolation] Web Inspector: Pause and resolve intercepted requests and responses of cross-origin iframes\nhttps://bugs.webkit.org/show_bug.cgi?id=327494\n\nReviewed by Qianlang Chen.\n\nUnder Site Isolation the Network domain lives in the UI process (ProxyingNetworkAgent) and\nWeb Inspector's intercep",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
