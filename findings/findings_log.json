@@ -92177,5 +92177,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T11:43:13.622514+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc095e565d47e350a153b01c3ad3d1890381b23f",
+    "url": "https://github.com/WebKit/WebKit/commit/bc095e565d47e350a153b01c3ad3d1890381b23f",
+    "message": "[JSC] Use `BorrowedIdentifierMap` for identifier constants in `BytecodeGenerator`\nhttps://bugs.webkit.org/show_bug.cgi?id=332712\n\nReviewed by Yusuke Suzuki.\n\nBytecodeGenerator's identifier map has RefPtr keys, so every addConstant(const Identifier&) pays an\natomic ref and deref. The code block alrea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T11:43:51.434497+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99a917a02fc1f53fb172fa504873f46aa55bc363",
+    "url": "https://github.com/WebKit/WebKit/commit/99a917a02fc1f53fb172fa504873f46aa55bc363",
+    "message": "[JSC] Add ConstantArrayElements AST node\nhttps://bugs.webkit.org/show_bug.cgi?id=332318\nrdar://193176599\n\nReviewed by Keith Miller.\n\nWe can see massive array literal with integers and we even have\noptimization by using CoW arrays for that. But this is very\ninefficiently represented in AST nodes. Eac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T11:44:29.623254+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "bc095e565d47e350a153b01c3ad3d1890381b23f",
+    "url": "https://github.com/WebKit/WebKit/commit/bc095e565d47e350a153b01c3ad3d1890381b23f",
+    "message": "[JSC] Use `BorrowedIdentifierMap` for identifier constants in `BytecodeGenerator`\nhttps://bugs.webkit.org/show_bug.cgi?id=332712\n\nReviewed by Yusuke Suzuki.\n\nBytecodeGenerator's identifier map has RefPtr keys, so every addConstant(const Identifier&) pays an\natomic ref and deref. The code block alrea",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-22T11:45:07.490595+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "99a917a02fc1f53fb172fa504873f46aa55bc363",
+    "url": "https://github.com/WebKit/WebKit/commit/99a917a02fc1f53fb172fa504873f46aa55bc363",
+    "message": "[JSC] Add ConstantArrayElements AST node\nhttps://bugs.webkit.org/show_bug.cgi?id=332318\nrdar://193176599\n\nReviewed by Keith Miller.\n\nWe can see massive array literal with integers and we even have\noptimization by using CoW arrays for that. But this is very\ninefficiently represented in AST nodes. Eac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
