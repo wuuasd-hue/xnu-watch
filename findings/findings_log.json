@@ -92417,5 +92417,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-23T15:01:58.888895+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c1666fc1689e20fe8613ddf27d5569dd16d463c3",
+    "url": "https://github.com/WebKit/WebKit/commit/c1666fc1689e20fe8613ddf27d5569dd16d463c3",
+    "message": "Mixed content check should allow custom schemes registered in WKWebView\nhttps://bugs.webkit.org/show_bug.cgi?id=297536\nrdar://158601768\n\nReviewed by Alex Christensen.\n\nSchemes registered with a WKURLSchemeHandler are treated as potentially\ntrustworthy, which is why window.isSecureContext is true for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-23T15:02:36.980835+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c1666fc1689e20fe8613ddf27d5569dd16d463c3",
+    "url": "https://github.com/WebKit/WebKit/commit/c1666fc1689e20fe8613ddf27d5569dd16d463c3",
+    "message": "Mixed content check should allow custom schemes registered in WKWebView\nhttps://bugs.webkit.org/show_bug.cgi?id=297536\nrdar://158601768\n\nReviewed by Alex Christensen.\n\nSchemes registered with a WKURLSchemeHandler are treated as potentially\ntrustworthy, which is why window.isSecureContext is true for",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-23T15:03:16.413650+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "url": "https://github.com/WebKit/WebKit/commit/4fa7b55ae4c6485fcdef946f98b692bff1a2fcc6",
+    "message": "[JSC] eval call should recognize tail-position\nhttps://bugs.webkit.org/show_bug.cgi?id=323597\nrdar://186840477\n\nReviewed by Sosuke Suzuki.\n\nThis patch fixes TCO for function call named \"eval\".\nWe follow to the pattern used in spread call case: performing CallDirectEval\nonly when the function is actu",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
