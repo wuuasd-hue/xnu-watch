@@ -92637,5 +92637,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:48:54.707295+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcbbc8e862aa3253991de9d5e0bd87c77bc9e69e",
+    "url": "https://github.com/WebKit/WebKit/commit/fcbbc8e862aa3253991de9d5e0bd87c77bc9e69e",
+    "message": "[JSC] Keep sharing transitions for keyed adds on large dot-syntax objects\nhttps://bugs.webkit.org/show_bug.cgi?id=332864\nrdar://193523896\n\nReviewed by Tadeu Zagallo.\n\nA structure that grew past `s_maxTransitionLength` through dot syntax\nhas a fixed shape, yet its first keyed add turns each instance ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:49:32.705866+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ee75c0dc5d486e5286db35aebb80ea6cc650201",
+    "url": "https://github.com/WebKit/WebKit/commit/9ee75c0dc5d486e5286db35aebb80ea6cc650201",
+    "message": "[JSC] Add a DFG and FTL intrinsic for Math.sign\nhttps://bugs.webkit.org/show_bug.cgi?id=332885\nrdar://193533772\n\nReviewed by Tadeu Zagallo.\n\nAdd an `ArithSign` DFG and FTL intrinsic for `Math.sign()`.  Without an\nintrinsic, every `Math.sign()` call from optimized code goes through the\nhost call thun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:50:10.543228+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ddef4709a1cfbf3e69a16206af0fa7cd8e8cc17",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddef4709a1cfbf3e69a16206af0fa7cd8e8cc17",
+    "message": "[JSC] Optimize Array.prototype.flat() for hole-free double and int32 arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=332740\n\nReviewed by Yusuke Suzuki.\n\nThis patch optimizes `Array.prototype.flat()` for arrays under the situation\nwhere all of their elements consist of double or int32 values (ArrayWit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:50:49.013277+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a02a45241bec1d45810cd85d2d81846a41cb2d5",
+    "url": "https://github.com/WebKit/WebKit/commit/3a02a45241bec1d45810cd85d2d81846a41cb2d5",
+    "message": "[JSC] RegExp.lastMatch, leftContext, and rightContext should not reify the matches array\nhttps://bugs.webkit.org/show_bug.cgi?id=332897\nrdar://193547907\n\nReviewed by Tadeu Zagallo.\n\nCompute `RegExp.lastMatch` (`$&`), `RegExp.leftContext`, and\n`RegExp.rightContext` directly from the recorded match ra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:51:28.885426+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fcbbc8e862aa3253991de9d5e0bd87c77bc9e69e",
+    "url": "https://github.com/WebKit/WebKit/commit/fcbbc8e862aa3253991de9d5e0bd87c77bc9e69e",
+    "message": "[JSC] Keep sharing transitions for keyed adds on large dot-syntax objects\nhttps://bugs.webkit.org/show_bug.cgi?id=332864\nrdar://193523896\n\nReviewed by Tadeu Zagallo.\n\nA structure that grew past `s_maxTransitionLength` through dot syntax\nhas a fixed shape, yet its first keyed add turns each instance ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T22:52:06.799776+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9ee75c0dc5d486e5286db35aebb80ea6cc650201",
+    "url": "https://github.com/WebKit/WebKit/commit/9ee75c0dc5d486e5286db35aebb80ea6cc650201",
+    "message": "[JSC] Add a DFG and FTL intrinsic for Math.sign\nhttps://bugs.webkit.org/show_bug.cgi?id=332885\nrdar://193533772\n\nReviewed by Tadeu Zagallo.\n\nAdd an `ArithSign` DFG and FTL intrinsic for `Math.sign()`.  Without an\nintrinsic, every `Math.sign()` call from optimized code goes through the\nhost call thun",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
