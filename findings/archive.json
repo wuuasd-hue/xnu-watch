@@ -23384,5 +23384,35 @@
       "memory safety (OOB, UAF, overflow, type confusion)"
     ],
     "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "message": "WebContent is killed with \"Received invalid IPC message: WebPageProxy_DidStartProvisionalLoadForFrame\" when restoring a page with tracking query parameters from the back/forward cache\nhttps://bugs.webkit.org/show_bug.cgi?id=332661\nrdar://190686022\n\nReviewed by Sihui Liu.\n\nWhen a back/forward navigat",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/WebCore/loader/PolicyChecker.cpp ---\n@@ -197,8 +197,12 @@ void PolicyChecker::checkNavigationPolicy(ResourceRequest&& request, const Resou\n         return;\n     }\n \n+    // A committed loader here means the page is in the back/forward cache. If restored, it keeps its URL, so filtering\n+    // would make the client approve a different URL than the one the provisional load reports.\n+    bool hasCachedPage = isSameDocumentNavigation == IsSameDocumentNavigation::No && isBackForwardLoadType(m_loadType) && loader->isCommitted();\n+\n     // Filter only if top-level navigation and the URL was not previously filtered.\n-    if (RefPtr page = frame->page(); page && frame->isMainFrame() && !request.didFilterLinkDecoration()) {\n+    if (RefPtr page = frame->page(); page && frame->isMainFrame() && !request.didFilterLinkDecoration() && !hasCachedPage) {\n         auto [filteredURL, didFilter] = page->chrome().client().applyLinkDecorationFilteringWithResult(request.url(), LinkDecorationFilteringTrigger::Navigation);\n         request.setURL(WTF::move(filteredURL), didFilter == DidFilterLinkDecoration::Yes);\n     }\n\n--- Tools/TestWebKitAPI/Tests/WebKit/WKWebView/AdvancedPrivacyProtections.mm ---\n@@ -497,6 +497,45 @@ static void copyURLWithQueryParameters()\n     EXPECT_WK_STREQ([targetURL absoluteString], \"https://bundle-file/simple.html?garply=20\");\n }\n \n+TEST(AdvancedPrivacyProtections, DoNotRemoveTrackingQueryParametersWhenRestoringFromBackForwardCache)\n+{\n+    [TestProtocol registerWithScheme:@\"https\"];\n+    QueryParameterRequestSwizzler swizzler { @[ @\"foo\", @\"bar\", @\"baz\" ], @[ @\"\", @\"\", @\"\" ], @[ @\"\", @\"\", @\"\" ] };\n+\n+    auto webView = createWebViewWithAdvancedPrivacyProtections();\n+    RetainPtr navigationDelegate = adoptNS([TestNavigationDelegate new]);\n+    [webView setNavigationDelegate:navigationDelegate.get()];\n+\n+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@\"https://webkit.org/first\"]]];\n+    [navigationDelegate waitForDidFinishNavigation];\n+\n+    [webView objectByEvaluatingJavaScript:@\"history.replaceState(null, '', '?foo=10&garply=20'); addEventListener('pageshow', event => window.wasPersisted = event.persisted); true\"];\n+    EXPECT_WK_STREQ(\"https://webkit.org/first?foo=10&garply=20\", [webView URL].absoluteString);\n+\n+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@\"https://webkit.org/second\"]]];\n+    [navigationDelegate waitForDidFinishNavigation];\n+\n+    bool didFinishNavigation = false;\n+    bool didTerminateWebProcess = false;\n+    bool done = false;\n+    [navigationDelegate setDidFinishNavigation:[&](WKWebView *, WKNavigation *) {\n+        didFinishNavigation = true;\n+        done = true;\n+    }];\n+    [navigationDelegate setWebContentProcessDidTerminate:[&](WKWebView *, _WKProcessTerminationReason) {\n+        didTerminateWebProcess = true;\n+        done = true;\n+    }];\n+\n+    [webView goBack];\n+    Util::run(&done);\n+\n+    EXPECT_FALSE(didTerminateWebProcess);\n+    EXPECT_TRUE(didFinishNavigation);\n+    EXPECT_WK_STREQ(\"https://webkit.org/first?foo=10&garply=20\", [webView URL].absoluteString);\n+    EXPECT_TRUE([[webView objectByEvaluatingJavaScript:@\"window.wasPersisted\"] boolValue]);\n+}\n+\n TEST(AdvancedPrivacyProtections, RemoveTrackingQueryParametersForMainFrameMainResourcesOnly)\n {\n     [TestProtocol registerWithScheme:@\"https\"];\n",
+    "url": "https://github.com/WebKit/WebKit/commit/b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
+  },
+  {
+    "repo": "WebKit/WebKit",
+    "sha": "7d082cb35957d0845f93cab2b17ea068539032b2",
+    "message": "[GTK][WPE] Swift compile does not wait for the JavaScriptCore GLib API headers\nhttps://bugs.webkit.org/show_bug.cgi?id=332807\n\nReviewed by Adrian Perez de Castro.\n\nThe Clang importer builds the WebKit_Internal module from the WPE and GTK API\nheaders, which include <jsc/jsc.h>. That header is generat",
+    "description": "JSC ve WebCore loader - en sik exploit edilen Apple yuzeyi",
+    "lens_key": "webkit_swift",
+    "diff": "\n--- Source/JavaScriptCore/GLib.cmake ---\n@@ -78,6 +78,14 @@ add_custom_command(\n add_custom_target(JSC-fake-api-headers\n     DEPENDS ${JavaScriptCoreGLib_FRAMEWORK_HEADERS_DIR}/jsc\n )\n+\n+# Generates the API headers (<jsc/jsc.h>) without building JavaScriptCore.\n+# The Swift Clang importer of WebKit needs them.\n+add_custom_target(JavaScriptCore_GLibAPIHeaders\n+    DEPENDS ${JavaScriptCore_INSTALLED_HEADERS}\n+)\n+add_dependencies(JavaScriptCore_GLibAPIHeaders JSC-fake-api-headers)\n+\n set(JavaScriptCore_EXTRA_DEPENDENCIES\n     JSC-fake-api-headers\n )\n\n--- Source/cmake/WebKitMacros.cmake ---\n@@ -1648,7 +1648,7 @@ function(_webkit_setup_swift_header_deps _target _stamp _header _resp)\n     endif ()\n     set(_deps \"\")\n     foreach (_lib IN LISTS _candidates)\n-        foreach (_suffix IN ITEMS _CopyHeaders _CopyPrivateHeaders)\n+        foreach (_suffix IN ITEMS _CopyHeaders _CopyPrivateHeaders _GLibAPIHeaders)\n             if (TARGET \"${_lib}${_suffix}\")\n                 list(APPEND _deps \"${_lib}${_suffix}\")\n             endif ()\n",
+    "url": "https://github.com/WebKit/WebKit/commit/7d082cb35957d0845f93cab2b17ea068539032b2",
+    "last_outcome": "DISCARD",
+    "focus_used": [
+      "initial pass (target-specific lens)",
+      "memory safety (OOB, UAF, overflow, type confusion)"
+    ],
+    "times_reexamined": 1
   }
 ]

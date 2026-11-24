@@ -92557,5 +92557,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T12:42:01.449527+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "url": "https://github.com/WebKit/WebKit/commit/b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "message": "WebContent is killed with \"Received invalid IPC message: WebPageProxy_DidStartProvisionalLoadForFrame\" when restoring a page with tracking query parameters from the back/forward cache\nhttps://bugs.webkit.org/show_bug.cgi?id=332661\nrdar://190686022\n\nReviewed by Sihui Liu.\n\nWhen a back/forward navigat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T12:42:39.683400+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d082cb35957d0845f93cab2b17ea068539032b2",
+    "url": "https://github.com/WebKit/WebKit/commit/7d082cb35957d0845f93cab2b17ea068539032b2",
+    "message": "[GTK][WPE] Swift compile does not wait for the JavaScriptCore GLib API headers\nhttps://bugs.webkit.org/show_bug.cgi?id=332807\n\nReviewed by Adrian Perez de Castro.\n\nThe Clang importer builds the WebKit_Internal module from the WPE and GTK API\nheaders, which include <jsc/jsc.h>. That header is generat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T12:43:17.945222+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "url": "https://github.com/WebKit/WebKit/commit/b9239ea2a5305ed95b4b3ca67f8804fd2ac23b9c",
+    "message": "WebContent is killed with \"Received invalid IPC message: WebPageProxy_DidStartProvisionalLoadForFrame\" when restoring a page with tracking query parameters from the back/forward cache\nhttps://bugs.webkit.org/show_bug.cgi?id=332661\nrdar://190686022\n\nReviewed by Sihui Liu.\n\nWhen a back/forward navigat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T12:43:55.622083+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "7d082cb35957d0845f93cab2b17ea068539032b2",
+    "url": "https://github.com/WebKit/WebKit/commit/7d082cb35957d0845f93cab2b17ea068539032b2",
+    "message": "[GTK][WPE] Swift compile does not wait for the JavaScriptCore GLib API headers\nhttps://bugs.webkit.org/show_bug.cgi?id=332807\n\nReviewed by Adrian Perez de Castro.\n\nThe Clang importer builds the WebKit_Internal module from the WPE and GTK API\nheaders, which include <jsc/jsc.h>. That header is generat",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
