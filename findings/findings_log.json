@@ -92477,5 +92477,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T02:24:47.564489+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b234644f9e9e31fe4a008b8c7e829e83e83fc3c7",
+    "url": "https://github.com/WebKit/WebKit/commit/b234644f9e9e31fe4a008b8c7e829e83e83fc3c7",
+    "message": "Web Inspector: previews call user getters that are bound functions, callable Proxies, or that override toString\nhttps://bugs.webkit.org/show_bug.cgi?id=332268\nrdar://193152152\n\nReviewed by Devin Rousso.\n\nPreviews and property lists show the value of a native getter, such as a DOM attribute, by calli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T02:25:25.507709+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e61981c6d2a7f1de35ae5e80951867d87828ebd2",
+    "url": "https://github.com/WebKit/WebKit/commit/e61981c6d2a7f1de35ae5e80951867d87828ebd2",
+    "message": "Apply a style sheet's Referrer-Policy header to the resources it loads\nhttps://bugs.webkit.org/show_bug.cgi?id=332694\n\nReviewed by Anne van Kesteren.\n\nUse the referrer policy from a fetched style sheet's Referrer-Policy response header for the\nresources it loads as the Referrer Policy spec requires.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T02:26:03.909932+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b234644f9e9e31fe4a008b8c7e829e83e83fc3c7",
+    "url": "https://github.com/WebKit/WebKit/commit/b234644f9e9e31fe4a008b8c7e829e83e83fc3c7",
+    "message": "Web Inspector: previews call user getters that are bound functions, callable Proxies, or that override toString\nhttps://bugs.webkit.org/show_bug.cgi?id=332268\nrdar://193152152\n\nReviewed by Devin Rousso.\n\nPreviews and property lists show the value of a native getter, such as a DOM attribute, by calli",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-24T02:26:41.819456+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "e61981c6d2a7f1de35ae5e80951867d87828ebd2",
+    "url": "https://github.com/WebKit/WebKit/commit/e61981c6d2a7f1de35ae5e80951867d87828ebd2",
+    "message": "Apply a style sheet's Referrer-Policy header to the resources it loads\nhttps://bugs.webkit.org/show_bug.cgi?id=332694\n\nReviewed by Anne van Kesteren.\n\nUse the referrer policy from a fetched style sheet's Referrer-Policy response header for the\nresources it loads as the Referrer Policy spec requires.",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
