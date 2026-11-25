@@ -92837,5 +92837,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:50:20.361500+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf5b4b668d1e9e15ca82d672bebc466124f359a9",
+    "url": "https://github.com/WebKit/WebKit/commit/cf5b4b668d1e9e15ca82d672bebc466124f359a9",
+    "message": "[JSC] Optimize `String.fromCharCode` with multiple arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=331034\n\nReviewed by Yusuke Suzuki.\n\nString.fromCharCode with two or more arguments always goes to the host\nfunction. It optimistically allocated an 8-bit buffer, and when it found\na non-Latin1 charac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:50:57.874344+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b739a1b3afa7a67d8d605c45fffa7beeb38b2f84",
+    "url": "https://github.com/WebKit/WebKit/commit/b739a1b3afa7a67d8d605c45fffa7beeb38b2f84",
+    "message": "[Swift] Move WTF::CompletionHandler's Swift support into WTF\nhttps://bugs.webkit.org/show_bug.cgi?id=333025\nrdar://193612830\n\nReviewed by Adrian Taylor.\n\nWTFCompletionHandler+Extras.swift was duplicated in WebKit and TestWebKitAPI. Move it into WTF so that there is\none copy.\n\nA public protocol in WT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:51:35.335887+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "981c6d41e86883f4080f5c846919f93009ac5af6",
+    "url": "https://github.com/WebKit/WebKit/commit/981c6d41e86883f4080f5c846919f93009ac5af6",
+    "message": "[JSC] Address constant Wasm memory addresses as an immediate offset from the memory base\nhttps://bugs.webkit.org/show_bug.cgi?id=332989\nrdar://193597535\n\nReviewed by Sosuke Suzuki.\n\nA `WasmAddress` whose index is a constant, which is how compiled C\nreaches its globals, was always lowered to a regist",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:52:12.788677+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ea4e9954ed818965c187cdd62e09bddd1652464",
+    "url": "https://github.com/WebKit/WebKit/commit/0ea4e9954ed818965c187cdd62e09bddd1652464",
+    "message": "[JSC][YARR] Dispatch repeated body alternatives on their first character\nhttps://bugs.webkit.org/show_bug.cgi?id=332141\nrdar://193099404\n\nReviewed by Sosuke Suzuki.\n\nIf we have a RegExp which body alternative starts with a character, or\ncharacter class, and each of them are disjoint or equal, we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:52:50.470186+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "924b3a524929145c4f1c5ee2c718af3cf0e76d04",
+    "url": "https://github.com/WebKit/WebKit/commit/924b3a524929145c4f1c5ee2c718af3cf0e76d04",
+    "message": "Use precise thread assertions instead of \"not main thread\" checks\nhttps://bugs.webkit.org/show_bug.cgi?id=332918\n\nReviewed by Geoffrey Garen.\n\nASSERT(!isMainThread()) and ASSERT(!RunLoop::isMain()) only prove that\ncode runs on some background thread. Most of these sites run on one\nspecific queue or ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T15:53:27.789044+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea413ad1ae2926cd648679ff667b654e4a06f260",
+    "url": "https://github.com/WebKit/WebKit/commit/ea413ad1ae2926cd648679ff667b654e4a06f260",
+    "message": "Remove Ref::unsafePtr() calls outside of accessibility code\nhttps://bugs.webkit.org/show_bug.cgi?id=332922\n\nReviewed by Geoffrey Garen.\n\nRef::ptr() is LIFETIME_BOUND, so these call sites could not simply switch to it.\nRestructure them so no unsafe accessor is needed, without adding ref churn.\n\nI hav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
