@@ -92957,5 +92957,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T23:50:23.382142+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a90c65c133c45532dcc373473522f8146ff61fc6",
+    "url": "https://github.com/WebKit/WebKit/commit/a90c65c133c45532dcc373473522f8146ff61fc6",
+    "message": "[JSC] DFG should call the target of a bound function allocated in the same code directly\nhttps://bugs.webkit.org/show_bug.cgi?id=333061\nrdar://193632017\n\nReviewed by Tadeu Zagallo.\n\nA call to a bound function with no bound arguments is a call to its\ntarget with the bound `this`, so strength reductio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T23:51:01.924488+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "cf5b4b668d1e9e15ca82d672bebc466124f359a9",
+    "url": "https://github.com/WebKit/WebKit/commit/cf5b4b668d1e9e15ca82d672bebc466124f359a9",
+    "message": "[JSC] Optimize `String.fromCharCode` with multiple arguments\nhttps://bugs.webkit.org/show_bug.cgi?id=331034\n\nReviewed by Yusuke Suzuki.\n\nString.fromCharCode with two or more arguments always goes to the host\nfunction. It optimistically allocated an 8-bit buffer, and when it found\na non-Latin1 charac",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T23:51:40.052026+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "b739a1b3afa7a67d8d605c45fffa7beeb38b2f84",
+    "url": "https://github.com/WebKit/WebKit/commit/b739a1b3afa7a67d8d605c45fffa7beeb38b2f84",
+    "message": "[Swift] Move WTF::CompletionHandler's Swift support into WTF\nhttps://bugs.webkit.org/show_bug.cgi?id=333025\nrdar://193612830\n\nReviewed by Adrian Taylor.\n\nWTFCompletionHandler+Extras.swift was duplicated in WebKit and TestWebKitAPI. Move it into WTF so that there is\none copy.\n\nA public protocol in WT",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
