@@ -92757,5 +92757,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T05:06:05.182970+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "924b3a524929145c4f1c5ee2c718af3cf0e76d04",
+    "url": "https://github.com/WebKit/WebKit/commit/924b3a524929145c4f1c5ee2c718af3cf0e76d04",
+    "message": "Use precise thread assertions instead of \"not main thread\" checks\nhttps://bugs.webkit.org/show_bug.cgi?id=332918\n\nReviewed by Geoffrey Garen.\n\nASSERT(!isMainThread()) and ASSERT(!RunLoop::isMain()) only prove that\ncode runs on some background thread. Most of these sites run on one\nspecific queue or ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T05:06:43.433537+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "ea413ad1ae2926cd648679ff667b654e4a06f260",
+    "url": "https://github.com/WebKit/WebKit/commit/ea413ad1ae2926cd648679ff667b654e4a06f260",
+    "message": "Remove Ref::unsafePtr() calls outside of accessibility code\nhttps://bugs.webkit.org/show_bug.cgi?id=332922\n\nReviewed by Geoffrey Garen.\n\nRef::ptr() is LIFETIME_BOUND, so these call sites could not simply switch to it.\nRestructure them so no unsafe accessor is needed, without adding ref churn.\n\nI hav",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T05:07:21.891106+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3ddef4709a1cfbf3e69a16206af0fa7cd8e8cc17",
+    "url": "https://github.com/WebKit/WebKit/commit/3ddef4709a1cfbf3e69a16206af0fa7cd8e8cc17",
+    "message": "[JSC] Optimize Array.prototype.flat() for hole-free double and int32 arrays\nhttps://bugs.webkit.org/show_bug.cgi?id=332740\n\nReviewed by Yusuke Suzuki.\n\nThis patch optimizes `Array.prototype.flat()` for arrays under the situation\nwhere all of their elements consist of double or int32 values (ArrayWit",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-25T05:07:59.993401+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "3a02a45241bec1d45810cd85d2d81846a41cb2d5",
+    "url": "https://github.com/WebKit/WebKit/commit/3a02a45241bec1d45810cd85d2d81846a41cb2d5",
+    "message": "[JSC] RegExp.lastMatch, leftContext, and rightContext should not reify the matches array\nhttps://bugs.webkit.org/show_bug.cgi?id=332897\nrdar://193547907\n\nReviewed by Tadeu Zagallo.\n\nCompute `RegExp.lastMatch` (`$&`), `RegExp.leftContext`, and\n`RegExp.rightContext` directly from the recorded match ra",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
