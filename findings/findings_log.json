@@ -93137,5 +93137,65 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T15:52:18.703365+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0dea5ba29ece4b7f2570a46f688e5d4f8cbd756a",
+    "url": "https://github.com/WebKit/WebKit/commit/0dea5ba29ece4b7f2570a46f688e5d4f8cbd756a",
+    "message": "Replace utf8() and tryGetUTF8() members with free functions\nhttps://bugs.webkit.org/show_bug.cgi?id=332945\nrdar://193574627\n\nReviewed by Darin Adler.\n\nAs Darin Adler suggested in review of bug 332672, converting to UTF-8 works\nbetter as a free function overloaded for the types it takes, like\nutf8Len",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T15:52:57.106202+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "a90c65c133c45532dcc373473522f8146ff61fc6",
+    "url": "https://github.com/WebKit/WebKit/commit/a90c65c133c45532dcc373473522f8146ff61fc6",
+    "message": "[JSC] DFG should call the target of a bound function allocated in the same code directly\nhttps://bugs.webkit.org/show_bug.cgi?id=333061\nrdar://193632017\n\nReviewed by Tadeu Zagallo.\n\nA call to a bound function with no bound arguments is a call to its\ntarget with the bound `this`, so strength reductio",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T15:53:35.219879+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "16bbbba978cd3d1ffd27ae550b3f0c1c5c789308",
+    "url": "https://github.com/WebKit/WebKit/commit/16bbbba978cd3d1ffd27ae550b3f0c1c5c789308",
+    "message": "upgrade-insecure-requests carried over to later documents in the same frame\nhttps://bugs.webkit.org/show_bug.cgi?id=332751\nrdar://193462070\n\nReviewed by Youenn Fablet.\n\nA document that enforces upgrade-insecure-requests adds its origin to its\nupgrade insecure navigations set. DocumentWriter::begin()",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
