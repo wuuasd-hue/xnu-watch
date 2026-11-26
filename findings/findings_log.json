@@ -93017,5 +93017,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:34:48.558178+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "16bbbba978cd3d1ffd27ae550b3f0c1c5c789308",
+    "url": "https://github.com/WebKit/WebKit/commit/16bbbba978cd3d1ffd27ae550b3f0c1c5c789308",
+    "message": "upgrade-insecure-requests carried over to later documents in the same frame\nhttps://bugs.webkit.org/show_bug.cgi?id=332751\nrdar://193462070\n\nReviewed by Youenn Fablet.\n\nA document that enforces upgrade-insecure-requests adds its origin to its\nupgrade insecure navigations set. DocumentWriter::begin()",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:35:26.121707+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d94e8502e0a6a84d9a6acc115d5f45759f22bf2e",
+    "url": "https://github.com/WebKit/WebKit/commit/d94e8502e0a6a84d9a6acc115d5f45759f22bf2e",
+    "message": "[JSC] Do not revive an array iterator finished by a nested next()\nhttps://bugs.webkit.org/show_bug.cgi?id=332741\n\nReviewed by Yusuke Suzuki.\n\nArray iterator next() reads the index, then reads length. The length\ngetter can call next() again. That nested call can finish the iterator\nby storing -1. The",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:36:03.669980+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dbafa06019e27e7292dfd6e064d14c3b99e68c3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dbafa06019e27e7292dfd6e064d14c3b99e68c3",
+    "message": "Address remaining MemoryUnsafeCastChecker warnings outside JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=333034\n\nReviewed by Anne van Kesteren.\n\nMost of the remaining warnings were reported in RetainPtr.h, inside\nRetainPtr<T>::operator=(U*). Assigning a value typed as an ObjC generic\nparame",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:36:42.507501+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbf0af895cd37d9a2265f7f056e0327c4c81241b",
+    "url": "https://github.com/WebKit/WebKit/commit/fbf0af895cd37d9a2265f7f056e0327c4c81241b",
+    "message": "[JSC] Let inline caches re-flatten a prototype dictionary a few times\nhttps://bugs.webkit.org/show_bug.cgi?id=333064\nrdar://193633655\n\nReviewed by Tadeu Zagallo.\n\nInline caching flattens a dictionary in a prototype chain only once\n(webkit.org/b/158045), to avoid churning objects that keep growing.\nB",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:37:21.066703+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "981c6d41e86883f4080f5c846919f93009ac5af6",
+    "url": "https://github.com/WebKit/WebKit/commit/981c6d41e86883f4080f5c846919f93009ac5af6",
+    "message": "[JSC] Address constant Wasm memory addresses as an immediate offset from the memory base\nhttps://bugs.webkit.org/show_bug.cgi?id=332989\nrdar://193597535\n\nReviewed by Sosuke Suzuki.\n\nA `WasmAddress` whose index is a constant, which is how compiled C\nreaches its globals, was always lowered to a regist",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-26T05:37:58.716807+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0ea4e9954ed818965c187cdd62e09bddd1652464",
+    "url": "https://github.com/WebKit/WebKit/commit/0ea4e9954ed818965c187cdd62e09bddd1652464",
+    "message": "[JSC][YARR] Dispatch repeated body alternatives on their first character\nhttps://bugs.webkit.org/show_bug.cgi?id=332141\nrdar://193099404\n\nReviewed by Sosuke Suzuki.\n\nIf we have a RegExp which body alternative starts with a character, or\ncharacter class, and each of them are disjoint or equal, we can",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
