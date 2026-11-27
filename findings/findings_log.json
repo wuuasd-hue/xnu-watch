@@ -93277,5 +93277,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:50:46.423506+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eda360209ba8bdc79773c88390a2a45bd1f7ecab",
+    "url": "https://github.com/WebKit/WebKit/commit/eda360209ba8bdc79773c88390a2a45bd1f7ecab",
+    "message": "[JSC] `VariableEnvironment` should avoid needless ref / deref of its keys\nhttps://bugs.webkit.org/show_bug.cgi?id=330348\n\nReviewed by Yusuke Suzuki.\n\nThe key of VariableEnvironment's InlineMap is PackedRefPtr, but its HashTraits is\nthe one for RefPtr. So every check for an empty or deleted key conve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:51:24.400451+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "09fa1f22dbc52e2aa8ed16940a51e12a4a751639",
+    "url": "https://github.com/WebKit/WebKit/commit/09fa1f22dbc52e2aa8ed16940a51e12a4a751639",
+    "message": "Adopt LIFETIME_BOUND in more Source/WebCore/loader and Source/WebCore/PAL functions\nhttps://bugs.webkit.org/show_bug.cgi?id=333186\n\nReviewed by Anne van Kesteren.\n\nMark loader accessors that return a reference or pointer to data owned by\nthe object as LIFETIME_BOUND: value members and the targets of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:52:01.969290+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "14a359a9cdde77c0ee6e7978d2d288f0c3380e7a",
+    "url": "https://github.com/WebKit/WebKit/commit/14a359a9cdde77c0ee6e7978d2d288f0c3380e7a",
+    "message": "[JSC] DFG should branch on done in each arm of `op_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=329085\n\nReviewed by Yusuke Suzuki.\n\nop_iterator_next is always followed by jtrue / jfalse on `done`. DFG joined all\narms of op_iterator_next into one block and branched on `done` there, although",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:52:39.607373+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0708b3d05eef15f7b585cfea5c54da73f1e44a60",
+    "url": "https://github.com/WebKit/WebKit/commit/0708b3d05eef15f7b585cfea5c54da73f1e44a60",
+    "message": "Use utf8Bytes() where only the bytes are needed\nhttps://bugs.webkit.org/show_bug.cgi?id=333198\nrdar://193699092\n\nReviewed by Darin Adler.\n\nSince 327844@main, makeUTF8CString() says that it makes a null-terminated\nstring, which callers that copy the bytes into a buffer, write them to a file\nor socket",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:53:17.706755+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "fbf0af895cd37d9a2265f7f056e0327c4c81241b",
+    "url": "https://github.com/WebKit/WebKit/commit/fbf0af895cd37d9a2265f7f056e0327c4c81241b",
+    "message": "[JSC] Let inline caches re-flatten a prototype dictionary a few times\nhttps://bugs.webkit.org/show_bug.cgi?id=333064\nrdar://193633655\n\nReviewed by Tadeu Zagallo.\n\nInline caching flattens a dictionary in a prototype chain only once\n(webkit.org/b/158045), to avoid churning objects that keep growing.\nB",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T08:53:55.699644+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0dea5ba29ece4b7f2570a46f688e5d4f8cbd756a",
+    "url": "https://github.com/WebKit/WebKit/commit/0dea5ba29ece4b7f2570a46f688e5d4f8cbd756a",
+    "message": "Replace utf8() and tryGetUTF8() members with free functions\nhttps://bugs.webkit.org/show_bug.cgi?id=332945\nrdar://193574627\n\nReviewed by Darin Adler.\n\nAs Darin Adler suggested in review of bug 332672, converting to UTF-8 works\nbetter as a free function overloaded for the types it takes, like\nutf8Len",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
