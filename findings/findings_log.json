@@ -93397,5 +93397,125 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:31:00.181439+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "de94a1bcf328766c89d837665a03d0f87c470208",
+    "url": "https://github.com/WebKit/WebKit/commit/de94a1bcf328766c89d837665a03d0f87c470208",
+    "message": "[JSC] Fix build after 327934@main\nhttps://bugs.webkit.org/show_bug.cgi?id=333319\nrdar://193739830\n\nUnreviewed build fix.\n\nA transitive dependency on WeakRandom.h got broken when 327934@main removed the\ninclude of ParallelHelperPool.h from Heap.h.\n\n* Source/JavaScriptCore/runtime/JSGlobalObject.h:\n* ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:31:38.097317+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c3d313527819f92d454f49728b15be13c0aa6514",
+    "url": "https://github.com/WebKit/WebKit/commit/c3d313527819f92d454f49728b15be13c0aa6514",
+    "message": "[JSC] Keep the incoming wrapper references of an ArrayBuffer inline\nhttps://bugs.webkit.org/show_bug.cgi?id=333214\nrdar://193707329\n\nReviewed by Tadeu Zagallo.\n\nGive the incoming reference vector an inline capacity of four. Once an\n`ArrayBuffer` gets a second wrapper, such as a typed array or\n`DataV",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:32:15.815410+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "22542a3def6a9f0da9c502460082cebe4934cc75",
+    "url": "https://github.com/WebKit/WebKit/commit/22542a3def6a9f0da9c502460082cebe4934cc75",
+    "message": "[JSC] Share one generator and async body function per wrapper function\nhttps://bugs.webkit.org/show_bug.cgi?id=333216\nrdar://193707714\n\nReviewed by Tadeu Zagallo.\n\nEach call of a generator or async function allocates a fresh body\nfunction with `new_func_exp`. The body function is only invoked by the",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:32:53.573832+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "c106b3eb1a5eedad38cfdc667cf3321312e53eec",
+    "url": "https://github.com/WebKit/WebKit/commit/c106b3eb1a5eedad38cfdc667cf3321312e53eec",
+    "message": "[WASM] Remove unused addCrash and NullTableEntry\nhttps://bugs.webkit.org/show_bug.cgi?id=333253\n\nReviewed by Yusuke Suzuki.\n\naddCrash() is declared on every Wasm generator and never called.\nThere is no crash opcode. BBQ and OMG plant a breakpoint that\nnothing reaches.\n\nNullTableEntry is never thrown",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:33:33.522487+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13f59ba0da926706d3da79a2e23c1f0db36c6f2b",
+    "url": "https://github.com/WebKit/WebKit/commit/13f59ba0da926706d3da79a2e23c1f0db36c6f2b",
+    "message": "Typed array views passed need to have their wrappers cached\nhttps://bugs.webkit.org/show_bug.cgi?id=328787\n\nReviewed by Ryosuke Niwa.\n\nAdds wrapper caching for typed array views following the model used by ArrayBuffer, storing a weak reference\nto the wrapper on the C++ type with a custom owner and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T18:34:11.221868+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d1e77fab092ad3a165170e4959b446b5f22265b",
+    "url": "https://github.com/WebKit/WebKit/commit/6d1e77fab092ad3a165170e4959b446b5f22265b",
+    "message": "[JSC] Use UniquedStringImpl* instead of Identifier* in parser\nhttps://bugs.webkit.org/show_bug.cgi?id=310837\nrdar://173444693\n\nReviewed by Justin Michaud.\n\nThis patch moves Identifier* use to UniquedStringImpl* in parser.\nIdentiefier* is weird thing as it is something like UniquedStringImpl**.\nLet's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
