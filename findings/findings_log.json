@@ -93197,5 +93197,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T00:07:42.614599+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "13f59ba0da926706d3da79a2e23c1f0db36c6f2b",
+    "url": "https://github.com/WebKit/WebKit/commit/13f59ba0da926706d3da79a2e23c1f0db36c6f2b",
+    "message": "Typed array views passed need to have their wrappers cached\nhttps://bugs.webkit.org/show_bug.cgi?id=328787\n\nReviewed by Ryosuke Niwa.\n\nAdds wrapper caching for typed array views following the model used by ArrayBuffer, storing a weak reference\nto the wrapper on the C++ type with a custom owner and t",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T00:08:21.029532+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d1e77fab092ad3a165170e4959b446b5f22265b",
+    "url": "https://github.com/WebKit/WebKit/commit/6d1e77fab092ad3a165170e4959b446b5f22265b",
+    "message": "[JSC] Use UniquedStringImpl* instead of Identifier* in parser\nhttps://bugs.webkit.org/show_bug.cgi?id=310837\nrdar://173444693\n\nReviewed by Justin Michaud.\n\nThis patch moves Identifier* use to UniquedStringImpl* in parser.\nIdentiefier* is weird thing as it is something like UniquedStringImpl**.\nLet's",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T00:08:58.918046+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "d94e8502e0a6a84d9a6acc115d5f45759f22bf2e",
+    "url": "https://github.com/WebKit/WebKit/commit/d94e8502e0a6a84d9a6acc115d5f45759f22bf2e",
+    "message": "[JSC] Do not revive an array iterator finished by a nested next()\nhttps://bugs.webkit.org/show_bug.cgi?id=332741\n\nReviewed by Yusuke Suzuki.\n\nArray iterator next() reads the index, then reads length. The length\ngetter can call next() again. That nested call can finish the iterator\nby storing -1. The",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-27T00:09:36.479816+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "9dbafa06019e27e7292dfd6e064d14c3b99e68c3",
+    "url": "https://github.com/WebKit/WebKit/commit/9dbafa06019e27e7292dfd6e064d14c3b99e68c3",
+    "message": "Address remaining MemoryUnsafeCastChecker warnings outside JavaScriptCore\nhttps://bugs.webkit.org/show_bug.cgi?id=333034\n\nReviewed by Anne van Kesteren.\n\nMost of the remaining warnings were reported in RetainPtr.h, inside\nRetainPtr<T>::operator=(U*). Assigning a value typed as an ObjC generic\nparame",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
