@@ -93617,5 +93617,85 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T09:31:11.823713+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "04ab78ad6a9351b909ee026ad7b911d667ca4ca0",
+    "url": "https://github.com/WebKit/WebKit/commit/04ab78ad6a9351b909ee026ad7b911d667ca4ca0",
+    "message": "[JSC] Inline `op_typeof_is_object` and `op_typeof_is_function` for objects in LLInt and Baseline\nhttps://bugs.webkit.org/show_bug.cgi?id=333247\n\nReviewed by Yusuke Suzuki.\n\nop_typeof_is_object always calls a C++ slow path in LLInt and Baseline, and op_typeof_is_function\ndoes so whenever the operand ",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T09:31:49.922670+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "1176a64eb3d7b51080413499f6550d967888360f",
+    "url": "https://github.com/WebKit/WebKit/commit/1176a64eb3d7b51080413499f6550d967888360f",
+    "message": "[JSC] Linking bytecode basic blocks should not scan all the blocks for every branch\nhttps://bugs.webkit.org/show_bug.cgi?id=333248\n\nReviewed by Yusuke Suzuki.\n\nBytecodeBasicBlock::computeImpl walks all the blocks to find the targets of each\nbranch or throw, so it is quadratic in the number of branch",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T09:32:28.368365+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "14a359a9cdde77c0ee6e7978d2d288f0c3380e7a",
+    "url": "https://github.com/WebKit/WebKit/commit/14a359a9cdde77c0ee6e7978d2d288f0c3380e7a",
+    "message": "[JSC] DFG should branch on done in each arm of `op_iterator_next`\nhttps://bugs.webkit.org/show_bug.cgi?id=329085\n\nReviewed by Yusuke Suzuki.\n\nop_iterator_next is always followed by jtrue / jfalse on `done`. DFG joined all\narms of op_iterator_next into one block and branched on `done` there, although",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T09:33:06.422652+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0708b3d05eef15f7b585cfea5c54da73f1e44a60",
+    "url": "https://github.com/WebKit/WebKit/commit/0708b3d05eef15f7b585cfea5c54da73f1e44a60",
+    "message": "Use utf8Bytes() where only the bytes are needed\nhttps://bugs.webkit.org/show_bug.cgi?id=333198\nrdar://193699092\n\nReviewed by Darin Adler.\n\nSince 327844@main, makeUTF8CString() says that it makes a null-terminated\nstring, which callers that copy the bytes into a buffer, write them to a file\nor socket",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
