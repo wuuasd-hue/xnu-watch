@@ -93517,5 +93517,105 @@
     "layer1": {},
     "layer2": {},
     "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T01:42:21.410826+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "6d626a42f354af9e4169fd2ee062de075b79568a",
+    "url": "https://github.com/WebKit/WebKit/commit/6d626a42f354af9e4169fd2ee062de075b79568a",
+    "message": "[libpas] Always use libpas allocator in ExecutableAllocator\nhttps://bugs.webkit.org/show_bug.cgi?id=333257\nrdar://193723757\n\nReviewed by Keith Miller.\n\nExecutableAllocator was having MetaAllocator since ARMv7 was not having\nlibpas. But now ARMv7 JIT is dropped so we can always use libpas for\nExecuta",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T01:42:58.966019+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "0e47ccdf2cfd09f0a5125a0f4f7db722557e987d",
+    "url": "https://github.com/WebKit/WebKit/commit/0e47ccdf2cfd09f0a5125a0f4f7db722557e987d",
+    "message": "[JSC] Do not reserve inline slots for accessors on the prototype of a constructor\nhttps://bugs.webkit.org/show_bug.cgi?id=333242\nrdar://193717195\n\nReviewed by Keith Miller.\n\nSkip accessor properties of the prototype when estimating how many\nproperties objects created by a constructor will own. The e",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T01:43:38.018267+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "f2bcfa418d851a49885ff8e4f36627b125484393",
+    "url": "https://github.com/WebKit/WebKit/commit/f2bcfa418d851a49885ff8e4f36627b125484393",
+    "message": "[JSC] Build the line start table a 64-byte block at a time without a branch per line terminator\nhttps://bugs.webkit.org/show_bug.cgi?id=333328\nrdar://193753103\n\nReviewed by Keith Miller.\n\nAn error whose stack frames die before its stack is read gets its line\nand column materialized at the end of a G",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T01:44:16.204473+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "eda360209ba8bdc79773c88390a2a45bd1f7ecab",
+    "url": "https://github.com/WebKit/WebKit/commit/eda360209ba8bdc79773c88390a2a45bd1f7ecab",
+    "message": "[JSC] `VariableEnvironment` should avoid needless ref / deref of its keys\nhttps://bugs.webkit.org/show_bug.cgi?id=330348\n\nReviewed by Yusuke Suzuki.\n\nThe key of VariableEnvironment's InlineMap is PackedRefPtr, but its HashTraits is\nthe one for RefPtr. So every check for an empty or deleted key conve",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
+  },
+  {
+    "timestamp": "2026-11-28T01:44:53.667151+00:00",
+    "repo": "WebKit/WebKit",
+    "sha": "09fa1f22dbc52e2aa8ed16940a51e12a4a751639",
+    "url": "https://github.com/WebKit/WebKit/commit/09fa1f22dbc52e2aa8ed16940a51e12a4a751639",
+    "message": "Adopt LIFETIME_BOUND in more Source/WebCore/loader and Source/WebCore/PAL functions\nhttps://bugs.webkit.org/show_bug.cgi?id=333186\n\nReviewed by Anne van Kesteren.\n\nMark loader accessors that return a reference or pointer to data owned by\nthe object as LIFETIME_BOUND: value members and the targets of",
+    "verdict": {
+      "collective_outcome": "DISCARD",
+      "reportable_vote_count": 0,
+      "total_models_responded": 0,
+      "representative_hypothesis": "",
+      "representative_reasoning": "",
+      "next_step_for_human": "",
+      "category": "none",
+      "confidence": 0
+    },
+    "layer1": {},
+    "layer2": {},
+    "layer3": {}
   }
 ]
